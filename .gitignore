@@ -1,0 +1,66 @@
+# ── Claude Code ───────────────────────────────────────────────
+CLAUDE.md
+**/CLAUDE.md
+.claude/
+
+# ── Environment / secrets ─────────────────────────────────────
+.env
+.env.local
+*.env
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# ── Pipeline data (large / generated) ────────────────────────
+data/proteomes/
+data/structures/
+data/docking/ligands_pdbqt/
+data/docking/tranches/
+data/docking/*_results/
+data/docking/*_receptor.pdbqt
+data/docking/*_vina_fixed.conf
+data/figures/
+
+# Keep committed: vina configs, docking shell scripts, result summaries
+!data/docking/*_vina.conf
+!data/docking/run_all_docking.sh
+!data/docking/docking_results_summary.tsv
+!data/docking/top_hits.json
+
+# ── Logs (keep audit log, ignore verbose run logs) ────────────
+logs/run*.log
+logs/docking_campaign.log
+logs/download_full.log
+# Keep: logs/pipeline_audit.json (reproducibility record)
+!logs/pipeline_audit.json
+
+# ── Docs (generated — keep final versions) ────────────────────
+docs/methods_draft.txt
+docs/supplementary_S1_audit.txt
+
+# ── Temp / helper scripts ─────────────────────────────────────
+scripts/_*.py
+*_vina_fixed.conf
+
+# ── OS ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ─────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Duplicate legacy files (use core/ and scripts/ instead) ──
+files/
