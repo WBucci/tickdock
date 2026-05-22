@@ -1,0 +1,14 @@
+{
+  "pdb_id": "1EVE",
+  "ligand": "E20",
+  "our_score": -10.96,
+  "reference_score": -11.5,
+  "tolerance": 2.0,
+  "status": "PASS",
+  "exhaustiveness": 8,
+  "centroid": {
+    "center_x": 2.781,
+    "center_y": 64.383,
+    "center_z": 67.971
+  }
+}
