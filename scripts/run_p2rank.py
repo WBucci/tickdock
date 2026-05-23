@@ -32,9 +32,10 @@ def run_p2rank(pdb_path: str, accession: str) -> list[dict]:
     out_dir = os.path.join(P2RANK_OUT_DIR, accession)
     os.makedirs(out_dir, exist_ok=True)
 
+    # P2Rank names the CSV after the input filename (including extension)
+    # e.g. input B7P877.pdb → B7P877.pdb_predictions.csv
     result_csv = os.path.join(out_dir,
-                              os.path.basename(pdb_path).replace(".pdb", "") +
-                              "_predictions.csv")
+                              os.path.basename(pdb_path) + "_predictions.csv")
     if os.path.exists(result_csv):
         print(f"    [cached] {accession}")
     else:
@@ -63,11 +64,13 @@ def run_p2rank(pdb_path: str, accession: str) -> list[dict]:
             if not line or line.startswith("#"):
                 continue
             if header is None:
+                # P2Rank CSV has leading/trailing spaces in column names
                 header = [h.strip() for h in line.split(",")]
                 continue
-            parts = [p.strip() for p in line.split(",")]
-            if len(parts) < len(header):
-                continue
+            # Only take the first len(header) columns — residue_ids can contain spaces
+            raw_parts = line.split(",")
+            parts = [raw_parts[i].strip() if i < len(raw_parts) else ""
+                     for i in range(len(header))]
             row = dict(zip(header, parts))
             try:
                 pockets.append({
@@ -75,7 +78,8 @@ def run_p2rank(pdb_path: str, accession: str) -> list[dict]:
                     "source":      "p2rank",
                     "score":       float(row.get("score", 0)),
                     "probability": float(row.get("probability", 0)),
-                    "volume":      float(row.get("surf_atom_ids", 0)),  # proxy
+                    # surf_atoms ≈ pocket size proxy (no direct volume from P2Rank)
+                    "volume":      float(row.get("surf_atoms", 0)) * 20,
                     "center_x":    float(row.get("center_x", 0)),
                     "center_y":    float(row.get("center_y", 0)),
                     "center_z":    float(row.get("center_z", 0)),
