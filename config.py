@@ -75,6 +75,10 @@ MIN_POCKET_VOLUME      = 300   # Angstroms^3; minimum useful binding pocket
 # for mammalian toxicity. Deprioritized but not excluded.
 MAX_HUMAN_HOMOLOGY     = 0.40  # BLAST percent identity (fraction, not %)
 
+# ── Protein length filter (applied in novelty filter step 2) ──────────────
+MIN_PROTEIN_LENGTH = 150    # aa; below = likely peptide/signal sequence only
+MAX_PROTEIN_LENGTH = 1500   # aa; above = structural scaffold, not druggable
+
 # ── Drug-likeness (Lipinski's Rule of Five) ────────────────────────────────
 # Applied to ZINC compound library before docking
 LIPINSKI = {
@@ -123,10 +127,31 @@ RESULTS_DIR    = os.path.join(DATA_DIR, "results")
 FIGURES_DIR    = os.path.join(DATA_DIR, "figures")
 DOCS_DIR       = os.path.join(BASE_DIR, "docs")
 LOG_DIR        = os.path.join(BASE_DIR, "logs")
+BLAST_DB_DIR   = os.path.join(DATA_DIR, "blast_db")
+TOOLS_DIR      = os.path.join(BASE_DIR, "tools")
 
 for _d in [DATA_DIR, PROTEOME_DIR, STRUCTURE_DIR, POCKET_DIR,
-           DOCKING_DIR, RESULTS_DIR, FIGURES_DIR, DOCS_DIR, LOG_DIR]:
+           DOCKING_DIR, RESULTS_DIR, FIGURES_DIR, DOCS_DIR, LOG_DIR,
+           BLAST_DB_DIR, TOOLS_DIR]:
     os.makedirs(_d, exist_ok=True)
+
+# ── Host proteome BLAST databases (built by install; used for selectivity) ─
+# Local blastp checks all 3 tick hosts — human + dog + mouse.
+# Prevents reporting leads that are toxic to pets (dog) or lab models (mouse).
+BLAST_HOSTS = {
+    "human": {
+        "db":    os.path.join(BLAST_DB_DIR, "human_proteome"),
+        "label": "Homo sapiens",
+    },
+    "dog": {
+        "db":    os.path.join(BLAST_DB_DIR, "dog_proteome"),
+        "label": "Canis lupus familiaris",
+    },
+    "mouse": {
+        "db":    os.path.join(BLAST_DB_DIR, "mouse_proteome"),
+        "label": "Mus musculus",
+    },
+}
 
 # ── Software citations (appear in Methods) ────────────────────────────────
 SOFTWARE_CITATIONS = {
@@ -137,6 +162,7 @@ SOFTWARE_CITATIONS = {
     "rdkit":      "Landrum (2006) RDKit: Open-source cheminformatics",
     "biopython":  "Cock et al. (2009) Bioinformatics 25:1422-1423",
     "uniprot":    "UniProt Consortium (2023) Nucleic Acids Res 51:D523-D531",
+    "chembl":     "Gaulton et al. (2017) Nucleic Acids Res 45:D945-D954",
     "zinc":       "Irwin et al. (2020) J Chem Inf Model 60:6065-6073",
     "blast":      "Altschul et al. (1990) J Mol Biol 215:403-410",
     "pkcsm":      "Pires et al. (2015) J Med Chem 58:4066-4072",

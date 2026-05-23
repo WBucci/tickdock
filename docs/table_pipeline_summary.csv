@@ -1,0 +1,4 @@
+Step,Started,Elapsed (s),Warnings,Errors,API calls
+01_fetch_proteome,2026-05-22T18:53:17.504563,1.4,0,0,1
+02_novelty_filter,2026-05-22T18:53:19.136658,34.0,0,0,1
+03_to_07_structure_docking,2026-05-22T18:57:12.039159,49.1,0,0,103

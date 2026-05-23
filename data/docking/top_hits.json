@@ -1,0 +1,252 @@
+[
+  {
+    "ligand": "CHEMBL266039_out",
+    "score": -8.699,
+    "target": "B7PBI5"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -8.465,
+    "target": "B7PJS6"
+  },
+  {
+    "ligand": "CHEMBL268388_out",
+    "score": -8.39,
+    "target": "B7P877"
+  },
+  {
+    "ligand": "CHEMBL266317_out",
+    "score": -8.248,
+    "target": "B7PBI5"
+  },
+  {
+    "ligand": "CHEMBL266065_out",
+    "score": -8.198,
+    "target": "B7P877"
+  },
+  {
+    "ligand": "CHEMBL263077_out",
+    "score": -8.183,
+    "target": "B7P877"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -8.131,
+    "target": "B7QDG3"
+  },
+  {
+    "ligand": "CHEMBL265669_out",
+    "score": -8.117,
+    "target": "B7P877"
+  },
+  {
+    "ligand": "CHEMBL267864_out",
+    "score": -8.074,
+    "target": "B7P877"
+  },
+  {
+    "ligand": "CHEMBL112998_out",
+    "score": -8.03,
+    "target": "B7PJS6"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -8.026,
+    "target": "Q202J4"
+  },
+  {
+    "ligand": "CHEMBL263077_out",
+    "score": -8.011,
+    "target": "B7PBI5"
+  },
+  {
+    "ligand": "CHEMBL11_out",
+    "score": -7.91,
+    "target": "B7PJS6"
+  },
+  {
+    "ligand": "CHEMBL267386_out",
+    "score": -7.872,
+    "target": "B7PBI5"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -7.869,
+    "target": "Q4PMC9"
+  },
+  {
+    "ligand": "CHEMBL267427_out",
+    "score": -7.8,
+    "target": "B7PBI5"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -7.743,
+    "target": "B7Q1Q9"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -7.576,
+    "target": "Q5Q995"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -7.562,
+    "target": "B7PJS6"
+  },
+  {
+    "ligand": "CHEMBL112998_out",
+    "score": -7.511,
+    "target": "B7Q1Q9"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -7.509,
+    "target": "Q4PMC9"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -7.362,
+    "target": "B7PXE3"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -7.312,
+    "target": "Q8MUP7"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -7.196,
+    "target": "B7PRF6"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -7.162,
+    "target": "B7Q1Q9"
+  },
+  {
+    "ligand": "CHEMBL11_out",
+    "score": -7.131,
+    "target": "Q202J4"
+  },
+  {
+    "ligand": "CHEMBL112998_out",
+    "score": -7.069,
+    "target": "Q202J4"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -7.039,
+    "target": "Q4PMB3"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -7.002,
+    "target": "Q8MUP7"
+  },
+  {
+    "ligand": "CHEMBL11_out",
+    "score": -6.951,
+    "target": "Q4PMC9"
+  },
+  {
+    "ligand": "CHEMBL112998_out",
+    "score": -6.816,
+    "target": "Q4PMC9"
+  },
+  {
+    "ligand": "CHEMBL112998_out",
+    "score": -6.802,
+    "target": "Q8MUP7"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -6.799,
+    "target": "B7PRF6"
+  },
+  {
+    "ligand": "CHEMBL11_out",
+    "score": -6.7,
+    "target": "Q5Q995"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -6.563,
+    "target": "Q202J4"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -6.536,
+    "target": "B7PKZ2"
+  },
+  {
+    "ligand": "CHEMBL112998_out",
+    "score": -6.472,
+    "target": "Q5Q995"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -6.461,
+    "target": "Q5Q995"
+  },
+  {
+    "ligand": "CHEMBL112998_out",
+    "score": -6.438,
+    "target": "B7QDG3"
+  },
+  {
+    "ligand": "CHEMBL11_out",
+    "score": -6.417,
+    "target": "B7PXE3"
+  },
+  {
+    "ligand": "CHEMBL112998_out",
+    "score": -6.316,
+    "target": "Q4PMB3"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -6.292,
+    "target": "B7PXE3"
+  },
+  {
+    "ligand": "CHEMBL11_out",
+    "score": -6.273,
+    "target": "B7QDG3"
+  },
+  {
+    "ligand": "CHEMBL11_out",
+    "score": -6.19,
+    "target": "B7PRF6"
+  },
+  {
+    "ligand": "CHEMBL112998_out",
+    "score": -6.163,
+    "target": "B7PRF6"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -6.155,
+    "target": "B7Q290"
+  },
+  {
+    "ligand": "CHEMBL11_out",
+    "score": -6.148,
+    "target": "B7Q1Q9"
+  },
+  {
+    "ligand": "CHEMBL10_out",
+    "score": -6.146,
+    "target": "B7PY76"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -5.986,
+    "target": "B7QDG3"
+  },
+  {
+    "ligand": "CHEMBL12_out",
+    "score": -5.983,
+    "target": "B7PY76"
+  }
+]

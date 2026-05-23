@@ -29,6 +29,9 @@ data/docking/*_results/
 data/docking/*_receptor.pdbqt
 data/docking/*_vina_fixed.conf
 data/figures/
+data/blast_db/          # binary BLAST index files (~50 MB)
+data/benchmark/         # benchmark intermediates (PDB, PDBQT files)
+data/p2rank/            # P2Rank raw prediction outputs
 
 # Keep committed: vina configs, docking shell scripts, result summaries
 !data/docking/*_vina.conf
@@ -37,9 +40,7 @@ data/figures/
 !data/docking/top_hits.json
 
 # ── Logs (keep audit log, ignore verbose run logs) ────────────
-logs/run*.log
-logs/docking_campaign.log
-logs/download_full.log
+logs/*.log
 # Keep: logs/pipeline_audit.json (reproducibility record)
 !logs/pipeline_audit.json
 
@@ -61,6 +62,9 @@ desktop.ini
 .vscode/
 *.swp
 *.swo
+
+# ── Tools (large binaries — install locally via setup_wsl.sh) ─
+tools/
 
 # ── Duplicate legacy files (use core/ and scripts/ instead) ──
 files/

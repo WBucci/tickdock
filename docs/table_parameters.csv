@@ -1,0 +1,29 @@
+Step,Parameter,Value,Description
+01_fetch_proteome,species,ixodes_scapularis,UniProt taxon 6945
+01_fetch_proteome,reviewed_only,True,Swiss-Prot only if True
+01_fetch_proteome,uniprot_fields,"accession,id,protein_name,gene_names,organism_name,sequence,cc_function,ft_binding,xref_pdb,xref_chembl,cc_subcellular_location,ft_site,cc_catalytic_activity,keyword",Fields requested from API
+02_novelty_filter,species,ixodes_scapularis,
+02_novelty_filter,min_plddt,70,AlphaFold confidence threshold
+02_novelty_filter,min_druggability,0.5,
+02_novelty_filter,min_pocket_volume,300,Angstroms^3
+02_novelty_filter,max_human_homology,0.4,BLAST identity fraction
+02_novelty_filter,scoring_rubric,"{'no_structure': 3, 'no_ligands': 3, 'unknown_function': 2, 'alphafold_ok': 2, 'good_length': 1, 'interesting_class': 1, 'membrane': 2, 'essential_keyword': 2}",Points assigned per novelty criterion
+03_to_07_structure_docking,min_plddt_mean,70,Mean pLDDT threshold
+03_to_07_structure_docking,min_plddt_per_res,70,Per-residue pLDDT threshold
+03_to_07_structure_docking,min_high_conf_frac,0.5,Min fraction of residues above pLDDT threshold
+03_to_07_structure_docking,min_druggability_score,0.5,fpocket/DoGSiteScorer threshold (0-1)
+03_to_07_structure_docking,min_pocket_volume,300,Angstroms^3
+03_to_07_structure_docking,allosteric_flagging,True,Secondary pockets flagged as allosteric candidates
+03_to_07_structure_docking,fpocket_available,True,
+03_to_07_structure_docking,dogsite_available,False,
+03_to_07_structure_docking,max_human_homology,0.4,BLAST identity threshold for mammalian toxicity flag
+03_to_07_structure_docking,blast_database,refseq_protein + Homo sapiens filter,
+03_to_07_structure_docking,rnai_search_terms,RNAi OR silenc* OR knockdown AND tick AND lethal,
+03_to_07_structure_docking,blast_enabled,False,
+03_to_07_structure_docking,vina_exhaustiveness,8,
+03_to_07_structure_docking,vina_num_modes,9,
+03_to_07_structure_docking,vina_box_size,20,Angstroms
+03_to_07_structure_docking,vina_energy_range,3,kcal/mol
+03_to_07_structure_docking,vina_hit_threshold,-7.0,kcal/mol
+03_to_07_structure_docking,lipinski_max_mw,500,
+03_to_07_structure_docking,lipinski_max_logp,5.0,

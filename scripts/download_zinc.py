@@ -26,6 +26,16 @@ try:
 except ImportError:
     RDKIT_OK = False
 
+try:
+    from rdkit.Chem.FilterCatalog import FilterCatalog, FilterCatalogParams
+    _pains_params = FilterCatalogParams()
+    _pains_params.AddCatalog(FilterCatalogParams.FilterCatalogs.PAINS)
+    PAINS_CATALOG = FilterCatalog(_pains_params)
+    PAINS_OK = True
+except Exception:
+    PAINS_CATALOG = None
+    PAINS_OK = False
+
 
 # ChEMBL REST API — reliable, EBI-maintained
 CHEMBL_API = "https://www.ebi.ac.uk/chembl/api/data/molecule.json"
@@ -40,6 +50,19 @@ ZINC_TRANCHES   = [
     "CAAA", "CBAA", "CCAA", "CDAA",
     "DAAA", "DBAA", "DCAA", "DDAA",
 ]
+
+
+def pains_ok(smiles: str) -> bool:
+    """Return True if compound has no PAINS substructure alerts (aggregators/false positives)."""
+    if not PAINS_OK or not smiles:
+        return True
+    try:
+        mol = Chem.MolFromSmiles(smiles)
+        if mol is None:
+            return False
+        return not PAINS_CATALOG.HasMatch(mol)
+    except Exception:
+        return True
 
 
 def lipinski_ok(smiles: str) -> bool:
@@ -263,6 +286,11 @@ def download_and_prep(target_count: int, ligands_dir: str,
 
         # Lipinski check
         if not lipinski_ok(smiles):
+            skipped += 1
+            continue
+
+        # PAINS filter — remove aggregators and assay interference compounds
+        if not pains_ok(smiles):
             skipped += 1
             continue
 

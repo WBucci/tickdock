@@ -95,6 +95,19 @@ def check_alphafold_batch(proteins: list[dict], max_check: int,
     return results
 
 
+def filter_by_length(proteins: list[dict], log: AuditLog) -> list[dict]:
+    """Remove proteins too short (peptides) or too long (structural scaffolds)."""
+    kept = [p for p in proteins
+            if MIN_PROTEIN_LENGTH <= p.get("length", 0) <= MAX_PROTEIN_LENGTH]
+    removed = len(proteins) - len(kept)
+    log.stat("length_filtered", removed,
+             f"Proteins outside {MIN_PROTEIN_LENGTH}-{MAX_PROTEIN_LENGTH} aa range")
+    log.stat("after_length_filter", len(kept))
+    print(f"  Length filter ({MIN_PROTEIN_LENGTH}-{MAX_PROTEIN_LENGTH} aa): "
+          f"removed {removed} → {len(kept)} remain")
+    return kept
+
+
 def score_candidates(proteins: list[dict], log: AuditLog) -> list[dict]:
     """
     Score each protein for research novelty.
@@ -216,6 +229,9 @@ if __name__ == "__main__":
 
     print(f"\n[2] Structural novelty filter...")
     proteins = filter_structural_novelty(proteins, log)
+
+    print(f"\n[2b] Protein length filter ({MIN_PROTEIN_LENGTH}-{MAX_PROTEIN_LENGTH} aa)...")
+    proteins = filter_by_length(proteins, log)
 
     if not args.skip_alphafold_check:
         print(f"\n[3] AlphaFold availability check...")

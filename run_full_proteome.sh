@@ -12,6 +12,6 @@ python3 scripts/01_fetch_proteome.py \
 echo "Step 1 done at $(date). Starting step 2..." | tee -a logs/full_proteome.log
 python3 scripts/02_novelty_filter.py \
     --species ixodes_scapularis \
-    --skip-alphafold-check \
+    --max-alphafold-check 2000 \
     2>&1 | tee -a logs/full_proteome.log
 echo "Full proteome steps 1+2 complete at $(date)" | tee -a logs/full_proteome.log

@@ -14,7 +14,7 @@ Usage:
     python scripts/03_to_07_structure_to_docking.py --top 50 --skip-blast
 """
 
-import sys, os, json, time, re, argparse, subprocess
+import sys, os, json, time, re, argparse, subprocess, math, shutil, tempfile
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import requests
@@ -426,6 +426,92 @@ def _human_risk_label(identity: float) -> str:
     return "VERY LOW"
 
 
+def _local_blastp_available() -> bool:
+    """Check if blastp binary and at least one host DB exist."""
+    if not shutil.which("blastp"):
+        return False
+    # Check at least one host DB has index file
+    for host_info in BLAST_HOSTS.values():
+        db = host_info["db"]
+        if os.path.exists(db + ".pin") or os.path.exists(db + ".phr"):
+            return True
+    return False
+
+
+def _local_blast_query(sequence: str, db_path: str) -> float | None:
+    """
+    Run local blastp, return best percent identity (0.0-1.0) or None.
+    Returns 0.0 if no hit found (genuinely no homolog).
+    Returns None if DB missing or error.
+    """
+    db_exists = (os.path.exists(db_path + ".pin") or
+                 os.path.exists(db_path + ".phr"))
+    if not db_exists:
+        return None
+    tmp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.faa',
+                                         delete=False) as tmp:
+            tmp.write(f">query\n{sequence}\n")
+            tmp_path = tmp.name
+        result = subprocess.run(
+            ["blastp", "-query", tmp_path, "-db", db_path,
+             "-outfmt", "6 pident", "-max_target_seqs", "1",
+             "-num_threads", "4", "-evalue", "0.001"],
+            capture_output=True, text=True, timeout=60
+        )
+        if tmp_path:
+            os.unlink(tmp_path)
+        if result.returncode == 0:
+            lines = [l.strip() for l in result.stdout.strip().split('\n') if l.strip()]
+            if lines:
+                return float(lines[0]) / 100.0   # pident = %, convert to fraction
+            return 0.0   # ran OK, no hit = no homolog
+    except Exception:
+        if tmp_path:
+            try:
+                os.unlink(tmp_path)
+            except Exception:
+                pass
+    return None
+
+
+def blast_vs_hosts(sequence: str, accession: str, log: AuditLog) -> dict:
+    """
+    BLASTP tick protein against human, dog, and mouse proteomes.
+    Uses local BLAST+ when databases exist (fast); falls back to web NCBI human-only.
+    Returns same schema as blast_vs_human() plus 'host_identities' sub-dict.
+    """
+    if not sequence:
+        return {"max_identity": None, "human_risk": "NO_SEQUENCE",
+                "host_identities": {}, "method": "none"}
+
+    if _local_blastp_available():
+        host_results = {}
+        max_identity = 0.0
+        for host_name, host_info in BLAST_HOSTS.items():
+            identity = _local_blast_query(sequence, host_info["db"])
+            if identity is not None:
+                host_results[host_name] = round(identity, 3)
+                max_identity = max(max_identity, identity)
+                log.api_call("local blastp", host_info["db"],
+                             query=accession, result_count=1)
+
+        if host_results:
+            return {
+                "max_identity":      round(max_identity, 3),
+                "human_risk":        _human_risk_label(max_identity),
+                "host_identities":   host_results,
+                "method":            "local_blastp",
+            }
+
+    # Fallback: web NCBI (human only)
+    result = blast_vs_human(sequence, accession, log)
+    result["host_identities"] = {"human": result.get("max_identity")}
+    result["method"] = "ncbi_web"
+    return result
+
+
 def search_rnai(gene: str, name: str, log: AuditLog) -> dict:
     """PubMed search for RNAi lethality evidence."""
     terms = []
@@ -528,13 +614,21 @@ def run_step5(proteins: list[dict], skip_blast: bool,
         name = p["name"][:45]
         print(f"\n  [{i+1}/{len(proteins)}] {acc} — {name}")
 
-        blast = {"max_identity": None, "human_risk": "SKIPPED"}
+        blast = {"max_identity": None, "human_risk": "SKIPPED",
+                 "host_identities": {}, "method": "skipped"}
         if not skip_blast and p.get("sequence"):
-            print(f"    BLAST...", end=" ", flush=True)
-            blast = blast_vs_human(p["sequence"], acc, log)
+            method = "local" if _local_blastp_available() else "web NCBI"
+            print(f"    BLAST ({method})...", end=" ", flush=True)
+            blast = blast_vs_hosts(p["sequence"], acc, log)
             risk  = blast.get("human_risk","?")
             ident = blast.get("max_identity")
-            print(f"{ident*100:.0f}% identity [{risk}]" if ident else f"[{risk}]")
+            hosts = blast.get("host_identities", {})
+            if ident is not None:
+                host_str = " | ".join(f"{k}: {v*100:.0f}%"
+                                      for k, v in hosts.items())
+                print(f"max {ident*100:.0f}% [{risk}]  ({host_str})")
+            else:
+                print(f"[{risk}]")
             time.sleep(REQUEST_DELAY)
 
         print(f"    RNAi search...", end=" ", flush=True)
@@ -593,17 +687,34 @@ def get_pocket_center(protein: dict, pocket_idx: int = 0) -> dict | None:
     }
 
 
+def adaptive_box_size(pocket_volume: float | None) -> int:
+    """
+    Scale docking search box with pocket volume.
+    Uses sphere-volume approximation: box = 2*radius + 8 Å buffer.
+    Clamped: min=VINA['box_size'] (20 Å), max=30 Å.
+    """
+    if not pocket_volume or pocket_volume <= 0:
+        return VINA["box_size"]
+    radius = (3 * pocket_volume / (4 * math.pi)) ** (1 / 3)
+    size = int(math.ceil(2 * radius + 8))
+    return max(VINA["box_size"], min(30, size))
+
+
 def write_vina_config(accession: str, receptor_pdbqt: str,
-                      center: dict) -> str:
+                      center: dict,
+                      pocket_volume: float | None = None) -> str:
+    box = adaptive_box_size(pocket_volume)
+    vol_note = f"{pocket_volume:.0f} Å³" if pocket_volume else "default"
     cfg_text = f"""# AutoDock Vina Config — {accession}
 # Generated by {PIPELINE_NAME} v{PIPELINE_VERSION}
+# Box size: {box} Å (pocket volume: {vol_note})
 receptor = {receptor_pdbqt}
 center_x = {center['center_x']}
 center_y = {center['center_y']}
 center_z = {center['center_z']}
-size_x = {VINA['box_size']}
-size_y = {VINA['box_size']}
-size_z = {VINA['box_size']}
+size_x = {box}
+size_y = {box}
+size_z = {box}
 exhaustiveness = {VINA['exhaustiveness']}
 num_modes = {VINA['num_modes']}
 energy_range = {VINA['energy_range']}
@@ -683,10 +794,13 @@ def run_step6(proteins: list[dict], log: AuditLog) -> list[dict]:
         if not center:
             log.warn(f"Could not determine pocket center for {acc}")
             continue
+        pocket_vol = (p.get("good_pockets") or [{}])[0].get("volume")
         conf_path = write_vina_config(acc, os.path.join(DOCKING_DIR,
-                                      f"{acc}_receptor.pdbqt"), center)
+                                      f"{acc}_receptor.pdbqt"), center,
+                                      pocket_volume=pocket_vol)
         p["vina_config"]      = conf_path
         p["pocket_center"]    = center
+        p["vina_box_size"]    = adaptive_box_size(pocket_vol)
         log.file_out(conf_path, f"Vina config for {acc}")
 
     run_script = write_run_script(proteins)
