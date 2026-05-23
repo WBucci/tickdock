@@ -29,15 +29,23 @@ data/docking/*_results/
 data/docking/*_receptor.pdbqt
 data/docking/*_vina_fixed.conf
 data/figures/
-data/blast_db/          # binary BLAST index files (~50 MB)
-data/benchmark/         # benchmark intermediates (PDB, PDBQT files)
-data/p2rank/            # P2Rank raw prediction outputs
+# BLAST databases (~50 MB binary index files)
+data/blast_db/
+# Benchmark intermediates (PDB, PDBQT files)
+data/benchmark/
+# P2Rank raw prediction outputs
+data/p2rank/
 
-# Keep committed: vina configs, docking shell scripts, result summaries
+# Archive files from cleanup_results.py (can be large)
+data/docking/*_archive.tar.gz
+
+# Keep committed: vina configs, docking shell scripts, result summaries, cleanup records
 !data/docking/*_vina.conf
 !data/docking/run_all_docking.sh
 !data/docking/docking_results_summary.tsv
 !data/docking/top_hits.json
+!data/docking/cleanup_manifest.json
+!data/docking/*_scores.json
 
 # ── Logs (keep audit log, ignore verbose run logs) ────────────
 logs/*.log
