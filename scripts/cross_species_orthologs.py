@@ -316,17 +316,18 @@ def main():
                 result["orthologs"][sp] = {"ortholog_call": "No hit", "identity_pct": 0}
                 print(f"  {common}: No hit (E-value > {BLAST_EVALUE_CUTOFF})")
 
-        # Pan-tick flag: ortholog in BOTH other species
+        # Pan-tick flag: ortholog in BOTH other species at threshold
         all_hits = list(result["orthologs"].values())
-        pan_tick = all(
-            h.get("identity_pct", 0) >= args.identity and
-            h.get("coverage_pct", 0) >= 70
-            for h in all_hits if h.get("ortholog_call") != "No hit"
-        ) and len([h for h in all_hits if h.get("ortholog_call") != "No hit"]) == len(TARGET_SPECIES)
+        strong_hits = [
+            h for h in all_hits
+            if h.get("identity_pct", 0) >= args.identity
+            and h.get("coverage_pct", 0) >= 70
+        ]
+        pan_tick = len(strong_hits) == len(TARGET_SPECIES)
 
         result["pan_tick"]         = pan_tick
         result["species_coverage"] = sum(1 for h in all_hits
-                                         if h.get("identity_pct",0) >= GOOD_IDENTITY)
+                                         if h.get("identity_pct", 0) >= GOOD_IDENTITY)
         if pan_tick:
             print(f"  *** PAN-TICK TARGET -- conserved in all 3 species ***")
 
@@ -359,6 +360,25 @@ def main():
                 writer.writerows(rows)
             print(f"Saved: {tsv_path}")
 
+        # Back-annotate final_targets.json so Methods can reference ortholog data
+        targets_path = os.path.join(RESULTS_DIR, "ixodes_scapularis_final_targets.json")
+        if os.path.exists(targets_path):
+            with open(targets_path) as f:
+                all_targets = json.load(f)
+            updated = 0
+            for t in all_targets:
+                acc = t.get("accession", "")
+                if acc in results:
+                    t["ortholog_result"] = {
+                        "pan_tick":         results[acc]["pan_tick"],
+                        "species_coverage": results[acc]["species_coverage"],
+                        "orthologs":        results[acc]["orthologs"],
+                    }
+                    updated += 1
+            with open(targets_path, "w") as f:
+                json.dump(all_targets, f, indent=2)
+            print(f"Back-annotated {updated} targets in final_targets.json")
+
         # Summary
         pan_tick_count = sum(1 for r in results.values() if r.get("pan_tick"))
         print(f"\nSummary:")
@@ -367,6 +387,8 @@ def main():
         if pan_tick_count:
             pan_targets = [acc for acc, r in results.items() if r.get("pan_tick")]
             print(f"  Pan-tick accessions: {pan_targets}")
+        print(f"\n  Full results: {out_path}")
+        print(f"  Paper table:  {tsv_path}")
 
 
 if __name__ == "__main__":
