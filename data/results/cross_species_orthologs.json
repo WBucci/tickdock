@@ -1,0 +1,52 @@
+{
+  "B7PBI5": {
+    "accession": "B7PBI5",
+    "seq_length": 303,
+    "orthologs": {
+      "amblyomma_americanum": {
+        "subject_id": "tr|A0AAQ4EA53|A0AAQ4EA53_AMBAM",
+        "identity_pct": 61.462,
+        "aln_length": 301,
+        "query_len": 303,
+        "subject_len": 328,
+        "evalue": 1.68e-119,
+        "bitscore": 346.0,
+        "coverage_pct": 99.3,
+        "species": "amblyomma_americanum",
+        "common": "Lone star tick",
+        "ortholog_call": "Pan-tick ortholog"
+      },
+      "dermacentor_variabilis": {
+        "ortholog_call": "No hit",
+        "identity_pct": 0
+      }
+    },
+    "pan_tick": false,
+    "species_coverage": 1
+  },
+  "B7P877": {
+    "accession": "B7P877",
+    "seq_length": 152,
+    "orthologs": {
+      "amblyomma_americanum": {
+        "subject_id": "tr|A0AAQ4DS18|A0AAQ4DS18_AMBAM",
+        "identity_pct": 91.447,
+        "aln_length": 152,
+        "query_len": 152,
+        "subject_len": 152,
+        "evalue": 1.15e-105,
+        "bitscore": 298.0,
+        "coverage_pct": 100.0,
+        "species": "amblyomma_americanum",
+        "common": "Lone star tick",
+        "ortholog_call": "Pan-tick ortholog"
+      },
+      "dermacentor_variabilis": {
+        "ortholog_call": "No hit",
+        "identity_pct": 0
+      }
+    },
+    "pan_tick": false,
+    "species_coverage": 1
+  }
+}

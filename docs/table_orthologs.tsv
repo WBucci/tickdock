@@ -1,0 +1,3 @@
+accession	seq_length	ambl_identity	ambl_coverage	ambl_call	derm_identity	derm_coverage	derm_call	pan_tick
+B7PBI5	303	61.462	99.3	Pan-tick ortholog	0		No hit	False
+B7P877	152	91.447	100.0	Pan-tick ortholog	0		No hit	False

@@ -51,6 +51,7 @@ STEPS = {
     1: ("01_fetch_proteome.py",             "Fetch proteome from UniProt"),
     2: ("02_novelty_filter.py",             "Filter for unexplored proteins"),
     3: ("03_to_07_structure_to_docking.py", "Structure → Pockets → Selectivity → Docking"),
+    4: ("cross_species_orthologs.py",       "Cross-species ortholog analysis (pan-tick targets)"),
 }
 
 
@@ -166,6 +167,19 @@ def generate_all_docs():
     generate_results_tables()
     print(f"  ✓ Parameter tables:   {DOCS_DIR}/table_parameters.csv")
 
+    # Report ortholog results if available
+    ortho_path = os.path.join(DATA_DIR, "results", "cross_species_orthologs.json")
+    if os.path.exists(ortho_path):
+        try:
+            import json as _json
+            with open(ortho_path) as f:
+                ortho = _json.load(f)
+            pan_count = sum(1 for r in ortho.values() if r.get("pan_tick"))
+            print(f"  ✓ Orthologs:          {len(ortho)} targets, "
+                  f"{pan_count} pan-tick  ({ortho_path})")
+        except Exception:
+            pass
+
     # Print Methods preview
     print(f"\n{'─'*60}")
     print(f"METHODS SECTION PREVIEW (first 600 chars):")
@@ -183,8 +197,8 @@ if __name__ == "__main__":
                         choices=list(SPECIES.keys()))
     parser.add_argument("--all-species",    action="store_true",
                         help="Run for all 3 tick species")
-    parser.add_argument("--step",           type=int, choices=[1,2,3],
-                        help="Run only this step (1, 2, or 3)")
+    parser.add_argument("--step",           type=int, choices=[1,2,3,4],
+                        help="Run only this step (1-4; step 4 = cross-species orthologs)")
     parser.add_argument("--reviewed-only",  action="store_true",
                         help="UniProt reviewed entries only (faster)")
     parser.add_argument("--top",            type=int, default=100,
@@ -244,6 +258,9 @@ if __name__ == "__main__":
         print(f"  Skip DoGSite:  {args.skip_dogsite}")
 
         steps_to_run = [args.step] if args.step else [1, 2, 3]
+        # Step 4 only runs once (not per-species); append only for explicit --step 4
+        if args.step == 4:
+            steps_to_run = [4]
 
         for step_num in steps_to_run:
             script, desc = STEPS[step_num]
@@ -252,13 +269,17 @@ if __name__ == "__main__":
             print(f"{'━'*60}")
 
             extra = []
-            if args.reviewed_only:          extra += ["--reviewed-only"]
-            if args.skip_alphafold_check:   extra += ["--skip-alphafold-check"]
+            if step_num in (1, 2, 3):
+                if args.reviewed_only:        extra += ["--reviewed-only"]
+                if args.skip_alphafold_check: extra += ["--skip-alphafold-check"]
             if step_num == 3:
                 extra += ["--top", str(args.top)]
                 if args.skip_blast:   extra += ["--skip-blast"]
                 if args.skip_dogsite: extra += ["--skip-dogsite"]
                 if args.analyze_only: extra += ["--analyze-only"]
+            if step_num == 4:
+                extra += ["--top", str(args.top)]
+                # Step 4 doesn't take --species; run_step passes it anyway (ignored)
 
             t0      = time.time()
             success = run_step(step_num, script, species, extra)

@@ -402,4 +402,36 @@ def main():
                 writer.writerows(rows)
             print(f"Saved: {tsv_path}")
 
-        # Back-annotate 
+        # Back-annotate final_targets.json so Methods can reference ortholog data
+        targets_path = os.path.join(RESULTS_DIR, "ixodes_scapularis_final_targets.json")
+        if os.path.exists(targets_path):
+            with open(targets_path) as f:
+                all_targets = json.load(f)
+            updated = 0
+            for t in all_targets:
+                acc = t.get("accession", "")
+                if acc in results:
+                    t["ortholog_result"] = {
+                        "pan_tick":         results[acc]["pan_tick"],
+                        "species_coverage": results[acc]["species_coverage"],
+                        "orthologs":        results[acc]["orthologs"],
+                    }
+                    updated += 1
+            with open(targets_path, "w") as f:
+                json.dump(all_targets, f, indent=2)
+            print(f"Back-annotated {updated} targets in final_targets.json")
+
+        # Summary
+        pan_tick_count = sum(1 for r in results.values() if r.get("pan_tick"))
+        print(f"\nSummary:")
+        print(f"  Targets analyzed:   {len(results)}")
+        print(f"  Pan-tick targets:   {pan_tick_count}  (>={args.identity}% identity both species)")
+        if pan_tick_count:
+            pan_targets = [acc for acc, r in results.items() if r.get("pan_tick")]
+            print(f"  Pan-tick accessions: {pan_targets}")
+        print(f"\n  Full results: {out_path}")
+        print(f"  Paper table:  {tsv_path}")
+
+
+if __name__ == "__main__":
+    main()
