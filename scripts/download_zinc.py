@@ -7,10 +7,19 @@ Applies Lipinski filter, generates 3D coords via obabel,
 saves individual PDBQT files ready for AutoDock Vina.
 
 Usage:
-    python scripts/download_zinc.py              # 5000 compounds (test)
-    python scripts/download_zinc.py --count 50000 # full screen
-    python scripts/download_zinc.py --count 1000 --fast  # quick smoke test
-    python scripts/download_zinc.py --source zinc  # force ZINC (may be down)
+    python scripts/download_zinc.py                      # 5000 drug-like
+    python scripts/download_zinc.py --count 30000        # larger screen
+    python scripts/download_zinc.py --count 1000 --fast  # smoke test
+    python scripts/download_zinc.py --source zinc        # force ZINC (often down)
+    python scripts/download_zinc.py --mode approved      # FDA/EMA approved drugs only (~3k)
+    python scripts/download_zinc.py --mode antiparasitic # ATC-P class only (~100)
+    python scripts/download_zinc.py --start-offset 10000 # skip first N raw compounds
+      (use --start-offset to extend library without re-fetching already-seen compounds)
+
+Modes:
+    druglike     (default) 1.9M drug-like small molecules in ChEMBL
+    approved     3,126 FDA/EMA phase-4 approved drugs — best for repurposing
+    antiparasitic 101 ATC-P antiparasitic approved drugs — highest priority
 """
 
 import sys, os, json, time, argparse, subprocess, tempfile
@@ -84,8 +93,13 @@ def lipinski_ok(smiles: str) -> bool:
         return True
 
 
-def fetch_chembl_page(offset: int, limit: int = 200) -> list[dict]:
-    """Fetch one page of ChEMBL drug-like molecules."""
+def fetch_chembl_page(offset: int, limit: int = 200,
+                      extra_params: dict | None = None) -> tuple[list[dict], int]:
+    """
+    Fetch one page of ChEMBL molecules.
+    Returns (records, total_count).  total_count = -1 on error.
+    extra_params: added to base query (e.g. {'max_phase': 4} for approved drugs).
+    """
     params = {
         "mw_freebase__lte":        LIPINSKI["max_mw"],
         "mw_freebase__gte":        150,
@@ -99,40 +113,75 @@ def fetch_chembl_page(offset: int, limit: int = 200) -> list[dict]:
         "offset":                  offset,
         "format":                  "json",
     }
+    if extra_params:
+        params.update(extra_params)
     try:
         resp = requests.get(CHEMBL_API, params=params,
                             timeout=REQUEST_TIMEOUT,
                             headers={"Accept": "application/json"})
         if resp.status_code == 200:
-            data = resp.json()
-            results = []
+            data       = resp.json()
+            total      = data.get("page_meta", {}).get("total_count", -1)
+            results    = []
             for mol in data.get("molecules", []):
                 structs = mol.get("molecule_structures") or {}
                 smiles  = structs.get("canonical_smiles", "")
                 cid     = mol.get("molecule_chembl_id", "")
                 if smiles and cid:
                     results.append({"smiles": smiles, "zinc_id": cid})
-            return results
+            return results, total
     except Exception as e:
         print(f"  [WARN] ChEMBL page offset={offset} failed: {e}")
-    return []
+    return [], -1
 
 
-def fetch_chembl_compounds(target_count: int) -> list[dict]:
-    """Fetch up to target_count*2 compounds from ChEMBL (for filter attrition)."""
+# ── Mode definitions ────────────────────────────────────────────────────────
+CHEMBL_MODES = {
+    "druglike": {
+        "label":        "ChEMBL drug-like (~1.9M)",
+        "extra_params": {},
+    },
+    "approved": {
+        "label":        "FDA/EMA approved drugs (phase 4)",
+        "extra_params": {"max_phase": 4},
+    },
+    "antiparasitic": {
+        "label":        "ATC-P antiparasitic drugs",
+        "extra_params": {"max_phase": 4, "atc_classifications__level1": "P"},
+    },
+}
+
+
+def fetch_chembl_compounds(target_count: int, start_offset: int = 0,
+                           mode: str = "druglike") -> list[dict]:
+    """
+    Fetch up to target_count*2 raw compounds from ChEMBL.
+    start_offset: skip first N raw compounds (use to extend library efficiently).
+    mode: 'druglike' | 'approved' | 'antiparasitic'
+    """
+    extra    = CHEMBL_MODES.get(mode, CHEMBL_MODES["druglike"])["extra_params"]
+    label    = CHEMBL_MODES.get(mode, CHEMBL_MODES["druglike"])["label"]
     compounds  = []
-    offset     = 0
+    offset     = start_offset
     per_page   = 200
     fetch_goal = target_count * 2
     page       = 1
-    print(f"\n  Fetching ChEMBL drug-like compounds...")
+    total_avail = -1
+
+    print(f"\n  Fetching {label} compounds...")
+    if start_offset:
+        print(f"  Starting at offset {start_offset} (skipping first {start_offset} raw)")
+
     while len(compounds) < fetch_goal:
-        batch = fetch_chembl_page(offset, per_page)
+        batch, total = fetch_chembl_page(offset, per_page, extra)
+        if total_avail == -1 and total > 0:
+            total_avail = total
+            print(f"  Total available in ChEMBL: {total_avail:,}")
         if not batch:
             print(f"  ChEMBL exhausted at offset {offset} ({len(compounds)} fetched)")
             break
         compounds.extend(batch)
-        print(f"  Page {page}: +{len(batch)} → {len(compounds)} total")
+        print(f"  Page {page} (offset {offset}): +{len(batch)} → {len(compounds)} total")
         offset  += per_page
         page    += 1
         time.sleep(REQUEST_DELAY)
@@ -221,26 +270,34 @@ def smiles_to_pdbqt(smiles: str, zinc_id: str, out_path: str) -> bool:
 
 
 def download_and_prep(target_count: int, ligands_dir: str,
-                      resume: bool = True, source: str = "chembl") -> int:
+                      resume: bool = True, source: str = "chembl",
+                      mode: str = "druglike",
+                      start_offset: int = 0) -> int:
     """
     Download lead-like compounds and convert to PDBQT.
-    source: "chembl" (default, reliable) or "zinc" (fallback)
+    source:       "chembl" (default, reliable) or "zinc" (fallback)
+    mode:         "druglike" | "approved" | "antiparasitic"
+    start_offset: skip first N raw ChEMBL compounds (efficient extension)
     Returns number of compounds successfully prepared.
     """
     os.makedirs(ligands_dir, exist_ok=True)
 
     # Count already prepared
     existing = [f for f in os.listdir(ligands_dir) if f.endswith(".pdbqt")]
-    if resume and len(existing) >= target_count:
+    if resume and len(existing) >= target_count and mode == "druglike":
         print(f"  Already have {len(existing)} ligands — skipping download")
         return len(existing)
-    start_from = len(existing) if resume else 0
-    print(f"  Target: {target_count} | Already prepared: {start_from}")
+    # For non-druglike modes (approved/antiparasitic): quota counts NEW files of that
+    # mode only; existing druglike files don't count toward target_count.
+    start_from = (len(existing) if (resume and mode == "druglike") else 0)
+    print(f"  Target: {target_count} | Existing in dir: {len(existing)} | Mode: {mode}")
 
     compounds = []
 
     if source in ("chembl", "auto"):
-        compounds = fetch_chembl_compounds(target_count)
+        compounds = fetch_chembl_compounds(target_count,
+                                           start_offset=start_offset,
+                                           mode=mode)
 
     if not compounds and source in ("zinc", "auto"):
         print(f"\n  Fetching ZINC20 lead-like compounds (API)...")
@@ -354,27 +411,42 @@ def tranche_to_pdbqt(gz_path: str, ligands_dir: str,
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description=__doc__.strip().split("\n\n")[0])
     parser.add_argument("--count",  type=int, default=5000,
-                        help="Target number of compounds")
+                        help="Target number of PDBQT compounds (default 5000)")
     parser.add_argument("--fast",   action="store_true",
                         help="Download 500 only (smoke test)")
     parser.add_argument("--no-resume", action="store_true",
                         help="Redownload even if files exist")
     parser.add_argument("--tranche-mode", action="store_true",
-                        help="Try ZINC20 prebuilt 3D tranche files (faster)")
+                        help="Try ZINC20 prebuilt 3D tranche files (faster, often down)")
     parser.add_argument("--source", choices=["chembl", "zinc", "auto"],
                         default="chembl",
-                        help="Compound source: chembl (default), zinc, or auto")
+                        help="Compound source (default: chembl; zinc often down)")
+    parser.add_argument("--mode",   choices=list(CHEMBL_MODES.keys()),
+                        default="druglike",
+                        help="ChEMBL query mode: druglike (1.9M), approved (3126 FDA), "
+                             "antiparasitic (101 ATC-P) — default: druglike")
+    parser.add_argument("--start-offset", type=int, default=0, metavar="N",
+                        help="Skip first N raw ChEMBL compounds; use to extend library "
+                             "without re-fetching already-seen compounds. "
+                             "Current library offset ≈ count×2 (e.g. 4509 PDBQTs ← "
+                             "offset 0–~10000; next batch: --start-offset 10000)")
     args = parser.parse_args()
 
-    count      = 500 if args.fast else args.count
+    count       = 500 if args.fast else args.count
     ligands_dir = os.path.join(DOCKING_DIR, "ligands_pdbqt")
 
     src_label = {"chembl": "ChEMBL", "zinc": "ZINC20", "auto": "ChEMBL→ZINC20"}[args.source]
+    mode_info = CHEMBL_MODES.get(args.mode, {})
     print(f"\n{'='*60}")
     print(f"Compound Download + Preparation  [{src_label}]")
-    print(f"Target: {count} lead-like compounds")
+    print(f"Mode:   {args.mode} — {mode_info.get('label','')}")
+    print(f"Target: {count} PDBQT compounds")
+    if args.start_offset:
+        print(f"Start offset: {args.start_offset} (skipping first {args.start_offset} raw)")
     print(f"Output: {ligands_dir}")
     print(f"{'='*60}")
 
@@ -400,7 +472,9 @@ if __name__ == "__main__":
     else:
         n = download_and_prep(count, ligands_dir,
                               resume=not args.no_resume,
-                              source=args.source)
+                              source=args.source,
+                              mode=args.mode,
+                              start_offset=args.start_offset)
         print(f"\nTotal: {n} ligands ready in {ligands_dir}")
 
     # Write a simple SDF of SMILES too (for reference)
