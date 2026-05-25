@@ -162,30 +162,50 @@ def write_control(signal: str):
 
 
 # ── Target discovery ─────────────────────────────────────────────────────────
+def has_vina_conf(acc: str) -> bool:
+    """True if target has either _vina.conf or _vina_campaign.conf."""
+    return (os.path.exists(os.path.join(DOCKING_DIR, f"{acc}_vina.conf")) or
+            os.path.exists(os.path.join(DOCKING_DIR, f"{acc}_vina_campaign.conf")))
+
+
 def load_targets() -> list[str]:
     """
     Read target accessions from final_targets.json -- never hardcoded.
-    Falls back to scanning docking dir for *_vina.conf files.
+    Accepts targets with either _vina.conf or _vina_campaign.conf.
+    Full-proteome targets (not in final_targets.json) are added by scanning
+    the docking dir for *_vina_campaign.conf files not already in the list.
     """
+    accs_seen = set()
+    accessions = []
+
+    # Primary: final_targets.json (reviewed / scored targets)
     targets_path = os.path.join(RESULTS_DIR,
                                 f"{PRIMARY_SPECIES}_final_targets.json")
     if os.path.exists(targets_path):
         with open(targets_path) as f:
             targets = json.load(f)
-        # Only include targets that have a vina config (ready to dock)
-        accessions = []
         for t in targets:
-            acc  = t.get("accession", "")
-            conf = os.path.join(DOCKING_DIR, f"{acc}_vina.conf")
-            pdb  = t.get("pdb_path", "")
-            if acc and os.path.exists(conf):
+            acc = t.get("accession", "")
+            if acc and has_vina_conf(acc) and acc not in accs_seen:
                 accessions.append(acc)
-        if accessions:
-            return accessions
+                accs_seen.add(acc)
 
-    # Fallback: scan for existing vina.conf files
-    confs = glob.glob(os.path.join(DOCKING_DIR, "*_vina.conf"))
-    return [os.path.basename(c).replace("_vina.conf", "") for c in sorted(confs)]
+    # Supplement: any *_vina_campaign.conf not already included
+    # (full-proteome targets generated without a corresponding final_targets entry)
+    for conf in sorted(glob.glob(os.path.join(DOCKING_DIR, "*_vina_campaign.conf"))):
+        acc = os.path.basename(conf).replace("_vina_campaign.conf", "")
+        if acc not in accs_seen:
+            accessions.append(acc)
+            accs_seen.add(acc)
+
+    # Also plain _vina.conf targets not captured above
+    for conf in sorted(glob.glob(os.path.join(DOCKING_DIR, "*_vina.conf"))):
+        acc = os.path.basename(conf).replace("_vina.conf", "")
+        if acc not in accs_seen:
+            accessions.append(acc)
+            accs_seen.add(acc)
+
+    return accessions
 
 
 # ── Ligand batch management ───────────────────────────────────────────────────
@@ -253,7 +273,9 @@ def fix_conf(conf_path: str, receptor_pdbqt: str) -> str:
             fixed.append(f"receptor = {receptor_pdbqt}\n")
         else:
             fixed.append(line)
-    tmp = conf_path.replace("_vina.conf", "_vina_campaign.conf")
+    # Normalize: whether input is *_vina.conf or *_vina_campaign.conf, output is *_vina_campaign.conf
+    base = conf_path.replace("_vina_campaign.conf", "_vina.conf")
+    tmp  = base.replace("_vina.conf", "_vina_campaign.conf")
     with open(tmp, "w") as f:
         f.writelines(fixed)
     return tmp
@@ -302,10 +324,12 @@ def dock_target_batch(target: str, batch_ligands: list[str],
         result["status"] = "failed"
         return result
 
-    # Vina config
+    # Vina config — prefer plain _vina.conf, fall back to _vina_campaign.conf
     conf_src = os.path.join(DOCKING_DIR, f"{target}_vina.conf")
     if not os.path.exists(conf_src):
-        result["error"]  = "vina.conf not found"
+        conf_src = os.path.join(DOCKING_DIR, f"{target}_vina_campaign.conf")
+    if not os.path.exists(conf_src):
+        result["error"]  = "vina.conf not found (neither _vina.conf nor _vina_campaign.conf)"
         result["status"] = "failed"
         return result
     conf = fix_conf(conf_src, receptor)
