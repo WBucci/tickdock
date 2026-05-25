@@ -47,38 +47,80 @@ TARGET_SPECIES = ["amblyomma_americanum", "dermacentor_variabilis"]
 
 
 def get_fasta_path(species: str) -> str:
-    return os.path.join(PROTEOME_DIR, f"{species}_reviewed.fasta")
+    return os.path.join(PROTEOME_DIR, f"{species}_all.fasta")
 
 
 def download_proteome_fasta(species: str, taxon_id: str) -> str | None:
-    """Download reviewed UniProt FASTA for a species if not cached."""
+    """
+    Download the full UniProt proteome FASTA for a species (all entries,
+    not just reviewed). Uses cursor-based pagination to retrieve all pages.
+    Cached: skips download if file already exists and is > 10 KB.
+    """
     fasta_path = get_fasta_path(species)
-    if os.path.exists(fasta_path) and os.path.getsize(fasta_path) > 1000:
-        print(f"    Using cached: {os.path.basename(fasta_path)}")
+    if os.path.exists(fasta_path) and os.path.getsize(fasta_path) > 10_000:
+        n_cached = open(fasta_path).read().count(">")
+        print(f"    Using cached: {os.path.basename(fasta_path)} ({n_cached} seqs)")
         return fasta_path
 
-    print(f"    Downloading {species} proteome (reviewed)...")
-    url = "https://rest.uniprot.org/uniprotkb/search"
-    params = {
-        "query":  f"taxonomy_id:{taxon_id} AND reviewed:true",
+    print(f"    Downloading {species} full proteome from UniProt...")
+    url     = "https://rest.uniprot.org/uniprotkb/search"
+    headers = {"User-Agent": f"TickDock/2.0 ({BLAST_EMAIL})"}
+    params  = {
+        "query":  f"taxonomy_id:{taxon_id}",   # all entries, not just reviewed
         "format": "fasta",
-        "size":   500,
+        "size":   500,                          # max per page
     }
+
+    all_fasta = []
+    page_num  = 0
+    next_url  = url
+
     try:
-        resp = requests.get(url, params=params,
-                            timeout=REQUEST_TIMEOUT * 2,
-                            headers={"User-Agent": f"TickDock/2.0 ({BLAST_EMAIL})"})
-        if resp.status_code == 200 and resp.text.strip().startswith(">"):
-            with open(fasta_path, "w") as f:
-                f.write(resp.text)
-            n_seqs = resp.text.count(">")
-            print(f"    Downloaded {n_seqs} sequences -> {fasta_path}")
-            return fasta_path
-        else:
-            print(f"    [WARN] Download failed ({resp.status_code})")
+        while next_url:
+            page_num += 1
+            if page_num == 1:
+                resp = requests.get(next_url, params=params, headers=headers,
+                                    timeout=REQUEST_TIMEOUT * 4)
+            else:
+                resp = requests.get(next_url, headers=headers,
+                                    timeout=REQUEST_TIMEOUT * 4)
+
+            if resp.status_code != 200:
+                print(f"    [WARN] Page {page_num} failed ({resp.status_code})")
+                break
+
+            page_text = resp.text.strip()
+            if page_text:
+                all_fasta.append(page_text)
+
+            # UniProt paginates via Link: <url>; rel="next" header
+            link_header = resp.headers.get("Link", "")
+            next_url = None
+            if 'rel="next"' in link_header:
+                # Extract URL from: <https://...>; rel="next"
+                for part in link_header.split(","):
+                    if 'rel="next"' in part:
+                        next_url = part.strip().split(";")[0].strip("<> ")
+                        break
+
+            n_page = page_text.count(">")
+            print(f"    Page {page_num}: {n_page} sequences", end="\r")
+            time.sleep(REQUEST_DELAY)
+
+        if not all_fasta:
+            print(f"\n    [WARN] No sequences downloaded for {species}")
+            return None
+
+        combined = "\n".join(all_fasta)
+        n_total  = combined.count(">")
+        with open(fasta_path, "w") as f:
+            f.write(combined + "\n")
+        print(f"\n    Downloaded {n_total} sequences ({page_num} pages) -> {fasta_path}")
+        return fasta_path
+
     except Exception as e:
-        print(f"    [WARN] Download error: {e}")
-    return None
+        print(f"\n    [WARN] Download error: {e}")
+        return None
 
 
 def make_blast_db(fasta_path: str) -> str | None:
@@ -360,36 +402,4 @@ def main():
                 writer.writerows(rows)
             print(f"Saved: {tsv_path}")
 
-        # Back-annotate final_targets.json so Methods can reference ortholog data
-        targets_path = os.path.join(RESULTS_DIR, "ixodes_scapularis_final_targets.json")
-        if os.path.exists(targets_path):
-            with open(targets_path) as f:
-                all_targets = json.load(f)
-            updated = 0
-            for t in all_targets:
-                acc = t.get("accession", "")
-                if acc in results:
-                    t["ortholog_result"] = {
-                        "pan_tick":         results[acc]["pan_tick"],
-                        "species_coverage": results[acc]["species_coverage"],
-                        "orthologs":        results[acc]["orthologs"],
-                    }
-                    updated += 1
-            with open(targets_path, "w") as f:
-                json.dump(all_targets, f, indent=2)
-            print(f"Back-annotated {updated} targets in final_targets.json")
-
-        # Summary
-        pan_tick_count = sum(1 for r in results.values() if r.get("pan_tick"))
-        print(f"\nSummary:")
-        print(f"  Targets analyzed:   {len(results)}")
-        print(f"  Pan-tick targets:   {pan_tick_count}  (>={args.identity}% identity both species)")
-        if pan_tick_count:
-            pan_targets = [acc for acc, r in results.items() if r.get("pan_tick")]
-            print(f"  Pan-tick accessions: {pan_targets}")
-        print(f"\n  Full results: {out_path}")
-        print(f"  Paper table:  {tsv_path}")
-
-
-if __name__ == "__main__":
-    main()
+        # Back-annotate 
