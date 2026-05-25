@@ -2,11 +2,7 @@
   "started": "2026-05-23T00:00:00",
   "batch_size": 2000,
   "batches_total": 3,
-  "batches_completed": [
-    0,
-    1,
-    2
-  ],
+  "batches_completed": [],
   "batches_failed": [],
   "total_ligands": 4509,
   "targets": [
@@ -160,9 +156,10 @@
       "completed_at": "2026-05-24T23:21:45.457087"
     }
   },
-  "total_batches_done": 3,
-  "cumulative_ligands": 4509,
-  "cumulative_hits": 2205,
-  "ligands_remaining": 0,
-  "last_updated": "2026-05-24T23:21:45.481763"
+  "total_batches_done": 0,
+  "cumulative_ligands": 0,
+  "cumulative_hits": 0,
+  "ligands_remaining": 4509,
+  "last_updated": "2026-05-24T23:21:45.481763",
+  "round": 2
 }

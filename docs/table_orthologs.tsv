@@ -1,3 +1,16 @@
 accession	seq_length	ambl_identity	ambl_coverage	ambl_call	derm_identity	derm_coverage	derm_call	pan_tick
 B7PBI5	303	61.462	99.3	Pan-tick ortholog	0		No hit	False
+B7PJS6	661	79.412	82.3	Pan-tick ortholog	0		No hit	False
 B7P877	152	91.447	100.0	Pan-tick ortholog	0		No hit	False
+B7QDG3	275	89.13	100.4	Pan-tick ortholog	0		No hit	False
+Q202J4	364	48.726	86.3	Putative ortholog	0		No hit	False
+Q4PMC9	234	82.979	100.4	Pan-tick ortholog	0		No hit	False
+B7Q1Q9	118	98.058	87.3	Pan-tick ortholog	0		No hit	False
+Q5Q995	135	76.829	60.7	Putative ortholog	0		No hit	False
+B7PXE3	648	67.445	99.1	Pan-tick ortholog	34.894	36.3	Distant homolog	False
+Q8MUP7	102	0		No hit	0		No hit	False
+B7PRF6	183	85.083	98.9	Pan-tick ortholog	0		No hit	False
+Q4PMB3	262	98.092	100.0	Pan-tick ortholog	0		No hit	False
+B7PKZ2	133	39.706	102.3	Distant homolog	51.899	59.4	Putative ortholog	False
+B7Q290	95	75.0	92.6	Pan-tick ortholog	0		No hit	False
+B7PY76	425	75.765	100.0	Pan-tick ortholog	33.523	41.4	Distant homolog	False
