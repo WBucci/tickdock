@@ -450,3 +450,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+) and r.get("species_coverage", 0) >= 1)
+        no_ortholog_count  = len(results) - pan_tick_count - species_spec_count
+        print(f"\nSummary:")
+        print(f"  Targets analyzed:      {len(results)}")
+        print(f"  Pan-tick (all 3):      {pan_tick_count}  "
+              f"(>={args.identity}% identity in both other species)")
+        print(f"  Species-specific:      {species_spec_count}  "
+              f"(conserved in 1 other species -- still valid leads)")
+        print(f"  I. scapularis only:    {no_ortholog_count}  "
+              f"(no strong ortholog found -- Ixodes-specific lead)")
+        if pan_tick_count:
+            pan_targets = [acc for acc, r in results.items() if r.get("pan_tick")]
+            print(f"  Pan-tick accessions:   {pan_targets}")
+        print(f"\n  Full results: {out_path}")
+        print(f"  Paper table:  {tsv_path}")
+
+
+if __name__ == "__main__":
+    main()

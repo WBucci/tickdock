@@ -3,7 +3,9 @@
   "batch_size": 2000,
   "batches_total": 3,
   "batches_completed": [
-    0
+    0,
+    1,
+    2
   ],
   "batches_failed": [],
   "total_ligands": 4509,
@@ -86,11 +88,81 @@
       ],
       "elapsed_s": 5420.3,
       "completed_at": "2026-05-23T01:19:45.392106"
+    },
+    "1": {
+      "n_ligands": 2000,
+      "n_ok": 25,
+      "n_failed": 0,
+      "total_hits": 615,
+      "top_5": [
+        {
+          "score": -11.885,
+          "target": "B7P5E9",
+          "ligand": "CHEMBL429008"
+        },
+        {
+          "score": -11.785,
+          "target": "B7PY20",
+          "ligand": "CHEMBL429379"
+        },
+        {
+          "score": -11.275,
+          "target": "A0A4D5RNM5",
+          "ligand": "CHEMBL429202"
+        },
+        {
+          "score": -11.176,
+          "target": "B7PMS2",
+          "ligand": "CHEMBL429202"
+        },
+        {
+          "score": -10.521,
+          "target": "A0A4D5RMV5",
+          "ligand": "CHEMBL430152"
+        }
+      ],
+      "elapsed_s": 1744.3,
+      "completed_at": "2026-05-24T22:35:41.909124"
+    },
+    "2": {
+      "n_ligands": 509,
+      "n_ok": 25,
+      "n_failed": 0,
+      "total_hits": 1547,
+      "top_5": [
+        {
+          "score": -13.125,
+          "target": "B7P5E9",
+          "ligand": "CHEMBL9171"
+        },
+        {
+          "score": -11.785,
+          "target": "B7PY20",
+          "ligand": "CHEMBL429379"
+        },
+        {
+          "score": -11.275,
+          "target": "A0A4D5RNM5",
+          "ligand": "CHEMBL429202"
+        },
+        {
+          "score": -11.176,
+          "target": "B7PMS2",
+          "ligand": "CHEMBL429202"
+        },
+        {
+          "score": -10.868,
+          "target": "A0A4D5RDE4",
+          "ligand": "CHEMBL9250"
+        }
+      ],
+      "elapsed_s": 2753.3,
+      "completed_at": "2026-05-24T23:21:45.457087"
     }
   },
-  "total_batches_done": 1,
-  "cumulative_ligands": 2000,
-  "cumulative_hits": 43,
-  "ligands_remaining": 2509,
-  "last_updated": "2026-05-25T02:01:52.315216"
+  "total_batches_done": 3,
+  "cumulative_ligands": 4509,
+  "cumulative_hits": 2205,
+  "ligands_remaining": 0,
+  "last_updated": "2026-05-24T23:21:45.481763"
 }

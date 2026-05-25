@@ -179,4 +179,82 @@ Control signals (write to `logs/campaign_control.txt`):
 | `logs/campaign_orchestrator.log` | Full orchestrator log |
 | `logs/pipeline_audit.json` | Machine-readable full audit trail |
 | `docs/methods_draft.txt` | Publication-ready Methods section (auto-generated) |
-| `docs/supplementary_S1_audit.txt` | S
+| `docs/supplementary_S1_audit.txt` | Supplementary reproducibility log |
+| `docs/table_orthologs.tsv` | Cross-species ortholog table for paper |
+| `docs/{species}_target_table.csv` | Target summary table for paper |
+
+---
+
+## Key Parameters
+
+All in `config.py`. Changing any value automatically updates the generated Methods text.
+
+| Parameter | Default | Meaning |
+|-----------|---------|---------|
+| `MIN_PLDDT` | 70 | AlphaFold per-residue confidence threshold |
+| `MIN_DRUGGABILITY_SCORE` | 0.5 | fpocket/DoGSiteScorer threshold (0–1) |
+| `MIN_POCKET_VOLUME` | 300 Å³ | Minimum useful binding pocket |
+| `MAX_HUMAN_HOMOLOGY` | 0.40 | BLAST identity above this → toxicity risk flag |
+| `VINA good_score` | −7.0 kcal/mol | Hit threshold |
+| `VINA excellent_score` | −9.0 kcal/mol | Lead candidate threshold |
+| `VINA exhaustiveness` | 8 | Search depth (4 = fast screen, 32 = publication) |
+| `PROMISCUOUS_THRESHOLD` | 0.80 | Fraction of targets hit → flagged as pan-assay binder |
+
+---
+
+## Roadmap
+
+- [x] Proteome download (UniProt REST)
+- [x] Novelty filter (PDB + ChEMBL + known-target exclusion)
+- [x] AlphaFold structure retrieval + pLDDT filtering
+- [x] fpocket pocket detection + allosteric site flagging
+- [x] P2Rank ML pocket prediction
+- [x] Local BLASTP selectivity vs human / dog / mouse proteomes
+- [x] PubMed RNAi essentiality search
+- [x] Lipinski + PAINS filter + ChEMBL compound library download
+- [x] AutoDock Vina 1.2.5 batch docking (parallel campaign orchestrator)
+- [x] Promiscuous binder detection and removal
+- [x] Auto-generated Methods section (publication prose)
+- [x] Cross-species ortholog analysis (pan-tick target identification)
+- [x] InterPro / UniProt annotation of unknown-function targets
+- [x] Figure generation scripts (score distributions, pocket visualizations)
+- [ ] VectorBase expression check (feeding-stage upregulation)
+- [ ] pkCSM ADMET pre-filter (API wired in config, not yet called)
+- [ ] GROMACS/OpenMM MD validation of top lead candidates
+- [ ] A. americanum + D. variabilis full pipeline runs
+- [ ] GPU acceleration (AutoDock-GPU / AMD ROCm — pending RDNA 4 WSL2 support)
+- [ ] Dog proteome BLAST DB expansion (currently 857 reviewed seqs; add TrEMBL)
+
+---
+
+## Publication Plan
+
+1. **Benchmark validation** — reproduce a published docking score to establish credibility
+2. **Full pipeline** — all 3 species, identify + rank unexplored targets
+3. **Docking screen** — 5,000–10,000 compound library vs top targets
+4. **Cross-species analysis** — identify pan-tick leads conserved ≥60% across all species
+5. **Preprint** on bioRxiv (timestamps the work, invites wet-lab collaborators)
+6. **Submit** to *PLOS ONE*, *Molecules* (MDPI), or *J. Cheminformatics*
+7. **Outreach** — contact tick biology labs for wet-lab validation of top leads
+
+---
+
+## APIs Used
+
+All free; only NCBI BLAST requires an email (not a key):
+
+| Service | URL |
+|---------|-----|
+| UniProt | `rest.uniprot.org/uniprotkb` |
+| AlphaFold | `alphafold.ebi.ac.uk/api/prediction` |
+| ChEMBL (compounds) | `www.ebi.ac.uk/chembl/api/data/molecule` |
+| NCBI BLAST (web fallback) | `blast.ncbi.nlm.nih.gov` |
+| NCBI PubMed | `eutils.ncbi.nlm.nih.gov` |
+| DoGSiteScorer | `proteins.plus/api/dogsite_rest` |
+| ZINC20 (fallback) | `zinc20.docking.org` (API unreliable; ChEMBL used by default) |
+
+---
+
+## License
+
+MIT

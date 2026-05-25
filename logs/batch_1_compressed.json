@@ -1,0 +1,9577 @@
+{
+  "batch_id": 1,
+  "score_threshold": -7.0,
+  "n_pruned": 1191,
+  "n_kept": 722,
+  "mb_freed": 27.6,
+  "dry_run": false,
+  "pruned": [
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428166",
+      "score": -6.545
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428337",
+      "score": -6.832
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428999",
+      "score": -6.861
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429048",
+      "score": -6.76
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429405",
+      "score": -6.556
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429954",
+      "score": -6.78
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430330",
+      "score": -6.545
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL432",
+      "score": -6.577
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428159",
+      "score": -6.999
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428166",
+      "score": -5.489
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428175",
+      "score": -6.707
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428302",
+      "score": -6.045
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428309",
+      "score": -6.016
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428337",
+      "score": -4.335
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428340",
+      "score": -6.44
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428357",
+      "score": -6.581
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428478",
+      "score": -6.034
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428479",
+      "score": -5.957
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428491",
+      "score": -6.731
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428508",
+      "score": -6.239
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428650",
+      "score": -4.645
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428658",
+      "score": -6.996
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428672",
+      "score": -5.615
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428826",
+      "score": -6.484
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428839",
+      "score": -6.432
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428840",
+      "score": -6.369
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428999",
+      "score": -5.687
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429006",
+      "score": -6.932
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429009",
+      "score": -6.302
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429023",
+      "score": -6.65
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429048",
+      "score": -5.603
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429203",
+      "score": -6.597
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429244",
+      "score": -6.842
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429379",
+      "score": -6.739
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429405",
+      "score": -5.051
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429563",
+      "score": -6.934
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429950",
+      "score": -5.567
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429954",
+      "score": -5.94
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430086",
+      "score": -6.172
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430108",
+      "score": -6.076
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430110",
+      "score": -6.364
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430136",
+      "score": -6.319
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430283",
+      "score": -6.935
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430286",
+      "score": -6.566
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430310",
+      "score": -6.402
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430330",
+      "score": -4.872
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430",
+      "score": -6.185
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL431",
+      "score": -6.101
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL432658",
+      "score": -5.747
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL432",
+      "score": -4.629
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428166",
+      "score": -6.598
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428309",
+      "score": -6.717
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428337",
+      "score": -6.064
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428478",
+      "score": -5.759
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428644",
+      "score": -6.879
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428650",
+      "score": -5.408
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428672",
+      "score": -5.671
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428840",
+      "score": -6.832
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428999",
+      "score": -6.934
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429048",
+      "score": -5.814
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429244",
+      "score": -6.52
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429379",
+      "score": -6.915
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429405",
+      "score": -6.575
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429954",
+      "score": -5.593
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430136",
+      "score": -4.726
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430152",
+      "score": -6.765
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430283",
+      "score": -6.263
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430310",
+      "score": -6.661
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430330",
+      "score": -6.873
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430",
+      "score": -6.961
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL431",
+      "score": -6.696
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL432658",
+      "score": -6.946
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL432",
+      "score": -6.067
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428166",
+      "score": -6.889
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428337",
+      "score": -6.179
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428650",
+      "score": -6.453
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428672",
+      "score": -6.462
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429405",
+      "score": -6.555
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL432",
+      "score": -5.838
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428145",
+      "score": -6.421
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428159",
+      "score": -6.437
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428166",
+      "score": -4.517
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428175",
+      "score": -6.548
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428302",
+      "score": -5.903
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428309",
+      "score": -5.828
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428337",
+      "score": -4.359
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428340",
+      "score": -5.543
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428357",
+      "score": -6.132
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428478",
+      "score": -5.325
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428479",
+      "score": -5.701
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428480",
+      "score": -5.805
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428482",
+      "score": -6.335
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428491",
+      "score": -5.117
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428508",
+      "score": -5.464
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428644",
+      "score": -6.295
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428650",
+      "score": -4.687
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428658",
+      "score": -6.404
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428672",
+      "score": -4.947
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428826",
+      "score": -5.647
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428839",
+      "score": -6.152
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428840",
+      "score": -5.567
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL428999",
+      "score": -5.212
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429006",
+      "score": -6.332
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429008",
+      "score": -5.966
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429009",
+      "score": -5.4
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429023",
+      "score": -6.798
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429048",
+      "score": -5.01
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429203",
+      "score": -5.361
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429244",
+      "score": -6.391
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429379",
+      "score": -6.022
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429401",
+      "score": -6.23
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429405",
+      "score": -4.708
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429555",
+      "score": -5.908
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429563",
+      "score": -6.276
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429614",
+      "score": -6.591
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429950",
+      "score": -5.524
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429951",
+      "score": -6.582
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429954",
+      "score": -5.481
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429",
+      "score": -6.535
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430086",
+      "score": -5.413
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430108",
+      "score": -5.494
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430110",
+      "score": -5.697
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430136",
+      "score": -5.284
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430283",
+      "score": -5.728
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430286",
+      "score": -5.505
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430310",
+      "score": -5.273
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430314",
+      "score": -4.915
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430330",
+      "score": -4.522
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430",
+      "score": -5.751
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL431",
+      "score": -5.397
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL432658",
+      "score": -5.714
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL432",
+      "score": -4.267
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL43",
+      "score": -6.471
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428159",
+      "score": -5.197
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428166",
+      "score": -6.954
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428337",
+      "score": -5.225
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428478",
+      "score": -6.886
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428650",
+      "score": -5.297
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428672",
+      "score": -6.248
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428840",
+      "score": -6.807
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428999",
+      "score": -6.947
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429008",
+      "score": -6.583
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429009",
+      "score": -6.538
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429023",
+      "score": 1.332
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429048",
+      "score": -6.61
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429244",
+      "score": -6.559
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429379",
+      "score": -0.861
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429405",
+      "score": -6.372
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429614",
+      "score": -6.236
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430110",
+      "score": -6.857
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430136",
+      "score": -4.12
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430152",
+      "score": -5.029
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430283",
+      "score": -5.234
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430330",
+      "score": -6.452
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430",
+      "score": -4.279
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL432658",
+      "score": -6.592
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL432",
+      "score": -5.097
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428166",
+      "score": -4.706
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428175",
+      "score": -6.423
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428302",
+      "score": -6.816
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428309",
+      "score": -6.731
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428337",
+      "score": -5.447
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428340",
+      "score": -6.344
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428357",
+      "score": -6.986
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428478",
+      "score": -5.922
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428479",
+      "score": -6.84
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428491",
+      "score": -6.686
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428644",
+      "score": -4.499
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428650",
+      "score": -4.803
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428672",
+      "score": -5.198
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428840",
+      "score": -6.308
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428999",
+      "score": -6.496
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429009",
+      "score": -6.531
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429023",
+      "score": -6.187
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429048",
+      "score": -6.218
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429203",
+      "score": -5.69
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429379",
+      "score": -5.984
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429401",
+      "score": -6.852
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429405",
+      "score": -5.775
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429555",
+      "score": -6.614
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429950",
+      "score": -6.711
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429954",
+      "score": -5.529
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430086",
+      "score": -6.674
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430108",
+      "score": -6.565
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430136",
+      "score": -2.251
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430152",
+      "score": -6.622
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430283",
+      "score": -4.604
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430310",
+      "score": -6.751
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430330",
+      "score": -4.933
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430",
+      "score": -5.606
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL431",
+      "score": -6.291
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL432658",
+      "score": -5.384
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL432",
+      "score": -5.282
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428145",
+      "score": -6.168
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428159",
+      "score": -6.301
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428166",
+      "score": -5.141
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428175",
+      "score": -4.494
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428302",
+      "score": -5.574
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428309",
+      "score": -5.475
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428337",
+      "score": -5.106
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428340",
+      "score": -5.553
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428357",
+      "score": -6.671
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428478",
+      "score": -5.49
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428479",
+      "score": -6.351
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428482",
+      "score": -5.446
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428491",
+      "score": -5.084
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428508",
+      "score": -6.307
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428644",
+      "score": -5.39
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428650",
+      "score": -3.931
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428658",
+      "score": -4.757
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428672",
+      "score": -5.214
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428826",
+      "score": -6.336
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428839",
+      "score": -6.658
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428840",
+      "score": -5.814
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428999",
+      "score": -5.187
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429006",
+      "score": -6.759
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429008",
+      "score": -5.393
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429009",
+      "score": -5.809
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429023",
+      "score": -4.083
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429048",
+      "score": -4.877
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429202",
+      "score": -5.876
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429203",
+      "score": -5.062
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429244",
+      "score": -6.226
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429379",
+      "score": -3.373
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429401",
+      "score": -5.899
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429405",
+      "score": -4.741
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429555",
+      "score": -6.205
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429563",
+      "score": -6.684
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429614",
+      "score": -6.055
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429950",
+      "score": -5.865
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429951",
+      "score": -6.365
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429954",
+      "score": -5.307
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429",
+      "score": -6.755
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430086",
+      "score": -5.794
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430108",
+      "score": -4.991
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430110",
+      "score": -5.393
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430136",
+      "score": -5.971
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430152",
+      "score": -3.594
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430283",
+      "score": -4.622
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430286",
+      "score": -5.827
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430310",
+      "score": -5.755
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430314",
+      "score": -6.966
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430330",
+      "score": -5.266
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL430",
+      "score": -5.217
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL431",
+      "score": -6.006
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL432658",
+      "score": -4.962
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL432",
+      "score": -5.39
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL43",
+      "score": -6.547
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428159",
+      "score": -6.64
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428166",
+      "score": -4.931
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428175",
+      "score": -5.154
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428302",
+      "score": -6.018
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428309",
+      "score": -6.423
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428337",
+      "score": -5.377
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428340",
+      "score": -6.656
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428478",
+      "score": -6.326
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428479",
+      "score": -6.895
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428482",
+      "score": -6.865
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428491",
+      "score": -6.293
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428508",
+      "score": -6.514
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428644",
+      "score": -6.621
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428650",
+      "score": -5.922
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428672",
+      "score": -4.497
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428826",
+      "score": -6.526
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428840",
+      "score": -5.336
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429008",
+      "score": -6.572
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429009",
+      "score": -5.829
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429023",
+      "score": -6.1
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429048",
+      "score": -5.139
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429188",
+      "score": -6.556
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429202",
+      "score": -6.241
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429203",
+      "score": -5.624
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429244",
+      "score": -5.65
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429379",
+      "score": -5.268
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429401",
+      "score": -5.912
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429405",
+      "score": -5.652
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429555",
+      "score": -6.241
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429563",
+      "score": -6.019
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429614",
+      "score": -6.458
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429950",
+      "score": -5.439
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429951",
+      "score": -6.82
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429954",
+      "score": -5.297
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429",
+      "score": -6.685
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430086",
+      "score": -5.032
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430108",
+      "score": -6.747
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430136",
+      "score": -5.148
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430152",
+      "score": -6.465
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430283",
+      "score": -5.153
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430286",
+      "score": -5.855
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430310",
+      "score": -4.79
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430330",
+      "score": -4.741
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430",
+      "score": -4.664
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL431",
+      "score": -5.786
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL432658",
+      "score": -5.844
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL432",
+      "score": -5.807
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL43",
+      "score": -6.065
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428166",
+      "score": -6.179
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428302",
+      "score": -6.707
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428337",
+      "score": -5.159
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428357",
+      "score": -6.961
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428478",
+      "score": -6.742
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428479",
+      "score": -6.934
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428491",
+      "score": -6.693
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428650",
+      "score": -5.05
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428839",
+      "score": -6.816
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428999",
+      "score": -6.032
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429048",
+      "score": -6.501
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429405",
+      "score": -5.67
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429950",
+      "score": -6.198
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429",
+      "score": -6.739
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430086",
+      "score": -6.741
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430108",
+      "score": -6.343
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430286",
+      "score": -6.655
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430330",
+      "score": -5.862
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL432658",
+      "score": -6.85
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL432",
+      "score": -5.192
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428337",
+      "score": -5.864
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428650",
+      "score": -6.415
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429405",
+      "score": -6.945
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL432",
+      "score": -6.021
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428166",
+      "score": -5.674
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428175",
+      "score": -6.905
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428302",
+      "score": -6.759
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428309",
+      "score": -6.243
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428337",
+      "score": -6.01
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428340",
+      "score": -6.796
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428480",
+      "score": -6.71
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428644",
+      "score": -6.925
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428650",
+      "score": -5.277
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428658",
+      "score": -6.772
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428672",
+      "score": -5.554
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428840",
+      "score": -6.822
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428999",
+      "score": -6.31
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429009",
+      "score": -5.947
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429023",
+      "score": -6.192
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429048",
+      "score": -5.836
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429203",
+      "score": -6.355
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429244",
+      "score": -6.395
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429405",
+      "score": -6.204
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429555",
+      "score": -5.621
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429950",
+      "score": -6.785
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429954",
+      "score": -6.077
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429",
+      "score": -6.806
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430086",
+      "score": -6.721
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430108",
+      "score": -6.522
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430110",
+      "score": -6.535
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430136",
+      "score": -5.475
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430283",
+      "score": -6.974
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430310",
+      "score": -6.117
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430330",
+      "score": -6.328
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430",
+      "score": -6.658
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL431",
+      "score": -6.895
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL432658",
+      "score": -5.827
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL432",
+      "score": -5.529
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL11",
+      "score": -6.006
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL12",
+      "score": -6.261
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL204146",
+      "score": -6.888
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL262570",
+      "score": -6.729
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL263075",
+      "score": -6.192
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL263080",
+      "score": -6.065
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL263081",
+      "score": -6.576
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL263881",
+      "score": -6.794
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL263883",
+      "score": -5.968
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL265621",
+      "score": -5.423
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL265663",
+      "score": -6.756
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL265664",
+      "score": -5.895
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266064",
+      "score": -6.151
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266084",
+      "score": -5.769
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266198",
+      "score": -5.983
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266220",
+      "score": -6.15
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266221",
+      "score": -6.296
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266279",
+      "score": -6.953
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266316",
+      "score": -6.447
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266430",
+      "score": -6.287
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266458",
+      "score": -6.788
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266483",
+      "score": -6.782
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266541",
+      "score": -6.045
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266572",
+      "score": -5.743
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266661",
+      "score": -6.48
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266685",
+      "score": -5.497
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266706",
+      "score": -5.836
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266707",
+      "score": -6.179
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266708",
+      "score": -5.864
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266798",
+      "score": -6.844
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266799",
+      "score": -6.755
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266800",
+      "score": -6.473
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266801",
+      "score": -6.603
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266957",
+      "score": -6.711
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267036",
+      "score": -6.249
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267126",
+      "score": -6.939
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267127",
+      "score": -5.687
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267191",
+      "score": -5.995
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267229",
+      "score": -6.372
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267230",
+      "score": -6.01
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267358",
+      "score": -6.566
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267456",
+      "score": -6.36
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267599",
+      "score": -5.809
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267626",
+      "score": -5.725
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267627",
+      "score": -5.968
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267628",
+      "score": -6.008
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267678",
+      "score": -6.882
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267833",
+      "score": -6.408
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267834",
+      "score": -6.339
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267915",
+      "score": -6.011
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267938",
+      "score": -5.8
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268070",
+      "score": -5.976
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268099",
+      "score": -5.867
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268150",
+      "score": -6.481
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268176",
+      "score": -6.059
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268292",
+      "score": -6.946
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268340",
+      "score": -6.03
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268454",
+      "score": -6.742
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268455",
+      "score": -6.018
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268529",
+      "score": -6.491
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268530",
+      "score": -6.629
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268567",
+      "score": -6.398
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268598",
+      "score": -5.991
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268626",
+      "score": -5.586
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268667",
+      "score": -6.838
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268689",
+      "score": -5.717
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268690",
+      "score": -5.586
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268691",
+      "score": -5.883
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268768",
+      "score": -6.592
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268769",
+      "score": -6.811
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268830",
+      "score": -5.998
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268831",
+      "score": -5.882
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268887",
+      "score": -6.366
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268889",
+      "score": -6.791
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269002",
+      "score": -5.875
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269003",
+      "score": -5.87
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269004",
+      "score": -4.684
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269056",
+      "score": -5.39
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269057",
+      "score": -6.346
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269073",
+      "score": -5.456
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269074",
+      "score": -6.16
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269075",
+      "score": -6.498
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269236",
+      "score": -6.378
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL269264",
+      "score": -6.851
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428166",
+      "score": -5.587
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428175",
+      "score": -4.862
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428309",
+      "score": -6.808
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428337",
+      "score": -5.123
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428340",
+      "score": -5.24
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428478",
+      "score": -5.904
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428482",
+      "score": -5.926
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428491",
+      "score": -5.497
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428508",
+      "score": -5.66
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428644",
+      "score": -0.326
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428650",
+      "score": -5.431
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428672",
+      "score": -1.704
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428840",
+      "score": -4.613
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428999",
+      "score": -6.176
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429006",
+      "score": -6.677
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429008",
+      "score": -4.962
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429009",
+      "score": -3.258
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429023",
+      "score": -0.427
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429048",
+      "score": -5.97
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429202",
+      "score": -4.899
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429244",
+      "score": -1.642
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429379",
+      "score": -1.86
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429401",
+      "score": -5.792
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429405",
+      "score": -5.681
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429555",
+      "score": -6.721
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429614",
+      "score": -3.901
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429950",
+      "score": -6.671
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429951",
+      "score": -5.261
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429954",
+      "score": -6.598
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430086",
+      "score": -6.026
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430108",
+      "score": -6.678
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430136",
+      "score": -0.768
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430152",
+      "score": -1.344
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430283",
+      "score": -2.02
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430310",
+      "score": -6.856
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430314",
+      "score": -6.105
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430330",
+      "score": -5.496
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430",
+      "score": -5.199
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL431",
+      "score": -4.918
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL432658",
+      "score": -5.056
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL432",
+      "score": -5.099
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL43",
+      "score": -5.858
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL112998",
+      "score": -6.678
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL11",
+      "score": -5.626
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL204146",
+      "score": -6.244
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL262570",
+      "score": -5.939
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL263076",
+      "score": -6.929
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL263079",
+      "score": -6.395
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL263080",
+      "score": -5.937
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL263081",
+      "score": -5.547
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL263881",
+      "score": -6.362
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL263882",
+      "score": -6.897
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL263883",
+      "score": -5.674
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL264097",
+      "score": -6.948
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL264721",
+      "score": -6.636
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL265410",
+      "score": -6.518
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL265621",
+      "score": -5.923
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL265663",
+      "score": -6.652
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL265664",
+      "score": -6.491
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL265667",
+      "score": -6.521
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266064",
+      "score": -5.929
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266065",
+      "score": -6.811
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266066",
+      "score": -6.681
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266084",
+      "score": -6.037
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266196",
+      "score": -6.879
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266198",
+      "score": -5.704
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266220",
+      "score": -5.658
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266221",
+      "score": -6.412
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266277",
+      "score": -6.046
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266315",
+      "score": -6.283
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266316",
+      "score": -6.072
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266430",
+      "score": -5.436
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266457",
+      "score": -6.712
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266458",
+      "score": -6.351
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266460",
+      "score": -6.407
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266484",
+      "score": -6.357
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266508",
+      "score": -6.427
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266509",
+      "score": -6.89
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266541",
+      "score": -5.723
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266544",
+      "score": -6.037
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266572",
+      "score": -5.473
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266661",
+      "score": -5.674
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266684",
+      "score": -6.428
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266685",
+      "score": -6.057
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266706",
+      "score": -6.656
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266707",
+      "score": -6.677
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266708",
+      "score": -5.806
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266798",
+      "score": -6.26
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266799",
+      "score": -5.788
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266800",
+      "score": -5.658
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266927",
+      "score": -6.781
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266957",
+      "score": -6.371
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267036",
+      "score": -6.497
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267125",
+      "score": -6.701
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267127",
+      "score": -5.809
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267164",
+      "score": -5.836
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267191",
+      "score": -6.301
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267229",
+      "score": -5.487
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267230",
+      "score": -6.369
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267358",
+      "score": -6.774
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267399",
+      "score": -6.796
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267456",
+      "score": -6.185
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267458",
+      "score": -6.136
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267599",
+      "score": -5.43
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267626",
+      "score": -5.202
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267627",
+      "score": -5.443
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267628",
+      "score": -6.798
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267678",
+      "score": -5.956
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267705",
+      "score": -6.737
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267833",
+      "score": -5.529
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267834",
+      "score": -6.004
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267863",
+      "score": -6.826
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267864",
+      "score": -6.588
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267914",
+      "score": -6.294
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267915",
+      "score": -5.406
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267938",
+      "score": -5.648
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268070",
+      "score": -5.221
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268097",
+      "score": -6.301
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268099",
+      "score": -5.744
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268116",
+      "score": -6.399
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268150",
+      "score": -5.907
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268174",
+      "score": -6.037
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268176",
+      "score": -5.528
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268311",
+      "score": -5.136
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268339",
+      "score": -6.15
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268340",
+      "score": -6.452
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268365",
+      "score": -6.578
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268387",
+      "score": -6.836
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268388",
+      "score": -6.854
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268454",
+      "score": -5.553
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268455",
+      "score": -6.07
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268528",
+      "score": -6.512
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268530",
+      "score": -5.96
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268567",
+      "score": -5.661
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268598",
+      "score": -5.808
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268626",
+      "score": -5.751
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268627",
+      "score": -6.734
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268667",
+      "score": -5.446
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268689",
+      "score": -5.649
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268690",
+      "score": -5.017
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268691",
+      "score": -5.866
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268768",
+      "score": -6.693
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268770",
+      "score": -6.949
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268830",
+      "score": -5.792
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268831",
+      "score": -5.829
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268855",
+      "score": -6.227
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268887",
+      "score": -6.49
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268888",
+      "score": -6.797
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268889",
+      "score": -6.894
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269002",
+      "score": -6.695
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269003",
+      "score": -5.913
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269004",
+      "score": -5.451
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269056",
+      "score": -4.982
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269057",
+      "score": -4.535
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269073",
+      "score": -5.713
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269074",
+      "score": -6.226
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269075",
+      "score": -6.028
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269236",
+      "score": -6.207
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL2",
+      "score": -6.584
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428166",
+      "score": -6.027
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428302",
+      "score": -6.218
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428309",
+      "score": -6.817
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428337",
+      "score": -5.775
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428357",
+      "score": -6.806
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428478",
+      "score": -6.415
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428479",
+      "score": -6.414
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428491",
+      "score": -6.63
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428650",
+      "score": -4.703
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428672",
+      "score": -6.103
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428826",
+      "score": -6.914
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428840",
+      "score": -6.819
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428999",
+      "score": -5.639
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429009",
+      "score": -6.347
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429048",
+      "score": -5.74
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429203",
+      "score": -6.806
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429405",
+      "score": -5.639
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429563",
+      "score": -6.938
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429950",
+      "score": -6.566
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429954",
+      "score": -6.596
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430086",
+      "score": -6.773
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430108",
+      "score": -5.924
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430110",
+      "score": -6.798
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430286",
+      "score": -6.489
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430310",
+      "score": -6.779
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430330",
+      "score": -5.92
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430",
+      "score": -6.449
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL431",
+      "score": -6.627
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL432658",
+      "score": -6.751
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL432",
+      "score": -4.795
+    },
+    {
+      "target": "B7PKZ2",
+      "ligand": "CHEMBL10",
+      "score": -6.536
+    },
+    {
+      "target": "B7PKZ2",
+      "ligand": "CHEMBL112998",
+      "score": -5.056
+    },
+    {
+      "target": "B7PKZ2",
+      "ligand": "CHEMBL11",
+      "score": -5.657
+    },
+    {
+      "target": "B7PKZ2",
+      "ligand": "CHEMBL12",
+      "score": -5.979
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428166",
+      "score": -6.99
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428337",
+      "score": -5.901
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428478",
+      "score": -6.136
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428650",
+      "score": -5.321
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428672",
+      "score": -6.953
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428999",
+      "score": -6.774
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429009",
+      "score": -6.463
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429048",
+      "score": -6.417
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429405",
+      "score": -6.154
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430086",
+      "score": -6.829
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430108",
+      "score": -6.836
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430136",
+      "score": -5.604
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430330",
+      "score": -6.284
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430",
+      "score": -5.53
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL432658",
+      "score": -6.014
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL432",
+      "score": -6.157
+    },
+    {
+      "target": "B7PRF6",
+      "ligand": "CHEMBL10",
+      "score": -6.799
+    },
+    {
+      "target": "B7PRF6",
+      "ligand": "CHEMBL112998",
+      "score": -6.163
+    },
+    {
+      "target": "B7PRF6",
+      "ligand": "CHEMBL11",
+      "score": -6.19
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428166",
+      "score": -5.397
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428302",
+      "score": -6.298
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428309",
+      "score": -6.652
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428337",
+      "score": -5.45
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428478",
+      "score": -6.834
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428480",
+      "score": -6.571
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428650",
+      "score": -5.641
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428672",
+      "score": -6.072
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428826",
+      "score": -6.894
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428840",
+      "score": -6.388
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428999",
+      "score": -6.003
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429009",
+      "score": -6.498
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429048",
+      "score": -5.583
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429203",
+      "score": -6.64
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429405",
+      "score": -5.831
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429555",
+      "score": -6.925
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429950",
+      "score": -6.668
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429954",
+      "score": -6.456
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430086",
+      "score": -6.373
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430108",
+      "score": -6.98
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430286",
+      "score": -6.529
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430310",
+      "score": -6.25
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430330",
+      "score": -6.411
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430",
+      "score": -6.663
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL432658",
+      "score": -6.38
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL432",
+      "score": -5.277
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428166",
+      "score": -6.661
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428309",
+      "score": -6.782
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428337",
+      "score": -5.178
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428478",
+      "score": -6.928
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428491",
+      "score": -6.927
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428650",
+      "score": -5.445
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428672",
+      "score": -5.73
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428840",
+      "score": -6.925
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428999",
+      "score": -6.345
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429009",
+      "score": -5.511
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429023",
+      "score": -6.967
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429203",
+      "score": -6.793
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429244",
+      "score": -6.804
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429379",
+      "score": -6.703
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429405",
+      "score": -6.175
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429555",
+      "score": -6.507
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429614",
+      "score": -6.982
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429950",
+      "score": -6.575
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429954",
+      "score": -6.963
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430086",
+      "score": -6.449
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430108",
+      "score": -6.697
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430110",
+      "score": -6.739
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430136",
+      "score": -6.367
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430283",
+      "score": -6.628
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430330",
+      "score": -6.276
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430",
+      "score": -5.961
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL432658",
+      "score": -6.833
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL432",
+      "score": -5.31
+    },
+    {
+      "target": "B7PXE3",
+      "ligand": "CHEMBL112998",
+      "score": -5.979
+    },
+    {
+      "target": "B7PXE3",
+      "ligand": "CHEMBL11",
+      "score": -6.417
+    },
+    {
+      "target": "B7PXE3",
+      "ligand": "CHEMBL12",
+      "score": -6.292
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428337",
+      "score": -6.03
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428650",
+      "score": -6.19
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429405",
+      "score": -6.742
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430330",
+      "score": -6.892
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL432",
+      "score": -5.836
+    },
+    {
+      "target": "B7PY76",
+      "ligand": "CHEMBL10",
+      "score": -6.146
+    },
+    {
+      "target": "B7PY76",
+      "ligand": "CHEMBL112998",
+      "score": -5.541
+    },
+    {
+      "target": "B7PY76",
+      "ligand": "CHEMBL11",
+      "score": -5.07
+    },
+    {
+      "target": "B7PY76",
+      "ligand": "CHEMBL12",
+      "score": -5.983
+    },
+    {
+      "target": "B7Q1Q9",
+      "ligand": "CHEMBL11",
+      "score": -6.148
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428145",
+      "score": -6.521
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428159",
+      "score": -6.835
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428166",
+      "score": -4.627
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428175",
+      "score": -6.007
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428302",
+      "score": -5.41
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428309",
+      "score": -5.732
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428337",
+      "score": -4.945
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428340",
+      "score": -5.934
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428357",
+      "score": -6.222
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428478",
+      "score": -5.974
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428479",
+      "score": -6.037
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428480",
+      "score": -5.632
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428482",
+      "score": -6.417
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428491",
+      "score": -5.592
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428508",
+      "score": -5.717
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428644",
+      "score": -6.839
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428650",
+      "score": -4.789
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428658",
+      "score": -6.728
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428672",
+      "score": -5.794
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428826",
+      "score": -5.973
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428839",
+      "score": -6.066
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428840",
+      "score": -5.38
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL428999",
+      "score": -5.238
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429006",
+      "score": -6.5
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429008",
+      "score": -6.761
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429009",
+      "score": -5.966
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429023",
+      "score": -6.802
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429048",
+      "score": -5.215
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429188",
+      "score": -6.687
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429202",
+      "score": -6.944
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429203",
+      "score": -5.928
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429244",
+      "score": -6.31
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429401",
+      "score": -6.109
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429405",
+      "score": -4.765
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429555",
+      "score": -5.456
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429563",
+      "score": -6.245
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429614",
+      "score": -6.421
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429950",
+      "score": -5.636
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429954",
+      "score": -5.725
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429",
+      "score": -5.076
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430086",
+      "score": -5.399
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430108",
+      "score": -5.741
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430110",
+      "score": -6.276
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430136",
+      "score": -6.592
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430283",
+      "score": -6.323
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430286",
+      "score": -6.093
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430310",
+      "score": -6.04
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430314",
+      "score": -5.183
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430330",
+      "score": -5.772
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430",
+      "score": -6.284
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL431",
+      "score": -6.64
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL432658",
+      "score": -5.62
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL432",
+      "score": -4.635
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL43",
+      "score": -6.668
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428166",
+      "score": -6.632
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428337",
+      "score": -5.614
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428508",
+      "score": -6.834
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428650",
+      "score": -5.757
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428672",
+      "score": -5.989
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428999",
+      "score": -6.72
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429405",
+      "score": -6.029
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429950",
+      "score": -6.616
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430086",
+      "score": -6.932
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430110",
+      "score": -6.789
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430330",
+      "score": -6.687
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL432",
+      "score": -5.591
+    },
+    {
+      "target": "B7Q290",
+      "ligand": "CHEMBL10",
+      "score": -6.155
+    },
+    {
+      "target": "B7Q290",
+      "ligand": "CHEMBL112998",
+      "score": -5.443
+    },
+    {
+      "target": "B7Q290",
+      "ligand": "CHEMBL11",
+      "score": -5.047
+    },
+    {
+      "target": "B7Q290",
+      "ligand": "CHEMBL12",
+      "score": -5.537
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428145",
+      "score": -6.343
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428159",
+      "score": -6.048
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428166",
+      "score": -4.45
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428175",
+      "score": -5.148
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428302",
+      "score": -5.357
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428309",
+      "score": -5.199
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428337",
+      "score": -3.782
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428340",
+      "score": -5.281
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428357",
+      "score": -5.572
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428478",
+      "score": -5.011
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428479",
+      "score": -5.261
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428480",
+      "score": -6.092
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428482",
+      "score": -5.411
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428491",
+      "score": -5.193
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428508",
+      "score": -5.665
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428644",
+      "score": -5.979
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428650",
+      "score": -3.58
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428658",
+      "score": -6.299
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428672",
+      "score": -4.865
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428826",
+      "score": -5.438
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428839",
+      "score": -5.422
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428840",
+      "score": -5.271
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL428999",
+      "score": -4.694
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429006",
+      "score": -5.736
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429008",
+      "score": -6.694
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429009",
+      "score": -5.069
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429023",
+      "score": -6.335
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429048",
+      "score": -4.746
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429188",
+      "score": -6.425
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429202",
+      "score": -6.265
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429203",
+      "score": -5.322
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429244",
+      "score": -6.201
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429379",
+      "score": -5.596
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429401",
+      "score": -5.631
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429405",
+      "score": -4.227
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429555",
+      "score": -5.961
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429563",
+      "score": -5.783
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429614",
+      "score": -6.413
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429950",
+      "score": -5.114
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429951",
+      "score": -6.791
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429954",
+      "score": -5.495
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL429",
+      "score": -4.832
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430086",
+      "score": -5.07
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430108",
+      "score": -4.81
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430110",
+      "score": -5.317
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430136",
+      "score": -5.474
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430152",
+      "score": -5.975
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430283",
+      "score": -5.608
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430286",
+      "score": -5.369
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430310",
+      "score": -5.275
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430314",
+      "score": -4.632
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430330",
+      "score": -4.216
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL430",
+      "score": -5.465
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL431",
+      "score": -5.832
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL432658",
+      "score": -4.784
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL432",
+      "score": -3.657
+    },
+    {
+      "target": "B7QAF3",
+      "ligand": "CHEMBL43",
+      "score": -6.084
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428166",
+      "score": -5.43
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428302",
+      "score": -5.978
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428309",
+      "score": -6.265
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428337",
+      "score": -5.145
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428478",
+      "score": -6.213
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428479",
+      "score": -6.207
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428480",
+      "score": -6.863
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428491",
+      "score": -5.73
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428650",
+      "score": -4.402
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428672",
+      "score": -6.074
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428826",
+      "score": -6.28
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428839",
+      "score": -6.431
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428840",
+      "score": -6.53
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428999",
+      "score": -5.12
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429009",
+      "score": -6.437
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429048",
+      "score": -5.703
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429203",
+      "score": -6.286
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429405",
+      "score": -4.943
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429555",
+      "score": -6.596
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429563",
+      "score": -6.648
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429950",
+      "score": -6.268
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429954",
+      "score": -6.722
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429",
+      "score": -5.625
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430086",
+      "score": -6.048
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430108",
+      "score": -6.032
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430110",
+      "score": -6.334
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430286",
+      "score": -6.385
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430310",
+      "score": -6.492
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430314",
+      "score": -6.03
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430330",
+      "score": -5.837
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430",
+      "score": -6.818
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL431",
+      "score": -6.319
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL432658",
+      "score": -6.157
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL432",
+      "score": -4.522
+    },
+    {
+      "target": "B7QDG3",
+      "ligand": "CHEMBL112998",
+      "score": -6.438
+    },
+    {
+      "target": "B7QDG3",
+      "ligand": "CHEMBL11",
+      "score": -6.273
+    },
+    {
+      "target": "B7QDG3",
+      "ligand": "CHEMBL12",
+      "score": -5.986
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428159",
+      "score": -6.415
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428166",
+      "score": -4.381
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428175",
+      "score": -4.609
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428302",
+      "score": -5.825
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428309",
+      "score": -6.377
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428337",
+      "score": -5.306
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428340",
+      "score": -6.335
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428357",
+      "score": -6.909
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428478",
+      "score": -5.977
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428479",
+      "score": -6.787
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428482",
+      "score": -6.941
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428491",
+      "score": -6.329
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428508",
+      "score": -6.261
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428644",
+      "score": -6.381
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428650",
+      "score": -5.914
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428672",
+      "score": -4.293
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428826",
+      "score": -6.499
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428839",
+      "score": -6.781
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428840",
+      "score": -4.895
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428999",
+      "score": -6.963
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429008",
+      "score": -6.389
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429009",
+      "score": -5.748
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429023",
+      "score": -5.85
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429048",
+      "score": -5.306
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429188",
+      "score": -6.729
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429202",
+      "score": -6.058
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429203",
+      "score": -5.587
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429244",
+      "score": -5.617
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429379",
+      "score": -4.899
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429401",
+      "score": -5.509
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429405",
+      "score": -5.684
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429555",
+      "score": -6.206
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429563",
+      "score": -6.244
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429950",
+      "score": -5.567
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429951",
+      "score": -6.795
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429954",
+      "score": -5.103
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429",
+      "score": -6.674
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430086",
+      "score": -6.53
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430108",
+      "score": -6.648
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430136",
+      "score": -6.814
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430152",
+      "score": -6.068
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430283",
+      "score": -5.072
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430286",
+      "score": -5.878
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430310",
+      "score": -5.854
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430314",
+      "score": -6.862
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430330",
+      "score": -4.744
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430",
+      "score": -4.747
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL431",
+      "score": -5.784
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL432658",
+      "score": -5.708
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL432",
+      "score": -5.794
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL43",
+      "score": -6.025
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428145",
+      "score": -5.517
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428159",
+      "score": 2.194
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428166",
+      "score": -2.66
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428175",
+      "score": 11.188
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428302",
+      "score": -1.971
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428309",
+      "score": -0.403
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428337",
+      "score": -5.791
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428340",
+      "score": 10.116
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428357",
+      "score": -3.701
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428478",
+      "score": -4.05
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428479",
+      "score": -5.218
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428480",
+      "score": -1.35
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428482",
+      "score": 6.823
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428491",
+      "score": -0.684
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428508",
+      "score": 3.828
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428644",
+      "score": 24.492
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428650",
+      "score": -4.654
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428658",
+      "score": 1.057
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428672",
+      "score": 8.029
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428826",
+      "score": 0.217
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428839",
+      "score": -1.707
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428840",
+      "score": 6.211
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL428999",
+      "score": -3.423
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429006",
+      "score": -1.092
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429008",
+      "score": 10.53
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429009",
+      "score": 7.33
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429023",
+      "score": 26.795
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429048",
+      "score": -1.206
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429188",
+      "score": -1.106
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429202",
+      "score": 6.642
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429203",
+      "score": 3.22
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429244",
+      "score": 22.24
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429379",
+      "score": 24.173
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429401",
+      "score": 0.121
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429405",
+      "score": -3.566
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429555",
+      "score": 2.146
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429563",
+      "score": -5.324
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429614",
+      "score": 13.923
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429950",
+      "score": -6.22
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429951",
+      "score": 16.949
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429954",
+      "score": -2.573
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL429",
+      "score": -3.744
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430086",
+      "score": 5.226
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430108",
+      "score": -4.172
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430110",
+      "score": -4.224
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430136",
+      "score": 12.742
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430152",
+      "score": 19.965
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430283",
+      "score": 11.608
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430286",
+      "score": -3.805
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430310",
+      "score": 1.599
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430314",
+      "score": 1.584
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430330",
+      "score": -3.038
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL430",
+      "score": 10.35
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL431",
+      "score": 8.541
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL432658",
+      "score": -1.016
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL432",
+      "score": -5.785
+    },
+    {
+      "target": "B7QNX4",
+      "ligand": "CHEMBL43",
+      "score": 7.251
+    },
+    {
+      "target": "F6KSY2",
+      "ligand": "CHEMBL10",
+      "score": -5.649
+    },
+    {
+      "target": "F6KSY2",
+      "ligand": "CHEMBL112998",
+      "score": -4.66
+    },
+    {
+      "target": "F6KSY2",
+      "ligand": "CHEMBL11",
+      "score": -5.085
+    },
+    {
+      "target": "F6KSY2",
+      "ligand": "CHEMBL12",
+      "score": -5.415
+    },
+    {
+      "target": "Q202J4",
+      "ligand": "CHEMBL12",
+      "score": -6.563
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL10",
+      "score": -6.062
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL112998",
+      "score": -5.921
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL11",
+      "score": -5.564
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL12",
+      "score": -6.071
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL204146",
+      "score": -6.309
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL262570",
+      "score": -6.359
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL263075",
+      "score": -5.8
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL263076",
+      "score": -6.608
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL263077",
+      "score": -6.251
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL263079",
+      "score": -6.137
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL263080",
+      "score": -5.667
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL263081",
+      "score": -5.823
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL263881",
+      "score": -5.718
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL263882",
+      "score": -5.937
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL263883",
+      "score": -5.398
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL264095",
+      "score": -6.733
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL264097",
+      "score": -6.916
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL264721",
+      "score": -5.531
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL265410",
+      "score": -6.189
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL265621",
+      "score": -5.916
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL265663",
+      "score": -6.005
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL265664",
+      "score": -5.883
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL265667",
+      "score": -6.397
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266039",
+      "score": -6.876
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266064",
+      "score": -5.082
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266065",
+      "score": -6.755
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266066",
+      "score": -5.938
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266081",
+      "score": -6.36
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266084",
+      "score": -5.193
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266196",
+      "score": -6.04
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266198",
+      "score": -6.03
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266220",
+      "score": -5.334
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266221",
+      "score": -5.158
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266277",
+      "score": -6.447
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266279",
+      "score": -5.84
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266315",
+      "score": -6.767
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266316",
+      "score": -5.735
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266317",
+      "score": -6.342
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266430",
+      "score": -5.379
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266457",
+      "score": -6.543
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266458",
+      "score": -5.64
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266460",
+      "score": -6.262
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266483",
+      "score": -6.202
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266484",
+      "score": -6.587
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266508",
+      "score": -6.11
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266509",
+      "score": -6.327
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266541",
+      "score": -5.555
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266572",
+      "score": -5.623
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266661",
+      "score": -5.381
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266684",
+      "score": -6.75
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266685",
+      "score": -5.789
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266706",
+      "score": -5.817
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266707",
+      "score": -5.476
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266708",
+      "score": -6.017
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266798",
+      "score": -5.979
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266799",
+      "score": -5.1
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266800",
+      "score": -5.207
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266801",
+      "score": -6.212
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266927",
+      "score": -5.499
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266957",
+      "score": -5.898
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267036",
+      "score": -5.706
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267125",
+      "score": -6.348
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267126",
+      "score": -6.166
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267127",
+      "score": -5.043
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267164",
+      "score": -5.474
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267191",
+      "score": -5.472
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267228",
+      "score": -6.682
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267229",
+      "score": -5.061
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267230",
+      "score": -5.172
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267358",
+      "score": -6.708
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267386",
+      "score": -6.105
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267399",
+      "score": -5.614
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267427",
+      "score": -5.773
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267456",
+      "score": -5.772
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267457",
+      "score": -5.641
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267458",
+      "score": -6.32
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267599",
+      "score": -5.295
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267626",
+      "score": -5.273
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267627",
+      "score": -5.797
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267628",
+      "score": -5.998
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267678",
+      "score": -6.161
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267702",
+      "score": -6.747
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267705",
+      "score": -5.741
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267832",
+      "score": -6.437
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267833",
+      "score": -4.939
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267834",
+      "score": -5.539
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267863",
+      "score": -6.545
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267864",
+      "score": -6.505
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267914",
+      "score": -5.877
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267915",
+      "score": -4.97
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL267938",
+      "score": -5.432
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268070",
+      "score": -5.252
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268097",
+      "score": -6.406
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268099",
+      "score": -5.843
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268100",
+      "score": -6.931
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268116",
+      "score": -6.548
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268150",
+      "score": -5.776
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268151",
+      "score": -6.346
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268174",
+      "score": -6.026
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268176",
+      "score": -5.754
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268292",
+      "score": -6.312
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268339",
+      "score": -6.514
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268340",
+      "score": -5.978
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268365",
+      "score": -6.248
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268387",
+      "score": -6.487
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268388",
+      "score": -6.58
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268454",
+      "score": -5.518
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268455",
+      "score": -5.366
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268528",
+      "score": -6.205
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268529",
+      "score": -6.451
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268530",
+      "score": -5.915
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268567",
+      "score": -6.013
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268598",
+      "score": -5.228
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268626",
+      "score": -5.249
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268627",
+      "score": -5.63
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268667",
+      "score": -5.011
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268689",
+      "score": -5.283
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268690",
+      "score": -4.577
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268691",
+      "score": -5.204
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268768",
+      "score": -6.25
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268769",
+      "score": -5.575
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268770",
+      "score": -6.221
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268830",
+      "score": -5.577
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268831",
+      "score": -4.943
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268855",
+      "score": -6.606
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268887",
+      "score": -5.857
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268888",
+      "score": -5.76
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268889",
+      "score": -6.005
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269002",
+      "score": -6.264
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269003",
+      "score": -6.183
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269004",
+      "score": -4.893
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269056",
+      "score": -4.912
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269057",
+      "score": -4.362
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269073",
+      "score": -5.359
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269074",
+      "score": -5.221
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269075",
+      "score": -6.197
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269236",
+      "score": -5.28
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL269264",
+      "score": -6.405
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL2",
+      "score": -5.856
+    },
+    {
+      "target": "Q4PM54",
+      "ligand": "CHEMBL10",
+      "score": -5.947
+    },
+    {
+      "target": "Q4PM54",
+      "ligand": "CHEMBL112998",
+      "score": -5.854
+    },
+    {
+      "target": "Q4PM54",
+      "ligand": "CHEMBL11",
+      "score": -4.775
+    },
+    {
+      "target": "Q4PM54",
+      "ligand": "CHEMBL12",
+      "score": -5.23
+    },
+    {
+      "target": "Q4PMB3",
+      "ligand": "CHEMBL112998",
+      "score": -6.316
+    },
+    {
+      "target": "Q4PMB3",
+      "ligand": "CHEMBL11",
+      "score": -5.687
+    },
+    {
+      "target": "Q4PMB3",
+      "ligand": "CHEMBL12",
+      "score": -5.913
+    },
+    {
+      "target": "Q4PMC9",
+      "ligand": "CHEMBL112998",
+      "score": -6.816
+    },
+    {
+      "target": "Q4PMC9",
+      "ligand": "CHEMBL11",
+      "score": -6.951
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL112998",
+      "score": -6.472
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL11",
+      "score": -6.7
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL12",
+      "score": -6.461
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428166",
+      "score": -5.012
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428175",
+      "score": -6.789
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428302",
+      "score": -5.611
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428309",
+      "score": -6.721
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428337",
+      "score": -4.521
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428340",
+      "score": -6.096
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428357",
+      "score": -6.532
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428478",
+      "score": -6.473
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428479",
+      "score": -6.106
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428480",
+      "score": -6.534
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428482",
+      "score": -6.603
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428491",
+      "score": -6.735
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428508",
+      "score": -6.092
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428644",
+      "score": -6.792
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428650",
+      "score": -4.569
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428658",
+      "score": -6.445
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428672",
+      "score": -5.754
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428826",
+      "score": -6.509
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428839",
+      "score": -6.683
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428840",
+      "score": -6.132
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428999",
+      "score": -5.626
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429008",
+      "score": -6.619
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429009",
+      "score": -5.91
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429023",
+      "score": -6.7
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429048",
+      "score": -5.41
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429203",
+      "score": -6.116
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429244",
+      "score": -6.379
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429401",
+      "score": -6.383
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429405",
+      "score": -5.205
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429563",
+      "score": -6.774
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429950",
+      "score": -5.488
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429954",
+      "score": -6.952
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429",
+      "score": -6.55
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430086",
+      "score": -5.602
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430108",
+      "score": -6.041
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430110",
+      "score": -6.613
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430283",
+      "score": -6.461
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430286",
+      "score": -6.517
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430310",
+      "score": -5.677
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430330",
+      "score": -5.504
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430",
+      "score": -6.887
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL431",
+      "score": -6.063
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL432658",
+      "score": -6.355
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL432",
+      "score": -4.403
+    },
+    {
+      "target": "Q8MUP7",
+      "ligand": "CHEMBL112998",
+      "score": -6.802
+    },
+    {
+      "target": "Q8MUP7",
+      "ligand": "CHEMBL11",
+      "score": -5.8
+    }
+  ],
+  "kept": [
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428145",
+      "score": -9.793
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428159",
+      "score": -8.951
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428175",
+      "score": -8.235
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428302",
+      "score": -7.473
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428309",
+      "score": -8.449
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428340",
+      "score": -9.033
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428357",
+      "score": -8.398
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428478",
+      "score": -8.01
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428479",
+      "score": -7.42
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428480",
+      "score": -9.785
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428482",
+      "score": -9.293
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428491",
+      "score": -7.51
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428508",
+      "score": -8.709
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428644",
+      "score": -9.33
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428650",
+      "score": -7.267
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428658",
+      "score": -8.423
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428672",
+      "score": -7.02
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428826",
+      "score": -8.245
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428839",
+      "score": -8.415
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL428840",
+      "score": -7.67
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429006",
+      "score": -9.528
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429008",
+      "score": -9.016
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429009",
+      "score": -7.37
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429023",
+      "score": -7.262
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429188",
+      "score": -9.737
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429202",
+      "score": -9.674
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429203",
+      "score": -7.406
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429244",
+      "score": -8.055
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429379",
+      "score": -8.662
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429401",
+      "score": -8.232
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429555",
+      "score": -7.576
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429563",
+      "score": -9.512
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429614",
+      "score": -8.797
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429950",
+      "score": -7.432
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429951",
+      "score": -9.825
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL429",
+      "score": -8.933
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430086",
+      "score": -7.35
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430108",
+      "score": -7.788
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430110",
+      "score": -8.881
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430136",
+      "score": -7.141
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430152",
+      "score": -8.439
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430283",
+      "score": -8.5
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430286",
+      "score": -8.249
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430310",
+      "score": -7.325
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430314",
+      "score": -8.456
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL430",
+      "score": -7.754
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL431",
+      "score": -7.541
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL432658",
+      "score": -7.904
+    },
+    {
+      "target": "A0A4D5RDE4",
+      "ligand": "CHEMBL43",
+      "score": -9.594
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428145",
+      "score": -7.172
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428480",
+      "score": -8.478
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428482",
+      "score": -7.788
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL428644",
+      "score": -7.088
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429008",
+      "score": -7.195
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429188",
+      "score": -7.572
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429202",
+      "score": -7.957
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429401",
+      "score": -7.15
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429555",
+      "score": -7.343
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429614",
+      "score": -7.746
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429951",
+      "score": -8.197
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL429",
+      "score": -7.082
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430152",
+      "score": -7.626
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL430314",
+      "score": -7.813
+    },
+    {
+      "target": "A0A4D5RGQ5",
+      "ligand": "CHEMBL43",
+      "score": -7.028
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428145",
+      "score": -8.107
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428159",
+      "score": -9.179
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428175",
+      "score": -8.654
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428302",
+      "score": -7.558
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428340",
+      "score": -7.552
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428357",
+      "score": -8.892
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428479",
+      "score": -8.396
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428480",
+      "score": -9.624
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428482",
+      "score": -8.522
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428491",
+      "score": -7.317
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428508",
+      "score": -7.856
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428658",
+      "score": -8.074
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428826",
+      "score": -8.763
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL428839",
+      "score": -8.452
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429006",
+      "score": -8.865
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429008",
+      "score": -7.804
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429009",
+      "score": -7.925
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429023",
+      "score": -7.165
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429188",
+      "score": -9.645
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429202",
+      "score": -9.757
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429203",
+      "score": -7.924
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429401",
+      "score": -8.407
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429555",
+      "score": -7.991
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429563",
+      "score": -8.393
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429614",
+      "score": -8.534
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429950",
+      "score": -7.009
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429951",
+      "score": -8.425
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL429",
+      "score": -8.327
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430086",
+      "score": -7.172
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430108",
+      "score": -7.341
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430110",
+      "score": -7.39
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430286",
+      "score": -8.245
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL430314",
+      "score": -9.139
+    },
+    {
+      "target": "A0A4D5RMG2",
+      "ligand": "CHEMBL43",
+      "score": -8.763
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428145",
+      "score": -9.356
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428159",
+      "score": -9.193
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428175",
+      "score": -9.1
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428302",
+      "score": -7.768
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428309",
+      "score": -8.232
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428340",
+      "score": -8.551
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428357",
+      "score": -8.944
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428478",
+      "score": -7.929
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428479",
+      "score": -8.295
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428480",
+      "score": -9.256
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428482",
+      "score": -10.2
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428491",
+      "score": -7.81
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428508",
+      "score": -8.192
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428644",
+      "score": -9.093
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428658",
+      "score": -9.352
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428826",
+      "score": -8.035
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428839",
+      "score": -7.847
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428840",
+      "score": -8.107
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL428999",
+      "score": -7.165
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429006",
+      "score": -8.793
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429008",
+      "score": -9.911
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429009",
+      "score": -7.314
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429023",
+      "score": -8.354
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429048",
+      "score": -7.382
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429188",
+      "score": -9.315
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429202",
+      "score": -9.508
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429203",
+      "score": -8.911
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429244",
+      "score": -8.679
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429379",
+      "score": -10.244
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429401",
+      "score": -8.631
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429555",
+      "score": -7.822
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429563",
+      "score": -8.397
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429614",
+      "score": -9.07
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429950",
+      "score": -7.143
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429951",
+      "score": -9.606
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429954",
+      "score": -7.758
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL429",
+      "score": -8.134
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430086",
+      "score": -7.798
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430108",
+      "score": -8.301
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430110",
+      "score": -8.789
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430136",
+      "score": -9.66
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430152",
+      "score": -10.521
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430283",
+      "score": -8.509
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430286",
+      "score": -7.961
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430310",
+      "score": -7.966
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430314",
+      "score": -8.331
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430330",
+      "score": -7.558
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL430",
+      "score": -8.55
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL431",
+      "score": -8.016
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL432658",
+      "score": -8.16
+    },
+    {
+      "target": "A0A4D5RMV5",
+      "ligand": "CHEMBL43",
+      "score": -9.402
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429188",
+      "score": -7.05
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL429202",
+      "score": -7.116
+    },
+    {
+      "target": "A0A4D5RNJ0",
+      "ligand": "CHEMBL430152",
+      "score": -7.119
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428145",
+      "score": -9.509
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428175",
+      "score": -8.007
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428302",
+      "score": -7.605
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428309",
+      "score": -7.715
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428340",
+      "score": -7.939
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428357",
+      "score": -8.148
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428479",
+      "score": -8.045
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428480",
+      "score": -10.435
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428482",
+      "score": -8.324
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428491",
+      "score": -7.307
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428508",
+      "score": -8.112
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428644",
+      "score": -7.712
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428658",
+      "score": -9.109
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428826",
+      "score": -8.562
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL428839",
+      "score": -9.006
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429006",
+      "score": -8.004
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429188",
+      "score": -8.946
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429202",
+      "score": -11.275
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429203",
+      "score": -7.057
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429401",
+      "score": -7.007
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429555",
+      "score": -8.983
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429563",
+      "score": -9.113
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429950",
+      "score": -7.129
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429951",
+      "score": -9.288
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429954",
+      "score": -7.403
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL429",
+      "score": -9.251
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430086",
+      "score": -7.635
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430108",
+      "score": -7.0
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430286",
+      "score": -8.584
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430310",
+      "score": -7.883
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL430314",
+      "score": -10.469
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL431",
+      "score": -8.538
+    },
+    {
+      "target": "A0A4D5RNM5",
+      "ligand": "CHEMBL43",
+      "score": -9.084
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428145",
+      "score": -7.981
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428159",
+      "score": -8.0
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428480",
+      "score": -8.75
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428482",
+      "score": -7.537
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428508",
+      "score": -7.442
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428658",
+      "score": -7.462
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428826",
+      "score": -7.518
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL428839",
+      "score": -7.821
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429006",
+      "score": -7.887
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429008",
+      "score": -7.107
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429188",
+      "score": -9.474
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429202",
+      "score": -7.238
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429244",
+      "score": -7.453
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429563",
+      "score": -7.789
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429614",
+      "score": -7.579
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429951",
+      "score": -9.207
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL429",
+      "score": -8.078
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430110",
+      "score": -8.095
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430286",
+      "score": -7.738
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL430314",
+      "score": -8.095
+    },
+    {
+      "target": "A0A4D5RYT8",
+      "ligand": "CHEMBL43",
+      "score": -7.689
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL428480",
+      "score": -7.638
+    },
+    {
+      "target": "A0A4D5S2A5",
+      "ligand": "CHEMBL429188",
+      "score": -7.186
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428145",
+      "score": -8.748
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428357",
+      "score": -7.067
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428480",
+      "score": -7.509
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428658",
+      "score": -7.966
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428839",
+      "score": -7.311
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL428999",
+      "score": -7.146
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL429006",
+      "score": -7.12
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430110",
+      "score": -7.155
+    },
+    {
+      "target": "A0A4D5S7D6",
+      "ligand": "CHEMBL430314",
+      "score": -7.417
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428145",
+      "score": -8.248
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428159",
+      "score": -8.128
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428175",
+      "score": -8.276
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428309",
+      "score": -7.15
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428340",
+      "score": -7.436
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428480",
+      "score": -7.818
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428482",
+      "score": -8.192
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428508",
+      "score": -7.223
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428644",
+      "score": -8.781
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428658",
+      "score": -8.308
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428672",
+      "score": -7.22
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428826",
+      "score": -7.427
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL428840",
+      "score": -7.98
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429006",
+      "score": -8.19
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429008",
+      "score": -9.061
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429009",
+      "score": -7.196
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429023",
+      "score": -9.115
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429188",
+      "score": -8.708
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429202",
+      "score": -8.615
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429203",
+      "score": -7.244
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429244",
+      "score": -8.67
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429379",
+      "score": -8.905
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429401",
+      "score": -7.892
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429555",
+      "score": -7.908
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429563",
+      "score": -7.188
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429614",
+      "score": -8.439
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429951",
+      "score": -9.065
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL429954",
+      "score": -7.448
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430110",
+      "score": -7.082
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430136",
+      "score": -8.232
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430152",
+      "score": -9.11
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430283",
+      "score": -8.899
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430310",
+      "score": -7.001
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430314",
+      "score": -8.262
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL430",
+      "score": -7.569
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL431",
+      "score": -7.227
+    },
+    {
+      "target": "B7P2S1",
+      "ligand": "CHEMBL43",
+      "score": -8.412
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428145",
+      "score": -9.889
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428159",
+      "score": -10.74
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428166",
+      "score": -7.357
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428175",
+      "score": -10.137
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428302",
+      "score": -8.458
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428309",
+      "score": -9.015
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428340",
+      "score": -9.682
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428357",
+      "score": -9.215
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428478",
+      "score": -8.33
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428479",
+      "score": -8.899
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428480",
+      "score": -10.555
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428482",
+      "score": -10.214
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428491",
+      "score": -8.975
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428508",
+      "score": -8.838
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428644",
+      "score": -8.804
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428658",
+      "score": -9.948
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428672",
+      "score": -8.356
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428826",
+      "score": -8.865
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428839",
+      "score": -8.798
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428840",
+      "score": -8.763
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL428999",
+      "score": -7.557
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429006",
+      "score": -9.855
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429008",
+      "score": -11.885
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429009",
+      "score": -8.356
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429023",
+      "score": -8.943
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429048",
+      "score": -7.556
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429188",
+      "score": -10.735
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429202",
+      "score": -10.577
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429203",
+      "score": -8.967
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429244",
+      "score": -10.191
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429379",
+      "score": -11.176
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429401",
+      "score": -9.984
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429555",
+      "score": -9.639
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429563",
+      "score": -9.352
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429614",
+      "score": -10.668
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429950",
+      "score": -7.594
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429951",
+      "score": -11.34
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429954",
+      "score": -8.382
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL429",
+      "score": -9.548
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430086",
+      "score": -8.239
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430108",
+      "score": -8.311
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430110",
+      "score": -9.206
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430136",
+      "score": -10.651
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430152",
+      "score": -11.365
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430283",
+      "score": -10.468
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430286",
+      "score": -8.62
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430310",
+      "score": -8.583
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430314",
+      "score": -10.047
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430330",
+      "score": -7.77
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL430",
+      "score": -8.869
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL431",
+      "score": -8.484
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL432658",
+      "score": -8.814
+    },
+    {
+      "target": "B7P5E9",
+      "ligand": "CHEMBL43",
+      "score": -10.229
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428145",
+      "score": -8.369
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428159",
+      "score": -8.023
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428357",
+      "score": -7.352
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428478",
+      "score": -7.512
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428479",
+      "score": -7.269
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428482",
+      "score": -8.21
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428491",
+      "score": -7.125
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428508",
+      "score": -7.089
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428826",
+      "score": -7.887
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL428839",
+      "score": -8.006
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429006",
+      "score": -7.327
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429008",
+      "score": -7.092
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429188",
+      "score": -7.906
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429202",
+      "score": -7.457
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429379",
+      "score": -7.914
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429401",
+      "score": -7.615
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429563",
+      "score": -7.724
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429614",
+      "score": -7.183
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL429951",
+      "score": -7.771
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430152",
+      "score": -7.006
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430286",
+      "score": -7.1
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL430314",
+      "score": -7.4
+    },
+    {
+      "target": "B7P6A8",
+      "ligand": "CHEMBL43",
+      "score": -7.758
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL10",
+      "score": -7.167
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL112998",
+      "score": -7.595
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL263076",
+      "score": -7.223
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL263077",
+      "score": -8.183
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL263079",
+      "score": -7.003
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL263882",
+      "score": -7.54
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL264095",
+      "score": -7.867
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL264097",
+      "score": -7.081
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL264721",
+      "score": -7.675
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL265410",
+      "score": -7.036
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL265667",
+      "score": -7.457
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL265669",
+      "score": -8.117
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266039",
+      "score": -7.92
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266065",
+      "score": -8.198
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266066",
+      "score": -7.742
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266081",
+      "score": -7.891
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266196",
+      "score": -7.112
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266277",
+      "score": -7.532
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266315",
+      "score": -7.527
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266317",
+      "score": -7.447
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266457",
+      "score": -7.452
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266460",
+      "score": -7.004
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266484",
+      "score": -7.534
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266508",
+      "score": -7.371
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266509",
+      "score": -7.023
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266684",
+      "score": -7.123
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266927",
+      "score": -7.223
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL266956",
+      "score": -7.934
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267125",
+      "score": -7.16
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267164",
+      "score": -7.09
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267228",
+      "score": -7.271
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267386",
+      "score": -7.476
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267399",
+      "score": -7.112
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267427",
+      "score": -7.476
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267457",
+      "score": -7.048
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267458",
+      "score": -7.468
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267702",
+      "score": -7.233
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267705",
+      "score": -7.259
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267832",
+      "score": -7.664
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267863",
+      "score": -7.681
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267864",
+      "score": -8.074
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL267914",
+      "score": -7.155
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268097",
+      "score": -7.604
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268100",
+      "score": -7.557
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268116",
+      "score": -7.122
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268151",
+      "score": -7.536
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268174",
+      "score": -7.127
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268339",
+      "score": -7.588
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268365",
+      "score": -7.472
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268387",
+      "score": -7.905
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268388",
+      "score": -8.39
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268528",
+      "score": -7.474
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268627",
+      "score": -7.137
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268770",
+      "score": -7.072
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268854",
+      "score": -7.563
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268855",
+      "score": -7.473
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL268888",
+      "score": -7.07
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL2",
+      "score": -7.798
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428145",
+      "score": -8.655
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428159",
+      "score": -7.003
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428302",
+      "score": -7.189
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428357",
+      "score": -8.103
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428479",
+      "score": -7.454
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428480",
+      "score": -7.571
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428658",
+      "score": -7.86
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428826",
+      "score": -7.347
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL428839",
+      "score": -7.444
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429188",
+      "score": -7.288
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429203",
+      "score": -7.053
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429563",
+      "score": -7.798
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL429",
+      "score": -7.663
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430110",
+      "score": -7.485
+    },
+    {
+      "target": "B7P9U9",
+      "ligand": "CHEMBL430286",
+      "score": -7.053
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL10",
+      "score": -7.611
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL12",
+      "score": -7.312
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL263075",
+      "score": -7.68
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL263077",
+      "score": -8.011
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL264095",
+      "score": -7.275
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL265669",
+      "score": -7.387
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266039",
+      "score": -8.699
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266081",
+      "score": -7.603
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266279",
+      "score": -7.152
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266317",
+      "score": -8.248
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266483",
+      "score": -7.253
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266801",
+      "score": -7.138
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL266956",
+      "score": -7.351
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267126",
+      "score": -7.63
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267228",
+      "score": -7.008
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267386",
+      "score": -7.872
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267427",
+      "score": -7.8
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267457",
+      "score": -7.44
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267702",
+      "score": -7.102
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL267832",
+      "score": -7.25
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268100",
+      "score": -7.074
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268151",
+      "score": -7.134
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268292",
+      "score": -7.021
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268529",
+      "score": -7.122
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268769",
+      "score": -7.124
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL268854",
+      "score": -7.408
+    },
+    {
+      "target": "B7PBI5",
+      "ligand": "CHEMBL269264",
+      "score": -7.049
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428145",
+      "score": -8.5
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428159",
+      "score": -7.792
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428175",
+      "score": -7.553
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428340",
+      "score": -7.238
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428480",
+      "score": -7.202
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428482",
+      "score": -8.052
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428508",
+      "score": -7.31
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428644",
+      "score": -7.457
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428658",
+      "score": -7.169
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL428839",
+      "score": -7.523
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429006",
+      "score": -7.404
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429008",
+      "score": -8.493
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429023",
+      "score": -7.412
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429188",
+      "score": -8.286
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429202",
+      "score": -8.053
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429244",
+      "score": -7.598
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429379",
+      "score": -7.618
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429401",
+      "score": -7.213
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429555",
+      "score": -7.744
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429614",
+      "score": -7.776
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429951",
+      "score": -8.245
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL429",
+      "score": -7.247
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430136",
+      "score": -8.145
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430152",
+      "score": -9.046
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430283",
+      "score": -7.373
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL430314",
+      "score": -7.381
+    },
+    {
+      "target": "B7PIZ2",
+      "ligand": "CHEMBL43",
+      "score": -7.679
+    },
+    {
+      "target": "B7PJS6",
+      "ligand": "CHEMBL10",
+      "score": -8.465
+    },
+    {
+      "target": "B7PJS6",
+      "ligand": "CHEMBL112998",
+      "score": -8.03
+    },
+    {
+      "target": "B7PJS6",
+      "ligand": "CHEMBL11",
+      "score": -7.91
+    },
+    {
+      "target": "B7PJS6",
+      "ligand": "CHEMBL12",
+      "score": -7.562
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428145",
+      "score": -8.429
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428159",
+      "score": -7.336
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428175",
+      "score": -7.475
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428302",
+      "score": -7.367
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428309",
+      "score": -7.097
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428340",
+      "score": -8.031
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428357",
+      "score": -7.842
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428479",
+      "score": -8.016
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428480",
+      "score": -10.401
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428482",
+      "score": -7.36
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428491",
+      "score": -7.152
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428508",
+      "score": -7.95
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428644",
+      "score": -7.889
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428658",
+      "score": -8.286
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428826",
+      "score": -8.385
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428839",
+      "score": -8.652
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL428840",
+      "score": -7.346
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429006",
+      "score": -7.915
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429008",
+      "score": -7.882
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429023",
+      "score": -7.454
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429188",
+      "score": -7.953
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429202",
+      "score": -11.176
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429203",
+      "score": -7.039
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429244",
+      "score": -7.08
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429379",
+      "score": -7.815
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429401",
+      "score": -7.47
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429555",
+      "score": -8.647
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429563",
+      "score": -9.037
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429614",
+      "score": -7.68
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429950",
+      "score": -7.114
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429951",
+      "score": -9.308
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429954",
+      "score": -7.154
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL429",
+      "score": -9.119
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430110",
+      "score": -7.036
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430152",
+      "score": -8.379
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430283",
+      "score": -7.069
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430286",
+      "score": -8.494
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430310",
+      "score": -7.677
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL430314",
+      "score": -10.478
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL431",
+      "score": -8.54
+    },
+    {
+      "target": "B7PMS2",
+      "ligand": "CHEMBL43",
+      "score": -9.136
+    },
+    {
+      "target": "B7PRF6",
+      "ligand": "CHEMBL12",
+      "score": -7.196
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428145",
+      "score": -8.362
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428159",
+      "score": -8.572
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428175",
+      "score": -7.236
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428340",
+      "score": -7.449
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428357",
+      "score": -7.944
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428479",
+      "score": -7.115
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428482",
+      "score": -7.315
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428491",
+      "score": -7.33
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428508",
+      "score": -7.283
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428644",
+      "score": -7.882
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428658",
+      "score": -7.245
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL428839",
+      "score": -7.557
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429006",
+      "score": -7.514
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429008",
+      "score": -8.011
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429023",
+      "score": -7.357
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429188",
+      "score": -7.588
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429202",
+      "score": -7.752
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429244",
+      "score": -7.062
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429379",
+      "score": -7.914
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429401",
+      "score": -7.369
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429563",
+      "score": -7.718
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429614",
+      "score": -7.323
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429951",
+      "score": -8.07
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL429",
+      "score": -7.026
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430110",
+      "score": -7.111
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430136",
+      "score": -8.05
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430152",
+      "score": -7.948
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430283",
+      "score": -7.087
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL430314",
+      "score": -7.522
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL431",
+      "score": -7.539
+    },
+    {
+      "target": "B7PVD7",
+      "ligand": "CHEMBL43",
+      "score": -8.577
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428145",
+      "score": -9.371
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428159",
+      "score": -7.783
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428175",
+      "score": -7.468
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428302",
+      "score": -7.321
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428340",
+      "score": -7.399
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428357",
+      "score": -7.333
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428479",
+      "score": -7.628
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428480",
+      "score": -8.754
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428482",
+      "score": -7.044
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428508",
+      "score": -7.041
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428644",
+      "score": -7.083
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428658",
+      "score": -7.155
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428826",
+      "score": -7.191
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL428839",
+      "score": -8.016
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429006",
+      "score": -7.285
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429008",
+      "score": -7.852
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429048",
+      "score": -7.171
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429188",
+      "score": -8.455
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429202",
+      "score": -7.855
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429401",
+      "score": -7.496
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429563",
+      "score": -7.624
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429951",
+      "score": -8.141
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL429",
+      "score": -7.483
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430152",
+      "score": -8.799
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430286",
+      "score": -7.074
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430310",
+      "score": -7.003
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL430314",
+      "score": -7.563
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL431",
+      "score": -7.319
+    },
+    {
+      "target": "B7PX94",
+      "ligand": "CHEMBL43",
+      "score": -7.554
+    },
+    {
+      "target": "B7PXE3",
+      "ligand": "CHEMBL10",
+      "score": -7.362
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428145",
+      "score": -9.87
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428159",
+      "score": -9.37
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428166",
+      "score": -7.427
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428175",
+      "score": -10.256
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428302",
+      "score": -8.593
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428309",
+      "score": -8.72
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428340",
+      "score": -8.263
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428357",
+      "score": -8.617
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428478",
+      "score": -8.585
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428479",
+      "score": -8.076
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428480",
+      "score": -9.255
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428482",
+      "score": -10.775
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428491",
+      "score": -8.522
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428508",
+      "score": -8.29
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428644",
+      "score": -8.72
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428658",
+      "score": -9.637
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428672",
+      "score": -8.258
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428826",
+      "score": -8.586
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428839",
+      "score": -8.04
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428840",
+      "score": -9.25
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL428999",
+      "score": -7.179
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429006",
+      "score": -9.616
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429008",
+      "score": -10.594
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429009",
+      "score": -8.497
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429023",
+      "score": -10.077
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429048",
+      "score": -7.55
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429188",
+      "score": -10.773
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429202",
+      "score": -10.896
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429203",
+      "score": -8.751
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429244",
+      "score": -8.69
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429379",
+      "score": -11.785
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429401",
+      "score": -9.909
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429555",
+      "score": -8.814
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429563",
+      "score": -9.035
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429614",
+      "score": -9.868
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429950",
+      "score": -7.603
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429951",
+      "score": -10.428
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429954",
+      "score": -8.424
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL429",
+      "score": -8.985
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430086",
+      "score": -8.078
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430108",
+      "score": -7.819
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430110",
+      "score": -9.401
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430136",
+      "score": -10.208
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430152",
+      "score": -10.617
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430283",
+      "score": -10.639
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430286",
+      "score": -8.693
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430310",
+      "score": -8.647
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430314",
+      "score": -8.81
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL430",
+      "score": -9.111
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL431",
+      "score": -9.209
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL432658",
+      "score": -8.318
+    },
+    {
+      "target": "B7PY20",
+      "ligand": "CHEMBL43",
+      "score": -10.055
+    },
+    {
+      "target": "B7Q1Q9",
+      "ligand": "CHEMBL10",
+      "score": -7.743
+    },
+    {
+      "target": "B7Q1Q9",
+      "ligand": "CHEMBL112998",
+      "score": -7.511
+    },
+    {
+      "target": "B7Q1Q9",
+      "ligand": "CHEMBL12",
+      "score": -7.162
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429379",
+      "score": -7.039
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL429951",
+      "score": -7.361
+    },
+    {
+      "target": "B7Q1X5",
+      "ligand": "CHEMBL430152",
+      "score": -7.389
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428145",
+      "score": -9.773
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428159",
+      "score": -8.143
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428175",
+      "score": -7.532
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428302",
+      "score": -7.026
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428309",
+      "score": -8.399
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428340",
+      "score": -7.889
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428357",
+      "score": -7.558
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428478",
+      "score": -7.03
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428479",
+      "score": -7.197
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428480",
+      "score": -9.037
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428482",
+      "score": -7.461
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428491",
+      "score": -7.5
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428644",
+      "score": -8.433
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428658",
+      "score": -8.535
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428826",
+      "score": -7.132
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428839",
+      "score": -7.491
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL428840",
+      "score": -7.373
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429006",
+      "score": -7.981
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429008",
+      "score": -8.637
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429009",
+      "score": -7.022
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429023",
+      "score": -7.465
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429048",
+      "score": -7.37
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429188",
+      "score": -8.622
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429202",
+      "score": -8.778
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429203",
+      "score": -7.048
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429244",
+      "score": -8.488
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429379",
+      "score": -7.481
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429401",
+      "score": -7.904
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429555",
+      "score": -8.149
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429563",
+      "score": -7.691
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429614",
+      "score": -9.791
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429951",
+      "score": -8.425
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429954",
+      "score": -8.343
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL429",
+      "score": -7.971
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430108",
+      "score": -7.265
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430136",
+      "score": -7.169
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430152",
+      "score": -9.33
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430283",
+      "score": -7.669
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430286",
+      "score": -7.189
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430310",
+      "score": -7.724
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430314",
+      "score": -8.021
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL430",
+      "score": -7.038
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL431",
+      "score": -8.293
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL432658",
+      "score": -7.006
+    },
+    {
+      "target": "B7Q255",
+      "ligand": "CHEMBL43",
+      "score": -8.718
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428145",
+      "score": -7.565
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428159",
+      "score": -7.432
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428175",
+      "score": -7.001
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428340",
+      "score": -7.06
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428357",
+      "score": -7.346
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428482",
+      "score": -7.323
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428508",
+      "score": -7.115
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428644",
+      "score": -7.899
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL428658",
+      "score": -7.359
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429006",
+      "score": -7.213
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429008",
+      "score": -7.402
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429023",
+      "score": -7.427
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429188",
+      "score": -7.014
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429202",
+      "score": -7.297
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429244",
+      "score": -7.375
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429379",
+      "score": -7.498
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429401",
+      "score": -7.249
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429614",
+      "score": -7.178
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL429951",
+      "score": -7.849
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430136",
+      "score": -7.645
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430152",
+      "score": -8.194
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL430283",
+      "score": -7.222
+    },
+    {
+      "target": "B7QBP7",
+      "ligand": "CHEMBL43",
+      "score": -7.676
+    },
+    {
+      "target": "B7QDG3",
+      "ligand": "CHEMBL10",
+      "score": -8.131
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428145",
+      "score": -8.682
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428480",
+      "score": -7.275
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL428658",
+      "score": -8.355
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429006",
+      "score": -7.194
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL429614",
+      "score": -7.001
+    },
+    {
+      "target": "B7QJZ7",
+      "ligand": "CHEMBL430110",
+      "score": -7.05
+    },
+    {
+      "target": "Q202J4",
+      "ligand": "CHEMBL10",
+      "score": -8.026
+    },
+    {
+      "target": "Q202J4",
+      "ligand": "CHEMBL112998",
+      "score": -7.069
+    },
+    {
+      "target": "Q202J4",
+      "ligand": "CHEMBL11",
+      "score": -7.131
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL265669",
+      "score": -7.161
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL266956",
+      "score": -7.017
+    },
+    {
+      "target": "Q4PLZ3",
+      "ligand": "CHEMBL268854",
+      "score": -7.066
+    },
+    {
+      "target": "Q4PMB3",
+      "ligand": "CHEMBL10",
+      "score": -7.039
+    },
+    {
+      "target": "Q4PMC9",
+      "ligand": "CHEMBL10",
+      "score": -7.509
+    },
+    {
+      "target": "Q4PMC9",
+      "ligand": "CHEMBL12",
+      "score": -7.869
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL10",
+      "score": -7.576
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428145",
+      "score": -7.418
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL428159",
+      "score": -8.027
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429006",
+      "score": -7.596
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429188",
+      "score": -7.609
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429202",
+      "score": -7.183
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429379",
+      "score": -7.38
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429555",
+      "score": -7.363
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429614",
+      "score": -7.906
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL429951",
+      "score": -7.436
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430136",
+      "score": -7.61
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430152",
+      "score": -7.096
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL430314",
+      "score": -7.316
+    },
+    {
+      "target": "Q5Q995",
+      "ligand": "CHEMBL43",
+      "score": -7.261
+    },
+    {
+      "target": "Q8MUP7",
+      "ligand": "CHEMBL10",
+      "score": -7.312
+    },
+    {
+      "target": "Q8MUP7",
+      "ligand": "CHEMBL12",
+      "score": -7.002
+    }
+  ]
+}
