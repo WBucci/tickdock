@@ -1,6 +1,6 @@
 Step,Parameter,Value,Description
 01_fetch_proteome,species,ixodes_scapularis,UniProt taxon 6945
-01_fetch_proteome,reviewed_only,True,Swiss-Prot only if True
+01_fetch_proteome,reviewed_only,False,Swiss-Prot only if True
 01_fetch_proteome,uniprot_fields,"accession,id,protein_name,gene_names,organism_name,sequence,cc_function,ft_binding,xref_pdb,xref_chembl,cc_subcellular_location,ft_site,cc_catalytic_activity,keyword",Fields requested from API
 02_novelty_filter,species,ixodes_scapularis,
 02_novelty_filter,min_plddt,70,AlphaFold confidence threshold
@@ -19,7 +19,7 @@ Step,Parameter,Value,Description
 03_to_07_structure_docking,max_human_homology,0.4,BLAST identity threshold for mammalian toxicity flag
 03_to_07_structure_docking,blast_database,refseq_protein + Homo sapiens filter,
 03_to_07_structure_docking,rnai_search_terms,RNAi OR silenc* OR knockdown AND tick AND lethal,
-03_to_07_structure_docking,blast_enabled,False,
+03_to_07_structure_docking,blast_enabled,True,
 03_to_07_structure_docking,vina_exhaustiveness,8,
 03_to_07_structure_docking,vina_num_modes,9,
 03_to_07_structure_docking,vina_box_size,20,Angstroms

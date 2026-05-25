@@ -1,49 +1,310 @@
 [
   {
-    "accession": "Q4PLZ3",
-    "name": "Translationally-controlled tumor protein homolog",
-    "gene": "Tctp",
+    "accession": "B7P2S1",
+    "name": "",
+    "gene": "",
     "species": "ixodes_scapularis",
     "latin": "Ixodes scapularis",
-    "length": 173,
+    "length": 401,
     "pdb_ids": [],
     "chembl_ids": [],
-    "function": "Involved in calcium binding and microtubule stabilization",
+    "function": "",
     "subcellular": "",
     "catalytic": "",
     "keywords": [
-      "Calcium",
-      "Cytoplasm",
-      "Reference proteome"
+      "DNA-binding",
+      "Metal-binding",
+      "Nucleus",
+      "Receptor",
+      "Reference proteome",
+      "Transcription",
+      "Transcription regulation",
+      "Zinc",
+      "Zinc-finger"
     ],
     "has_structure": false,
     "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 11,
+    "alphafold_available": null,
+    "novelty_score": 14,
     "novelty_reasons": [
       "No experimental structure (+3)",
       "No registered ligands (+3)",
-      "AlphaFold available (+2)",
+      "Unknown function \u2014 discovery (+2)",
       "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
       "Essential cellular process (+2)"
     ],
     "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q4PLZ3.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q4PLZ3-F1-model_v6.pdb",
-    "mean_plddt": 87.53,
-    "plddt_fraction": 0.867,
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P2S1.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7P2S1-F1-model_v6.pdb",
+    "mean_plddt": 73.39,
+    "plddt_fraction": 0.681,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 11,
+        "source": "fpocket",
+        "score": 0.614,
+        "volume": 1298.47,
+        "area": 325.66,
+        "hydrophobicity": 29.061,
+        "alpha_spheres": 100.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P2S1_out/pockets/pocket11_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 33,
+        "source": "fpocket",
+        "score": 0.603,
+        "volume": 1181.47,
+        "area": 345.929,
+        "hydrophobicity": 29.822,
+        "alpha_spheres": 81.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P2S1_out/pockets/pocket33_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.308,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.308,
+        "dog": 0.277,
+        "mouse": 0.265
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 21,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Low human homology 31% (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7P2S1_vina.conf",
+    "pocket_center": {
+      "center_x": -7.221,
+      "center_y": 1.533,
+      "center_z": 13.012
+    },
+    "vina_box_size": 22
+  },
+  {
+    "accession": "B7QBP7",
+    "name": "Proton-coupled zinc antiporter SLC30A9, mitochondrial",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 467,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Antiport",
+      "Endoplasmic reticulum",
+      "Ion transport",
+      "Membrane",
+      "Mitochondrion",
+      "Nucleus",
+      "Proteomics identification",
+      "Reference proteome",
+      "Transcription",
+      "Transcription regulation",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport",
+      "Zinc",
+      "Zinc transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QBP7.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7QBP7-F1-model_v6.pdb",
+    "mean_plddt": 81.36,
+    "plddt_fraction": 0.824,
     "structure_quality": "GOOD",
     "suitable_for_docking": true,
     "good_pockets": [
       {
         "pocket_id": 1,
         "source": "fpocket",
-        "score": 0.679,
-        "volume": 452.362,
-        "area": 141.758,
-        "hydrophobicity": 24.667,
+        "score": 0.531,
+        "volume": 1247.284,
+        "area": 344.599,
+        "hydrophobicity": 18.718,
+        "alpha_spheres": 122.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QBP7_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 53,
+        "source": "fpocket",
+        "score": 0.833,
+        "volume": 1054.687,
+        "area": 343.372,
+        "hydrophobicity": 24.513,
+        "alpha_spheres": 104.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QBP7_out/pockets/pocket53_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      },
+      {
+        "pocket_id": 51,
+        "source": "fpocket",
+        "score": 0.875,
+        "volume": 509.547,
+        "area": 181.822,
+        "hydrophobicity": 25.294,
         "alpha_spheres": 36.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q4PLZ3_out/pockets/pocket1_atm.pdb",
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QBP7_out/pockets/pocket51_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_2"
+      },
+      {
+        "pocket_id": 44,
+        "source": "fpocket",
+        "score": 0.776,
+        "volume": 420.51,
+        "area": 151.455,
+        "hydrophobicity": 23.571,
+        "alpha_spheres": 35.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QBP7_out/pockets/pocket44_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_3"
+      },
+      {
+        "pocket_id": 7,
+        "source": "fpocket",
+        "score": 0.788,
+        "volume": 374.179,
+        "area": 97.818,
+        "hydrophobicity": 24.074,
+        "alpha_spheres": 29.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QBP7_out/pockets/pocket7_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_4"
+      }
+    ],
+    "druggable_pockets": 5,
+    "allosteric_sites": 4,
+    "blast_result": {
+      "max_identity": 0.589,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.583,
+        "dog": 0.0,
+        "mouse": 0.589
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 21,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "5 druggable pockets (+4)",
+      "4 allosteric sites \u2605 (+3)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7QBP7_vina.conf",
+    "pocket_center": {
+      "center_x": -1.718,
+      "center_y": 0.799,
+      "center_z": 16.678
+    },
+    "vina_box_size": 22
+  },
+  {
+    "accession": "B7P9U9",
+    "name": "Ecdysone receptor",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 433,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "DNA-binding",
+      "Metal-binding",
+      "Nucleus",
+      "Receptor",
+      "Reference proteome",
+      "Transcription",
+      "Transcription regulation",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P9U9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7P9U9-F1-model_v6.pdb",
+    "mean_plddt": 77.79,
+    "plddt_fraction": 0.723,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.905,
+        "volume": 678.637,
+        "area": 218.938,
+        "hydrophobicity": 42.521,
+        "alpha_spheres": 107.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P9U9_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
       }
@@ -51,33 +312,1826 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
+      "max_identity": 0.44,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.44,
+        "dog": 0.296,
+        "mouse": 0.434
+      },
+      "method": "local_blastp"
     },
     "rnai_result": {
       "rnai_evidence": true,
-      "count": 1,
+      "count": 2,
       "pmids": [
-        "38781831"
+        "34930413",
+        "31092286"
       ]
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 2 papers (+4)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7P9U9_vina.conf",
+    "pocket_center": {
+      "center_x": 6.693,
+      "center_y": -1.546,
+      "center_z": -7.864
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7PX94",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 317,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "DNA-binding",
+      "Metal-binding",
+      "Nucleus",
+      "Proteomics identification",
+      "Receptor",
+      "Reference proteome",
+      "Transcription",
+      "Transcription regulation",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PX94.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PX94-F1-model_v6.pdb",
+    "mean_plddt": 72.66,
+    "plddt_fraction": 0.644,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 24,
+        "source": "fpocket",
+        "score": 0.657,
+        "volume": 995.108,
+        "area": 327.716,
+        "hydrophobicity": 50.925,
+        "alpha_spheres": 117.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PX94_out/pockets/pocket24_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.743,
+        "volume": 370.748,
+        "area": 110.0,
+        "hydrophobicity": 45.222,
+        "alpha_spheres": 62.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PX94_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.706,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.578,
+        "dog": 0.389,
+        "mouse": 0.706
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 19,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PX94_vina.conf",
+    "pocket_center": {
+      "center_x": -6.372,
+      "center_y": -14.317,
+      "center_z": 11.155
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "B7PVD7",
+    "name": "vesicle-fusing ATPase",
+    "gene": "8031914",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 440,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Cell cycle",
+      "Cell division",
+      "Endosome",
+      "Hydrolase",
+      "Membrane",
+      "Nucleotide-binding",
+      "Protein transport",
+      "Proteomics identification",
+      "Reference proteome",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PVD7.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PVD7-F1-model_v6.pdb",
+    "mean_plddt": 82.3,
+    "plddt_fraction": 0.848,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 0.81,
+        "volume": 786.504,
+        "area": 203.801,
+        "hydrophobicity": 32.412,
+        "alpha_spheres": 67.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PVD7_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 21,
+        "source": "fpocket",
+        "score": 0.579,
+        "volume": 411.132,
+        "area": 134.346,
+        "hydrophobicity": 31.829,
+        "alpha_spheres": 37.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PVD7_out/pockets/pocket21_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.773,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.771,
+        "dog": 0.3,
+        "mouse": 0.773
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 19,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PVD7_vina.conf",
+    "pocket_center": {
+      "center_x": -0.885,
+      "center_y": -4.267,
+      "center_z": -1.345
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A4D5RMG2",
+    "name": "Trifunctional enzyme subunit alpha, mitochondrial",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 762,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Acetylation",
+      "Fatty acid metabolism",
+      "Lipid metabolism",
+      "Lyase",
+      "Membrane",
+      "Methylation",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Multifunctional enzyme",
+      "NAD",
+      "Oxidoreductase",
+      "Phosphoprotein",
+      "Transferase",
+      "Transit peptide"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RMG2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A4D5RMG2-F1-model_v6.pdb",
+    "mean_plddt": 90.43,
+    "plddt_fraction": 0.949,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 53,
+        "source": "fpocket",
+        "score": 0.874,
+        "volume": 1081.709,
+        "area": 334.461,
+        "hydrophobicity": 51.857,
+        "alpha_spheres": 112.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RMG2_out/pockets/pocket53_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.915,
+        "volume": 436.851,
+        "area": 127.284,
+        "hydrophobicity": 52.267,
+        "alpha_spheres": 72.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RMG2_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.619,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.606,
+        "dog": 0.0,
+        "mouse": 0.619
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 19,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A4D5RMG2_vina.conf",
+    "pocket_center": {
+      "center_x": -15.718,
+      "center_y": 6.388,
+      "center_z": 7.015
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "B7PY20",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 397,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "DNA-binding",
+      "Metal-binding",
+      "Receptor",
+      "Reference proteome",
+      "Transcription",
+      "Transcription regulation",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PY20.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PY20-F1-model_v6.pdb",
+    "mean_plddt": 75.71,
+    "plddt_fraction": 0.675,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.976,
+        "volume": 943.509,
+        "area": 270.296,
+        "hydrophobicity": 59.058,
+        "alpha_spheres": 137.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PY20_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.351,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.296,
+        "dog": 0.256,
+        "mouse": 0.351
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
     },
     "final_score": 18,
     "score_reasons": [
       "No experimental structure (+3)",
       "No registered ligands (+3)",
-      "AlphaFold available (+2)",
+      "Unknown function \u2014 discovery (+2)",
       "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
       "Essential cellular process (+2)",
       "1 druggable pocket (+2)",
-      "RNAi lethality evidence 1 papers (+4)",
+      "Low human homology 35% (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PY20_vina.conf",
+    "pocket_center": {
+      "center_x": 7.389,
+      "center_y": -2.147,
+      "center_z": -6.391
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "B7QAF3",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 108,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Receptor",
+      "Reference proteome",
+      "Transcription",
+      "Transcription regulation"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QAF3.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7QAF3-F1-model_v6.pdb",
+    "mean_plddt": 75.09,
+    "plddt_fraction": 0.676,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.811,
+        "volume": 504.951,
+        "area": 169.229,
+        "hydrophobicity": 24.389,
+        "alpha_spheres": 39.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QAF3_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.385,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.385,
+        "dog": 0.301,
+        "mouse": 0.33
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Low human homology 38% (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7QAF3_vina.conf",
+    "pocket_center": {
+      "center_x": 5.792,
+      "center_y": 8.423,
+      "center_z": -3.329
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7P6A8",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 278,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP synthesis",
+      "CF(1)",
+      "Hydrogen ion transport",
+      "Hydrolase",
+      "Ion transport",
+      "Membrane",
+      "Reference proteome",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P6A8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7P6A8-F1-model_v6.pdb",
+    "mean_plddt": 81.81,
+    "plddt_fraction": 0.784,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.572,
+        "volume": 1028.185,
+        "area": 304.62,
+        "hydrophobicity": 20.217,
+        "alpha_spheres": 112.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P6A8_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.344,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.338,
+        "dog": 0.0,
+        "mouse": 0.344
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Low human homology 34% (+2)",
       "Good pLDDT (+1)"
     ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q4PLZ3_vina.conf",
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7P6A8_vina.conf",
     "pocket_center": {
-      "center_x": -4.415,
-      "center_y": -6.437,
-      "center_z": 7.608
-    }
+      "center_x": 9.569,
+      "center_y": 2.749,
+      "center_z": 4.236
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "B7Q1X5",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 100,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "DNA-binding",
+      "Metal-binding",
+      "Nucleus",
+      "Receptor",
+      "Reference proteome",
+      "Transcription",
+      "Transcription regulation",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7Q1X5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7Q1X5-F1-model_v6.pdb",
+    "mean_plddt": 82.18,
+    "plddt_fraction": 0.72,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.738,
+        "volume": 744.032,
+        "area": 187.787,
+        "hydrophobicity": 12.5,
+        "alpha_spheres": 42.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7Q1X5_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.592,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.518,
+        "dog": 0.557,
+        "mouse": 0.592
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 17,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7Q1X5_vina.conf",
+    "pocket_center": {
+      "center_x": 0.547,
+      "center_y": -12.346,
+      "center_z": -0.775
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A4D5RNM5",
+    "name": "Nuclear receptor subfamily 2 group B member 4",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 452,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "DNA-binding",
+      "Metal-binding",
+      "Nucleus",
+      "Receptor",
+      "Transcription",
+      "Transcription regulation",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RNM5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A4D5RNM5-F1-model_v6.pdb",
+    "mean_plddt": 72.2,
+    "plddt_fraction": 0.606,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.846,
+        "volume": 574.972,
+        "area": 148.224,
+        "hydrophobicity": 69.951,
+        "alpha_spheres": 82.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RNM5_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.756,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.756,
+        "dog": 0.724,
+        "mouse": 0.749
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A4D5RNM5_vina.conf",
+    "pocket_center": {
+      "center_x": -13.055,
+      "center_y": 7.203,
+      "center_z": 6.165
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7PMS2",
+    "name": "Nuclear receptor subfamily 2 group B member 4",
+    "gene": "8051436",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 400,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "DNA-binding",
+      "Metal-binding",
+      "Nucleus",
+      "Proteomics identification",
+      "Receptor",
+      "Reference proteome",
+      "Transcription",
+      "Transcription regulation",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PMS2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PMS2-F1-model_v6.pdb",
+    "mean_plddt": 76.54,
+    "plddt_fraction": 0.665,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.966,
+        "volume": 888.09,
+        "area": 262.049,
+        "hydrophobicity": 62.972,
+        "alpha_spheres": 110.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PMS2_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.756,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.756,
+        "dog": 0.637,
+        "mouse": 0.701
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PMS2_vina.conf",
+    "pocket_center": {
+      "center_x": -11.442,
+      "center_y": 10.251,
+      "center_z": 3.107
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7QNX4",
+    "name": "Aryl hydrocarbon receptor nuclear translocator homolog",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 382,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "DNA-binding",
+      "Ligase",
+      "Nucleus",
+      "Receptor",
+      "Reference proteome",
+      "Repeat",
+      "Transcription",
+      "Transcription regulation"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QNX4.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7QNX4-F1-model_v6.pdb",
+    "mean_plddt": 74.95,
+    "plddt_fraction": 0.647,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.828,
+        "volume": 331.404,
+        "area": 86.678,
+        "hydrophobicity": 31.556,
+        "alpha_spheres": 58.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QNX4_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.635,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.629,
+        "dog": 0.357,
+        "mouse": 0.635
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7QNX4_vina.conf",
+    "pocket_center": {
+      "center_x": -10.459,
+      "center_y": 2.008,
+      "center_z": 28.028
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A4D5RYT8",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 447,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "DNA-binding",
+      "Metal-binding",
+      "Nucleus",
+      "Receptor",
+      "Transcription",
+      "Transcription regulation",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RYT8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A4D5RYT8-F1-model_v6.pdb",
+    "mean_plddt": 74.08,
+    "plddt_fraction": 0.676,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.966,
+        "volume": 967.227,
+        "area": 252.128,
+        "hydrophobicity": 48.963,
+        "alpha_spheres": 104.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RYT8_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.733,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.733,
+        "dog": 0.392,
+        "mouse": 0.733
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A4D5RYT8_vina.conf",
+    "pocket_center": {
+      "center_x": -17.924,
+      "center_y": -1.888,
+      "center_z": 21.273
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "A0A4D5S2A5",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 489,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "DNA-binding",
+      "Metal-binding",
+      "Nucleus",
+      "Receptor",
+      "Transcription",
+      "Transcription regulation",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5S2A5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A4D5S2A5-F1-model_v6.pdb",
+    "mean_plddt": 70.28,
+    "plddt_fraction": 0.603,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.944,
+        "volume": 867.366,
+        "area": 239.608,
+        "hydrophobicity": 47.062,
+        "alpha_spheres": 101.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5S2A5_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.732,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.632,
+        "dog": 0.392,
+        "mouse": 0.732
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A4D5S2A5_vina.conf",
+    "pocket_center": {
+      "center_x": -17.364,
+      "center_y": -1.102,
+      "center_z": 20.453
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A4D5RGQ5",
+    "name": "Metallophosphoesterase 1 homolog",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 380,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cell cycle",
+      "Cell division",
+      "Exonuclease",
+      "Hydrolase",
+      "Manganese",
+      "Membrane",
+      "Metal-binding",
+      "Nuclease",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RGQ5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A4D5RGQ5-F1-model_v6.pdb",
+    "mean_plddt": 89.74,
+    "plddt_fraction": 0.868,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 11,
+        "source": "fpocket",
+        "score": 0.847,
+        "volume": 473.729,
+        "area": 156.308,
+        "hydrophobicity": 30.857,
+        "alpha_spheres": 50.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RGQ5_out/pockets/pocket11_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.464,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.464,
+        "dog": 0.0,
+        "mouse": 0.446
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A4D5RGQ5_vina.conf",
+    "pocket_center": {
+      "center_x": -13.769,
+      "center_y": 8.959,
+      "center_z": 14.991
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7QJZ7",
+    "name": "F-ATPase gamma subunit",
+    "gene": "8042390",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 314,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP synthesis",
+      "CF(1)",
+      "Hydrogen ion transport",
+      "Hydrolase",
+      "Ion transport",
+      "Membrane",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Proteomics identification",
+      "Reference proteome",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QJZ7.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7QJZ7-F1-model_v6.pdb",
+    "mean_plddt": 83.43,
+    "plddt_fraction": 0.841,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.5,
+        "volume": 467.214,
+        "area": 145.695,
+        "hydrophobicity": 30.529,
+        "alpha_spheres": 77.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QJZ7_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.63,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.63,
+        "dog": 0.0,
+        "mouse": 0.63
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7QJZ7_vina.conf",
+    "pocket_center": {
+      "center_x": 6.783,
+      "center_y": -8.441,
+      "center_z": 5.669
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A4D5RMV5",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 293,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cell cycle",
+      "Cell division",
+      "Exonuclease",
+      "Hydrolase",
+      "Manganese",
+      "Membrane",
+      "Metal-binding",
+      "Nuclease",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RMV5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A4D5RMV5-F1-model_v6.pdb",
+    "mean_plddt": 87.55,
+    "plddt_fraction": 0.867,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 22,
+        "source": "fpocket",
+        "score": 0.578,
+        "volume": 2788.07,
+        "area": 744.885,
+        "hydrophobicity": 46.618,
+        "alpha_spheres": 300.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RMV5_out/pockets/pocket22_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.441,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.441,
+        "dog": 0.0,
+        "mouse": 0.426
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A4D5RMV5_vina.conf",
+    "pocket_center": {
+      "center_x": -2.823,
+      "center_y": -6.056,
+      "center_z": -6.846
+    },
+    "vina_box_size": 26
+  },
+  {
+    "accession": "A0A4D5RNJ0",
+    "name": "Oligomycin sensitivity conferral protein",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 211,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP synthesis",
+      "Hydrogen ion transport",
+      "Ion transport",
+      "Membrane",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RNJ0.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A4D5RNJ0-F1-model_v6.pdb",
+    "mean_plddt": 82.63,
+    "plddt_fraction": 0.882,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.671,
+        "volume": 378.579,
+        "area": 126.79,
+        "hydrophobicity": 24.071,
+        "alpha_spheres": 30.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RNJ0_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.48,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.477,
+        "dog": 0.0,
+        "mouse": 0.48
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A4D5RNJ0_vina.conf",
+    "pocket_center": {
+      "center_x": 12.482,
+      "center_y": 7.338,
+      "center_z": -17.225
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A4D5S7D6",
+    "name": "F-ATPase gamma subunit",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 331,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP synthesis",
+      "CF(1)",
+      "Hydrogen ion transport",
+      "Ion transport",
+      "Membrane",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5S7D6.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A4D5S7D6-F1-model_v6.pdb",
+    "mean_plddt": 80.39,
+    "plddt_fraction": 0.795,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.889,
+        "volume": 566.542,
+        "area": 147.491,
+        "hydrophobicity": 29.789,
+        "alpha_spheres": 75.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5S7D6_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.63,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.63,
+        "dog": 0.0,
+        "mouse": 0.63
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A4D5S7D6_vina.conf",
+    "pocket_center": {
+      "center_x": 5.989,
+      "center_y": -8.775,
+      "center_z": 6.143
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7P5E9",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 264,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cell cycle",
+      "Cell division",
+      "Exonuclease",
+      "Hydrolase",
+      "Manganese",
+      "Membrane",
+      "Metal-binding",
+      "Nuclease",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P5E9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7P5E9-F1-model_v6.pdb",
+    "mean_plddt": 85.51,
+    "plddt_fraction": 0.86,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 17,
+        "source": "fpocket",
+        "score": 0.501,
+        "volume": 2518.914,
+        "area": 691.618,
+        "hydrophobicity": 42.133,
+        "alpha_spheres": 325.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P5E9_out/pockets/pocket17_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.418,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.418,
+        "dog": 0.0,
+        "mouse": 0.404
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7P5E9_vina.conf",
+    "pocket_center": {
+      "center_x": -8.501,
+      "center_y": -1.951,
+      "center_z": 3.556
+    },
+    "vina_box_size": 25
+  },
+  {
+    "accession": "B7Q255",
+    "name": "Homeodomain transcription factor",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 307,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Membrane",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7Q255.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7Q255-F1-model_v6.pdb",
+    "mean_plddt": 70.87,
+    "plddt_fraction": 0.632,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 41,
+        "source": "fpocket",
+        "score": 1.0,
+        "volume": 2772.938,
+        "area": 916.331,
+        "hydrophobicity": 73.305,
+        "alpha_spheres": 316.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7Q255_out/pockets/pocket41_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.518,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.518,
+        "dog": 0.0,
+        "mouse": 0.515
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7Q255_vina.conf",
+    "pocket_center": {
+      "center_x": 11.055,
+      "center_y": 5.748,
+      "center_z": -1.007
+    },
+    "vina_box_size": 26
   },
   {
     "accession": "Q5Q995",
@@ -99,12 +2153,11 @@
     ],
     "has_structure": false,
     "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 14,
+    "alphafold_available": null,
+    "novelty_score": 12,
     "novelty_reasons": [
       "No experimental structure (+3)",
       "No registered ligands (+3)",
-      "AlphaFold available (+2)",
       "Ideal docking size (+1)",
       "Druggable class: channel (+1)",
       "Membrane/receptor protein (+2)",
@@ -134,19 +2187,24 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
+      "max_identity": 0.493,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.485,
+        "dog": 0.493,
+        "mouse": 0.493
+      },
+      "method": "local_blastp"
     },
     "rnai_result": {
       "rnai_evidence": false,
       "count": 0,
       "pmids": []
     },
-    "final_score": 17,
+    "final_score": 15,
     "score_reasons": [
       "No experimental structure (+3)",
       "No registered ligands (+3)",
-      "AlphaFold available (+2)",
       "Ideal docking size (+1)",
       "Druggable class: channel (+1)",
       "Membrane/receptor protein (+2)",
@@ -159,155 +2217,62 @@
       "center_x": 6.387,
       "center_y": -4.132,
       "center_z": -11.788
-    }
+    },
+    "vina_box_size": 20
   },
   {
-    "accession": "B7PXE3",
-    "name": "Spastin",
-    "gene": "spas",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 648,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "ATP-dependent microtubule severing protein. Microtubule severing may promote reorganization of cellular microtubule arrays and the release of microtubules from the microtubule organizing center following nucleation",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "ATP-binding",
-      "Cytoplasm",
-      "Cytoskeleton",
-      "Isomerase",
-      "Membrane",
-      "Microtubule",
-      "Nucleotide-binding",
-      "Reference proteome"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 12,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Druggable class: isomerase (+1)",
-      "Membrane/receptor protein (+2)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PXE3.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PXE3-F1-model_v6.pdb",
-    "mean_plddt": 71.78,
-    "plddt_fraction": 0.631,
-    "structure_quality": "USABLE",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 5,
-        "source": "fpocket",
-        "score": 0.576,
-        "volume": 822.095,
-        "area": 218.581,
-        "hydrophobicity": 19.368,
-        "alpha_spheres": 62.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PXE3_out/pockets/pocket5_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      },
-      {
-        "pocket_id": 27,
-        "source": "fpocket",
-        "score": 0.82,
-        "volume": 378.523,
-        "area": 136.871,
-        "hydrophobicity": 27.0,
-        "alpha_spheres": 45.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PXE3_out/pockets/pocket27_atm.pdb",
-        "allosteric_candidate": true,
-        "site_type": "ALLOSTERIC_1"
-      }
-    ],
-    "druggable_pockets": 2,
-    "allosteric_sites": 1,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 17,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Druggable class: isomerase (+1)",
-      "Membrane/receptor protein (+2)",
-      "2 druggable pockets (+3)",
-      "1 allosteric site (+2)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PXE3_vina.conf",
-    "pocket_center": {
-      "center_x": -39.915,
-      "center_y": -18.021,
-      "center_z": 9.533
-    }
-  },
-  {
-    "accession": "B7PJS6",
-    "name": "Translation factor GUF1 homolog, mitochondrial",
+    "accession": "B7PIZ2",
+    "name": "",
     "gene": "",
     "species": "ixodes_scapularis",
     "latin": "Ixodes scapularis",
-    "length": 661,
+    "length": 151,
     "pdb_ids": [],
     "chembl_ids": [],
-    "function": "Promotes mitochondrial protein synthesis. May act as a fidelity factor of the translation reaction, by catalyzing a one-codon backward translocation of tRNAs on improperly translocated ribosomes. Binds to mitochondrial ribosomes in a GTP-dependent manner",
+    "function": "",
     "subcellular": "",
     "catalytic": "",
     "keywords": [
+      "Cell cycle",
+      "Cell division",
       "GTP-binding",
-      "Hydrolase",
+      "Lysosome",
+      "Magnesium",
       "Membrane",
-      "Mitochondrion",
-      "Mitochondrion inner membrane",
+      "Metal-binding",
       "Nucleotide-binding",
-      "Protein biosynthesis",
+      "Proteomics identification",
       "Reference proteome"
     ],
     "has_structure": false,
     "has_ligands": false,
-    "alphafold_available": true,
+    "alphafold_available": null,
     "novelty_score": 13,
     "novelty_reasons": [
       "No experimental structure (+3)",
       "No registered ligands (+3)",
-      "AlphaFold available (+2)",
+      "Unknown function \u2014 discovery (+2)",
       "Ideal docking size (+1)",
       "Membrane/receptor protein (+2)",
       "Essential cellular process (+2)"
     ],
     "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PJS6.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PJS6-F1-model_v6.pdb",
-    "mean_plddt": 82.88,
-    "plddt_fraction": 0.879,
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PIZ2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PIZ2-F1-model_v6.pdb",
+    "mean_plddt": 82.11,
+    "plddt_fraction": 0.781,
     "structure_quality": "GOOD",
     "suitable_for_docking": true,
     "good_pockets": [
       {
-        "pocket_id": 46,
+        "pocket_id": 11,
         "source": "fpocket",
-        "score": 0.571,
-        "volume": 864.928,
-        "area": 234.712,
-        "hydrophobicity": 26.923,
-        "alpha_spheres": 71.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PJS6_out/pockets/pocket46_atm.pdb",
+        "score": 0.66,
+        "volume": 886.528,
+        "area": 299.351,
+        "hydrophobicity": 31.55,
+        "alpha_spheres": 66.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PIZ2_out/pockets/pocket11_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
       }
@@ -315,1149 +2280,128 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 16,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Membrane/receptor protein (+2)",
-      "Essential cellular process (+2)",
-      "1 druggable pocket (+2)",
-      "Good pLDDT (+1)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PJS6_vina.conf",
-    "pocket_center": {
-      "center_x": 4.673,
-      "center_y": 8.428,
-      "center_z": -2.487
-    }
-  },
-  {
-    "accession": "B7PBI5",
-    "name": "ATP-dependent (S)-NAD(P)H-hydrate dehydratase",
-    "gene": "",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 303,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "Catalyzes the dehydration of the S-form of NAD(P)HX at the expense of ATP, which is converted to ADP. Together with NAD(P)HX epimerase, which catalyzes the epimerization of the S- and R-forms, the enzyme allows the repair of both epimers of NAD(P)HX, a damaged form of NAD(P)H that is a result of enzymatic or heat-dependent hydration",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "ATP-binding",
-      "Lyase",
-      "NAD",
-      "NADP",
-      "Nucleotide-binding",
-      "Phosphoprotein",
-      "Reference proteome"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 9,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PBI5.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PBI5-F1-model_v6.pdb",
-    "mean_plddt": 92.59,
-    "plddt_fraction": 0.931,
-    "structure_quality": "EXCELLENT",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 1,
-        "source": "fpocket",
-        "score": 0.7,
-        "volume": 655.719,
-        "area": 180.581,
-        "hydrophobicity": 24.125,
-        "alpha_spheres": 64.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PBI5_out/pockets/pocket1_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
+      "max_identity": 0.874,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.874,
+        "dog": 0.319,
+        "mouse": 0.868
       },
-      {
-        "pocket_id": 2,
-        "source": "fpocket",
-        "score": 0.672,
-        "volume": 602.609,
-        "area": 153.832,
-        "hydrophobicity": 20.0,
-        "alpha_spheres": 65.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PBI5_out/pockets/pocket2_atm.pdb",
-        "allosteric_candidate": true,
-        "site_type": "ALLOSTERIC_1"
-      }
-    ],
-    "druggable_pockets": 2,
-    "allosteric_sites": 1,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
+      "method": "local_blastp"
     },
     "rnai_result": {
       "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 16,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "2 druggable pockets (+3)",
-      "1 allosteric site (+2)",
-      "Excellent pLDDT (+2)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PBI5_vina.conf",
-    "pocket_center": {
-      "center_x": -18.376,
-      "center_y": 5.376,
-      "center_z": -3.826
-    }
-  },
-  {
-    "accession": "B7P877",
-    "name": "Nuclear cap-binding protein subunit 2",
-    "gene": "Cbp20",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 152,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "Component of the cap-binding complex (CBC), which binds co-transcriptionally to the 5' cap of pre-mRNAs and is involved in various processes such as pre-mRNA splicing and RNA-mediated gene silencing (RNAi). The CBC complex is involved in miRNA-mediated RNA interference and is required for primary microRNAs (miRNAs) processing. Also involved in innate immunity via the short interfering RNAs (siRNAs) processing machinery by restricting the viral RNA production. In the CBC complex, Cbp20 recognizes and binds capped RNAs (m7GpppG-capped RNA) but requires Cbp80 to stabilize the movement of its N-terminal loop and lock the CBC into a high affinity cap-binding state with the cap structure (By similarity)",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "mRNA processing",
-      "mRNA splicing",
-      "Nucleus",
-      "Reference proteome",
-      "RNA-binding",
-      "RNA-mediated gene silencing"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 11,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Essential cellular process (+2)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P877.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7P877-F1-model_v6.pdb",
-    "mean_plddt": 94.73,
-    "plddt_fraction": 0.961,
-    "structure_quality": "EXCELLENT",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 6,
-        "source": "fpocket",
-        "score": 0.828,
-        "volume": 682.251,
-        "area": 226.687,
-        "hydrophobicity": 25.226,
-        "alpha_spheres": 56.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P877_out/pockets/pocket6_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 15,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Essential cellular process (+2)",
-      "1 druggable pocket (+2)",
-      "Excellent pLDDT (+2)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7P877_vina.conf",
-    "pocket_center": {
-      "center_x": 9.524,
-      "center_y": -5.352,
-      "center_z": 7.762
-    }
-  },
-  {
-    "accession": "Q4PM54",
-    "name": "Large ribosomal subunit protein uL22",
-    "gene": "RpL17",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 185,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Reference proteome",
-      "Ribonucleoprotein",
-      "Ribosomal protein"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 11,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "Unknown function \u2014 discovery (+2)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q4PM54.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q4PM54-F1-model_v6.pdb",
-    "mean_plddt": 92.08,
-    "plddt_fraction": 0.935,
-    "structure_quality": "EXCELLENT",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 1,
-        "source": "fpocket",
-        "score": 0.511,
-        "volume": 657.874,
-        "area": 207.222,
-        "hydrophobicity": 18.167,
-        "alpha_spheres": 49.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q4PM54_out/pockets/pocket1_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 15,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "Unknown function \u2014 discovery (+2)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "1 druggable pocket (+2)",
-      "Excellent pLDDT (+2)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q4PM54_vina.conf",
-    "pocket_center": {
-      "center_x": -10.702,
-      "center_y": 17.273,
-      "center_z": 4.861
-    }
-  },
-  {
-    "accession": "Q4PMB3",
-    "name": "Small ribosomal subunit protein eS4",
-    "gene": "RpS4",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 262,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Reference proteome",
-      "Ribonucleoprotein",
-      "Ribosomal protein",
-      "RNA-binding",
-      "rRNA-binding"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 11,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "Unknown function \u2014 discovery (+2)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q4PMB3.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q4PMB3-F1-model_v6.pdb",
-    "mean_plddt": 95.5,
-    "plddt_fraction": 0.996,
-    "structure_quality": "EXCELLENT",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 21,
-        "source": "fpocket",
-        "score": 0.688,
-        "volume": 511.515,
-        "area": 178.721,
-        "hydrophobicity": 26.424,
-        "alpha_spheres": 45.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q4PMB3_out/pockets/pocket21_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 15,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "Unknown function \u2014 discovery (+2)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "1 druggable pocket (+2)",
-      "Excellent pLDDT (+2)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q4PMB3_vina.conf",
-    "pocket_center": {
-      "center_x": 14.513,
-      "center_y": -5.905,
-      "center_z": 7.013
-    }
-  },
-  {
-    "accession": "B7Q1Q9",
-    "name": "Transcription initiation factor IIA subunit 2",
-    "gene": "",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 118,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "TFIIA is a component of the transcription machinery of RNA polymerase II and plays an important role in transcriptional activation. TFIIA in a complex with Tbp mediates transcriptional activity (By similarity)",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Nucleus",
-      "Reference proteome",
-      "Transcription",
-      "Transcription regulation"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 11,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Essential cellular process (+2)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7Q1Q9.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7Q1Q9-F1-model_v6.pdb",
-    "mean_plddt": 86.18,
-    "plddt_fraction": 0.839,
-    "structure_quality": "GOOD",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 8,
-        "source": "fpocket",
-        "score": 0.788,
-        "volume": 1504.795,
-        "area": 464.321,
-        "hydrophobicity": 49.685,
-        "alpha_spheres": 163.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7Q1Q9_out/pockets/pocket8_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 14,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Essential cellular process (+2)",
-      "1 druggable pocket (+2)",
-      "Good pLDDT (+1)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7Q1Q9_vina.conf",
-    "pocket_center": {
-      "center_x": 4.619,
-      "center_y": 3.774,
-      "center_z": -15.481
-    }
-  },
-  {
-    "accession": "Q4PMC9",
-    "name": "RNA-binding protein pno1",
-    "gene": "",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 234,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Nucleus",
-      "Reference proteome",
-      "RNA-binding"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 11,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "Unknown function \u2014 discovery (+2)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q4PMC9.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q4PMC9-F1-model_v6.pdb",
-    "mean_plddt": 80.73,
-    "plddt_fraction": 0.778,
-    "structure_quality": "GOOD",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 4,
-        "source": "fpocket",
-        "score": 0.81,
-        "volume": 628.774,
-        "area": 183.179,
-        "hydrophobicity": 38.622,
-        "alpha_spheres": 53.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q4PMC9_out/pockets/pocket4_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 14,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "Unknown function \u2014 discovery (+2)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "1 druggable pocket (+2)",
-      "Good pLDDT (+1)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q4PMC9_vina.conf",
-    "pocket_center": {
-      "center_x": -1.127,
-      "center_y": 9.338,
-      "center_z": 16.128
-    }
-  },
-  {
-    "accession": "B7PRF6",
-    "name": "Acireductone dioxygenase",
-    "gene": "",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 183,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "Catalyzes 2 different reactions between oxygen and the acireductone 1,2-dihydroxy-3-keto-5-methylthiopentene (DHK-MTPene) depending upon the metal bound in the active site. Fe-containing acireductone dioxygenase (Fe-ARD) produces formate and 2-keto-4-methylthiobutyrate (KMTB), the alpha-ketoacid precursor of methionine in the methionine recycle pathway. Ni-containing acireductone dioxygenase (Ni-ARD) produces methylthiopropionate, carbon monoxide and formate, and does not lie on the methionine recycle pathway",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Amino-acid biosynthesis",
-      "Cytoplasm",
-      "Dioxygenase",
-      "Iron",
-      "Metal-binding",
-      "Methionine biosynthesis",
-      "Nickel",
-      "Nucleus",
-      "Oxidoreductase",
-      "Reference proteome"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 10,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Druggable class: reductase (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PRF6.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PRF6-F1-model_v6.pdb",
-    "mean_plddt": 95.52,
-    "plddt_fraction": 0.978,
-    "structure_quality": "EXCELLENT",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 1,
-        "source": "fpocket",
-        "score": 0.882,
-        "volume": 401.367,
-        "area": 126.166,
-        "hydrophobicity": 40.776,
-        "alpha_spheres": 81.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PRF6_out/pockets/pocket1_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 14,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Druggable class: reductase (+1)",
-      "1 druggable pocket (+2)",
-      "Excellent pLDDT (+2)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PRF6_vina.conf",
-    "pocket_center": {
-      "center_x": 3.343,
-      "center_y": -2.786,
-      "center_z": 5.029
-    }
-  },
-  {
-    "accession": "B7QDG3",
-    "name": "NAD(P)H-hydrate epimerase",
-    "gene": "",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 275,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "Catalyzes the epimerization of the S- and R-forms of NAD(P)HX, a damaged form of NAD(P)H that is a result of enzymatic or heat-dependent hydration. This is a prerequisite for the S-specific NAD(P)H-hydrate dehydratase to allow the repair of both epimers of NAD(P)HX",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Isomerase",
-      "Metal-binding",
-      "NAD",
-      "NADP",
-      "Nucleotide-binding",
-      "Potassium",
-      "Reference proteome"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 10,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Druggable class: isomerase (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QDG3.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7QDG3-F1-model_v6.pdb",
-    "mean_plddt": 89.48,
-    "plddt_fraction": 0.865,
-    "structure_quality": "GOOD",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 1,
-        "source": "fpocket",
-        "score": 0.781,
-        "volume": 1275.75,
-        "area": 296.959,
-        "hydrophobicity": 19.44,
-        "alpha_spheres": 149.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QDG3_out/pockets/pocket1_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 13,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Druggable class: isomerase (+1)",
-      "1 druggable pocket (+2)",
-      "Good pLDDT (+1)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7QDG3_vina.conf",
-    "pocket_center": {
-      "center_x": 3.787,
-      "center_y": -1.946,
-      "center_z": -5.498
-    }
-  },
-  {
-    "accession": "B7PKZ2",
-    "name": "Salivary cystatin-L",
-    "gene": "",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 133,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "Inhibitor of cysteine proteinases. Inhibits host immune responses via its inhibition of host cathepsins. Contributes to the suppression of the host's immune response to tick salivary proteins and is important for successful feeding on hosts. Inhibits differentiation of host dendritic cells. Inhibits proliferation of host T-cells in response to antigen stimulus. Down-regulates TLR2-mediated host responses to infection by B.burgdorferi and the production of the chemokine CCL3 by host dendritic cells. Down-regulates host responses to infection by B.burgdorferi and the production of IFNB1 by host dendritic cells. Down-regulates IL1B production by host mast cells, and this then leads to impaired activation of IL1R1, resulting in decreased IL9 production. Inhibits host inflammatory reactions and recruitment of host neutrophils. Inhibits papain and cathepsin L (CTSL) (in vitro). Inhibits cathepsin S (CTSS) (in vitro). Inhibits CTSV and CTSC, but to a lesser degree (in vitro)",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Disulfide bond",
-      "Protease inhibitor",
-      "Reference proteome",
-      "Secreted",
-      "Signal",
-      "Thiol protease inhibitor"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 10,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Druggable class: protease (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PKZ2.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PKZ2-F1-model_v6.pdb",
-    "mean_plddt": 88.72,
-    "plddt_fraction": 0.812,
-    "structure_quality": "GOOD",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 2,
-        "source": "fpocket",
-        "score": 0.597,
-        "volume": 310.412,
-        "area": 110.113,
-        "hydrophobicity": 16.0,
-        "alpha_spheres": 27.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PKZ2_out/pockets/pocket2_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 13,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "Druggable class: protease (+1)",
-      "1 druggable pocket (+2)",
-      "Good pLDDT (+1)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PKZ2_vina.conf",
-    "pocket_center": {
-      "center_x": -7.642,
-      "center_y": 2.573,
-      "center_z": -11.943
-    }
-  },
-  {
-    "accession": "F6KSY2",
-    "name": "Salivary anticoagulant protein P23",
-    "gene": "",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 222,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "Inhibits host coagulation by delaying thrombin generation and reducing endogenous thrombin potential (ETP)",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Blood coagulation cascade inhibiting toxin",
-      "Glycoprotein",
-      "Hemostasis impairing toxin",
-      "Reference proteome",
-      "Secreted",
-      "Signal",
-      "Toxin"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 9,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/F6KSY2.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-F6KSY2-F1-model_v6.pdb",
-    "mean_plddt": 90.39,
-    "plddt_fraction": 0.883,
-    "structure_quality": "GOOD",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 4,
-        "source": "fpocket",
-        "score": 0.534,
-        "volume": 346.58,
-        "area": 114.05,
-        "hydrophobicity": 19.0,
-        "alpha_spheres": 34.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/F6KSY2_out/pockets/pocket4_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 13,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "1 druggable pocket (+2)",
-      "Excellent pLDDT (+2)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/F6KSY2_vina.conf",
-    "pocket_center": {
-      "center_x": 10.277,
-      "center_y": 14.05,
-      "center_z": -21.615
-    }
-  },
-  {
-    "accession": "B7Q290",
-    "name": "Protein NCBP2AS2 homolog",
-    "gene": "",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 95,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Reference proteome"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 10,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "Unknown function \u2014 discovery (+2)",
-      "AlphaFold available (+2)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7Q290.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7Q290-F1-model_v6.pdb",
-    "mean_plddt": 72.83,
-    "plddt_fraction": 0.716,
-    "structure_quality": "USABLE",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 2,
-        "source": "fpocket",
-        "score": 0.813,
-        "volume": 384.658,
-        "area": 135.767,
-        "hydrophobicity": 27.333,
-        "alpha_spheres": 45.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7Q290_out/pockets/pocket2_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 12,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "Unknown function \u2014 discovery (+2)",
-      "AlphaFold available (+2)",
-      "1 druggable pocket (+2)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7Q290_vina.conf",
-    "pocket_center": {
-      "center_x": 19.784,
-      "center_y": -11.596,
-      "center_z": -6.024
-    }
-  },
-  {
-    "accession": "Q202J4",
-    "name": "Dermonecrotic toxin SPH",
-    "gene": "SPH",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 364,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "Dermonecrotic toxins cleave the phosphodiester linkage between the phosphate and headgroup of certain phospholipids (sphingolipid and lysolipid substrates), forming an alcohol (often choline) and a cyclic phosphate (By similarity). Acts on sphingomyelin (SM) (By similarity). It may also act on ceramide phosphoethanolamine (CPE), lysophosphatidylcholine (LPC) and lysophosphatidylethanolamine (LPE), but not on lysophosphatidylserine (LPS), and lysophosphatidylglycerol (LPG) (By similarity). It acts by transphosphatidylation, releasing exclusively cyclic phosphate products as second products (By similarity). Induces dermonecrosis, hemolysis, increased vascular permeability, edema, inflammatory response, and platelet aggregation (By similarity)",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Cytolysis",
-      "Dermonecrotic toxin",
-      "Disulfide bond",
-      "Hemolysis",
-      "Lipid degradation",
-      "Lipid metabolism",
-      "Lyase",
-      "Magnesium",
-      "Metal-binding",
-      "Reference proteome",
-      "Secreted",
-      "Signal",
-      "Toxin",
-      "Zymogen"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 9,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q202J4.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q202J4-F1-model_v6.pdb",
-    "mean_plddt": 83.82,
-    "plddt_fraction": 0.78,
-    "structure_quality": "GOOD",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 2,
-        "source": "fpocket",
-        "score": 0.56,
-        "volume": 634.705,
-        "area": 189.761,
-        "hydrophobicity": 16.138,
-        "alpha_spheres": 81.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q202J4_out/pockets/pocket2_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 12,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "1 druggable pocket (+2)",
-      "Good pLDDT (+1)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q202J4_vina.conf",
-    "pocket_center": {
-      "center_x": 5.32,
-      "center_y": 1.725,
-      "center_z": -6.312
-    }
-  },
-  {
-    "accession": "B7PY76",
-    "name": "Ribosome biogenesis protein WDR12 homolog",
-    "gene": "",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 425,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "Required for maturation of ribosomal RNAs and formation of the large ribosomal subunit",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Nucleus",
-      "Reference proteome",
-      "Repeat",
-      "Ribosome biogenesis",
-      "rRNA processing",
-      "WD repeat"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 9,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PY76.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7PY76-F1-model_v6.pdb",
-    "mean_plddt": 89.1,
-    "plddt_fraction": 0.908,
-    "structure_quality": "GOOD",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 23,
-        "source": "fpocket",
-        "score": 0.728,
-        "volume": 481.717,
-        "area": 163.677,
-        "hydrophobicity": 14.375,
-        "alpha_spheres": 37.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PY76_out/pockets/pocket23_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
-    },
-    "final_score": 12,
-    "score_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)",
-      "1 druggable pocket (+2)",
-      "Good pLDDT (+1)"
-    ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PY76_vina.conf",
-    "pocket_center": {
-      "center_x": -18.613,
-      "center_y": -0.869,
-      "center_z": 15.535
-    }
-  },
-  {
-    "accession": "Q8MUP7",
-    "name": "Salivary protein Salp9",
-    "gene": "Salp9Pac",
-    "species": "ixodes_scapularis",
-    "latin": "Ixodes scapularis",
-    "length": 102,
-    "pdb_ids": [],
-    "chembl_ids": [],
-    "function": "Salivary protein that facilitates blood feeding of adult ticks on vertebrate species (PubMed:14745044). Inhibits the lectin pathway of complement system activation in the host (PubMed:34118237)",
-    "subcellular": "",
-    "catalytic": "",
-    "keywords": [
-      "Direct protein sequencing",
-      "Glycoprotein",
-      "Reference proteome",
-      "Secreted",
-      "Signal"
-    ],
-    "has_structure": false,
-    "has_ligands": false,
-    "alphafold_available": true,
-    "novelty_score": 9,
-    "novelty_reasons": [
-      "No experimental structure (+3)",
-      "No registered ligands (+3)",
-      "AlphaFold available (+2)",
-      "Ideal docking size (+1)"
-    ],
-    "structure_status": "OK",
-    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8MUP7.pdb",
-    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q8MUP7-F1-model_v6.pdb",
-    "mean_plddt": 71.98,
-    "plddt_fraction": 0.549,
-    "structure_quality": "USABLE",
-    "suitable_for_docking": true,
-    "good_pockets": [
-      {
-        "pocket_id": 1,
-        "source": "fpocket",
-        "score": 0.607,
-        "volume": 379.129,
-        "area": 123.822,
-        "hydrophobicity": 16.091,
-        "alpha_spheres": 56.0,
-        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8MUP7_out/pockets/pocket1_atm.pdb",
-        "allosteric_candidate": false,
-        "site_type": "PRIMARY"
-      }
-    ],
-    "druggable_pockets": 1,
-    "allosteric_sites": 0,
-    "blast_result": {
-      "max_identity": null,
-      "human_risk": "SKIPPED"
-    },
-    "rnai_result": {
-      "rnai_evidence": false,
-      "count": 0,
-      "pmids": []
+      "count": 0
     },
     "final_score": 11,
     "score_reasons": [
       "No experimental structure (+3)",
       "No registered ligands (+3)",
-      "AlphaFold available (+2)",
+      "Unknown function \u2014 discovery (+2)",
       "Ideal docking size (+1)",
-      "1 druggable pocket (+2)"
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "HIGH human homology 87% (-5)",
+      "Good pLDDT (+1)"
     ],
-    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8MUP7_vina.conf",
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PIZ2_vina.conf",
     "pocket_center": {
-      "center_x": 0.65,
-      "center_y": -1.355,
-      "center_z": -2.502
-    }
+      "center_x": 7.169,
+      "center_y": -3.271,
+      "center_z": 11.194
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A4D5RDE4",
+    "name": "",
+    "gene": "",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 232,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cell cycle",
+      "Cell division",
+      "GTP-binding",
+      "Lysosome",
+      "Magnesium",
+      "Membrane",
+      "Metal-binding",
+      "Nucleotide-binding",
+      "Signal"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RDE4.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A4D5RDE4-F1-model_v6.pdb",
+    "mean_plddt": 76.75,
+    "plddt_fraction": 0.69,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.923,
+        "volume": 687.339,
+        "area": 174.674,
+        "hydrophobicity": 18.267,
+        "alpha_spheres": 88.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RDE4_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.902,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.902,
+        "dog": 0.256,
+        "mouse": 0.896
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 10,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "HIGH human homology 90% (-5)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A4D5RDE4_vina.conf",
+    "pocket_center": {
+      "center_x": 8.712,
+      "center_y": 5.135,
+      "center_z": -6.284
+    },
+    "vina_box_size": 20
   }
 ]

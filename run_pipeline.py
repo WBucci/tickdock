@@ -203,6 +203,9 @@ if __name__ == "__main__":
                         help="Show detailed info and exit")
     parser.add_argument("--check",          action="store_true",
                         help="Check prerequisites only")
+    parser.add_argument("--no-prompt",      action="store_true",
+                        help="Never prompt on step failure -- continue automatically "
+                             "(required for unattended / background runs)")
     args = parser.parse_args()
 
     banner()
@@ -265,10 +268,16 @@ if __name__ == "__main__":
                 print(f"\n  ✓ Step {step_num} complete ({elapsed:.0f}s)")
             else:
                 print(f"\n  ✗ Step {step_num} FAILED ({elapsed:.0f}s)")
-                cont = input("  Continue anyway? (y/n): ").strip().lower()
-                if cont != "y":
-                    print("Pipeline stopped.")
-                    sys.exit(1)
+                if args.no_prompt:
+                    print("  (--no-prompt set -- continuing to next step)")
+                else:
+                    try:
+                        cont = input("  Continue anyway? (y/n): ").strip().lower()
+                    except EOFError:
+                        cont = "n"  # non-interactive session: stop on failure
+                    if cont != "y":
+                        print("Pipeline stopped.")
+                        sys.exit(1)
 
     generate_all_docs()
 
@@ -285,6 +294,7 @@ if __name__ == "__main__":
             print(f"    Final targets:  {len(targets)} ranked candidates")
             if targets:
                 t = targets[0]
+                print(f"    Top candidate:  {t['accession']} — {t['name'][:50]}")
                 print(f"    Top candidate:  {t['accession']} — {t['name'][:50]}")
                 print(f"    Score:          {t.get('final_score','?')}")
 

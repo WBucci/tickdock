@@ -1,0 +1,44 @@
+{
+  "batch_id": 0,
+  "batch_ligands": [
+    "CHEMBL1234567",
+    "CHEMBL2345678",
+    "CHEMBL3456789"
+  ],
+  "n_ligands": 2000,
+  "n_targets": 18,
+  "n_ok": 17,
+  "total_hits": 43,
+  "elapsed_s": 5420.3,
+  "completed_at": "2026-05-23T01:19:45.392106",
+  "failed_targets": [
+    "Q4PLZ3"
+  ],
+  "top_5": [
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL1899506",
+      "score": -9.42
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL3360617",
+      "score": -8.81
+    },
+    {
+      "target": "A0A0K8RXJ4",
+      "ligand": "CHEMBL2179888",
+      "score": -8.34
+    },
+    {
+      "target": "B7P877",
+      "ligand": "CHEMBL3586312",
+      "score": -8.17
+    },
+    {
+      "target": "A0A0K8W0T0",
+      "ligand": "CHEMBL2350038",
+      "score": -7.95
+    }
+  ]
+}

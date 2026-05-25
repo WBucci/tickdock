@@ -110,7 +110,7 @@ DOGSITE_API     = "https://proteins.plus/api/dogsite_rest"
 PKCSM_API       = "https://biosig.lab.uq.edu.au/pkcsm/api"
 SWISSADME_URL   = "https://www.swissadme.ch/index.php"
 
-# NCBI requires a real email for BLAST API calls — set in .env (never hardcode)
+# NCBI requires a real email for BLAST API calls -- set in .env (never hardcode)
 BLAST_EMAIL     = os.environ.get("BLAST_EMAIL", "")
 
 REQUEST_DELAY   = 0.5   # Seconds between API calls
@@ -154,10 +154,30 @@ BLAST_HOSTS = {
 }
 
 # ── Software citations (appear in Methods) ────────────────────────────────
+# Repository / project metadata
+GITHUB_REPO = "https://github.com/WBucci/tickdock"
+GITHUB_LICENSE = "MIT"
+
+# Compound source (ChEMBL used as primary; ZINC20 API unreliable at download time)
+COMPOUND_SOURCE_PRIMARY   = "ChEMBL"
+COMPOUND_SOURCE_SECONDARY = "ZINC20"
+
+# Promiscuous binder exclusion list
+# Compounds scoring across >=80% of all docking targets are likely pan-assay
+# interference compounds or non-specific binders. Excluded from reported hits.
+PROMISCUOUS_THRESHOLD = 0.80   # fraction of targets hit to be flagged
+KNOWN_PROMISCUOUS = {
+    "CHEMBL10",     # Hits 18/18 targets (100%) -- confirmed promiscuous binder
+    "CHEMBL11",     # Hits 18/18 targets (100%) -- confirmed promiscuous binder
+    "CHEMBL12",     # Hits 18/18 targets (100%) -- confirmed promiscuous binder
+    "CHEMBL112998", # Hits 18/18 targets (100%) -- confirmed promiscuous binder
+}
+
+# Software citations (appear in Methods section auto-generation)
 SOFTWARE_CITATIONS = {
     "alphafold":  "Jumper et al. (2021) Nature 596:583-589",
     "fpocket":    "Le Guilloux et al. (2009) BMC Bioinformatics 10:168",
-    "dogsite":    "Volkamer et al. (2012) J Chem Inf Model 52:360-372",
+    "p2rank":     "Krivak & Hoksza (2018) J Cheminform 10:39",
     "vina":       "Trott & Olson (2010) J Comput Chem 31:455-461",
     "rdkit":      "Landrum (2006) RDKit: Open-source cheminformatics",
     "biopython":  "Cock et al. (2009) Bioinformatics 25:1422-1423",
@@ -165,5 +185,8 @@ SOFTWARE_CITATIONS = {
     "chembl":     "Gaulton et al. (2017) Nucleic Acids Res 45:D945-D954",
     "zinc":       "Irwin et al. (2020) J Chem Inf Model 60:6065-6073",
     "blast":      "Altschul et al. (1990) J Mol Biol 215:403-410",
-    "pkcsm":      "Pires et al. (2015) J Med Chem 58:4066-4072",
+    "pains":      "Baell & Holloway (2010) J Med Chem 53:2719-2740",
+    "lipinski":   "Lipinski et al. (2001) Adv Drug Deliv Rev 46:3-26",
 }
+
+ 
