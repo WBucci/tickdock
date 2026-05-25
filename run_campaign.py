@@ -531,26 +531,55 @@ def _toast(title: str, body: str):
 
 
 # ── Post-campaign cleanup ─────────────────────────────────────────────────────
-def run_post_campaign():
-    """After all batches done: promiscuous filter, figures, docs."""
-    log("\nRunning post-campaign cleanup...")
+def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
+    """After each round: promiscuous filter, cross-species orthologs, figures, docs."""
+    log("\nRunning post-round analysis...")
 
     steps = [
         ("Promiscuous filter",
-         [sys.executable, os.path.join(BASE_DIR, "scripts", "check_promiscuous.py")]),
-        ("Generate figures",
-         [sys.executable, os.path.join(BASE_DIR, "scripts", "generate_figures.py")]),
-        ("Regenerate docs",
-         [sys.executable, os.path.join(BASE_DIR, "run_pipeline.py"), "--docs-only"]),
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "check_promiscuous.py")],
+         120),
     ]
-    for name, cmd in steps:
+
+    if not skip_orthologs:
+        # Orthologs: flags pan-tick targets (all 3 species), but species-specific
+        # hits are still valid leads — just with a narrower application scope.
+        steps.append((
+            "Cross-species orthologs",
+            [sys.executable,
+             os.path.join(BASE_DIR, "scripts", "cross_species_orthologs.py"),
+             "--top", str(top_targets)],
+            1800,   # up to 30 min on first run (full proteome download + BLAST)
+        ))
+
+    steps += [
+        ("Generate figures",
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "generate_figures.py")],
+         300),
+        ("Regenerate docs",
+         [sys.executable, os.path.join(BASE_DIR, "run_pipeline.py"), "--docs-only"],
+         300),
+    ]
+
+    for name, cmd, timeout in steps:
         log(f"  {name}...")
         try:
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
             if result.returncode == 0:
                 log(f"  {name}: OK")
+                # Surface ortholog summary inline so it appears in the campaign log
+                if "ortholog" in name.lower() and result.stdout:
+                    for line in result.stdout.splitlines():
+                        if any(kw in line for kw in
+                               ("pan-tick", "Pan-tick", "species", "ortholog",
+                                "targets analyzed", "written")):
+                            log(f"    {line.strip()}")
             else:
                 log(f"  {name}: WARN (exit {result.returncode})", "WARN")
+                if result.stderr:
+                    log(f"    {result.stderr.splitlines()[0]}", "WARN")
+        except subprocess.TimeoutExpired:
+            log(f"  {name}: timed out after {timeout}s -- skipping", "WARN")
         except Exception as e:
             log(f"  {name}: {e}", "WARN")
 
@@ -789,7 +818,9 @@ def main():
     parser.add_argument("--dry-run", action="store_true",
                         help="Preview commands without running Vina")
     parser.add_argument("--no-post", action="store_true",
-                        help="Skip post-campaign promiscuous/figures/docs")
+                        help="Skip post-round promiscuous/orthologs/figures/docs")
+    parser.add_argument("--no-orthologs", action="store_true",
+                        help="Skip cross-species ortholog step in post-round analysis")
     # ── Autonomous loop controls ──────────────────────────────────────────────
     parser.add_argument("--compress-every", type=int, default=1, metavar="N",
                         help="Compress non-hit PDBQT files every N batches "
@@ -887,7 +918,8 @@ def main():
             if not pending:
                 log("All batches in this round are already complete.")
                 if not args.no_post and not args.dry_run:
-                    run_post_campaign()
+                    run_post_campaign(top_targets=len(targets),
+                                      skip_orthologs=args.no_orthologs)
                 if _download_complete():
                     _reset_download_flags()
                     log("Queued download is ready -- starting next round.")
@@ -1003,7 +1035,8 @@ def main():
                 f"{n_completed}/{len(batches)} batches done total.")
 
             if not args.no_post and not args.dry_run:
-                run_post_campaign()
+                run_post_campaign(top_targets=len(targets),
+                                  skip_orthologs=args.no_orthologs)
                 _toast("TickDock Round Complete",
                        f"Round {round_num} done -- "
                        f"{state.get('cumulative_hits', 0)} cumulative hits.")

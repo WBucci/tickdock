@@ -370,8 +370,15 @@ def main():
         result["pan_tick"]         = pan_tick
         result["species_coverage"] = sum(1 for h in all_hits
                                          if h.get("identity_pct", 0) >= GOOD_IDENTITY)
+        species_cov = result["species_coverage"]
         if pan_tick:
-            print(f"  *** PAN-TICK TARGET -- conserved in all 3 species ***")
+            print(f"  *** PAN-TICK TARGET -- conserved in all 3 species (broad-spectrum lead) ***")
+        elif species_cov >= 1:
+            sp_name = next(
+                (sp for sp, h in result["orthologs"].items()
+                 if h.get("identity_pct", 0) >= GOOD_IDENTITY), "unknown"
+            )
+            print(f"  --> Species-specific lead ({sp_name}) -- still a valid target")
 
         results[acc] = result
 
@@ -422,13 +429,21 @@ def main():
             print(f"Back-annotated {updated} targets in final_targets.json")
 
         # Summary
-        pan_tick_count = sum(1 for r in results.values() if r.get("pan_tick"))
+        pan_tick_count     = sum(1 for r in results.values() if r.get("pan_tick"))
+        species_spec_count = sum(1 for r in results.values()
+                                 if not r.get("pan_tick") and r.get("species_coverage", 0) >= 1)
+        no_ortholog_count  = len(results) - pan_tick_count - species_spec_count
         print(f"\nSummary:")
-        print(f"  Targets analyzed:   {len(results)}")
-        print(f"  Pan-tick targets:   {pan_tick_count}  (>={args.identity}% identity both species)")
+        print(f"  Targets analyzed:      {len(results)}")
+        print(f"  Pan-tick (all 3):      {pan_tick_count}  "
+              f"(>={args.identity}% identity in both other species)")
+        print(f"  Species-specific:      {species_spec_count}  "
+              f"(conserved in 1 other species -- still valid leads)")
+        print(f"  I. scapularis only:    {no_ortholog_count}  "
+              f"(no strong ortholog found -- Ixodes-specific lead)")
         if pan_tick_count:
             pan_targets = [acc for acc, r in results.items() if r.get("pan_tick")]
-            print(f"  Pan-tick accessions: {pan_targets}")
+            print(f"  Pan-tick accessions:   {pan_targets}")
         print(f"\n  Full results: {out_path}")
         print(f"  Paper table:  {tsv_path}")
 

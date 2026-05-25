@@ -174,11 +174,38 @@ def generate_all_docs():
             import json as _json
             with open(ortho_path) as f:
                 ortho = _json.load(f)
-            pan_count = sum(1 for r in ortho.values() if r.get("pan_tick"))
-            print(f"  ✓ Orthologs:          {len(ortho)} targets, "
-                  f"{pan_count} pan-tick  ({ortho_path})")
+            pan_count     = sum(1 for r in ortho.values() if r.get("pan_tick"))
+            species_count = len(ortho) - pan_count
+            print(f"  ✓ Orthologs:          {len(ortho)} targets analyzed — "
+                  f"{pan_count} pan-tick (all 3 species), "
+                  f"{species_count} species-specific  ({ortho_path})")
         except Exception:
             pass
+
+    # Run promiscuous binder check if docking results exist
+    top_hits_path = os.path.join(DOCKING_DIR, "top_hits.json")
+    if os.path.exists(top_hits_path):
+        try:
+            promiscuous_script = os.path.join(SCRIPTS_DIR, "check_promiscuous.py")
+            result = subprocess.run(
+                [sys.executable, promiscuous_script],
+                capture_output=True, text=True, timeout=120,
+            )
+            clean_path = os.path.join(DOCKING_DIR, "clean_hits.json")
+            if os.path.exists(clean_path):
+                with open(clean_path) as f:
+                    clean_hits = json.load(f)
+                with open(top_hits_path) as f:
+                    all_hits = json.load(f)
+                flagged = len(all_hits) - len(clean_hits)
+                print(f"  ✓ Promiscuous filter: {len(clean_hits)} clean hits "
+                      f"({flagged} flagged as promiscuous)  ({clean_path})")
+            elif result.returncode != 0:
+                print(f"  [WARN] Promiscuous filter: exit {result.returncode}")
+        except subprocess.TimeoutExpired:
+            print(f"  [WARN] Promiscuous filter: timed out")
+        except Exception as e:
+            print(f"  [WARN] Promiscuous filter: {e}")
 
     # Print Methods preview
     print(f"\n{'─'*60}")
