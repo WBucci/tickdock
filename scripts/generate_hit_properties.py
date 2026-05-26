@@ -35,7 +35,8 @@ except ImportError:
     print("[WARN] requests not found. API calls disabled.")
 
 try:
-    from rdkit import Chem
+    from rdkit import Chem, RDLogger
+    RDLogger.DisableLog("rdApp.*")
     from rdkit.Chem import Descriptors, rdMolDescriptors
     HAS_RDKIT = True
 except ImportError:

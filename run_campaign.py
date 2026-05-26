@@ -587,8 +587,12 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
     steps += [
         ("Hit property table",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "generate_hit_properties.py"),
-          "--top", "30"],   # fetch SMILES + compute MW/LogP/HBD/HBA for top 30 hits
+          "--top", "50"],   # fetch SMILES + compute MW/LogP/HBD/HBA for top 50 hits
          300),
+        ("Scaffold diversity",
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "scaffold_diversity.py"),
+          "--top", "50", "--cutoff", "0.4"],  # Tanimoto clustering + fig 6
+         120),
         ("Generate figures",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "generate_figures.py")],
          300),
