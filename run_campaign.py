@@ -561,7 +561,8 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
 
     steps = [
         ("Promiscuous filter",
-         [sys.executable, os.path.join(BASE_DIR, "scripts", "check_promiscuous.py")],
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "check_promiscuous.py"),
+          "--update-config"],   # auto-patches config.py with newly found binders
          120),
         ("P2Rank pocket prediction",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "run_p2rank.py")],

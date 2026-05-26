@@ -156,18 +156,59 @@ def main():
             print(f"  {i:<5} {h.get('target','?'):<12} {h.get('ligand','?'):<25} "
                   f"{h.get('score',0):>10.3f}")
 
-    # Config snippet for new IDs
+    # Auto-patch config.py with new IDs
     if args.update_config:
         new_ids = [k for k in flagged if k not in KNOWN_PROMISCUOUS]
-        if new_ids:
-            print("\nAdd to config.py KNOWN_PROMISCUOUS:")
-            for nid in sorted(new_ids):
-                frac = flagged[nid]["hit_fraction"]
-                n    = flagged[nid]["targets_hit"]
-                tot  = flagged[nid]["total_targets"]
-                print(f'    "{nid}",   # Hits {n}/{tot} ({frac*100:.0f}%) targets')
-        else:
+        if not new_ids:
             print("\nNo new promiscuous compounds beyond what's already in config.")
+        else:
+            config_path = os.path.join(
+                os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                "config.py"
+            )
+            try:
+                with open(config_path) as f:
+                    src = f.read()
+
+                import datetime
+                today = datetime.date.today().isoformat()
+                insert_lines = []
+                for nid in sorted(new_ids):
+                    frac = flagged[nid]["hit_fraction"]
+                    n    = flagged[nid]["targets_hit"]
+                    tot  = flagged[nid]["total_targets"]
+                    insert_lines.append(
+                        f'    "{nid}",   '
+                        f'# Hits {n}/{tot} ({frac*100:.0f}%) -- detected auto, added {today}'
+                    )
+                insert_block = "\n".join(insert_lines)
+
+                # Insert before the closing } of KNOWN_PROMISCUOUS
+                old_close = "}"
+                # Find the block and insert before its closing brace
+                block_start = src.index("KNOWN_PROMISCUOUS = {")
+                block_end   = src.index("}", block_start)
+                # Make sure we're not inserting a duplicate
+                patched = (
+                    src[:block_end]
+                    + insert_block + "\n"
+                    + src[block_end:]
+                )
+                with open(config_path, "w") as f:
+                    f.write(patched)
+
+                print(f"\nconfig.py updated — added {len(new_ids)} new promiscuous ID(s):")
+                for nid in sorted(new_ids):
+                    print(f"  + {nid}")
+                print("  Reload config in running processes to take effect.")
+            except Exception as e:
+                print(f"\n[WARN] Could not auto-patch config.py: {e}")
+                print("Add manually to KNOWN_PROMISCUOUS:")
+                for nid in sorted(new_ids):
+                    frac = flagged[nid]["hit_fraction"]
+                    n    = flagged[nid]["targets_hit"]
+                    tot  = flagged[nid]["total_targets"]
+                    print(f'    "{nid}",   # Hits {n}/{tot} ({frac*100:.0f}%) targets')
 
 
 if __name__ == "__main__":

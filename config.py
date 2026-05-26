@@ -171,6 +171,7 @@ KNOWN_PROMISCUOUS = {
     "CHEMBL11",     # Hits 18/18 targets (100%) -- confirmed promiscuous binder
     "CHEMBL12",     # Hits 18/18 targets (100%) -- confirmed promiscuous binder
     "CHEMBL112998", # Hits 18/18 targets (100%) -- confirmed promiscuous binder
+    "CHEMBL9937",   # Hits 35/42 targets (83%)  -- detected round 2, added 2026-05-26
 }
 
 # Software citations (appear in Methods section auto-generation)
