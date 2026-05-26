@@ -1,0 +1,43 @@
+accession	old_name	new_name	gene	function_class	domain_count	domain_summary	go_count	go_terms
+B7P2S1				Receptor	6	Nuclear hormone receptor, ligand-binding domain; Zinc finger, nuclear hormone receptor-type; Nuclear hormone receptor	4	GO:0003700; GO:0008270; GO:0043565; GO:0006355
+B7QBP7	Proton-coupled zinc antiporter SLC30A9, mitochondrial			Unknown	6	Cation efflux; Putative DNA-binding domain superfamily; Cation efflux transmembrane domain superfamily	5	GO:0008324; GO:0006812; GO:0055085; GO:0016020; GO:0006829
+B7P9U9	Ecdysone receptor			Receptor	8	Nuclear hormone receptor, ligand-binding domain; Zinc finger, nuclear hormone receptor-type; Nuclear hormone receptor	9	GO:0003700; GO:0008270; GO:0043565; GO:0006355; GO:0003677
+B7PX94				Receptor	5	Nuclear hormone receptor, ligand-binding domain; Nuclear hormone receptor; Nuclear hormone receptor-like domain superfamily	0	
+B7PVD7	vesicle-fusing ATPase		8031914	Enzyme - Kinase/Phosphatase	10	AAA+ ATPase domain; ATPase, AAA-type, core; ATPase, AAA-type, conserved site	2	GO:0005524; GO:0016887
+A0A4D5RMG2	Trifunctional enzyme subunit alpha, mitochondrial			Enzyme - Oxidoreductase	9	Enoyl-CoA hydratase/isomerase-like domain; 3-hydroxyacyl-CoA dehydrogenase, C-terminal; 3-hydroxyacyl-CoA dehydrogenase, NAD binding	9	GO:0016491; GO:0016616; GO:0006631; GO:0070403; GO:0003857
+B7PY20				Receptor	4	Nuclear hormone receptor, ligand-binding domain; Nuclear hormone receptor; Thyroid hormone receptor	3	GO:0003677; GO:0004879; GO:0006355
+B7QAF3				Receptor	2	Nuclear hormone receptor, ligand-binding domain; Nuclear hormone receptor-like domain superfamily	0	
+B7P6A8				Unknown	2	ATP synthase, F1 complex, gamma subunit; ATP synthase, F1 complex, gamma subunit superfamily	3	GO:0046933; GO:0015986; GO:0045259
+B7Q1X5				Receptor	3	Zinc finger, nuclear hormone receptor-type; Zinc finger, NHR/GATA-type; Nuclear hormone receptor family NR2 subfamily	4	GO:0003700; GO:0008270; GO:0043565; GO:0006355
+A0A4D5RNM5	Nuclear receptor subfamily 2 group B member 4			Receptor	7	Retinoid X receptor/HNF4; Nuclear hormone receptor, ligand-binding domain; Zinc finger, nuclear hormone receptor-type	7	GO:0003677; GO:0003707; GO:0008270; GO:0006355; GO:0005634
+B7PMS2	Nuclear receptor subfamily 2 group B member 4		8051436	Receptor	7	Retinoid X receptor/HNF4; Nuclear hormone receptor, ligand-binding domain; Zinc finger, nuclear hormone receptor-type	7	GO:0003677; GO:0003707; GO:0008270; GO:0006355; GO:0005634
+B7QNX4	Aryl hydrocarbon receptor nuclear translocator homolog			Transcription Factor	7	PAS domain; Nuclear translocator; Myc-type, basic helix-loop-helix (bHLH) domain	6	GO:0003700; GO:0006355; GO:0005634; GO:0005667; GO:0005737
+A0A4D5RYT8				Receptor	9	Retinoid X receptor/HNF4; Nuclear hormone receptor, ligand-binding domain; Zinc finger, nuclear hormone receptor-type	8	GO:0003677; GO:0003707; GO:0008270; GO:0006355; GO:0005634
+A0A4D5S2A5				Receptor	9	Retinoid X receptor/HNF4; Nuclear hormone receptor, ligand-binding domain; Zinc finger, nuclear hormone receptor-type	8	GO:0003677; GO:0003707; GO:0008270; GO:0006355; GO:0005634
+A0A4D5RGQ5	Metallophosphoesterase 1 homolog			Enzyme - Kinase/Phosphatase	3	Calcineurin-like, phosphoesterase domain; Metallo-dependent phosphatase-like; PGAP5/Cdc1/Ted1	2	GO:0016787; GO:0006506
+B7QJZ7	F-ATPase gamma subunit		8042390	Unknown	3	ATP synthase, F1 complex, gamma subunit; ATP synthase, F1 complex, gamma subunit conserved site; ATP synthase, F1 complex, gamma subunit superfamily	3	GO:0046933; GO:0015986; GO:0045259
+A0A4D5RMV5				Enzyme - Kinase/Phosphatase	3	Calcineurin-like, phosphoesterase domain; Metallo-dependent phosphatase-like; PGAP5/Cdc1/Ted1	2	GO:0016787; GO:0006506
+A0A4D5RNJ0	Oligomycin sensitivity conferral protein			Enzyme - Kinase/Phosphatase	2	ATPase, OSCP/delta subunit; F1F0 ATP synthase OSCP/delta subunit, N-terminal domain superfamily	2	GO:0046933; GO:0015986
+A0A4D5S7D6	F-ATPase gamma subunit			Unknown	3	ATP synthase, F1 complex, gamma subunit; ATP synthase, F1 complex, gamma subunit conserved site; ATP synthase, F1 complex, gamma subunit superfamily	3	GO:0046933; GO:0015986; GO:0045259
+B7P5E9				Enzyme - Kinase/Phosphatase	3	Calcineurin-like, phosphoesterase domain; Metallo-dependent phosphatase-like; PGAP5/Cdc1/Ted1	2	GO:0016787; GO:0006506
+B7Q255	Homeodomain transcription factor			Transcription Factor	1	Homeodomain containing protein PHTF1/2	1	GO:0005783
+Q5Q995	Protein KRTCAP2 homolog			Unknown	1	Keratinocyte-associated protein 2	0	
+B7PIZ2				Enzyme - Kinase/Phosphatase	4	Small GTP-binding domain; Small GTPase superfamily, ARF/SAR type; P-loop containing nucleoside triphosphate hydrolase	3	GO:0005525; GO:0003924; GO:0015031
+A0A4D5RDE4				Enzyme - Kinase/Phosphatase	4	Small GTP-binding domain; Small GTPase superfamily, ARF/SAR type; P-loop containing nucleoside triphosphate hydrolase	3	GO:0005525; GO:0003924; GO:0015031
+B7P877	B7P877		Cbp20	Unknown	5	RNA recognition motif domain; Nucleotide-binding alpha-beta plait domain superfamily; Nuclear cap-binding protein subunit 2	5	GO:0003723; GO:0000339; GO:0045292; GO:0005846; GO:0003676
+B7PBI5	B7PBI5			Enzyme - Kinase/Phosphatase	3	ATP/ADP-dependent (S)-NAD(P)H-hydrate dehydratase; Carbohydrate kinase, predicted, conserved site; Ribokinase-like	1	GO:0016836
+B7PJS6	B7PJS6			Enzyme - Protease	12	Elongation factor EFG, domain V-like; Translational (tr)-type GTP-binding domain; Small GTP-binding domain	2	GO:0003924; GO:0005525
+B7PKZ2	B7PKZ2			Unknown	3	Cystatin domain; Proteinase inhibitor I25, cystatin, conserved site; Cystatin superfamily	1	GO:0004869
+B7PRF6	B7PRF6			Unknown	4	Acireductone dioxygenase ARD family; RmlC-like cupin domain superfamily; RmlC-like jelly roll fold	4	GO:0010308; GO:0010309; GO:0016491; GO:0019509
+B7PXE3	B7PXE3		spas	Enzyme - Kinase/Phosphatase	9	AAA+ ATPase domain; ATPase, AAA-type, core; ATPase, AAA-type, conserved site	3	GO:0005524; GO:0016887; GO:0008568
+B7PY76	B7PY76			Unknown	7	WD40 repeat; NLE; WD40/YVTN repeat-like-containing domain superfamily	2	GO:0005515; GO:0042254
+B7Q1Q9	B7Q1Q9			Transcription Factor	5	Transcription initiation factor IIA, gamma subunit; Transcription factor IIA, alpha-helical domain; Transcription factor IIA, beta-barrel	2	GO:0006367; GO:0005672
+B7Q290	B7Q290			Unknown	1	Protein NCBP2AS2	0	
+B7QDG3	B7QDG3			Unknown	3	YjeF N-terminal domain; YjeF N-terminal domain-containing protein NAXE-like; YjeF N-terminal domain superfamily	0	
+F6KSY2	F6KSY2			Unknown	0		0	
+Q202J4	Q202J4		SPH	Unknown	1	PLC-like phosphodiesterase, TIM beta/alpha-barrel domain superfamily	2	GO:0008081; GO:0006629
+Q4PLZ3	Q4PLZ3		Tctp	Translation/Ribosome	5	Mss4-like superfamily; Mss4/translationally controlled tumour-associated TCTP; Translationally controlled tumour protein, conserved site	0	
+Q4PM54	Q4PM54		RpL17	Translation/Ribosome	5	Large ribosomal subunit protein uL22; Large ribosomal subunit protein uL22, eukaryota/archaea; Large ribosomal subunit protein uL22, conserved site	4	GO:0003735; GO:0006412; GO:0005840; GO:0015934
+Q4PMB3	Q4PMB3		RpS4	Translation/Ribosome	11	Small ribosomal subunit protein eS4; RNA-binding S4 domain; KOW	4	GO:0003735; GO:0006412; GO:0005840; GO:0003723
+Q4PMC9	Q4PMC9			Unknown	4	K Homology domain, type 1 superfamily; KRR1 small subunit processome component, first KH domain; PNO1, second type I KH domain	1	GO:0003723
+Q8MUP7	Q8MUP7		Salp9Pac	Unknown	1	Ixonnexin-like	0	
