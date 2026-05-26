@@ -1,0 +1,4114 @@
+[
+  {
+    "accession": "A0A649X9W4",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "COI",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 196,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A649X9W4.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A649X9W4-F1-model_v6.pdb",
+    "mean_plddt": 97.14,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.842,
+        "volume": 579.912,
+        "area": 162.231,
+        "hydrophobicity": 12.762,
+        "alpha_spheres": 36.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A649X9W4_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 8,
+        "source": "fpocket",
+        "score": 0.509,
+        "volume": 415.859,
+        "area": 139.764,
+        "hydrophobicity": 15.579,
+        "alpha_spheres": 29.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A649X9W4_out/pockets/pocket8_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.786,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.786,
+        "dog": 0.781,
+        "mouse": 0.781
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 23,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A649X9W4_vina.conf",
+    "pocket_center": {
+      "center_x": 12.891,
+      "center_y": 4.372,
+      "center_z": -2.431
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B2ZHX0",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 449,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Membrane",
+      "Receptor",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B2ZHX0.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B2ZHX0-F1-model_v6.pdb",
+    "mean_plddt": 74.42,
+    "plddt_fraction": 0.664,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 10,
+        "source": "fpocket",
+        "score": 0.694,
+        "volume": 869.538,
+        "area": 295.932,
+        "hydrophobicity": 47.493,
+        "alpha_spheres": 106.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B2ZHX0_out/pockets/pocket10_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.876,
+        "volume": 367.812,
+        "area": 128.244,
+        "hydrophobicity": 53.848,
+        "alpha_spheres": 66.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B2ZHX0_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.285,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.284,
+        "dog": 0.256,
+        "mouse": 0.285
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 21,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Low human homology 28% (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B2ZHX0_vina.conf",
+    "pocket_center": {
+      "center_x": 0.841,
+      "center_y": -0.92,
+      "center_z": -14.991
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "C6G1Y6",
+    "name": "Aminopeptidase N",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 586,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Aminopeptidase",
+      "Cell membrane",
+      "Disulfide bond",
+      "Glycoprotein",
+      "GPI-anchor",
+      "Hydrolase",
+      "Lipoprotein",
+      "Membrane",
+      "Metal-binding",
+      "Metalloprotease",
+      "Protease",
+      "Signal",
+      "Zinc"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/C6G1Y6.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-C6G1Y6-F1-model_v6.pdb",
+    "mean_plddt": 94.95,
+    "plddt_fraction": 0.997,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 43,
+        "source": "fpocket",
+        "score": 0.691,
+        "volume": 1149.962,
+        "area": 364.098,
+        "hydrophobicity": 31.296,
+        "alpha_spheres": 119.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/C6G1Y6_out/pockets/pocket43_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.379,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.362,
+        "dog": 0.379,
+        "mouse": 0.367
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Low human homology 38% (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/C6G1Y6_vina.conf",
+    "pocket_center": {
+      "center_x": 5.765,
+      "center_y": -11.386,
+      "center_z": -11.381
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "A0A0K1G5W8",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "COI",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 219,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0K1G5W8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0K1G5W8-F1-model_v6.pdb",
+    "mean_plddt": 97.41,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.791,
+        "volume": 352.096,
+        "area": 124.925,
+        "hydrophobicity": 15.091,
+        "alpha_spheres": 38.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0K1G5W8_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.795,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.795,
+        "dog": 0.79,
+        "mouse": 0.79
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0K1G5W8_vina.conf",
+    "pocket_center": {
+      "center_x": 19.705,
+      "center_y": 2.705,
+      "center_z": -10.798
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A142I6V3",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "cox1",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 188,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A142I6V3.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A142I6V3-F1-model_v6.pdb",
+    "mean_plddt": 96.81,
+    "plddt_fraction": 0.995,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.797,
+        "volume": 435.836,
+        "area": 152.403,
+        "hydrophobicity": 22.929,
+        "alpha_spheres": 66.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A142I6V3_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.791,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.791,
+        "dog": 0.791,
+        "mouse": 0.791
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A142I6V3_vina.conf",
+    "pocket_center": {
+      "center_x": -7.04,
+      "center_y": 1.175,
+      "center_z": 2.727
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U4Y449",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "COI",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 212,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U4Y449.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U4Y449-F1-model_v6.pdb",
+    "mean_plddt": 96.98,
+    "plddt_fraction": 0.995,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.599,
+        "volume": 387.269,
+        "area": 139.619,
+        "hydrophobicity": 18.0,
+        "alpha_spheres": 62.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U4Y449_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.797,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.797,
+        "dog": 0.792,
+        "mouse": 0.792
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U4Y449_vina.conf",
+    "pocket_center": {
+      "center_x": -4.003,
+      "center_y": 5.346,
+      "center_z": 7.225
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "Q9MCZ9",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "COI",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 264,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q9MCZ9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q9MCZ9-F1-model_v6.pdb",
+    "mean_plddt": 97.01,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.739,
+        "volume": 355.444,
+        "area": 135.047,
+        "hydrophobicity": 18.64,
+        "alpha_spheres": 43.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q9MCZ9_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.798,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.798,
+        "dog": 0.794,
+        "mouse": 0.786
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q9MCZ9_vina.conf",
+    "pocket_center": {
+      "center_x": 13.447,
+      "center_y": -11.991,
+      "center_z": -17.364
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "G0WV55",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 905,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cell adhesion",
+      "Cell junction",
+      "Cell membrane",
+      "Cytoplasm",
+      "Cytoskeleton",
+      "Membrane"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/G0WV55.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-G0WV55-F1-model_v6.pdb",
+    "mean_plddt": 80.97,
+    "plddt_fraction": 0.804,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 76,
+        "source": "fpocket",
+        "score": 0.83,
+        "volume": 650.312,
+        "area": 207.622,
+        "hydrophobicity": 32.167,
+        "alpha_spheres": 77.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/G0WV55_out/pockets/pocket76_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 27,
+        "source": "fpocket",
+        "score": 0.632,
+        "volume": 322.231,
+        "area": 101.733,
+        "hydrophobicity": 35.895,
+        "alpha_spheres": 46.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/G0WV55_out/pockets/pocket27_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.639,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.639,
+        "dog": 0.0,
+        "mouse": 0.639
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 19,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/G0WV55_vina.conf",
+    "pocket_center": {
+      "center_x": -3.598,
+      "center_y": 0.74,
+      "center_z": 14.843
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A7LJ78",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 333,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Disulfide bond",
+      "Hydrolase",
+      "Protease",
+      "Signal",
+      "Thiol protease",
+      "Zymogen"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A7LJ78.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A7LJ78-F1-model_v6.pdb",
+    "mean_plddt": 94.33,
+    "plddt_fraction": 0.946,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 6,
+        "source": "fpocket",
+        "score": 0.542,
+        "volume": 441.585,
+        "area": 126.428,
+        "hydrophobicity": 15.176,
+        "alpha_spheres": 29.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A7LJ78_out/pockets/pocket6_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 9,
+        "source": "fpocket",
+        "score": 0.689,
+        "volume": 401.417,
+        "area": 124.505,
+        "hydrophobicity": 14.25,
+        "alpha_spheres": 24.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A7LJ78_out/pockets/pocket9_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.565,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.545,
+        "dog": 0.533,
+        "mouse": 0.565
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 19,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A7LJ78_vina.conf",
+    "pocket_center": {
+      "center_x": 10.121,
+      "center_y": 1.718,
+      "center_z": -20.617
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "Q8T9S4",
+    "name": "Tetraspanin",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 227,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Disulfide bond",
+      "Membrane",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8T9S4.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q8T9S4-F1-model_v6.pdb",
+    "mean_plddt": 83.17,
+    "plddt_fraction": 0.841,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 0.727,
+        "volume": 549.081,
+        "area": 160.188,
+        "hydrophobicity": 56.746,
+        "alpha_spheres": 68.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8T9S4_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.343,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.343,
+        "dog": 0.0,
+        "mouse": 0.332
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Low human homology 34% (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8T9S4_vina.conf",
+    "pocket_center": {
+      "center_x": -6.628,
+      "center_y": -0.398,
+      "center_z": 8.535
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U2Q4",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U2Q4.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U2Q4-F1-model_v6.pdb",
+    "mean_plddt": 97.17,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.78,
+        "volume": 473.267,
+        "area": 139.629,
+        "hydrophobicity": 21.63,
+        "alpha_spheres": 66.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U2Q4_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 5,
+        "source": "fpocket",
+        "score": 0.69,
+        "volume": 338.291,
+        "area": 128.346,
+        "hydrophobicity": 19.923,
+        "alpha_spheres": 43.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U2Q4_out/pockets/pocket5_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.811,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.809,
+        "dog": 0.811,
+        "mouse": 0.803
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 81% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U2Q4_vina.conf",
+    "pocket_center": {
+      "center_x": 0.229,
+      "center_y": 4.103,
+      "center_z": 9.625
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U2R2",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U2R2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U2R2-F1-model_v6.pdb",
+    "mean_plddt": 97.24,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.726,
+        "volume": 405.422,
+        "area": 155.934,
+        "hydrophobicity": 22.483,
+        "alpha_spheres": 65.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U2R2_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 9,
+        "source": "fpocket",
+        "score": 0.635,
+        "volume": 340.145,
+        "area": 136.799,
+        "hydrophobicity": 20.741,
+        "alpha_spheres": 42.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U2R2_out/pockets/pocket9_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.816,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.813,
+        "dog": 0.816,
+        "mouse": 0.807
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 82% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U2R2_vina.conf",
+    "pocket_center": {
+      "center_x": -0.274,
+      "center_y": 3.987,
+      "center_z": 9.734
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U2Y5",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U2Y5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U2Y5-F1-model_v6.pdb",
+    "mean_plddt": 97.18,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.808,
+        "volume": 445.805,
+        "area": 158.802,
+        "hydrophobicity": 21.63,
+        "alpha_spheres": 69.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U2Y5_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 10,
+        "source": "fpocket",
+        "score": 0.685,
+        "volume": 357.892,
+        "area": 144.866,
+        "hydrophobicity": 19.769,
+        "alpha_spheres": 42.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U2Y5_out/pockets/pocket10_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.816,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.813,
+        "dog": 0.816,
+        "mouse": 0.807
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 82% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U2Y5_vina.conf",
+    "pocket_center": {
+      "center_x": 1.036,
+      "center_y": 1.848,
+      "center_z": 10.568
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U368",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U368.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U368-F1-model_v6.pdb",
+    "mean_plddt": 97.35,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.62,
+        "volume": 387.468,
+        "area": 159.601,
+        "hydrophobicity": 20.348,
+        "alpha_spheres": 58.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U368_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 7,
+        "source": "fpocket",
+        "score": 0.732,
+        "volume": 344.455,
+        "area": 140.971,
+        "hydrophobicity": 20.741,
+        "alpha_spheres": 41.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U368_out/pockets/pocket7_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.811,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.809,
+        "dog": 0.811,
+        "mouse": 0.803
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 81% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U368_vina.conf",
+    "pocket_center": {
+      "center_x": 1.052,
+      "center_y": 2.617,
+      "center_z": 10.723
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U3E7",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3E7.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U3E7-F1-model_v6.pdb",
+    "mean_plddt": 97.18,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.677,
+        "volume": 388.869,
+        "area": 165.551,
+        "hydrophobicity": 20.75,
+        "alpha_spheres": 62.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3E7_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 5,
+        "source": "fpocket",
+        "score": 0.726,
+        "volume": 341.449,
+        "area": 125.816,
+        "hydrophobicity": 20.741,
+        "alpha_spheres": 42.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3E7_out/pockets/pocket5_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.816,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.816,
+        "dog": 0.816,
+        "mouse": 0.807
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 82% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3E7_vina.conf",
+    "pocket_center": {
+      "center_x": 1.228,
+      "center_y": 2.689,
+      "center_z": 10.307
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U3G2",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3G2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U3G2-F1-model_v6.pdb",
+    "mean_plddt": 97.27,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.708,
+        "volume": 414.12,
+        "area": 164.914,
+        "hydrophobicity": 22.231,
+        "alpha_spheres": 63.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3G2_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 8,
+        "source": "fpocket",
+        "score": 0.672,
+        "volume": 354.716,
+        "area": 141.107,
+        "hydrophobicity": 20.667,
+        "alpha_spheres": 42.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3G2_out/pockets/pocket8_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.811,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.809,
+        "dog": 0.811,
+        "mouse": 0.803
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 81% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3G2_vina.conf",
+    "pocket_center": {
+      "center_x": 0.88,
+      "center_y": 2.576,
+      "center_z": 10.207
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U3H0",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3H0.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U3H0-F1-model_v6.pdb",
+    "mean_plddt": 97.21,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.666,
+        "volume": 391.059,
+        "area": 159.982,
+        "hydrophobicity": 20.435,
+        "alpha_spheres": 59.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3H0_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 7,
+        "source": "fpocket",
+        "score": 0.591,
+        "volume": 364.112,
+        "area": 140.835,
+        "hydrophobicity": 18.0,
+        "alpha_spheres": 43.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3H0_out/pockets/pocket7_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.813,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.813,
+        "dog": 0.811,
+        "mouse": 0.807
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 81% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3H0_vina.conf",
+    "pocket_center": {
+      "center_x": 0.87,
+      "center_y": 2.617,
+      "center_z": 10.111
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U3S9",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3S9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U3S9-F1-model_v6.pdb",
+    "mean_plddt": 97.26,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.758,
+        "volume": 393.148,
+        "area": 163.728,
+        "hydrophobicity": 21.6,
+        "alpha_spheres": 62.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3S9_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 7,
+        "source": "fpocket",
+        "score": 0.657,
+        "volume": 356.074,
+        "area": 133.677,
+        "hydrophobicity": 19.692,
+        "alpha_spheres": 42.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3S9_out/pockets/pocket7_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.813,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.813,
+        "dog": 0.811,
+        "mouse": 0.807
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 81% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3S9_vina.conf",
+    "pocket_center": {
+      "center_x": -0.57,
+      "center_y": 5.019,
+      "center_z": 9.421
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U3T1",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3T1.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U3T1-F1-model_v6.pdb",
+    "mean_plddt": 97.19,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.719,
+        "volume": 400.167,
+        "area": 155.785,
+        "hydrophobicity": 21.68,
+        "alpha_spheres": 62.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3T1_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 5,
+        "source": "fpocket",
+        "score": 0.721,
+        "volume": 330.731,
+        "area": 134.933,
+        "hydrophobicity": 20.667,
+        "alpha_spheres": 41.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3T1_out/pockets/pocket5_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.816,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.813,
+        "dog": 0.816,
+        "mouse": 0.807
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 82% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3T1_vina.conf",
+    "pocket_center": {
+      "center_x": 1.006,
+      "center_y": 2.731,
+      "center_z": 10.093
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7SP41",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 204,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Hydrolase",
+      "Protease"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP41.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7SP41-F1-model_v6.pdb",
+    "mean_plddt": 91.8,
+    "plddt_fraction": 0.961,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 7,
+        "source": "fpocket",
+        "score": 0.611,
+        "volume": 414.761,
+        "area": 129.914,
+        "hydrophobicity": 14.632,
+        "alpha_spheres": 24.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP41_out/pockets/pocket7_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.399,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.383,
+        "dog": 0.0,
+        "mouse": 0.399
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "1 druggable pocket (+2)",
+      "Low human homology 40% (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP41_vina.conf",
+    "pocket_center": {
+      "center_x": 13.781,
+      "center_y": 19.205,
+      "center_z": -11.154
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7SP44",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 277,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Disulfide bond",
+      "Hydrolase",
+      "Protease",
+      "Signal",
+      "Thiol protease",
+      "Zymogen"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP44.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7SP44-F1-model_v6.pdb",
+    "mean_plddt": 89.86,
+    "plddt_fraction": 0.899,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 7,
+        "source": "fpocket",
+        "score": 0.905,
+        "volume": 1468.266,
+        "area": 361.515,
+        "hydrophobicity": 17.265,
+        "alpha_spheres": 81.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP44_out/pockets/pocket7_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 6,
+        "source": "fpocket",
+        "score": 0.773,
+        "volume": 307.179,
+        "area": 99.443,
+        "hydrophobicity": 21.304,
+        "alpha_spheres": 37.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP44_out/pockets/pocket6_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.556,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.556,
+        "dog": 0.315,
+        "mouse": 0.551
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP44_vina.conf",
+    "pocket_center": {
+      "center_x": -8.103,
+      "center_y": 14.457,
+      "center_z": 5.048
+    },
+    "vina_box_size": 23
+  },
+  {
+    "accession": "Q2Q443",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 215,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Transferase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q2Q443.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q2Q443-F1-model_v6.pdb",
+    "mean_plddt": 96.1,
+    "plddt_fraction": 0.995,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 13,
+        "source": "fpocket",
+        "score": 0.619,
+        "volume": 1573.543,
+        "area": 445.913,
+        "hydrophobicity": 60.86,
+        "alpha_spheres": 149.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q2Q443_out/pockets/pocket13_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.284,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.284,
+        "dog": 0.0,
+        "mouse": 0.264
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "1 druggable pocket (+2)",
+      "Low human homology 28% (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q2Q443_vina.conf",
+    "pocket_center": {
+      "center_x": 1.21,
+      "center_y": 5.097,
+      "center_z": 9.644
+    },
+    "vina_box_size": 23
+  },
+  {
+    "accession": "Q2HZ27",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 191,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Disulfide bond",
+      "Glycoprotein"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q2HZ27.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q2HZ27-F1-model_v6.pdb",
+    "mean_plddt": 84.54,
+    "plddt_fraction": 0.764,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.653,
+        "volume": 498.747,
+        "area": 156.332,
+        "hydrophobicity": 36.146,
+        "alpha_spheres": 72.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q2HZ27_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.0,
+      "human_risk": "VERY LOW",
+      "host_identities": {
+        "human": 0.0,
+        "dog": 0.0,
+        "mouse": 0.0
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "1 druggable pocket (+2)",
+      "Tick-specific <20% human homology (+4)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q2HZ27_vina.conf",
+    "pocket_center": {
+      "center_x": -12.301,
+      "center_y": -4.568,
+      "center_z": -1.959
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7SP57",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 222,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Transferase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP57.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7SP57-F1-model_v6.pdb",
+    "mean_plddt": 83.71,
+    "plddt_fraction": 0.896,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.651,
+        "volume": 307.642,
+        "area": 80.858,
+        "hydrophobicity": 31.939,
+        "alpha_spheres": 64.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP57_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.32,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.32,
+        "dog": 0.0,
+        "mouse": 0.308
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 17,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "1 druggable pocket (+2)",
+      "Low human homology 32% (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP57_vina.conf",
+    "pocket_center": {
+      "center_x": -2.466,
+      "center_y": 0.362,
+      "center_z": 1.101
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B5TMF7",
+    "name": "Glyceraldehyde-3-phosphate dehydrogenase",
+    "gene": "GAPDH",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 334,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cytoplasm",
+      "Glycolysis",
+      "NAD",
+      "Nucleotide-binding",
+      "Oxidoreductase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B5TMF7.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B5TMF7-F1-model_v6.pdb",
+    "mean_plddt": 97.68,
+    "plddt_fraction": 0.997,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.74,
+        "volume": 775.477,
+        "area": 226.136,
+        "hydrophobicity": 29.568,
+        "alpha_spheres": 62.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B5TMF7_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.765,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.764,
+        "dog": 0.762,
+        "mouse": 0.765
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B5TMF7_vina.conf",
+    "pocket_center": {
+      "center_x": -6.022,
+      "center_y": 4.83,
+      "center_z": 0.351
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7SP39",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 217,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Disulfide bond",
+      "Hydrolase",
+      "Protease",
+      "Signal",
+      "Thiol protease",
+      "Zymogen"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP39.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7SP39-F1-model_v6.pdb",
+    "mean_plddt": 97.19,
+    "plddt_fraction": 0.991,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.603,
+        "volume": 785.0,
+        "area": 212.645,
+        "hydrophobicity": 53.968,
+        "alpha_spheres": 116.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP39_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.626,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.626,
+        "dog": 0.308,
+        "mouse": 0.612
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP39_vina.conf",
+    "pocket_center": {
+      "center_x": -0.41,
+      "center_y": -3.244,
+      "center_z": 4.836
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "Q86G71",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 215,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Transferase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q86G71.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q86G71-F1-model_v6.pdb",
+    "mean_plddt": 76.88,
+    "plddt_fraction": 0.753,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 19,
+        "source": "fpocket",
+        "score": 0.698,
+        "volume": 2074.947,
+        "area": 645.01,
+        "hydrophobicity": 59.082,
+        "alpha_spheres": 236.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q86G71_out/pockets/pocket19_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.333,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.333,
+        "dog": 0.0,
+        "mouse": 0.322
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "1 druggable pocket (+2)",
+      "Low human homology 33% (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q86G71_vina.conf",
+    "pocket_center": {
+      "center_x": -6.312,
+      "center_y": 7.858,
+      "center_z": -5.66
+    },
+    "vina_box_size": 24
+  },
+  {
+    "accession": "B7SP34",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 174,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Disulfide bond"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP34.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7SP34-F1-model_v6.pdb",
+    "mean_plddt": 89.56,
+    "plddt_fraction": 0.937,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 5,
+        "source": "fpocket",
+        "score": 0.69,
+        "volume": 412.052,
+        "area": 131.802,
+        "hydrophobicity": 24.692,
+        "alpha_spheres": 32.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP34_out/pockets/pocket5_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.338,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.338,
+        "dog": 0.333,
+        "mouse": 0.318
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "1 druggable pocket (+2)",
+      "Low human homology 34% (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP34_vina.conf",
+    "pocket_center": {
+      "center_x": 5.59,
+      "center_y": 0.643,
+      "center_z": -16.019
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7SP56",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 155,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Secreted",
+      "Signal"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP56.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7SP56-F1-model_v6.pdb",
+    "mean_plddt": 88.1,
+    "plddt_fraction": 0.858,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.984,
+        "volume": 715.349,
+        "area": 202.249,
+        "hydrophobicity": 51.589,
+        "alpha_spheres": 79.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP56_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.259,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.259,
+        "dog": 0.0,
+        "mouse": 0.25
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "1 druggable pocket (+2)",
+      "Low human homology 26% (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP56_vina.conf",
+    "pocket_center": {
+      "center_x": 8.657,
+      "center_y": -1.408,
+      "center_z": -6.49
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7SP64",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 169,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Secreted",
+      "Signal"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP64.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7SP64-F1-model_v6.pdb",
+    "mean_plddt": 84.61,
+    "plddt_fraction": 0.787,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.982,
+        "volume": 717.378,
+        "area": 227.609,
+        "hydrophobicity": 49.944,
+        "alpha_spheres": 78.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP64_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.259,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.259,
+        "dog": 0.0,
+        "mouse": 0.0
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "1 druggable pocket (+2)",
+      "Low human homology 26% (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP64_vina.conf",
+    "pocket_center": {
+      "center_x": 9.087,
+      "center_y": -2.367,
+      "center_z": -6.156
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "Q86G65",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 273,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Endoplasmic reticulum",
+      "Membrane",
+      "Protein transport",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q86G65.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q86G65-F1-model_v6.pdb",
+    "mean_plddt": 79.63,
+    "plddt_fraction": 0.839,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 20,
+        "source": "fpocket",
+        "score": 0.544,
+        "volume": 1046.316,
+        "area": 326.689,
+        "hydrophobicity": 57.0,
+        "alpha_spheres": 137.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q86G65_out/pockets/pocket20_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.617,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.617,
+        "dog": 0.0,
+        "mouse": 0.617
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q86G65_vina.conf",
+    "pocket_center": {
+      "center_x": 11.555,
+      "center_y": -1.798,
+      "center_z": -9.004
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "A0A2U8U3F3",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3F3.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U3F3-F1-model_v6.pdb",
+    "mean_plddt": 97.34,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.637,
+        "volume": 401.091,
+        "area": 158.717,
+        "hydrophobicity": 23.077,
+        "alpha_spheres": 55.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3F3_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.811,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.809,
+        "dog": 0.811,
+        "mouse": 0.803
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "HIGH human homology 81% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3F3_vina.conf",
+    "pocket_center": {
+      "center_x": 0.256,
+      "center_y": 3.362,
+      "center_z": 10.358
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A2U8U3G0",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 230,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3G0.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A2U8U3G0-F1-model_v6.pdb",
+    "mean_plddt": 97.36,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.67,
+        "volume": 421.326,
+        "area": 160.878,
+        "hydrophobicity": 22.154,
+        "alpha_spheres": 62.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A2U8U3G0_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.813,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.813,
+        "dog": 0.811,
+        "mouse": 0.803
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "HIGH human homology 81% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3G0_vina.conf",
+    "pocket_center": {
+      "center_x": 1.099,
+      "center_y": 2.511,
+      "center_z": 10.343
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A023NLG8",
+    "name": "Actin-related protein 2/3 complex subunit 3",
+    "gene": "ARPC3",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 181,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the Arp2/3 complex, a multiprotein complex that mediates actin polymerization upon stimulation by nucleation-promoting factor (NPF). The Arp2/3 complex mediates the formation of branched actin networks in the cytoplasm, providing the force for cell motility. In addition to its role in the cytoplasmic cytoskeleton, the Arp2/3 complex also promotes actin polymerization in the nucleus, thereby regulating gene transcription and repair of damaged DNA. The Arp2/3 complex promotes homologous recombination (HR) repair in response to DNA damage by promoting nuclear actin polymerization, leading to drive motility of double-strand breaks (DSBs)",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Actin-binding",
+      "Cell projection",
+      "Cytoplasm",
+      "Cytoskeleton",
+      "Nucleus"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A023NLG8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A023NLG8-F1-model_v6.pdb",
+    "mean_plddt": 92.91,
+    "plddt_fraction": 0.945,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 7,
+        "source": "fpocket",
+        "score": 0.562,
+        "volume": 630.482,
+        "area": 195.105,
+        "hydrophobicity": 21.037,
+        "alpha_spheres": 57.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A023NLG8_out/pockets/pocket7_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.663,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.663,
+        "dog": 0.0,
+        "mouse": 0.663
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A023NLG8_vina.conf",
+    "pocket_center": {
+      "center_x": -11.422,
+      "center_y": 0.422,
+      "center_z": -5.133
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "B7SP48",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 377,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP48.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-B7SP48-F1-model_v6.pdb",
+    "mean_plddt": 70.53,
+    "plddt_fraction": 0.562,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 18,
+        "source": "fpocket",
+        "score": 0.845,
+        "volume": 1525.33,
+        "area": 481.912,
+        "hydrophobicity": 29.458,
+        "alpha_spheres": 161.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7SP48_out/pockets/pocket18_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.327,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.326,
+        "dog": 0.294,
+        "mouse": 0.327
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "1 druggable pocket (+2)",
+      "Low human homology 33% (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP48_vina.conf",
+    "pocket_center": {
+      "center_x": -15.063,
+      "center_y": 3.401,
+      "center_z": 13.605
+    },
+    "vina_box_size": 23
+  },
+  {
+    "accession": "Q06EX9",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 293,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Aquaglyceroporin that may modulate the water content and osmolytes during anhydrobiosis",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Membrane",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q06EX9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q06EX9-F1-model_v6.pdb",
+    "mean_plddt": 90.11,
+    "plddt_fraction": 0.87,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.865,
+        "volume": 1166.342,
+        "area": 299.961,
+        "hydrophobicity": 36.286,
+        "alpha_spheres": 135.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q06EX9_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.423,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.388,
+        "dog": 0.314,
+        "mouse": 0.423
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q06EX9_vina.conf",
+    "pocket_center": {
+      "center_x": -6.357,
+      "center_y": 3.934,
+      "center_z": 7.3
+    },
+    "vina_box_size": 22
+  },
+  {
+    "accession": "Q8I862",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 374,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Disulfide bond",
+      "Secreted",
+      "Signal"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8I862.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q8I862-F1-model_v6.pdb",
+    "mean_plddt": 77.34,
+    "plddt_fraction": 0.679,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 8,
+        "source": "fpocket",
+        "score": 0.718,
+        "volume": 527.274,
+        "area": 133.059,
+        "hydrophobicity": 21.36,
+        "alpha_spheres": 34.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8I862_out/pockets/pocket8_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.373,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.34,
+        "dog": 0.373,
+        "mouse": 0.365
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "1 druggable pocket (+2)",
+      "Low human homology 37% (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8I862_vina.conf",
+    "pocket_center": {
+      "center_x": -11.666,
+      "center_y": 12.936,
+      "center_z": 9.321
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "Q6XR73",
+    "name": "Carboxylic ester hydrolase",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 596,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Rapidly hydrolyzes choline released into the synapse",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Disulfide bond",
+      "Glycoprotein",
+      "Hydrolase",
+      "Neurotransmitter degradation",
+      "Serine esterase",
+      "Signal"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 9,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q6XR73.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q6XR73-F1-model_v6.pdb",
+    "mean_plddt": 86.31,
+    "plddt_fraction": 0.849,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.815,
+        "volume": 697.68,
+        "area": 217.877,
+        "hydrophobicity": 42.545,
+        "alpha_spheres": 124.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q6XR73_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.745,
+        "volume": 342.933,
+        "area": 89.959,
+        "hydrophobicity": 42.0,
+        "alpha_spheres": 65.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q6XR73_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.449,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.449,
+        "dog": 0.331,
+        "mouse": 0.438
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q6XR73_vina.conf",
+    "pocket_center": {
+      "center_x": 7.32,
+      "center_y": -7.764,
+      "center_z": -2.099
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "Q8T9S5",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 435,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cell membrane",
+      "Coated pit",
+      "Endocytosis",
+      "Lipid-binding",
+      "Membrane",
+      "Protein transport",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8T9S5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q8T9S5-F1-model_v6.pdb",
+    "mean_plddt": 88.46,
+    "plddt_fraction": 0.92,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 15,
+        "source": "fpocket",
+        "score": 0.755,
+        "volume": 858.778,
+        "area": 254.409,
+        "hydrophobicity": 28.558,
+        "alpha_spheres": 71.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8T9S5_out/pockets/pocket15_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.502,
+        "volume": 549.816,
+        "area": 146.28,
+        "hydrophobicity": 21.548,
+        "alpha_spheres": 53.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8T9S5_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.872,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.872,
+        "dog": 0.279,
+        "mouse": 0.872
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 14,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "HIGH human homology 87% (-5)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8T9S5_vina.conf",
+    "pocket_center": {
+      "center_x": 7.374,
+      "center_y": 18.343,
+      "center_z": -2.101
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "Q8T9S3",
+    "name": "Translationally-controlled tumor protein homolog",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 173,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Venom protein that causes edema, enhances vascular permeability and is likely related to the inflammatory activity of the venom",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8T9S3.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-Q8T9S3-F1-model_v6.pdb",
+    "mean_plddt": 81.91,
+    "plddt_fraction": 0.827,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.751,
+        "volume": 432.238,
+        "area": 114.203,
+        "hydrophobicity": 17.0,
+        "alpha_spheres": 31.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q8T9S3_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.415,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.415,
+        "dog": 0.0,
+        "mouse": 0.415
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 14,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8T9S3_vina.conf",
+    "pocket_center": {
+      "center_x": 1.505,
+      "center_y": -1.924,
+      "center_z": 12.64
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A023NLX9",
+    "name": "Arp2/3 complex 34 kDa subunit",
+    "gene": "ARPC2",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 300,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Functions as actin-binding component of the Arp2/3 complex which is involved in regulation of actin polymerization and together with an activating nucleation-promoting factor (NPF) mediates the formation of branched actin networks. Seems to contact the mother actin filament",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Actin-binding",
+      "Cytoplasm",
+      "Cytoskeleton"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 9,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A023NLX9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A023NLX9-F1-model_v6.pdb",
+    "mean_plddt": 93.6,
+    "plddt_fraction": 0.947,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.654,
+        "volume": 663.969,
+        "area": 208.779,
+        "hydrophobicity": 58.919,
+        "alpha_spheres": 79.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A023NLX9_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.789,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.789,
+        "dog": 0.0,
+        "mouse": 0.789
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 13,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A023NLX9_vina.conf",
+    "pocket_center": {
+      "center_x": 10.652,
+      "center_y": -1.261,
+      "center_z": 0.253
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A4UTU3",
+    "name": "",
+    "gene": "",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 376,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Acetylation",
+      "ATP-binding",
+      "Cytoplasm",
+      "Cytoskeleton",
+      "Hydrolase",
+      "Nucleotide-binding",
+      "Oxidation"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 11,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A4UTU3.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A4UTU3-F1-model_v6.pdb",
+    "mean_plddt": 93.69,
+    "plddt_fraction": 0.963,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 10,
+        "source": "fpocket",
+        "score": 0.711,
+        "volume": 1196.886,
+        "area": 376.715,
+        "hydrophobicity": 25.364,
+        "alpha_spheres": 183.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A4UTU3_out/pockets/pocket10_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.987,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.987,
+        "dog": 0.987,
+        "mouse": 0.987
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 10,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "1 druggable pocket (+2)",
+      "HIGH human homology 99% (-5)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A4UTU3_vina.conf",
+    "pocket_center": {
+      "center_x": 2.519,
+      "center_y": 1.6,
+      "center_z": 5.236
+    },
+    "vina_box_size": 22
+  },
+  {
+    "accession": "A0A023NL51",
+    "name": "Actin-related protein 2/3 complex subunit 4",
+    "gene": "ARPC4",
+    "species": "dermacentor_variabilis",
+    "latin": "Dermacentor variabilis",
+    "length": 168,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Functions as actin-binding component of the Arp2/3 complex which is involved in regulation of actin polymerization and together with an activating nucleation-promoting factor (NPF) mediates the formation of branched actin networks. Seems to contact the mother actin filament",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Actin-binding",
+      "Cytoplasm",
+      "Cytoskeleton"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 9,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A023NL51.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A023NL51-F1-model_v6.pdb",
+    "mean_plddt": 94.51,
+    "plddt_fraction": 0.988,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 5,
+        "source": "fpocket",
+        "score": 0.726,
+        "volume": 401.493,
+        "area": 119.91,
+        "hydrophobicity": 25.931,
+        "alpha_spheres": 31.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A023NL51_out/pockets/pocket5_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.881,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.881,
+        "dog": 0.0,
+        "mouse": 0.881
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 8,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "1 druggable pocket (+2)",
+      "HIGH human homology 88% (-5)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A023NL51_vina.conf",
+    "pocket_center": {
+      "center_x": 4.535,
+      "center_y": 8.421,
+      "center_z": 9.611
+    },
+    "vina_box_size": 20
+  }
+]

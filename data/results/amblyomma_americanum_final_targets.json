@@ -1,0 +1,5278 @@
+[
+  {
+    "accession": "A0AAQ4D9T1",
+    "name": "Hormone-sensitive lipase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 776,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cell membrane",
+      "Cholesterol metabolism",
+      "Cytoplasm",
+      "Hydrolase",
+      "Lipid degradation",
+      "Lipid droplet",
+      "Lipid metabolism",
+      "Membrane",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Steroid metabolism",
+      "Sterol metabolism"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4D9T1.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4D9T1-F1-model_v6.pdb",
+    "mean_plddt": 72.91,
+    "plddt_fraction": 0.664,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 51,
+        "source": "fpocket",
+        "score": 0.891,
+        "volume": 895.29,
+        "area": 318.132,
+        "hydrophobicity": 54.405,
+        "alpha_spheres": 99.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4D9T1_out/pockets/pocket51_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 48,
+        "source": "fpocket",
+        "score": 0.521,
+        "volume": 550.778,
+        "area": 208.882,
+        "hydrophobicity": 37.644,
+        "alpha_spheres": 56.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4D9T1_out/pockets/pocket48_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      },
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.676,
+        "volume": 483.179,
+        "area": 123.525,
+        "hydrophobicity": 42.037,
+        "alpha_spheres": 80.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4D9T1_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_2"
+      }
+    ],
+    "druggable_pockets": 3,
+    "allosteric_sites": 2,
+    "blast_result": {
+      "max_identity": 0.329,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.327,
+        "dog": 0.0,
+        "mouse": 0.329
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 22,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "3 druggable pockets (+4)",
+      "2 allosteric sites \u2605 (+3)",
+      "Low human homology 33% (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4D9T1_vina.conf",
+    "pocket_center": {
+      "center_x": -10.215,
+      "center_y": 20.147,
+      "center_z": -14.817
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4DBK8",
+    "name": "Trifunctional enzyme subunit alpha, mitochondrial",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 731,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Acetylation",
+      "Fatty acid metabolism",
+      "Lipid metabolism",
+      "Lyase",
+      "Membrane",
+      "Methylation",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Multifunctional enzyme",
+      "NAD",
+      "Oxidoreductase",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Transferase",
+      "Transit peptide"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DBK8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DBK8-F1-model_v6.pdb",
+    "mean_plddt": 93.8,
+    "plddt_fraction": 0.99,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 0.995,
+        "volume": 1407.893,
+        "area": 446.133,
+        "hydrophobicity": 50.412,
+        "alpha_spheres": 178.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DBK8_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.859,
+        "volume": 1283.099,
+        "area": 346.1,
+        "hydrophobicity": 48.9,
+        "alpha_spheres": 144.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DBK8_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.643,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.643,
+        "dog": 0.0,
+        "mouse": 0.633
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 21,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DBK8_vina.conf",
+    "pocket_center": {
+      "center_x": -17.828,
+      "center_y": 8.357,
+      "center_z": 12.49
+    },
+    "vina_box_size": 22
+  },
+  {
+    "accession": "A0A0C9SCI6",
+    "name": "Phosphoglycerate kinase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 457,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Glycolysis",
+      "Kinase",
+      "Magnesium",
+      "Membrane",
+      "Metal-binding",
+      "Nucleotide-binding",
+      "Transferase",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SCI6.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9SCI6-F1-model_v6.pdb",
+    "mean_plddt": 89.96,
+    "plddt_fraction": 0.906,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 31,
+        "source": "fpocket",
+        "score": 0.926,
+        "volume": 876.014,
+        "area": 306.909,
+        "hydrophobicity": 54.0,
+        "alpha_spheres": 73.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SCI6_out/pockets/pocket31_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.728,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.728,
+        "dog": 0.0,
+        "mouse": 0.723
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "25892533"
+      ]
+    },
+    "final_score": 21,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9SCI6_vina.conf",
+    "pocket_center": {
+      "center_x": 22.449,
+      "center_y": -0.789,
+      "center_z": 32.395
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4E5F2",
+    "name": "NAD(P)H oxidase (H2O2-forming)",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 996,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Calcium",
+      "FAD",
+      "Flavoprotein",
+      "Glycoprotein",
+      "Hydrogen peroxide",
+      "Membrane",
+      "Metal-binding",
+      "NADP",
+      "Oxidoreductase",
+      "Peroxidase",
+      "Reference proteome",
+      "Repeat",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E5F2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E5F2-F1-model_v6.pdb",
+    "mean_plddt": 76.3,
+    "plddt_fraction": 0.74,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 103,
+        "source": "fpocket",
+        "score": 0.973,
+        "volume": 1831.84,
+        "area": 552.504,
+        "hydrophobicity": 56.301,
+        "alpha_spheres": 209.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E5F2_out/pockets/pocket103_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 56,
+        "source": "fpocket",
+        "score": 0.743,
+        "volume": 1096.118,
+        "area": 298.481,
+        "hydrophobicity": 52.932,
+        "alpha_spheres": 107.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E5F2_out/pockets/pocket56_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      },
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.937,
+        "volume": 1020.411,
+        "area": 253.625,
+        "hydrophobicity": 53.056,
+        "alpha_spheres": 184.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E5F2_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_2"
+      },
+      {
+        "pocket_id": 42,
+        "source": "fpocket",
+        "score": 0.736,
+        "volume": 992.738,
+        "area": 301.547,
+        "hydrophobicity": 53.106,
+        "alpha_spheres": 134.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E5F2_out/pockets/pocket42_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_3"
+      },
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.903,
+        "volume": 436.988,
+        "area": 122.43,
+        "hydrophobicity": 60.306,
+        "alpha_spheres": 77.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E5F2_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_4"
+      }
+    ],
+    "druggable_pockets": 5,
+    "allosteric_sites": 4,
+    "blast_result": {
+      "max_identity": 0.453,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.45,
+        "dog": 0.453,
+        "mouse": 0.452
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 21,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "5 druggable pockets (+4)",
+      "4 allosteric sites \u2605 (+3)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E5F2_vina.conf",
+    "pocket_center": {
+      "center_x": 1.972,
+      "center_y": -3.209,
+      "center_z": -14.757
+    },
+    "vina_box_size": 24
+  },
+  {
+    "accession": "A0AAQ4FH64",
+    "name": "Flavin-containing monooxygenase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 512,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Acts as a Baeyer-Villiger monooxygenase on a broad range of substrates. Catalyzes the insertion of an oxygen atom into a carbon-carbon bond adjacent to a carbonyl, which converts ketones to esters. Active on diverse carbonyl compounds, whereas soft nucleophiles are mostly non- or poorly reactive. In contrast with other forms of FMO it is non- or poorly active on 'classical' substrates such as drugs, pesticides, and dietary components containing soft nucleophilic heteroatoms. Able to oxidize drug molecules bearing a carbonyl group on an aliphatic chain, such as nabumetone and pentoxifylline. Also, in the absence of substrates, shows slow but yet significant NADPH oxidase activity. Acts as a positive modulator of cholesterol biosynthesis as well as glucose homeostasis, promoting metabolic aging via pleiotropic effects",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Endoplasmic reticulum",
+      "FAD",
+      "Flavoprotein",
+      "Lipid metabolism",
+      "Membrane",
+      "Methylation",
+      "Microsome",
+      "Monooxygenase",
+      "NADP",
+      "Oxidoreductase",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FH64.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4FH64-F1-model_v6.pdb",
+    "mean_plddt": 90.38,
+    "plddt_fraction": 0.951,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 7,
+        "source": "fpocket",
+        "score": 0.963,
+        "volume": 3005.398,
+        "area": 822.265,
+        "hydrophobicity": 36.468,
+        "alpha_spheres": 418.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FH64_out/pockets/pocket7_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 31,
+        "source": "fpocket",
+        "score": 0.588,
+        "volume": 850.042,
+        "area": 252.424,
+        "hydrophobicity": 31.412,
+        "alpha_spheres": 105.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FH64_out/pockets/pocket31_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.388,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.384,
+        "dog": 0.324,
+        "mouse": 0.388
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 21,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Low human homology 39% (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4FH64_vina.conf",
+    "pocket_center": {
+      "center_x": 0.431,
+      "center_y": -3.627,
+      "center_z": -3.599
+    },
+    "vina_box_size": 26
+  },
+  {
+    "accession": "A0AAQ4DAP1",
+    "name": "Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminyltransferase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 418,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Disulfide bond",
+      "Glycoprotein",
+      "Glycosyltransferase",
+      "Golgi apparatus",
+      "Manganese",
+      "Membrane",
+      "Metal-binding",
+      "Reference proteome",
+      "Signal",
+      "Signal-anchor",
+      "Transferase",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DAP1.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DAP1-F1-model_v6.pdb",
+    "mean_plddt": 85.09,
+    "plddt_fraction": 0.813,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 7,
+        "source": "fpocket",
+        "score": 0.698,
+        "volume": 463.524,
+        "area": 130.311,
+        "hydrophobicity": 16.25,
+        "alpha_spheres": 27.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DAP1_out/pockets/pocket7_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 0.547,
+        "volume": 330.425,
+        "area": 72.393,
+        "hydrophobicity": 21.826,
+        "alpha_spheres": 27.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DAP1_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.405,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.405,
+        "dog": 0.0,
+        "mouse": 0.384
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DAP1_vina.conf",
+    "pocket_center": {
+      "center_x": -1.477,
+      "center_y": -0.32,
+      "center_z": -19.303
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4DD00",
+    "name": "E3 ubiquitin-protein ligase MARCHF6",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 1188,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Acetylation",
+      "Endoplasmic reticulum",
+      "Membrane",
+      "Metal-binding",
+      "Reference proteome",
+      "Transferase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Ubl conjugation",
+      "Ubl conjugation pathway",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Druggable class: ligase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DD00.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DD00-F1-model_v6.pdb",
+    "mean_plddt": 73.2,
+    "plddt_fraction": 0.725,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 121,
+        "source": "fpocket",
+        "score": 0.992,
+        "volume": 1317.251,
+        "area": 429.003,
+        "hydrophobicity": 62.286,
+        "alpha_spheres": 135.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DD00_out/pockets/pocket121_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 99,
+        "source": "fpocket",
+        "score": 0.62,
+        "volume": 769.279,
+        "area": 266.682,
+        "hydrophobicity": 42.0,
+        "alpha_spheres": 89.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DD00_out/pockets/pocket99_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      },
+      {
+        "pocket_id": 61,
+        "source": "fpocket",
+        "score": 0.768,
+        "volume": 713.06,
+        "area": 234.148,
+        "hydrophobicity": 38.725,
+        "alpha_spheres": 77.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DD00_out/pockets/pocket61_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_2"
+      },
+      {
+        "pocket_id": 105,
+        "source": "fpocket",
+        "score": 0.586,
+        "volume": 569.738,
+        "area": 185.588,
+        "hydrophobicity": 35.913,
+        "alpha_spheres": 50.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DD00_out/pockets/pocket105_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_3"
+      }
+    ],
+    "druggable_pockets": 4,
+    "allosteric_sites": 3,
+    "blast_result": {
+      "max_identity": 0.594,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.591,
+        "dog": 0.0,
+        "mouse": 0.594
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Druggable class: ligase (+1)",
+      "Membrane/receptor protein (+2)",
+      "4 druggable pockets (+4)",
+      "3 allosteric sites \u2605 (+3)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DD00_vina.conf",
+    "pocket_center": {
+      "center_x": -21.642,
+      "center_y": -14.005,
+      "center_z": -14.434
+    },
+    "vina_box_size": 22
+  },
+  {
+    "accession": "A0AAQ4DQA6",
+    "name": "Integrin beta",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 615,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Calcium",
+      "Cell adhesion",
+      "Cell membrane",
+      "Disulfide bond",
+      "EGF-like domain",
+      "Glycoprotein",
+      "Integrin",
+      "Magnesium",
+      "Membrane",
+      "Metal-binding",
+      "Postsynaptic cell membrane",
+      "Reference proteome",
+      "Repeat",
+      "Signal",
+      "Synapse",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DQA6.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DQA6-F1-model_v6.pdb",
+    "mean_plddt": 83.95,
+    "plddt_fraction": 0.886,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 32,
+        "source": "fpocket",
+        "score": 0.993,
+        "volume": 2179.699,
+        "area": 662.723,
+        "hydrophobicity": 32.294,
+        "alpha_spheres": 297.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DQA6_out/pockets/pocket32_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.445,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.445,
+        "dog": 0.0,
+        "mouse": 0.443
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "41733347"
+      ]
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DQA6_vina.conf",
+    "pocket_center": {
+      "center_x": -16.675,
+      "center_y": -43.821,
+      "center_z": 14.317
+    },
+    "vina_box_size": 25
+  },
+  {
+    "accession": "A0AAQ4E0I8",
+    "name": "Histone deacetylase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 424,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Chromatin regulator",
+      "Chromosome",
+      "Cytoplasm",
+      "Hydrolase",
+      "Metal-binding",
+      "Nucleus",
+      "Reference proteome",
+      "Repressor",
+      "Transcription",
+      "Transcription regulation"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E0I8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E0I8-F1-model_v6.pdb",
+    "mean_plddt": 87.99,
+    "plddt_fraction": 0.868,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.788,
+        "volume": 403.175,
+        "area": 129.203,
+        "hydrophobicity": 35.487,
+        "alpha_spheres": 51.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E0I8_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.46,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.46,
+        "dog": 0.0,
+        "mouse": 0.455
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "24282621"
+      ]
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E0I8_vina.conf",
+    "pocket_center": {
+      "center_x": 11.165,
+      "center_y": -21.935,
+      "center_z": -6.542
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4E1Y4",
+    "name": "Ion transport domain-containing protein",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 1056,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Calcium",
+      "Calcium channel",
+      "Calcium transport",
+      "Coiled coil",
+      "Glycoprotein",
+      "Ion channel",
+      "Ion transport",
+      "Membrane",
+      "Metal-binding",
+      "Reference proteome",
+      "Repeat",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport",
+      "Voltage-gated channel"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Druggable class: channel (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E1Y4.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E1Y4-F1-model_v6.pdb",
+    "mean_plddt": 75.25,
+    "plddt_fraction": 0.731,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 81,
+        "source": "fpocket",
+        "score": 0.981,
+        "volume": 1598.028,
+        "area": 430.962,
+        "hydrophobicity": 43.349,
+        "alpha_spheres": 116.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E1Y4_out/pockets/pocket81_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 29,
+        "source": "fpocket",
+        "score": 0.944,
+        "volume": 620.566,
+        "area": 180.082,
+        "hydrophobicity": 42.192,
+        "alpha_spheres": 55.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E1Y4_out/pockets/pocket29_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      },
+      {
+        "pocket_id": 53,
+        "source": "fpocket",
+        "score": 0.558,
+        "volume": 524.943,
+        "area": 170.347,
+        "hydrophobicity": 43.826,
+        "alpha_spheres": 59.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E1Y4_out/pockets/pocket53_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_2"
+      },
+      {
+        "pocket_id": 5,
+        "source": "fpocket",
+        "score": 0.614,
+        "volume": 500.145,
+        "area": 151.817,
+        "hydrophobicity": 43.08,
+        "alpha_spheres": 71.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E1Y4_out/pockets/pocket5_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_3"
+      }
+    ],
+    "druggable_pockets": 4,
+    "allosteric_sites": 3,
+    "blast_result": {
+      "max_identity": 0.476,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.47,
+        "dog": 0.3,
+        "mouse": 0.476
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Druggable class: channel (+1)",
+      "Membrane/receptor protein (+2)",
+      "4 druggable pockets (+4)",
+      "3 allosteric sites \u2605 (+3)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E1Y4_vina.conf",
+    "pocket_center": {
+      "center_x": 17.87,
+      "center_y": 7.92,
+      "center_z": -1.442
+    },
+    "vina_box_size": 23
+  },
+  {
+    "accession": "A0A0C9R2P6",
+    "name": "Phosphotransferase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 358,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Glycolysis",
+      "Kinase",
+      "Nucleotide-binding",
+      "Transferase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9R2P6.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9R2P6-F1-model_v6.pdb",
+    "mean_plddt": 93.95,
+    "plddt_fraction": 0.989,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.978,
+        "volume": 657.847,
+        "area": 180.143,
+        "hydrophobicity": 35.347,
+        "alpha_spheres": 58.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9R2P6_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.466,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.466,
+        "dog": 0.0,
+        "mouse": 0.463
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "18722527"
+      ]
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9R2P6_vina.conf",
+    "pocket_center": {
+      "center_x": 4.793,
+      "center_y": -3.999,
+      "center_z": -19.765
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0K0PR09",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "CO1",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 512,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Magnesium",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0K0PR09.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0K0PR09-F1-model_v6.pdb",
+    "mean_plddt": 95.65,
+    "plddt_fraction": 0.988,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 1.0,
+        "volume": 3150.007,
+        "area": 936.647,
+        "hydrophobicity": 61.053,
+        "alpha_spheres": 425.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0K0PR09_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.742,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.742,
+        "dog": 0.735,
+        "mouse": 0.728
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0K0PR09_vina.conf",
+    "pocket_center": {
+      "center_x": 0.208,
+      "center_y": 5.426,
+      "center_z": -2.353
+    },
+    "vina_box_size": 27
+  },
+  {
+    "accession": "A0A0K0PRG2",
+    "name": "NADH-ubiquinone oxidoreductase chain 5",
+    "gene": "ND5",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 547,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Core subunit of the mitochondrial membrane respiratory chain NADH dehydrogenase (Complex I) that is believed to belong to the minimal assembly required for catalysis. Complex I functions in the transfer of electrons from NADH to the respiratory chain. The immediate electron acceptor for the enzyme is believed to be ubiquinone",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Electron transport",
+      "Membrane",
+      "Mitochondrion",
+      "NAD",
+      "Signal",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport",
+      "Ubiquinone"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0K0PRG2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0K0PRG2-F1-model_v6.pdb",
+    "mean_plddt": 86.23,
+    "plddt_fraction": 0.89,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 18,
+        "source": "fpocket",
+        "score": 0.838,
+        "volume": 764.694,
+        "area": 245.944,
+        "hydrophobicity": 44.29,
+        "alpha_spheres": 67.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0K0PRG2_out/pockets/pocket18_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 33,
+        "source": "fpocket",
+        "score": 0.948,
+        "volume": 736.205,
+        "area": 266.966,
+        "hydrophobicity": 49.812,
+        "alpha_spheres": 83.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0K0PRG2_out/pockets/pocket33_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.355,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.351,
+        "dog": 0.321,
+        "mouse": 0.355
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 20,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Low human homology 36% (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0K0PRG2_vina.conf",
+    "pocket_center": {
+      "center_x": -7.084,
+      "center_y": 14.449,
+      "center_z": -6.345
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4FA75",
+    "name": "Acylglycerol kinase, mitochondrial",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 439,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Kinase",
+      "Lipid metabolism",
+      "Membrane",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Nucleotide-binding",
+      "Reference proteome",
+      "Transferase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FA75.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4FA75-F1-model_v6.pdb",
+    "mean_plddt": 81.39,
+    "plddt_fraction": 0.806,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 29,
+        "source": "fpocket",
+        "score": 0.767,
+        "volume": 854.423,
+        "area": 297.78,
+        "hydrophobicity": 24.75,
+        "alpha_spheres": 84.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FA75_out/pockets/pocket29_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.399,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.334,
+        "dog": 0.0,
+        "mouse": 0.399
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 19,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Low human homology 40% (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4FA75_vina.conf",
+    "pocket_center": {
+      "center_x": -15.379,
+      "center_y": -9.505,
+      "center_z": 11.969
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0C9RY70",
+    "name": "3-hydroxyacyl-CoA dehydrogenase type-2",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 261,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Oxidoreductase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9RY70.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9RY70-F1-model_v6.pdb",
+    "mean_plddt": 96.15,
+    "plddt_fraction": 0.989,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.753,
+        "volume": 1086.354,
+        "area": 330.336,
+        "hydrophobicity": 19.289,
+        "alpha_spheres": 117.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9RY70_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 8,
+        "source": "fpocket",
+        "score": 0.541,
+        "volume": 427.483,
+        "area": 135.536,
+        "hydrophobicity": 19.048,
+        "alpha_spheres": 45.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9RY70_out/pockets/pocket8_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.681,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.681,
+        "dog": 0.325,
+        "mouse": 0.661
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 19,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9RY70_vina.conf",
+    "pocket_center": {
+      "center_x": 3.762,
+      "center_y": -5.018,
+      "center_z": -4.542
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "A0AAQ4DJ97",
+    "name": "Flavin-containing monooxygenase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 541,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Acts as a Baeyer-Villiger monooxygenase on a broad range of substrates. Catalyzes the insertion of an oxygen atom into a carbon-carbon bond adjacent to a carbonyl, which converts ketones to esters. Active on diverse carbonyl compounds, whereas soft nucleophiles are mostly non- or poorly reactive. In contrast with other forms of FMO it is non- or poorly active on 'classical' substrates such as drugs, pesticides, and dietary components containing soft nucleophilic heteroatoms. Able to oxidize drug molecules bearing a carbonyl group on an aliphatic chain, such as nabumetone and pentoxifylline. Also, in the absence of substrates, shows slow but yet significant NADPH oxidase activity. Acts as a positive modulator of cholesterol biosynthesis as well as glucose homeostasis, promoting metabolic aging via pleiotropic effects",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Endoplasmic reticulum",
+      "FAD",
+      "Flavoprotein",
+      "Lipid metabolism",
+      "Membrane",
+      "Methylation",
+      "Microsome",
+      "Monooxygenase",
+      "NADP",
+      "Oxidoreductase",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DJ97.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DJ97-F1-model_v6.pdb",
+    "mean_plddt": 92.67,
+    "plddt_fraction": 0.948,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 6,
+        "source": "fpocket",
+        "score": 0.978,
+        "volume": 1312.125,
+        "area": 329.561,
+        "hydrophobicity": 27.857,
+        "alpha_spheres": 117.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DJ97_out/pockets/pocket6_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 42,
+        "source": "fpocket",
+        "score": 0.576,
+        "volume": 1164.807,
+        "area": 340.084,
+        "hydrophobicity": 27.395,
+        "alpha_spheres": 139.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DJ97_out/pockets/pocket42_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.476,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.452,
+        "dog": 0.385,
+        "mouse": 0.476
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 19,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DJ97_vina.conf",
+    "pocket_center": {
+      "center_x": 19.606,
+      "center_y": -6.937,
+      "center_z": 10.938
+    },
+    "vina_box_size": 22
+  },
+  {
+    "accession": "A0AAQ4E1Y3",
+    "name": "Voltage-dependent calcium channel type A subunit alpha-1",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 1207,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Calcium",
+      "Calcium channel",
+      "Calcium transport",
+      "Coiled coil",
+      "Glycoprotein",
+      "Ion channel",
+      "Ion transport",
+      "Membrane",
+      "Metal-binding",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Repeat",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport",
+      "Voltage-gated channel"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Druggable class: channel (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E1Y3.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E1Y3-F1-model_v6.pdb",
+    "mean_plddt": 76.0,
+    "plddt_fraction": 0.774,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 0.825,
+        "volume": 634.615,
+        "area": 205.924,
+        "hydrophobicity": 45.041,
+        "alpha_spheres": 78.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E1Y3_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 12,
+        "source": "fpocket",
+        "score": 0.701,
+        "volume": 540.4,
+        "area": 159.456,
+        "hydrophobicity": 56.567,
+        "alpha_spheres": 73.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E1Y3_out/pockets/pocket12_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.486,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.485,
+        "dog": 0.304,
+        "mouse": 0.486
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Druggable class: channel (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E1Y3_vina.conf",
+    "pocket_center": {
+      "center_x": 16.343,
+      "center_y": 9.84,
+      "center_z": -3.326
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4D4Y2",
+    "name": "Flavin-containing monooxygenase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 373,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Acts as a Baeyer-Villiger monooxygenase on a broad range of substrates. Catalyzes the insertion of an oxygen atom into a carbon-carbon bond adjacent to a carbonyl, which converts ketones to esters. Active on diverse carbonyl compounds, whereas soft nucleophiles are mostly non- or poorly reactive. In contrast with other forms of FMO it is non- or poorly active on 'classical' substrates such as drugs, pesticides, and dietary components containing soft nucleophilic heteroatoms. Able to oxidize drug molecules bearing a carbonyl group on an aliphatic chain, such as nabumetone and pentoxifylline. Also, in the absence of substrates, shows slow but yet significant NADPH oxidase activity. Acts as a positive modulator of cholesterol biosynthesis as well as glucose homeostasis, promoting metabolic aging via pleiotropic effects",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Endoplasmic reticulum",
+      "FAD",
+      "Flavoprotein",
+      "Lipid metabolism",
+      "Membrane",
+      "Methylation",
+      "Microsome",
+      "Monooxygenase",
+      "NADP",
+      "Oxidoreductase",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4D4Y2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4D4Y2-F1-model_v6.pdb",
+    "mean_plddt": 81.72,
+    "plddt_fraction": 0.78,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 33,
+        "source": "fpocket",
+        "score": 0.864,
+        "volume": 893.413,
+        "area": 295.95,
+        "hydrophobicity": 54.706,
+        "alpha_spheres": 96.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4D4Y2_out/pockets/pocket33_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 37,
+        "source": "fpocket",
+        "score": 0.828,
+        "volume": 831.076,
+        "area": 272.498,
+        "hydrophobicity": 47.226,
+        "alpha_spheres": 70.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4D4Y2_out/pockets/pocket37_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.465,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.459,
+        "dog": 0.404,
+        "mouse": 0.465
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4D4Y2_vina.conf",
+    "pocket_center": {
+      "center_x": 11.54,
+      "center_y": 5.266,
+      "center_z": 0.872
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0C9R308",
+    "name": "CAAX prenyl protease",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 425,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Proteolytically removes the C-terminal three residues of farnesylated proteins",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Endoplasmic reticulum",
+      "Hydrolase",
+      "Membrane",
+      "Metal-binding",
+      "Metalloprotease",
+      "Protease",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Zinc"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9R308.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9R308-F1-model_v6.pdb",
+    "mean_plddt": 89.25,
+    "plddt_fraction": 0.918,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 10,
+        "source": "fpocket",
+        "score": 0.986,
+        "volume": 663.929,
+        "area": 215.893,
+        "hydrophobicity": 33.115,
+        "alpha_spheres": 54.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9R308_out/pockets/pocket10_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 20,
+        "source": "fpocket",
+        "score": 0.878,
+        "volume": 651.841,
+        "area": 227.978,
+        "hydrophobicity": 44.519,
+        "alpha_spheres": 64.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9R308_out/pockets/pocket20_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.549,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.545,
+        "dog": 0.0,
+        "mouse": 0.549
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9R308_vina.conf",
+    "pocket_center": {
+      "center_x": 9.061,
+      "center_y": 15.169,
+      "center_z": 3.079
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0C9SEC4",
+    "name": "Serine/threonine-protein phosphatase PGAM5, mitochondrial",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 222,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Displays phosphatase activity for serine/threonine residues, and dephosphorylates and activates Pk92B kinase. Has apparently no phosphoglycerate mutase activity",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Hydrolase",
+      "Membrane",
+      "Mitochondrion",
+      "Mitochondrion outer membrane",
+      "Signal"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SEC4.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9SEC4-F1-model_v6.pdb",
+    "mean_plddt": 88.63,
+    "plddt_fraction": 0.847,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.709,
+        "volume": 778.349,
+        "area": 219.981,
+        "hydrophobicity": 16.667,
+        "alpha_spheres": 62.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SEC4_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.733,
+        "volume": 340.615,
+        "area": 85.882,
+        "hydrophobicity": 17.368,
+        "alpha_spheres": 22.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SEC4_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": true,
+        "site_type": "ALLOSTERIC_1"
+      }
+    ],
+    "druggable_pockets": 2,
+    "allosteric_sites": 1,
+    "blast_result": {
+      "max_identity": 0.503,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.5,
+        "dog": 0.0,
+        "mouse": 0.503
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 18,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)",
+      "2 druggable pockets (+3)",
+      "1 allosteric site (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9SEC4_vina.conf",
+    "pocket_center": {
+      "center_x": 5.154,
+      "center_y": 6.426,
+      "center_z": 4.169
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4DND5",
+    "name": "Poly [ADP-ribose] polymerase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 976,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ADP-ribosylation",
+      "Allosteric enzyme",
+      "Chromosome",
+      "Cytoplasm",
+      "DNA-binding",
+      "Glycosyltransferase",
+      "Immunity",
+      "Innate immunity",
+      "Isopeptide bond",
+      "Metal-binding",
+      "NAD",
+      "Nucleotidyltransferase",
+      "Nucleus",
+      "Reference proteome",
+      "Repeat",
+      "Transcription",
+      "Transcription regulation",
+      "Transferase",
+      "Zinc",
+      "Zinc-finger"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DND5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DND5-F1-model_v6.pdb",
+    "mean_plddt": 82.13,
+    "plddt_fraction": 0.839,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 72,
+        "source": "fpocket",
+        "score": 0.95,
+        "volume": 1526.573,
+        "area": 468.99,
+        "hydrophobicity": 41.909,
+        "alpha_spheres": 199.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DND5_out/pockets/pocket72_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.482,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.482,
+        "dog": 0.0,
+        "mouse": 0.471
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 17,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DND5_vina.conf",
+    "pocket_center": {
+      "center_x": -4.208,
+      "center_y": 15.081,
+      "center_z": 9.071
+    },
+    "vina_box_size": 23
+  },
+  {
+    "accession": "A0A0C9SB77",
+    "name": "Ubiquitin-conjugating enzyme E2 S",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 188,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Cell cycle",
+      "Cell division",
+      "Ligase",
+      "Nucleotide-binding",
+      "Reference proteome",
+      "Transferase",
+      "Ubl conjugation pathway"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: ligase (+1)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SB77.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9SB77-F1-model_v6.pdb",
+    "mean_plddt": 87.21,
+    "plddt_fraction": 0.83,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 0.59,
+        "volume": 834.446,
+        "area": 270.421,
+        "hydrophobicity": 21.143,
+        "alpha_spheres": 72.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SB77_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.608,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.608,
+        "dog": 0.0,
+        "mouse": 0.606
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 17,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: ligase (+1)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9SB77_vina.conf",
+    "pocket_center": {
+      "center_x": 10.061,
+      "center_y": -5.593,
+      "center_z": 2.303
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0C9RV71",
+    "name": "Phospholipid-transporting ATPase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 415,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Lipid transport",
+      "Magnesium",
+      "Membrane",
+      "Metal-binding",
+      "Nucleotide-binding",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9RV71.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9RV71-F1-model_v6.pdb",
+    "mean_plddt": 91.45,
+    "plddt_fraction": 0.995,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 5,
+        "source": "fpocket",
+        "score": 0.678,
+        "volume": 404.786,
+        "area": 117.166,
+        "hydrophobicity": 38.195,
+        "alpha_spheres": 53.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9RV71_out/pockets/pocket5_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.744,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.742,
+        "dog": 0.321,
+        "mouse": 0.744
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 17,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9RV71_vina.conf",
+    "pocket_center": {
+      "center_x": 12.124,
+      "center_y": -8.52,
+      "center_z": -6.835
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4DBL8",
+    "name": "RB1-inducible coiled-coil protein 1",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 1227,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Involved in autophagy. Regulates early events but also late events of autophagosome formation through direct interaction with Atg16L1. Required for the formation of the autophagosome-like double-membrane structure that surrounds the Salmonella-containing vacuole (SCV) during S.typhimurium infection and subsequent xenophagy. Involved in repair of DNA damage caused by ionizing radiation, which subsequently improves cell survival by decreasing apoptosis. Inhibits PTK2/FAK1 and PTK2B/PYK2 kinase activity, affecting their downstream signaling pathways. Plays a role as a modulator of TGF-beta-signaling by restricting substrate specificity of RNF111. Functions as a DNA-binding transcription factor. Is a potent regulator of the RB1 pathway through induction of RB1 expression. Plays a crucial role in muscular differentiation. Plays an indispensable role in fetal hematopoiesis and in the regulation of neuronal homeostasis",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Autophagy",
+      "Cell cycle",
+      "Coiled coil",
+      "Cytoplasm",
+      "Lysosome",
+      "Nucleus",
+      "Phosphoprotein",
+      "Protein transport",
+      "Reference proteome",
+      "Transcription",
+      "Transcription regulation",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DBL8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DBL8-F1-model_v6.pdb",
+    "mean_plddt": 72.65,
+    "plddt_fraction": 0.667,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 15,
+        "source": "fpocket",
+        "score": 0.541,
+        "volume": 483.952,
+        "area": 164.35,
+        "hydrophobicity": 35.487,
+        "alpha_spheres": 52.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DBL8_out/pockets/pocket15_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.37,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.263,
+        "dog": 0.0,
+        "mouse": 0.37
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 17,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Low human homology 37% (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DBL8_vina.conf",
+    "pocket_center": {
+      "center_x": -1.668,
+      "center_y": -9.679,
+      "center_z": 24.895
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4DPM5",
+    "name": "Histone deacetylase 8",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 278,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Chromatin regulator",
+      "Chromosome",
+      "Cytoplasm",
+      "Hydrolase",
+      "Metal-binding",
+      "Nucleus",
+      "Reference proteome",
+      "Repressor",
+      "Transcription",
+      "Transcription regulation"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DPM5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DPM5-F1-model_v6.pdb",
+    "mean_plddt": 95.39,
+    "plddt_fraction": 0.968,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.646,
+        "volume": 519.592,
+        "area": 185.203,
+        "hydrophobicity": 29.03,
+        "alpha_spheres": 59.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DPM5_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.509,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.509,
+        "dog": 0.0,
+        "mouse": 0.506
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 17,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DPM5_vina.conf",
+    "pocket_center": {
+      "center_x": -3.84,
+      "center_y": 7.1,
+      "center_z": -11.096
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4FI23",
+    "name": "Flavin-containing monooxygenase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 554,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Acts as a Baeyer-Villiger monooxygenase on a broad range of substrates. Catalyzes the insertion of an oxygen atom into a carbon-carbon bond adjacent to a carbonyl, which converts ketones to esters. Active on diverse carbonyl compounds, whereas soft nucleophiles are mostly non- or poorly reactive. In contrast with other forms of FMO it is non- or poorly active on 'classical' substrates such as drugs, pesticides, and dietary components containing soft nucleophilic heteroatoms. Able to oxidize drug molecules bearing a carbonyl group on an aliphatic chain, such as nabumetone and pentoxifylline. Also, in the absence of substrates, shows slow but yet significant NADPH oxidase activity. Acts as a positive modulator of cholesterol biosynthesis as well as glucose homeostasis, promoting metabolic aging via pleiotropic effects",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Endoplasmic reticulum",
+      "FAD",
+      "Flavoprotein",
+      "Lipid metabolism",
+      "Membrane",
+      "Methylation",
+      "Microsome",
+      "Monooxygenase",
+      "NADP",
+      "Oxidoreductase",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FI23.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4FI23-F1-model_v6.pdb",
+    "mean_plddt": 88.39,
+    "plddt_fraction": 0.875,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.943,
+        "volume": 2332.093,
+        "area": 666.481,
+        "hydrophobicity": 43.072,
+        "alpha_spheres": 297.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FI23_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.386,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.386,
+        "dog": 0.348,
+        "mouse": 0.382
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 17,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Low human homology 39% (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4FI23_vina.conf",
+    "pocket_center": {
+      "center_x": 1.564,
+      "center_y": 1.951,
+      "center_z": 2.525
+    },
+    "vina_box_size": 25
+  },
+  {
+    "accession": "A0AAQ4FJ88",
+    "name": "Flavin-containing monooxygenase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 538,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Acts as a Baeyer-Villiger monooxygenase on a broad range of substrates. Catalyzes the insertion of an oxygen atom into a carbon-carbon bond adjacent to a carbonyl, which converts ketones to esters. Active on diverse carbonyl compounds, whereas soft nucleophiles are mostly non- or poorly reactive. In contrast with other forms of FMO it is non- or poorly active on 'classical' substrates such as drugs, pesticides, and dietary components containing soft nucleophilic heteroatoms. Able to oxidize drug molecules bearing a carbonyl group on an aliphatic chain, such as nabumetone and pentoxifylline. Also, in the absence of substrates, shows slow but yet significant NADPH oxidase activity. Acts as a positive modulator of cholesterol biosynthesis as well as glucose homeostasis, promoting metabolic aging via pleiotropic effects",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Endoplasmic reticulum",
+      "FAD",
+      "Flavoprotein",
+      "Lipid metabolism",
+      "Membrane",
+      "Methylation",
+      "Microsome",
+      "Monooxygenase",
+      "NADP",
+      "Oxidoreductase",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FJ88.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4FJ88-F1-model_v6.pdb",
+    "mean_plddt": 87.06,
+    "plddt_fraction": 0.885,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.987,
+        "volume": 3776.314,
+        "area": 1091.364,
+        "hydrophobicity": 63.601,
+        "alpha_spheres": 509.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FJ88_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.393,
+      "human_risk": "LOW",
+      "host_identities": {
+        "human": 0.383,
+        "dog": 0.346,
+        "mouse": 0.393
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 17,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Low human homology 39% (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4FJ88_vina.conf",
+    "pocket_center": {
+      "center_x": 4.216,
+      "center_y": -3.333,
+      "center_z": 3.63
+    },
+    "vina_box_size": 28
+  },
+  {
+    "accession": "A0AAQ4DEL6",
+    "name": "non-specific serine/threonine protein kinase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 508,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Cell cycle",
+      "Golgi apparatus",
+      "Kinase",
+      "Magnesium",
+      "Membrane",
+      "Metal-binding",
+      "Nucleotide-binding",
+      "Reference proteome",
+      "Serine/threonine-protein kinase",
+      "Transferase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DEL6.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DEL6-F1-model_v6.pdb",
+    "mean_plddt": 71.62,
+    "plddt_fraction": 0.62,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 37,
+        "source": "fpocket",
+        "score": 0.984,
+        "volume": 1657.093,
+        "area": 603.824,
+        "hydrophobicity": 51.225,
+        "alpha_spheres": 214.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DEL6_out/pockets/pocket37_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.425,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.425,
+        "dog": 0.332,
+        "mouse": 0.417
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: kinase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DEL6_vina.conf",
+    "pocket_center": {
+      "center_x": -17.802,
+      "center_y": -7.134,
+      "center_z": 7.894
+    },
+    "vina_box_size": 23
+  },
+  {
+    "accession": "A0AAQ4DX98",
+    "name": "Peptidylglycine alpha-amidating monooxygenase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 758,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Calcium",
+      "Copper",
+      "Disulfide bond",
+      "Glycoprotein",
+      "Lyase",
+      "Membrane",
+      "Metal-binding",
+      "Monooxygenase",
+      "Multifunctional enzyme",
+      "Oxidoreductase",
+      "Reference proteome",
+      "Repeat",
+      "Secreted",
+      "Signal",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Zinc"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DX98.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DX98-F1-model_v6.pdb",
+    "mean_plddt": 79.0,
+    "plddt_fraction": 0.765,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 18,
+        "source": "fpocket",
+        "score": 0.703,
+        "volume": 349.465,
+        "area": 107.461,
+        "hydrophobicity": 25.037,
+        "alpha_spheres": 31.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DX98_out/pockets/pocket18_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.417,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.417,
+        "dog": 0.315,
+        "mouse": 0.329
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DX98_vina.conf",
+    "pocket_center": {
+      "center_x": -56.22,
+      "center_y": -4.222,
+      "center_z": -6.922
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4E147",
+    "name": "SUMO-activating enzyme subunit",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 621,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Membrane",
+      "Metal-binding",
+      "Nucleotide-binding",
+      "Nucleus",
+      "Reference proteome",
+      "Transferase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Ubl conjugation pathway",
+      "Zinc"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E147.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E147-F1-model_v6.pdb",
+    "mean_plddt": 79.1,
+    "plddt_fraction": 0.779,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 33,
+        "source": "fpocket",
+        "score": 0.815,
+        "volume": 1188.293,
+        "area": 360.412,
+        "hydrophobicity": 19.692,
+        "alpha_spheres": 110.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E147_out/pockets/pocket33_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.562,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.549,
+        "dog": 0.0,
+        "mouse": 0.562
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E147_vina.conf",
+    "pocket_center": {
+      "center_x": 3.221,
+      "center_y": 14.324,
+      "center_z": 10.572
+    },
+    "vina_box_size": 22
+  },
+  {
+    "accession": "A0AAQ4E7F2",
+    "name": "General transcription and DNA repair factor IIH helicase/translocase subunit XPB",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 763,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "DNA damage",
+      "DNA repair",
+      "DNA-binding",
+      "Helicase",
+      "Hydrolase",
+      "Isomerase",
+      "Nucleotide-binding",
+      "Nucleus",
+      "Reference proteome"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: isomerase (+1)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E7F2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E7F2-F1-model_v6.pdb",
+    "mean_plddt": 74.06,
+    "plddt_fraction": 0.735,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 6,
+        "source": "fpocket",
+        "score": 0.662,
+        "volume": 430.696,
+        "area": 129.712,
+        "hydrophobicity": 24.692,
+        "alpha_spheres": 67.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E7F2_out/pockets/pocket6_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.749,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.749,
+        "dog": 0.0,
+        "mouse": 0.744
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: isomerase (+1)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E7F2_vina.conf",
+    "pocket_center": {
+      "center_x": 11.588,
+      "center_y": 8.35,
+      "center_z": -13.975
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4EAX4",
+    "name": "Tyrosine-protein kinase receptor",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 690,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Disulfide bond",
+      "Kinase",
+      "Kringle",
+      "Membrane",
+      "Nucleotide-binding",
+      "Phosphoprotein",
+      "Receptor",
+      "Reference proteome",
+      "Transferase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Tyrosine-protein kinase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 14,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4EAX4.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4EAX4-F1-model_v6.pdb",
+    "mean_plddt": 71.33,
+    "plddt_fraction": 0.628,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.895,
+        "volume": 402.312,
+        "area": 98.231,
+        "hydrophobicity": 59.288,
+        "alpha_spheres": 79.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4EAX4_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.486,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.468,
+        "dog": 0.417,
+        "mouse": 0.486
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4EAX4_vina.conf",
+    "pocket_center": {
+      "center_x": 10.956,
+      "center_y": 5.55,
+      "center_z": -25.8
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4DZT2",
+    "name": "Diacylglycerol lipase-alpha",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 260,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Calcium",
+      "Cell membrane",
+      "Cell projection",
+      "Endosome",
+      "Glycoprotein",
+      "Hydrolase",
+      "Lipid degradation",
+      "Lipid metabolism",
+      "Membrane",
+      "Metal-binding",
+      "Phosphoprotein",
+      "Postsynaptic cell membrane",
+      "Reference proteome",
+      "Synapse",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DZT2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DZT2-F1-model_v6.pdb",
+    "mean_plddt": 83.68,
+    "plddt_fraction": 0.796,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 21,
+        "source": "fpocket",
+        "score": 0.845,
+        "volume": 374.146,
+        "area": 183.516,
+        "hydrophobicity": 29.059,
+        "alpha_spheres": 37.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DZT2_out/pockets/pocket21_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.544,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.544,
+        "dog": 0.0,
+        "mouse": 0.54
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DZT2_vina.conf",
+    "pocket_center": {
+      "center_x": 7.66,
+      "center_y": -7.11,
+      "center_z": -12.081
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4E0T1",
+    "name": "Phospholipid-transporting ATPase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 728,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Golgi apparatus",
+      "Magnesium",
+      "Membrane",
+      "Metal-binding",
+      "Nucleotide-binding",
+      "Reference proteome",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E0T1.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E0T1-F1-model_v6.pdb",
+    "mean_plddt": 83.22,
+    "plddt_fraction": 0.859,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 18,
+        "source": "fpocket",
+        "score": 0.86,
+        "volume": 781.766,
+        "area": 246.461,
+        "hydrophobicity": 38.857,
+        "alpha_spheres": 107.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E0T1_out/pockets/pocket18_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.592,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.592,
+        "dog": 0.254,
+        "mouse": 0.592
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E0T1_vina.conf",
+    "pocket_center": {
+      "center_x": -42.339,
+      "center_y": -1.248,
+      "center_z": 22.246
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4E2K9",
+    "name": "Guanylate cyclase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 1076,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cell membrane",
+      "cGMP biosynthesis",
+      "Glycoprotein",
+      "GTP-binding",
+      "Lyase",
+      "Membrane",
+      "Nucleotide-binding",
+      "Receptor",
+      "Reference proteome",
+      "Signal",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E2K9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E2K9-F1-model_v6.pdb",
+    "mean_plddt": 80.24,
+    "plddt_fraction": 0.805,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 18,
+        "source": "fpocket",
+        "score": 0.885,
+        "volume": 776.502,
+        "area": 253.029,
+        "hydrophobicity": 39.333,
+        "alpha_spheres": 91.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E2K9_out/pockets/pocket18_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.453,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.453,
+        "dog": 0.35,
+        "mouse": 0.435
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E2K9_vina.conf",
+    "pocket_center": {
+      "center_x": -45.104,
+      "center_y": 27.67,
+      "center_z": -5.55
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4E8L7",
+    "name": "Adenylosuccinate lyase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 405,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Lyase",
+      "Membrane",
+      "Purine biosynthesis",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E8L7.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E8L7-F1-model_v6.pdb",
+    "mean_plddt": 89.93,
+    "plddt_fraction": 0.874,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 35,
+        "source": "fpocket",
+        "score": 0.899,
+        "volume": 1620.51,
+        "area": 500.416,
+        "hydrophobicity": 71.2,
+        "alpha_spheres": 168.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E8L7_out/pockets/pocket35_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.737,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.732,
+        "dog": 0.0,
+        "mouse": 0.737
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E8L7_vina.conf",
+    "pocket_center": {
+      "center_x": -10.247,
+      "center_y": 0.005,
+      "center_z": 42.276
+    },
+    "vina_box_size": 23
+  },
+  {
+    "accession": "A0AAQ4E7F9",
+    "name": "Peptidase M20 dimerisation domain-containing protein",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 527,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Secreted enzyme that regulates the endogenous N-fatty acyl amino acid (NAAs) tissue and circulating levels by functioning as a bidirectional NAA synthase/hydrolase. It condenses free fatty acids and free amino acids to generate NAAs and bidirectionally catalyzes the reverse hydrolysis reaction. Some of these NAAs stimulate oxidative metabolism via mitochondrial uncoupling, increasing energy expenditure in a UPC1-independent manner. Thereby, this secreted protein may indirectly regulate whole body energy expenditure. PM20D1 circulates in tight association with both low- and high-density (LDL and HDL,respectively) lipoprotein particles",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Hydrolase",
+      "Membrane",
+      "Metal-binding",
+      "Protease",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Zinc"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E7F9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4E7F9-F1-model_v6.pdb",
+    "mean_plddt": 90.72,
+    "plddt_fraction": 0.924,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 15,
+        "source": "fpocket",
+        "score": 0.885,
+        "volume": 572.153,
+        "area": 206.264,
+        "hydrophobicity": 58.242,
+        "alpha_spheres": 68.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4E7F9_out/pockets/pocket15_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.407,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.396,
+        "dog": 0.0,
+        "mouse": 0.407
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: protease (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4E7F9_vina.conf",
+    "pocket_center": {
+      "center_x": 19.031,
+      "center_y": -14.405,
+      "center_z": 0.721
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4DMB8",
+    "name": "Ketimine reductase mu-crystallin",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 313,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Reference proteome"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DMB8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DMB8-F1-model_v6.pdb",
+    "mean_plddt": 94.93,
+    "plddt_fraction": 0.981,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 0.831,
+        "volume": 1035.004,
+        "area": 303.956,
+        "hydrophobicity": 25.864,
+        "alpha_spheres": 83.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DMB8_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.479,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.476,
+        "dog": 0.0,
+        "mouse": 0.479
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DMB8_vina.conf",
+    "pocket_center": {
+      "center_x": 7.702,
+      "center_y": -7.951,
+      "center_z": 0.541
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "A0A0C9RV76",
+    "name": "Bifunctional purine biosynthesis protein ATIC",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 420,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Hydrolase",
+      "Multifunctional enzyme",
+      "Purine biosynthesis",
+      "Transferase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9RV76.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9RV76-F1-model_v6.pdb",
+    "mean_plddt": 96.65,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 25,
+        "source": "fpocket",
+        "score": 0.628,
+        "volume": 692.951,
+        "area": 221.607,
+        "hydrophobicity": 25.257,
+        "alpha_spheres": 63.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9RV76_out/pockets/pocket25_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.724,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.724,
+        "dog": 0.0,
+        "mouse": 0.712
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9RV76_vina.conf",
+    "pocket_center": {
+      "center_x": 4.538,
+      "center_y": 4.59,
+      "center_z": -11.401
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0C9RXK7",
+    "name": "Tetraspanin",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 178,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Functions as a cell surface receptor for TIMP1 and plays a role in the activation of cellular signaling cascades. Plays a role in the activation of ITGB1 and integrin signaling, leading to the activation of AKT, FAK/PTK2 and MAP kinases. Promotes cell survival, reorganization of the actin cytoskeleton, cell adhesion, spreading and migration, via its role in the activation of AKT and FAK/PTK2. Plays a role in VEGFA signaling via its role in regulating the internalization of KDR/VEGFR2. Plays a role in intracellular vesicular transport processes, and is required for normal trafficking of the PMEL luminal domain that is essential for the development and maturation of melanocytes. Plays a role in the adhesion of leukocytes onto endothelial cells via its role in the regulation of SELP trafficking. May play a role in mast cell degranulation in response to Ms4a2/FceRI stimulation, but not in mast cell degranulation in response to other stimuli",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Cell membrane",
+      "Endosome",
+      "Glycoprotein",
+      "Lipoprotein",
+      "Lysosome",
+      "Membrane",
+      "Palmitate",
+      "Protein transport",
+      "Secreted",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9RXK7.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9RXK7-F1-model_v6.pdb",
+    "mean_plddt": 90.8,
+    "plddt_fraction": 0.978,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 8,
+        "source": "fpocket",
+        "score": 0.828,
+        "volume": 1119.278,
+        "area": 312.057,
+        "hydrophobicity": 35.655,
+        "alpha_spheres": 85.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9RXK7_out/pockets/pocket8_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.44,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.434,
+        "dog": 0.29,
+        "mouse": 0.44
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9RXK7_vina.conf",
+    "pocket_center": {
+      "center_x": -4.134,
+      "center_y": 8.735,
+      "center_z": 6.66
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "A0A0C9SEA9",
+    "name": "Isocitrate dehydrogenase [NADP]",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 445,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Glyoxylate bypass",
+      "Magnesium",
+      "Manganese",
+      "Metal-binding",
+      "NADP",
+      "Oxidoreductase",
+      "Tricarboxylic acid cycle"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SEA9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9SEA9-F1-model_v6.pdb",
+    "mean_plddt": 90.91,
+    "plddt_fraction": 0.919,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 28,
+        "source": "fpocket",
+        "score": 0.541,
+        "volume": 544.4,
+        "area": 208.196,
+        "hydrophobicity": 29.688,
+        "alpha_spheres": 66.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SEA9_out/pockets/pocket28_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.71,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.701,
+        "dog": 0.0,
+        "mouse": 0.71
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 16,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "1 druggable pocket (+2)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9SEA9_vina.conf",
+    "pocket_center": {
+      "center_x": -9.412,
+      "center_y": -7.211,
+      "center_z": -0.508
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0C9R6Q9",
+    "name": "Proton-coupled zinc antiporter SLC30A5",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 260,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Antiport",
+      "Golgi apparatus",
+      "Ion transport",
+      "Membrane",
+      "Metal-binding",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport",
+      "Zinc",
+      "Zinc transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9R6Q9.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9R6Q9-F1-model_v6.pdb",
+    "mean_plddt": 75.63,
+    "plddt_fraction": 0.769,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 11,
+        "source": "fpocket",
+        "score": 0.874,
+        "volume": 365.502,
+        "area": 122.906,
+        "hydrophobicity": 33.15,
+        "alpha_spheres": 48.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9R6Q9_out/pockets/pocket11_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.616,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.612,
+        "dog": 0.371,
+        "mouse": 0.616
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9R6Q9_vina.conf",
+    "pocket_center": {
+      "center_x": -1.241,
+      "center_y": -11.315,
+      "center_z": 7.052
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0C9SDB6",
+    "name": "",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 227,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Coiled coil",
+      "Membrane",
+      "Protein transport",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SDB6.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9SDB6-F1-model_v6.pdb",
+    "mean_plddt": 79.41,
+    "plddt_fraction": 0.749,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 9,
+        "source": "fpocket",
+        "score": 0.595,
+        "volume": 380.23,
+        "area": 140.982,
+        "hydrophobicity": 32.647,
+        "alpha_spheres": 39.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SDB6_out/pockets/pocket9_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.425,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.416,
+        "dog": 0.0,
+        "mouse": 0.425
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9SDB6_vina.conf",
+    "pocket_center": {
+      "center_x": -33.068,
+      "center_y": 4.805,
+      "center_z": 12.637
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0C9SFH2",
+    "name": "UDP-glucuronic acid decarboxylase 1",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 227,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Coiled coil",
+      "Decarboxylase",
+      "Glycoprotein",
+      "Golgi apparatus",
+      "Lyase",
+      "Membrane",
+      "NAD",
+      "Signal",
+      "Signal-anchor",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SFH2.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9SFH2-F1-model_v6.pdb",
+    "mean_plddt": 76.73,
+    "plddt_fraction": 0.687,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 3,
+        "source": "fpocket",
+        "score": 0.7,
+        "volume": 385.326,
+        "area": 109.688,
+        "hydrophobicity": 24.231,
+        "alpha_spheres": 31.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9SFH2_out/pockets/pocket3_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.63,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.63,
+        "dog": 0.0,
+        "mouse": 0.63
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9SFH2_vina.conf",
+    "pocket_center": {
+      "center_x": 7.881,
+      "center_y": 17.157,
+      "center_z": 43.062
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4DNH0",
+    "name": "glutaminase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 658,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ANK repeat",
+      "Exocytosis",
+      "Hydrolase",
+      "Membrane",
+      "Neurotoxin",
+      "Presynaptic neurotoxin",
+      "Reference proteome",
+      "Repeat",
+      "Target cell membrane",
+      "Target membrane",
+      "Toxin"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 13,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DNH0.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4DNH0-F1-model_v6.pdb",
+    "mean_plddt": 78.31,
+    "plddt_fraction": 0.761,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 5,
+        "source": "fpocket",
+        "score": 0.762,
+        "volume": 751.768,
+        "area": 228.013,
+        "hydrophobicity": 25.9,
+        "alpha_spheres": 73.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4DNH0_out/pockets/pocket5_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.539,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.527,
+        "dog": 0.345,
+        "mouse": 0.539
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "Unknown function \u2014 discovery (+2)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4DNH0_vina.conf",
+    "pocket_center": {
+      "center_x": 17.335,
+      "center_y": 1.267,
+      "center_z": -12.902
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4F1X8",
+    "name": "Flavin-containing monooxygenase",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 572,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Acts as a Baeyer-Villiger monooxygenase on a broad range of substrates. Catalyzes the insertion of an oxygen atom into a carbon-carbon bond adjacent to a carbonyl, which converts ketones to esters. Active on diverse carbonyl compounds, whereas soft nucleophiles are mostly non- or poorly reactive. In contrast with other forms of FMO it is non- or poorly active on 'classical' substrates such as drugs, pesticides, and dietary components containing soft nucleophilic heteroatoms. Able to oxidize drug molecules bearing a carbonyl group on an aliphatic chain, such as nabumetone and pentoxifylline. Also, in the absence of substrates, shows slow but yet significant NADPH oxidase activity. Acts as a positive modulator of cholesterol biosynthesis as well as glucose homeostasis, promoting metabolic aging via pleiotropic effects",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Endoplasmic reticulum",
+      "FAD",
+      "Flavoprotein",
+      "Lipid metabolism",
+      "Membrane",
+      "Methylation",
+      "Microsome",
+      "Monooxygenase",
+      "NADP",
+      "Oxidoreductase",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4F1X8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4F1X8-F1-model_v6.pdb",
+    "mean_plddt": 87.8,
+    "plddt_fraction": 0.878,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 50,
+        "source": "fpocket",
+        "score": 0.947,
+        "volume": 1286.826,
+        "area": 424.209,
+        "hydrophobicity": 64.283,
+        "alpha_spheres": 126.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4F1X8_out/pockets/pocket50_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.461,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.461,
+        "dog": 0.421,
+        "mouse": 0.461
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4F1X8_vina.conf",
+    "pocket_center": {
+      "center_x": 22.757,
+      "center_y": -8.932,
+      "center_z": 10.929
+    },
+    "vina_box_size": 22
+  },
+  {
+    "accession": "A0AAQ4FR19",
+    "name": "Lysosomal dipeptide transporter MFSD1",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 391,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Lysosomal dipeptide uniporter that selectively exports lysine, arginine or histidine-containing dipeptides with a net positive charge from the lysosome lumen into the cytosol. Could play a role in a specific type of protein O-glycosylation indirectly regulating macrophages migration and tissue invasion. Also essential for liver homeostasis",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Lysosome",
+      "Membrane",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transporter (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FR19.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4FR19-F1-model_v6.pdb",
+    "mean_plddt": 86.57,
+    "plddt_fraction": 0.89,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 24,
+        "source": "fpocket",
+        "score": 0.612,
+        "volume": 441.763,
+        "area": 153.373,
+        "hydrophobicity": 22.828,
+        "alpha_spheres": 45.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FR19_out/pockets/pocket24_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.565,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.565,
+        "dog": 0.0,
+        "mouse": 0.561
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transporter (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4FR19_vina.conf",
+    "pocket_center": {
+      "center_x": -5.212,
+      "center_y": 18.507,
+      "center_z": -3.155
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0A0C9R1D7",
+    "name": "PRKCA-binding protein",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 222,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Probable adapter protein that bind to and organize the subcellular localization of a variety of membrane proteins containing some PDZ recognition sequence. Involved in the clustering of various receptors, possibly by acting at the receptor internalization level. Plays a role in synaptic plasticity by regulating the trafficking and internalization of AMPA receptors. May be regulated upon PRKCA activation. May regulate ASIC1/ASIC3 channel. Regulates actin polymerization by inhibiting the actin-nucleating activity of the Arp2/3 complex; the function is competitive with nucleation promoting factors and is linked to neuronal morphology regulation and AMPA receptor (AMPAR) endocytosis. Via interaction with the Arp2/3 complex involved in regulation of synaptic plasicity of excitatory synapses and required for spine shrinkage during long-term depression (LTD). Involved in regulation of astrocyte morphology, antagonistic to Arp2/3 complex activator WASL/N-WASP function",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Actin-binding",
+      "Calcium",
+      "Lipoprotein",
+      "Palmitate",
+      "Synapse",
+      "Synaptosome"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9R1D7.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A0C9R1D7-F1-model_v6.pdb",
+    "mean_plddt": 83.12,
+    "plddt_fraction": 0.77,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 6,
+        "source": "fpocket",
+        "score": 0.53,
+        "volume": 1011.893,
+        "area": 310.102,
+        "hydrophobicity": 32.885,
+        "alpha_spheres": 119.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A0C9R1D7_out/pockets/pocket6_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.721,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.721,
+        "dog": 0.4,
+        "mouse": 0.721
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0C9R1D7_vina.conf",
+    "pocket_center": {
+      "center_x": -11.894,
+      "center_y": -2.387,
+      "center_z": 22.634
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "A0A142I6V4",
+    "name": "Cytochrome c oxidase subunit 1",
+    "gene": "cox1",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 184,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain which drives oxidative phosphorylation. The respiratory chain contains 3 multisubunit complexes succinate dehydrogenase (complex II, CII), ubiquinol-cytochrome c oxidoreductase (cytochrome b-c1 complex, complex III, CIII) and cytochrome c oxidase (complex IV, CIV), that cooperate to transfer electrons derived from NADH and succinate to molecular oxygen, creating an electrochemical gradient over the inner membrane that drives transmembrane transport and the ATP synthase. Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Electrons originating from reduced cytochrome c in the intermembrane space (IMS) are transferred via the dinuclear copper A center (CU(A)) of subunit 2 and heme A of subunit 1 to the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CU(B)). The BNC reduces molecular oxygen to 2 water molecules using 4 electrons from cytochrome c in the IMS and 4 protons from the mitochondrial matrix",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Copper",
+      "Electron transport",
+      "Heme",
+      "Iron",
+      "Membrane",
+      "Metal-binding",
+      "Mitochondrion",
+      "Mitochondrion inner membrane",
+      "Respiratory chain",
+      "Translocase",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A142I6V4.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0A142I6V4-F1-model_v6.pdb",
+    "mean_plddt": 96.84,
+    "plddt_fraction": 1.0,
+    "structure_quality": "EXCELLENT",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.702,
+        "volume": 385.898,
+        "area": 143.084,
+        "hydrophobicity": 21.68,
+        "alpha_spheres": 60.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A142I6V4_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.804,
+      "human_risk": "HIGH",
+      "host_identities": {
+        "human": 0.804,
+        "dog": 0.799,
+        "mouse": 0.793
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": true,
+      "count": 1,
+      "pmids": [
+        "38981973"
+      ]
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: reductase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "HIGH human homology 80% (-5)",
+      "RNAi lethality evidence 1 papers (+4)",
+      "Excellent pLDDT (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A142I6V4_vina.conf",
+    "pocket_center": {
+      "center_x": -7.032,
+      "center_y": 3.105,
+      "center_z": 2.831
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4CWX3",
+    "name": "Dolichol-phosphate mannosyltransferase subunit 1",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 239,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Transfers mannose from GDP-mannose to dolichol monophosphate to form dolichol phosphate mannose (Dol-P-Man) which is the mannosyl donor in pathways leading to N-glycosylation, glycosyl phosphatidylinositol membrane anchoring, and O-mannosylation of proteins",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Endoplasmic reticulum",
+      "Glycosyltransferase",
+      "Magnesium",
+      "Manganese",
+      "Metal-binding",
+      "Reference proteome",
+      "Transferase"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4CWX3.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4CWX3-F1-model_v6.pdb",
+    "mean_plddt": 84.2,
+    "plddt_fraction": 0.728,
+    "structure_quality": "GOOD",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 0.708,
+        "volume": 1017.976,
+        "area": 295.155,
+        "hydrophobicity": 70.963,
+        "alpha_spheres": 122.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4CWX3_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.767,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.767,
+        "dog": 0.0,
+        "mouse": 0.758
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 15,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)",
+      "Good pLDDT (+1)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4CWX3_vina.conf",
+    "pocket_center": {
+      "center_x": 2.907,
+      "center_y": -16.627,
+      "center_z": 3.085
+    },
+    "vina_box_size": 21
+  },
+  {
+    "accession": "A0AAQ4D7R5",
+    "name": "Katanin p60 ATPase-containing subunit A1",
+    "gene": "KATNA1",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 457,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Catalytic subunit of a complex which severs microtubules in an ATP-dependent manner. Microtubule severing may promote rapid reorganization of cellular microtubule arrays and the release of microtubules from the centrosome following nucleation",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "ATP-binding",
+      "Cell cycle",
+      "Cell division",
+      "Cytoplasm",
+      "Cytoskeleton",
+      "Isomerase",
+      "Microtubule",
+      "Mitosis",
+      "Nucleotide-binding",
+      "Reference proteome"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: isomerase (+1)",
+      "Essential cellular process (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4D7R5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4D7R5-F1-model_v6.pdb",
+    "mean_plddt": 70.1,
+    "plddt_fraction": 0.654,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 17,
+        "source": "fpocket",
+        "score": 0.61,
+        "volume": 812.367,
+        "area": 268.997,
+        "hydrophobicity": 40.373,
+        "alpha_spheres": 89.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4D7R5_out/pockets/pocket17_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.629,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.614,
+        "dog": 0.305,
+        "mouse": 0.629
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 14,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: isomerase (+1)",
+      "Essential cellular process (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4D7R5_vina.conf",
+    "pocket_center": {
+      "center_x": 8.942,
+      "center_y": -15.755,
+      "center_z": -14.602
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4EDP8",
+    "name": "PRKCA-binding protein",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 430,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Probable adapter protein that bind to and organize the subcellular localization of a variety of membrane proteins containing some PDZ recognition sequence. Involved in the clustering of various receptors, possibly by acting at the receptor internalization level. Plays a role in synaptic plasticity by regulating the trafficking and internalization of AMPA receptors. May be regulated upon PRKCA activation. May regulate ASIC1/ASIC3 channel. Regulates actin polymerization by inhibiting the actin-nucleating activity of the Arp2/3 complex; the function is competitive with nucleation promoting factors and is linked to neuronal morphology regulation and AMPA receptor (AMPAR) endocytosis. Via interaction with the Arp2/3 complex involved in regulation of synaptic plasicity of excitatory synapses and required for spine shrinkage during long-term depression (LTD). Involved in regulation of astrocyte morphology, antagonistic to Arp2/3 complex activator WASL/N-WASP function",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Actin-binding",
+      "Calcium",
+      "Cytoplasm",
+      "Cytoskeleton",
+      "Lipoprotein",
+      "Membrane",
+      "Metal-binding",
+      "Palmitate",
+      "Phosphoprotein",
+      "Reference proteome",
+      "Synapse",
+      "Synaptosome",
+      "Zinc"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4EDP8.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4EDP8-F1-model_v6.pdb",
+    "mean_plddt": 79.73,
+    "plddt_fraction": 0.786,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 4,
+        "source": "fpocket",
+        "score": 0.844,
+        "volume": 456.983,
+        "area": 154.664,
+        "hydrophobicity": 49.738,
+        "alpha_spheres": 62.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4EDP8_out/pockets/pocket4_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.727,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.727,
+        "dog": 0.4,
+        "mouse": 0.713
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 14,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: receptor (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4EDP8_vina.conf",
+    "pocket_center": {
+      "center_x": 14.927,
+      "center_y": -2.775,
+      "center_z": -18.391
+    },
+    "vina_box_size": 20
+  },
+  {
+    "accession": "A0AAQ4FNT5",
+    "name": "Lysosomal dipeptide transporter MFSD1",
+    "gene": "",
+    "species": "amblyomma_americanum",
+    "latin": "Amblyomma americanum",
+    "length": 295,
+    "pdb_ids": [],
+    "chembl_ids": [],
+    "function": "Lysosomal dipeptide uniporter that selectively exports lysine, arginine or histidine-containing dipeptides with a net positive charge from the lysosome lumen into the cytosol. Could play a role in a specific type of protein O-glycosylation indirectly regulating macrophages migration and tissue invasion. Also essential for liver homeostasis",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "Lysosome",
+      "Membrane",
+      "Reference proteome",
+      "Transmembrane",
+      "Transmembrane helix",
+      "Transport"
+    ],
+    "has_structure": false,
+    "has_ligands": false,
+    "alphafold_available": true,
+    "novelty_score": 12,
+    "novelty_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transporter (+1)",
+      "Membrane/receptor protein (+2)"
+    ],
+    "structure_status": "OK",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FNT5.pdb",
+    "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-A0AAQ4FNT5-F1-model_v6.pdb",
+    "mean_plddt": 78.97,
+    "plddt_fraction": 0.746,
+    "structure_quality": "USABLE",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 2,
+        "source": "fpocket",
+        "score": 0.561,
+        "volume": 321.396,
+        "area": 120.341,
+        "hydrophobicity": 26.357,
+        "alpha_spheres": 43.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0AAQ4FNT5_out/pockets/pocket2_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.548,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.548,
+        "dog": 0.0,
+        "mouse": 0.532
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 14,
+    "score_reasons": [
+      "No experimental structure (+3)",
+      "No registered ligands (+3)",
+      "AlphaFold available (+2)",
+      "Ideal docking size (+1)",
+      "Druggable class: transporter (+1)",
+      "Membrane/receptor protein (+2)",
+      "1 druggable pocket (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0AAQ4FNT5_vina.conf",
+    "pocket_center": {
+      "center_x": -3.919,
+      "center_y": 6.985,
+      "center_z": 22.118
+    },
+    "vina_box_size": 20
+  }
+]
