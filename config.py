@@ -75,6 +75,15 @@ MIN_POCKET_VOLUME      = 300   # Angstroms^3; minimum useful binding pocket
 # for mammalian toxicity. Deprioritized but not excluded.
 MAX_HUMAN_HOMOLOGY     = 0.40  # BLAST percent identity (fraction, not %)
 
+# ── Cross-species ortholog parameters ──────────────────────────────────────
+ORTHOLOG = {
+    "pan_tick_identity": 60.0,  # % BLAST identity → "conserved ortholog"
+    "good_identity":     40.0,  # % BLAST identity → "putative ortholog"
+    "min_coverage":      70.0,  # % query alignment coverage required
+    "evalue":            1e-5,  # BLAST E-value cutoff
+    "min_species":       1,     # species with strong orthologs for pan-tick label
+}
+
 # ── Protein length filter (applied in novelty filter step 2) ──────────────
 MIN_PROTEIN_LENGTH = 150    # aa; below = likely peptide/signal sequence only
 MAX_PROTEIN_LENGTH = 1500   # aa; above = structural scaffold, not druggable
@@ -188,5 +197,6 @@ SOFTWARE_CITATIONS = {
     "blast":      "Altschul et al. (1990) J Mol Biol 215:403-410",
     "pains":      "Baell & Holloway (2010) J Med Chem 53:2719-2740",
     "lipinski":   "Lipinski et al. (2001) Adv Drug Deliv Rev 46:3-26",
+    "interpro":   "Paysan-Lafosse et al. (2023) Nucleic Acids Res 51:D418-D427",
 }
 

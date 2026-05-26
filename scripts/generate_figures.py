@@ -19,7 +19,7 @@ Output: data/figures/fig1_pipeline.png (and .pdf), fig2_scores.png, etc.
 
 import os, sys, json, glob, re, argparse
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config import (DOCKING_DIR, RESULTS_DIR, FIGURES_DIR,
+from config import (DOCKING_DIR, RESULTS_DIR, FIGURES_DIR, LOG_DIR,
                     VINA, KNOWN_PROMISCUOUS)
 
 try:
@@ -101,33 +101,113 @@ def load_clean_hits() -> list:
         return json.load(f)
 
 
+def _load_pipeline_stats() -> dict:
+    """
+    Load real pipeline statistics from audit log + final_targets.json
+    to populate Figure 1 with accurate current numbers.
+    """
+    stats = {
+        "n_proteome":   "?",
+        "n_novel":      "?",
+        "n_structures": "?",
+        "n_pockets":    "?",
+        "n_priority":   "?",
+        "n_ligands":    "?",
+        "n_hits":       "?",
+        "pan_tick":     "?",
+    }
+
+    # Load from audit log
+    audit_path = os.path.join(LOG_DIR, "pipeline_audit.json")
+    if os.path.exists(audit_path):
+        try:
+            audit = json.load(open(audit_path))
+            steps = audit.get("steps", {})
+
+            def _stat(step, key):
+                s = steps.get(step, {}).get("stats", {}).get(key, {})
+                return s.get("value") if isinstance(s, dict) else None
+
+            v = _stat("01_fetch_proteome", "total_proteins_fetched")
+            if v: stats["n_proteome"] = f"{v:,}"
+
+            v = _stat("02_novelty_filter", "no_pdb_no_chembl")
+            if v: stats["n_novel"] = f"{v:,}"
+
+            v = _stat("03_to_07_structure_docking", "alphafold_structures_downloaded")
+            if v: stats["n_structures"] = str(v)
+
+            v = _stat("03_to_07_structure_docking", "total_druggable_pockets")
+            if v: stats["n_pockets"] = str(v)
+        except Exception:
+            pass
+
+    # Load from final_targets.json
+    targets_path = os.path.join(RESULTS_DIR, "ixodes_scapularis_final_targets.json")
+    if os.path.exists(targets_path):
+        try:
+            targets = json.load(open(targets_path))
+            stats["n_priority"] = str(len(targets))
+            pan = sum(1 for t in targets
+                      if t.get("ortholog_result", {}).get("pan_tick", False))
+            stats["pan_tick"] = str(pan)
+        except Exception:
+            pass
+
+    # Load ligand count from docking dir
+    pdbqt_files = glob.glob(os.path.join(DOCKING_DIR, "ligands", "*.pdbqt"))
+    if pdbqt_files:
+        stats["n_ligands"] = f"{len(pdbqt_files):,}"
+
+    # Load hits from compressed batch logs
+    total_hits = 0
+    for path in glob.glob(os.path.join(LOG_DIR, "batch_*_compressed.json")):
+        try:
+            data = json.load(open(path))
+            kept = data.get("kept", [])
+            hits = [r for r in kept
+                    if r.get("ligand","") not in KNOWN_PROMISCUOUS
+                    and r.get("score", 0) <= VINA["good_score"]]
+            total_hits += len(hits)
+        except Exception:
+            pass
+    if total_hits:
+        stats["n_hits"] = f"{total_hits:,}"
+
+    return stats
+
+
 # ── Figure 1: Pipeline Flowchart ─────────────────────────────────────────────
 def fig1_pipeline(dpi=300, fmt="png"):
     if not HAS_MPL:
         return
     print("  Generating Figure 1: Pipeline flowchart...")
 
-    fig, ax = plt.subplots(figsize=(7, 11))
+    s = _load_pipeline_stats()
+
+    fig, ax = plt.subplots(figsize=(7, 12))
     ax.set_xlim(0, 10)
-    ax.set_ylim(0, 14)
+    ax.set_ylim(0, 15)
     ax.axis("off")
     fig.patch.set_facecolor(PALETTE["bg"])
 
     steps = [
         ("Step 1", "Proteome Download\n(UniProt REST API)",
-         "33,326 proteins\nI. scapularis", "#3498db"),
+         f"{s['n_proteome']} proteins\nI. scapularis", "#3498db"),
         ("Step 2", "Novelty Filter\n(no PDB · no ChEMBL)",
-         "33,287 unexplored\n(novel candidates)", "#9b59b6"),
+         f"{s['n_novel']} unexplored\n(novel candidates)", "#9b59b6"),
         ("Step 3", "AlphaFold Structures\n+ pLDDT filter (>70)",
-         "139 structures\n45 high-confidence", "#1abc9c"),
+         f"{s['n_structures']} structures\n{s['n_pockets']} druggable pockets", "#1abc9c"),
         ("Step 4", "Pocket Detection\n(fpocket + P2Rank)",
-         "33 druggable pockets\n8 allosteric sites", "#e67e22"),
+         f"fpocket + ML scoring\nallosteric sites flagged", "#e67e22"),
         ("Step 5", "Selectivity (BLASTP)\n+ RNAi evidence",
-         "18 priority targets\n<40% human identity", "#e74c3c"),
-        ("Step 6", "Compound Library\n(ChEMBL · Lipinski · PAINS)",
-         "501 lead-like\ncompounds prepared", "#f39c12"),
-        ("Step 7", "AutoDock Vina\nBatch Docking",
-         "18 targets × 501 cpds\n4 promiscuous removed", "#2ecc71"),
+         f"{s['n_priority']} priority targets\n<40% human identity", "#e74c3c"),
+        ("Step 6", "Cross-Species Orthologs\n(A. americanum · D. variabilis)",
+         f"{s['pan_tick']} pan-tick targets\nBLASTP ≥60% identity", "#16a085"),
+        ("Step 7", "Compound Library\n(ChEMBL · Lipinski · PAINS)",
+         f"{s['n_ligands']} lead-like\ncompounds prepared", "#f39c12"),
+        ("Step 8", "AutoDock Vina\nBatch Docking",
+         f"{s['n_priority']} targets × {s['n_ligands']} cpds\n{s['n_hits']} clean hits", "#2ecc71"),
     ]
 
     y_top = 13.0
@@ -441,6 +521,101 @@ def fig4_top_hits(dpi=300, fmt="png"):
     _save(fig, "fig4_top_hits", dpi, fmt)
 
 
+# ── Figure 5: Hit Physicochemical Property Space ─────────────────────────────
+def fig5_hit_properties(dpi=300, fmt="png"):
+    if not HAS_MPL:
+        return
+    print("  Generating Figure 5: Hit physicochemical property scatter...")
+
+    prop_path = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        "docs", "table_hit_properties.tsv")
+
+    if not os.path.exists(prop_path):
+        print("    [SKIP] table_hit_properties.tsv not found.")
+        print("           Run: python scripts/generate_hit_properties.py first")
+        return
+
+    import csv as csv_mod
+    rows = []
+    with open(prop_path, newline="") as f:
+        for row in csv_mod.DictReader(f, delimiter="\t"):
+            try:
+                mw   = float(row["mw"])
+                logp = float(row["logp"])
+                sc   = float(row["score_kcal_mol"])
+                rows.append({**row, "_mw": mw, "_logp": logp, "_score": sc})
+            except (ValueError, KeyError):
+                continue
+
+    if not rows:
+        print("    [SKIP] No rows with complete MW/LogP data.")
+        return
+
+    mws    = [r["_mw"]   for r in rows]
+    logps  = [r["_logp"] for r in rows]
+    scores = [r["_score"] for r in rows]
+    pans   = [r.get("pan_tick", "No") == "Yes" for r in rows]
+
+    fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+    fig.patch.set_facecolor(PALETTE["bg"])
+
+    # Left: MW vs LogP — drug-likeness space
+    ax = axes[0]
+    ax.set_facecolor(PALETTE["bg"])
+    sc_plot = ax.scatter(mws, logps, c=scores, cmap="RdYlGn_r",
+                         s=70, alpha=0.85, edgecolors="white", linewidths=0.5,
+                         vmin=LEAD_THRESH, vmax=HIT_THRESH)
+    cbar = plt.colorbar(sc_plot, ax=ax)
+    cbar.set_label("Docking Score (kcal/mol)", fontsize=9)
+
+    # Lipinski boundary lines
+    ax.axvline(500, color="#e74c3c", lw=1.2, ls="--", alpha=0.6, label="MW = 500 Da")
+    ax.axhline(5.0, color="#e67e22", lw=1.2, ls="--", alpha=0.6, label="LogP = 5")
+
+    # Pan-tick markers
+    pan_x = [mws[i] for i, p in enumerate(pans) if p]
+    pan_y = [logps[i] for i, p in enumerate(pans) if p]
+    if pan_x:
+        ax.scatter(pan_x, pan_y, s=180, facecolors="none",
+                   edgecolors="#8e44ad", linewidths=2.5,
+                   label=f"Pan-tick (n={len(pan_x)})", zorder=5)
+
+    # Ro5 pass zone shading
+    ax.axvspan(0, 500, alpha=0.04, color="#2ecc71")
+    ax.axhspan(-5, 5, alpha=0.04, color="#2ecc71")
+
+    ax.set_xlabel("Molecular Weight (Da)", fontsize=11)
+    ax.set_ylabel("Calculated LogP", fontsize=11)
+    ax.set_title("Hit Property Space\n(Lipinski Ro5 region shaded green)",
+                 fontsize=11, fontweight="bold")
+    ax.legend(fontsize=8, framealpha=0.9, loc="upper left")
+    ax.spines[["top", "right"]].set_visible(False)
+
+    # Right: score distribution histogram
+    ax2 = axes[1]
+    ax2.set_facecolor(PALETTE["bg"])
+    bins = np.arange(min(scores) - 0.25, max(scores) + 0.25, 0.5)
+    ax2.hist(scores, bins=bins, color="#2980b9", edgecolor="white",
+             linewidth=0.6, alpha=0.85)
+    ax2.axvline(HIT_THRESH, color=PALETTE["hit"], lw=2, ls="--",
+                label=f"Hit ({HIT_THRESH} kcal/mol)")
+    ax2.axvline(LEAD_THRESH, color=PALETTE["lead"], lw=2, ls=":",
+                label=f"Lead ({LEAD_THRESH} kcal/mol)")
+    ax2.set_xlabel("Docking Score (kcal/mol)", fontsize=11)
+    ax2.set_ylabel("Number of Hits", fontsize=11)
+    ax2.set_title(f"Hit Score Distribution\n(n={len(scores)} unique hits)",
+                  fontsize=11, fontweight="bold")
+    ax2.legend(fontsize=9, framealpha=0.9)
+    ax2.spines[["top", "right"]].set_visible(False)
+    ax2.grid(axis="y", alpha=0.3, ls="--")
+
+    plt.suptitle("Physicochemical Properties of Top Docking Hits",
+                 fontsize=13, fontweight="bold", y=1.01)
+    plt.tight_layout()
+    _save(fig, "fig5_hit_properties", dpi, fmt)
+
+
 # ── Save helper ───────────────────────────────────────────────────────────────
 def _save(fig, name: str, dpi: int, fmt: str):
     path_png = os.path.join(FIGURES_DIR, f"{name}.png")
@@ -459,7 +634,7 @@ def _save(fig, name: str, dpi: int, fmt: str):
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser(description="Generate TickDock publication figures")
-    parser.add_argument("--fig", type=int, choices=[1,2,3,4],
+    parser.add_argument("--fig", type=int, choices=[1,2,3,4,5],
                         help="Generate only this figure number")
     parser.add_argument("--dpi", type=int, default=300,
                         help="Resolution in DPI (default: 300)")
@@ -479,6 +654,7 @@ def main():
         2: fig2_score_distribution,
         3: fig3_target_scatter,
         4: fig4_top_hits,
+        5: fig5_hit_properties,
     }
 
     if args.fig:

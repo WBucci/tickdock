@@ -585,6 +585,10 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
         ))
 
     steps += [
+        ("Hit property table",
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "generate_hit_properties.py"),
+          "--top", "30"],   # fetch SMILES + compute MW/LogP/HBD/HBA for top 30 hits
+         300),
         ("Generate figures",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "generate_figures.py")],
          300),

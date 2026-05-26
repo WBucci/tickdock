@@ -30,6 +30,11 @@ from pathlib import Path
 # Resolve config from any working directory
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config import *
+try:
+    from config import ORTHOLOG
+except ImportError:
+    ORTHOLOG = {"pan_tick_identity": 60.0, "min_coverage": 70.0,
+                "evalue": 1e-5, "min_species": 1}
 
 
 class AuditLog:
@@ -342,9 +347,53 @@ Proteins with documented lethal phenotypes upon gene silencing were assigned
 higher priority scores.
 """.strip())
 
+    # Cross-species ortholog analysis
+    sections.append(f"""
+2.7 Cross-Species Conservation Analysis
+----------------------------------------
+To identify targets conserved across multiple tick species—a prerequisite for
+broad-spectrum acaricide development—we performed BLASTP-based ortholog detection
+against the full proteomes of Amblyomma americanum (taxon ID: {SPECIES['amblyomma_americanum']['taxon_id']})
+and Dermacentor variabilis (taxon ID: {SPECIES['dermacentor_variabilis']['taxon_id']}).
+Full proteome sequences (all reviewed and unreviewed entries) were retrieved from
+UniProt ({SOFTWARE_CITATIONS['uniprot']}) via cursor-paginated REST API queries and
+cached locally. BLASTP ({SOFTWARE_CITATIONS['blast']}) was run locally with an
+E-value cutoff of {ORTHOLOG['evalue']:.0e} for each top I. scapularis candidate
+against each secondary species proteome.
+
+Targets with ≥{ORTHOLOG['pan_tick_identity']:.0f}% sequence identity and ≥{ORTHOLOG['min_coverage']:.0f}%
+query alignment coverage to a hit in at least {ORTHOLOG['min_species']} of the two additional
+species were classified as "pan-tick" candidates, indicating structural conservation
+across the Ixodidae family. Targets with ≥{ORTHOLOG.get('good_identity', 40.0):.0f}% identity but
+below the pan-tick threshold were classified as "putative orthologs". All ortholog
+results were back-annotated into the target metadata file and exported as
+Supplementary Table S2 (docs/table_orthologs.tsv).
+""".strip())
+
+    # Functional annotation of unknown targets
+    sections.append(f"""
+2.8 Functional Annotation of Uncharacterized Proteins
+------------------------------------------------------
+Candidate proteins lacking functional annotation (empty name, gene symbol, or
+function text in UniProt) were re-queried against two databases. First, the
+UniProt REST API (rest.uniprot.org/uniprotkb) was queried per-accession to
+retrieve recommended protein names, gene symbols, subcellular localization
+annotations, and associated keywords. Second, the InterPro API
+({SOFTWARE_CITATIONS['interpro']}, ebi.ac.uk/interpro/api) was queried to
+retrieve domain architecture data from Pfam, PANTHER, HAMAP, and associated
+member databases, along with Gene Ontology (GO) term assignments.
+
+Function classes (kinase/phosphatase, protease, transporter, transcription
+factor, etc.) were inferred from domain names using a controlled keyword
+vocabulary. All newly obtained annotations were merged into the target metadata
+file without overwriting existing Swiss-Prot curated entries. An annotation
+summary was exported as docs/unknown_targets_annotation.tsv for manual review
+prior to publication.
+""".strip())
+
     # Compound library
     sections.append(f"""
-2.7 Compound Library Preparation
+2.9 Compound Library Preparation
 ---------------------------------
 A lead-like compound library was retrieved from the ChEMBL database
 ({SOFTWARE_CITATIONS['chembl']}) via the public REST API
@@ -368,13 +417,13 @@ screened targets were flagged as promiscuous binders and excluded from reported 
 
     # Docking
     sections.append(f"""
-2.8 Molecular Docking
+2.10 Molecular Docking
 ----------------------
 Molecular docking was performed using AutoDock Vina 1.2.5
 ({SOFTWARE_CITATIONS['vina']}). Receptor structures were prepared from AlphaFold
 PDB files using Open Babel with the -xr flag (rigid receptor mode) and Gasteiger
 partial charges at pH {VINA['ph']}. Ligand PDBQT files were prepared as described
-in Section 2.7 and docked in batch mode using Vina's --batch flag.
+in Section 2.9 and docked in batch mode using Vina's --batch flag.
 
 Search box centers were placed at pocket centroids identified in Section 2.5.
 Box dimensions were set adaptively based on pocket volume: box edge length
@@ -393,12 +442,12 @@ pipeline calibration prior to screening.
 
 Compounds were classified as hits (ΔG ≤ {VINA['good_score']} kcal/mol) or
 lead candidates (ΔG ≤ {VINA['excellent_score']} kcal/mol), after exclusion of
-confirmed promiscuous binders (Section 2.7).
+confirmed promiscuous binders (Section 2.9).
 """.strip())
 
     # Reproducibility
     sections.append(f"""
-2.9 Reproducibility and Data Availability
+2.11 Reproducibility and Data Availability
 ------------------------------------------
 All pipeline parameters, software versions, API calls, and intermediate file
 checksums were recorded automatically by the {PIPELINE_NAME} audit system and
@@ -407,7 +456,7 @@ pipeline source code, including configuration files, is available at
 {GITHUB_REPO} under the {GITHUB_LICENSE} license. All AlphaFold structures used
 are publicly available at alphafold.ebi.ac.uk. The compound library can be
 reproduced by querying the ChEMBL REST API (ebi.ac.uk/chembl/api/data/molecule)
-with the Lipinski and PAINS filters described in Section 2.7.
+with the Lipinski and PAINS filters described in Section 2.9.
 """.strip())
 
     full_text = "\n\n".join(sections)
