@@ -244,31 +244,44 @@ def get_sequence_from_uniprot(accession: str) -> str | None:
 
 
 def load_top_targets(n: int = 10) -> list[str]:
-    """Load top N I. scapularis targets (by docking score, clean hits first)."""
-    # Try clean_hits first
-    clean_path = os.path.join(
-        os.path.dirname(RESULTS_DIR), "docking", "clean_hits.json")
+    """Load top N I. scapularis targets by docking score.
+
+    Priority order:
+    1. clean_hits.json  — unique targets from promiscuous-filtered hits
+    2. final_targets.json sorted by best_score (back-annotated by annotate_scores.py)
+    3. final_targets.json sorted by final_score (pocket/structure score)
+    """
+    seen: list[str] = []
+    seen_set: set[str] = set()
+
+    # 1. Clean hits (promiscuous-filtered)
+    clean_path = os.path.join(os.path.dirname(RESULTS_DIR), "docking", "clean_hits.json")
     if os.path.exists(clean_path):
         with open(clean_path) as f:
             hits = json.load(f)
-        seen = []
         for h in hits:
             t = h.get("target", "")
-            if t and t not in seen:
+            if t and t not in seen_set:
                 seen.append(t)
-            if len(seen) >= n:
-                break
-        return seen
+                seen_set.add(t)
 
-    # Fallback: final_targets.json sorted by final_score
+    # 2. Supplement from final_targets.json (best_score from docking)
     targets_path = os.path.join(RESULTS_DIR, "ixodes_scapularis_final_targets.json")
-    if os.path.exists(targets_path):
+    if os.path.exists(targets_path) and len(seen) < n:
         with open(targets_path) as f:
             targets = json.load(f)
-        targets.sort(key=lambda t: t.get("final_score", 0), reverse=True)
-        return [t["accession"] for t in targets[:n]]
+        # Sort by best docking score (lower = better), then by final_score
+        scored = [t for t in targets if t.get("best_score", 0) < 0]
+        scored.sort(key=lambda t: t.get("best_score", 0))
+        unscored = [t for t in targets if t.get("best_score", 0) >= 0]
+        unscored.sort(key=lambda t: t.get("final_score", 0), reverse=True)
+        for t in scored + unscored:
+            acc = t["accession"]
+            if acc not in seen_set:
+                seen.append(acc)
+                seen_set.add(acc)
 
-    return []
+    return seen[:n]
 
 
 def main():
