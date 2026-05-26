@@ -111,6 +111,28 @@ if __name__ == "__main__":
     with open(targets_path) as f:
         targets = json.load(f)
 
+    # Fallback: pull in any campaign targets not yet in final_targets.json
+    # (campaign_state.json may list targets added after step 3 ran)
+    campaign_state_path = os.path.join(BASE_DIR, "logs", "campaign_state.json")
+    if os.path.exists(campaign_state_path):
+        try:
+            with open(campaign_state_path) as f:
+                state = json.load(f)
+            known_accs = {t["accession"] for t in targets}
+            extra_accs = [a for a in state.get("targets", []) if a not in known_accs]
+            if extra_accs:
+                print(f"  [fallback] {len(extra_accs)} targets from campaign_state.json"
+                      f" not in final_targets.json — adding with minimal metadata")
+                for acc in extra_accs:
+                    targets.append({
+                        "accession": acc,
+                        "name": acc,
+                        "good_pockets": [],
+                        "druggable_pockets": 0,
+                    })
+        except Exception as e:
+            print(f"  [WARN] Could not read campaign_state.json: {e}")
+
     if args.targets:
         targets = [t for t in targets if t["accession"] in args.targets]
     if args.top:

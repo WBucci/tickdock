@@ -66,6 +66,56 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P2S1_out/pockets/pocket33_atm.pdb",
         "allosteric_candidate": true,
         "site_type": "ALLOSTERIC_1"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 13.34,
+        "probability": 0.682,
+        "volume": 980.0,
+        "center_x": -9.2513,
+        "center_y": -1.4593,
+        "center_z": 8.7477
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 11.36,
+        "probability": 0.608,
+        "volume": 440.0,
+        "center_x": 1.7616,
+        "center_y": 1.8616,
+        "center_z": -13.9237
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 6.49,
+        "probability": 0.328,
+        "volume": 620.0,
+        "center_x": 10.4651,
+        "center_y": 0.8559,
+        "center_z": -15.5085
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 4.06,
+        "probability": 0.163,
+        "volume": 340.0,
+        "center_x": -8.13,
+        "center_y": -0.5859,
+        "center_z": 1.1676
+      },
+      {
+        "pocket_id": 5,
+        "source": "p2rank",
+        "score": 1.87,
+        "probability": 0.037,
+        "volume": 200.0,
+        "center_x": 2.7045,
+        "center_y": 1.3136,
+        "center_z": -2.4168
       }
     ],
     "druggable_pockets": 2,
@@ -103,7 +153,8 @@
       "center_y": 1.533,
       "center_z": 13.012
     },
-    "vina_box_size": 22
+    "vina_box_size": 22,
+    "p2rank_top_score": 13.34
   },
   {
     "accession": "B7QBP7",
@@ -213,6 +264,46 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QBP7_out/pockets/pocket7_atm.pdb",
         "allosteric_candidate": true,
         "site_type": "ALLOSTERIC_4"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 26.3,
+        "probability": 0.912,
+        "volume": 1980.0,
+        "center_x": 18.5494,
+        "center_y": 2.6793,
+        "center_z": -25.1509
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 4.41,
+        "probability": 0.186,
+        "volume": 500.0,
+        "center_x": 8.1882,
+        "center_y": -6.1472,
+        "center_z": 1.6748
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 3.42,
+        "probability": 0.123,
+        "volume": 640.0,
+        "center_x": 2.2032,
+        "center_y": 1.6666,
+        "center_z": 11.4506
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 1.58,
+        "probability": 0.025,
+        "volume": 280.0,
+        "center_x": 32.8459,
+        "center_y": 2.8623,
+        "center_z": -22.161
       }
     ],
     "druggable_pockets": 5,
@@ -250,7 +341,8 @@
       "center_y": 0.799,
       "center_z": 16.678
     },
-    "vina_box_size": 22
+    "vina_box_size": 22,
+    "p2rank_top_score": 26.3
   },
   {
     "accession": "B7P9U9",
@@ -307,6 +399,46 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P9U9_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 27.2,
+        "probability": 0.919,
+        "volume": 720.0,
+        "center_x": 9.404,
+        "center_y": -4.4159,
+        "center_z": -7.8727
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 5.48,
+        "probability": 0.261,
+        "volume": 540.0,
+        "center_x": 14.5313,
+        "center_y": 8.9101,
+        "center_z": 3.348
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 2.1,
+        "probability": 0.048,
+        "volume": 340.0,
+        "center_x": 14.6037,
+        "center_y": -5.6062,
+        "center_z": 1.6655
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 1.36,
+        "probability": 0.016,
+        "volume": 240.0,
+        "center_x": 2.4605,
+        "center_y": 4.0571,
+        "center_z": -9.1748
       }
     ],
     "druggable_pockets": 1,
@@ -347,7 +479,8 @@
       "center_y": -1.546,
       "center_z": -7.864
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 27.2
   },
   {
     "accession": "B7PX94",
@@ -417,6 +550,36 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PX94_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": true,
         "site_type": "ALLOSTERIC_1"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 19.69,
+        "probability": 0.843,
+        "volume": 880.0,
+        "center_x": -7.8633,
+        "center_y": -10.4539,
+        "center_z": 9.8954
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 5.53,
+        "probability": 0.264,
+        "volume": 700.0,
+        "center_x": -4.7425,
+        "center_y": -7.0879,
+        "center_z": -3.4115
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 4.85,
+        "probability": 0.217,
+        "volume": 580.0,
+        "center_x": 2.831,
+        "center_y": 3.0895,
+        "center_z": -9.1427
       }
     ],
     "druggable_pockets": 2,
@@ -453,7 +616,8 @@
       "center_y": -14.317,
       "center_z": 11.155
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "p2rank_top_score": 19.69
   },
   {
     "accession": "B7PVD7",
@@ -523,6 +687,36 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PVD7_out/pockets/pocket21_atm.pdb",
         "allosteric_candidate": true,
         "site_type": "ALLOSTERIC_1"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 9.0,
+        "probability": 0.482,
+        "volume": 880.0,
+        "center_x": 0.0446,
+        "center_y": -4.9361,
+        "center_z": -2.6492
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 2.45,
+        "probability": 0.067,
+        "volume": 560.0,
+        "center_x": -22.841,
+        "center_y": -1.3122,
+        "center_z": 9.1088
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 1.1,
+        "probability": 0.008,
+        "volume": 220.0,
+        "center_x": -11.9543,
+        "center_y": 47.7936,
+        "center_z": 4.2223
       }
     ],
     "druggable_pockets": 2,
@@ -560,7 +754,8 @@
       "center_y": -4.267,
       "center_z": -1.345
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 9.0
   },
   {
     "accession": "A0A4D5RMG2",
@@ -633,6 +828,96 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RMG2_out/pockets/pocket2_atm.pdb",
         "allosteric_candidate": true,
         "site_type": "ALLOSTERIC_1"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 26.22,
+        "probability": 0.912,
+        "volume": 880.0,
+        "center_x": -18.8027,
+        "center_y": 7.966,
+        "center_z": 7.6803
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 19.66,
+        "probability": 0.843,
+        "volume": 1640.0,
+        "center_x": 13.4618,
+        "center_y": -2.9523,
+        "center_z": -13.2051
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 7.98,
+        "probability": 0.424,
+        "volume": 880.0,
+        "center_x": -12.5897,
+        "center_y": 1.0985,
+        "center_z": -9.0244
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 7.06,
+        "probability": 0.366,
+        "volume": 800.0,
+        "center_x": -1.8496,
+        "center_y": 7.7695,
+        "center_z": -0.5425
+      },
+      {
+        "pocket_id": 5,
+        "source": "p2rank",
+        "score": 2.14,
+        "probability": 0.05,
+        "volume": 420.0,
+        "center_x": -2.8232,
+        "center_y": 14.5033,
+        "center_z": -13.6758
+      },
+      {
+        "pocket_id": 6,
+        "source": "p2rank",
+        "score": 2.02,
+        "probability": 0.044,
+        "volume": 340.0,
+        "center_x": -26.387,
+        "center_y": 2.6591,
+        "center_z": 23.5491
+      },
+      {
+        "pocket_id": 7,
+        "source": "p2rank",
+        "score": 1.89,
+        "probability": 0.038,
+        "volume": 340.0,
+        "center_x": 9.3389,
+        "center_y": -7.5838,
+        "center_z": 10.2421
+      },
+      {
+        "pocket_id": 8,
+        "source": "p2rank",
+        "score": 1.52,
+        "probability": 0.022,
+        "volume": 280.0,
+        "center_x": 21.6336,
+        "center_y": -21.4755,
+        "center_z": -6.0469
+      },
+      {
+        "pocket_id": 9,
+        "source": "p2rank",
+        "score": 0.96,
+        "probability": 0.005,
+        "volume": 200.0,
+        "center_x": 9.4405,
+        "center_y": 7.49,
+        "center_z": -11.8875
       }
     ],
     "druggable_pockets": 2,
@@ -670,7 +955,8 @@
       "center_y": 6.388,
       "center_z": 7.015
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "p2rank_top_score": 26.22
   },
   {
     "accession": "B7PY20",
@@ -726,6 +1012,16 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PY20_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 43.02,
+        "probability": 0.969,
+        "volume": 1420.0,
+        "center_x": 6.1082,
+        "center_y": -2.026,
+        "center_z": -6.5949
       }
     ],
     "druggable_pockets": 1,
@@ -762,7 +1058,8 @@
       "center_y": -2.147,
       "center_z": -6.391
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "p2rank_top_score": 43.02
   },
   {
     "accession": "B7QAF3",
@@ -905,6 +1202,16 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P6A8_out/pockets/pocket3_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 3.54,
+        "probability": 0.13,
+        "volume": 400.0,
+        "center_x": -14.3802,
+        "center_y": 0.1301,
+        "center_z": 27.1843
       }
     ],
     "druggable_pockets": 1,
@@ -941,7 +1248,8 @@
       "center_y": 2.749,
       "center_z": 4.236
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "p2rank_top_score": 3.54
   },
   {
     "accession": "B7Q1X5",
@@ -1090,6 +1398,26 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RNM5_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 34.34,
+        "probability": 0.95,
+        "volume": 940.0,
+        "center_x": -12.7269,
+        "center_y": 7.8278,
+        "center_z": 6.5729
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 5.72,
+        "probability": 0.277,
+        "volume": 580.0,
+        "center_x": 4.6196,
+        "center_y": 14.2864,
+        "center_z": 2.1549
       }
     ],
     "druggable_pockets": 1,
@@ -1126,7 +1454,8 @@
       "center_y": 7.203,
       "center_z": 6.165
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 34.34
   },
   {
     "accession": "B7PMS2",
@@ -1184,6 +1513,16 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PMS2_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 34.49,
+        "probability": 0.95,
+        "volume": 1100.0,
+        "center_x": -11.716,
+        "center_y": 9.2392,
+        "center_z": 5.9211
       }
     ],
     "druggable_pockets": 1,
@@ -1220,7 +1559,8 @@
       "center_y": 10.251,
       "center_z": 3.107
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 34.49
   },
   {
     "accession": "B7QNX4",
@@ -1276,6 +1616,26 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QNX4_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 14.61,
+        "probability": 0.728,
+        "volume": 540.0,
+        "center_x": -8.7316,
+        "center_y": 3.1046,
+        "center_z": 28.4428
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 0.87,
+        "probability": 0.003,
+        "volume": 260.0,
+        "center_x": -1.8499,
+        "center_y": -8.1893,
+        "center_z": -30.838
       }
     ],
     "druggable_pockets": 1,
@@ -1312,7 +1672,8 @@
       "center_y": 2.008,
       "center_z": 28.028
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 14.61
   },
   {
     "accession": "A0A4D5RYT8",
@@ -1368,6 +1729,26 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RYT8_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 8.59,
+        "probability": 0.459,
+        "volume": 680.0,
+        "center_x": -14.3705,
+        "center_y": -3.1803,
+        "center_z": 19.1622
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 2.61,
+        "probability": 0.076,
+        "volume": 480.0,
+        "center_x": -2.2417,
+        "center_y": -5.3182,
+        "center_z": 12.5004
       }
     ],
     "druggable_pockets": 1,
@@ -1403,7 +1784,8 @@
       "center_y": -1.888,
       "center_z": 21.273
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "p2rank_top_score": 8.59
   },
   {
     "accession": "A0A4D5S2A5",
@@ -1459,6 +1841,36 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5S2A5_out/pockets/pocket2_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 9.25,
+        "probability": 0.496,
+        "volume": 520.0,
+        "center_x": 0.906,
+        "center_y": 9.0378,
+        "center_z": 21.1829
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 4.38,
+        "probability": 0.184,
+        "volume": 640.0,
+        "center_x": -14.0064,
+        "center_y": -2.8536,
+        "center_z": 18.0353
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 2.32,
+        "probability": 0.059,
+        "volume": 580.0,
+        "center_x": -2.1315,
+        "center_y": -5.4244,
+        "center_z": 12.2165
       }
     ],
     "druggable_pockets": 1,
@@ -1494,7 +1906,8 @@
       "center_y": -1.102,
       "center_z": 20.453
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 9.25
   },
   {
     "accession": "A0A4D5RGQ5",
@@ -1551,6 +1964,26 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RGQ5_out/pockets/pocket11_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 11.49,
+        "probability": 0.613,
+        "volume": 960.0,
+        "center_x": -9.2337,
+        "center_y": 2.9832,
+        "center_z": -9.8283
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 2.28,
+        "probability": 0.057,
+        "volume": 320.0,
+        "center_x": -5.4802,
+        "center_y": 10.9541,
+        "center_z": -11.4834
       }
     ],
     "druggable_pockets": 1,
@@ -1587,7 +2020,8 @@
       "center_y": 8.959,
       "center_z": 14.991
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 11.49
   },
   {
     "accession": "B7QJZ7",
@@ -1645,6 +2079,36 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QJZ7_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 2.72,
+        "probability": 0.082,
+        "volume": 580.0,
+        "center_x": 12.2817,
+        "center_y": -5.8111,
+        "center_z": -22.3667
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 1.72,
+        "probability": 0.03,
+        "volume": 340.0,
+        "center_x": 26.4199,
+        "center_y": -3.2778,
+        "center_z": -18.8448
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 1.25,
+        "probability": 0.012,
+        "volume": 280.0,
+        "center_x": 3.6737,
+        "center_y": -5.7747,
+        "center_z": -1.3876
       }
     ],
     "druggable_pockets": 1,
@@ -1681,7 +2145,8 @@
       "center_y": -8.441,
       "center_z": 5.669
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 2.72
   },
   {
     "accession": "A0A4D5RMV5",
@@ -1738,6 +2203,46 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RMV5_out/pockets/pocket22_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 12.04,
+        "probability": 0.636,
+        "volume": 820.0,
+        "center_x": -7.9252,
+        "center_y": -8.4455,
+        "center_z": -1.8187
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 4.7,
+        "probability": 0.206,
+        "volume": 720.0,
+        "center_x": 6.9654,
+        "center_y": 1.2002,
+        "center_z": -7.8823
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 4.37,
+        "probability": 0.183,
+        "volume": 320.0,
+        "center_x": 11.3775,
+        "center_y": 5.2549,
+        "center_z": -3.7667
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 4.23,
+        "probability": 0.173,
+        "volume": 500.0,
+        "center_x": 14.2386,
+        "center_y": -0.7499,
+        "center_z": -0.0387
       }
     ],
     "druggable_pockets": 1,
@@ -1773,7 +2278,8 @@
       "center_y": -6.056,
       "center_z": -6.846
     },
-    "vina_box_size": 26
+    "vina_box_size": 26,
+    "p2rank_top_score": 12.04
   },
   {
     "accession": "A0A4D5RNJ0",
@@ -1916,6 +2422,16 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5S7D6_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 3.11,
+        "probability": 0.105,
+        "volume": 580.0,
+        "center_x": 12.9528,
+        "center_y": -5.8546,
+        "center_z": -22.286
       }
     ],
     "druggable_pockets": 1,
@@ -1952,7 +2468,8 @@
       "center_y": -8.775,
       "center_z": 6.143
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 3.11
   },
   {
     "accession": "B7P5E9",
@@ -2010,6 +2527,76 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7P5E9_out/pockets/pocket17_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 28.35,
+        "probability": 0.925,
+        "volume": 1660.0,
+        "center_x": -9.4171,
+        "center_y": 1.4723,
+        "center_z": 1.439
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 10.0,
+        "probability": 0.538,
+        "volume": 560.0,
+        "center_x": -5.5952,
+        "center_y": -7.2131,
+        "center_z": 7.0796
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 2.34,
+        "probability": 0.061,
+        "volume": 420.0,
+        "center_x": -0.4577,
+        "center_y": -1.8636,
+        "center_z": -13.6052
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 2.25,
+        "probability": 0.056,
+        "volume": 260.0,
+        "center_x": -0.8028,
+        "center_y": 4.6989,
+        "center_z": -9.005
+      },
+      {
+        "pocket_id": 5,
+        "source": "p2rank",
+        "score": 1.57,
+        "probability": 0.024,
+        "volume": 260.0,
+        "center_x": -3.584,
+        "center_y": 4.4206,
+        "center_z": 12.1084
+      },
+      {
+        "pocket_id": 6,
+        "source": "p2rank",
+        "score": 1.46,
+        "probability": 0.02,
+        "volume": 200.0,
+        "center_x": 15.1307,
+        "center_y": 8.3292,
+        "center_z": -1.7908
+      },
+      {
+        "pocket_id": 7,
+        "source": "p2rank",
+        "score": 1.2,
+        "probability": 0.011,
+        "volume": 160.0,
+        "center_x": 12.0126,
+        "center_y": 6.2151,
+        "center_z": 5.883
       }
     ],
     "druggable_pockets": 1,
@@ -2045,7 +2632,8 @@
       "center_y": -1.951,
       "center_z": 3.556
     },
-    "vina_box_size": 25
+    "vina_box_size": 25,
+    "p2rank_top_score": 28.35
   },
   {
     "accession": "B7Q255",
@@ -2096,6 +2684,76 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7Q255_out/pockets/pocket41_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 29.44,
+        "probability": 0.931,
+        "volume": 1440.0,
+        "center_x": 13.4134,
+        "center_y": 7.2404,
+        "center_z": -4.4045
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 19.0,
+        "probability": 0.833,
+        "volume": 860.0,
+        "center_x": 4.7954,
+        "center_y": -1.05,
+        "center_z": 4.5864
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 3.51,
+        "probability": 0.129,
+        "volume": 600.0,
+        "center_x": -4.4727,
+        "center_y": -6.0242,
+        "center_z": 10.6374
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 2.23,
+        "probability": 0.054,
+        "volume": 240.0,
+        "center_x": -12.6991,
+        "center_y": -0.4996,
+        "center_z": 18.4622
+      },
+      {
+        "pocket_id": 5,
+        "source": "p2rank",
+        "score": 1.88,
+        "probability": 0.037,
+        "volume": 520.0,
+        "center_x": 11.2703,
+        "center_y": -2.8121,
+        "center_z": -13.7049
+      },
+      {
+        "pocket_id": 6,
+        "source": "p2rank",
+        "score": 1.65,
+        "probability": 0.027,
+        "volume": 240.0,
+        "center_x": -14.5686,
+        "center_y": 5.6142,
+        "center_z": 12.781
+      },
+      {
+        "pocket_id": 7,
+        "source": "p2rank",
+        "score": 1.63,
+        "probability": 0.027,
+        "volume": 240.0,
+        "center_x": -20.123,
+        "center_y": -7.2872,
+        "center_z": 17.1347
       }
     ],
     "druggable_pockets": 1,
@@ -2131,7 +2789,8 @@
       "center_y": 5.748,
       "center_z": -1.007
     },
-    "vina_box_size": 26
+    "vina_box_size": 26,
+    "p2rank_top_score": 29.44
   },
   {
     "accession": "Q5Q995",
@@ -2182,6 +2841,26 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/Q5Q995_out/pockets/pocket3_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 1.47,
+        "probability": 0.02,
+        "volume": 200.0,
+        "center_x": 7.8177,
+        "center_y": 1.82,
+        "center_z": 3.5451
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 1.09,
+        "probability": 0.007,
+        "volume": 240.0,
+        "center_x": 4.2398,
+        "center_y": -0.7587,
+        "center_z": 8.6772
       }
     ],
     "druggable_pockets": 1,
@@ -2241,7 +2920,8 @@
           "identity_pct": 0
         }
       }
-    }
+    },
+    "p2rank_top_score": 1.47
   },
   {
     "accession": "B7PIZ2",
@@ -2298,6 +2978,36 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7PIZ2_out/pockets/pocket11_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 5.14,
+        "probability": 0.237,
+        "volume": 220.0,
+        "center_x": 8.6922,
+        "center_y": -4.8672,
+        "center_z": -1.5651
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 4.92,
+        "probability": 0.221,
+        "volume": 500.0,
+        "center_x": 7.8585,
+        "center_y": -5.4418,
+        "center_z": 8.0121
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 2.6,
+        "probability": 0.075,
+        "volume": 680.0,
+        "center_x": 5.0984,
+        "center_y": 5.0425,
+        "center_z": 9.0871
       }
     ],
     "druggable_pockets": 1,
@@ -2334,7 +3044,8 @@
       "center_y": -3.271,
       "center_z": 11.194
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 5.14
   },
   {
     "accession": "A0A4D5RDE4",
@@ -2390,6 +3101,16 @@
         "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/A0A4D5RDE4_out/pockets/pocket1_atm.pdb",
         "allosteric_candidate": false,
         "site_type": "PRIMARY"
+      },
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 7.9,
+        "probability": 0.42,
+        "volume": 880.0,
+        "center_x": 8.2658,
+        "center_y": 4.7044,
+        "center_z": -6.9378
       }
     ],
     "druggable_pockets": 1,
@@ -2425,6 +3146,7 @@
       "center_y": 5.135,
       "center_z": -6.284
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "p2rank_top_score": 7.9
   }
 ]

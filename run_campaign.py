@@ -563,6 +563,9 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
         ("Promiscuous filter",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "check_promiscuous.py")],
          120),
+        ("P2Rank pocket prediction",
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "run_p2rank.py")],
+         300),   # ~5s/target × 42 targets ≈ 3-4 min; campaign_state fallback covers all
     ]
 
     if not skip_orthologs:
