@@ -9,7 +9,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Nucleus",
     "catalytic": "",
     "keywords": [
       "DNA-binding",
@@ -154,7 +154,66 @@
       "center_z": 13.012
     },
     "vina_box_size": 22,
-    "p2rank_top_score": 13.34
+    "p2rank_top_score": 13.34,
+    "interpro_domains": [
+      {
+        "id": "IPR000536",
+        "name": "Nuclear hormone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001628",
+        "name": "Zinc finger, nuclear hormone receptor-type",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001723",
+        "name": "Nuclear hormone receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR013088",
+        "name": "Zinc finger, NHR/GATA-type",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR035500",
+        "name": "Nuclear hormone receptor-like domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR050234",
+        "name": "Nuclear hormone receptor family NR1 subfamily",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003700",
+        "name": "DNA-binding transcription factor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0008270",
+        "name": "zinc ion binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0043565",
+        "name": "sequence-specific DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006355",
+        "name": "regulation of DNA-templated transcription",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Receptor",
+    "best_score": -9.908,
+    "best_ligand": "CHEMBL9190",
+    "n_hits": 890,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7QBP7",
@@ -166,7 +225,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Endoplasmic reticulum",
     "catalytic": "",
     "keywords": [
       "Antiport",
@@ -342,7 +401,71 @@
       "center_z": 16.678
     },
     "vina_box_size": 22,
-    "p2rank_top_score": 26.3
+    "p2rank_top_score": 26.3,
+    "interpro_domains": [
+      {
+        "id": "IPR002524",
+        "name": "Cation efflux",
+        "type": "family"
+      },
+      {
+        "id": "IPR009061",
+        "name": "Putative DNA-binding domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR027469",
+        "name": "Cation efflux transmembrane domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR037129",
+        "name": "XPA domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR040177",
+        "name": "Proton-coupled zinc antiporter SLC30A9",
+        "type": "family"
+      },
+      {
+        "id": "IPR058533",
+        "name": "Cation efflux protein, transmembrane domain",
+        "type": "domain"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0008324",
+        "name": "monoatomic cation transmembrane transporter activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006812",
+        "name": "monoatomic cation transport",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0055085",
+        "name": "transmembrane transport",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0016020",
+        "name": "membrane",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0006829",
+        "name": "zinc ion transport",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -8.361,
+    "best_ligand": "CHEMBL9195",
+    "n_hits": 396,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7P9U9",
@@ -354,7 +477,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Nucleus",
     "catalytic": "",
     "keywords": [
       "DNA-binding",
@@ -480,7 +603,101 @@
       "center_z": -7.864
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 27.2
+    "p2rank_top_score": 27.2,
+    "interpro_domains": [
+      {
+        "id": "IPR000536",
+        "name": "Nuclear hormone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001628",
+        "name": "Zinc finger, nuclear hormone receptor-type",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001723",
+        "name": "Nuclear hormone receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR003069",
+        "name": "Ecdysteroid receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR013088",
+        "name": "Zinc finger, NHR/GATA-type",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR035500",
+        "name": "Nuclear hormone receptor-like domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR041889",
+        "name": "Ecdysone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR050234",
+        "name": "Nuclear hormone receptor family NR1 subfamily",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003700",
+        "name": "DNA-binding transcription factor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0008270",
+        "name": "zinc ion binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0043565",
+        "name": "sequence-specific DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006355",
+        "name": "regulation of DNA-templated transcription",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0003677",
+        "name": "DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0004879",
+        "name": "nuclear receptor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0035100",
+        "name": "ecdysone binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0035076",
+        "name": "ecdysone receptor signaling pathway",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005634",
+        "name": "nucleus",
+        "category": "cellular_component"
+      }
+    ],
+    "function_class": "Receptor",
+    "best_score": -8.696,
+    "best_ligand": "CHEMBL9928",
+    "n_hits": 256,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7PX94",
@@ -617,7 +834,40 @@
       "center_z": 11.155
     },
     "vina_box_size": 21,
-    "p2rank_top_score": 19.69
+    "p2rank_top_score": 19.69,
+    "interpro_domains": [
+      {
+        "id": "IPR000536",
+        "name": "Nuclear hormone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001723",
+        "name": "Nuclear hormone receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR035500",
+        "name": "Nuclear hormone receptor-like domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR049635",
+        "name": "Hepatocyte nuclear factor 4, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR050274",
+        "name": "Nuclear hormone receptor family NR2 subfamily",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [],
+    "function_class": "Receptor",
+    "best_score": -9.371,
+    "best_ligand": "CHEMBL428145",
+    "n_hits": 726,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7PVD7",
@@ -629,7 +879,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Late endosome membrane",
     "catalytic": "",
     "keywords": [
       "ATP-binding",
@@ -755,7 +1005,76 @@
       "center_z": -1.345
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 9.0
+    "p2rank_top_score": 9.0,
+    "interpro_domains": [
+      {
+        "id": "IPR003593",
+        "name": "AAA+ ATPase domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR003959",
+        "name": "ATPase, AAA-type, core",
+        "type": "domain"
+      },
+      {
+        "id": "IPR003960",
+        "name": "ATPase, AAA-type, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR007330",
+        "name": "MIT domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR015415",
+        "name": "Spastin/Vps4, C-terminal",
+        "type": "domain"
+      },
+      {
+        "id": "IPR027417",
+        "name": "P-loop containing nucleoside triphosphate hydrolase",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR036181",
+        "name": "MIT domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR041569",
+        "name": "AAA ATPase, AAA+ lid domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR045253",
+        "name": "Vacuolar protein sorting-associated protein 4, MIT domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR050304",
+        "name": "Microtubule-severing AAA ATPase",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0005524",
+        "name": "ATP binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0016887",
+        "name": "ATP hydrolysis activity",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Enzyme - Kinase/Phosphatase",
+    "best_score": -8.577,
+    "best_ligand": "CHEMBL43",
+    "n_hits": 676,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A4D5RMG2",
@@ -767,7 +1086,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Mitochondrion inner membrane",
     "catalytic": "",
     "keywords": [
       "Acetylation",
@@ -956,7 +1275,106 @@
       "center_z": 7.015
     },
     "vina_box_size": 21,
-    "p2rank_top_score": 26.22
+    "p2rank_top_score": 26.22,
+    "interpro_domains": [
+      {
+        "id": "IPR001753",
+        "name": "Enoyl-CoA hydratase/isomerase-like domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR006108",
+        "name": "3-hydroxyacyl-CoA dehydrogenase, C-terminal",
+        "type": "domain"
+      },
+      {
+        "id": "IPR006176",
+        "name": "3-hydroxyacyl-CoA dehydrogenase, NAD binding",
+        "type": "domain"
+      },
+      {
+        "id": "IPR006180",
+        "name": "3-hydroxyacyl-CoA dehydrogenase, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR008927",
+        "name": "6-phosphogluconate dehydrogenase-like, C-terminal domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR012803",
+        "name": "Fatty acid oxidation complex, alpha subunit, mitochondrial",
+        "type": "family"
+      },
+      {
+        "id": "IPR029045",
+        "name": "ClpP/crotonase-like domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR036291",
+        "name": "NAD(P)-binding domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR050136",
+        "name": "Fatty acid oxidation complex subunit alpha",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0016491",
+        "name": "oxidoreductase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0016616",
+        "name": "oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006631",
+        "name": "fatty acid metabolic process",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0070403",
+        "name": "NAD+ binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0003857",
+        "name": "(3S)-3-hydroxyacyl-CoA dehydrogenase (NAD+) activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0004300",
+        "name": "enoyl-CoA hydratase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006635",
+        "name": "fatty acid beta-oxidation",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005739",
+        "name": "mitochondrion",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0016507",
+        "name": "mitochondrial fatty acid beta-oxidation multienzyme complex",
+        "category": "cellular_component"
+      }
+    ],
+    "function_class": "Enzyme - Oxidoreductase",
+    "best_score": -10.135,
+    "best_ligand": "CHEMBL10202",
+    "n_hits": 898,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7PY20",
@@ -968,7 +1386,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Nucleus",
     "catalytic": "",
     "keywords": [
       "DNA-binding",
@@ -1059,7 +1477,51 @@
       "center_z": -6.391
     },
     "vina_box_size": 21,
-    "p2rank_top_score": 43.02
+    "p2rank_top_score": 43.02,
+    "interpro_domains": [
+      {
+        "id": "IPR000536",
+        "name": "Nuclear hormone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001723",
+        "name": "Nuclear hormone receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR001728",
+        "name": "Thyroid hormone receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR035500",
+        "name": "Nuclear hormone receptor-like domain superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003677",
+        "name": "DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0004879",
+        "name": "nuclear receptor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006355",
+        "name": "regulation of DNA-templated transcription",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Receptor",
+    "best_score": -12.034,
+    "best_ligand": "CHEMBL8922",
+    "n_hits": 1148,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7QAF3",
@@ -1147,7 +1609,25 @@
       "center_y": 8.423,
       "center_z": -3.329
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "interpro_domains": [
+      {
+        "id": "IPR000536",
+        "name": "Nuclear hormone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR035500",
+        "name": "Nuclear hormone receptor-like domain superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [],
+    "function_class": "Receptor",
+    "best_score": -7.322,
+    "best_ligand": "CHEMBL9190",
+    "n_hits": 4,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7P6A8",
@@ -1159,7 +1639,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Membrane",
     "catalytic": "",
     "keywords": [
       "ATP synthesis",
@@ -1249,7 +1729,41 @@
       "center_z": 4.236
     },
     "vina_box_size": 21,
-    "p2rank_top_score": 3.54
+    "p2rank_top_score": 3.54,
+    "interpro_domains": [
+      {
+        "id": "IPR000131",
+        "name": "ATP synthase, F1 complex, gamma subunit",
+        "type": "family"
+      },
+      {
+        "id": "IPR035968",
+        "name": "ATP synthase, F1 complex, gamma subunit superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0046933",
+        "name": "proton-transporting ATP synthase activity, rotational mechanism",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0015986",
+        "name": "proton motive force-driven ATP synthesis",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0045259",
+        "name": "proton-transporting ATP synthase complex",
+        "category": "cellular_component"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -8.743,
+    "best_ligand": "CHEMBL10006",
+    "n_hits": 608,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7Q1X5",
@@ -1342,7 +1856,51 @@
       "center_y": -12.346,
       "center_z": -0.775
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "interpro_domains": [
+      {
+        "id": "IPR001628",
+        "name": "Zinc finger, nuclear hormone receptor-type",
+        "type": "domain"
+      },
+      {
+        "id": "IPR013088",
+        "name": "Zinc finger, NHR/GATA-type",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR050274",
+        "name": "Nuclear hormone receptor family NR2 subfamily",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003700",
+        "name": "DNA-binding transcription factor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0008270",
+        "name": "zinc ion binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0043565",
+        "name": "sequence-specific DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006355",
+        "name": "regulation of DNA-templated transcription",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Receptor",
+    "best_score": -8.007,
+    "best_ligand": "CHEMBL421",
+    "n_hits": 87,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A4D5RNM5",
@@ -1354,7 +1912,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Nucleus",
     "catalytic": "",
     "keywords": [
       "DNA-binding",
@@ -1455,7 +2013,86 @@
       "center_z": 6.165
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 34.34
+    "p2rank_top_score": 34.34,
+    "interpro_domains": [
+      {
+        "id": "IPR000003",
+        "name": "Retinoid X receptor/HNF4",
+        "type": "family"
+      },
+      {
+        "id": "IPR000536",
+        "name": "Nuclear hormone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001628",
+        "name": "Zinc finger, nuclear hormone receptor-type",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001723",
+        "name": "Nuclear hormone receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR013088",
+        "name": "Zinc finger, NHR/GATA-type",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR035500",
+        "name": "Nuclear hormone receptor-like domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR050274",
+        "name": "Nuclear hormone receptor family NR2 subfamily",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003677",
+        "name": "DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0003707",
+        "name": "nuclear steroid receptor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0008270",
+        "name": "zinc ion binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006355",
+        "name": "regulation of DNA-templated transcription",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005634",
+        "name": "nucleus",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0003700",
+        "name": "DNA-binding transcription factor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0043565",
+        "name": "sequence-specific DNA binding",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Receptor",
+    "best_score": -11.275,
+    "best_ligand": "CHEMBL429202",
+    "n_hits": 829,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7PMS2",
@@ -1467,7 +2104,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Nucleus",
     "catalytic": "",
     "keywords": [
       "DNA-binding",
@@ -1560,7 +2197,86 @@
       "center_z": 3.107
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 34.49
+    "p2rank_top_score": 34.49,
+    "interpro_domains": [
+      {
+        "id": "IPR000003",
+        "name": "Retinoid X receptor/HNF4",
+        "type": "family"
+      },
+      {
+        "id": "IPR000536",
+        "name": "Nuclear hormone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001628",
+        "name": "Zinc finger, nuclear hormone receptor-type",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001723",
+        "name": "Nuclear hormone receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR013088",
+        "name": "Zinc finger, NHR/GATA-type",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR035500",
+        "name": "Nuclear hormone receptor-like domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR050274",
+        "name": "Nuclear hormone receptor family NR2 subfamily",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003677",
+        "name": "DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0003707",
+        "name": "nuclear steroid receptor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0008270",
+        "name": "zinc ion binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006355",
+        "name": "regulation of DNA-templated transcription",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005634",
+        "name": "nucleus",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0003700",
+        "name": "DNA-binding transcription factor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0043565",
+        "name": "sequence-specific DNA binding",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Receptor",
+    "best_score": -11.176,
+    "best_ligand": "CHEMBL429202",
+    "n_hits": 945,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7QNX4",
@@ -1572,7 +2288,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Nucleus",
     "catalytic": "",
     "keywords": [
       "DNA-binding",
@@ -1673,7 +2389,81 @@
       "center_z": 28.028
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 14.61
+    "p2rank_top_score": 14.61,
+    "interpro_domains": [
+      {
+        "id": "IPR000014",
+        "name": "PAS domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001067",
+        "name": "Nuclear translocator",
+        "type": "family"
+      },
+      {
+        "id": "IPR011598",
+        "name": "Myc-type, basic helix-loop-helix (bHLH) domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR013767",
+        "name": "PAS fold",
+        "type": "domain"
+      },
+      {
+        "id": "IPR035965",
+        "name": "PAS domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR036638",
+        "name": "Helix-loop-helix DNA-binding domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR050933",
+        "name": "Circadian Clock Transcription Factors",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003700",
+        "name": "DNA-binding transcription factor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006355",
+        "name": "regulation of DNA-templated transcription",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005634",
+        "name": "nucleus",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0005667",
+        "name": "transcription regulator complex",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0005737",
+        "name": "cytoplasm",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0046983",
+        "name": "protein dimerization activity",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Transcription Factor",
+    "best_score": -7.101,
+    "best_ligand": "CHEMBL422037",
+    "n_hits": 3,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A4D5RYT8",
@@ -1685,7 +2475,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Nucleus",
     "catalytic": "",
     "keywords": [
       "DNA-binding",
@@ -1785,7 +2575,101 @@
       "center_z": 21.273
     },
     "vina_box_size": 21,
-    "p2rank_top_score": 8.59
+    "p2rank_top_score": 8.59,
+    "interpro_domains": [
+      {
+        "id": "IPR000003",
+        "name": "Retinoid X receptor/HNF4",
+        "type": "family"
+      },
+      {
+        "id": "IPR000536",
+        "name": "Nuclear hormone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001628",
+        "name": "Zinc finger, nuclear hormone receptor-type",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001723",
+        "name": "Nuclear hormone receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR013088",
+        "name": "Zinc finger, NHR/GATA-type",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR035500",
+        "name": "Nuclear hormone receptor-like domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR049635",
+        "name": "Hepatocyte nuclear factor 4, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR049636",
+        "name": "Hepatocyte nuclear factor 4-like, DNA-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR050274",
+        "name": "Nuclear hormone receptor family NR2 subfamily",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003677",
+        "name": "DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0003707",
+        "name": "nuclear steroid receptor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0008270",
+        "name": "zinc ion binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006355",
+        "name": "regulation of DNA-templated transcription",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005634",
+        "name": "nucleus",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0003700",
+        "name": "DNA-binding transcription factor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0043565",
+        "name": "sequence-specific DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0000978",
+        "name": "RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Receptor",
+    "best_score": -9.792,
+    "best_ligand": "CHEMBL10161",
+    "n_hits": 556,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A4D5S2A5",
@@ -1797,7 +2681,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Nucleus",
     "catalytic": "",
     "keywords": [
       "DNA-binding",
@@ -1907,7 +2791,101 @@
       "center_z": 20.453
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 9.25
+    "p2rank_top_score": 9.25,
+    "interpro_domains": [
+      {
+        "id": "IPR000003",
+        "name": "Retinoid X receptor/HNF4",
+        "type": "family"
+      },
+      {
+        "id": "IPR000536",
+        "name": "Nuclear hormone receptor, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001628",
+        "name": "Zinc finger, nuclear hormone receptor-type",
+        "type": "domain"
+      },
+      {
+        "id": "IPR001723",
+        "name": "Nuclear hormone receptor",
+        "type": "family"
+      },
+      {
+        "id": "IPR013088",
+        "name": "Zinc finger, NHR/GATA-type",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR035500",
+        "name": "Nuclear hormone receptor-like domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR049635",
+        "name": "Hepatocyte nuclear factor 4, ligand-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR049636",
+        "name": "Hepatocyte nuclear factor 4-like, DNA-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR050274",
+        "name": "Nuclear hormone receptor family NR2 subfamily",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003677",
+        "name": "DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0003707",
+        "name": "nuclear steroid receptor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0008270",
+        "name": "zinc ion binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006355",
+        "name": "regulation of DNA-templated transcription",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005634",
+        "name": "nucleus",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0003700",
+        "name": "DNA-binding transcription factor activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0043565",
+        "name": "sequence-specific DNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0000978",
+        "name": "RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Receptor",
+    "best_score": -8.386,
+    "best_ligand": "CHEMBL10161",
+    "n_hits": 136,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A4D5RGQ5",
@@ -1919,7 +2897,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Membrane",
     "catalytic": "",
     "keywords": [
       "Cell cycle",
@@ -2021,7 +2999,41 @@
       "center_z": 14.991
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 11.49
+    "p2rank_top_score": 11.49,
+    "interpro_domains": [
+      {
+        "id": "IPR004843",
+        "name": "Calcineurin-like, phosphoesterase domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR029052",
+        "name": "Metallo-dependent phosphatase-like",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR033308",
+        "name": "PGAP5/Cdc1/Ted1",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0016787",
+        "name": "hydrolase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006506",
+        "name": "GPI anchor biosynthetic process",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Enzyme - Kinase/Phosphatase",
+    "best_score": -9.082,
+    "best_ligand": "CHEMBL9171",
+    "n_hits": 360,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7QJZ7",
@@ -2033,7 +3045,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Mitochondrion inner membrane",
     "catalytic": "",
     "keywords": [
       "ATP synthesis",
@@ -2146,7 +3158,46 @@
       "center_z": 5.669
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 2.72
+    "p2rank_top_score": 2.72,
+    "interpro_domains": [
+      {
+        "id": "IPR000131",
+        "name": "ATP synthase, F1 complex, gamma subunit",
+        "type": "family"
+      },
+      {
+        "id": "IPR023632",
+        "name": "ATP synthase, F1 complex, gamma subunit conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR035968",
+        "name": "ATP synthase, F1 complex, gamma subunit superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0046933",
+        "name": "proton-transporting ATP synthase activity, rotational mechanism",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0015986",
+        "name": "proton motive force-driven ATP synthesis",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0045259",
+        "name": "proton-transporting ATP synthase complex",
+        "category": "cellular_component"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -8.682,
+    "best_ligand": "CHEMBL428145",
+    "n_hits": 139,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A4D5RMV5",
@@ -2158,7 +3209,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Membrane",
     "catalytic": "",
     "keywords": [
       "Cell cycle",
@@ -2279,7 +3330,41 @@
       "center_z": -6.846
     },
     "vina_box_size": 26,
-    "p2rank_top_score": 12.04
+    "p2rank_top_score": 12.04,
+    "interpro_domains": [
+      {
+        "id": "IPR004843",
+        "name": "Calcineurin-like, phosphoesterase domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR029052",
+        "name": "Metallo-dependent phosphatase-like",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR033308",
+        "name": "PGAP5/Cdc1/Ted1",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0016787",
+        "name": "hydrolase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006506",
+        "name": "GPI anchor biosynthetic process",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Enzyme - Kinase/Phosphatase",
+    "best_score": -10.687,
+    "best_ligand": "CHEMBL417601",
+    "n_hits": 1154,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A4D5RNJ0",
@@ -2291,7 +3376,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Membrane",
     "catalytic": "",
     "keywords": [
       "ATP synthesis",
@@ -2367,7 +3452,36 @@
       "center_y": 7.338,
       "center_z": -17.225
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "interpro_domains": [
+      {
+        "id": "IPR000711",
+        "name": "ATPase, OSCP/delta subunit",
+        "type": "family"
+      },
+      {
+        "id": "IPR026015",
+        "name": "F1F0 ATP synthase OSCP/delta subunit, N-terminal domain superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0046933",
+        "name": "proton-transporting ATP synthase activity, rotational mechanism",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0015986",
+        "name": "proton motive force-driven ATP synthesis",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Enzyme - Kinase/Phosphatase",
+    "best_score": -7.73,
+    "best_ligand": "CHEMBL8922",
+    "n_hits": 83,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A4D5S7D6",
@@ -2379,7 +3493,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Mitochondrion inner membrane",
     "catalytic": "",
     "keywords": [
       "ATP synthesis",
@@ -2469,7 +3583,46 @@
       "center_z": 6.143
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 3.11
+    "p2rank_top_score": 3.11,
+    "interpro_domains": [
+      {
+        "id": "IPR000131",
+        "name": "ATP synthase, F1 complex, gamma subunit",
+        "type": "family"
+      },
+      {
+        "id": "IPR023632",
+        "name": "ATP synthase, F1 complex, gamma subunit conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR035968",
+        "name": "ATP synthase, F1 complex, gamma subunit superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0046933",
+        "name": "proton-transporting ATP synthase activity, rotational mechanism",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0015986",
+        "name": "proton motive force-driven ATP synthesis",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0045259",
+        "name": "proton-transporting ATP synthase complex",
+        "category": "cellular_component"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -8.748,
+    "best_ligand": "CHEMBL428145",
+    "n_hits": 223,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7P5E9",
@@ -2481,7 +3634,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Membrane",
     "catalytic": "",
     "keywords": [
       "Cell cycle",
@@ -2633,7 +3786,41 @@
       "center_z": 3.556
     },
     "vina_box_size": 25,
-    "p2rank_top_score": 28.35
+    "p2rank_top_score": 28.35,
+    "interpro_domains": [
+      {
+        "id": "IPR004843",
+        "name": "Calcineurin-like, phosphoesterase domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR029052",
+        "name": "Metallo-dependent phosphatase-like",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR033308",
+        "name": "PGAP5/Cdc1/Ted1",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0016787",
+        "name": "hydrolase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006506",
+        "name": "GPI anchor biosynthetic process",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Enzyme - Kinase/Phosphatase",
+    "best_score": -13.125,
+    "best_ligand": "CHEMBL9171",
+    "n_hits": 1179,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7Q255",
@@ -2790,7 +3977,26 @@
       "center_z": -1.007
     },
     "vina_box_size": 26,
-    "p2rank_top_score": 29.44
+    "p2rank_top_score": 29.44,
+    "interpro_domains": [
+      {
+        "id": "IPR039775",
+        "name": "Homeodomain containing protein PHTF1/2",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0005783",
+        "name": "endoplasmic reticulum",
+        "category": "cellular_component"
+      }
+    ],
+    "function_class": "Transcription Factor",
+    "best_score": -11.084,
+    "best_ligand": "CHEMBL8905",
+    "n_hits": 962,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q5Q995",
@@ -2802,7 +4008,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "Subunit of the oligosaccharyl transferase (OST) complex that catalyzes the initial transfer of a defined glycan (Glc(3)Man(9)GlcNAc(2) in eukaryotes) from the lipid carrier dolichol-pyrophosphate to an asparagine residue within an Asn-X-Ser/Thr consensus motif in nascent polypeptide chains, the first step in protein N-glycosylation. N-glycosylation occurs cotranslationally and the complex associates with the Sec61 complex at the channel-forming translocon complex that mediates protein translocation across the endoplasmic reticulum (ER). All subunits are required for a maximal enzyme activity",
-    "subcellular": "",
+    "subcellular": "Membrane",
     "catalytic": "",
     "keywords": [
       "Membrane",
@@ -2921,7 +4127,20 @@
         }
       }
     },
-    "p2rank_top_score": 1.47
+    "p2rank_top_score": 1.47,
+    "interpro_domains": [
+      {
+        "id": "IPR018614",
+        "name": "Keratinocyte-associated protein 2",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [],
+    "function_class": "Unknown",
+    "best_score": -8.496,
+    "best_ligand": "CHEMBL9171",
+    "n_hits": 311,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7PIZ2",
@@ -2933,7 +4152,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Lysosome membrane",
     "catalytic": "",
     "keywords": [
       "Cell cycle",
@@ -3045,7 +4264,51 @@
       "center_z": 11.194
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 5.14
+    "p2rank_top_score": 5.14,
+    "interpro_domains": [
+      {
+        "id": "IPR005225",
+        "name": "Small GTP-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR006689",
+        "name": "Small GTPase superfamily, ARF/SAR type",
+        "type": "family"
+      },
+      {
+        "id": "IPR027417",
+        "name": "P-loop containing nucleoside triphosphate hydrolase",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR044154",
+        "name": "ADP-ribosylation factor-like protein 8A/8B",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0005525",
+        "name": "GTP binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0003924",
+        "name": "GTPase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0015031",
+        "name": "protein transport",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Enzyme - Kinase/Phosphatase",
+    "best_score": -9.447,
+    "best_ligand": "CHEMBL417601",
+    "n_hits": 681,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A4D5RDE4",
@@ -3057,7 +4320,7 @@
     "pdb_ids": [],
     "chembl_ids": [],
     "function": "",
-    "subcellular": "",
+    "subcellular": "Lysosome membrane",
     "catalytic": "",
     "keywords": [
       "Cell cycle",
@@ -3147,6 +4410,1587 @@
       "center_z": -6.284
     },
     "vina_box_size": 20,
-    "p2rank_top_score": 7.9
+    "p2rank_top_score": 7.9,
+    "interpro_domains": [
+      {
+        "id": "IPR005225",
+        "name": "Small GTP-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR006689",
+        "name": "Small GTPase superfamily, ARF/SAR type",
+        "type": "family"
+      },
+      {
+        "id": "IPR027417",
+        "name": "P-loop containing nucleoside triphosphate hydrolase",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR044154",
+        "name": "ADP-ribosylation factor-like protein 8A/8B",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0005525",
+        "name": "GTP binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0003924",
+        "name": "GTPase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0015031",
+        "name": "protein transport",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Enzyme - Kinase/Phosphatase",
+    "best_score": -10.868,
+    "best_ligand": "CHEMBL9250",
+    "n_hits": 1069,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "B7P877",
+    "name": "B7P877",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 9.45,
+        "probability": 0.508,
+        "volume": 760.0,
+        "center_x": 5.9251,
+        "center_y": -3.5411,
+        "center_z": 0.9971
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 2.81,
+        "probability": 0.087,
+        "volume": 400.0,
+        "center_x": 12.0315,
+        "center_y": 4.3433,
+        "center_z": -8.1144
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 9.45,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4DS18|A0AAQ4DS18_AMBAM",
+          "identity_pct": 91.447,
+          "aln_length": 152,
+          "query_len": 152,
+          "subject_len": 152,
+          "evalue": 1.15e-105,
+          "bitscore": 298.0,
+          "coverage_pct": 100.0,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "gene": "Cbp20",
+    "function": "Component of the cap-binding complex (CBC), which binds co-transcriptionally to the 5' cap of pre-mRNAs and is involved in various processes such as pre-mRNA splicing and RNA-mediated gene silencing (RNAi). The CBC complex is involved in miRNA-mediated RNA interference and is required for primary microRNAs (miRNAs) processing. Also involved in innate immunity via the short interfering RNAs (siRNAs) processing machinery by restricting the viral RNA production. In the CBC complex, Cbp20 recognizes",
+    "subcellular": "Nucleus",
+    "interpro_domains": [
+      {
+        "id": "IPR000504",
+        "name": "RNA recognition motif domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR012677",
+        "name": "Nucleotide-binding alpha-beta plait domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR027157",
+        "name": "Nuclear cap-binding protein subunit 2",
+        "type": "family"
+      },
+      {
+        "id": "IPR034148",
+        "name": "NCBP2, RNA recognition motif",
+        "type": "domain"
+      },
+      {
+        "id": "IPR035979",
+        "name": "RNA-binding domain superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003723",
+        "name": "RNA binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0000339",
+        "name": "RNA cap binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0045292",
+        "name": "mRNA cis splicing, via spliceosome",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005846",
+        "name": "nuclear cap binding complex",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0003676",
+        "name": "nucleic acid binding",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -8.39,
+    "best_ligand": "CHEMBL268388",
+    "n_hits": 424,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "B7PBI5",
+    "name": "B7PBI5",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 10.38,
+        "probability": 0.558,
+        "volume": 960.0,
+        "center_x": 6.4078,
+        "center_y": -3.4551,
+        "center_z": -6.4416
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 2.44,
+        "probability": 0.066,
+        "volume": 280.0,
+        "center_x": -5.6199,
+        "center_y": 0.3063,
+        "center_z": 14.971
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 1.35,
+        "probability": 0.016,
+        "volume": 240.0,
+        "center_x": -16.2898,
+        "center_y": 3.0672,
+        "center_z": -3.8263
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 0.69,
+        "probability": 0.001,
+        "volume": 140.0,
+        "center_x": -2.2665,
+        "center_y": 19.9113,
+        "center_z": -5.1458
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 10.38,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4EA53|A0AAQ4EA53_AMBAM",
+          "identity_pct": 61.462,
+          "aln_length": 301,
+          "query_len": 303,
+          "subject_len": 328,
+          "evalue": 1.68e-119,
+          "bitscore": 346.0,
+          "coverage_pct": 99.3,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "function": "Catalyzes the dehydration of the S-form of NAD(P)HX at the expense of ATP, which is converted to ADP. Together with NAD(P)HX epimerase, which catalyzes the epimerization of the S- and R-forms, the enzyme allows the repair of both epimers of NAD(P)HX, a damaged form of NAD(P)H that is a result of enzymatic or heat-dependent hydration",
+    "interpro_domains": [
+      {
+        "id": "IPR000631",
+        "name": "ATP/ADP-dependent (S)-NAD(P)H-hydrate dehydratase",
+        "type": "domain"
+      },
+      {
+        "id": "IPR017953",
+        "name": "Carbohydrate kinase, predicted, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR029056",
+        "name": "Ribokinase-like",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0016836",
+        "name": "hydro-lyase activity",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Enzyme - Kinase/Phosphatase",
+    "best_score": -8.699,
+    "best_ligand": "CHEMBL266039",
+    "n_hits": 297,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "B7PJS6",
+    "name": "B7PJS6",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 10.81,
+        "probability": 0.58,
+        "volume": 740.0,
+        "center_x": 2.7677,
+        "center_y": 8.5701,
+        "center_z": -4.6308
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 6.83,
+        "probability": 0.35,
+        "volume": 700.0,
+        "center_x": 14.4115,
+        "center_y": 4.2051,
+        "center_z": -17.1168
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 6.59,
+        "probability": 0.334,
+        "volume": 680.0,
+        "center_x": 3.7463,
+        "center_y": -3.2055,
+        "center_z": 6.0702
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 2.99,
+        "probability": 0.097,
+        "volume": 480.0,
+        "center_x": -14.3606,
+        "center_y": -8.6694,
+        "center_z": 10.2018
+      },
+      {
+        "pocket_id": 5,
+        "source": "p2rank",
+        "score": 2.33,
+        "probability": 0.06,
+        "volume": 460.0,
+        "center_x": 18.2152,
+        "center_y": -5.6153,
+        "center_z": -11.3063
+      },
+      {
+        "pocket_id": 6,
+        "source": "p2rank",
+        "score": 1.72,
+        "probability": 0.03,
+        "volume": 420.0,
+        "center_x": -0.7004,
+        "center_y": 12.9937,
+        "center_z": 10.757
+      },
+      {
+        "pocket_id": 7,
+        "source": "p2rank",
+        "score": 1.53,
+        "probability": 0.023,
+        "volume": 300.0,
+        "center_x": -0.8145,
+        "center_y": -0.1152,
+        "center_z": -6.3354
+      },
+      {
+        "pocket_id": 8,
+        "source": "p2rank",
+        "score": 1.08,
+        "probability": 0.007,
+        "volume": 120.0,
+        "center_x": -9.5553,
+        "center_y": -1.578,
+        "center_z": 27.3425
+      },
+      {
+        "pocket_id": 9,
+        "source": "p2rank",
+        "score": 0.96,
+        "probability": 0.005,
+        "volume": 320.0,
+        "center_x": 15.634,
+        "center_y": 3.0832,
+        "center_z": -1.922
+      },
+      {
+        "pocket_id": 10,
+        "source": "p2rank",
+        "score": 0.85,
+        "probability": 0.003,
+        "volume": 280.0,
+        "center_x": -20.0204,
+        "center_y": -11.0506,
+        "center_z": 25.537
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 10.81,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4F047|A0AAQ4F047_AMBAM",
+          "identity_pct": 79.412,
+          "aln_length": 544,
+          "query_len": 661,
+          "subject_len": 544,
+          "evalue": 0.0,
+          "bitscore": 931.0,
+          "coverage_pct": 82.3,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "function": "Promotes mitochondrial protein synthesis. May act as a fidelity factor of the translation reaction, by catalyzing a one-codon backward translocation of tRNAs on improperly translocated ribosomes. Binds to mitochondrial ribosomes in a GTP-dependent manner",
+    "subcellular": "Mitochondrion inner membrane",
+    "interpro_domains": [
+      {
+        "id": "IPR000640",
+        "name": "Elongation factor EFG, domain V-like",
+        "type": "domain"
+      },
+      {
+        "id": "IPR000795",
+        "name": "Translational (tr)-type GTP-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR005225",
+        "name": "Small GTP-binding domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR006297",
+        "name": "Elongation factor 4",
+        "type": "family"
+      },
+      {
+        "id": "IPR009000",
+        "name": "Translation protein, beta-barrel domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR013842",
+        "name": "GTP-binding protein LepA, C-terminal",
+        "type": "domain"
+      },
+      {
+        "id": "IPR027417",
+        "name": "P-loop containing nucleoside triphosphate hydrolase",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR031157",
+        "name": "Tr-type G domain, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR035647",
+        "name": "EF-G domain III/V-like",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR035654",
+        "name": "Elongation factor 4, domain IV",
+        "type": "domain"
+      },
+      {
+        "id": "IPR038363",
+        "name": "LepA, C-terminal domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR041095",
+        "name": "Elongation Factor G, domain II",
+        "type": "domain"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003924",
+        "name": "GTPase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0005525",
+        "name": "GTP binding",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Enzyme - Protease",
+    "best_score": -9.451,
+    "best_ligand": "CHEMBL10055",
+    "n_hits": 610,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "B7PKZ2",
+    "name": "B7PKZ2",
+    "good_pockets": [],
+    "druggable_pockets": 0,
+    "ortholog_result": {
+      "pan_tick": false,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4ERJ2|A0AAQ4ERJ2_AMBAM",
+          "identity_pct": 39.706,
+          "aln_length": 136,
+          "query_len": 133,
+          "subject_len": 132,
+          "evalue": 3.17e-27,
+          "bitscore": 97.8,
+          "coverage_pct": 102.3,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Distant homolog"
+        },
+        "dermacentor_variabilis": {
+          "subject_id": "tr|B7SP32|B7SP32_DERVA",
+          "identity_pct": 51.899,
+          "aln_length": 79,
+          "query_len": 133,
+          "subject_len": 87,
+          "evalue": 1.02e-23,
+          "bitscore": 81.3,
+          "coverage_pct": 59.4,
+          "species": "dermacentor_variabilis",
+          "common": "American dog tick",
+          "ortholog_call": "Putative ortholog"
+        }
+      }
+    },
+    "function": "Inhibitor of cysteine proteinases. Inhibits host immune responses via its inhibition of host cathepsins. Contributes to the suppression of the host's immune response to tick salivary proteins and is important for successful feeding on hosts. Inhibits differentiation of host dendritic cells. Inhibits proliferation of host T-cells in response to antigen stimulus. Down-regulates TLR2-mediated host responses to infection by B.burgdorferi and the production of the chemokine CCL3 by host dendritic cel",
+    "subcellular": "Secreted",
+    "interpro_domains": [
+      {
+        "id": "IPR000010",
+        "name": "Cystatin domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR018073",
+        "name": "Proteinase inhibitor I25, cystatin, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR046350",
+        "name": "Cystatin superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0004869",
+        "name": "cysteine-type endopeptidase inhibitor activity",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -7.376,
+    "best_ligand": "CHEMBL428",
+    "n_hits": 19,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "B7PRF6",
+    "name": "B7PRF6",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 12.72,
+        "probability": 0.66,
+        "volume": 740.0,
+        "center_x": 2.3855,
+        "center_y": -3.0621,
+        "center_z": 5.9198
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 1.86,
+        "probability": 0.036,
+        "volume": 400.0,
+        "center_x": 14.0727,
+        "center_y": 2.516,
+        "center_z": -5.6697
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 1.57,
+        "probability": 0.024,
+        "volume": 420.0,
+        "center_x": -8.4091,
+        "center_y": -2.2335,
+        "center_z": -9.1684
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 12.72,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4DE10|A0AAQ4DE10_AMBAM",
+          "identity_pct": 85.083,
+          "aln_length": 181,
+          "query_len": 183,
+          "subject_len": 185,
+          "evalue": 1.45e-118,
+          "bitscore": 333.0,
+          "coverage_pct": 98.9,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "function": "Catalyzes 2 different reactions between oxygen and the acireductone 1,2-dihydroxy-3-keto-5-methylthiopentene (DHK-MTPene) depending upon the metal bound in the active site. Fe-containing acireductone dioxygenase (Fe-ARD) produces formate and 2-keto-4-methylthiobutyrate (KMTB), the alpha-ketoacid precursor of methionine in the methionine recycle pathway. Ni-containing acireductone dioxygenase (Ni-ARD) produces methylthiopropionate, carbon monoxide and formate, and does not lie on the methionine r",
+    "subcellular": "Cytoplasm",
+    "interpro_domains": [
+      {
+        "id": "IPR004313",
+        "name": "Acireductone dioxygenase ARD family",
+        "type": "family"
+      },
+      {
+        "id": "IPR011051",
+        "name": "RmlC-like cupin domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR014710",
+        "name": "RmlC-like jelly roll fold",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR027496",
+        "name": "Acireductone dioxygenase, eukaryotes",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0010308",
+        "name": "acireductone dioxygenase (Ni2+-requiring) activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0010309",
+        "name": "acireductone dioxygenase [iron(II)-requiring] activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0016491",
+        "name": "oxidoreductase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0019509",
+        "name": "L-methionine salvage from methylthioadenosine",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -9.515,
+    "best_ligand": "CHEMBL428480",
+    "n_hits": 472,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "B7PXE3",
+    "name": "B7PXE3",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 2.86,
+        "probability": 0.09,
+        "volume": 580.0,
+        "center_x": -2.0958,
+        "center_y": 6.3814,
+        "center_z": -11.6507
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 2.42,
+        "probability": 0.065,
+        "volume": 440.0,
+        "center_x": -4.6668,
+        "center_y": 1.8932,
+        "center_z": -6.2859
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 2.86,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4F078|A0AAQ4F078_AMBAM",
+          "identity_pct": 67.445,
+          "aln_length": 642,
+          "query_len": 648,
+          "subject_len": 778,
+          "evalue": 0.0,
+          "bitscore": 770.0,
+          "coverage_pct": 99.1,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "subject_id": "tr|Q86G67|Q86G67_DERVA",
+          "identity_pct": 34.894,
+          "aln_length": 235,
+          "query_len": 648,
+          "subject_len": 402,
+          "evalue": 1.35e-38,
+          "bitscore": 140.0,
+          "coverage_pct": 36.3,
+          "species": "dermacentor_variabilis",
+          "common": "American dog tick",
+          "ortholog_call": "Distant homolog"
+        }
+      }
+    },
+    "gene": "spas",
+    "function": "ATP-dependent microtubule severing protein. Microtubule severing may promote reorganization of cellular microtubule arrays and the release of microtubules from the microtubule organizing center following nucleation",
+    "subcellular": "Membrane",
+    "interpro_domains": [
+      {
+        "id": "IPR003593",
+        "name": "AAA+ ATPase domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR003959",
+        "name": "ATPase, AAA-type, core",
+        "type": "domain"
+      },
+      {
+        "id": "IPR003960",
+        "name": "ATPase, AAA-type, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR007330",
+        "name": "MIT domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR015415",
+        "name": "Spastin/Vps4, C-terminal",
+        "type": "domain"
+      },
+      {
+        "id": "IPR017179",
+        "name": "Spastin",
+        "type": "family"
+      },
+      {
+        "id": "IPR027417",
+        "name": "P-loop containing nucleoside triphosphate hydrolase",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR041569",
+        "name": "AAA ATPase, AAA+ lid domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR050304",
+        "name": "Microtubule-severing AAA ATPase",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0005524",
+        "name": "ATP binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0016887",
+        "name": "ATP hydrolysis activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0008568",
+        "name": "microtubule severing ATPase activity",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Enzyme - Kinase/Phosphatase",
+    "best_score": -8.056,
+    "best_ligand": "CHEMBL8905",
+    "n_hits": 108,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "B7PY76",
+    "name": "B7PY76",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 10.33,
+        "probability": 0.555,
+        "volume": 760.0,
+        "center_x": 1.7188,
+        "center_y": -4.9864,
+        "center_z": -4.2812
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 6.53,
+        "probability": 0.33,
+        "volume": 640.0,
+        "center_x": 3.1425,
+        "center_y": 3.0698,
+        "center_z": -1.9635
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 5.47,
+        "probability": 0.261,
+        "volume": 580.0,
+        "center_x": 4.6233,
+        "center_y": 13.7139,
+        "center_z": 2.3612
+      },
+      {
+        "pocket_id": 4,
+        "source": "p2rank",
+        "score": 0.71,
+        "probability": 0.001,
+        "volume": 180.0,
+        "center_x": -1.6066,
+        "center_y": -10.8087,
+        "center_z": 6.3366
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 10.33,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4E551|A0AAQ4E551_AMBAM",
+          "identity_pct": 75.765,
+          "aln_length": 425,
+          "query_len": 425,
+          "subject_len": 422,
+          "evalue": 0.0,
+          "bitscore": 669.0,
+          "coverage_pct": 100.0,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "subject_id": "tr|B7SP58|B7SP58_DERVA",
+          "identity_pct": 33.523,
+          "aln_length": 176,
+          "query_len": 425,
+          "subject_len": 318,
+          "evalue": 7.55e-19,
+          "bitscore": 79.3,
+          "coverage_pct": 41.4,
+          "species": "dermacentor_variabilis",
+          "common": "American dog tick",
+          "ortholog_call": "Distant homolog"
+        }
+      }
+    },
+    "function": "Required for maturation of ribosomal RNAs and formation of the large ribosomal subunit",
+    "subcellular": "Nucleus, nucleolus",
+    "interpro_domains": [
+      {
+        "id": "IPR001680",
+        "name": "WD40 repeat",
+        "type": "repeat"
+      },
+      {
+        "id": "IPR012972",
+        "name": "NLE",
+        "type": "domain"
+      },
+      {
+        "id": "IPR015943",
+        "name": "WD40/YVTN repeat-like-containing domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR019775",
+        "name": "WD40 repeat, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR020472",
+        "name": "PAC1/LIS1-like, WD-40 repeat",
+        "type": "repeat"
+      },
+      {
+        "id": "IPR028599",
+        "name": "WD repeat WDR12/Ytm1",
+        "type": "family"
+      },
+      {
+        "id": "IPR036322",
+        "name": "WD40-repeat-containing domain superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0005515",
+        "name": "protein binding",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0042254",
+        "name": "ribosome biogenesis",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -7.537,
+    "best_ligand": "CHEMBL426",
+    "n_hits": 14,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "B7Q1Q9",
+    "name": "B7Q1Q9",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 6.15,
+        "probability": 0.306,
+        "volume": 800.0,
+        "center_x": 4.2341,
+        "center_y": 2.8622,
+        "center_z": -15.5309
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 2.37,
+        "probability": 0.062,
+        "volume": 600.0,
+        "center_x": 11.8826,
+        "center_y": 5.5337,
+        "center_z": -12.5822
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 6.15,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4E095|A0AAQ4E095_AMBAM",
+          "identity_pct": 98.058,
+          "aln_length": 103,
+          "query_len": 118,
+          "subject_len": 107,
+          "evalue": 1.06e-72,
+          "bitscore": 211.0,
+          "coverage_pct": 87.3,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "function": "TFIIA is a component of the transcription machinery of RNA polymerase II and plays an important role in transcriptional activation. TFIIA in a complex with Tbp mediates transcriptional activity (By similarity)",
+    "subcellular": "Nucleus",
+    "interpro_domains": [
+      {
+        "id": "IPR003194",
+        "name": "Transcription initiation factor IIA, gamma subunit",
+        "type": "family"
+      },
+      {
+        "id": "IPR009083",
+        "name": "Transcription factor IIA, alpha-helical domain",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR009088",
+        "name": "Transcription factor IIA, beta-barrel",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR015871",
+        "name": "Transcription initiation factor IIA, gamma subunit, C-terminal",
+        "type": "domain"
+      },
+      {
+        "id": "IPR015872",
+        "name": "Transcription initiation factor IIA, gamma subunit, N-terminal",
+        "type": "domain"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0006367",
+        "name": "transcription initiation at RNA polymerase II promoter",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005672",
+        "name": "transcription factor TFIIA complex",
+        "category": "cellular_component"
+      }
+    ],
+    "function_class": "Transcription Factor",
+    "best_score": -9.425,
+    "best_ligand": "CHEMBL10035",
+    "n_hits": 445,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "B7Q290",
+    "name": "B7Q290",
+    "good_pockets": [],
+    "druggable_pockets": 0,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0A0C9SBL3|A0A0C9SBL3_AMBAM",
+          "identity_pct": 75.0,
+          "aln_length": 88,
+          "query_len": 95,
+          "subject_len": 88,
+          "evalue": 1.11e-44,
+          "bitscore": 139.0,
+          "coverage_pct": 92.6,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "interpro_domains": [
+      {
+        "id": "IPR042407",
+        "name": "Protein NCBP2AS2",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [],
+    "function_class": "Unknown"
+  },
+  {
+    "accession": "B7QDG3",
+    "name": "B7QDG3",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 17.07,
+        "probability": 0.795,
+        "volume": 960.0,
+        "center_x": 3.3849,
+        "center_y": 1.6358,
+        "center_z": -5.7373
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 17.07,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4DLB8|A0AAQ4DLB8_AMBAM",
+          "identity_pct": 89.13,
+          "aln_length": 276,
+          "query_len": 275,
+          "subject_len": 277,
+          "evalue": 0.0,
+          "bitscore": 517.0,
+          "coverage_pct": 100.4,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "function": "Catalyzes the epimerization of the S- and R-forms of NAD(P)HX, a damaged form of NAD(P)H that is a result of enzymatic or heat-dependent hydration. This is a prerequisite for the S-specific NAD(P)H-hydrate dehydratase to allow the repair of both epimers of NAD(P)HX",
+    "interpro_domains": [
+      {
+        "id": "IPR004443",
+        "name": "YjeF N-terminal domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR032976",
+        "name": "YjeF N-terminal domain-containing protein NAXE-like",
+        "type": "family"
+      },
+      {
+        "id": "IPR036652",
+        "name": "YjeF N-terminal domain superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [],
+    "function_class": "Unknown",
+    "best_score": -10.025,
+    "best_ligand": "CHEMBL8921",
+    "n_hits": 379,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "F6KSY2",
+    "name": "F6KSY2",
+    "good_pockets": [],
+    "druggable_pockets": 0,
+    "function": "Inhibits host coagulation by delaying thrombin generation and reducing endogenous thrombin potential (ETP)",
+    "subcellular": "Secreted",
+    "interpro_domains": [],
+    "interpro_go": [],
+    "function_class": "Unknown"
+  },
+  {
+    "accession": "Q202J4",
+    "name": "Q202J4",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 19.27,
+        "probability": 0.837,
+        "volume": 860.0,
+        "center_x": 4.0588,
+        "center_y": 2.2189,
+        "center_z": -6.0615
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 3.14,
+        "probability": 0.106,
+        "volume": 500.0,
+        "center_x": -18.2409,
+        "center_y": -1.2664,
+        "center_z": -9.0623
+      },
+      {
+        "pocket_id": 3,
+        "source": "p2rank",
+        "score": 1.3,
+        "probability": 0.014,
+        "volume": 160.0,
+        "center_x": 4.9836,
+        "center_y": 18.4068,
+        "center_z": -4.3603
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 19.27,
+    "ortholog_result": {
+      "pan_tick": false,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4FK58|A0AAQ4FK58_AMBAM",
+          "identity_pct": 48.726,
+          "aln_length": 314,
+          "query_len": 364,
+          "subject_len": 343,
+          "evalue": 2.38e-104,
+          "bitscore": 310.0,
+          "coverage_pct": 86.3,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Putative ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "gene": "SPH",
+    "function": "Dermonecrotic toxins cleave the phosphodiester linkage between the phosphate and headgroup of certain phospholipids (sphingolipid and lysolipid substrates), forming an alcohol (often choline) and a cyclic phosphate (By similarity). Acts on sphingomyelin (SM) (By similarity). It may also act on ceramide phosphoethanolamine (CPE), lysophosphatidylcholine (LPC) and lysophosphatidylethanolamine (LPE), but not on lysophosphatidylserine (LPS), and lysophosphatidylglycerol (LPG) (By similarity). It act",
+    "subcellular": "Secreted",
+    "interpro_domains": [
+      {
+        "id": "IPR017946",
+        "name": "PLC-like phosphodiesterase, TIM beta/alpha-barrel domain superfamily",
+        "type": "homologous_superfamily"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0008081",
+        "name": "phosphoric diester hydrolase activity",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006629",
+        "name": "lipid metabolic process",
+        "category": "biological_process"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -9.518,
+    "best_ligand": "CHEMBL417605",
+    "n_hits": 525,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "Q4PLZ3",
+    "name": "Q4PLZ3",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 1.47,
+        "probability": 0.02,
+        "volume": 340.0,
+        "center_x": -17.8002,
+        "center_y": 1.8555,
+        "center_z": 1.963
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 1.47,
+    "gene": "Tctp",
+    "function": "Involved in calcium binding and microtubule stabilization",
+    "subcellular": "Cytoplasm",
+    "interpro_domains": [
+      {
+        "id": "IPR011057",
+        "name": "Mss4-like superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR011323",
+        "name": "Mss4/translationally controlled tumour-associated TCTP",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR018103",
+        "name": "Translationally controlled tumour protein, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR018105",
+        "name": "Translationally controlled tumour protein",
+        "type": "family"
+      },
+      {
+        "id": "IPR034737",
+        "name": "Translationally controlled tumour protein (TCTP) domain",
+        "type": "domain"
+      }
+    ],
+    "interpro_go": [],
+    "function_class": "Translation/Ribosome",
+    "best_score": -7.811,
+    "best_ligand": "CHEMBL10039",
+    "n_hits": 30,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "Q4PM54",
+    "name": "Q4PM54",
+    "good_pockets": [],
+    "druggable_pockets": 0,
+    "gene": "RpL17",
+    "interpro_domains": [
+      {
+        "id": "IPR001063",
+        "name": "Large ribosomal subunit protein uL22",
+        "type": "family"
+      },
+      {
+        "id": "IPR005721",
+        "name": "Large ribosomal subunit protein uL22, eukaryota/archaea",
+        "type": "family"
+      },
+      {
+        "id": "IPR018260",
+        "name": "Large ribosomal subunit protein uL22, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR036394",
+        "name": "Ribosomal protein uL22 superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR057265",
+        "name": "Large ribosomal subunit protein uL22, archaea",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003735",
+        "name": "structural constituent of ribosome",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006412",
+        "name": "translation",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005840",
+        "name": "ribosome",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0015934",
+        "name": "large ribosomal subunit",
+        "category": "cellular_component"
+      }
+    ],
+    "function_class": "Translation/Ribosome",
+    "best_score": -7.369,
+    "best_ligand": "CHEMBL10055",
+    "n_hits": 5,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "Q4PMB3",
+    "name": "Q4PMB3",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 4.45,
+        "probability": 0.189,
+        "volume": 660.0,
+        "center_x": 2.7044,
+        "center_y": 0.8597,
+        "center_z": -5.8548
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 4.45,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0A0C9RUE1|A0A0C9RUE1_AMBAM",
+          "identity_pct": 98.092,
+          "aln_length": 262,
+          "query_len": 262,
+          "subject_len": 262,
+          "evalue": 0.0,
+          "bitscore": 528.0,
+          "coverage_pct": 100.0,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "gene": "RpS4",
+    "interpro_domains": [
+      {
+        "id": "IPR000876",
+        "name": "Small ribosomal subunit protein eS4",
+        "type": "family"
+      },
+      {
+        "id": "IPR002942",
+        "name": "RNA-binding S4 domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR005824",
+        "name": "KOW",
+        "type": "domain"
+      },
+      {
+        "id": "IPR013843",
+        "name": "Small ribosomal subunit protein eS4, N-terminal",
+        "type": "domain"
+      },
+      {
+        "id": "IPR013845",
+        "name": "Small ribosomal subunit protein eS4, central region",
+        "type": "domain"
+      },
+      {
+        "id": "IPR014722",
+        "name": "Large ribosomal subunit protein uL2, domain 2",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR018199",
+        "name": "Small ribosomal subunit protein eS4, N-terminal, conserved site",
+        "type": "conserved_site"
+      },
+      {
+        "id": "IPR032277",
+        "name": "Small ribosomal subunit protein eS4, C-terminal domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR036986",
+        "name": "RNA-binding S4 domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR038237",
+        "name": "Small ribosomal subunit protein eS4, central domain superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR041982",
+        "name": "Small ribosomal subunit protein eS4, KOW domain",
+        "type": "domain"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003735",
+        "name": "structural constituent of ribosome",
+        "category": "molecular_function"
+      },
+      {
+        "id": "GO:0006412",
+        "name": "translation",
+        "category": "biological_process"
+      },
+      {
+        "id": "GO:0005840",
+        "name": "ribosome",
+        "category": "cellular_component"
+      },
+      {
+        "id": "GO:0003723",
+        "name": "RNA binding",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Translation/Ribosome",
+    "best_score": -7.512,
+    "best_ligand": "CHEMBL417601",
+    "n_hits": 67,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "Q4PMC9",
+    "name": "Q4PMC9",
+    "good_pockets": [],
+    "druggable_pockets": 0,
+    "ortholog_result": {
+      "pan_tick": true,
+      "species_coverage": 1,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "subject_id": "tr|A0AAQ4ET37|A0AAQ4ET37_AMBAM",
+          "identity_pct": 82.979,
+          "aln_length": 235,
+          "query_len": 234,
+          "subject_len": 274,
+          "evalue": 1.17e-148,
+          "bitscore": 415.0,
+          "coverage_pct": 100.4,
+          "species": "amblyomma_americanum",
+          "common": "Lone star tick",
+          "ortholog_call": "Pan-tick ortholog"
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "subcellular": "Nucleus, nucleolus",
+    "interpro_domains": [
+      {
+        "id": "IPR036612",
+        "name": "K Homology domain, type 1 superfamily",
+        "type": "homologous_superfamily"
+      },
+      {
+        "id": "IPR041174",
+        "name": "KRR1 small subunit processome component, first KH domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR055211",
+        "name": "PNO1, second type I KH domain",
+        "type": "domain"
+      },
+      {
+        "id": "IPR055212",
+        "name": "PNO1, first type I KH domain",
+        "type": "domain"
+      }
+    ],
+    "interpro_go": [
+      {
+        "id": "GO:0003723",
+        "name": "RNA binding",
+        "category": "molecular_function"
+      }
+    ],
+    "function_class": "Unknown",
+    "best_score": -9.372,
+    "best_ligand": "CHEMBL10035",
+    "n_hits": 377,
+    "hit_rate": 1.0
+  },
+  {
+    "accession": "Q8MUP7",
+    "name": "Q8MUP7",
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "p2rank",
+        "score": 1.94,
+        "probability": 0.04,
+        "volume": 360.0,
+        "center_x": -1.1252,
+        "center_y": 0.2822,
+        "center_z": -4.8455
+      },
+      {
+        "pocket_id": 2,
+        "source": "p2rank",
+        "score": 0.83,
+        "probability": 0.003,
+        "volume": 240.0,
+        "center_x": -3.3468,
+        "center_y": -4.8889,
+        "center_z": 7.3053
+      }
+    ],
+    "druggable_pockets": 0,
+    "p2rank_top_score": 1.94,
+    "ortholog_result": {
+      "pan_tick": false,
+      "species_coverage": 0,
+      "orthologs": {
+        "amblyomma_americanum": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        },
+        "dermacentor_variabilis": {
+          "ortholog_call": "No hit",
+          "identity_pct": 0
+        }
+      }
+    },
+    "gene": "Salp9Pac",
+    "function": "Salivary protein that facilitates blood feeding of adult ticks on vertebrate species (PubMed:14745044). Inhibits the lectin pathway of complement system activation in the host (PubMed:34118237)",
+    "subcellular": "Secreted",
+    "interpro_domains": [
+      {
+        "id": "IPR011694",
+        "name": "Ixonnexin-like",
+        "type": "family"
+      }
+    ],
+    "interpro_go": [],
+    "function_class": "Unknown",
+    "best_score": -8.758,
+    "best_ligand": "CHEMBL10055",
+    "n_hits": 210,
+    "hit_rate": 1.0
   }
 ]

@@ -278,6 +278,11 @@ def main():
                         help="Number of top targets to analyze (default: 10)")
     parser.add_argument("--identity", type=float, default=PAN_TICK_IDENTITY,
                         help=f"Min identity%% for pan-tick call (default: {PAN_TICK_IDENTITY})")
+    parser.add_argument("--min-species", type=int, default=1, metavar="N",
+                        help="Min number of other-species orthologs required for pan-tick "
+                             "label (default: 1; use 2 to require all species). "
+                             "Default 1 is appropriate when one DB is sparse (e.g. "
+                             "D. variabilis with only 166 UniProt seqs).")
     parser.add_argument("--dry-run", action="store_true",
                         help="Download proteomes + build DBs, but skip BLAST")
     args = parser.parse_args()
@@ -290,7 +295,9 @@ def main():
     print(f"================================")
     print(f"Query species:  Ixodes scapularis")
     print(f"Target species: {', '.join(TARGET_SPECIES)}")
-    print(f"Pan-tick identity threshold: {args.identity}%\n")
+    print(f"Pan-tick identity threshold: {args.identity}%")
+    print(f"Pan-tick min species:        {args.min_species}/{len(TARGET_SPECIES)} "
+          f"{'(any 1 other species)' if args.min_species == 1 else '(all species required)'}\n")
 
     # Step 1: Ensure proteomes for other species are downloaded
     species_dbs = {}
@@ -358,21 +365,27 @@ def main():
                 result["orthologs"][sp] = {"ortholog_call": "No hit", "identity_pct": 0}
                 print(f"  {common}: No hit (E-value > {BLAST_EVALUE_CUTOFF})")
 
-        # Pan-tick flag: ortholog in BOTH other species at threshold
+        # Pan-tick flag: ortholog in >= min_species other species at threshold
+        # Default min_species=1 is appropriate when one DB is sparse (e.g. D. variabilis
+        # has only 166 UniProt sequences — many true orthologs simply aren't sequenced).
         all_hits = list(result["orthologs"].values())
         strong_hits = [
             h for h in all_hits
             if h.get("identity_pct", 0) >= args.identity
             and h.get("coverage_pct", 0) >= 70
         ]
-        pan_tick = len(strong_hits) == len(TARGET_SPECIES)
+        pan_tick = len(strong_hits) >= args.min_species
 
-        result["pan_tick"]         = pan_tick
-        result["species_coverage"] = sum(1 for h in all_hits
-                                         if h.get("identity_pct", 0) >= GOOD_IDENTITY)
+        result["pan_tick"]           = pan_tick
+        result["n_strong_orthologs"] = len(strong_hits)
+        result["min_species_used"]   = args.min_species
+        result["species_coverage"]   = sum(1 for h in all_hits
+                                           if h.get("identity_pct", 0) >= GOOD_IDENTITY)
         species_cov = result["species_coverage"]
         if pan_tick:
-            print(f"  *** PAN-TICK TARGET -- conserved in all 3 species (broad-spectrum lead) ***")
+            n_sp = len(strong_hits)
+            label = "all" if n_sp == len(TARGET_SPECIES) else f"{n_sp}/{len(TARGET_SPECIES)}"
+            print(f"  *** PAN-TICK TARGET -- conserved in {label} other species (broad-spectrum lead) ***")
         elif species_cov >= 1:
             sp_name = next(
                 (sp for sp, h in result["orthologs"].items()
@@ -433,10 +446,13 @@ def main():
         species_spec_count = sum(1 for r in results.values()
                                  if not r.get("pan_tick") and r.get("species_coverage", 0) >= 1)
         no_ortholog_count  = len(results) - pan_tick_count - species_spec_count
-        print(f"\nSummary:")
+        n_req = args.min_species
+        sp_label = (f"all {len(TARGET_SPECIES)}" if n_req == len(TARGET_SPECIES)
+                    else f">={n_req}/{len(TARGET_SPECIES)}")
+        print(f"\nSummary (min-species={n_req}, identity>={args.identity}%):")
         print(f"  Targets analyzed:      {len(results)}")
-        print(f"  Pan-tick (all 3):      {pan_tick_count}  "
-              f"(>={args.identity}% identity in both other species)")
+        print(f"  Pan-tick ({sp_label}):    {pan_tick_count}  "
+              f"(>={args.identity}% identity in {sp_label} other species)")
         print(f"  Species-specific:      {species_spec_count}  "
               f"(conserved in 1 other species -- still valid leads)")
         print(f"  I. scapularis only:    {no_ortholog_count}  "

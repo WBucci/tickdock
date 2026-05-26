@@ -564,6 +564,9 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
          [sys.executable, os.path.join(BASE_DIR, "scripts", "check_promiscuous.py"),
           "--update-config"],   # auto-patches config.py with newly found binders
          120),
+        ("Score back-annotation",
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "annotate_scores.py")],
+         60),
         ("P2Rank pocket prediction",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "run_p2rank.py")],
          300),   # ~5s/target × 42 targets ≈ 3-4 min; campaign_state fallback covers all
@@ -576,7 +579,8 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
             "Cross-species orthologs",
             [sys.executable,
              os.path.join(BASE_DIR, "scripts", "cross_species_orthologs.py"),
-             "--top", str(top_targets)],
+             "--top", str(top_targets),
+             "--min-species", "1"],  # 1-of-2: D. variabilis has only 166 seqs
             1800,   # up to 30 min on first run (full proteome download + BLAST)
         ))
 

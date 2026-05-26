@@ -87,7 +87,7 @@ def query_interpro(accession: str) -> dict:
             function_clues.append(entry_name)
 
         # Extract GO terms
-        for go in meta.get("go_terms", []):
+        for go in (meta.get("go_terms") or []):
             go_id   = go.get("identifier", "")
             go_name = go.get("name", "")
             if go_id and go_id not in {g["id"] for g in result["go_terms"]}:
