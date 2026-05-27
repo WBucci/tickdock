@@ -1,0 +1,43 @@
+accession	name	pan_tick	rnai_evidence	feeding_relevant	evidence_source	note	fold_change_est	final_score
+B7P2S1	B7P2S1	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		21
+B7QBP7	Proton-coupled zinc antiporter SLC30A9, 	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		21
+B7P9U9	Ecdysone receptor	Yes	Yes	True	Keyword match	Name/annotation matches feeding-stage gene families: ecdysone	Unknown — inferred from gene family	20
+B7PX94	B7PX94	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		19
+B7PVD7	vesicle-fusing ATPase	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		19
+A0A4D5RMG2	Trifunctional enzyme subunit alpha, mito	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		19
+B7PY20	B7PY20	Yes	No	True	Literature	Nuclear hormone receptor; ecdysone signaling drives tick molting/feeding. NHR upregulated during engorgement (Gulia-Nuss 2016 Nat Commun).	3-10x (feeding vs unfed, class estimate)	18
+B7QAF3	B7QAF3	No	No	False	No data	No feeding-upregulation evidence found in keyword scan		18
+B7P6A8	B7P6A8	No	No	False	No data	No feeding-upregulation evidence found in keyword scan		18
+B7Q1X5	B7Q1X5	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		17
+A0A4D5RNM5	Nuclear receptor subfamily 2 group B mem	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+B7PMS2	Nuclear receptor subfamily 2 group B mem	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+B7QNX4	Aryl hydrocarbon receptor nuclear transl	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+A0A4D5RYT8	A0A4D5RYT8	No	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+A0A4D5S2A5	A0A4D5S2A5	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+A0A4D5RGQ5	Metallophosphoesterase 1 homolog	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+B7QJZ7	F-ATPase gamma subunit	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+A0A4D5RMV5	A0A4D5RMV5	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+A0A4D5RNJ0	Oligomycin sensitivity conferral protein	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+A0A4D5S7D6	F-ATPase gamma subunit	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		16
+B7P5E9	B7P5E9	No	No	True	Inference	GPI-anchor remodeling required for surface protein display. Surface proteome remodeled during feeding (Ayllon 2015). Bm86 (GPI-anchored) is feeding-st	Unknown; GPI pathway constitutively active	16
+B7Q255	Homeodomain transcription factor	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		15
+Q5Q995	Protein KRTCAP2 homolog	No	No	False	No data	No feeding-upregulation evidence found in keyword scan		15
+B7PIZ2	B7PIZ2	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		11
+A0A4D5RDE4	A0A4D5RDE4	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		10
+B7P877	B7P877	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+B7PBI5	B7PBI5	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+B7PJS6	B7PJS6	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+B7PKZ2	B7PKZ2	No	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+B7PRF6	B7PRF6	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+B7PXE3	B7PXE3	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+B7PY76	B7PY76	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+B7Q1Q9	B7Q1Q9	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+B7Q290	B7Q290	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+B7QDG3	B7QDG3	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+F6KSY2	F6KSY2	No	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+Q202J4	Q202J4	No	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+Q4PLZ3	Q4PLZ3	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+Q4PM54	Q4PM54	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+Q4PMB3	Q4PMB3	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+Q4PMC9	Q4PMC9	Yes	No	False	No data	No feeding-upregulation evidence found in keyword scan		0
+Q8MUP7	Q8MUP7	No	No	True	Keyword match	Name/annotation matches feeding-stage gene families: salp	Unknown — inferred from gene family	0
