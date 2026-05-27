@@ -1,0 +1,1040 @@
+{
+  "species": "Ixodes scapularis",
+  "taxon_id": "6945",
+  "uniprot_kw_gpi": {
+    "A0A4D5RYJ1": "glycerophosphocholine cholinephosphodiesterase",
+    "A0A4D5S044": "glycerophosphocholine cholinephosphodiesterase",
+    "B7QFI1": "glycerophosphocholine cholinephosphodiesterase",
+    "B7P2C8": "glycerophosphocholine cholinephosphodiesterase",
+    "A0A4D5RRU4": "alkaline phosphatase",
+    "A0A4D5RSD5": "alkaline phosphatase",
+    "A0A4D5RXT4": "Putative heparin sulfate cell surface proteoglycan",
+    "B7PKP6": "Aminopeptidase N, putative",
+    "B7PRT4": "Glypican, putative",
+    "A0A4D5RS72": "alkaline phosphatase",
+    "B7QGN3": "Alkaline phosphatase",
+    "A0A4D5RNP2": "Putative heparin sulfate cell surface proteoglycan",
+    "B7PRT5": "Uncharacterized protein"
+  },
+  "heuristic_gpi": [
+    "Qptc",
+    "TROSPA",
+    "Cbp20"
+  ],
+  "pipeline_gpi": {
+    "A0A4D5RIV6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RJS1": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5S6Q5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap",
+        "gpi"
+      ]
+    },
+    "B7P4G7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PB66": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PND3": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "B7PXT8": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7Q0F5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7Q0S4": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "B7QAM5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7QAV0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A1S4L3D9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RHA3": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RJW9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKD3": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKD9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi",
+        "gpi-anchor"
+      ]
+    },
+    "A0A4D5RKJ8": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKX2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi",
+        "gpi-anchor"
+      ]
+    },
+    "A0A4D5RML4": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi",
+        "gpi-anchor"
+      ]
+    },
+    "B7Q0Z8": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7QEP7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7QJ54": {
+      "source": "novelty_candidates",
+      "terms": [
+        "glycosylphosphatidylinositol",
+        "gpi"
+      ]
+    },
+    "A0A1S4LHD0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RBQ8": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RCF4": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5REF5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RH32": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RH72": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RI03": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RIK7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RIL0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RIM2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKH2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RM53": {
+      "source": "novelty_candidates",
+      "terms": [
+        "glycosylphosphatidylinositol",
+        "pgap",
+        "gpi"
+      ]
+    },
+    "A0A4D5RM91": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RMG8": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PXE3": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7QHQ8": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RJG0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKX0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RNU0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RPS5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5S478": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "B7PAJ0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PKP7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PMR9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PTD8": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "B7Q763": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7QF55": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A1S4LZG7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RBQ6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RDP9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RDR6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5REA9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RED3": {
+      "source": "novelty_candidates",
+      "terms": [
+        "glycosylphosphatidylinositol",
+        "gpi",
+        "gpi-anchor"
+      ]
+    },
+    "A0A4D5REI5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5REJ6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RF65": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RFK4": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RGH0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RID7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RJD3": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RJR4": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RJS4": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RK91": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RKI2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RKN2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RLH1": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RLH2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RLJ1": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RLT9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RLY2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RLY4": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RMK6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RML6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RYJ1": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi",
+        "gpi-anchor"
+      ]
+    },
+    "A0A4D5S044": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi",
+        "gpi-anchor"
+      ]
+    },
+    "A0A4D5RFY9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap",
+        "gpi"
+      ]
+    },
+    "A0A4D5RL82": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RNU7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PGS0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PKV6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "B7Q0E7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A1S4M1H9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RAN6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RBI8": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap",
+        "gpi"
+      ]
+    },
+    "A0A4D5RF43": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RFA6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RG33": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RHV3": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RI51": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RI81": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RIA1": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap",
+        "gpi"
+      ]
+    },
+    "A0A4D5RIK9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi",
+        "gpi-anchor"
+      ]
+    },
+    "A0A4D5RJA1": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RJB7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "glycosylphosphatidylinositol",
+        "gpi",
+        "gpi-anchor"
+      ]
+    },
+    "A0A4D5RJK9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RJQ5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RJR1": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RJW1": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RK07": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKG2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKJ4": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKS5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RLE6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RLP2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RM57": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RP38": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RER6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RJ03": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RLE2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7P7P2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PR45": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PVU5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A1S4LP77": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RBH9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RC73": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RCQ9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RD45": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RDY9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5REL5": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5REZ1": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RHZ4": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RJY6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKL9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RKY7": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7PY76": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RWM0": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap",
+        "gpi"
+      ]
+    },
+    "A0A4D5RG72": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RKY2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RTC6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "B7Q0R9": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "B7QG93": {
+      "source": "novelty_candidates",
+      "terms": [
+        "pgap"
+      ]
+    },
+    "A0A4D5RMG6": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5S9W2": {
+      "source": "novelty_candidates",
+      "terms": [
+        "gpi"
+      ]
+    },
+    "A0A4D5RGQ5": {
+      "source": "final_targets",
+      "terms": [
+        "pgap",
+        "gpi",
+        "cdc1"
+      ]
+    },
+    "A0A4D5RMV5": {
+      "source": "final_targets",
+      "terms": [
+        "pgap",
+        "gpi",
+        "cdc1"
+      ]
+    },
+    "B7P5E9": {
+      "source": "final_targets",
+      "terms": [
+        "pgap",
+        "gpi",
+        "cdc1"
+      ]
+    }
+  },
+  "union_count": 152,
+  "union_accessions": [
+    "A0A1S4L3D9",
+    "A0A1S4LHD0",
+    "A0A1S4LP77",
+    "A0A1S4LZG7",
+    "A0A1S4M1H9",
+    "A0A4D5RAN6",
+    "A0A4D5RBH9",
+    "A0A4D5RBI8",
+    "A0A4D5RBQ6",
+    "A0A4D5RBQ8",
+    "A0A4D5RC73",
+    "A0A4D5RCF4",
+    "A0A4D5RCQ9",
+    "A0A4D5RD45",
+    "A0A4D5RDP9",
+    "A0A4D5RDR6",
+    "A0A4D5RDY9",
+    "A0A4D5REA9",
+    "A0A4D5RED3",
+    "A0A4D5REF5",
+    "A0A4D5REI5",
+    "A0A4D5REJ6",
+    "A0A4D5REL5",
+    "A0A4D5RER6",
+    "A0A4D5REZ1",
+    "A0A4D5RF43",
+    "A0A4D5RF65",
+    "A0A4D5RFA6",
+    "A0A4D5RFK4",
+    "A0A4D5RFY9",
+    "A0A4D5RG33",
+    "A0A4D5RG72",
+    "A0A4D5RGH0",
+    "A0A4D5RGQ5",
+    "A0A4D5RH32",
+    "A0A4D5RH72",
+    "A0A4D5RHA3",
+    "A0A4D5RHV3",
+    "A0A4D5RHZ4",
+    "A0A4D5RI03",
+    "A0A4D5RI51",
+    "A0A4D5RI81",
+    "A0A4D5RIA1",
+    "A0A4D5RID7",
+    "A0A4D5RIK7",
+    "A0A4D5RIK9",
+    "A0A4D5RIL0",
+    "A0A4D5RIM2",
+    "A0A4D5RIV6",
+    "A0A4D5RJ03",
+    "A0A4D5RJA1",
+    "A0A4D5RJB7",
+    "A0A4D5RJD3",
+    "A0A4D5RJG0",
+    "A0A4D5RJK9",
+    "A0A4D5RJQ5",
+    "A0A4D5RJR1",
+    "A0A4D5RJR4",
+    "A0A4D5RJS1",
+    "A0A4D5RJS4",
+    "A0A4D5RJW1",
+    "A0A4D5RJW9",
+    "A0A4D5RJY6",
+    "A0A4D5RK07",
+    "A0A4D5RK91",
+    "A0A4D5RKD3",
+    "A0A4D5RKD9",
+    "A0A4D5RKG2",
+    "A0A4D5RKH2",
+    "A0A4D5RKI2",
+    "A0A4D5RKJ4",
+    "A0A4D5RKJ8",
+    "A0A4D5RKL9",
+    "A0A4D5RKN2",
+    "A0A4D5RKS5",
+    "A0A4D5RKX0",
+    "A0A4D5RKX2",
+    "A0A4D5RKY2",
+    "A0A4D5RKY7",
+    "A0A4D5RL82",
+    "A0A4D5RLE2",
+    "A0A4D5RLE6",
+    "A0A4D5RLH1",
+    "A0A4D5RLH2",
+    "A0A4D5RLJ1",
+    "A0A4D5RLP2",
+    "A0A4D5RLT9",
+    "A0A4D5RLY2",
+    "A0A4D5RLY4",
+    "A0A4D5RM53",
+    "A0A4D5RM57",
+    "A0A4D5RM91",
+    "A0A4D5RMG6",
+    "A0A4D5RMG8",
+    "A0A4D5RMK6",
+    "A0A4D5RML4",
+    "A0A4D5RML6",
+    "A0A4D5RMV5",
+    "A0A4D5RNP2",
+    "A0A4D5RNU0",
+    "A0A4D5RNU7",
+    "A0A4D5RP38",
+    "A0A4D5RPS5",
+    "A0A4D5RRU4",
+    "A0A4D5RS72",
+    "A0A4D5RSD5",
+    "A0A4D5RTC6",
+    "A0A4D5RWM0",
+    "A0A4D5RXT4",
+    "A0A4D5RYJ1",
+    "A0A4D5S044",
+    "A0A4D5S478",
+    "A0A4D5S6Q5",
+    "A0A4D5S9W2",
+    "B7P2C8",
+    "B7P4G7",
+    "B7P5E9",
+    "B7P7P2",
+    "B7PAJ0",
+    "B7PB66",
+    "B7PGS0",
+    "B7PKP6",
+    "B7PKP7",
+    "B7PKV6",
+    "B7PMR9",
+    "B7PND3",
+    "B7PR45",
+    "B7PRT4",
+    "B7PRT5",
+    "B7PTD8",
+    "B7PVU5",
+    "B7PXE3",
+    "B7PXT8",
+    "B7PY76",
+    "B7Q0E7",
+    "B7Q0F5",
+    "B7Q0R9",
+    "B7Q0S4",
+    "B7Q0Z8",
+    "B7Q763",
+    "B7QAM5",
+    "B7QAV0",
+    "B7QEP7",
+    "B7QF55",
+    "B7QFI1",
+    "B7QG93",
+    "B7QGN3",
+    "B7QHQ8",
+    "B7QJ54",
+    "Cbp20",
+    "Qptc",
+    "TROSPA"
+  ],
+  "estimated_total_gpi_low": 200,
+  "estimated_total_gpi_high": 600,
+  "literature_context": {
+    "Bm86": "B. microplus Bm86 vaccine antigen; GPI-anchored (PMID 8269092)",
+    "VSPA": "Variable surface antigen; GPI-anchored in tick midgut",
+    "OspC": "Not GPI-anchored in ticks \u2014 Borrelia surface protein"
+  }
+}
