@@ -182,3 +182,18 @@ Note: this is a virtual screen result. Experimental validation required.
 Discussion as evidence of differential binding potential, supporting
 further experimental selectivity profiling.
 
+
+## Human TRβ (P10828) vs Tick NHR (B7PY20) Selectivity
+
+Human P10828 AlphaFold mean pLDDT: 80.2
+
+| Ligand | Tick B7PY20 (kcal/mol) | Human TRβ (kcal/mol) | Ratio | Verdict |
+|--------|------------------------|----------------------|-------|---------|
+| CHEMBL8922 | -12.034 | -2.817 | 0.234 | SELECTIVE ✓✓ |
+| CHEMBL429379 | -11.785 | -3.999 | 0.339 | SELECTIVE ✓✓ |
+| CHEMBL9203 | -11.755 | -1.479 | 0.126 | SELECTIVE ✓✓ |
+| CHEMBL9190 | -11.604 | -6.283 | 0.541 | SELECTIVE ✓✓ |
+| CHEMBL8920 | -11.581 | +1.204 | -0.104 | SELECTIVE ✓✓ |
+
+Ratio < 0.60 = tick enzyme binds ≥40% stronger than human TRβ.
+
