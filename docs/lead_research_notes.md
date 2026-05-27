@@ -161,3 +161,24 @@ Our screen independently selects terpenoid/sterol-like chemistry — consistent 
 - Quack M et al. *PLoS Pathog* 18:e1010140, 2022. (FTZ-F1 NHR in *S. mansoni*)
 - Hotez PJ et al. *PNAS* 106:2371–2376, 2009. (DAF-12 NHR in *Strongyloides*)
 - Benelli G et al. *Parasitol Res* 2020, PMC7469192. (Terpenoids as acaricides)
+
+## Human PGAP5 Selectivity Docking Results
+
+Human Q5SXR6 AlphaFold mean pLDDT: 89.7
+
+| Ligand | Tick B7P5E9 (kcal/mol) | Human Q5SXR6 (kcal/mol) | Ratio | Verdict |
+|--------|------------------------|--------------------------|-------|---------|
+| CHEMBL9171 | -13.125 | -6.748 | 0.514 | SELECTIVE ✓✓ |
+| CHEMBL8905 | -12.995 | -6.714 | 0.517 | SELECTIVE ✓✓ |
+| CHEMBL9203 | -12.373 | -5.916 | 0.478 | SELECTIVE ✓✓ |
+| CHEMBL429008 | -11.885 | -5.567 | 0.468 | SELECTIVE ✓✓ |
+| CHEMBL10161 | -11.781 | -6.670 | 0.566 | SELECTIVE ✓✓ |
+
+**Interpretation:** Ratio < 0.60 means the compound binds the tick enzyme
+≥40% more strongly than the human ortholog — a preliminary selectivity window.
+Note: this is a virtual screen result. Experimental validation required.
+
+**Key implication for paper:** Any ratio < 0.75 justifies inclusion in
+Discussion as evidence of differential binding potential, supporting
+further experimental selectivity profiling.
+

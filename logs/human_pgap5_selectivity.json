@@ -1,0 +1,51 @@
+{
+  "human_accession": "Q53F39",
+  "tick_accession": "B7P5E9",
+  "human_plddt_mean": 89.70820707070706,
+  "pocket": {
+    "cx": 31.889,
+    "cy": 28.104,
+    "cz": -22.989,
+    "volume": 454.332,
+    "score": 0.683
+  },
+  "exhaustiveness": 8,
+  "results": [
+    {
+      "ligand": "CHEMBL9171",
+      "tick_score": -13.125,
+      "human_score": -6.748,
+      "selectivity_ratio": 0.5141333333333333,
+      "verdict": "SELECTIVE \u2713\u2713"
+    },
+    {
+      "ligand": "CHEMBL8905",
+      "tick_score": -12.995,
+      "human_score": -6.714,
+      "selectivity_ratio": 0.5166602539438246,
+      "verdict": "SELECTIVE \u2713\u2713"
+    },
+    {
+      "ligand": "CHEMBL9203",
+      "tick_score": -12.373,
+      "human_score": -5.916,
+      "selectivity_ratio": 0.47813788086963555,
+      "verdict": "SELECTIVE \u2713\u2713"
+    },
+    {
+      "ligand": "CHEMBL429008",
+      "tick_score": -11.885,
+      "human_score": -5.567,
+      "selectivity_ratio": 0.4684055532183425,
+      "verdict": "SELECTIVE \u2713\u2713"
+    },
+    {
+      "ligand": "CHEMBL10161",
+      "tick_score": -11.781,
+      "human_score": -6.67,
+      "selectivity_ratio": 0.5661658602835073,
+      "verdict": "SELECTIVE \u2713\u2713"
+    }
+  ],
+  "missing_ligands": []
+}
