@@ -122,10 +122,10 @@
     "allosteric_sites": 1,
     "blast_result": {
       "max_identity": 0.308,
-      "human_risk": "LOW",
+      "human_risk": false,
       "host_identities": {
         "human": 0.308,
-        "dog": 0.277,
+        "dog": 0.30539,
         "mouse": 0.265
       },
       "method": "local_blastp"
@@ -392,10 +392,10 @@
     "allosteric_sites": 4,
     "blast_result": {
       "max_identity": 0.589,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.583,
-        "dog": 0.0,
+        "dog": 0.58043,
         "mouse": 0.589
       },
       "method": "local_blastp"
@@ -613,11 +613,11 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": 0.44,
-      "human_risk": "MEDIUM",
+      "max_identity": 0.44133,
+      "human_risk": true,
       "host_identities": {
         "human": 0.44,
-        "dog": 0.296,
+        "dog": 0.44133,
         "mouse": 0.434
       },
       "method": "local_blastp"
@@ -872,10 +872,10 @@
     "allosteric_sites": 1,
     "blast_result": {
       "max_identity": 0.706,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.578,
-        "dog": 0.389,
+        "dog": 0.58763,
         "mouse": 0.706
       },
       "method": "local_blastp"
@@ -1065,10 +1065,10 @@
     "allosteric_sites": 1,
     "blast_result": {
       "max_identity": 0.773,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.771,
-        "dog": 0.3,
+        "dog": 0.76606,
         "mouse": 0.773
       },
       "method": "local_blastp"
@@ -1366,11 +1366,11 @@
     "druggable_pockets": 2,
     "allosteric_sites": 1,
     "blast_result": {
-      "max_identity": 0.619,
-      "human_risk": "MEDIUM",
+      "max_identity": 0.62228,
+      "human_risk": true,
       "host_identities": {
         "human": 0.606,
-        "dog": 0.0,
+        "dog": 0.62228,
         "mouse": 0.619
       },
       "method": "local_blastp"
@@ -1593,10 +1593,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.351,
-      "human_risk": "LOW",
+      "human_risk": false,
       "host_identities": {
         "human": 0.296,
-        "dog": 0.256,
+        "dog": 0.29639,
         "mouse": 0.351
       },
       "method": "local_blastp"
@@ -1749,10 +1749,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.385,
-      "human_risk": "LOW",
+      "human_risk": false,
       "host_identities": {
         "human": 0.385,
-        "dog": 0.301,
+        "dog": 0.37363,
         "mouse": 0.33
       },
       "method": "local_blastp"
@@ -1890,11 +1890,11 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": 0.344,
-      "human_risk": "LOW",
+      "max_identity": 0.34436999999999995,
+      "human_risk": false,
       "host_identities": {
         "human": 0.338,
-        "dog": 0.0,
+        "dog": 0.34436999999999995,
         "mouse": 0.344
       },
       "method": "local_blastp"
@@ -2042,10 +2042,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.592,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.518,
-        "dog": 0.557,
+        "dog": 0.57746,
         "mouse": 0.592
       },
       "method": "local_blastp"
@@ -2221,10 +2221,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.756,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.756,
-        "dog": 0.724,
+        "dog": 0.75,
         "mouse": 0.749
       },
       "method": "local_blastp"
@@ -2428,10 +2428,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.756,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.756,
-        "dog": 0.637,
+        "dog": 0.70133,
         "mouse": 0.701
       },
       "method": "local_blastp"
@@ -2643,10 +2643,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.635,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.629,
-        "dog": 0.357,
+        "dog": 0.632,
         "mouse": 0.635
       },
       "method": "local_blastp"
@@ -2853,10 +2853,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.733,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.733,
-        "dog": 0.392,
+        "dog": 0.73292,
         "mouse": 0.733
       },
       "method": "local_blastp"
@@ -3092,10 +3092,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.732,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.632,
-        "dog": 0.392,
+        "dog": 0.6375,
         "mouse": 0.732
       },
       "method": "local_blastp"
@@ -3322,10 +3322,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.464,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.464,
-        "dog": 0.0,
+        "dog": 0.45014000000000004,
         "mouse": 0.446
       },
       "method": "local_blastp"
@@ -3503,11 +3503,11 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": 0.63,
-      "human_risk": "MEDIUM",
+      "max_identity": 0.63028,
+      "human_risk": true,
       "host_identities": {
         "human": 0.63,
-        "dog": 0.0,
+        "dog": 0.63028,
         "mouse": 0.63
       },
       "method": "local_blastp"
@@ -3700,10 +3700,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.441,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.441,
-        "dog": 0.0,
+        "dog": 0.42222000000000004,
         "mouse": 0.426
       },
       "method": "local_blastp"
@@ -3845,10 +3845,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.48,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.477,
-        "dog": 0.0,
+        "dog": 0.46774,
         "mouse": 0.48
       },
       "method": "local_blastp"
@@ -3997,11 +3997,11 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": 0.63,
-      "human_risk": "MEDIUM",
+      "max_identity": 0.63028,
+      "human_risk": true,
       "host_identities": {
         "human": 0.63,
-        "dog": 0.0,
+        "dog": 0.63028,
         "mouse": 0.63
       },
       "method": "local_blastp"
@@ -4224,11 +4224,11 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": 0.418,
-      "human_risk": "MEDIUM",
+      "max_identity": 0.42322000000000004,
+      "human_risk": true,
       "host_identities": {
         "human": 0.418,
-        "dog": 0.0,
+        "dog": 0.42322000000000004,
         "mouse": 0.404
       },
       "method": "local_blastp"
@@ -4438,11 +4438,11 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": 0.518,
-      "human_risk": "MEDIUM",
+      "max_identity": 0.51839,
+      "human_risk": true,
       "host_identities": {
         "human": 0.518,
-        "dog": 0.0,
+        "dog": 0.51839,
         "mouse": 0.515
       },
       "method": "local_blastp"
@@ -4588,10 +4588,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.493,
-      "human_risk": "MEDIUM",
+      "human_risk": true,
       "host_identities": {
         "human": 0.485,
-        "dog": 0.493,
+        "dog": 0.49254,
         "mouse": 0.493
       },
       "method": "local_blastp"
@@ -4747,11 +4747,11 @@
     "druggable_pockets": 1,
     "allosteric_sites": 0,
     "blast_result": {
-      "max_identity": 0.874,
-      "human_risk": "HIGH",
+      "max_identity": 0.87417,
+      "human_risk": true,
       "host_identities": {
         "human": 0.874,
-        "dog": 0.319,
+        "dog": 0.87417,
         "mouse": 0.868
       },
       "method": "local_blastp"
@@ -4918,10 +4918,10 @@
     "allosteric_sites": 0,
     "blast_result": {
       "max_identity": 0.902,
-      "human_risk": "HIGH",
+      "human_risk": true,
       "host_identities": {
         "human": 0.902,
-        "dog": 0.256,
+        "dog": 0.90164,
         "mouse": 0.896
       },
       "method": "local_blastp"
@@ -5128,7 +5128,14 @@
     "best_score": -8.39,
     "best_ligand": "CHEMBL268388",
     "n_hits": 488,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.7970999999999999
+      },
+      "max_identity": 0.7970999999999999,
+      "human_risk": true
+    }
   },
   {
     "accession": "B7PBI5",
@@ -5229,7 +5236,14 @@
     "best_score": -8.699,
     "best_ligand": "CHEMBL266039",
     "n_hits": 354,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.51333
+      },
+      "max_identity": 0.51333,
+      "human_risk": true
+    }
   },
   {
     "accession": "B7PJS6",
@@ -5441,7 +5455,14 @@
     "best_score": -9.451,
     "best_ligand": "CHEMBL10055",
     "n_hits": 804,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.5648599999999999
+      },
+      "max_identity": 0.5648599999999999,
+      "human_risk": true
+    }
   },
   {
     "accession": "B7PKZ2",
@@ -5510,7 +5531,12 @@
     "best_score": -7.376,
     "best_ligand": "CHEMBL428",
     "n_hits": 24,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": null
+      }
+    }
   },
   {
     "accession": "B7PRF6",
@@ -5622,7 +5648,14 @@
     "best_score": -9.515,
     "best_ligand": "CHEMBL428480",
     "n_hits": 622,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.64557
+      },
+      "max_identity": 0.64557,
+      "human_risk": true
+    }
   },
   {
     "accession": "B7PXE3",
@@ -5754,7 +5787,14 @@
     "best_score": -8.056,
     "best_ligand": "CHEMBL8905",
     "n_hits": 150,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.72
+      },
+      "max_identity": 0.72,
+      "human_risk": true
+    }
   },
   {
     "accession": "B7PY76",
@@ -5890,7 +5930,14 @@
     "best_score": -7.537,
     "best_ligand": "CHEMBL426",
     "n_hits": 18,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.47619
+      },
+      "max_identity": 0.47619,
+      "human_risk": true
+    }
   },
   {
     "accession": "B7Q1Q9",
@@ -5987,7 +6034,14 @@
     "best_score": -9.425,
     "best_ligand": "CHEMBL10035",
     "n_hits": 586,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.7961199999999999
+      },
+      "max_identity": 0.7961199999999999,
+      "human_risk": true
+    }
   },
   {
     "accession": "B7Q290",
@@ -6025,7 +6079,12 @@
       }
     ],
     "interpro_go": [],
-    "function_class": "Unknown"
+    "function_class": "Unknown",
+    "blast_result": {
+      "host_identities": {
+        "dog": null
+      }
+    }
   },
   {
     "accession": "B7QDG3",
@@ -6090,7 +6149,14 @@
     "best_score": -10.025,
     "best_ligand": "CHEMBL8921",
     "n_hits": 508,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.60345
+      },
+      "max_identity": 0.60345,
+      "human_risk": true
+    }
   },
   {
     "accession": "F6KSY2",
@@ -6123,6 +6189,11 @@
           "ortholog_call": "No hit",
           "identity_pct": 0
         }
+      }
+    },
+    "blast_result": {
+      "host_identities": {
+        "dog": null
       }
     }
   },
@@ -6212,7 +6283,12 @@
     "best_score": -9.518,
     "best_ligand": "CHEMBL417605",
     "n_hits": 696,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": null
+      }
+    }
   },
   {
     "accession": "Q4PLZ3",
@@ -6298,6 +6374,13 @@
           "ortholog_call": "Pan-tick ortholog"
         }
       }
+    },
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.40341
+      },
+      "max_identity": 0.40341,
+      "human_risk": true
     }
   },
   {
@@ -6382,6 +6465,13 @@
           "identity_pct": 0
         }
       }
+    },
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.7590399999999999
+      },
+      "max_identity": 0.7590399999999999,
+      "human_risk": true
     }
   },
   {
@@ -6508,7 +6598,14 @@
     "best_score": -7.512,
     "best_ligand": "CHEMBL417601",
     "n_hits": 88,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.78161
+      },
+      "max_identity": 0.78161,
+      "human_risk": true
+    }
   },
   {
     "accession": "Q4PMC9",
@@ -6572,7 +6669,14 @@
     "best_score": -9.372,
     "best_ligand": "CHEMBL10035",
     "n_hits": 500,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": 0.7365600000000001
+      },
+      "max_identity": 0.7365600000000001,
+      "human_risk": true
+    }
   },
   {
     "accession": "Q8MUP7",
@@ -6630,6 +6734,11 @@
     "best_score": -8.758,
     "best_ligand": "CHEMBL10055",
     "n_hits": 272,
-    "hit_rate": 1.0
+    "hit_rate": 1.0,
+    "blast_result": {
+      "host_identities": {
+        "dog": null
+      }
+    }
   }
 ]

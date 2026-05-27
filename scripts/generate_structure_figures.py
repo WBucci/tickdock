@@ -47,30 +47,37 @@ except ImportError:
 # ── Scaffold class labels (by SMARTS pattern) ─────────────────────────────────
 
 SCAFFOLD_CLASSES = [
-    # Match quinazolinone core
+    # Quinazolinone-hydrazone: quinazolinone ring + hydrazone/urea linker
     ("Quinazolinone-hydrazone",
      Chem.MolFromSmarts("c1ccc2nc(NN)nc(=O)c2c1"),
      "#4C72B0"),   # blue
 
-    # Match imidazopyridine-tetrazole (ARB-like)
+    # Imidazopyridine-tetrazole (ARB-like): 1H-tetrazole ring is the key feature
+    # CHEMBL429008: imidazo[4,5-c]pyridine-N-benzyl-biphenyl-tetrazole
+    # Tetrazole = 4N + 1C aromatic ring: c1nn[nH]n1
     ("Imidazopyridine-tetrazole",
-     Chem.MolFromSmarts("c1cncc2[nH]ccn12"),
+     Chem.MolFromSmarts("c1nn[nH]n1"),   # 1H-tetrazole
      "#DD8452"),   # orange
 
-    # Match piperazine-heteroaryl class
+    # Piperazine-heteroaryl: two-N six-membered ring
     ("Piperazine-heteroaryl",
-     Chem.MolFromSmarts("N1CCN(CC1)"),
+     Chem.MolFromSmarts("[NH0]1CC[NH0]CC1"),   # N-substituted piperazine
      "#55A868"),   # green
 
-    # Flavonoid / polyphenol
-    ("Flavonoid",
-     Chem.MolFromSmarts("O=C1CCc2cc(O)ccc21"),
+    # Benzazepinone: 7-membered lactam fused to benzene
+    ("Benzazepinone",
+     Chem.MolFromSmarts("O=C1CCCc2ccccc21"),
      "#C44E52"),   # red
 
     # Carbazole / tetrahydrocarbazole
     ("Carbazole-amide",
      Chem.MolFromSmarts("c1ccc2[nH]c3ccccc3c2c1"),
      "#8172B2"),   # purple
+
+    # Flavonoid / polyphenol (PAINS class — for context)
+    ("Flavonoid",
+     Chem.MolFromSmarts("O=C1CCc2ccccc2O1"),
+     "#937860"),   # brown
 ]
 
 
