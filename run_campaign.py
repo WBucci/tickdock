@@ -71,24 +71,52 @@ CAMPAIGN_LOG   = os.path.join(LOG_DIR, "campaign_orchestrator.log")
 # Never overwritten — survives round resets and batch_N_compressed.json recycling.
 PRUNED_LOG     = os.path.join(LOG_DIR, "pruned_nonhits.jsonl")
 
-# Module-level cache of (target, ligand_id) pairs previously docked but pruned
-# (non-hits whose output PDBQTs were deleted by compress_negatives).
-# Populated by load_pruned_cache() at startup; lets already_docked() skip re-docking.
-_PRUNED_CACHE: set = set()
+# Module-level cache: (target, ligand_id) → max exhaustiveness already tried.
+# Populated by load_pruned_cache() at startup.
+# already_docked(target, lig, current_exh) returns True only if cached_exh >= current_exh,
+# so near-misses docked at exh=4 are NOT skipped when the campaign runs at exh=8.
+_PRUNED_CACHE: dict = {}   # (target, ligand_id) -> max_exh_tried
 
 
 def load_pruned_cache() -> None:
-    """Populate _PRUNED_CACHE with all previously-docked non-hits so
-    already_docked() skips re-docking them.
+    """Populate _PRUNED_CACHE from pruned_nonhits.jsonl and batch compressed files.
 
-    Reads from (in order):
+    Both clear-fails and near-misses are stored in the JSONL (each with their
+    exhaustiveness level).  already_docked() uses the stored exh to decide
+    whether a re-dock is needed at a higher exhaustiveness.
+
+    Legacy entries (no "exh" field) are classified by score:
+    - Clear fail (score > hit_thresh + NEAR_MISS_MARGIN): assigned exh=9999 so they
+      are never re-docked regardless of exhaustiveness setting.
+    - Near-miss (hit_thresh < score <= hit_thresh + margin): assigned exh=4 so a
+      campaign run at exh=8 will re-dock them (they may now score as hits).
+
+    Sources (in order, higher exh wins on collision):
     1. pruned_nonhits.jsonl  — append-only cumulative log (survives round resets)
-    2. batch_N_compressed.json — current-round per-batch files (fallback/supplement)
+    2. batch_N_compressed.json — supplement for entries not yet flushed to JSONL
     """
     global _PRUNED_CACHE
-    _PRUNED_CACHE = set()
+    _PRUNED_CACHE = {}
 
-    # 1. Cumulative log (primary source)
+    hit_thresh      = VINA["good_score"]          # e.g. -7.0
+    near_miss_lower = hit_thresh + NEAR_MISS_MARGIN  # e.g. -5.5
+
+    def _absorb(target: str, ligand: str, exh: int):
+        key = (target, ligand)
+        if key not in _PRUNED_CACHE or exh > _PRUNED_CACHE[key]:
+            _PRUNED_CACHE[key] = exh
+
+    def _legacy_exh(score) -> int:
+        """Classify a legacy entry (no stored exh) by its score."""
+        if score is None:
+            return 9999   # unknown score → treat as clear fail
+        if score <= near_miss_lower:
+            # Near-miss zone: was docked at (assumed) exh=4; re-dockable at higher exh
+            return 4
+        # Clear fail: not worth re-docking at any exhaustiveness
+        return 9999
+
+    # 1. Cumulative JSONL (primary source)
     if os.path.exists(PRUNED_LOG):
         try:
             with open(PRUNED_LOG) as f:
@@ -96,22 +124,38 @@ def load_pruned_cache() -> None:
                     line = line.strip()
                     if line:
                         h = json.loads(line)
-                        _PRUNED_CACHE.add((h["target"], h["ligand"]))
+                        if "exh" in h:
+                            exh = h["exh"]
+                        else:
+                            exh = _legacy_exh(h.get("score"))
+                        _absorb(h["target"], h["ligand"], exh)
         except Exception:
             pass
 
-    # 2. Current-round compressed files (supplement — catches entries not yet in JSONL)
-    for path in glob.glob(os.path.join(LOG_DIR, "batch_*_compressed.json")):
+    # 2. Current-round compressed files (supplement)
+    for path in sorted(glob.glob(os.path.join(LOG_DIR, "batch_*_compressed.json"))):
         try:
             with open(path) as f:
                 data = json.load(f)
-            for h in data.get("pruned", []):
-                _PRUNED_CACHE.add((h["target"], h["ligand"]))
+            file_exh = data.get("exh")  # present in new-format files
+            for section in ("pruned", "near_miss"):
+                for h in data.get(section, []):
+                    if "exh" in h:
+                        exh = h["exh"]
+                    elif file_exh is not None:
+                        exh = file_exh
+                    else:
+                        exh = _legacy_exh(h.get("score"))
+                    _absorb(h["target"], h["ligand"], exh)
         except Exception:
             pass
 
-    if _PRUNED_CACHE:
-        log(f"Pruned cache loaded: {len(_PRUNED_CACHE):,} previously-docked non-hits (will skip re-docking)")
+    n_total = len(_PRUNED_CACHE)
+    if n_total:
+        n_near = sum(1 for v in _PRUNED_CACHE.values() if v < 9999)
+        n_perm = n_total - n_near
+        log(f"Pruned cache loaded: {n_total:,} entries "
+            f"({n_perm:,} clear-fails [permanent], {n_near:,} near-misses [re-dockable at higher exh])")
 
 # ── Continuous-pipeline defaults ──────────────────────────────────────────────
 # Start prefetch download when this many batches remain in the current round.
@@ -269,20 +313,22 @@ def get_batches(ligands: list[str], batch_size: int) -> list[list[str]]:
             for i in range(0, len(ligands), batch_size)]
 
 
-def already_docked(target: str, ligand_path: str) -> bool:
-    """Check if this ligand was already docked against this target.
+def already_docked(target: str, ligand_path: str, current_exh: int = DEFAULT_EXH) -> bool:
+    """Check if this ligand was already docked against this target at current_exh.
 
     Returns True if:
-    - output PDBQT exists on disk (hit kept by compress_negatives), OR
-    - (target, ligand_id) is in _PRUNED_CACHE (non-hit whose file was deleted
-      but score was logged in a prior batch_N_compressed.json).
+    - Output PDBQT exists on disk (hit kept by compress_negatives), OR
+    - (target, ligand_id) is in _PRUNED_CACHE AND cached_exh >= current_exh.
+      Near-misses docked at exh=4 return False when current_exh=8, so the campaign
+      re-docks them at the higher setting (they may score as hits).
     """
     ligand_id = os.path.basename(ligand_path).replace(".pdbqt", "")
     out_path  = os.path.join(DOCKING_DIR, f"{target}_results",
                              f"{ligand_id}_out.pdbqt")
     if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
         return True
-    return (target, ligand_id) in _PRUNED_CACHE
+    cached_exh = _PRUNED_CACHE.get((target, ligand_id))
+    return cached_exh is not None and cached_exh >= current_exh
 
 
 # ── Receptor preparation ──────────────────────────────────────────────────────
@@ -362,8 +408,8 @@ def dock_target_batch(target: str, batch_ligands: list[str],
     }
     t0 = time.time()
 
-    # Skip ligands already docked
-    new_ligands = [l for l in batch_ligands if not already_docked(target, l)]
+    # Skip ligands already docked at >= current exhaustiveness
+    new_ligands = [l for l in batch_ligands if not already_docked(target, l, exh)]
     result["n_skipped"] = len(batch_ligands) - len(new_ligands)
 
     if not new_ligands:
@@ -790,27 +836,33 @@ def _parse_vina_score(pdbqt_path: str):
 
 def compress_negatives(batch_id: int,
                        score_threshold: float = None,
+                       current_exh: int = DEFAULT_EXH,
                        dry_run: bool = False) -> dict:
     """
     Delete Vina output PDBQT files for compounds that did NOT score as hits.
     Preserves all scores in a JSON sidecar so the data is never lost.
 
-    A compound is a "hit" if its best pose score <= score_threshold
-    (more negative = better, threshold default = VINA['good_score'] = -7.0).
-    Non-hits: output files deleted, scores logged to batch_N_compressed.json.
+    Three zones (more negative = better binding):
+      score <= threshold            → HIT: keep PDBQT, record in kept[]
+      threshold < score <= lower    → NEAR-MISS: delete PDBQT, log to JSONL with exh,
+                                       add to cache at current_exh.  A future run at
+                                       higher exh will re-dock (cached_exh < new_exh).
+      score > near_miss_lower       → CLEAR FAIL: delete PDBQT, log to JSONL with exh,
+                                       add to cache.  Will NOT re-dock at same or lower exh.
+
+    Both near-misses and clear-fails are written to pruned_nonhits.jsonl with the
+    exhaustiveness level used.  already_docked(target, lig, exh) reads this to decide
+    whether a re-dock is warranted.
     """
     if score_threshold is None:
         score_threshold = VINA["good_score"]
 
-    pruned      = []   # clear fails: cached permanently, never re-docked
-    near_miss   = []   # near threshold: PDBQT deleted but NOT cached → re-dockable
+    pruned      = []   # clear fails: cached at current_exh, skipped unless exh increases
+    near_miss   = []   # near threshold: also cached at current_exh; re-dockable at higher exh
     kept        = []
     bytes_freed = 0
 
-    # Compounds between score_threshold and near_miss_lower are re-dockable:
-    # deleting PDBQT saves space but omitting from pruned cache lets a higher-exh
-    # round re-dock them (they may score as hits at exh=8 after scoring just above
-    # threshold at exh=4).
+    # Zone boundary: compounds between score_threshold and near_miss_lower are near-misses.
     near_miss_lower = score_threshold + NEAR_MISS_MARGIN  # e.g. -7.0 + 1.5 = -5.5
 
     # Load hits already recorded in previous batch compressed files so we don't
@@ -840,12 +892,11 @@ def compress_negatives(batch_id: int,
                 if not dry_run:
                     os.unlink(pdbqt_path)
                 bytes_freed += size
-                entry = {"target": target, "ligand": ligand, "score": score}
+                entry = {"target": target, "ligand": ligand, "score": score,
+                         "exh": current_exh}
                 if score <= near_miss_lower:
-                    # Near-miss: delete PDBQT but keep re-dockable
                     near_miss.append(entry)
                 else:
-                    # Clear fail: cache permanently
                     pruned.append(entry)
             else:
                 if (target, ligand) not in already_logged:
@@ -855,33 +906,38 @@ def compress_negatives(batch_id: int,
     summary = {
         "batch_id":        batch_id,
         "score_threshold": score_threshold,
+        "exh":             current_exh,
         "n_pruned":        len(pruned),
         "n_near_miss":     len(near_miss),
         "n_kept":          len(kept),
         "near_miss_lower": near_miss_lower,
         "mb_freed":        mb_freed,
         "dry_run":         dry_run,
-        "pruned":          pruned,     # clear fails — cached, never re-docked
-        "near_miss":       near_miss,  # PDBQT deleted but NOT cached → re-dockable
+        "pruned":          pruned,     # clear fails — cached at current_exh
+        "near_miss":       near_miss,  # near-threshold — cached at current_exh, re-dockable at higher exh
         "kept":            kept,
     }
     out_path = os.path.join(LOG_DIR, f"batch_{batch_id}_compressed.json")
     with open(out_path, "w") as fh:
         json.dump(summary, fh, indent=2)
 
-    # Append ONLY clear-fail pruned entries to cumulative JSONL.
-    # Near-misses are intentionally omitted so they remain re-dockable.
-    if pruned and not dry_run:
+    # Append BOTH pruned and near-miss to cumulative JSONL, each with their exh.
+    # already_docked() uses the stored exh to gate re-docking at higher exhaustiveness.
+    all_non_hits = pruned + near_miss
+    if all_non_hits and not dry_run:
         with open(PRUNED_LOG, "a") as fh:
-            for h in pruned:
+            for h in all_non_hits:
                 fh.write(json.dumps({"target": h["target"], "ligand": h["ligand"],
-                                     "score": h["score"]}) + "\n")
-        for h in pruned:
-            _PRUNED_CACHE.add((h["target"], h["ligand"]))
+                                     "score": h["score"], "exh": current_exh}) + "\n")
+        for h in all_non_hits:
+            key = (h["target"], h["ligand"])
+            if key not in _PRUNED_CACHE or current_exh > _PRUNED_CACHE[key]:
+                _PRUNED_CACHE[key] = current_exh
 
     action = "Would free" if dry_run else "Freed"
-    log(f"Compress negatives (batch {batch_id}): {len(pruned)} clear-fails pruned, "
-        f"{len(near_miss)} near-misses re-dockable, {len(kept)} hits kept "
+    log(f"Compress negatives (batch {batch_id}, exh={current_exh}): "
+        f"{len(pruned)} clear-fails, {len(near_miss)} near-misses "
+        f"[re-dockable at exh>{current_exh}], {len(kept)} hits kept "
         f"({action} {mb_freed} MB) -> {out_path}")
     return summary
 
@@ -1160,7 +1216,7 @@ def main():
                 if args.compress_every and not args.dry_run:
                     batches_done = len(state.get("batches_completed", []))
                     if batches_done % args.compress_every == 0:
-                        compress_negatives(batch_id)
+                        compress_negatives(batch_id, current_exh=args.exh)
 
                 # Post-batch control check
                 ctrl = read_control()
