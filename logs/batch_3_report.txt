@@ -1,14 +1,15 @@
 ============================================================
-TICKDOCK -- BATCH 3 DISPATCH REPORT  [OK]
-Completed: 2026-05-25T23:18:03.647454
+TICKDOCK -- BATCH 3 DISPATCH REPORT  [WARN]
+Completed: 2026-05-26T21:19:39.867825
 ============================================================
 
 SUMMARY
 -------
-  Ligands docked : 66
-  Targets run    : 42/42 successful
-  Total hits     : 5410  (score <= -7.0 kcal/mol)
-  Wall time      : 1h 16m 34s
+  Ligands docked : 1175
+  Targets run    : 133/138 successful
+  Total hits     : 6340  (score <= -7.0 kcal/mol)
+  Wall time      : 1m 3s
+  Failed targets : B7Q290, F6KSY2, A0A0C9SFH2, B7SP41, Q8T9S3
 
 TOP HITS (by docking score)
 --------------------------
@@ -33,8 +34,8 @@ TOP HITS (by docking score)
 CAMPAIGN PROGRESS
 -----------------
   Batches completed : 4
-  Ligands processed : 4712
-  Cumulative hits   : 18336
+  Ligands processed : 7175
+  Cumulative hits   : 23430
 
 DOWNLOAD STATUS
 ---------------

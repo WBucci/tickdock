@@ -5,72 +5,72 @@
   "steps": {
     "01_fetch_proteome": {
       "step": "01_fetch_proteome",
-      "started": "2026-05-22T18:53:17.504563",
-      "completed": "2026-05-22T18:53:18.925487",
-      "elapsed_sec": 1.4,
+      "started": "2026-05-26T19:06:38.646361",
+      "completed": "2026-05-26T19:06:40.135648",
+      "elapsed_sec": 1.5,
       "params": {
         "species": {
-          "value": "ixodes_scapularis",
-          "description": "UniProt taxon 6945",
-          "timestamp": "2026-05-22T18:53:17.518712"
+          "value": "dermacentor_variabilis",
+          "description": "UniProt taxon 34621",
+          "timestamp": "2026-05-26T19:06:38.703084"
         },
         "reviewed_only": {
-          "value": true,
+          "value": false,
           "description": "Swiss-Prot only if True",
-          "timestamp": "2026-05-22T18:53:17.518716"
+          "timestamp": "2026-05-26T19:06:38.703095"
         },
         "uniprot_fields": {
           "value": "accession,id,protein_name,gene_names,organism_name,sequence,cc_function,ft_binding,xref_pdb,xref_chembl,cc_subcellular_location,ft_site,cc_catalytic_activity,keyword",
           "description": "Fields requested from API",
-          "timestamp": "2026-05-22T18:53:17.518717"
+          "timestamp": "2026-05-26T19:06:38.703097"
         }
       },
       "stats": {
         "total_proteins_fetched": {
-          "value": 51,
-          "description": "All proteins for Ixodes scapularis",
-          "timestamp": "2026-05-22T18:53:18.908816"
+          "value": 166,
+          "description": "All proteins for Dermacentor variabilis",
+          "timestamp": "2026-05-26T19:06:40.040130"
         },
         "with_pdb_structure": {
-          "value": 5,
+          "value": 0,
           "description": "Proteins with PDB cross-ref",
-          "timestamp": "2026-05-22T18:53:18.908826"
+          "timestamp": "2026-05-26T19:06:40.040157"
         },
         "with_chembl_ligands": {
           "value": 0,
           "description": "Proteins with ChEMBL cross-ref",
-          "timestamp": "2026-05-22T18:53:18.908829"
+          "timestamp": "2026-05-26T19:06:40.040162"
         },
         "unknown_function": {
-          "value": 10,
+          "value": 121,
           "description": "Proteins with no functional annotation",
-          "timestamp": "2026-05-22T18:53:18.908830"
+          "timestamp": "2026-05-26T19:06:40.040178"
         }
       },
       "files_in": [],
       "files_out": [
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/proteomes/ixodes_scapularis_reviewed.json",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/proteomes/dermacentor_variabilis_all.json",
           "description": "UniProt metadata JSON",
           "exists": true,
-          "size_bytes": 55856,
-          "n_records": 51
+          "size_bytes": 156188,
+          "n_records": 166
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/proteomes/ixodes_scapularis_reviewed.fasta",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/proteomes/dermacentor_variabilis_all.fasta",
           "description": "Protein sequences FASTA",
           "exists": true,
-          "size_bytes": 12570,
-          "n_records": 51
+          "size_bytes": 47882,
+          "n_records": 166
         }
       ],
       "api_calls": [
         {
           "service": "UniProt",
           "endpoint": "https://rest.uniprot.org/uniprotkb/search",
-          "query": "taxonomy_id:6945 AND reviewed:true",
-          "result_count": 51,
-          "timestamp": "2026-05-22T18:53:18.908801"
+          "query": "taxonomy_id:34621",
+          "result_count": 166,
+          "timestamp": "2026-05-26T19:06:40.040106"
         }
       ],
       "warnings": [],
@@ -78,34 +78,34 @@
     },
     "02_novelty_filter": {
       "step": "02_novelty_filter",
-      "started": "2026-05-22T18:53:19.136658",
-      "completed": "2026-05-22T18:53:53.139333",
-      "elapsed_sec": 34.0,
+      "started": "2026-05-26T19:06:55.102572",
+      "completed": "2026-05-26T19:08:28.138521",
+      "elapsed_sec": 93.0,
       "params": {
         "species": {
-          "value": "ixodes_scapularis",
+          "value": "dermacentor_variabilis",
           "description": "",
-          "timestamp": "2026-05-22T18:53:19.153938"
+          "timestamp": "2026-05-26T19:06:55.293091"
         },
         "min_plddt": {
           "value": 70,
           "description": "AlphaFold confidence threshold",
-          "timestamp": "2026-05-22T18:53:19.153945"
+          "timestamp": "2026-05-26T19:06:55.293102"
         },
         "min_druggability": {
           "value": 0.5,
           "description": "",
-          "timestamp": "2026-05-22T18:53:19.153947"
+          "timestamp": "2026-05-26T19:06:55.293104"
         },
         "min_pocket_volume": {
           "value": 300,
           "description": "Angstroms^3",
-          "timestamp": "2026-05-22T18:53:19.153948"
+          "timestamp": "2026-05-26T19:06:55.293105"
         },
         "max_human_homology": {
           "value": 0.4,
           "description": "BLAST identity fraction",
-          "timestamp": "2026-05-22T18:53:19.153949"
+          "timestamp": "2026-05-26T19:06:55.293106"
         },
         "scoring_rubric": {
           "value": {
@@ -119,77 +119,87 @@
             "essential_keyword": 2
           },
           "description": "Points assigned per novelty criterion",
-          "timestamp": "2026-05-22T18:53:53.130095"
+          "timestamp": "2026-05-26T19:08:28.128714"
         }
       },
       "stats": {
         "total_input_proteins": {
-          "value": 51,
+          "value": 166,
           "description": "",
-          "timestamp": "2026-05-22T18:53:19.160931"
+          "timestamp": "2026-05-26T19:06:55.317161"
         },
         "removed_known_targets": {
-          "value": 1,
+          "value": 0,
           "description": "Known acaricide targets excluded",
-          "timestamp": "2026-05-22T18:53:19.161013"
+          "timestamp": "2026-05-26T19:06:55.317412"
         },
         "after_known_filter": {
-          "value": 50,
+          "value": 166,
           "description": "Proteins after known-target exclusion",
-          "timestamp": "2026-05-22T18:53:19.161016"
+          "timestamp": "2026-05-26T19:06:55.317417"
         },
         "no_pdb_structure": {
-          "value": 46,
+          "value": 166,
           "description": "Proteins without PDB structure",
-          "timestamp": "2026-05-22T18:53:19.161025"
+          "timestamp": "2026-05-26T19:06:55.317433"
         },
         "no_pdb_no_chembl": {
-          "value": 46,
+          "value": 166,
           "description": "Proteins with no structure AND no ligands",
-          "timestamp": "2026-05-22T18:53:19.161027"
+          "timestamp": "2026-05-26T19:06:55.317438"
+        },
+        "length_filtered": {
+          "value": 69,
+          "description": "Proteins outside 150-1500 aa range",
+          "timestamp": "2026-05-26T19:06:55.317458"
+        },
+        "after_length_filter": {
+          "value": 97,
+          "description": "",
+          "timestamp": "2026-05-26T19:06:55.317461"
         },
         "alphafold_available": {
-          "value": 46,
-          "description": "Proteins with AlphaFold predictions (of 46 checked)",
-          "timestamp": "2026-05-22T18:53:53.130028"
+          "value": 86,
+          "description": "Proteins with AlphaFold predictions (of 97 checked)",
+          "timestamp": "2026-05-26T19:08:28.128676"
         },
         "top10_novelty_scores": {
           "value": [
             14,
+            14,
+            14,
             13,
-            12,
-            12,
-            12,
-            12,
-            11,
-            11,
-            11,
-            11
+            13,
+            13,
+            13,
+            13,
+            13,
+            12
           ],
           "description": "Scores of top 10 candidates",
-          "timestamp": "2026-05-22T18:53:53.130821"
+          "timestamp": "2026-05-26T19:08:28.129380"
         },
         "candidates_after_filter": {
-          "value": 46,
+          "value": 86,
           "description": "Final candidate count",
-          "timestamp": "2026-05-22T18:53:53.139170"
+          "timestamp": "2026-05-26T19:08:28.138389"
         }
       },
       "files_in": [
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/proteomes/ixodes_scapularis_reviewed.json",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/proteomes/dermacentor_variabilis_all.json",
           "description": "Input proteome",
           "exists": true,
-          "size_bytes": 55856
+          "size_bytes": 156188
         }
       ],
       "files_out": [
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/ixodes_scapularis_novelty_candidates.json",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/dermacentor_variabilis_novelty_candidates.json",
           "description": "Novelty-filtered candidate proteins",
           "exists": true,
-          "size_bytes": 60181,
-          "n_records": 46
+          "size_bytes": 117934,
+          "n_records": 86
         }
       ],
       "api_calls": [
@@ -197,8 +207,8 @@
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
           "query": "batch availability check",
-          "result_count": 46,
-          "timestamp": "2026-05-22T18:53:53.130007"
+          "result_count": 86,
+          "timestamp": "2026-05-26T19:08:28.128656"
         }
       ],
       "warnings": [],
@@ -206,1032 +216,3226 @@
     },
     "03_to_07_structure_docking": {
       "step": "03_to_07_structure_docking",
-      "started": "2026-05-22T18:57:12.039159",
-      "completed": "2026-05-22T18:58:01.114005",
-      "elapsed_sec": 49.1,
+      "started": "2026-05-26T19:08:38.429048",
+      "completed": "2026-05-26T19:23:22.008752",
+      "elapsed_sec": 883.6,
       "params": {
         "min_plddt_mean": {
           "value": 70,
           "description": "Mean pLDDT threshold",
-          "timestamp": "2026-05-22T18:57:12.059899"
+          "timestamp": "2026-05-26T19:08:38.491449"
         },
         "min_plddt_per_res": {
           "value": 70,
           "description": "Per-residue pLDDT threshold",
-          "timestamp": "2026-05-22T18:57:12.059901"
+          "timestamp": "2026-05-26T19:08:38.491452"
         },
         "min_high_conf_frac": {
           "value": 0.5,
           "description": "Min fraction of residues above pLDDT threshold",
-          "timestamp": "2026-05-22T18:57:12.059903"
+          "timestamp": "2026-05-26T19:08:38.491455"
         },
         "min_druggability_score": {
           "value": 0.5,
           "description": "fpocket/DoGSiteScorer threshold (0-1)",
-          "timestamp": "2026-05-22T18:57:45.555356"
+          "timestamp": "2026-05-26T19:11:17.905590"
         },
         "min_pocket_volume": {
           "value": 300,
           "description": "Angstroms^3",
-          "timestamp": "2026-05-22T18:57:45.555358"
+          "timestamp": "2026-05-26T19:11:17.905595"
         },
         "allosteric_flagging": {
           "value": true,
           "description": "Secondary pockets flagged as allosteric candidates",
-          "timestamp": "2026-05-22T18:57:45.555360"
+          "timestamp": "2026-05-26T19:11:17.905597"
         },
         "fpocket_available": {
           "value": true,
           "description": "",
-          "timestamp": "2026-05-22T18:57:45.557539"
+          "timestamp": "2026-05-26T19:11:17.947471"
         },
         "dogsite_available": {
-          "value": false,
+          "value": true,
           "description": "",
-          "timestamp": "2026-05-22T18:57:45.557547"
+          "timestamp": "2026-05-26T19:11:17.947487"
         },
         "max_human_homology": {
           "value": 0.4,
           "description": "BLAST identity threshold for mammalian toxicity flag",
-          "timestamp": "2026-05-22T18:57:46.890845"
+          "timestamp": "2026-05-26T19:21:00.632568"
         },
         "blast_database": {
           "value": "refseq_protein + Homo sapiens filter",
           "description": "",
-          "timestamp": "2026-05-22T18:57:46.890847"
+          "timestamp": "2026-05-26T19:21:00.632574"
         },
         "rnai_search_terms": {
           "value": "RNAi OR silenc* OR knockdown AND tick AND lethal",
           "description": "",
-          "timestamp": "2026-05-22T18:57:46.890848"
+          "timestamp": "2026-05-26T19:21:00.632576"
         },
         "blast_enabled": {
-          "value": false,
+          "value": true,
           "description": "",
-          "timestamp": "2026-05-22T18:57:46.890849"
+          "timestamp": "2026-05-26T19:21:00.632578"
         },
         "vina_exhaustiveness": {
           "value": 8,
           "description": "",
-          "timestamp": "2026-05-22T18:58:00.851339"
+          "timestamp": "2026-05-26T19:23:20.456253"
         },
         "vina_num_modes": {
           "value": 9,
           "description": "",
-          "timestamp": "2026-05-22T18:58:00.851344"
+          "timestamp": "2026-05-26T19:23:20.456255"
         },
         "vina_box_size": {
           "value": 20,
           "description": "Angstroms",
-          "timestamp": "2026-05-22T18:58:00.851347"
+          "timestamp": "2026-05-26T19:23:20.456257"
         },
         "vina_energy_range": {
           "value": 3,
           "description": "kcal/mol",
-          "timestamp": "2026-05-22T18:58:00.851348"
+          "timestamp": "2026-05-26T19:23:20.456259"
         },
         "vina_hit_threshold": {
           "value": -7.0,
           "description": "kcal/mol",
-          "timestamp": "2026-05-22T18:58:00.851350"
+          "timestamp": "2026-05-26T19:23:20.456261"
         },
         "lipinski_max_mw": {
           "value": 500,
           "description": "",
-          "timestamp": "2026-05-22T18:58:00.851353"
+          "timestamp": "2026-05-26T19:23:20.456264"
         },
         "lipinski_max_logp": {
           "value": 5.0,
           "description": "",
-          "timestamp": "2026-05-22T18:58:00.851355"
+          "timestamp": "2026-05-26T19:23:20.456266"
         }
       },
       "stats": {
         "input_candidates": {
-          "value": 46,
+          "value": 86,
           "description": "",
-          "timestamp": "2026-05-22T18:57:12.059882"
+          "timestamp": "2026-05-26T19:08:38.491419"
         },
         "alphafold_structures_downloaded": {
-          "value": 46,
+          "value": 86,
           "description": "Structures retrieved",
-          "timestamp": "2026-05-22T18:57:45.555296"
+          "timestamp": "2026-05-26T19:11:17.905509"
         },
         "suitable_for_docking": {
-          "value": 39,
+          "value": 78,
           "description": "Structures with mean pLDDT \u2265 70 and \u226550% high-confidence residues",
-          "timestamp": "2026-05-22T18:57:45.555335"
+          "timestamp": "2026-05-26T19:11:17.905559"
         },
         "total_druggable_pockets": {
-          "value": 20,
+          "value": 59,
           "description": "Pockets passing druggability and volume thresholds",
-          "timestamp": "2026-05-22T18:57:46.890829"
+          "timestamp": "2026-05-26T19:21:00.632125"
         },
         "allosteric_candidates": {
-          "value": 2,
+          "value": 16,
           "description": "Secondary pockets flagged as putative allosteric sites",
-          "timestamp": "2026-05-22T18:57:46.890833"
+          "timestamp": "2026-05-26T19:21:00.632146"
         },
         "proteins_with_pockets": {
-          "value": 18,
+          "value": 43,
           "description": "Proteins with \u22651 druggable pocket",
-          "timestamp": "2026-05-22T18:57:46.890836"
+          "timestamp": "2026-05-26T19:21:00.632152"
         },
         "high_human_homology_flagged": {
-          "value": 0,
+          "value": 14,
           "description": "Proteins with >80% human sequence identity (deprioritized)",
-          "timestamp": "2026-05-22T18:58:00.851242"
+          "timestamp": "2026-05-26T19:23:20.456211"
         },
         "rnai_lethality_evidence": {
-          "value": 1,
+          "value": 16,
           "description": "Proteins with published RNAi lethality data",
-          "timestamp": "2026-05-22T18:58:00.851267"
+          "timestamp": "2026-05-26T19:23:20.456238"
         },
         "targets_prepped_for_docking": {
-          "value": 18,
+          "value": 43,
           "description": "",
-          "timestamp": "2026-05-22T18:58:01.082390"
+          "timestamp": "2026-05-26T19:23:21.852528"
         },
         "total_hits": {
           "value": 0,
           "description": "Compounds \u2264 -7.0 kcal/mol",
-          "timestamp": "2026-05-22T18:58:01.113974"
+          "timestamp": "2026-05-26T19:23:22.008709"
         },
         "total_leads": {
           "value": 0,
           "description": "Compounds \u2264 -9.0 kcal/mol",
-          "timestamp": "2026-05-22T18:58:01.113988"
+          "timestamp": "2026-05-26T19:23:22.008728"
         },
         "targets_with_hits": {
           "value": 0,
           "description": "",
-          "timestamp": "2026-05-22T18:58:01.113994"
+          "timestamp": "2026-05-26T19:23:22.008739"
         }
       },
       "files_in": [
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/ixodes_scapularis_novelty_candidates.json",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/dermacentor_variabilis_novelty_candidates.json",
           "description": "Novelty candidates from step 2",
           "exists": true,
-          "size_bytes": 60181
+          "size_bytes": 117934
         }
       ],
       "files_out": [
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q4PLZ3_vina.conf",
-          "description": "Vina config for Q4PLZ3",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A649X9W4_vina.conf",
+          "description": "Vina config for A0A649X9W4",
           "exists": true,
-          "size_bytes": 347
+          "size_bytes": 407
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q5Q995_vina.conf",
-          "description": "Vina config for Q5Q995",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B2ZHX0_vina.conf",
+          "description": "Vina config for B2ZHX0",
           "exists": true,
-          "size_bytes": 348
+          "size_bytes": 391
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PXE3_vina.conf",
-          "description": "Vina config for B7PXE3",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/C6G1Y6_vina.conf",
+          "description": "Vina config for C6G1Y6",
           "exists": true,
-          "size_bytes": 349
+          "size_bytes": 394
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PJS6_vina.conf",
-          "description": "Vina config for B7PJS6",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A0K1G5W8_vina.conf",
+          "description": "Vina config for A0A0K1G5W8",
           "exists": true,
-          "size_bytes": 346
+          "size_bytes": 408
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PBI5_vina.conf",
-          "description": "Vina config for B7PBI5",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A142I6V3_vina.conf",
+          "description": "Vina config for A0A142I6V3",
           "exists": true,
-          "size_bytes": 348
+          "size_bytes": 405
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7P877_vina.conf",
-          "description": "Vina config for B7P877",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U4Y449_vina.conf",
+          "description": "Vina config for A0A2U4Y449",
           "exists": true,
-          "size_bytes": 346
+          "size_bytes": 406
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q4PM54_vina.conf",
-          "description": "Vina config for Q4PM54",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q9MCZ9_vina.conf",
+          "description": "Vina config for Q9MCZ9",
           "exists": true,
-          "size_bytes": 348
+          "size_bytes": 394
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q4PMB3_vina.conf",
-          "description": "Vina config for Q4PMB3",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/G0WV55_vina.conf",
+          "description": "Vina config for G0WV55",
           "exists": true,
-          "size_bytes": 347
+          "size_bytes": 390
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7Q1Q9_vina.conf",
-          "description": "Vina config for B7Q1Q9",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A7LJ78_vina.conf",
+          "description": "Vina config for A7LJ78",
           "exists": true,
-          "size_bytes": 347
+          "size_bytes": 392
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q4PMC9_vina.conf",
-          "description": "Vina config for Q4PMC9",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8T9S4_vina.conf",
+          "description": "Vina config for Q8T9S4",
           "exists": true,
-          "size_bytes": 347
+          "size_bytes": 391
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PRF6_vina.conf",
-          "description": "Vina config for B7PRF6",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U2Q4_vina.conf",
+          "description": "Vina config for A0A2U8U2Q4",
           "exists": true,
-          "size_bytes": 346
+          "size_bytes": 405
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7QDG3_vina.conf",
-          "description": "Vina config for B7QDG3",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U2R2_vina.conf",
+          "description": "Vina config for A0A2U8U2R2",
           "exists": true,
-          "size_bytes": 347
+          "size_bytes": 406
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PKZ2_vina.conf",
-          "description": "Vina config for B7PKZ2",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U2Y5_vina.conf",
+          "description": "Vina config for A0A2U8U2Y5",
           "exists": true,
-          "size_bytes": 348
+          "size_bytes": 406
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/F6KSY2_vina.conf",
-          "description": "Vina config for F6KSY2",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U368_vina.conf",
+          "description": "Vina config for A0A2U8U368",
           "exists": true,
-          "size_bytes": 348
+          "size_bytes": 406
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7Q290_vina.conf",
-          "description": "Vina config for B7Q290",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3E7_vina.conf",
+          "description": "Vina config for A0A2U8U3E7",
           "exists": true,
-          "size_bytes": 349
+          "size_bytes": 406
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q202J4_vina.conf",
-          "description": "Vina config for Q202J4",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3G2_vina.conf",
+          "description": "Vina config for A0A2U8U3G2",
           "exists": true,
-          "size_bytes": 345
+          "size_bytes": 405
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7PY76_vina.conf",
-          "description": "Vina config for B7PY76",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3H0_vina.conf",
+          "description": "Vina config for A0A2U8U3H0",
           "exists": true,
-          "size_bytes": 349
+          "size_bytes": 405
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8MUP7_vina.conf",
-          "description": "Vina config for Q8MUP7",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3S9_vina.conf",
+          "description": "Vina config for A0A2U8U3S9",
           "exists": true,
-          "size_bytes": 346
+          "size_bytes": 405
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3T1_vina.conf",
+          "description": "Vina config for A0A2U8U3T1",
+          "exists": true,
+          "size_bytes": 406
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP41_vina.conf",
+          "description": "Vina config for B7SP41",
+          "exists": true,
+          "size_bytes": 393
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP44_vina.conf",
+          "description": "Vina config for B7SP44",
+          "exists": true,
+          "size_bytes": 392
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q2Q443_vina.conf",
+          "description": "Vina config for Q2Q443",
+          "exists": true,
+          "size_bytes": 389
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q2HZ27_vina.conf",
+          "description": "Vina config for Q2HZ27",
+          "exists": true,
+          "size_bytes": 393
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP57_vina.conf",
+          "description": "Vina config for B7SP57",
+          "exists": true,
+          "size_bytes": 390
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B5TMF7_vina.conf",
+          "description": "Vina config for B5TMF7",
+          "exists": true,
+          "size_bytes": 389
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP39_vina.conf",
+          "description": "Vina config for B7SP39",
+          "exists": true,
+          "size_bytes": 390
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q86G71_vina.conf",
+          "description": "Vina config for Q86G71",
+          "exists": true,
+          "size_bytes": 391
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP34_vina.conf",
+          "description": "Vina config for B7SP34",
+          "exists": true,
+          "size_bytes": 390
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP56_vina.conf",
+          "description": "Vina config for B7SP56",
+          "exists": true,
+          "size_bytes": 390
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP64_vina.conf",
+          "description": "Vina config for B7SP64",
+          "exists": true,
+          "size_bytes": 391
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q86G65_vina.conf",
+          "description": "Vina config for Q86G65",
+          "exists": true,
+          "size_bytes": 393
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3F3_vina.conf",
+          "description": "Vina config for A0A2U8U3F3",
+          "exists": true,
+          "size_bytes": 406
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A2U8U3G0_vina.conf",
+          "description": "Vina config for A0A2U8U3G0",
+          "exists": true,
+          "size_bytes": 406
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A023NLG8_vina.conf",
+          "description": "Vina config for A0A023NLG8",
+          "exists": true,
+          "size_bytes": 408
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7SP48_vina.conf",
+          "description": "Vina config for B7SP48",
+          "exists": true,
+          "size_bytes": 393
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q06EX9_vina.conf",
+          "description": "Vina config for Q06EX9",
+          "exists": true,
+          "size_bytes": 389
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8I862_vina.conf",
+          "description": "Vina config for Q8I862",
+          "exists": true,
+          "size_bytes": 392
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q6XR73_vina.conf",
+          "description": "Vina config for Q6XR73",
+          "exists": true,
+          "size_bytes": 390
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8T9S5_vina.conf",
+          "description": "Vina config for Q8T9S5",
+          "exists": true,
+          "size_bytes": 391
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/Q8T9S3_vina.conf",
+          "description": "Vina config for Q8T9S3",
+          "exists": true,
+          "size_bytes": 390
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A023NLX9_vina.conf",
+          "description": "Vina config for A0A023NLX9",
+          "exists": true,
+          "size_bytes": 407
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A4UTU3_vina.conf",
+          "description": "Vina config for A4UTU3",
+          "exists": true,
+          "size_bytes": 388
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/A0A023NL51_vina.conf",
+          "description": "Vina config for A0A023NL51",
+          "exists": true,
+          "size_bytes": 405
         },
         {
           "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/run_all_docking.sh",
           "description": "Master docking shell script",
           "exists": true,
-          "size_bytes": 6373
+          "size_bytes": 6300
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/ixodes_scapularis_final_targets.json",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/dermacentor_variabilis_final_targets.json",
           "description": "Final ranked target list",
           "exists": true,
-          "size_bytes": 46886,
-          "n_records": 18
+          "size_bytes": 136194,
+          "n_records": 43
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/ixodes_scapularis_final_targets.json",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/dermacentor_variabilis_final_targets.json",
           "description": "Final target JSON",
           "exists": true,
-          "size_bytes": 46886
+          "size_bytes": 136194
         },
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/docs/ixodes_scapularis_target_table.csv",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/docs/dermacentor_variabilis_target_table.csv",
           "description": "Supplementary CSV table",
           "exists": true,
-          "size_bytes": 4096
+          "size_bytes": 9262
         }
       ],
       "api_calls": [
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q5Q995",
+          "query": "C6G1Y6",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:12.310621"
+          "timestamp": "2026-05-26T19:08:39.915488"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PJS6",
+          "query": "B2ZFY2",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:13.079120"
+          "timestamp": "2026-05-26T19:08:41.963873"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PXE3",
+          "query": "B2ZHX0",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:13.846473"
+          "timestamp": "2026-05-26T19:08:43.822233"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q95WZ4",
+          "query": "A0A109NPL8",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:14.617720"
+          "timestamp": "2026-05-26T19:08:46.148050"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q5SDL7",
+          "query": "G0WV55",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:15.381933"
+          "timestamp": "2026-05-26T19:08:48.444977"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7QIN3",
+          "query": "Q8T9S5",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:16.154588"
+          "timestamp": "2026-05-26T19:08:50.430872"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PS00",
+          "query": "E5D582",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:16.924820"
+          "timestamp": "2026-05-26T19:08:52.689786"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PLT0",
+          "query": "Q86G65",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:17.742888"
+          "timestamp": "2026-05-26T19:08:54.483489"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7P877",
+          "query": "Q8T9S4",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:18.507677"
+          "timestamp": "2026-05-26T19:08:56.282185"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PLZ3",
+          "query": "A0A0K1G5W8",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:19.268094"
+          "timestamp": "2026-05-26T19:08:58.002657"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PM04",
+          "query": "A0A142I6V3",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:20.033562"
+          "timestamp": "2026-05-26T19:08:59.682378"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PM31",
+          "query": "A0A1P8DIG2",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:20.783640"
+          "timestamp": "2026-05-26T19:09:01.481561"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7Q1Q9",
+          "query": "A0A2U4Y449",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:21.540731"
+          "timestamp": "2026-05-26T19:09:03.233311"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PMC9",
+          "query": "A0A649X9W4",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:22.285055"
+          "timestamp": "2026-05-26T19:09:04.867472"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PM54",
+          "query": "A0A6M4EJ53",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:23.040669"
+          "timestamp": "2026-05-26T19:09:06.389669"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PMB3",
+          "query": "B5TMF7",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:23.807499"
+          "timestamp": "2026-05-26T19:09:08.254736"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7QDG3",
+          "query": "Q9MCZ9",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:24.567530"
+          "timestamp": "2026-05-26T19:09:10.048762"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q8MVC4",
+          "query": "A0A220XM40",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:25.334209"
+          "timestamp": "2026-05-26T19:09:11.483400"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PKZ2",
+          "query": "A0A2U8U2Q4",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:26.090008"
+          "timestamp": "2026-05-26T19:09:13.195858"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PZ18",
+          "query": "A0A2U8U2R2",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:26.849597"
+          "timestamp": "2026-05-26T19:09:14.964094"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PRF6",
+          "query": "A0A2U8U2Y5",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:27.609512"
+          "timestamp": "2026-05-26T19:09:16.643827"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PMS3",
+          "query": "A0A2U8U368",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:28.384071"
+          "timestamp": "2026-05-26T19:09:18.584021"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PDC5",
+          "query": "A0A2U8U3E7",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:29.144822"
+          "timestamp": "2026-05-26T19:09:20.184715"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PP17",
+          "query": "A0A2U8U3F3",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:29.901203"
+          "timestamp": "2026-05-26T19:09:22.050937"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PMD1",
+          "query": "A0A2U8U3G0",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:30.656197"
+          "timestamp": "2026-05-26T19:09:24.126207"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7Q5K1",
+          "query": "A0A2U8U3G2",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:31.425322"
+          "timestamp": "2026-05-26T19:09:26.018077"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PM47",
+          "query": "A0A2U8U3H0",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:32.186981"
+          "timestamp": "2026-05-26T19:09:27.778602"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PM64",
+          "query": "A0A2U8U3S9",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:31.428574"
+          "timestamp": "2026-05-26T19:09:29.622371"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7Q290",
+          "query": "A0A2U8U3T1",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:32.185419"
+          "timestamp": "2026-05-26T19:09:31.497279"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q95WY7",
+          "query": "B2ZRZ7",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:32.934228"
+          "timestamp": "2026-05-26T19:09:33.657012"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q202J4",
+          "query": "Q8T9S2",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:33.688791"
+          "timestamp": "2026-05-26T19:09:35.720094"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PBI5",
+          "query": "A0A220XM30",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:34.441080"
+          "timestamp": "2026-05-26T19:09:37.423014"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PCV3",
+          "query": "A0A220XM38",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:35.176788"
+          "timestamp": "2026-05-26T19:09:39.225990"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q8MUP7",
+          "query": "A7LJ78",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:35.930352"
+          "timestamp": "2026-05-26T19:09:41.285231"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PY76",
+          "query": "A9YPC4",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:36.693274"
+          "timestamp": "2026-05-26T19:09:43.319908"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7PCF6",
+          "query": "B7SP24",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:37.459690"
+          "timestamp": "2026-05-26T19:09:45.096269"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "F6KSY2",
+          "query": "B7SP29",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:38.234833"
+          "timestamp": "2026-05-26T19:09:46.688641"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7Q2M2",
+          "query": "B7SP36",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:38.996628"
+          "timestamp": "2026-05-26T19:09:48.277680"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7QKS1",
+          "query": "B7SP39",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:39.754550"
+          "timestamp": "2026-05-26T19:09:50.095995"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PM12",
+          "query": "B7SP40",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:40.512103"
+          "timestamp": "2026-05-26T19:09:51.653964"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "F6KSY1",
+          "query": "B7SP41",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:41.264898"
+          "timestamp": "2026-05-26T19:09:53.096472"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q8MVA6",
+          "query": "B7SP43",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:42.008041"
+          "timestamp": "2026-05-26T19:09:54.715022"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PM15",
+          "query": "B7SP44",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:42.774128"
+          "timestamp": "2026-05-26T19:09:56.788814"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "B7Q052",
+          "query": "B7SP47",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:43.531152"
+          "timestamp": "2026-05-26T19:09:58.565363"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PMW1",
+          "query": "B7SP57",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:44.276096"
+          "timestamp": "2026-05-26T19:10:00.432115"
         },
         {
           "service": "AlphaFold",
           "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "Q4PMX3",
+          "query": "Q2Q443",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:45.041936"
+          "timestamp": "2026-05-26T19:10:02.310640"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q86G71",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:04.090223"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "A0A023NKT2",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:06.275826"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "A0A023NLG8",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:08.023287"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B6VE08",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:10.056864"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP62",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:11.796782"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q86G69",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:13.642330"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q86G70",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:15.123162"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "A0A023NL46",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:17.499443"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "A2TIR7",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:19.823284"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "A4UTU3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:21.984413"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B2ZA32",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:24.733909"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B2ZA33",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:26.743248"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP34",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:28.611493"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP46",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:30.261162"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP48",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:32.482143"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP56",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:34.013628"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP60",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:35.799832"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP63",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:37.393514"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP64",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:39.032865"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q06EX9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:40.713796"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q0Z7Z5",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:42.935368"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q0Z7Z6",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:45.123550"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q2HZ27",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:47.017397"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q4L0D5",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:48.730462"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q86G63",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:50.337735"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q86G64",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:51.942213"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q86G67",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:54.002800"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q8I862",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:55.924398"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q8T9S3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:57.596108"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP22",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:10:59.296767"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "B7SP26",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:00.849368"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q8T9S6",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:02.494844"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q64K89",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:04.484218"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q6WSP9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:06.246773"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q6XR73",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:08.483639"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "Q86G72",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:10.603753"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "A0A023NKT7",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:12.201731"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "A0A023NL51",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:13.698577"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "A0A023NLX9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:15.563164"
+        },
+        {
+          "service": "AlphaFold",
+          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
+          "query": "A0A023NM43",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:11:17.401595"
         },
         {
           "service": "fpocket",
           "endpoint": "local",
-          "query": "Q5Q995",
-          "result_count": 9,
-          "timestamp": "2026-05-22T18:57:45.581529"
+          "query": "C6G1Y6",
+          "result_count": 50,
+          "timestamp": "2026-05-26T19:11:24.808048"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "C6G1Y6",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:11:26.505418"
         },
         {
           "service": "fpocket",
           "endpoint": "local",
-          "query": "B7PJS6",
-          "result_count": 53,
-          "timestamp": "2026-05-22T18:57:45.688396"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7PXE3",
-          "result_count": 56,
-          "timestamp": "2026-05-22T18:57:45.800532"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q95WZ4",
-          "result_count": 13,
-          "timestamp": "2026-05-22T18:57:45.831607"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7PS00",
-          "result_count": 22,
-          "timestamp": "2026-05-22T18:57:45.879205"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7PLT0",
-          "result_count": 3,
-          "timestamp": "2026-05-22T18:57:45.891820"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7P877",
-          "result_count": 13,
-          "timestamp": "2026-05-22T18:57:45.922579"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PLZ3",
-          "result_count": 11,
-          "timestamp": "2026-05-22T18:57:45.949695"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PM04",
-          "result_count": 20,
-          "timestamp": "2026-05-22T18:57:45.993511"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PM31",
-          "result_count": 17,
-          "timestamp": "2026-05-22T18:57:46.031665"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7Q1Q9",
-          "result_count": 11,
-          "timestamp": "2026-05-22T18:57:46.058440"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PMC9",
-          "result_count": 18,
-          "timestamp": "2026-05-22T18:57:46.098387"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PM54",
-          "result_count": 20,
-          "timestamp": "2026-05-22T18:57:46.142085"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PMB3",
+          "query": "B2ZHX0",
           "result_count": 24,
-          "timestamp": "2026-05-22T18:57:46.193582"
+          "timestamp": "2026-05-26T19:11:37.617757"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B2ZHX0",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:11:39.030614"
         },
         {
           "service": "fpocket",
           "endpoint": "local",
-          "query": "B7QDG3",
-          "result_count": 11,
-          "timestamp": "2026-05-22T18:57:46.220968"
+          "query": "G0WV55",
+          "result_count": 85,
+          "timestamp": "2026-05-26T19:12:06.303838"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "G0WV55",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:12:07.832344"
         },
         {
           "service": "fpocket",
           "endpoint": "local",
-          "query": "Q8MVC4",
-          "result_count": 28,
-          "timestamp": "2026-05-22T18:57:46.279834"
+          "query": "Q8T9S5",
+          "result_count": 38,
+          "timestamp": "2026-05-26T19:12:16.155673"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q8T9S5",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:12:17.563428"
         },
         {
           "service": "fpocket",
           "endpoint": "local",
-          "query": "B7PKZ2",
-          "result_count": 5,
-          "timestamp": "2026-05-22T18:57:46.295714"
+          "query": "E5D582",
+          "result_count": 38,
+          "timestamp": "2026-05-26T19:12:32.094259"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "E5D582",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:12:33.423530"
         },
         {
           "service": "fpocket",
           "endpoint": "local",
-          "query": "B7PZ18",
-          "result_count": 11,
-          "timestamp": "2026-05-22T18:57:46.321463"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7PRF6",
-          "result_count": 17,
-          "timestamp": "2026-05-22T18:57:46.357171"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7PDC5",
-          "result_count": 31,
-          "timestamp": "2026-05-22T18:57:46.417298"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7PP17",
-          "result_count": 17,
-          "timestamp": "2026-05-22T18:57:46.452164"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PMD1",
-          "result_count": 7,
-          "timestamp": "2026-05-22T18:57:46.471010"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7Q5K1",
-          "result_count": 30,
-          "timestamp": "2026-05-22T18:57:46.530161"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PM47",
-          "result_count": 4,
-          "timestamp": "2026-05-22T18:57:46.543503"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PM64",
-          "result_count": 3,
-          "timestamp": "2026-05-22T18:57:46.554870"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7Q290",
-          "result_count": 16,
-          "timestamp": "2026-05-22T18:57:46.588970"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q202J4",
-          "result_count": 25,
-          "timestamp": "2026-05-22T18:57:46.637177"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7PBI5",
-          "result_count": 15,
-          "timestamp": "2026-05-22T18:57:46.669102"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7PCV3",
-          "result_count": 7,
-          "timestamp": "2026-05-22T18:57:46.686935"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q8MUP7",
-          "result_count": 4,
-          "timestamp": "2026-05-22T18:57:46.699814"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7PY76",
+          "query": "Q86G65",
           "result_count": 24,
-          "timestamp": "2026-05-22T18:57:46.746755"
+          "timestamp": "2026-05-26T19:12:37.191972"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q86G65",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:12:38.338923"
         },
         {
           "service": "fpocket",
           "endpoint": "local",
-          "query": "F6KSY2",
-          "result_count": 15,
-          "timestamp": "2026-05-22T18:57:46.777825"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7QKS1",
+          "query": "Q8T9S4",
           "result_count": 21,
-          "timestamp": "2026-05-22T18:57:46.819789"
+          "timestamp": "2026-05-26T19:12:42.528756"
         },
         {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PM12",
-          "result_count": 4,
-          "timestamp": "2026-05-22T18:57:46.832723"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q8MVA6",
-          "result_count": 2,
-          "timestamp": "2026-05-22T18:57:46.841962"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PM15",
-          "result_count": 5,
-          "timestamp": "2026-05-22T18:57:46.856030"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "B7Q052",
-          "result_count": 6,
-          "timestamp": "2026-05-22T18:57:46.872106"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PMW1",
-          "result_count": 2,
-          "timestamp": "2026-05-22T18:57:46.881668"
-        },
-        {
-          "service": "fpocket",
-          "endpoint": "local",
-          "query": "Q4PMX3",
-          "result_count": 2,
-          "timestamp": "2026-05-22T18:57:46.890819"
-        },
-        {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "",
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q8T9S4",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:47.388167"
+          "timestamp": "2026-05-26T19:12:43.596525"
         },
         {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "",
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A0K1G5W8",
+          "result_count": 14,
+          "timestamp": "2026-05-26T19:12:47.966718"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A0K1G5W8",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:48.149789"
+          "timestamp": "2026-05-26T19:12:49.120704"
         },
         {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "spas",
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A142I6V3",
+          "result_count": 14,
+          "timestamp": "2026-05-26T19:12:54.607059"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A142I6V3",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:48.929401"
+          "timestamp": "2026-05-26T19:12:55.739299"
         },
         {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "Cbp20",
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A1P8DIG2",
+          "result_count": 14,
+          "timestamp": "2026-05-26T19:13:02.266463"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A1P8DIG2",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:49.685364"
+          "timestamp": "2026-05-26T19:13:03.765840"
         },
         {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "Tctp",
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U4Y449",
+          "result_count": 14,
+          "timestamp": "2026-05-26T19:13:09.713743"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U4Y449",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:13:10.894621"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A649X9W4",
+          "result_count": 12,
+          "timestamp": "2026-05-26T19:13:16.941762"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A649X9W4",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:13:18.265965"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A6M4EJ53",
+          "result_count": 8,
+          "timestamp": "2026-05-26T19:13:21.076276"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A6M4EJ53",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:13:22.277487"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B5TMF7",
+          "result_count": 22,
+          "timestamp": "2026-05-26T19:13:27.796362"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B5TMF7",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:13:29.260503"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q9MCZ9",
+          "result_count": 16,
+          "timestamp": "2026-05-26T19:13:36.520454"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q9MCZ9",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:13:37.788175"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A220XM40",
+          "result_count": 11,
+          "timestamp": "2026-05-26T19:13:42.255801"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A220XM40",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:13:43.417632"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U2Q4",
+          "result_count": 15,
+          "timestamp": "2026-05-26T19:13:49.481604"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U2Q4",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:13:50.950814"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U2R2",
+          "result_count": 17,
+          "timestamp": "2026-05-26T19:13:55.900999"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U2R2",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:13:57.096479"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U2Y5",
+          "result_count": 18,
+          "timestamp": "2026-05-26T19:14:02.366577"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U2Y5",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:14:03.440438"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U368",
+          "result_count": 18,
+          "timestamp": "2026-05-26T19:14:09.494387"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U368",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:14:10.740917"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U3E7",
+          "result_count": 17,
+          "timestamp": "2026-05-26T19:14:15.766293"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U3E7",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:14:16.807805"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U3F3",
+          "result_count": 17,
+          "timestamp": "2026-05-26T19:14:23.216061"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U3F3",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:14:24.456948"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U3G0",
+          "result_count": 16,
+          "timestamp": "2026-05-26T19:14:30.940900"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U3G0",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:14:32.131389"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U3G2",
+          "result_count": 15,
+          "timestamp": "2026-05-26T19:14:38.396044"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U3G2",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:14:39.687831"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U3H0",
+          "result_count": 16,
+          "timestamp": "2026-05-26T19:14:45.305145"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U3H0",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:14:46.461921"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U3S9",
+          "result_count": 17,
+          "timestamp": "2026-05-26T19:14:53.000960"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U3S9",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:14:54.234168"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A2U8U3T1",
+          "result_count": 14,
+          "timestamp": "2026-05-26T19:14:58.197339"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A2U8U3T1",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:14:59.298073"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B2ZRZ7",
+          "result_count": 42,
+          "timestamp": "2026-05-26T19:15:09.842619"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B2ZRZ7",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:15:11.421544"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q8T9S2",
+          "result_count": 26,
+          "timestamp": "2026-05-26T19:15:22.133353"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q8T9S2",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:15:23.365073"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A220XM30",
+          "result_count": 13,
+          "timestamp": "2026-05-26T19:15:29.893318"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A220XM30",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:15:31.181663"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A220XM38",
+          "result_count": 23,
+          "timestamp": "2026-05-26T19:15:35.415249"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A220XM38",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:15:36.551829"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A7LJ78",
+          "result_count": 17,
+          "timestamp": "2026-05-26T19:15:43.862395"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A7LJ78",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:15:45.246862"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A9YPC4",
+          "result_count": 24,
+          "timestamp": "2026-05-26T19:15:54.170058"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A9YPC4",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:15:55.506682"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP24",
+          "result_count": 13,
+          "timestamp": "2026-05-26T19:15:58.440106"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP24",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:15:59.764130"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP29",
+          "result_count": 13,
+          "timestamp": "2026-05-26T19:16:07.069459"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP29",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:16:08.284285"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP36",
+          "result_count": 18,
+          "timestamp": "2026-05-26T19:16:13.724558"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP36",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:16:14.839535"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP39",
+          "result_count": 19,
+          "timestamp": "2026-05-26T19:16:20.737749"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP39",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:16:21.894944"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP40",
+          "result_count": 12,
+          "timestamp": "2026-05-26T19:16:26.738024"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP40",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:16:27.815799"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP41",
+          "result_count": 18,
+          "timestamp": "2026-05-26T19:16:33.192814"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP41",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:16:34.368065"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP43",
+          "result_count": 17,
+          "timestamp": "2026-05-26T19:16:38.873879"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP43",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:16:40.059010"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP44",
+          "result_count": 20,
+          "timestamp": "2026-05-26T19:16:45.442501"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP44",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:16:46.726416"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP47",
+          "result_count": 9,
+          "timestamp": "2026-05-26T19:16:51.182530"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP47",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:16:52.360478"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP57",
+          "result_count": 18,
+          "timestamp": "2026-05-26T19:16:56.955582"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP57",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:16:58.026742"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q2Q443",
+          "result_count": 13,
+          "timestamp": "2026-05-26T19:17:03.715354"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q2Q443",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:17:04.868540"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q86G71",
+          "result_count": 19,
+          "timestamp": "2026-05-26T19:17:10.938000"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q86G71",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:17:12.030884"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A023NKT2",
+          "result_count": 32,
+          "timestamp": "2026-05-26T19:17:17.934511"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A023NKT2",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:17:19.181083"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A023NLG8",
+          "result_count": 12,
+          "timestamp": "2026-05-26T19:17:22.748726"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A023NLG8",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:17:23.722659"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP62",
+          "result_count": 8,
+          "timestamp": "2026-05-26T19:17:27.676896"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP62",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:17:28.928516"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q86G69",
+          "result_count": 15,
+          "timestamp": "2026-05-26T19:17:32.897707"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q86G69",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:17:33.961119"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q86G70",
+          "result_count": 19,
+          "timestamp": "2026-05-26T19:17:40.484362"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q86G70",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:17:41.574412"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A023NL46",
+          "result_count": 31,
+          "timestamp": "2026-05-26T19:17:49.197536"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A023NL46",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:17:50.393385"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A2TIR7",
+          "result_count": 78,
+          "timestamp": "2026-05-26T19:18:11.303835"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A2TIR7",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:18:12.953885"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A4UTU3",
+          "result_count": 18,
+          "timestamp": "2026-05-26T19:18:18.770409"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A4UTU3",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:18:19.933292"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP34",
+          "result_count": 11,
+          "timestamp": "2026-05-26T19:18:23.336048"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP34",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:18:24.392236"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP46",
+          "result_count": 10,
+          "timestamp": "2026-05-26T19:18:28.634820"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP46",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:18:29.818673"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP48",
+          "result_count": 41,
+          "timestamp": "2026-05-26T19:18:36.048249"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP48",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:18:37.281586"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP56",
+          "result_count": 11,
+          "timestamp": "2026-05-26T19:18:41.383487"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP56",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:18:42.618097"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP64",
+          "result_count": 8,
+          "timestamp": "2026-05-26T19:18:47.294569"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP64",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:18:48.449653"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q06EX9",
+          "result_count": 12,
+          "timestamp": "2026-05-26T19:18:53.571220"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q06EX9",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:18:54.703260"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q0Z7Z5",
+          "result_count": 29,
+          "timestamp": "2026-05-26T19:19:04.413082"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q0Z7Z5",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:19:05.738532"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q0Z7Z6",
+          "result_count": 30,
+          "timestamp": "2026-05-26T19:19:13.559709"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q0Z7Z6",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:19:14.781805"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q2HZ27",
+          "result_count": 16,
+          "timestamp": "2026-05-26T19:19:19.966765"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q2HZ27",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:19:21.084236"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q86G63",
+          "result_count": 14,
+          "timestamp": "2026-05-26T19:19:25.668041"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q86G63",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:19:26.676642"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q86G64",
+          "result_count": 16,
+          "timestamp": "2026-05-26T19:19:31.898433"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q86G64",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:19:32.874697"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q86G67",
+          "result_count": 38,
+          "timestamp": "2026-05-26T19:19:39.356379"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q86G67",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:19:40.615333"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q8I862",
+          "result_count": 28,
+          "timestamp": "2026-05-26T19:19:45.115277"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q8I862",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:19:46.418617"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q8T9S3",
+          "result_count": 11,
+          "timestamp": "2026-05-26T19:19:50.071982"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q8T9S3",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:19:51.304878"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP22",
+          "result_count": 13,
+          "timestamp": "2026-05-26T19:19:54.989951"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP22",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:19:56.352678"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7SP26",
+          "result_count": 8,
+          "timestamp": "2026-05-26T19:19:59.315511"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "B7SP26",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:00.478286"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q8T9S6",
+          "result_count": 12,
+          "timestamp": "2026-05-26T19:20:03.930135"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q8T9S6",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:04.977637"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q64K89",
+          "result_count": 25,
+          "timestamp": "2026-05-26T19:20:10.326181"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q64K89",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:11.624433"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q6WSP9",
+          "result_count": 26,
+          "timestamp": "2026-05-26T19:20:17.699126"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q6WSP9",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:19.089844"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q6XR73",
+          "result_count": 38,
+          "timestamp": "2026-05-26T19:20:26.428107"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q6XR73",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:27.837873"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q86G72",
+          "result_count": 24,
+          "timestamp": "2026-05-26T19:20:32.677575"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "Q86G72",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:33.998821"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A023NKT7",
+          "result_count": 12,
+          "timestamp": "2026-05-26T19:20:37.304323"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A023NKT7",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:38.408116"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A023NL51",
+          "result_count": 20,
+          "timestamp": "2026-05-26T19:20:41.766898"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A023NL51",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:42.784462"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A023NLX9",
+          "result_count": 22,
+          "timestamp": "2026-05-26T19:20:49.205246"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A023NLX9",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:50.488489"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "A0A023NM43",
+          "result_count": 25,
+          "timestamp": "2026-05-26T19:20:57.303100"
+        },
+        {
+          "service": "DoGSiteScorer",
+          "endpoint": "https://proteins.plus/api/dogsite_rest",
+          "query": "A0A023NM43",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:20:58.608226"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "C6G1Y6",
           "result_count": 1,
-          "timestamp": "2026-05-22T18:57:50.458530"
+          "timestamp": "2026-05-26T19:21:01.491548"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "C6G1Y6",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:01.825205"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "C6G1Y6",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:02.462767"
         },
         {
           "service": "NCBI PubMed",
           "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
           "query": "",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:51.227815"
+          "timestamp": "2026-05-26T19:21:03.386047"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B2ZHX0",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:04.854369"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B2ZHX0",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:05.141343"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B2ZHX0",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:06.016311"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "G0WV55",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:08.101243"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "G0WV55",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:08.571329"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "G0WV55",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:09.577873"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q8T9S5",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:11.365770"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q8T9S5",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:11.541237"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q8T9S5",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:11.872589"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q86G65",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:13.601645"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q86G65",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:14.042758"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q86G65",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:14.932102"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q8T9S4",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:16.762009"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q8T9S4",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:17.056786"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q8T9S4",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:17.607271"
         },
         {
           "service": "NCBI PubMed",
           "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
           "query": "",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:52.033831"
+          "timestamp": "2026-05-26T19:21:18.503540"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A0K1G5W8",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:19.748729"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A0K1G5W8",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:20.187788"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A0K1G5W8",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:20.748640"
         },
         {
           "service": "NCBI PubMed",
           "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "RpL17",
-          "result_count": 0,
-          "timestamp": "2026-05-22T18:57:52.791691"
+          "query": "COI",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:21.813382"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A142I6V3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:22.971039"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A142I6V3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:23.398187"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A142I6V3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:24.121887"
         },
         {
           "service": "NCBI PubMed",
           "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "RpS4",
+          "query": "cox1",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:25.058568"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U4Y449",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:26.358498"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U4Y449",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:26.798967"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U4Y449",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:27.595160"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "COI",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:28.560898"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A649X9W4",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:29.656971"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A649X9W4",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:30.235372"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A649X9W4",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:31.126689"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "COI",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:32.061079"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B5TMF7",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:33.448483"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B5TMF7",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:33.873048"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B5TMF7",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:34.519250"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "GAPDH",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:53.547059"
+          "timestamp": "2026-05-26T19:21:35.428446"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q9MCZ9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:36.708512"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q9MCZ9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:37.269697"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q9MCZ9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:38.200349"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "COI",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:39.037170"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U2Q4",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:40.342646"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U2Q4",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:40.742119"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U2Q4",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:41.564377"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:42.561829"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U2R2",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:44.046617"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U2R2",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:44.383209"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U2R2",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:45.098924"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:45.998972"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U2Y5",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:47.457555"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U2Y5",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:48.004772"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U2Y5",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:48.785311"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:49.683255"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U368",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:51.017584"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U368",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:51.334454"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U368",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:51.971305"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:52.986836"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U3E7",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:54.237672"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U3E7",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:54.726927"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U3E7",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:55.472276"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:56.382183"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U3F3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:57.709231"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U3F3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:58.178509"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U3F3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:21:59.120195"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:00.129920"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U3G0",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:01.188517"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U3G0",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:01.564868"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U3G0",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:02.326511"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:03.295929"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U3G2",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:04.757373"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U3G2",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:05.320079"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U3G2",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:06.176882"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:07.169529"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U3H0",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:08.586787"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U3H0",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:09.191270"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U3H0",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:09.871368"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:10.822525"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U3S9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:12.016450"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U3S9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:12.396907"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U3S9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:13.082571"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:14.037917"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A2U8U3T1",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:15.400732"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A2U8U3T1",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:15.792123"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A2U8U3T1",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:16.555528"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:17.531530"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A7LJ78",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:18.755252"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A7LJ78",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:19.289268"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A7LJ78",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:19.938965"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B7SP39",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:21.703100"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B7SP39",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:22.297438"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B7SP39",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:22.967062"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B7SP41",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:24.671394"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B7SP41",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:25.158532"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B7SP41",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:25.658104"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B7SP44",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:27.400059"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B7SP44",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:27.797810"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B7SP44",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:28.478162"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B7SP57",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:30.300829"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B7SP57",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:30.713168"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B7SP57",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:31.592566"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q2Q443",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:33.307563"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q2Q443",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:33.575322"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q2Q443",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:34.147123"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q86G71",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:36.050668"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q86G71",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:36.385913"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q86G71",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:37.160974"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A023NLG8",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:38.869641"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A023NLG8",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:39.259399"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A023NLG8",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:39.935521"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "ARPC3",
+          "result_count": 0,
+          "timestamp": "2026-05-26T19:22:40.854693"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A4UTU3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:42.247356"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A4UTU3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:42.684229"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A4UTU3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:43.339322"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B7SP34",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:44.960195"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B7SP34",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:45.419936"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B7SP34",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:46.269102"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B7SP48",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:48.101213"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B7SP48",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:48.568304"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B7SP48",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:49.508631"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B7SP56",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:51.279769"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B7SP56",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:51.702789"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B7SP56",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:52.471899"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B7SP64",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:54.432009"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B7SP64",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:54.974930"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B7SP64",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:55.554844"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q06EX9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:57.225677"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q06EX9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:57.705061"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q06EX9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:22:58.478274"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q2HZ27",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:00.305442"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q2HZ27",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:00.637947"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q2HZ27",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:01.217872"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q8I862",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:02.976396"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q8I862",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:03.322552"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q8I862",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:04.110743"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q8T9S3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:05.887069"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q8T9S3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:06.459277"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q8T9S3",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:07.300688"
         },
         {
           "service": "NCBI PubMed",
           "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
           "query": "",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:54.296796"
+          "timestamp": "2026-05-26T19:23:08.292877"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "Q6XR73",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:10.117875"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "Q6XR73",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:10.663246"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "Q6XR73",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:11.694593"
         },
         {
           "service": "NCBI PubMed",
           "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
           "query": "",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:55.076015"
+          "timestamp": "2026-05-26T19:23:12.660906"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A023NL51",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:13.998495"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A023NL51",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:14.351422"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A023NL51",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:15.119106"
         },
         {
           "service": "NCBI PubMed",
           "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "",
+          "query": "ARPC4",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:55.836015"
+          "timestamp": "2026-05-26T19:23:16.027903"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "A0A023NLX9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:17.563678"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "A0A023NLX9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:18.194072"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "A0A023NLX9",
+          "result_count": 1,
+          "timestamp": "2026-05-26T19:23:18.880911"
         },
         {
           "service": "NCBI PubMed",
           "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "",
+          "query": "ARPC2",
           "result_count": 0,
-          "timestamp": "2026-05-22T18:57:56.587477"
-        },
-        {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "SPH",
-          "result_count": 0,
-          "timestamp": "2026-05-22T18:57:57.382005"
-        },
-        {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "",
-          "result_count": 0,
-          "timestamp": "2026-05-22T18:57:58.128473"
-        },
-        {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "Salp9Pac",
-          "result_count": 0,
-          "timestamp": "2026-05-22T18:57:58.876245"
-        },
-        {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "",
-          "result_count": 0,
-          "timestamp": "2026-05-22T18:57:59.603971"
-        },
-        {
-          "service": "NCBI PubMed",
-          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
-          "query": "",
-          "result_count": 0,
-          "timestamp": "2026-05-22T18:58:00.341769"
+          "timestamp": "2026-05-26T19:23:19.924101"
         }
       ],
       "warnings": [],
@@ -1247,5 +3451,5 @@
     "pandas": "3.0.3",
     "rdkit": "2026.3.2"
   },
-  "last_updated": "2026-05-22T18:58:01.114030"
+  "last_updated": "2026-05-26T19:23:22.008778"
 }

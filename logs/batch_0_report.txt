@@ -1,41 +1,41 @@
 ============================================================
 TICKDOCK -- BATCH 0 DISPATCH REPORT  [OK]
-Completed: 2026-05-25T18:20:29.817584
+Completed: 2026-05-26T20:03:05.799477
 ============================================================
 
 SUMMARY
 -------
   Ligands docked : 2000
-  Targets run    : 42/42 successful
-  Total hits     : 3624  (score <= -7.0 kcal/mol)
-  Wall time      : 4h 42m 37s
+  Targets run    : 138/138 successful
+  Total hits     : 5375  (score <= -7.0 kcal/mol)
+  Wall time      : 4m 46s
 
 TOP HITS (by docking score)
 --------------------------
   1. B7P5E9 + CHEMBL9171
      Score: -13.12 kcal/mol  [####################]
-  2. B7PY20 + CHEMBL429379
-     Score: -11.79 kcal/mol  [###################-]
+  2. B7PY20 + CHEMBL8922
+     Score: -12.03 kcal/mol  [####################]
   3. A0A4D5RNM5 + CHEMBL429202
      Score: -11.28 kcal/mol  [#################---]
   4. B7PMS2 + CHEMBL429202
      Score: -11.18 kcal/mol  [#################---]
-  5. A0A4D5RDE4 + CHEMBL9250
-     Score: -10.87 kcal/mol  [################----]
+  5. B7Q255 + CHEMBL8905
+     Score: -11.08 kcal/mol  [#################---]
 
 *** 5 LEAD CANDIDATE(S) (score <= -9.0 kcal/mol) ***
     B7P5E9 + CHEMBL9171 : -13.12
-    B7PY20 + CHEMBL429379 : -11.79
+    B7PY20 + CHEMBL8922 : -12.03
     A0A4D5RNM5 + CHEMBL429202 : -11.28
     B7PMS2 + CHEMBL429202 : -11.18
-    A0A4D5RDE4 + CHEMBL9250 : -10.87
+    B7Q255 + CHEMBL8905 : -11.08
 
 CAMPAIGN PROGRESS
 -----------------
   Batches completed : 1
   Ligands processed : 2000
-  Cumulative hits   : 3624
-  Ligands queued    : 2646
+  Cumulative hits   : 5375
+  Ligands queued    : 5175
 
 DISPATCH OPTIONS
 ----------------
