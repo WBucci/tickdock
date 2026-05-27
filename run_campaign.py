@@ -748,6 +748,20 @@ def compress_negatives(batch_id: int,
     kept        = []
     bytes_freed = 0
 
+    # Load hits already recorded in previous batch compressed files so we don't
+    # double-count them (hit PDBQTs are never deleted, so they reappear each run).
+    already_logged = set()
+    for prev_id in range(batch_id):
+        prev_path = os.path.join(LOG_DIR, f"batch_{prev_id}_compressed.json")
+        if os.path.exists(prev_path):
+            try:
+                with open(prev_path) as _f:
+                    prev = json.load(_f)
+                for h in prev.get("kept", []):
+                    already_logged.add((h["target"], h["ligand"]))
+            except Exception:
+                pass
+
     result_dirs = glob.glob(os.path.join(DOCKING_DIR, "*_results"))
     for rdir in result_dirs:
         target = os.path.basename(rdir).replace("_results", "")
@@ -763,7 +777,8 @@ def compress_negatives(batch_id: int,
                 bytes_freed += size
                 pruned.append({"target": target, "ligand": ligand, "score": score})
             else:
-                kept.append({"target": target, "ligand": ligand, "score": score})
+                if (target, ligand) not in already_logged:
+                    kept.append({"target": target, "ligand": ligand, "score": score})
 
     mb_freed = round(bytes_freed / 1024 / 1024, 1)
     summary = {
