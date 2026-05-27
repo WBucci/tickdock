@@ -45,7 +45,8 @@ data/p2rank/
 data/docking/*_archive.tar.gz
 
 # Keep committed: vina configs, result summaries, cleanup records
-# run_all_docking.sh excluded — auto-generated with wrong Vina syntax, use run_docking.py instead
+# run_all_docking.sh: auto-generated with wrong Vina syntax (--ligand_directory), use run_docking.py instead
+data/docking/run_all_docking.sh
 !data/docking/*_vina.conf
 !data/docking/docking_results_summary.tsv
 !data/docking/top_hits.json
@@ -54,6 +55,9 @@ data/docking/*_archive.tar.gz
 
 # ── Logs (keep audit log, ignore verbose run logs) ────────────
 logs/*.log
+logs/*.flag
+logs/*.flag.*
+logs/_*.py
 # Keep: logs/pipeline_audit.json (reproducibility record)
 !logs/pipeline_audit.json
 
@@ -64,6 +68,7 @@ docs/supplementary_S1_audit.txt
 # ── Temp / helper scripts ─────────────────────────────────────
 scripts/_*.py
 *_vina_fixed.conf
+tickdock-campaign-monitor.md
 
 # ── OS ───────────────────────────────────────────────────────
 .DS_Store
