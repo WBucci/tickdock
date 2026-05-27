@@ -62,6 +62,51 @@ LIGANDS_DIR    = os.path.join(DOCKING_DIR, "ligands_pdbqt")
 STATE_FILE     = os.path.join(LOG_DIR, "campaign_state.json")
 CONTROL_FILE   = os.path.join(LOG_DIR, "campaign_control.txt")
 CAMPAIGN_LOG   = os.path.join(LOG_DIR, "campaign_orchestrator.log")
+# Append-only log of all non-hit (pruned) dockings across all rounds.
+# Never overwritten — survives round resets and batch_N_compressed.json recycling.
+PRUNED_LOG     = os.path.join(LOG_DIR, "pruned_nonhits.jsonl")
+
+# Module-level cache of (target, ligand_id) pairs previously docked but pruned
+# (non-hits whose output PDBQTs were deleted by compress_negatives).
+# Populated by load_pruned_cache() at startup; lets already_docked() skip re-docking.
+_PRUNED_CACHE: set = set()
+
+
+def load_pruned_cache() -> None:
+    """Populate _PRUNED_CACHE with all previously-docked non-hits so
+    already_docked() skips re-docking them.
+
+    Reads from (in order):
+    1. pruned_nonhits.jsonl  — append-only cumulative log (survives round resets)
+    2. batch_N_compressed.json — current-round per-batch files (fallback/supplement)
+    """
+    global _PRUNED_CACHE
+    _PRUNED_CACHE = set()
+
+    # 1. Cumulative log (primary source)
+    if os.path.exists(PRUNED_LOG):
+        try:
+            with open(PRUNED_LOG) as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        h = json.loads(line)
+                        _PRUNED_CACHE.add((h["target"], h["ligand"]))
+        except Exception:
+            pass
+
+    # 2. Current-round compressed files (supplement — catches entries not yet in JSONL)
+    for path in glob.glob(os.path.join(LOG_DIR, "batch_*_compressed.json")):
+        try:
+            with open(path) as f:
+                data = json.load(f)
+            for h in data.get("pruned", []):
+                _PRUNED_CACHE.add((h["target"], h["ligand"]))
+        except Exception:
+            pass
+
+    if _PRUNED_CACHE:
+        log(f"Pruned cache loaded: {len(_PRUNED_CACHE):,} previously-docked non-hits (will skip re-docking)")
 
 # ── Continuous-pipeline defaults ──────────────────────────────────────────────
 # Start prefetch download when this many batches remain in the current round.
@@ -220,11 +265,19 @@ def get_batches(ligands: list[str], batch_size: int) -> list[list[str]]:
 
 
 def already_docked(target: str, ligand_path: str) -> bool:
-    """Check if this ligand was already docked against this target."""
+    """Check if this ligand was already docked against this target.
+
+    Returns True if:
+    - output PDBQT exists on disk (hit kept by compress_negatives), OR
+    - (target, ligand_id) is in _PRUNED_CACHE (non-hit whose file was deleted
+      but score was logged in a prior batch_N_compressed.json).
+    """
     ligand_id = os.path.basename(ligand_path).replace(".pdbqt", "")
     out_path  = os.path.join(DOCKING_DIR, f"{target}_results",
                              f"{ligand_id}_out.pdbqt")
-    return os.path.exists(out_path) and os.path.getsize(out_path) > 0
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 0:
+        return True
+    return (target, ligand_id) in _PRUNED_CACHE
 
 
 # ── Receptor preparation ──────────────────────────────────────────────────────
@@ -795,6 +848,17 @@ def compress_negatives(batch_id: int,
     with open(out_path, "w") as fh:
         json.dump(summary, fh, indent=2)
 
+    # Append new pruned entries to the cumulative JSONL so they survive round
+    # resets (batch_N_compressed.json files get recycled each round).
+    if pruned and not dry_run:
+        with open(PRUNED_LOG, "a") as fh:
+            for h in pruned:
+                fh.write(json.dumps({"target": h["target"], "ligand": h["ligand"],
+                                     "score": h["score"]}) + "\n")
+        # Also update in-memory cache immediately
+        for h in pruned:
+            _PRUNED_CACHE.add((h["target"], h["ligand"]))
+
     action = "Would free" if dry_run else "Freed"
     log(f"Compress negatives (batch {batch_id}): {len(pruned)} files pruned "
         f"({action} {mb_freed} MB), {len(kept)} hits kept -> {out_path}")
@@ -922,6 +986,9 @@ def main():
     cpu_per_vina = args.cpu_per_vina or max(1, (os.cpu_count() or 4) // args.parallel)
     log(f"CPU config: {args.parallel} parallel targets x {cpu_per_vina} CPUs each "
         f"= {args.parallel * cpu_per_vina} total (system has {os.cpu_count()})")
+
+    # ── Pruned-hit cache (skip re-docking non-hits from prior rounds) ─────────
+    load_pruned_cache()
 
     # ── Keep-awake ────────────────────────────────────────────────────────────
     if not args.no_keepawake:
