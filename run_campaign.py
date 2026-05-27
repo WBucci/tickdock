@@ -57,6 +57,11 @@ DEFAULT_BATCH_SIZE    = 2000
 DEFAULT_PARALLEL      = 4       # targets running simultaneously
 DEFAULT_EXH           = 4       # Vina exhaustiveness (8 for final re-dock)
 DEFAULT_CPU_PER_VINA  = max(1, (os.cpu_count() or 4) // DEFAULT_PARALLEL)
+# Compounds scoring between GOOD_SCORE and NEAR_MISS_LOWER are "near-misses":
+# their PDBQTs are deleted (space) but they are NOT added to the pruned cache,
+# so they get re-docked if exh increases in a later round.
+# Set to match max expected score improvement from exh=4→8 (~1.5 kcal/mol).
+NEAR_MISS_MARGIN      = 1.5     # kcal/mol above hit threshold → still re-dockable
 
 LIGANDS_DIR    = os.path.join(DOCKING_DIR, "ligands_pdbqt")
 STATE_FILE     = os.path.join(LOG_DIR, "campaign_state.json")
@@ -797,9 +802,16 @@ def compress_negatives(batch_id: int,
     if score_threshold is None:
         score_threshold = VINA["good_score"]
 
-    pruned      = []
+    pruned      = []   # clear fails: cached permanently, never re-docked
+    near_miss   = []   # near threshold: PDBQT deleted but NOT cached → re-dockable
     kept        = []
     bytes_freed = 0
+
+    # Compounds between score_threshold and near_miss_lower are re-dockable:
+    # deleting PDBQT saves space but omitting from pruned cache lets a higher-exh
+    # round re-dock them (they may score as hits at exh=8 after scoring just above
+    # threshold at exh=4).
+    near_miss_lower = score_threshold + NEAR_MISS_MARGIN  # e.g. -7.0 + 1.5 = -5.5
 
     # Load hits already recorded in previous batch compressed files so we don't
     # double-count them (hit PDBQTs are never deleted, so they reappear each run).
@@ -828,7 +840,13 @@ def compress_negatives(batch_id: int,
                 if not dry_run:
                     os.unlink(pdbqt_path)
                 bytes_freed += size
-                pruned.append({"target": target, "ligand": ligand, "score": score})
+                entry = {"target": target, "ligand": ligand, "score": score}
+                if score <= near_miss_lower:
+                    # Near-miss: delete PDBQT but keep re-dockable
+                    near_miss.append(entry)
+                else:
+                    # Clear fail: cache permanently
+                    pruned.append(entry)
             else:
                 if (target, ligand) not in already_logged:
                     kept.append({"target": target, "ligand": ligand, "score": score})
@@ -838,30 +856,33 @@ def compress_negatives(batch_id: int,
         "batch_id":        batch_id,
         "score_threshold": score_threshold,
         "n_pruned":        len(pruned),
+        "n_near_miss":     len(near_miss),
         "n_kept":          len(kept),
+        "near_miss_lower": near_miss_lower,
         "mb_freed":        mb_freed,
         "dry_run":         dry_run,
-        "pruned":          pruned,   # scores preserved even though files gone
+        "pruned":          pruned,     # clear fails — cached, never re-docked
+        "near_miss":       near_miss,  # PDBQT deleted but NOT cached → re-dockable
         "kept":            kept,
     }
     out_path = os.path.join(LOG_DIR, f"batch_{batch_id}_compressed.json")
     with open(out_path, "w") as fh:
         json.dump(summary, fh, indent=2)
 
-    # Append new pruned entries to the cumulative JSONL so they survive round
-    # resets (batch_N_compressed.json files get recycled each round).
+    # Append ONLY clear-fail pruned entries to cumulative JSONL.
+    # Near-misses are intentionally omitted so they remain re-dockable.
     if pruned and not dry_run:
         with open(PRUNED_LOG, "a") as fh:
             for h in pruned:
                 fh.write(json.dumps({"target": h["target"], "ligand": h["ligand"],
                                      "score": h["score"]}) + "\n")
-        # Also update in-memory cache immediately
         for h in pruned:
             _PRUNED_CACHE.add((h["target"], h["ligand"]))
 
     action = "Would free" if dry_run else "Freed"
-    log(f"Compress negatives (batch {batch_id}): {len(pruned)} files pruned "
-        f"({action} {mb_freed} MB), {len(kept)} hits kept -> {out_path}")
+    log(f"Compress negatives (batch {batch_id}): {len(pruned)} clear-fails pruned, "
+        f"{len(near_miss)} near-misses re-dockable, {len(kept)} hits kept "
+        f"({action} {mb_freed} MB) -> {out_path}")
     return summary
 
 
