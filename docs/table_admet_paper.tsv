@@ -1,0 +1,11 @@
+Rank	Ligand	Target name	Score (kcal/mol)	Pan-tick	Human selectivity	MW	logP	TPSA	RotBonds	logS_ESOL	Lipinski	Veber	hERG_flag	AMES_flag	Hepatotox_flag	PAINS	ADMET flag
+1	CHEMBL9171	B7P5E9	-13.125	No	0.514	428.2	3.91	91.3	5	-5.14	Pass	Pass	Flag	Low risk	Low risk	Clean	FLAG(hERG)
+2	CHEMBL8905	B7P5E9	-12.995	No	0.517	385.15	3.84	88.1	4	-4.95	Pass	Pass	Flag	Low risk	Low risk	Clean	FLAG(hERG)
+3	CHEMBL9203	B7P5E9	-12.373	No	0.478	474.17	4.23	140.4	7	-5.45	Pass	Fail	Flag	Flag	Low risk	Clean	FLAG(hERG,AMES)
+4	CHEMBL8922	B7PY20	-12.034	Yes		459.19	4.33	106.5	7	-5.43	Pass	Pass	Flag	Low risk	Low risk	Clean	FLAG(hERG)
+5	CHEMBL429008	B7P5E9	-11.885	No	0.468	425.2	4.37	105.4	7	-5.37	Pass	Pass	Low risk	Low risk	Low risk	Clean	CLEAN
+6	CHEMBL429379	B7PY20	-11.785	Yes		421.21	2.4	93.8	4	-3.94	Pass	Pass	Flag	Flag	Flag	Clean	FLAG(hERG,AMES,Hepatotox)
+7	CHEMBL10161	B7P5E9	-11.781	No	0.566	463.18	4.23	67.4	6	-5.45	Pass	Pass	Flag	Low risk	Low risk	Clean	FLAG(hERG)
+8	CHEMBL9250	B7P5E9	-11.767	No		423.2	3.46	58.7	4	-4.74	Pass	Pass	Flag	Low risk	Low risk	Clean	FLAG(hERG)
+9	CHEMBL9203	B7PY20	-11.755	Yes	0.478	474.17	4.23	140.4	7	-5.45	Pass	Fail	Flag	Flag	Low risk	Clean	FLAG(hERG,AMES)
+10	CHEMBL9291	B7P5E9	-11.695	No		429.18	4.32	97.3	6	-5.34	Pass	Pass	Flag	Low risk	Low risk	Clean	FLAG(hERG)

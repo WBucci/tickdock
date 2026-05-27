@@ -1,0 +1,31 @@
+Rank	Ligand	Target	Target name	Score (kcal/mol)	Pan-tick	Human selectivity	ADMET flag	MW	logP	HBD	HBA	TPSA	RotBonds	ArRings	logS_ESOL	Lipinski	Veber	Egan	PAINS	Brenk	hERG_flag	AMES_flag	AMES_alerts	Hepatotox_flag	Hepatotox_alerts	BasicN_count
+1	CHEMBL9171	B7P5E9	B7P5E9	-13.125	No	0.514	FLAG(hERG)	428.2	3.91	3	5	91.3	5	4	-5.14	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		2
+2	CHEMBL8905	B7P5E9	B7P5E9	-12.995	No	0.517	FLAG(hERG)	385.15	3.84	3	4	88.1	4	4	-4.95	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+3	CHEMBL9203	B7P5E9	B7P5E9	-12.373	No	0.478	FLAG(hERG,AMES)	474.17	4.23	3	7	140.4	7	4	-5.45	Pass	Fail	Fail	Clean	Flag	Flag	Flag	ArNitro	Low risk		2
+4	CHEMBL8922	B7PY20	B7PY20	-12.034	Yes		FLAG(hERG)	459.19	4.33	3	6	106.5	7	4	-5.43	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+5	CHEMBL429008	B7P5E9	B7P5E9	-11.885	No	0.468	CLEAN	425.2	4.37	2	6	105.4	7	5	-5.37	Pass	Pass	Pass	Clean	Clean	Low risk	Low risk		Low risk		0
+6	CHEMBL429379	B7PY20	B7PY20	-11.785	Yes		FLAG(hERG,AMES,Hepatotox)	421.21	2.4	1	7	93.8	4	2	-3.94	Pass	Pass	Pass	Clean	Flag	Flag	Flag	ArPrimAmine	Flag	Michael acceptor|ArPrimAmine	2
+7	CHEMBL10161	B7P5E9	B7P5E9	-11.781	No	0.566	FLAG(hERG)	463.18	4.23	0	6	67.4	6	4	-5.45	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		2
+8	CHEMBL9250	B7P5E9	B7P5E9	-11.767	No		FLAG(hERG)	423.2	3.46	0	4	58.7	4	3	-4.74	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+9	CHEMBL9203	B7PY20	B7PY20	-11.755	Yes	0.478	FLAG(hERG,AMES)	474.17	4.23	3	7	140.4	7	4	-5.45	Pass	Fail	Fail	Clean	Flag	Flag	Flag	ArNitro	Low risk		2
+10	CHEMBL9291	B7P5E9	B7P5E9	-11.695	No		FLAG(hERG)	429.18	4.32	3	5	97.3	6	4	-5.34	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+11	CHEMBL9190	B7PY20	B7PY20	-11.604	Yes		FLAG(hERG)	403.21	3.69	1	4	41.9	3	2	-4.76	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+12	CHEMBL8920	B7PY20	B7PY20	-11.581	Yes		FLAG(hERG)	473.17	3.72	3	7	123.6	7	4	-5.12	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+13	CHEMBL9250	B7PY20	B7PY20	-11.576	Yes		FLAG(hERG)	423.2	3.46	0	4	58.7	4	3	-4.74	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+14	CHEMBL9917	B7P5E9	B7P5E9	-11.533	No		CLEAN	388.22	4.72	1	2	43.3	5	3	-5.27	Pass	Pass	Pass	Clean	Clean	Low risk	Low risk		Low risk		0
+15	CHEMBL9167	B7P5E9	B7P5E9	-11.473	No		WARN(PAINS,Brenk)	378.07	4.11	4	7	120.4	1	4	-5.21	Pass	Pass	Pass	Flag	Flag	Low risk	Low risk		Low risk		0
+16	CHEMBL9291	B7PY20	B7PY20	-11.463	Yes		FLAG(hERG)	429.18	4.32	3	5	97.3	6	4	-5.34	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+17	CHEMBL9190	B7P5E9	B7P5E9	-11.444	No		FLAG(hERG)	403.21	3.69	1	4	41.9	3	2	-4.76	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+18	CHEMBL10039	B7P5E9	B7P5E9	-11.407	No		CLEAN	382.13	4.46	2	3	79.3	5	4	-5.25	Pass	Pass	Pass	Clean	Clean	Low risk	Low risk		Low risk		0
+19	CHEMBL9267	B7PY20	B7PY20	-11.399	Yes		FLAG(hERG)	487.19	4.11	3	7	123.6	8	4	-5.37	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+20	CHEMBL10035	B7P5E9	B7P5E9	-11.375	No		FLAG(hERG)	316.19	4.95	0	2	15.6	1	2	-5.22	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+21	CHEMBL10055	B7P5E9	B7P5E9	-11.368	No		FLAG(hERG)	493.15	3.22	4	7	142.5	9	4	-4.82	Pass	Fail	Fail	Clean	Flag	Flag	Low risk		Low risk		1
+22	CHEMBL8921	B7PY20	B7PY20	-11.366	Yes		FLAG(hERG)	444.15	3.11	3	7	127.2	6	4	-4.65	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+23	CHEMBL430152	B7P5E9	B7P5E9	-11.365	No		CLEAN	479.24	4.89	1	5	94.3	8	5	-5.94	Pass	Pass	Pass	Clean	Clean	Low risk	Low risk		Low risk		0
+24	CHEMBL429951	B7P5E9	B7P5E9	-11.34	No		CLEAN	396.15	4.55	1	4	68.3	5	4	-5.37	Pass	Pass	Pass	Clean	Clean	Low risk	Low risk		Low risk		0
+25	CHEMBL8921	B7P5E9	B7P5E9	-11.318	No		FLAG(hERG)	444.15	3.11	3	7	127.2	6	4	-4.65	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+26	CHEMBL10118	B7PY20	B7PY20	-11.295	Yes		FLAG(hERG)	374.13	4.7	1	5	67.9	5	3	-5.27	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+27	CHEMBL429202	A0A4D5RNM5	Nuclear receptor subfamily 2 group 	-11.275	Yes		FLAG(hERG)	398.18	4.27	0	3	32.8	5	2	-4.99	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+28	CHEMBL417605	B7PY20	B7PY20	-11.251	Yes		FLAG(hERG)	417.23	4.08	1	4	41.9	4	2	-5.02	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+29	CHEMBL10085	B7P5E9	B7P5E9	-11.208	No		FLAG(hERG)	421.27	4.42	0	4	36.0	6	2	-5.13	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		2
+30	CHEMBL429379	B7P5E9	B7P5E9	-11.176	No		FLAG(hERG,AMES,Hepatotox)	421.21	2.4	1	7	93.8	4	2	-3.94	Pass	Pass	Pass	Clean	Flag	Flag	Flag	ArPrimAmine	Flag	Michael acceptor|ArPrimAmine	2
