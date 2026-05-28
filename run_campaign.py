@@ -12,7 +12,7 @@ Fixes:
   [5] No checkpoint / resume           -> campaign_state.json tracks every batch
 
 Features:
-  - 2000-compound batches (configurable)
+  - 500-compound batches (configurable; ~4h per batch at exh=4 on 16 cores)
   - Parallel targets: 4 at once, each Vina gets CPU_COUNT//4 CPUs
   - Dispatch hook after every batch: writes summary + fires dispatch_report.py
   - Windows toast notification (WSL2 -> PowerShell) when batches complete
@@ -21,7 +21,7 @@ Features:
 
 Usage:
     python run_campaign.py                       # full campaign, auto mode
-    python run_campaign.py --batch-size 2000     # default
+    python run_campaign.py --batch-size 500      # default (~4h/batch)
     python run_campaign.py --parallel 4          # N targets simultaneously
     python run_campaign.py --exh 4               # Vina exhaustiveness
     python run_campaign.py --status              # show current state, exit
@@ -53,7 +53,7 @@ from config import (
 )
 
 # ── Campaign constants ────────────────────────────────────────────────────────
-DEFAULT_BATCH_SIZE    = 2000
+DEFAULT_BATCH_SIZE    = 500   # ~4h per batch at exh=4, 138 targets, 16 cores
 DEFAULT_PARALLEL      = 4       # targets running simultaneously
 DEFAULT_EXH           = 4       # Vina exhaustiveness (8 for final re-dock)
 DEFAULT_CPU_PER_VINA  = max(1, (os.cpu_count() or 4) // DEFAULT_PARALLEL)

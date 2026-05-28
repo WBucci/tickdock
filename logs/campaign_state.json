@@ -1,12 +1,12 @@
 {
   "started": "2026-05-23T00:00:00",
-  "batch_size": 2000,
+  "batch_size": 500,
   "batches_total": 3,
   "batches_completed": [
     0
   ],
   "batches_failed": [],
-  "total_ligands": 5099,
+  "total_ligands": 12840,
   "targets": [
     "A0A4D5RDE4",
     "A0A4D5RGQ5",
