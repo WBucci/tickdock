@@ -808,6 +808,10 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
         ("Generate figures",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "generate_figures.py")],
          300),
+        ("Binding mode diagrams",
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "binding_mode_viz.py"),
+          "--top-n", "5", "--tier2-only"],   # 2D PNG + contacts; no py3Dmol dependency
+         300),
         ("Regenerate docs",
          [sys.executable, os.path.join(BASE_DIR, "run_pipeline.py"), "--docs-only"],
          300),

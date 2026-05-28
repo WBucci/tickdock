@@ -90,13 +90,9 @@ All parameters in `config.py`. Every threshold logged to `logs/pipeline_audit.js
 - [x] Campaign status: RUNNING/STOPPED + vina count + stop signal warning
 - [x] Hit trend log, campaign summary JSON, auto git commit post-round
 - [x] `first_seen_round` in top_hits.json; near-miss upgrade rate tracking
-- [x] Rank recovery validation (`rank_recovery.py`)
-- [x] Binding mode visualization (`binding_mode_viz.py`)
 - [x] I. scapularis: 3 rounds complete; Round 4 running (138 targets)
+- [x] Binding mode diagrams in post-round loop (`binding_mode_viz.py --tier2-only`)
 - [ ] Round 4 campaign completion (12,840 ligands × 138 targets at exh=4)
-- [ ] Dog PGAP5 selectivity docking (B7P5E9 borderline — pending)
-- [ ] GROMACS/OpenMM MD validation of top leads (priority: CHEMBL429008)
-- [ ] Paper Discussion section draft
 - [ ] GPU acceleration (AutoDock-GPU — pending RDNA 4 WSL2 ROCm support)
 
 </details>

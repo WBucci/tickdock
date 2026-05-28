@@ -163,6 +163,7 @@ python scripts/dispatch_report.py --batch 1    # specific batch detail
 | Score annotation | `annotate_scores.py` | Write best_score/n_hits per target |
 | Orthologs | `cross_species_orthologs.py --min-species 1` | Refresh pan-tick conservation |
 | Figures | `generate_figures.py` | Score distributions, pocket scatter |
+| Binding mode diagrams | `binding_mode_viz.py --top-n 5 --tier2-only` | 2D interaction diagrams per lead |
 | Docs | `run_pipeline.py --docs-only` | Regenerate Methods section + audit |
 | Summary | `update_campaign_summary()` | Write `logs/campaign_summary.json` |
 | Git commit | `auto_commit_round()` | Commit result files (no push) |
