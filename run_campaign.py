@@ -1300,11 +1300,16 @@ def auto_commit_round(round_num: int, n_hits: int, best_score: float | None,
     msg = (f"data: round {round_num} complete — {n_hits} hits, "
            f"best {score_str} kcal/mol, {elapsed_h:.1f}h")
 
+    import glob as _glob
     files_to_add = [
-        os.path.join(LOG_DIR,    "campaign_summary.json"),
-        os.path.join(LOG_DIR,    "hit_trend.jsonl"),
+        os.path.join(LOG_DIR,     "campaign_summary.json"),
+        os.path.join(LOG_DIR,     "hit_trend.jsonl"),
+        os.path.join(LOG_DIR,     "pruned_nonhits.jsonl"),
         os.path.join(DOCKING_DIR, "top_hits.json"),
         os.path.join(DOCKING_DIR, "docking_results_summary.tsv"),
+        # per-batch summaries and reports (small, useful record)
+        *_glob.glob(os.path.join(LOG_DIR, "batch_*_summary.json")),
+        *_glob.glob(os.path.join(LOG_DIR, "batch_*_report.txt")),
     ]
 
     # Windows path for powershell.exe push (WSL git lacks GitHub credentials)

@@ -61,8 +61,16 @@ logs/*.log
 logs/*.flag
 logs/*.flag.*
 logs/_*.py
-# Keep: logs/pipeline_audit.json (reproducibility record)
+# batch_*_compressed.json: full non-hit score dumps, too large to commit
+# (scores summarized in top_hits.json + pruned_nonhits.jsonl already)
+logs/batch_*_compressed.json
+# Keep: audit, campaign summary, hit trend, pruned cache, batch summaries/reports
 !logs/pipeline_audit.json
+!logs/campaign_summary.json
+!logs/hit_trend.jsonl
+!logs/pruned_nonhits.jsonl
+!logs/batch_*_summary.json
+!logs/batch_*_report.txt
 
 # ── Docs (generated — keep final versions) ────────────────────
 docs/methods_draft.txt
