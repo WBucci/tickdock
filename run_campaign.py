@@ -1009,10 +1009,12 @@ def compress_negatives(batch_id: int,
 
 
 # ── Top hits rebuild (aggregates all compressed files → top_hits.json) ────────
-def rebuild_top_hits(n: int = 500) -> int:
+def rebuild_top_hits() -> int:
     """
     Rebuild TOP_HITS_FILE from all compressed batch files across all rounds.
-    Deduplicates by (target, ligand), keeps best score per pair, saves top N.
+    Saves ALL unique hits that met the score threshold (no cap) — compress_negatives
+    already filters by VINA['good_score'], so everything in 'kept' qualifies.
+    Deduplicates by (target, ligand), keeps best score per pair.
     Called after each compress step so top_hits.json is always current.
     Returns number of hits saved.
     """
@@ -1033,15 +1035,14 @@ def rebuild_top_hits(n: int = 500) -> int:
         [{"target": t, "ligand": l, "score": s} for (t, l), s in seen.items()],
         key=lambda x: x["score"],
     )
-    top = hits[:n]
     try:
         with open(TOP_HITS_FILE, "w") as f:
-            json.dump(top, f, indent=2)
-        log(f"top_hits.json rebuilt: {len(seen):,} unique hits → top {len(top)} saved "
-            f"(best: {top[0]['score']:.3f} kcal/mol)")
+            json.dump(hits, f, indent=2)
+        log(f"top_hits.json rebuilt: {len(hits):,} unique hits saved "
+            f"(best: {hits[0]['score']:.3f} | threshold: ≤{VINA['good_score']} kcal/mol)")
     except Exception as e:
         log(f"top_hits.json rebuild failed: {e}", "WARN")
-    return len(top)
+    return len(hits)
 
 
 # ── Adaptive exhaustiveness by pocket size ─────────────────────────────────────

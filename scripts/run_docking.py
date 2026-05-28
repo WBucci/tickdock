@@ -157,22 +157,30 @@ def summarise_results(docking_dir: str, targets: list[str]) -> dict:
         if not os.path.isdir(out_dir):
             continue
         hits = parse_results(out_dir, acc)
-        summary[acc] = hits[:50]    # top 50 per target
-        all_hits.extend(hits[:20])  # global top-20 per target
+        summary[acc] = hits  # all hits per target (no cap)
+        all_hits.extend(hits)
 
-    # Write per-target TSV
+    # Write per-target TSV (all hits)
     report_path = os.path.join(docking_dir, "docking_results_summary.tsv")
     with open(report_path, "w") as f:
         f.write("target\tligand\tscore_kcal_mol\n")
         for acc in targets:
-            for hit in summary.get(acc, [])[:50]:
+            for hit in summary.get(acc, []):
                 f.write(f"{acc}\t{hit['ligand']}\t{hit['score']:.3f}\n")
 
-    # Write global top-500 JSON (was 50 — captures enough for downstream analysis)
+    # Write all qualifying hits JSON — no cap, score threshold is the only filter
     all_hits.sort(key=lambda x: x["score"])
+    seen_keys = set()
+    deduped = []
+    for h in all_hits:
+        k = (h["target"], h["ligand"])
+        if k not in seen_keys:
+            seen_keys.add(k)
+            deduped.append(h)
     top_json = os.path.join(docking_dir, "top_hits.json")
     with open(top_json, "w") as f:
-        json.dump(all_hits[:500], f, indent=2)
+        json.dump(deduped, f, indent=2)
+    print(f"  top_hits.json: {len(deduped)} unique hits saved")
 
     return summary
 

@@ -125,22 +125,22 @@ def prep_receptor(target: str) -> str | None:
     return None
 
 
+MEEKO_SCRIPT = os.path.expanduser("~/.local/bin/mk_prepare_receptor.py")
+
+
 def prep_receptor_flex(target: str, flex_residues: list[str]) -> tuple[str | None, str | None]:
     """
-    Prepare rigid + flexible receptor PDBQT for Vina --flex docking.
+    Prepare rigid + flexible receptor PDBQT for Vina --flex docking using meeko.
 
     flex_residues: list of "CHAIN:RESNUM" strings, e.g. ["A:100", "A:145"].
-    Splits the receptor PDB into:
-      - rigid portion: all residues NOT in flex_residues (converted with obabel -xr)
-      - flex portion:  specified residues, manually built in Vina torsion-tree format
-        using TORSDOF/ROOT/BRANCH/ENDBRANCH/ENDROOT records.
+    Uses meeko mk_prepare_receptor.py (Python 3, modern).  Generates:
+      - {target}_rigid.pdbqt  — all non-flex residues
+      - {target}_flex.pdbqt   — flex residues with full torsion tree
+
+    meeko -f flag format: "A:100" (chain:resnum, no residue name needed).
+    Multiple residues: repeated -f flags.
 
     Returns (rigid_pdbqt_path, flex_pdbqt_path) or (None, None) on failure.
-
-    NOTE: Full torsion-tree preparation requires MGLTools (prepare_flexreceptor4.py).
-    If MGLTools is found in PATH or common install locations, it is used automatically.
-    Otherwise, a simplified flex PDBQT is generated (side-chain rotamers only for
-    Ser/Thr/Lys/Arg/Phe/Tyr/Trp — sufficient for most cases without MGLTools).
     """
     if not flex_residues:
         rigid = prep_receptor(target)
@@ -151,101 +151,42 @@ def prep_receptor_flex(target: str, flex_residues: list[str]) -> tuple[str | Non
         log(f"{target}: source PDB not found for flex prep", "WARN")
         return None, None
 
+    basename  = os.path.join(DOCKING_DIR, f"{target}_flex_prep")
     rigid_out = os.path.join(DOCKING_DIR, f"{target}_rigid.pdbqt")
     flex_out  = os.path.join(DOCKING_DIR, f"{target}_flex.pdbqt")
 
-    # Try MGLTools prepare_flexreceptor4.py
-    mgl_scripts = [
-        "/opt/mgltools/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_flexreceptor4.py",
-        os.path.expanduser("~/MGLTools/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_flexreceptor4.py"),
-        os.path.expanduser("~/MGLTools-1.5.7/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_flexreceptor4.py"),
-    ]
-    mgl_script = next((s for s in mgl_scripts if os.path.exists(s)), None)
-
-    if mgl_script:
-        # MGLTools format: "A:PHE:100_A:TYR:200" — needs residue name
-        # Parse from PDB to get residue names for chain:resnum pairs
-        resname_map = {}  # "A:100" -> "PHE"
-        try:
-            with open(pdb_path) as pf:
-                for line in pf:
-                    if line.startswith("ATOM") or line.startswith("HETATM"):
-                        chain   = line[21].strip()
-                        resnum  = line[22:26].strip()
-                        resname = line[17:20].strip()
-                        key     = f"{chain}:{resnum}"
-                        resname_map[key] = resname
-        except Exception:
-            pass
-
-        flex_mgl = []
+    # ── meeko mk_prepare_receptor.py (primary — Python 3, no MGLTools needed) ──
+    if os.path.exists(MEEKO_SCRIPT):
+        flex_flags = []
         for fr in flex_residues:
-            rn = resname_map.get(fr, "")
-            if rn:
-                chain, resnum = fr.split(":")
-                flex_mgl.append(f"{chain}:{rn}:{resnum}")
-        flex_str = "_".join(flex_mgl)
+            flex_flags += ["-f", fr]   # e.g. -f "A:100" -f "A:145"
 
-        result = subprocess.run(
-            ["python2", mgl_script, "-r", pdb_path, "-s", flex_str,
-             "-g", rigid_out, "-x", flex_out],
-            capture_output=True, timeout=120,
-        )
-        if result.returncode == 0 and os.path.exists(flex_out):
-            log(f"{target}: MGLTools flex prep OK — {len(flex_residues)} flex residues")
-            return rigid_out, flex_out
-        log(f"{target}: MGLTools flex prep failed: {result.stderr.decode()[:100]}", "WARN")
+        cmd = (["python3", MEEKO_SCRIPT,
+                "--read_pdb", pdb_path,
+                "-o", basename,
+                "-p"]             # -p: write PDBQT output (generates _rigid + _flex)
+               + flex_flags)
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+            meeko_rigid = basename + "_rigid.pdbqt"
+            meeko_flex  = basename + "_flex.pdbqt"
+            if result.returncode == 0 and os.path.exists(meeko_rigid) and os.path.exists(meeko_flex):
+                # Rename to standard location
+                os.replace(meeko_rigid, rigid_out)
+                os.replace(meeko_flex,  flex_out)
+                log(f"{target}: meeko flex prep OK — {len(flex_residues)} flex residues "
+                    f"({', '.join(flex_residues)})")
+                return rigid_out, flex_out
+            else:
+                stderr = result.stderr.strip()
+                log(f"{target}: meeko flex prep failed (exit {result.returncode})"
+                    + (f": {stderr[:120]}" if stderr else ""), "WARN")
+        except Exception as e:
+            log(f"{target}: meeko flex prep error: {e}", "WARN")
+    else:
+        log(f"{target}: meeko not found at {MEEKO_SCRIPT} — run: "
+            "pip3 install --break-system-packages meeko scipy gemmi", "WARN")
 
-    # Fallback: split PDB manually, convert rigid with obabel, write minimal flex PDBQT
-    log(f"{target}: MGLTools not found — using simplified flex PDBQT (rotatable side chains only)")
-    flex_set = set()
-    for fr in flex_residues:
-        parts = fr.split(":")
-        if len(parts) == 2:
-            flex_set.add((parts[0], parts[1]))  # (chain, resnum)
-
-    rigid_lines = []
-    flex_lines  = []
-    try:
-        with open(pdb_path) as pf:
-            for line in pf:
-                if line.startswith("ATOM") or line.startswith("HETATM"):
-                    chain  = line[21].strip()
-                    resnum = line[22:26].strip()
-                    if (chain, resnum) in flex_set:
-                        flex_lines.append(line)
-                    else:
-                        rigid_lines.append(line)
-                else:
-                    rigid_lines.append(line)
-    except Exception as e:
-        log(f"{target}: PDB split failed: {e}", "WARN")
-        return None, None
-
-    # Write and convert rigid portion
-    tmp_rigid_pdb = rigid_out.replace(".pdbqt", "_tmp.pdb")
-    with open(tmp_rigid_pdb, "w") as f:
-        f.writelines(rigid_lines)
-    try:
-        subprocess.run(
-            ["obabel", tmp_rigid_pdb, "-O", rigid_out, "-xr",
-             "-p", str(VINA["ph"]), "--partialcharge", "gasteiger", "--quiet"],
-            capture_output=True, timeout=120,
-        )
-        os.unlink(tmp_rigid_pdb)
-    except Exception:
-        pass
-
-    # Write minimal flex PDBQT (no torsion tree — Vina will treat as rigid flex)
-    with open(flex_out, "w") as ff:
-        ff.write("BEGIN_RES flex\n")
-        for line in flex_lines:
-            ff.write(line)
-        ff.write("END_RES\n")
-
-    if os.path.exists(rigid_out) and os.path.exists(flex_out):
-        log(f"{target}: simplified flex PDBQT written ({len(flex_lines)} flex atoms)")
-        return rigid_out, flex_out
     return None, None
 
 
