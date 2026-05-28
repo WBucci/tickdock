@@ -2,7 +2,9 @@
   "started": "2026-05-23T00:00:00",
   "batch_size": 2000,
   "batches_total": 3,
-  "batches_completed": [],
+  "batches_completed": [
+    0
+  ],
   "batches_failed": [],
   "total_ligands": 5099,
   "targets": [
@@ -54,7 +56,7 @@
       "n_ligands": 2000,
       "n_ok": 138,
       "n_failed": 0,
-      "total_hits": 5375,
+      "total_hits": 29395,
       "top_5": [
         {
           "score": -13.125,
@@ -62,28 +64,28 @@
           "ligand": "CHEMBL9171"
         },
         {
-          "score": -12.034,
+          "score": -12.558,
           "target": "B7PY20",
-          "ligand": "CHEMBL8922"
+          "ligand": "CHEMBL10250"
         },
         {
-          "score": -11.275,
-          "target": "A0A4D5RNM5",
-          "ligand": "CHEMBL429202"
+          "score": -12.11,
+          "target": "A0A0K0PR09",
+          "ligand": "CHEMBL10552"
         },
         {
-          "score": -11.176,
-          "target": "B7PMS2",
-          "ligand": "CHEMBL429202"
+          "score": -11.817,
+          "target": "Q2Q443",
+          "ligand": "CHEMBL10552"
         },
         {
-          "score": -11.084,
-          "target": "B7Q255",
-          "ligand": "CHEMBL8905"
+          "score": -11.621,
+          "target": "B7SP56",
+          "ligand": "CHEMBL10552"
         }
       ],
-      "elapsed_s": 286.5,
-      "completed_at": "2026-05-26T20:03:05.799477"
+      "elapsed_s": 61926.9,
+      "completed_at": "2026-05-28T12:58:42.118194"
     },
     "1": {
       "n_ligands": 2000,
@@ -191,10 +193,10 @@
       "completed_at": "2026-05-26T21:19:39.867825"
     }
   },
-  "total_batches_done": 0,
-  "cumulative_ligands": 0,
-  "cumulative_hits": 0,
-  "ligands_remaining": 5099,
-  "last_updated": "2026-05-26T21:19:39.899674",
+  "total_batches_done": 1,
+  "cumulative_ligands": 2000,
+  "cumulative_hits": 29395,
+  "ligands_remaining": 10840,
+  "last_updated": "2026-05-28T12:58:42.144406",
   "round": 4
 }

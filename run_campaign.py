@@ -1290,10 +1290,11 @@ def wait_for_compress():
 # ── Near-miss upgrade rate ────────────────────────────────────────────────────
 def auto_commit_round(round_num: int, n_hits: int, best_score: float | None,
                       elapsed_h: float):
-    """Auto-commit key result files after a round completes.
+    """Auto-commit and push key result files after a round completes.
 
-    Commits only files that exist; never pushes. Wrapped in try/except
-    so a git failure never breaks the campaign.
+    Commit runs via WSL git (no credentials needed for local commit).
+    Push runs via powershell.exe so Windows git credential manager handles auth.
+    Both steps wrapped in try/except — git failure never breaks the campaign.
     """
     score_str = f"{best_score:.3f}" if best_score is not None else "N/A"
     msg = (f"data: round {round_num} complete — {n_hits} hits, "
@@ -1305,6 +1306,9 @@ def auto_commit_round(round_num: int, n_hits: int, best_score: float | None,
         os.path.join(DOCKING_DIR, "top_hits.json"),
         os.path.join(DOCKING_DIR, "docking_results_summary.tsv"),
     ]
+
+    # Windows path for powershell.exe push (WSL git lacks GitHub credentials)
+    win_path = BASE_DIR.replace("/mnt/c/", "C:\\").replace("/", "\\")
 
     try:
         existing = [f for f in files_to_add if os.path.exists(f)]
@@ -1321,7 +1325,7 @@ def auto_commit_round(round_num: int, n_hits: int, best_score: float | None,
             log(f"auto_commit_round: git add failed: {add_result.stderr.strip()}", "WARN")
             return
 
-        # Commit
+        # Commit (WSL git, no credentials needed for local commit)
         commit_result = subprocess.run(
             ["git", "commit", "-m", msg],
             capture_output=True, text=True, cwd=BASE_DIR
@@ -1332,8 +1336,23 @@ def auto_commit_round(round_num: int, n_hits: int, best_score: float | None,
             out = commit_result.stdout.strip()
             if "nothing to commit" in out or "nothing added" in out:
                 log("auto_commit_round: nothing new to commit (files unchanged).")
+                return
             else:
                 log(f"auto_commit_round: git commit failed: {commit_result.stderr.strip()}", "WARN")
+                return
+
+        # Push via Windows PowerShell — Windows git has GitHub credential manager
+        push_result = subprocess.run(
+            ["powershell.exe", "-NonInteractive", "-Command",
+             f"cd '{win_path}'; git push origin master"],
+            capture_output=True, text=True, timeout=120
+        )
+        if push_result.returncode == 0:
+            log(f"auto_commit_round: pushed to origin/master")
+        else:
+            err = (push_result.stderr or push_result.stdout).strip()
+            log(f"auto_commit_round: push failed (commit kept locally): {err}", "WARN")
+
     except Exception as e:
         log(f"auto_commit_round: git error (campaign continues): {e}", "WARN")
 

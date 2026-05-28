@@ -37,5 +37,6 @@
   "CHEMBL10211": "O=C(O)c1c(-c2ccc3c(c2)OCO3)c2ccccc2n1-c1ccc2c(c1)OCO2",
   "CHEMBL9935": "CCOc1ccc2c(c1)c(CCNC(=O)C1CC1)c1n2CCCc2ccccc2-1",
   "CHEMBL10111": "COc1ccc2c3c1OC1[C@H]4OC[C@@]4(CCc4ccccc4)CC4C(C2)N(CC2CC2)CCC341",
-  "CHEMBL9922": "O=C(NCCCO)c1cnn(-c2nc(-c3cccc(C(F)(F)F)c3)cs2)c1C(F)(F)F"
+  "CHEMBL9922": "O=C(NCCCO)c1cnn(-c2nc(-c3cccc(C(F)(F)F)c3)cs2)c1C(F)(F)F",
+  "CHEMBL9937": "O=C(O)CCc1c(Cc2ccccc2)ccc2c1CCC(NS(=O)(=O)c1ccc(Cl)cc1)C2"
 }

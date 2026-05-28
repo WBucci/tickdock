@@ -2,7 +2,7 @@
 Steps 3–6: Structure → Pockets → Selectivity → Docking Prep
 =============================================================
 Combines the remaining pipeline steps:
-  3. Download AlphaFold structures, assess pLDDT
+  3. Download structures: RCSB experimental PDB (preferred) → AlphaFold fallback
   4. Detect druggable pockets (fpocket + DoGSiteScorer)
   5. BLAST vs human, RNAi literature, toxicity prediction
   6. Lipinski filter on ZINC library, generate Vina configs
@@ -57,6 +57,69 @@ def fetch_alphafold_structure(accession: str) -> tuple[str | None, str | None]:
         return None, None
 
 
+RCSB_DOWNLOAD_URL = "https://files.rcsb.org/download/{pdb_id}.pdb"
+
+def fetch_rcsb_structure(accession: str, pdb_ids: list[str]) -> tuple[str | None, str | None]:
+    """Fetch experimental PDB structure from RCSB. Tries each pdb_id in order.
+
+    Prefers the first UniProt-listed PDB ID (typically the primary/highest-cited
+    structure). Falls back to subsequent IDs on download failure.
+
+    Returns (pdb_path, pdb_url_used) or (None, None).
+    """
+    out_path = os.path.join(STRUCTURE_DIR, f"{accession}.pdb")
+    if os.path.exists(out_path):
+        # Already downloaded — return without re-fetching, note which ID was used
+        # (we can't know which ID produced the cached file, so return first ID)
+        return out_path, RCSB_DOWNLOAD_URL.format(pdb_id=pdb_ids[0])
+
+    for pdb_id in pdb_ids:
+        url = RCSB_DOWNLOAD_URL.format(pdb_id=pdb_id)
+        try:
+            dl = requests.get(url, timeout=60)
+            if dl.status_code != 200:
+                continue
+            with open(out_path, "w") as f:
+                f.write(dl.text)
+            return out_path, url
+        except Exception:
+            continue
+
+    return None, None
+
+
+def assess_rcsb_quality(pdb_path: str) -> dict:
+    """Quality assessment for experimental RCSB structures.
+
+    Unlike AlphaFold, RCSB B-factors are crystallographic displacement
+    parameters (lower = more ordered, typical range 10–50 Å²) — NOT pLDDT.
+    Applying pLDDT thresholds would incorrectly reject all experimental
+    structures. Instead, we count resolved Cα atoms and mark all experimental
+    structures as suitable for docking by default.
+
+    Returns a dict compatible with the pLDDT result dict from parse_plddt().
+    """
+    residue_count = 0
+    try:
+        with open(pdb_path) as f:
+            for line in f:
+                if line.startswith("ATOM") and line[12:16].strip() == "CA":
+                    residue_count += 1
+    except Exception:
+        pass
+
+    return {
+        "mean_plddt":          None,          # not applicable for experimental structures
+        "total_residues":      residue_count,
+        "high_conf_fraction":  None,
+        "high_conf_residues":  [],
+        "low_conf_residues":   [],
+        "suitable":            residue_count > 0,
+        "quality_label":       "EXPERIMENTAL",
+        "structure_source":    "rcsb",
+    }
+
+
 def parse_plddt(pdb_path: str) -> dict:
     """Parse AlphaFold pLDDT from B-factor column."""
     per_residue = {}
@@ -103,61 +166,130 @@ def _plddt_label(mean: float, frac: float) -> str:
 def run_step3(candidates: list[dict], max_proteins: int,
               log: AuditLog) -> list[dict]:
     print(f"\n{'━'*60}")
-    print(f"STEP 3: AlphaFold Structure Retrieval")
+    print(f"STEP 3: Structure Retrieval (RCSB experimental → AlphaFold fallback)")
     print(f"{'━'*60}")
 
-    log.param("min_plddt_mean",      MIN_PLDDT_MEAN, "Mean pLDDT threshold")
-    log.param("min_plddt_per_res",   MIN_PLDDT,      "Per-residue pLDDT threshold")
-    log.param("min_high_conf_frac",  0.50, "Min fraction of residues above pLDDT threshold")
+    log.param("min_plddt_mean",      MIN_PLDDT_MEAN, "Mean pLDDT threshold (AlphaFold only)")
+    log.param("min_plddt_per_res",   MIN_PLDDT,      "Per-residue pLDDT threshold (AlphaFold only)")
+    log.param("min_high_conf_frac",  0.50, "Min fraction of residues above pLDDT threshold (AlphaFold only)")
+    log.param("rcsb_preferred",      True,
+              "Experimental PDB structures fetched from RCSB when has_structure=True; "
+              "pLDDT quality filter skipped — experimental structures always suitable for docking")
 
-    suitable = []
-    downloaded = 0
+    suitable      = []
+    n_rcsb        = 0
+    n_alphafold   = 0
+    n_failed      = 0
 
     to_process = candidates[:max_proteins]
-    print(f"Processing {len(to_process)} candidates...")
+    n_with_pdb = sum(1 for p in to_process if p.get("has_structure") and p.get("pdb_ids"))
+    print(f"Processing {len(to_process)} candidates "
+          f"({n_with_pdb} with experimental PDB, "
+          f"{len(to_process) - n_with_pdb} AlphaFold-only)...")
 
     for i, p in enumerate(to_process):
-        acc  = p["accession"]
-        name = p["name"][:50]
+        acc   = p["accession"]
+        name  = p["name"][:50]
         print(f"  [{i+1}/{len(to_process)}] {acc} — {name}")
 
-        pdb_path, pdb_url = fetch_alphafold_structure(acc)
-        if not pdb_path:
-            p["structure_status"] = "NO_ALPHAFOLD"
-            print(f"    ✗ No AlphaFold structure")
-            continue
+        use_rcsb = p.get("has_structure") and p.get("pdb_ids")
 
-        downloaded += 1
-        plddt = parse_plddt(pdb_path)
-        if not plddt:
-            p["structure_status"] = "PARSE_FAILED"
-            continue
+        if use_rcsb:
+            # ── RCSB experimental structure path ──────────────────────────
+            pdb_ids  = p["pdb_ids"]
+            pdb_path, pdb_url = fetch_rcsb_structure(acc, pdb_ids)
+            if not pdb_path:
+                print(f"    ✗ RCSB download failed for {pdb_ids} — trying AlphaFold fallback")
+                pdb_path, pdb_url = fetch_alphafold_structure(acc)
+                source = "alphafold_fallback"
+            else:
+                source = "rcsb"
+                n_rcsb += 1
 
-        p.update({
-            "structure_status":   "OK",
-            "pdb_path":           pdb_path,
-            "pdb_url":            pdb_url,
-            "mean_plddt":         plddt["mean_plddt"],
-            "plddt_fraction":     plddt["high_conf_fraction"],
-            "structure_quality":  plddt["quality_label"],
-            "suitable_for_docking": plddt["suitable"],
-            "high_conf_residues": plddt["high_conf_residues"],
-        })
+            if not pdb_path:
+                p["structure_status"] = "NO_STRUCTURE"
+                n_failed += 1
+                print(f"    ✗ No structure available")
+                continue
 
-        print(f"    ✓ pLDDT={plddt['mean_plddt']:.1f} "
-              f"({plddt['high_conf_fraction']*100:.0f}% hi-conf) "
-              f"[{plddt['quality_label']}]")
+            quality = assess_rcsb_quality(pdb_path) if source == "rcsb" else parse_plddt(pdb_path)
+            if not quality or not quality.get("suitable"):
+                p["structure_status"] = "PARSE_FAILED"
+                n_failed += 1
+                continue
 
-        if plddt["suitable"]:
+            p.update({
+                "structure_status":     "OK",
+                "structure_source":     source,
+                "pdb_id_used":          pdb_ids[0] if source == "rcsb" else None,
+                "pdb_path":             pdb_path,
+                "pdb_url":              pdb_url,
+                "mean_plddt":           quality.get("mean_plddt"),
+                "plddt_fraction":       quality.get("high_conf_fraction"),
+                "structure_quality":    quality["quality_label"],
+                "suitable_for_docking": quality["suitable"],
+                "high_conf_residues":   quality.get("high_conf_residues", []),
+            })
+
+            if source == "rcsb":
+                print(f"    ✓ RCSB {pdb_ids[0]} | {quality['total_residues']} residues "
+                      f"[{quality['quality_label']}]")
+            else:
+                print(f"    ✓ AlphaFold fallback | pLDDT={quality['mean_plddt']:.1f} "
+                      f"[{quality['quality_label']}]")
+
+            log.api_call("RCSB", RCSB_DOWNLOAD_URL.format(pdb_id=pdb_ids[0]),
+                         query=acc, result_count=1)
+
+        else:
+            # ── AlphaFold path ─────────────────────────────────────────────
+            pdb_path, pdb_url = fetch_alphafold_structure(acc)
+            if not pdb_path:
+                p["structure_status"] = "NO_ALPHAFOLD"
+                n_failed += 1
+                print(f"    ✗ No AlphaFold structure")
+                continue
+
+            n_alphafold += 1
+            plddt = parse_plddt(pdb_path)
+            if not plddt:
+                p["structure_status"] = "PARSE_FAILED"
+                n_failed += 1
+                continue
+
+            p.update({
+                "structure_status":     "OK",
+                "structure_source":     "alphafold",
+                "pdb_id_used":          None,
+                "pdb_path":             pdb_path,
+                "pdb_url":              pdb_url,
+                "mean_plddt":           plddt["mean_plddt"],
+                "plddt_fraction":       plddt["high_conf_fraction"],
+                "structure_quality":    plddt["quality_label"],
+                "suitable_for_docking": plddt["suitable"],
+                "high_conf_residues":   plddt["high_conf_residues"],
+            })
+
+            print(f"    ✓ AlphaFold pLDDT={plddt['mean_plddt']:.1f} "
+                  f"({plddt['high_conf_fraction']*100:.0f}% hi-conf) "
+                  f"[{plddt['quality_label']}]")
+
+            log.api_call("AlphaFold", ALPHAFOLD_API, query=acc, result_count=1)
+            time.sleep(REQUEST_DELAY)
+
+        if p.get("suitable_for_docking"):
             suitable.append(p)
 
-        log.api_call("AlphaFold", ALPHAFOLD_API, query=acc, result_count=1)
-        time.sleep(REQUEST_DELAY)
-
-    log.stat("alphafold_structures_downloaded", downloaded, "Structures retrieved")
-    log.stat("suitable_for_docking", len(suitable),
-             f"Structures with mean pLDDT ≥ {MIN_PLDDT} and ≥50% high-confidence residues")
-    print(f"\n  {len(suitable)}/{downloaded} structures suitable for docking")
+    log.stat("rcsb_structures_downloaded",     n_rcsb,
+             "Experimental structures fetched from RCSB PDB")
+    log.stat("alphafold_structures_downloaded", n_alphafold,
+             "Predicted structures fetched from AlphaFold")
+    log.stat("structure_fetch_failed",          n_failed,
+             "Proteins with no structure available from either source")
+    log.stat("suitable_for_docking",            len(suitable),
+             "Structures passing quality filter (experimental always pass; AF2 requires pLDDT threshold)")
+    print(f"\n  RCSB: {n_rcsb} | AlphaFold: {n_alphafold} | Failed: {n_failed}")
+    print(f"  {len(suitable)}/{n_rcsb + n_alphafold} structures suitable for docking")
     return suitable
 
 

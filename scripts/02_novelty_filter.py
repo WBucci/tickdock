@@ -12,6 +12,8 @@ Filters to proteins that are:
 Usage:
     python scripts/02_novelty_filter.py
     python scripts/02_novelty_filter.py --skip-alphafold-check
+    python scripts/02_novelty_filter.py --exclude-pdb        # restore original PDB-exclusion behavior
+    python scripts/02_novelty_filter.py --include-chembl     # include proteins with known ChEMBL ligands
 """
 
 import sys, os, json, time, argparse
@@ -47,14 +49,46 @@ def filter_known_targets(proteins: list[dict], log: AuditLog) -> list[dict]:
     return kept
 
 
-def filter_structural_novelty(proteins: list[dict], log: AuditLog) -> list[dict]:
-    """Keep proteins with no PDB structure AND no ChEMBL ligands."""
-    no_pdb     = [p for p in proteins if not p["has_structure"]]
-    no_both    = [p for p in no_pdb   if not p["has_ligands"]]
-    log.stat("no_pdb_structure", len(no_pdb),  "Proteins without PDB structure")
-    log.stat("no_pdb_no_chembl", len(no_both), "Proteins with no structure AND no ligands")
-    print(f"  No PDB: {len(no_pdb)} | No PDB + no ChEMBL: {len(no_both)}")
-    return no_both
+def filter_structural_novelty(proteins: list[dict], log: AuditLog,
+                              exclude_pdb: bool = False,
+                              exclude_chembl: bool = True) -> list[dict]:
+    """Filter by structural novelty.
+
+    Args:
+        exclude_pdb:    If True, keep only proteins WITHOUT experimental PDB structure
+                        (original behavior). Default False — PDB proteins included;
+                        experimental structures are higher quality for docking and hits
+                        against known proteins carry more biological weight.
+        exclude_chembl: If True, keep only proteins without ChEMBL-registered ligands.
+                        Default True — still targets unexplored drug-target space.
+    """
+    has_pdb  = [p for p in proteins if     p["has_structure"]]
+    no_pdb   = [p for p in proteins if not p["has_structure"]]
+
+    if exclude_pdb:
+        pool = no_pdb
+        log.warn("PDB-exclusion mode: experimental structures filtered out")
+    else:
+        pool = proteins
+        log.param("include_pdb_structures", True,
+                  "Proteins with experimental PDB structures retained; "
+                  "experimental structures preferred over AlphaFold for docking quality")
+
+    if exclude_chembl:
+        result = [p for p in pool if not p["has_ligands"]]
+    else:
+        result = pool
+
+    log.stat("has_pdb_structure",  len(has_pdb),  "Proteins with experimental PDB structure")
+    log.stat("no_pdb_structure",   len(no_pdb),   "Proteins without PDB structure")
+    log.stat("after_novelty_filter", len(result),
+             f"Proteins retained (exclude_pdb={exclude_pdb}, exclude_chembl={exclude_chembl})")
+    pdb_in_result = sum(1 for p in result if p["has_structure"])
+    print(f"  PDB structures: {len(has_pdb)} total | {pdb_in_result} retained "
+          f"({'excluded' if exclude_pdb else 'included'})")
+    print(f"  ChEMBL filter ({'on' if exclude_chembl else 'off'}): "
+          f"{len(result)} proteins pass")
+    return result
 
 
 def check_alphafold(accession: str) -> bool:
@@ -114,15 +148,19 @@ def score_candidates(proteins: list[dict], log: AuditLog) -> list[dict]:
     Scoring rationale is logged for the Methods section.
     """
     scoring_rubric = {
-        "no_structure":       (3, "No experimental PDB structure"),
+        "no_structure":       (2, "No experimental PDB structure — unexplored"),
+        "has_pdb_structure":  (2, "Experimental PDB structure — higher docking quality"),
         "no_ligands":         (3, "No ChEMBL-registered ligands"),
         "unknown_function":   (2, "No functional annotation — discovery opportunity"),
-        "alphafold_ok":       (2, "AlphaFold structure available for docking"),
+        "alphafold_ok":       (1, "AlphaFold structure available for docking"),
         "good_length":        (1, "Length 100-1000 aa — ideal for docking"),
         "interesting_class":  (1, "Druggable protein class keyword"),
         "membrane":           (2, "Membrane/receptor — privileged drug target class"),
         "essential_keyword":  (2, "Essential process keyword"),
     }
+    # Note: no_structure and has_pdb_structure are mutually exclusive — a protein
+    # scores +2 either way, but for different reasons. PDB proteins score higher
+    # overall if they also lack ChEMBL ligands (unexplored drug space, known structure).
     log.param("scoring_rubric", {k: v[0] for k,v in scoring_rubric.items()},
               "Points assigned per novelty criterion")
 
@@ -139,14 +177,16 @@ def score_candidates(proteins: list[dict], log: AuditLog) -> list[dict]:
                    p.get("subcellular","") + " " +
                    " ".join(p.get("keywords",[]))).lower()
 
-        if not p["has_structure"]:
-            score += 3; reasons.append("No experimental structure (+3)")
+        if p["has_structure"]:
+            score += 2; reasons.append("Experimental PDB structure — better docking (+2)")
+        else:
+            score += 2; reasons.append("No experimental structure — unexplored (+2)")
         if not p["has_ligands"]:
             score += 3; reasons.append("No registered ligands (+3)")
         if not p["function"]:
             score += 2; reasons.append("Unknown function — discovery (+2)")
-        if p.get("alphafold_available"):
-            score += 2; reasons.append("AlphaFold available (+2)")
+        if p.get("alphafold_available") and not p["has_structure"]:
+            score += 1; reasons.append("AlphaFold available (+1)")
         if 100 <= p["length"] <= 1000:
             score += 1; reasons.append("Ideal docking size (+1)")
         if any(kw in text for kw in DRUGGABLE_CLASSES):
@@ -207,6 +247,10 @@ if __name__ == "__main__":
     parser.add_argument("--reviewed-only",          action="store_true")
     parser.add_argument("--skip-alphafold-check",   action="store_true")
     parser.add_argument("--max-alphafold-check",    type=int, default=300)
+    parser.add_argument("--exclude-pdb",            action="store_true",
+                        help="Restore original behavior: exclude proteins with PDB structures")
+    parser.add_argument("--include-chembl",         action="store_true",
+                        help="Include proteins that already have ChEMBL ligands")
     args = parser.parse_args()
 
     log = AuditLog("02_novelty_filter")
@@ -228,7 +272,11 @@ if __name__ == "__main__":
     proteins = filter_known_targets(proteins, log)
 
     print(f"\n[2] Structural novelty filter...")
-    proteins = filter_structural_novelty(proteins, log)
+    proteins = filter_structural_novelty(
+        proteins, log,
+        exclude_pdb=args.exclude_pdb,
+        exclude_chembl=not args.include_chembl,
+    )
 
     print(f"\n[2b] Protein length filter ({MIN_PROTEIN_LENGTH}-{MAX_PROTEIN_LENGTH} aa)...")
     proteins = filter_by_length(proteins, log)
