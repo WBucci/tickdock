@@ -720,8 +720,11 @@ def compute_final_score(p: dict, blast: dict, rnai: dict) -> tuple[int, list]:
         score += 4
         reasons.append(f"RNAi lethality evidence {rnai['count']} papers (+4)")
 
-    plddt = p.get("mean_plddt", 0)
-    if plddt >= 90: score += 2; reasons.append("Excellent pLDDT (+2)")
+    plddt = p.get("mean_plddt")  # None for RCSB experimental structures
+    if plddt is None:
+        # Experimental structure — skip pLDDT scoring; award equivalent of GOOD
+        score += 2; reasons.append("Experimental PDB structure (RCSB) — high confidence (+2)")
+    elif plddt >= 90: score += 2; reasons.append("Excellent pLDDT (+2)")
     elif plddt >= 80: score += 1; reasons.append("Good pLDDT (+1)")
 
     return score, reasons

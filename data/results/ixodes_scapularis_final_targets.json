@@ -6740,5 +6740,111 @@
         "dog": null
       }
     }
+  },
+  {
+    "accession": "B7QK46",
+    "name": "Glutaminyl-peptide cyclotransferase",
+    "gene": "Qptc",
+    "species": "ixodes_scapularis",
+    "latin": "Ixodes scapularis",
+    "length": 353,
+    "pdb_ids": [
+      "4MHN",
+      "4MHP",
+      "4MHY",
+      "4MHZ",
+      "7D1H",
+      "7D1N",
+      "7D1P",
+      "7D1Y",
+      "7D21",
+      "7D23",
+      "7D2B",
+      "7D2D",
+      "7D2I",
+      "7D2J"
+    ],
+    "chembl_ids": [],
+    "function": "Responsible for the biosynthesis of pyroglutamyl peptides (PubMed:23770496, PubMed:24598748). Seems to have a preference for substrates with neutral or hydrophobic amino-acid residues at the second and third positions (PubMed:24598748). Shows activity towards the peptides [Gln-1]-corazonin, [Gln-1]-periviscerokinin and [Gln-1]-sulfakinin (PubMed:24598748)",
+    "subcellular": "",
+    "catalytic": "",
+    "keywords": [
+      "3D-structure",
+      "Acyltransferase",
+      "Disulfide bond",
+      "Glycoprotein",
+      "Metal-binding",
+      "Reference proteome",
+      "Secreted",
+      "Signal",
+      "Transferase",
+      "Zinc"
+    ],
+    "has_structure": true,
+    "has_ligands": false,
+    "alphafold_available": null,
+    "novelty_score": 7,
+    "novelty_reasons": [
+      "Experimental PDB structure \u2014 better docking (+2)",
+      "No registered ligands (+3)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)"
+    ],
+    "structure_status": "OK",
+    "structure_source": "rcsb",
+    "pdb_id_used": "4MHN",
+    "pdb_path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QK46.pdb",
+    "pdb_url": "https://files.rcsb.org/download/4MHN.pdb",
+    "mean_plddt": null,
+    "plddt_fraction": null,
+    "structure_quality": "EXPERIMENTAL",
+    "suitable_for_docking": true,
+    "good_pockets": [
+      {
+        "pocket_id": 1,
+        "source": "fpocket",
+        "score": 0.718,
+        "volume": 585.886,
+        "area": 149.444,
+        "hydrophobicity": 21.929,
+        "alpha_spheres": 57.0,
+        "pocket_pdb": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/structures/B7QK46_out/pockets/pocket1_atm.pdb",
+        "allosteric_candidate": false,
+        "site_type": "PRIMARY"
+      }
+    ],
+    "druggable_pockets": 1,
+    "allosteric_sites": 0,
+    "blast_result": {
+      "max_identity": 0.493,
+      "human_risk": "MEDIUM",
+      "host_identities": {
+        "human": 0.493,
+        "dog": 0.49,
+        "mouse": 0.483
+      },
+      "method": "local_blastp"
+    },
+    "rnai_result": {
+      "rnai_evidence": false,
+      "count": 0,
+      "pmids": []
+    },
+    "final_score": 11,
+    "score_reasons": [
+      "Experimental PDB structure \u2014 better docking (+2)",
+      "No registered ligands (+3)",
+      "Ideal docking size (+1)",
+      "Druggable class: transferase (+1)",
+      "1 druggable pocket (+2)",
+      "Experimental PDB structure (RCSB) \u2014 high confidence (+2)"
+    ],
+    "vina_config": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7QK46_vina.conf",
+    "pocket_center": {
+      "center_x": -17.46,
+      "center_y": 22.726,
+      "center_z": -6.077
+    },
+    "vina_box_size": 20
   }
 ]
