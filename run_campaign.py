@@ -1116,21 +1116,85 @@ def wait_for_compress():
 
 
 # ── Status display ────────────────────────────────────────────────────────────
+def _is_running() -> tuple[bool, int | None]:
+    """Return (is_running, pid) by scanning /proc for run_campaign.py processes."""
+    my_pid = os.getpid()
+    try:
+        for entry in os.scandir("/proc"):
+            if not entry.name.isdigit():
+                continue
+            pid = int(entry.name)
+            if pid == my_pid:
+                continue
+            try:
+                cmdline_path = f"/proc/{pid}/cmdline"
+                with open(cmdline_path, "rb") as f:
+                    cmdline = f.read().decode(errors="replace").replace("\x00", " ").strip()
+                if "run_campaign.py" in cmdline and "python" in cmdline:
+                    return True, pid
+            except (PermissionError, FileNotFoundError):
+                continue
+    except Exception:
+        pass
+    return False, None
+
+
+def _count_vina_procs() -> int:
+    """Count running vina processes."""
+    count = 0
+    try:
+        for entry in os.scandir("/proc"):
+            if not entry.name.isdigit():
+                continue
+            try:
+                with open(f"/proc/{entry.name}/comm") as f:
+                    if f.read().strip() == "vina":
+                        count += 1
+            except (PermissionError, FileNotFoundError):
+                continue
+    except Exception:
+        pass
+    return count
+
+
 def show_status():
     state   = load_state()
     control = read_control()
     ligands = get_all_ligands()
     targets = load_targets()
 
+    running, camp_pid = _is_running()
+    vina_count        = _count_vina_procs() if running else 0
+
+    if running:
+        proc_line = f"RUNNING  (pid {camp_pid}, {vina_count} vina process{'es' if vina_count != 1 else ''} active)"
+    else:
+        proc_line = "STOPPED"
+
+    batches_done  = state.get('batches_completed', [])
+    batches_total = state.get('batches_total', '?')
+    round_num     = state.get('round', 1)
+    cum_hits      = state.get('cumulative_hits', 0)
+    cum_ligs      = state.get('cumulative_ligands', 0)
+
     print(f"\nTickDock Campaign Status")
     print(f"{'='*50}")
+    print(f"  Process:           {proc_line}")
+    print(f"  Round:             {round_num}")
+    print(f"  Control signal:    {control}")
     print(f"  Targets:           {len(targets)} (from final_targets.json)")
     print(f"  Ligands prepared:  {len(ligands)}")
     print(f"  Batch size:        {state.get('batch_size', DEFAULT_BATCH_SIZE)}")
-    print(f"  Batches total:     {state.get('batches_total', '?')}")
-    print(f"  Batches completed: {state.get('batches_completed', [])}")
-    print(f"  Batches failed:    {state.get('batches_failed', [])}")
-    print(f"  Control signal:    {control}")
+    print(f"  Batches:           {len(batches_done)}/{batches_total} complete")
+    if batches_done:
+        print(f"  Batches done IDs:  {batches_done}")
+    failed = state.get('batches_failed', [])
+    if failed:
+        print(f"  Batches failed:    {failed}")
+    if cum_ligs:
+        print(f"  Cumulative docked: {cum_ligs:,} ligand-target pairs")
+    if cum_hits:
+        print(f"  Cumulative hits:   {cum_hits:,} (≤{VINA['good_score']} kcal/mol)")
     print(f"  State file:        {STATE_FILE}")
 
     # Show best results so far
