@@ -1,0 +1,16 @@
+{
+  "rounds": [
+    {
+      "round": 3,
+      "exh": 4,
+      "n_ligands": 7175,
+      "n_targets": 138,
+      "n_hits": 23430,
+      "best_score": -13.125,
+      "best_ligand": "CHEMBL9171",
+      "best_target": "B7P5E9",
+      "elapsed_h": 4.5,
+      "completed_at": "2026-05-28T00:35:57.558555"
+    }
+  ]
+}
