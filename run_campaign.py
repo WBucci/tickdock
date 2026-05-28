@@ -767,8 +767,10 @@ def _toast(title: str, body: str):
 
 
 # ── Post-campaign cleanup ─────────────────────────────────────────────────────
-def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
-    """After each round: promiscuous filter, cross-species orthologs, figures, docs."""
+def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False,
+                      round_num: int | None = None):
+    """After each round: promiscuous filter, cross-species orthologs, figures, docs,
+    and incremental AF3 job prep for new top hits (washer-dryer pattern)."""
     log("\nRunning post-round analysis...")
 
     steps = [
@@ -816,6 +818,24 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False):
          [sys.executable, os.path.join(BASE_DIR, "run_pipeline.py"), "--docs-only"],
          300),
     ]
+
+    # Incremental AF3 job prep — washer-dryer pattern:
+    # runs after every round so new top hits become AF3-ready without
+    # waiting for the full campaign to finish. Skips jobs already written.
+    af3_cmd = [
+        sys.executable,
+        os.path.join(BASE_DIR, "scripts", "prep_af3_jobs.py"),
+        "--incremental",
+        "--auto-targets", "3",   # top 3 targets by best score
+        "--top", "5",            # top 5 hits per target = up to 15 new jobs/round
+    ]
+    if round_num is not None:
+        af3_cmd += ["--round", str(round_num)]
+    steps.append((
+        "AF3 incremental job prep",
+        af3_cmd,
+        120,   # fast — mostly file I/O + cached SMILES
+    ))
 
     for name, cmd, timeout in steps:
         log(f"  {name}...")
@@ -1762,7 +1782,8 @@ def main():
                 log("All batches in this round are already complete.")
                 if not args.no_post and not args.dry_run:
                     run_post_campaign(top_targets=len(targets),
-                                      skip_orthologs=args.no_orthologs)
+                                      skip_orthologs=args.no_orthologs,
+                                      round_num=round_num)
                 if _download_complete():
                     _reset_download_flags()
                     log("Queued download is ready -- starting next round.")
@@ -1926,7 +1947,8 @@ def main():
 
             if not args.no_post and not args.dry_run:
                 run_post_campaign(top_targets=len(targets),
-                                  skip_orthologs=args.no_orthologs)
+                                  skip_orthologs=args.no_orthologs,
+                                  round_num=round_num)
                 _toast("TickDock Round Complete",
                        f"Round {round_num} done -- "
                        f"{state.get('cumulative_hits', 0)} cumulative hits.")

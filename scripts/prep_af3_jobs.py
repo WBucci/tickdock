@@ -195,14 +195,59 @@ def write_submission_guide(jobs: list[dict], out_dir: str):
 
 # ─── main ─────────────────────────────────────────────────────────────────────
 
+def already_generated_jobs() -> set:
+    """Return set of job_names ('{target}_{ligand}') already in af3_jobs dir."""
+    if not os.path.isdir(AF3_OUT_DIR):
+        return set()
+    return {
+        f[:-5]  # strip .json
+        for f in os.listdir(AF3_OUT_DIR)
+        if f.endswith(".json") and not f.startswith("submission")
+    }
+
+
+def write_round_summary(new_jobs: list[dict], round_num: int | None, out_dir: str):
+    """Write a per-round new-jobs summary for easy daily AF3 submission."""
+    tag  = f"round_{round_num}" if round_num else "latest"
+    path = os.path.join(out_dir, f"{tag}_new_jobs.txt")
+    lines = [
+        f"New AF3 co-folding jobs — {tag}",
+        f"Count: {len(new_jobs)}",
+        f"Submit at: https://alphafoldserver.com (30/day limit)",
+        "",
+    ]
+    for job in new_jobs:
+        meta   = job["_meta"]
+        smiles = job["sequences"][1]["ligand"]["smiles"]
+        lines += [
+            f"  Job: {job['name']}",
+            f"  Target: {meta['target_accession']}  {meta['target_name'][:55]}",
+            f"  Ligand: {meta['ligand_chembl_id']}",
+            f"  SMILES: {smiles}",
+            f"  JSON:   af3_jobs/{job['name']}.json",
+            "",
+        ]
+    with open(path, "w") as f:
+        f.write("\n".join(lines))
+    return path
+
+
 def main():
     parser = argparse.ArgumentParser(description="Prep AF3 co-folding job inputs")
-    parser.add_argument("--top",      type=int, default=5,
-                        help="Top N hits per target (default 5 → 10 jobs for 2 targets)")
-    parser.add_argument("--targets",  nargs="+",
+    parser.add_argument("--top",          type=int, default=5,
+                        help="Top N hits per target (default 5)")
+    parser.add_argument("--targets",      nargs="+",
                         default=["B7P5E9", "B7PY20"],
                         help="Target accessions to prepare jobs for")
-    parser.add_argument("--dry-run",  action="store_true",
+    parser.add_argument("--auto-targets", type=int, default=0, metavar="N",
+                        help="Auto-select top N targets by best score from top_hits.json "
+                             "(overrides --targets)")
+    parser.add_argument("--incremental",  action="store_true",
+                        help="Skip jobs already written to docs/af3_jobs/ — "
+                             "only generate new hits since last run")
+    parser.add_argument("--round",        type=int, default=None, metavar="N",
+                        help="Round number — used to name the new-jobs summary file")
+    parser.add_argument("--dry-run",      action="store_true",
                         help="Print jobs without writing files")
     args = parser.parse_args()
 
@@ -219,33 +264,60 @@ def main():
     print("Loading proteome sequences...")
     seq_db = load_proteome_sequences(list(SPECIES.keys()))
 
-    # Select top N hits per requested target
+    # Auto-select targets by best score if requested
+    if args.auto_targets > 0:
+        from collections import defaultdict as _dd
+        best_by_target = {}
+        for h in all_hits:
+            acc = h["target"]
+            if acc not in best_by_target or h["score"] < best_by_target[acc]:
+                best_by_target[acc] = h["score"]
+        targets = [t for t, _ in sorted(best_by_target.items(),
+                                        key=lambda x: x[1])[:args.auto_targets]]
+        print(f"  Auto-selected {len(targets)} targets: {targets}")
+    else:
+        targets = args.targets
+
+    # Incremental mode: track already-generated job names
+    done_jobs = already_generated_jobs() if args.incremental else set()
+    if args.incremental:
+        print(f"  Incremental mode: {len(done_jobs)} jobs already exist — skipping")
+
+    # Select top N hits per target
     from collections import defaultdict
     by_target = defaultdict(list)
     for h in all_hits:
-        if h["target"] in args.targets:
+        if h["target"] in targets:
             by_target[h["target"]].append(h)
 
     selected = []
-    for acc in args.targets:
+    for acc in targets:
         hits = sorted(by_target[acc], key=lambda x: x["score"])[:args.top]
         if not hits:
             print(f"  WARNING: no hits found for {acc}")
         selected.extend(hits)
 
-    print(f"\nPreparing {len(selected)} jobs "
-          f"({args.top} per target × {len(args.targets)} targets)...\n")
+    n_candidates = len(selected)
+    print(f"\nCandidates: {n_candidates} | Incremental skip: {len(done_jobs)} existing\n")
 
     # Fetch sequences + SMILES, build job JSONs
-    jobs      = []
-    skipped   = []
+    jobs         = []   # new jobs written this run
+    skipped      = []
+    already_done = []
 
     for h in selected:
         acc       = h["target"]
         chembl_id = h["ligand"]
         score     = h["score"]
+        job_name  = f"{acc}_{chembl_id}"
 
-        print(f"  {acc} + {chembl_id}  ({score:.3f} kcal/mol)")
+        # Incremental: skip if job already generated
+        if job_name in done_jobs:
+            already_done.append(job_name)
+            print(f"  {acc} + {chembl_id}  ({score:.3f})  [already generated — skip]")
+            continue
+
+        print(f"  {acc} + {chembl_id}  ({score:.3f} kcal/mol)  [NEW]")
 
         # Sequence
         prot = seq_db.get(acc)
@@ -261,8 +333,7 @@ def main():
             skipped.append((acc, chembl_id, "no_smiles"))
             continue
 
-        job_name = f"{acc}_{chembl_id}"
-        job      = make_af3_json(
+        job = make_af3_json(
             job_name    = job_name,
             target_name = prot["name"],
             sequence    = prot["sequence"],
@@ -281,15 +352,19 @@ def main():
 
         time.sleep(0.2)   # gentle rate-limit on ChEMBL API if fetching
 
-    # Write submission guide
-    if not args.dry_run and jobs:
-        guide_path = write_submission_guide(jobs, AF3_OUT_DIR)
-        print(f"\n✓ Submission guide → {guide_path}")
+    # Write per-round new-jobs summary (always, even if 0 new jobs)
+    if not args.dry_run:
+        if jobs:
+            guide_path = write_submission_guide(jobs, AF3_OUT_DIR)
+            print(f"\n✓ Full submission guide → {guide_path}")
+        round_path = write_round_summary(jobs, args.round, AF3_OUT_DIR)
+        print(f"✓ Round summary → {round_path}")
 
     # Summary
     print(f"\n{'='*60}")
-    print(f"Jobs ready:   {len(jobs)}")
-    print(f"Jobs skipped: {len(skipped)}")
+    print(f"New jobs:     {len(jobs)}")
+    print(f"Already done: {len(already_done)}")
+    print(f"Skipped:      {len(skipped)}")
     if skipped:
         for acc, cid, reason in skipped:
             print(f"  {acc} + {cid}: {reason}")
