@@ -17,38 +17,39 @@ Most acaricides target acetylcholinesterase (AChE) or voltage-gated sodium chann
 
 ---
 
-## Current Results (as of 2026-05-26)
+## Current Results (as of 2026-05-27)
 
-### I. scapularis — Complete
+### Pan-tick campaign — Round 3 complete, Round 4 running
 
-- **42 novel druggable targets** identified (no PDB structure, no ChEMBL ligands)
-- **4,712 compounds** screened at exhaustiveness=8 (publication-grade)
-- **18,336 total hits** (score ≤ −7.0 kcal/mol) across 42 targets
-- **33/42 targets** conserved in *A. americanum* (pan-tick leads, ≥60% identity)
-- **Q4PLZ3** (TCTP homolog) conserved in **all 3 tick species** — only true pan-tick target
+- **138 novel druggable targets** — 42 (*I. scapularis*) + 53 (*A. americanum*) + 43 (*D. variabilis*)
+- **12,840 compounds** in current library (ChEMBL drug-like + approved + antiparasitic)
+- **23,430 total hits** at ≤ −7.0 kcal/mol across all 138 targets (Round 3)
+- **33/42 I. scapularis targets** conserved in *A. americanum* (pan-tick leads, ≥60% identity)
+- Round 4 at exh=4 running (all 3 species, 138 targets, 12,840 ligands)
 
 **Top lead candidates (promiscuous binders excluded):**
 
-| Rank | Target | Best Hit | Score | Pan-tick |
-|------|--------|----------|-------|----------|
-| 1 | B7P5E9 | CHEMBL9171 | **−13.125 kcal/mol** | ✓ |
-| 2 | B7PY20 | CHEMBL8922 | −12.034 kcal/mol | ✓ |
-| 3 | A0A4D5RNM5 | CHEMBL429202 | −11.275 kcal/mol | ✓ |
-| 4 | B7PMS2 | CHEMBL429202 | −11.176 kcal/mol | ✓ |
-| 5 | B7Q255 | CHEMBL8905 | −11.084 kcal/mol | ✓ |
-| 6 | A0A4D5RDE4 | CHEMBL9250 | −10.868 kcal/mol | ✓ |
-| 7 | A0A4D5RMV5 | CHEMBL417601 | −10.687 kcal/mol | ✓ |
-| 8 | A0A4D5RMG2 | CHEMBL10202 | −10.135 kcal/mol | ✓ |
-| 9 | B7QDG3 | CHEMBL8921 | −10.025 kcal/mol | ✓ |
-| 10 | B7P2S1 | CHEMBL9190 | −9.908 kcal/mol | ✓ |
+| Rank | Target | Best Hit | Score | Pan-tick | Dog-safe |
+|------|--------|----------|-------|----------|---------|
+| 1 | B7P5E9 | CHEMBL9171 | **−13.125 kcal/mol** | ✓ | borderline (42.3%) |
+| 2 | B7PY20 | CHEMBL8922 | −12.034 kcal/mol | ✓ | ✓ (29.6%) |
+| 3 | A0A4D5RNM5 | CHEMBL429202 | −11.275 kcal/mol | ✓ | — |
+| 4 | B7PMS2 | CHEMBL429202 | −11.176 kcal/mol | ✓ | — |
+| 5 | B7Q255 | CHEMBL8905 | −11.084 kcal/mol | ✓ | — |
 
 > Scores ≤ −7.0 kcal/mol = **hit**; ≤ −9.0 kcal/mol = **lead candidate**; ≤ −11.0 kcal/mol = **exceptional**.
 > Promiscuous binders auto-excluded (CHEMBL9937, CHEMBL10/11/12, CHEMBL112998 — hit ≥80% of all targets).
 
+**Key selectivity findings:**
+- **B7P5E9 (PGAP5/Cdc1):** top 5 hits bind tick enzyme ~2× stronger than human PGAP5 (ratios 0.47–0.57, all SELECTIVE). Zero prior drug discovery literature on tick PGAP5.
+- **B7PY20 (NHR):** top 5 hits all selective vs human TRβ (ratios 0.126–0.541). Dog-safe (29.6% identity). Pan-tick conserved.
+- **CHEMBL429008** (imidazopyridine-tetrazole): best overall lead — clean ADMET + selective + pan-tick.
+- **Dog safety (134,822-seq TrEMBL DB):** 29/42 Is targets dog-risky. Pet-safe leads: B7PY20, B7QAF3, B7P6A8, B7P2S1.
+
 ### A. americanum + D. variabilis
 
-*A. americanum* (20k seqs) step 1→3 pipeline running.
-*D. variabilis* has only 166 UniProt sequences — genuine proteome gap, not a pipeline limitation.
+Step 1→3 complete for all 3 species (Vina configs generated for all 138 targets).
+Full docking underway in Round 4 campaign.
 
 ---
 
@@ -83,6 +84,7 @@ Requires Linux or WSL2 (Ubuntu 22/24 tested).
 ```bash
 # Python dependencies
 pip install biopython requests pandas rdkit jinja2 python-dotenv matplotlib numpy
+pip install --break-system-packages meeko scipy gemmi  # receptor flex prep (Ubuntu 24.04)
 
 # System tools
 sudo apt-get install openbabel ncbi-blast+
@@ -163,12 +165,23 @@ python scripts/download_zinc.py --count 5000 --workers 16
 # PowerShell (Windows/WSL2):
 Start-Process wsl -ArgumentList "-u owner bash -c 'cd /path/to/TTD && python3 run_campaign.py --compress-every 1 --prefetch 5000 2>&1 | tee -a logs/campaign_orchestrator.log'" -WindowStyle Hidden
 
+# With split-batch parallelism (4 Vina processes per target, each --cpu 1)
+Start-Process wsl -ArgumentList "-u owner bash -c 'cd /path/to/TTD && python3 run_campaign.py --splits 4 --adaptive-exh 2>&1 | tee -a logs/campaign_orchestrator.log'" -WindowStyle Hidden
+
 # Campaign control
-python run_campaign.py --status    # progress summary
-python run_campaign.py --pause     # pause after current batch
-python run_campaign.py --resume    # clear pause signal
-python run_campaign.py --stop      # finish batch then exit cleanly
-python run_campaign.py --dry-run   # preview without running Vina
+python run_campaign.py --status       # progress summary
+python run_campaign.py --pause        # pause after current batch
+python run_campaign.py --resume       # clear pause signal
+python run_campaign.py --stop         # finish batch then exit cleanly
+python run_campaign.py --dry-run      # preview without running Vina
+
+# Post-campaign: re-dock top hits at higher exhaustiveness (with optional flex)
+python scripts/refine_top_hits.py --exh 12 --top-n 100
+python scripts/refine_top_hits.py --exh 12 --flex-res A:100 A:145  # flex residues
+
+# Secondary pocket docking (allosteric sites)
+python scripts/dock_multipocket.py --top 10           # top 10 targets, all secondary pockets
+python scripts/dock_multipocket.py --top-hits 50 --exh 8
 
 # Dispatch reports
 python scripts/dispatch_report.py --status     # cross-batch summary + global top 5
@@ -182,10 +195,14 @@ python scripts/dispatch_report.py --batch 1    # specific batch detail
 `run_campaign.py` manages the full docking campaign autonomously:
 
 - **Parallel docking** — 4 targets simultaneously; each Vina job gets `CPU_COUNT ÷ 4` cores
+- **Split-batch parallelism** (`--splits N`) — N Vina processes per target (each `--cpu 1`) instead of 1 process with `--cpu N`; better throughput on many-core systems
+- **Adaptive exhaustiveness** (`--adaptive-exh`) — per-target `exh = max(4, min(8, round(0.4 × box_size − 4)))`; smaller pockets get exh=4, large pockets get exh=8
 - **Batched compounds** — 2,000 ligands/batch; checkpoint via `logs/campaign_state.json`
 - **Multi-round loop** — after all ligands are docked, waits for prefetch download and restarts automatically with the expanded library
 - **Auto-prefetch** — queues next download when the last batch starts; new compounds ready before the round ends
-- **Disk compression** — deletes non-hit PDBQTs after each batch; preserves all scores in `logs/batch_N_compressed.json`
+- **Exh-aware pruned cache** — near-misses (−7.0 to −5.5 kcal/mol) cached with their exhaustiveness; re-docked if next round uses higher exh. Clear fails (> −5.5) permanently skipped.
+- **Async compression** — PDBQT cleanup runs in background thread; next batch starts immediately without waiting
+- **Disk compression** — deletes non-hit PDBQTs after each batch; preserves all scores in `logs/batch_R{round}_B{batch}_compressed.json`; qualifying hits also in `data/docking/top_hits.json` (all hits, no cap)
 - **Post-round analysis** — runs promiscuous filter, score annotation, ortholog analysis, figures, docs after every completed round
 - **Keep-awake** — sends synthetic keypress every 55s to prevent Windows sleep during multi-hour runs
 
@@ -231,8 +248,10 @@ with open('logs/campaign_state.json', 'w') as f: json.dump(s, f, indent=2)
 | `data/docking/clean_hits.json` | Top hits with promiscuous binders removed |
 | `data/docking/promiscuous_binders.json` | Flagged pan-assay interference compounds + metadata |
 | `logs/campaign_state.json` | Campaign checkpoint (batches, cumulative hits, round number) |
-| `logs/batch_N_compressed.json` | Per-batch hit scores (all target×ligand pairs scoring ≤ threshold) |
+| `logs/batch_R{round}_B{batch}_compressed.json` | Per-batch hit scores (round-stamped; all target×ligand pairs scoring ≤ threshold) |
 | `logs/batch_N_summary.json` | Per-batch summary (top 5, hit count, elapsed time) |
+| `logs/pruned_nonhits.jsonl` | Cumulative append-only log of non-hits with score + exh tried (near-misses re-dockable at higher exh) |
+| `data/docking/top_hits.json` | All hits meeting score threshold across all rounds (no cap; deduplicated best score per target×ligand) |
 | `logs/campaign_orchestrator.log` | Full orchestrator log |
 | `logs/pipeline_audit.json` | Machine-readable audit trail (all parameters + result stats) |
 | `docs/methods_draft.txt` | Publication-ready Methods section (auto-generated) |
@@ -285,24 +304,38 @@ All in `config.py`. Any change automatically propagates to the generated Methods
 - [x] P2Rank ML pocket prediction (supplements fpocket)
 - [x] Local BLASTP selectivity vs human / dog / mouse proteomes
 - [x] PubMed RNAi essentiality search
-- [x] Lipinski + PAINS filter + ChEMBL compound library (8 download modes)
+- [x] Lipinski + PAINS + QED (≥0.25) filter + ChEMBL compound library (8 download modes)
+- [x] PDBQT validation after conversion (size + ATOM record check)
 - [x] Parallel PDBQT conversion (cpu_count workers, ~16x speedup vs serial)
 - [x] AutoDock Vina 1.2.5 batch docking — parallel campaign orchestrator
+- [x] Split-batch parallelism (`--splits N`) — N Vina processes per target
+- [x] Adaptive exhaustiveness per target (`--adaptive-exh`)
+- [x] Exh-aware pruned cache — near-misses re-docked at higher exhaustiveness
+- [x] Async PDBQT compression (background thread; next batch starts immediately)
+- [x] Uncapped top_hits.json — all qualifying hits saved, no size limit
 - [x] Promiscuous binder detection + auto-removal (updates config.py each round)
 - [x] Docking score back-annotation into target metadata
 - [x] InterPro / UniProt functional annotation of all targets
 - [x] Cross-species ortholog analysis (all targets vs A. americanum + D. variabilis)
 - [x] Auto-generated Methods section + reproducibility log
 - [x] Figure generation (score distributions, pocket scatter, top-hit bars)
-- [x] I. scapularis: 42 targets, 2 docking rounds complete at exh=8
-- [ ] A. americanum full pipeline (step 3 in progress)
-- [ ] D. variabilis full pipeline (limited by 166 UniProt sequences — genuine gap)
-- [ ] Round 3 docking (expanded library: approved + clinical + ectoparasiticide)
-- [ ] VectorBase expression check (feeding-stage upregulation filter)
-- [ ] pkCSM ADMET pre-filter (API wired in config, not yet called)
-- [ ] GROMACS/OpenMM MD validation of top leads (B7P5E9, B7PY20, Q4PLZ3)
-- [ ] Dog proteome BLAST DB expansion (currently 857 reviewed seqs)
+- [x] VectorBase feeding-stage expression annotation (4/42 Is targets feeding-relevant)
+- [x] Local RDKit ADMET filter — 5/30 top hits clean: CHEMBL429008 best overall
+- [x] Dog proteome BLAST DB expansion (134,822 TrEMBL seqs; 29/42 Is targets newly risky)
+- [x] Human PGAP5 + TRβ selectivity docking — all top leads SELECTIVE
+- [x] GPI proteome scan (est. 200–600 GPI-anchored Is proteins)
+- [x] 2D lead structure figures (fig7a/7b — 4 scaffold classes)
+- [x] Multi-pocket docking script (`dock_multipocket.py`) — secondary/allosteric sites
+- [x] Receptor flexibility support via meeko 0.7.1 (`refine_top_hits.py --flex-res`)
+- [x] I. scapularis: 42 targets, 3 docking rounds complete; Round 4 running
+- [x] A. americanum + D. variabilis: Step 3 complete (138 targets with Vina configs)
+- [ ] Round 4 campaign completion (12,840 ligands × 138 targets at exh=4)
+- [ ] GROMACS/OpenMM MD validation of top leads (B7P5E9, B7PY20 — priority: CHEMBL429008)
+- [ ] Binding mode visualization (PyMOL H-bond/π-π diagrams for top leads)
+- [ ] Dog PGAP5 selectivity docking (B7P5E9 borderline at 42.3% dog identity)
+- [ ] Rank recovery validation (confirm known tick inhibitors rank high)
 - [ ] GPU acceleration (AutoDock-GPU — pending RDNA 4 WSL2 ROCm support)
+- [ ] Paper Discussion section draft (all data in hand)
 
 ---
 
@@ -331,7 +364,10 @@ All free; only NCBI BLAST requires an email (not an API key):
 | Step 3 — structures + pockets + BLAST (top 100) | 2–6 hours |
 | Step 4 — cross-species orthologs (42 targets, cached) | ~5 min |
 | Compound download + conversion, 5,000 cpds, 16 workers | ~15–30 min |
-| Docking 4,712 ligands × 42 targets, exh=8 | ~20 hours |
+| Docking 4,509 ligands × 42 targets, exh=4 (observed) | ~4.5 hours |
+| Docking 4,509 ligands × 42 targets, exh=8 (observed) | ~8–12 hours |
+| Docking 12,840 ligands × 138 targets, exh=4 (Round 4) | ~18–30 hours (est.) |
+| refine_top_hits.py, top 100 hits × 1 target, exh=12 | ~20–40 min |
 | Post-round analysis (all steps) | ~5–10 min |
 
 ---

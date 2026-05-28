@@ -32,6 +32,9 @@ data/docking/ligands_pdbqt/
 data/docking/tranches/
 data/docking/*_results/
 data/docking/*_receptor.pdbqt
+data/docking/*_rigid.pdbqt
+data/docking/*_flex.pdbqt
+data/docking/*_pocket*_vina.conf
 data/docking/*_vina_fixed.conf
 data/figures/
 # BLAST databases (~50 MB binary index files)
