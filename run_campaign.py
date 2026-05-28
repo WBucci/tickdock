@@ -1198,16 +1198,24 @@ def show_status():
     print(f"  State file:        {STATE_FILE}")
 
     # Show best results so far
-    results = state.get("results_by_batch", {})
+    # Read best hits from top_hits.json (deduplicated, best score per target+ligand)
+    top_hits_path = os.path.join(DOCKING_DIR, "top_hits.json")
     all_tops = []
-    for batch_data in results.values():
-        all_tops.extend(batch_data.get("top_5", []))
-    all_tops.sort(key=lambda x: x.get("score", 0))
+    if os.path.exists(top_hits_path):
+        try:
+            with open(top_hits_path) as f:
+                all_tops = json.load(f)
+            if isinstance(all_tops, list):
+                all_tops.sort(key=lambda x: x.get("score", 0))
+            else:
+                all_tops = []
+        except Exception:
+            all_tops = []
 
     if all_tops:
-        print(f"\n  Best hits so far:")
+        print(f"\n  Best hits so far ({len(all_tops)} total):")
         for i, h in enumerate(all_tops[:5], 1):
-            print(f"    {i}. {h['target']} + {h['ligand']}: {h['score']} kcal/mol")
+            print(f"    {i}. {h.get('target','?')} + {h.get('ligand','?')}: {h.get('score','?')} kcal/mol")
 
     # Download status
     flag_q = os.path.join(LOG_DIR, "download_queued.flag")
