@@ -2,14 +2,9 @@
   "started": "2026-05-23T00:00:00",
   "batch_size": 2000,
   "batches_total": 3,
-  "batches_completed": [
-    0,
-    1,
-    2,
-    3
-  ],
+  "batches_completed": [],
   "batches_failed": [],
-  "total_ligands": 7175,
+  "total_ligands": 5099,
   "targets": [
     "A0A4D5RDE4",
     "A0A4D5RGQ5",
@@ -196,10 +191,10 @@
       "completed_at": "2026-05-26T21:19:39.867825"
     }
   },
-  "total_batches_done": 4,
-  "cumulative_ligands": 7175,
-  "cumulative_hits": 23430,
-  "ligands_remaining": 0,
+  "total_batches_done": 0,
+  "cumulative_ligands": 0,
+  "cumulative_hits": 0,
+  "ligands_remaining": 5099,
   "last_updated": "2026-05-26T21:19:39.899674",
-  "round": 3
+  "round": 4
 }
