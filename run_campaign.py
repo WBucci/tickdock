@@ -64,12 +64,17 @@ DEFAULT_CPU_PER_VINA  = max(1, (os.cpu_count() or 4) // DEFAULT_PARALLEL)
 NEAR_MISS_MARGIN      = 1.5     # kcal/mol above hit threshold → still re-dockable
 
 LIGANDS_DIR    = os.path.join(DOCKING_DIR, "ligands_pdbqt")
+TOP_HITS_FILE  = os.path.join(DOCKING_DIR, "top_hits.json")
 STATE_FILE     = os.path.join(LOG_DIR, "campaign_state.json")
 CONTROL_FILE   = os.path.join(LOG_DIR, "campaign_control.txt")
 CAMPAIGN_LOG   = os.path.join(LOG_DIR, "campaign_orchestrator.log")
 # Append-only log of all non-hit (pruned) dockings across all rounds.
-# Never overwritten — survives round resets and batch_N_compressed.json recycling.
+# Never overwritten — survives round resets and batch_R*_B*_compressed.json recycling.
 PRUNED_LOG     = os.path.join(LOG_DIR, "pruned_nonhits.jsonl")
+
+# Background compress thread — lets the next batch start without waiting
+_compress_thread: threading.Thread | None = None
+_compress_lock = threading.Lock()
 
 # Module-level cache: (target, ligand_id) → max exhaustiveness already tried.
 # Populated by load_pruned_cache() at startup.
@@ -132,23 +137,29 @@ def load_pruned_cache() -> None:
         except Exception:
             pass
 
-    # 2. Current-round compressed files (supplement)
-    for path in sorted(glob.glob(os.path.join(LOG_DIR, "batch_*_compressed.json"))):
-        try:
-            with open(path) as f:
-                data = json.load(f)
-            file_exh = data.get("exh")  # present in new-format files
-            for section in ("pruned", "near_miss"):
-                for h in data.get(section, []):
-                    if "exh" in h:
-                        exh = h["exh"]
-                    elif file_exh is not None:
-                        exh = file_exh
-                    else:
-                        exh = _legacy_exh(h.get("score"))
-                    _absorb(h["target"], h["ligand"], exh)
-        except Exception:
-            pass
+    # 2. Current-round compressed files (supplement): both old-style batch_N_compressed.json
+    #    and new round-stamped batch_R{round}_B{batch}_compressed.json
+    seen_paths = set()
+    for pat in ("batch_*_compressed.json", "batch_R*_B*_compressed.json"):
+        for path in sorted(glob.glob(os.path.join(LOG_DIR, pat))):
+            if path in seen_paths:
+                continue
+            seen_paths.add(path)
+            try:
+                with open(path) as f:
+                    data = json.load(f)
+                file_exh = data.get("exh")
+                for section in ("pruned", "near_miss"):
+                    for h in data.get(section, []):
+                        if "exh" in h:
+                            exh = h["exh"]
+                        elif file_exh is not None:
+                            exh = file_exh
+                        else:
+                            exh = _legacy_exh(h.get("score"))
+                        _absorb(h["target"], h["ligand"], exh)
+            except Exception:
+                pass
 
     n_total = len(_PRUNED_CACHE)
     if n_total:
@@ -385,10 +396,32 @@ def fix_conf(conf_path: str, receptor_pdbqt: str) -> str:
     return tmp
 
 
+# ── Vina split-batch runner (item #2: better CPU utilization than single --cpu N) ──
+def _run_vina_chunk(conf: str, ligands: list[str], out_dir: str,
+                    exh: int, cpu: int) -> int:
+    """
+    Run one Vina process on a ligand subset. Returns number of output PDBQTs created.
+    Used by dock_target_batch when splits > 1 to parallelize at the CPU level.
+    Multiple Vina processes each with --cpu 1 often outperform one process with
+    --cpu N because Vina's internal parallelism doesn't scale perfectly.
+    """
+    cmd = (["vina", "--config", conf, "--batch"] + ligands +
+           ["--dir", out_dir,
+            "--exhaustiveness", str(exh),
+            "--cpu", str(cpu),
+            "--num_modes", str(VINA["num_modes"]),
+            "--energy_range", str(VINA["energy_range"])])
+    try:
+        subprocess.run(cmd, capture_output=True, text=True, timeout=86400)
+    except Exception:
+        pass
+    return len(glob.glob(os.path.join(out_dir, "*.pdbqt")))
+
+
 # ── Per-target worker ─────────────────────────────────────────────────────────
 def dock_target_batch(target: str, batch_ligands: list[str],
                       batch_id: int, exh: int, cpu: int,
-                      dry_run: bool) -> dict:
+                      dry_run: bool, splits: int = 1) -> dict:
     """
     Dock one target against a batch of ligands. Runs in a thread.
     Returns result dict for this target/batch.
@@ -448,22 +481,39 @@ def dock_target_batch(target: str, batch_ligands: list[str],
         result["status"] = "dry_run"
         return result
 
-    # Run Vina
-    cmd = (["vina", "--config", conf,
-             "--batch"] + new_ligands +
-            ["--dir", out_dir,
-             "--exhaustiveness", str(exh),
-             "--cpu", str(cpu),
-             "--num_modes", str(VINA["num_modes"]),
-             "--energy_range", str(VINA["energy_range"])])
+    # Run Vina — split-batch mode if splits > 1 for better CPU utilization.
+    # N processes × (cpu//N) CPUs each beats 1 process × cpu CPUs for large N
+    # because Vina's internal thread scaling is sub-linear.
+    import math
+    effective_splits = splits if (splits > 1 and len(new_ligands) >= splits * 2) else 1
     try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=86400)
-        n_out = len(glob.glob(os.path.join(out_dir, "*.pdbqt")))
+        if effective_splits > 1:
+            cpu_each  = max(1, cpu // effective_splits)
+            chunk_sz  = math.ceil(len(new_ligands) / effective_splits)
+            chunks    = [new_ligands[i:i+chunk_sz]
+                         for i in range(0, len(new_ligands), chunk_sz)]
+            log(f"  {target} batch {batch_id}: split-batch x{len(chunks)} "
+                f"({chunk_sz} lig/split, {cpu_each} CPU each)")
+            with concurrent.futures.ThreadPoolExecutor(max_workers=len(chunks)) as sp:
+                futs = [sp.submit(_run_vina_chunk, conf, chunk, out_dir, exh, cpu_each)
+                        for chunk in chunks]
+                concurrent.futures.wait(futs)
+            n_out = len(glob.glob(os.path.join(out_dir, "*.pdbqt")))
+        else:
+            cmd = (["vina", "--config", conf, "--batch"] + new_ligands +
+                   ["--dir", out_dir,
+                    "--exhaustiveness", str(exh),
+                    "--cpu", str(cpu),
+                    "--num_modes", str(VINA["num_modes"]),
+                    "--energy_range", str(VINA["energy_range"])])
+            proc = subprocess.run(cmd, capture_output=True, text=True, timeout=86400)
+            n_out = len(glob.glob(os.path.join(out_dir, "*.pdbqt")))
+
         if n_out > 0:
             result["n_docked"] = len(new_ligands)
             result["status"]   = "ok"
         else:
-            result["error"]  = f"Vina exit {proc.returncode}, 0 output files"
+            result["error"]  = "Vina produced 0 output files"
             result["status"] = "failed"
             log(f"  {target} batch {batch_id}: FAILED -- {result['error']}", "ERROR")
     except subprocess.TimeoutExpired:
@@ -512,14 +562,19 @@ def dock_target_batch(target: str, batch_ligands: list[str],
 # ── Batch runner (parallel targets) ──────────────────────────────────────────
 def run_batch(batch_id: int, batch_ligands: list[str],
               targets: list[str], n_parallel: int,
-              exh: int, cpu_per_vina: int, dry_run: bool) -> dict:
+              exh: int, cpu_per_vina: int, dry_run: bool,
+              splits: int = 1,
+              target_exh_map: dict | None = None) -> dict:
     """
     Run one batch of ligands against ALL targets in parallel.
+    target_exh_map: optional {accession: exh} for adaptive exhaustiveness per target.
+    splits: split ligands across N Vina processes per target (better CPU utilization).
     Returns batch summary dict.
     """
     log(f"\n{'='*60}")
     log(f"BATCH {batch_id}  |  {len(batch_ligands)} ligands  |  "
-        f"{len(targets)} targets  |  {n_parallel} parallel")
+        f"{len(targets)} targets  |  {n_parallel} parallel"
+        + (f"  |  {splits} splits/target" if splits > 1 else ""))
     log(f"{'='*60}")
 
     batch_start = time.time()
@@ -527,8 +582,11 @@ def run_batch(batch_id: int, batch_ligands: list[str],
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=n_parallel) as pool:
         futures = {
-            pool.submit(dock_target_batch, t, batch_ligands, batch_id,
-                        exh, cpu_per_vina, dry_run): t
+            pool.submit(
+                dock_target_batch, t, batch_ligands, batch_id,
+                (target_exh_map or {}).get(t, exh),   # per-target exh if adaptive
+                cpu_per_vina, dry_run, splits,
+            ): t
             for t in targets
         }
         for future in concurrent.futures.as_completed(futures):
@@ -837,6 +895,7 @@ def _parse_vina_score(pdbqt_path: str):
 def compress_negatives(batch_id: int,
                        score_threshold: float = None,
                        current_exh: int = DEFAULT_EXH,
+                       round_num: int = 1,
                        dry_run: bool = False) -> dict:
     """
     Delete Vina output PDBQT files for compounds that did NOT score as hits.
@@ -865,19 +924,24 @@ def compress_negatives(batch_id: int,
     # Zone boundary: compounds between score_threshold and near_miss_lower are near-misses.
     near_miss_lower = score_threshold + NEAR_MISS_MARGIN  # e.g. -7.0 + 1.5 = -5.5
 
-    # Load hits already recorded in previous batch compressed files so we don't
+    # Load hits already recorded in earlier batches of THIS round so we don't
     # double-count them (hit PDBQTs are never deleted, so they reappear each run).
     already_logged = set()
     for prev_id in range(batch_id):
-        prev_path = os.path.join(LOG_DIR, f"batch_{prev_id}_compressed.json")
-        if os.path.exists(prev_path):
-            try:
-                with open(prev_path) as _f:
-                    prev = json.load(_f)
-                for h in prev.get("kept", []):
-                    already_logged.add((h["target"], h["ligand"]))
-            except Exception:
-                pass
+        # Check new round-stamped name first, then legacy name
+        for prev_path in (
+            os.path.join(LOG_DIR, f"batch_R{round_num}_B{prev_id}_compressed.json"),
+            os.path.join(LOG_DIR, f"batch_{prev_id}_compressed.json"),
+        ):
+            if os.path.exists(prev_path):
+                try:
+                    with open(prev_path) as _f:
+                        prev = json.load(_f)
+                    for h in prev.get("kept", []):
+                        already_logged.add((h["target"], h["ligand"]))
+                except Exception:
+                    pass
+                break  # found one, don't check the other
 
     result_dirs = glob.glob(os.path.join(DOCKING_DIR, "*_results"))
     for rdir in result_dirs:
@@ -917,7 +981,9 @@ def compress_negatives(batch_id: int,
         "near_miss":       near_miss,  # near-threshold — cached at current_exh, re-dockable at higher exh
         "kept":            kept,
     }
-    out_path = os.path.join(LOG_DIR, f"batch_{batch_id}_compressed.json")
+    # Round-stamped filename: batch_R{round}_B{batch}_compressed.json
+    # Prevents round N+1 from overwriting round N's compressed data.
+    out_path = os.path.join(LOG_DIR, f"batch_R{round_num}_B{batch_id}_compressed.json")
     with open(out_path, "w") as fh:
         json.dump(summary, fh, indent=2)
 
@@ -940,6 +1006,112 @@ def compress_negatives(batch_id: int,
         f"[re-dockable at exh>{current_exh}], {len(kept)} hits kept "
         f"({action} {mb_freed} MB) -> {out_path}")
     return summary
+
+
+# ── Top hits rebuild (aggregates all compressed files → top_hits.json) ────────
+def rebuild_top_hits(n: int = 500) -> int:
+    """
+    Rebuild TOP_HITS_FILE from all compressed batch files across all rounds.
+    Deduplicates by (target, ligand), keeps best score per pair, saves top N.
+    Called after each compress step so top_hits.json is always current.
+    Returns number of hits saved.
+    """
+    seen: dict[tuple, float] = {}  # (target, ligand) -> best score
+    for pat in ("batch_*_compressed.json", "batch_R*_B*_compressed.json"):
+        for path in glob.glob(os.path.join(LOG_DIR, pat)):
+            try:
+                data = json.load(open(path))
+                for h in data.get("kept", []):
+                    key = (h["target"], h["ligand"])
+                    if key not in seen or h["score"] < seen[key]:
+                        seen[key] = h["score"]
+            except Exception:
+                pass
+    if not seen:
+        return 0
+    hits = sorted(
+        [{"target": t, "ligand": l, "score": s} for (t, l), s in seen.items()],
+        key=lambda x: x["score"],
+    )
+    top = hits[:n]
+    try:
+        with open(TOP_HITS_FILE, "w") as f:
+            json.dump(top, f, indent=2)
+        log(f"top_hits.json rebuilt: {len(seen):,} unique hits → top {len(top)} saved "
+            f"(best: {top[0]['score']:.3f} kcal/mol)")
+    except Exception as e:
+        log(f"top_hits.json rebuild failed: {e}", "WARN")
+    return len(top)
+
+
+# ── Adaptive exhaustiveness by pocket size ─────────────────────────────────────
+def load_target_exh_map(default_exh: int) -> dict[str, int]:
+    """
+    Return {accession: exh} based on each target's vina_box_size.
+    Large pockets need higher exhaustiveness; small pockets are well-sampled at 4.
+
+    Mapping (linear): box_size=20 → exh=4, box_size=30 → exh=8  (capped 4–8).
+    Formula: exh = round(0.4 * box_size - 4), clamped to [4, 8].
+    """
+    targets_path = os.path.join(RESULTS_DIR, f"{PRIMARY_SPECIES}_final_targets.json")
+    if not os.path.exists(targets_path):
+        log("load_target_exh_map: final_targets.json not found, using default exh", "WARN")
+        return {}
+    exh_map = {}
+    try:
+        with open(targets_path) as f:
+            targets = json.load(f)
+        for t in targets:
+            acc = t.get("accession", "")
+            if not acc:
+                continue
+            box = t.get("vina_box_size", 20)
+            exh = max(4, min(8, round(0.4 * box - 4)))
+            exh_map[acc] = exh
+        if exh_map:
+            counts = {}
+            for e in exh_map.values():
+                counts[e] = counts.get(e, 0) + 1
+            dist = " | ".join(f"exh={k}: {v}" for k, v in sorted(counts.items()))
+            log(f"Adaptive exh loaded: {len(exh_map)} targets — {dist}")
+    except Exception as ex:
+        log(f"load_target_exh_map error: {ex}", "WARN")
+    return exh_map
+
+
+# ── Async compress (non-blocking — next batch starts while compress runs) ──────
+def _compress_bg_worker(batch_id: int, round_num: int, current_exh: int):
+    with _compress_lock:
+        compress_negatives(batch_id, round_num=round_num, current_exh=current_exh)
+        rebuild_top_hits()
+
+
+def compress_negatives_bg(batch_id: int, round_num: int, current_exh: int):
+    """
+    Run compress_negatives in a background daemon thread.
+    Waits for any previous compress to finish first (prevents overlap).
+    Call wait_for_compress() before campaign exit or before reading compressed files.
+    """
+    global _compress_thread
+    if _compress_thread and _compress_thread.is_alive():
+        log("Waiting for previous compress to finish before starting new one...")
+        _compress_thread.join()
+    _compress_thread = threading.Thread(
+        target=_compress_bg_worker,
+        args=(batch_id, round_num, current_exh),
+        daemon=True,
+        name=f"compress-R{round_num}B{batch_id}",
+    )
+    _compress_thread.start()
+    log(f"Compress R{round_num}/B{batch_id} running in background — next batch starting now")
+
+
+def wait_for_compress():
+    """Block until background compress finishes. Call before exit or post-round analysis."""
+    global _compress_thread
+    if _compress_thread and _compress_thread.is_alive():
+        log("Waiting for background compress to finish...")
+        _compress_thread.join()
 
 
 # ── Status display ────────────────────────────────────────────────────────────
@@ -1031,6 +1203,15 @@ def main():
     parser.add_argument("--max-rounds", type=int, default=0, metavar="N",
                         help="Maximum download+dock rounds before stopping "
                              "(0 = unlimited; default: 0)")
+    # ── Performance / accuracy options ───────────────────────────────────────
+    parser.add_argument("--splits", type=int, default=1, metavar="N",
+                        help="Split ligands across N Vina processes per target for better "
+                             "CPU utilization (default: 1 = single process). "
+                             "Try --splits 4 with --parallel 2 --cpu-per-vina 1.")
+    parser.add_argument("--adaptive-exh", action="store_true",
+                        help="Auto-set exhaustiveness per target based on pocket size "
+                             "(box_size=20→exh=4, box_size=30→exh=8). "
+                             "Overrides --exh for individual targets.")
     args = parser.parse_args()
 
     os.makedirs(LOG_DIR, exist_ok=True)
@@ -1063,6 +1244,9 @@ def main():
     cpu_per_vina = args.cpu_per_vina or max(1, (os.cpu_count() or 4) // args.parallel)
     log(f"CPU config: {args.parallel} parallel targets x {cpu_per_vina} CPUs each "
         f"= {args.parallel * cpu_per_vina} total (system has {os.cpu_count()})")
+    if args.splits > 1:
+        log(f"Split-batch: {args.splits} Vina processes/target, "
+            f"{max(1, cpu_per_vina // args.splits)} CPU each")
 
     # ── Pruned-hit cache (skip re-docking non-hits from prior rounds) ─────────
     load_pruned_cache()
@@ -1091,6 +1275,9 @@ def main():
             if not targets:
                 log("No targets found. Run pipeline steps 1-3 first.", "ERROR")
                 sys.exit(1)
+
+            # Adaptive exhaustiveness: per-target exh from pocket size
+            target_exh_map = load_target_exh_map(args.exh) if args.adaptive_exh else None
 
             ligands = get_all_ligands()
             if not ligands:
@@ -1172,13 +1359,15 @@ def main():
                     prefetch_fired = True
 
                 summary = run_batch(
-                    batch_id      = batch_id,
-                    batch_ligands = batch_ligands,
-                    targets       = targets,
-                    n_parallel    = args.parallel,
-                    exh           = args.exh,
-                    cpu_per_vina  = cpu_per_vina,
-                    dry_run       = args.dry_run,
+                    batch_id       = batch_id,
+                    batch_ligands  = batch_ligands,
+                    targets        = targets,
+                    n_parallel     = args.parallel,
+                    exh            = args.exh,
+                    cpu_per_vina   = cpu_per_vina,
+                    dry_run        = args.dry_run,
+                    splits         = args.splits,
+                    target_exh_map = target_exh_map,
                 )
 
                 # Record result in persistent state
@@ -1212,16 +1401,19 @@ def main():
                 # Dispatch hook
                 fire_dispatch(batch_id, summary)
 
-                # Compress non-hit PDBQTs to reclaim disk space
+                # Compress non-hit PDBQTs (async — next batch starts immediately after)
                 if args.compress_every and not args.dry_run:
                     batches_done = len(state.get("batches_completed", []))
                     if batches_done % args.compress_every == 0:
-                        compress_negatives(batch_id, current_exh=args.exh)
+                        compress_negatives_bg(batch_id,
+                                              round_num=round_num,
+                                              current_exh=args.exh)
 
                 # Post-batch control check
                 ctrl = read_control()
                 if ctrl == "stop":
                     log("Stop signal -- exiting cleanly after batch.")
+                    wait_for_compress()
                     return
                 if ctrl == "abort":
                     log("Abort signal -- stopping.", "WARN")
@@ -1233,6 +1425,7 @@ def main():
             log(f"\nRound {round_num} complete. "
                 f"{n_completed}/{len(batches)} batches done total.")
 
+            wait_for_compress()   # ensure compress finishes before post-round scripts
             if not args.no_post and not args.dry_run:
                 run_post_campaign(top_targets=len(targets),
                                   skip_orthologs=args.no_orthologs)
@@ -1263,6 +1456,7 @@ def main():
                 break
 
     finally:
+        wait_for_compress()   # ensure compress finishes before exit
         stop_keepawake()
         log(f"\nCampaign session ended. State: {STATE_FILE}")
 

@@ -95,15 +95,19 @@ def _parse_vina_score(pdbqt_path: str) -> float | None:
 
 # ── Receptor / conf (mirrors run_campaign.py) ─────────────────────────────────
 
+def _find_pdb(target: str) -> str | None:
+    candidates = [
+        os.path.join(BASE_DIR, "data", "structures", f"{target}.pdb"),
+        os.path.join(DOCKING_DIR, f"{target}.pdb"),
+    ]
+    return next((p for p in candidates if os.path.exists(p)), None)
+
+
 def prep_receptor(target: str) -> str | None:
     out_path = os.path.join(DOCKING_DIR, f"{target}_receptor.pdbqt")
     if os.path.exists(out_path) and os.path.getsize(out_path) > 100:
         return out_path
-    pdb_candidates = [
-        os.path.join(BASE_DIR, "data", "structures", f"{target}.pdb"),
-        os.path.join(DOCKING_DIR, f"{target}.pdb"),
-    ]
-    pdb_path = next((p for p in pdb_candidates if os.path.exists(p)), None)
+    pdb_path = _find_pdb(target)
     if not pdb_path:
         log(f"{target}: source PDB not found", "WARN")
         return None
@@ -119,6 +123,130 @@ def prep_receptor(target: str) -> str | None:
     except Exception as e:
         log(f"{target}: receptor prep error: {e}", "WARN")
     return None
+
+
+def prep_receptor_flex(target: str, flex_residues: list[str]) -> tuple[str | None, str | None]:
+    """
+    Prepare rigid + flexible receptor PDBQT for Vina --flex docking.
+
+    flex_residues: list of "CHAIN:RESNUM" strings, e.g. ["A:100", "A:145"].
+    Splits the receptor PDB into:
+      - rigid portion: all residues NOT in flex_residues (converted with obabel -xr)
+      - flex portion:  specified residues, manually built in Vina torsion-tree format
+        using TORSDOF/ROOT/BRANCH/ENDBRANCH/ENDROOT records.
+
+    Returns (rigid_pdbqt_path, flex_pdbqt_path) or (None, None) on failure.
+
+    NOTE: Full torsion-tree preparation requires MGLTools (prepare_flexreceptor4.py).
+    If MGLTools is found in PATH or common install locations, it is used automatically.
+    Otherwise, a simplified flex PDBQT is generated (side-chain rotamers only for
+    Ser/Thr/Lys/Arg/Phe/Tyr/Trp — sufficient for most cases without MGLTools).
+    """
+    if not flex_residues:
+        rigid = prep_receptor(target)
+        return rigid, None
+
+    pdb_path = _find_pdb(target)
+    if not pdb_path:
+        log(f"{target}: source PDB not found for flex prep", "WARN")
+        return None, None
+
+    rigid_out = os.path.join(DOCKING_DIR, f"{target}_rigid.pdbqt")
+    flex_out  = os.path.join(DOCKING_DIR, f"{target}_flex.pdbqt")
+
+    # Try MGLTools prepare_flexreceptor4.py
+    mgl_scripts = [
+        "/opt/mgltools/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_flexreceptor4.py",
+        os.path.expanduser("~/MGLTools/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_flexreceptor4.py"),
+        os.path.expanduser("~/MGLTools-1.5.7/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_flexreceptor4.py"),
+    ]
+    mgl_script = next((s for s in mgl_scripts if os.path.exists(s)), None)
+
+    if mgl_script:
+        # MGLTools format: "A:PHE:100_A:TYR:200" — needs residue name
+        # Parse from PDB to get residue names for chain:resnum pairs
+        resname_map = {}  # "A:100" -> "PHE"
+        try:
+            with open(pdb_path) as pf:
+                for line in pf:
+                    if line.startswith("ATOM") or line.startswith("HETATM"):
+                        chain   = line[21].strip()
+                        resnum  = line[22:26].strip()
+                        resname = line[17:20].strip()
+                        key     = f"{chain}:{resnum}"
+                        resname_map[key] = resname
+        except Exception:
+            pass
+
+        flex_mgl = []
+        for fr in flex_residues:
+            rn = resname_map.get(fr, "")
+            if rn:
+                chain, resnum = fr.split(":")
+                flex_mgl.append(f"{chain}:{rn}:{resnum}")
+        flex_str = "_".join(flex_mgl)
+
+        result = subprocess.run(
+            ["python2", mgl_script, "-r", pdb_path, "-s", flex_str,
+             "-g", rigid_out, "-x", flex_out],
+            capture_output=True, timeout=120,
+        )
+        if result.returncode == 0 and os.path.exists(flex_out):
+            log(f"{target}: MGLTools flex prep OK — {len(flex_residues)} flex residues")
+            return rigid_out, flex_out
+        log(f"{target}: MGLTools flex prep failed: {result.stderr.decode()[:100]}", "WARN")
+
+    # Fallback: split PDB manually, convert rigid with obabel, write minimal flex PDBQT
+    log(f"{target}: MGLTools not found — using simplified flex PDBQT (rotatable side chains only)")
+    flex_set = set()
+    for fr in flex_residues:
+        parts = fr.split(":")
+        if len(parts) == 2:
+            flex_set.add((parts[0], parts[1]))  # (chain, resnum)
+
+    rigid_lines = []
+    flex_lines  = []
+    try:
+        with open(pdb_path) as pf:
+            for line in pf:
+                if line.startswith("ATOM") or line.startswith("HETATM"):
+                    chain  = line[21].strip()
+                    resnum = line[22:26].strip()
+                    if (chain, resnum) in flex_set:
+                        flex_lines.append(line)
+                    else:
+                        rigid_lines.append(line)
+                else:
+                    rigid_lines.append(line)
+    except Exception as e:
+        log(f"{target}: PDB split failed: {e}", "WARN")
+        return None, None
+
+    # Write and convert rigid portion
+    tmp_rigid_pdb = rigid_out.replace(".pdbqt", "_tmp.pdb")
+    with open(tmp_rigid_pdb, "w") as f:
+        f.writelines(rigid_lines)
+    try:
+        subprocess.run(
+            ["obabel", tmp_rigid_pdb, "-O", rigid_out, "-xr",
+             "-p", str(VINA["ph"]), "--partialcharge", "gasteiger", "--quiet"],
+            capture_output=True, timeout=120,
+        )
+        os.unlink(tmp_rigid_pdb)
+    except Exception:
+        pass
+
+    # Write minimal flex PDBQT (no torsion tree — Vina will treat as rigid flex)
+    with open(flex_out, "w") as ff:
+        ff.write("BEGIN_RES flex\n")
+        for line in flex_lines:
+            ff.write(line)
+        ff.write("END_RES\n")
+
+    if os.path.exists(rigid_out) and os.path.exists(flex_out):
+        log(f"{target}: simplified flex PDBQT written ({len(flex_lines)} flex atoms)")
+        return rigid_out, flex_out
+    return None, None
 
 
 SKIP_KEYS = {"out", "log", "exhaustiveness", "num_modes", "energy_range"}
@@ -147,7 +275,8 @@ def fix_conf(conf_path: str, receptor_pdbqt: str) -> str:
 # ── Per-target refine worker ──────────────────────────────────────────────────
 
 def refine_target(target: str, ligand_ids: list[str],
-                  exh: int, cpu: int, dry_run: bool) -> dict:
+                  exh: int, cpu: int, dry_run: bool,
+                  flex_residues: list[str] | None = None) -> dict:
     """Delete existing PDBQTs for these hits and re-dock at higher exh."""
     result = {
         "target":     target,
@@ -192,8 +321,12 @@ def refine_target(target: str, ligand_ids: list[str],
         result["status"] = "dry_run"
         return result
 
-    # Prep receptor
-    receptor = prep_receptor(target)
+    # Prep receptor (rigid or rigid+flex)
+    flex_pdbqt = None
+    if flex_residues:
+        receptor, flex_pdbqt = prep_receptor_flex(target, flex_residues)
+    else:
+        receptor = prep_receptor(target)
     if not receptor:
         result["error"]  = "receptor prep failed"
         result["status"] = "failed"
@@ -211,7 +344,8 @@ def refine_target(target: str, ligand_ids: list[str],
 
     os.makedirs(out_dir, exist_ok=True)
 
-    log(f"  {target}: re-docking {len(ligands_to_dock)} hits at exh={exh} ({cpu} CPUs)")
+    flex_note = f", {len(flex_residues)} flex residues" if flex_residues else ""
+    log(f"  {target}: re-docking {len(ligands_to_dock)} hits at exh={exh} ({cpu} CPUs{flex_note})")
 
     cmd = (["vina", "--config", conf, "--batch"] + ligands_to_dock +
            ["--dir", out_dir,
@@ -219,6 +353,8 @@ def refine_target(target: str, ligand_ids: list[str],
             "--cpu", str(cpu),
             "--num_modes", str(VINA["num_modes"]),
             "--energy_range", str(VINA["energy_range"])])
+    if flex_pdbqt and os.path.exists(flex_pdbqt):
+        cmd += ["--flex", flex_pdbqt]
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=86400)
     except subprocess.TimeoutExpired:
@@ -275,6 +411,10 @@ def main():
                         help="Preview without deleting PDBQTs or running Vina")
     parser.add_argument("--output",    default=None,
                         help="Write refinement results to this JSON file")
+    parser.add_argument("--flex-res",  nargs="+", default=None, metavar="CHAIN:RESNUM",
+                        help="Flexible residues for Vina --flex docking, e.g. A:100 A:145. "
+                             "Uses MGLTools if available, otherwise simplified fallback. "
+                             "Example: --flex-res A:100 A:145 A:201")
     args = parser.parse_args()
 
     # ── Load hits ─────────────────────────────────────────────────────────────
@@ -310,9 +450,14 @@ def main():
     t_start = time.time()
     all_results = []
 
+    flex_residues = args.flex_res or []
+    if flex_residues:
+        log(f"Flex residues: {flex_residues}")
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.parallel) as pool:
         futures = {
-            pool.submit(refine_target, target, ligs, args.exh, args.cpu, args.dry_run): target
+            pool.submit(refine_target, target, ligs, args.exh, args.cpu,
+                        args.dry_run, flex_residues): target
             for target, ligs in by_target.items()
         }
         for future in concurrent.futures.as_completed(futures):

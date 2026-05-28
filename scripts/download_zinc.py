@@ -42,7 +42,7 @@ from config import *
 
 try:
     from rdkit import Chem
-    from rdkit.Chem import Descriptors, rdMolDescriptors
+    from rdkit.Chem import Descriptors, rdMolDescriptors, QED as RdkitQED
     RDKIT_OK = True
 except ImportError:
     RDKIT_OK = False
@@ -56,6 +56,11 @@ try:
 except Exception:
     PAINS_CATALOG = None
     PAINS_OK = False
+
+# QED (Quantitative Estimate of Drug-likeness) pre-filter.
+# QED 0–1; approved drugs avg ~0.49. Threshold 0.25 cuts obvious non-drug-like
+# junk while keeping structurally diverse but less optimised leads.
+QED_MIN = 0.25
 
 
 # ChEMBL REST API — reliable, EBI-maintained
@@ -126,6 +131,42 @@ def pains_ok(smiles: str) -> bool:
         return not PAINS_CATALOG.HasMatch(mol)
     except Exception:
         return True
+
+
+def qed_ok(smiles: str) -> bool:
+    """Return True if QED >= QED_MIN. Filters out non-drug-like junk before 3D conversion."""
+    if not RDKIT_OK or not smiles:
+        return True   # pass-through if RDKit unavailable
+    try:
+        mol = Chem.MolFromSmiles(smiles)
+        if mol is None:
+            return False
+        return RdkitQED.qed(mol) >= QED_MIN
+    except Exception:
+        return True
+
+
+def validate_pdbqt(path: str) -> bool:
+    """
+    Verify a PDBQT file is valid after obabel conversion.
+    Checks: file size > 500 bytes and contains ATOM/HETATM records.
+    Removes invalid files to prevent garbage inputs to Vina.
+    Returns True if valid.
+    """
+    try:
+        if not os.path.exists(path):
+            return False
+        if os.path.getsize(path) < 500:
+            os.unlink(path)
+            return False
+        with open(path) as f:
+            content = f.read(4096)
+        if "ATOM" not in content and "HETATM" not in content:
+            os.unlink(path)
+            return False
+        return True
+    except Exception:
+        return False
 
 
 def lipinski_ok(smiles: str) -> bool:
@@ -266,7 +307,7 @@ def _convert_worker(args: tuple) -> tuple[str, bool]:
             text=True,
             timeout=60
         )
-        ok = result.returncode == 0 and os.path.exists(out_path)
+        ok = result.returncode == 0 and validate_pdbqt(out_path)
         return zinc_id, ok
     except Exception:
         return zinc_id, False
@@ -405,6 +446,9 @@ def download_and_prep(target_count: int, ligands_dir: str,
             skipped += 1
             continue
         if not pains_ok(smiles):
+            skipped += 1
+            continue
+        if not qed_ok(smiles):
             skipped += 1
             continue
 

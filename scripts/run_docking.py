@@ -157,22 +157,22 @@ def summarise_results(docking_dir: str, targets: list[str]) -> dict:
         if not os.path.isdir(out_dir):
             continue
         hits = parse_results(out_dir, acc)
-        summary[acc] = hits[:20]   # top 20 per target
-        all_hits.extend(hits[:5])  # global top-5 per target
+        summary[acc] = hits[:50]    # top 50 per target
+        all_hits.extend(hits[:20])  # global top-20 per target
 
     # Write per-target TSV
     report_path = os.path.join(docking_dir, "docking_results_summary.tsv")
     with open(report_path, "w") as f:
         f.write("target\tligand\tscore_kcal_mol\n")
         for acc in targets:
-            for hit in summary.get(acc, [])[:20]:
+            for hit in summary.get(acc, [])[:50]:
                 f.write(f"{acc}\t{hit['ligand']}\t{hit['score']:.3f}\n")
 
-    # Write global top-50 JSON
+    # Write global top-500 JSON (was 50 — captures enough for downstream analysis)
     all_hits.sort(key=lambda x: x["score"])
     top_json = os.path.join(docking_dir, "top_hits.json")
     with open(top_json, "w") as f:
-        json.dump(all_hits[:50], f, indent=2)
+        json.dump(all_hits[:500], f, indent=2)
 
     return summary
 
