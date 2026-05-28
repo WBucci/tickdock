@@ -324,6 +324,10 @@ def get_batches(ligands: list[str], batch_size: int) -> list[list[str]]:
             for i in range(0, len(ligands), batch_size)]
 
 
+# NOTE: Cache is keyed on ligand filename stem (not SMILES/InChI).
+# If a PDBQT is regenerated with different 3D coords but same ID,
+# the old cache entry will prevent re-docking. To force re-dock
+# a specific compound, remove its entry from pruned_nonhits.jsonl.
 def already_docked(target: str, ligand_path: str, current_exh: int = DEFAULT_EXH) -> bool:
     """Check if this ligand was already docked against this target at current_exh.
 
@@ -367,10 +371,36 @@ def prep_receptor(target: str) -> str | None:
             capture_output=True, timeout=120)
         if result.returncode == 0 and os.path.exists(out_path):
             return out_path
-        log(f"{target}: obabel failed: {result.stderr.decode()[:100]}", "WARN")
+        reason = f"obabel failed (exit {result.returncode}): {result.stderr.decode()[:100]}"
+        log(f"{target}: {reason}", "WARN")
+        _record_receptor_failure(target, reason)
     except Exception as e:
-        log(f"{target}: receptor prep error: {e}", "WARN")
+        reason = f"receptor prep error: {e}"
+        log(f"{target}: {reason}", "WARN")
+        _record_receptor_failure(target, str(e))
     return None
+
+
+def _record_receptor_failure(target: str, reason: str):
+    """Append a receptor prep failure entry to logs/receptor_failures.json."""
+    failures_path = os.path.join(LOG_DIR, "receptor_failures.json")
+    failures = []
+    if os.path.exists(failures_path):
+        try:
+            with open(failures_path) as f:
+                failures = json.load(f)
+        except Exception:
+            failures = []
+    failures.append({
+        "target":    target,
+        "reason":    reason,
+        "timestamp": datetime.datetime.now().isoformat(),
+    })
+    try:
+        with open(failures_path, "w") as f:
+            json.dump(failures, f, indent=2)
+    except Exception:
+        pass
 
 
 # ── Vina config helper ────────────────────────────────────────────────────────
@@ -580,11 +610,31 @@ def run_batch(batch_id: int, batch_ligands: list[str],
     batch_start = time.time()
     target_results = []
 
+    # #1: Track current_target in state as each target starts docking
+    _target_idx_lock = threading.Lock()
+    _target_idx_counter = [0]
+
+    def _dock_with_progress(t, batch_ligands, batch_id, t_exh, cpu, dry_run, splits):
+        """Wrapper: updates campaign_state.json with current_target before docking."""
+        with _target_idx_lock:
+            _target_idx_counter[0] += 1
+            t_idx = _target_idx_counter[0]
+        try:
+            state_snapshot = load_state()
+            state_snapshot["current_target"]     = t
+            state_snapshot["current_batch_id"]   = batch_id
+            state_snapshot["current_target_idx"] = t_idx
+            state_snapshot["current_n_targets"]  = len(targets)
+            save_state(state_snapshot)
+        except Exception:
+            pass
+        return dock_target_batch(t, batch_ligands, batch_id, t_exh, cpu, dry_run, splits)
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=n_parallel) as pool:
         futures = {
             pool.submit(
-                dock_target_batch, t, batch_ligands, batch_id,
-                (target_exh_map or {}).get(t, exh),   # per-target exh if adaptive
+                _dock_with_progress, t, batch_ligands, batch_id,
+                (target_exh_map or {}).get(t, exh),
                 cpu_per_vina, dry_run, splits,
             ): t
             for t in targets
@@ -1015,9 +1065,31 @@ def rebuild_top_hits() -> int:
     Saves ALL unique hits that met the score threshold (no cap) — compress_negatives
     already filters by VINA['good_score'], so everything in 'kept' qualifies.
     Deduplicates by (target, ligand), keeps best score per pair.
+    Preserves first_seen_round from existing top_hits.json.
     Called after each compress step so top_hits.json is always current.
     Returns number of hits saved.
     """
+    # Load existing top_hits.json to preserve first_seen_round values
+    existing_first_seen: dict[tuple, int] = {}
+    if os.path.exists(TOP_HITS_FILE):
+        try:
+            with open(TOP_HITS_FILE) as f:
+                prev_hits = json.load(f)
+            for h in prev_hits:
+                key = (h.get("target", ""), h.get("ligand", ""))
+                if h.get("first_seen_round") is not None:
+                    existing_first_seen[key] = h["first_seen_round"]
+        except Exception:
+            pass
+
+    # Determine current round from state
+    current_round = 1
+    try:
+        state = load_state()
+        current_round = state.get("round", 1)
+    except Exception:
+        pass
+
     seen: dict[tuple, float] = {}  # (target, ligand) -> best score
     for pat in ("batch_*_compressed.json", "batch_R*_B*_compressed.json"):
         for path in glob.glob(os.path.join(LOG_DIR, pat)):
@@ -1032,7 +1104,11 @@ def rebuild_top_hits() -> int:
     if not seen:
         return 0
     hits = sorted(
-        [{"target": t, "ligand": l, "score": s} for (t, l), s in seen.items()],
+        [{"target": t,
+          "ligand": l,
+          "score": s,
+          "first_seen_round": existing_first_seen.get((t, l), current_round),
+         } for (t, l), s in seen.items()],
         key=lambda x: x["score"],
     )
     try:
@@ -1043,6 +1119,52 @@ def rebuild_top_hits() -> int:
     except Exception as e:
         log(f"top_hits.json rebuild failed: {e}", "WARN")
     return len(hits)
+
+
+CAMPAIGN_SUMMARY_FILE = os.path.join(LOG_DIR, "campaign_summary.json")
+
+
+def update_campaign_summary(round_num: int, exh: int, stats_dict: dict):
+    """Write/update logs/campaign_summary.json with per-round stats.
+
+    stats_dict keys: n_ligands, n_targets, n_hits, best_score,
+                     best_ligand, best_target, elapsed_h
+    """
+    summary = {"rounds": []}
+    if os.path.exists(CAMPAIGN_SUMMARY_FILE):
+        try:
+            with open(CAMPAIGN_SUMMARY_FILE) as f:
+                summary = json.load(f)
+        except Exception:
+            summary = {"rounds": []}
+
+    # Remove any existing entry for this round (update in place)
+    summary["rounds"] = [r for r in summary.get("rounds", [])
+                         if r.get("round") != round_num]
+
+    entry = {
+        "round":        round_num,
+        "exh":          exh,
+        "n_ligands":    stats_dict.get("n_ligands", 0),
+        "n_targets":    stats_dict.get("n_targets", 0),
+        "n_hits":       stats_dict.get("n_hits", 0),
+        "best_score":   stats_dict.get("best_score"),
+        "best_ligand":  stats_dict.get("best_ligand"),
+        "best_target":  stats_dict.get("best_target"),
+        "elapsed_h":    stats_dict.get("elapsed_h", 0.0),
+        "completed_at": datetime.datetime.now().isoformat(),
+    }
+    summary["rounds"].append(entry)
+    # Keep sorted by round number
+    summary["rounds"].sort(key=lambda r: r.get("round", 0))
+
+    try:
+        with open(CAMPAIGN_SUMMARY_FILE, "w") as f:
+            json.dump(summary, f, indent=2)
+        log(f"Campaign summary updated: round {round_num} — {entry['n_hits']} hits, "
+            f"best {entry['best_score']} kcal/mol")
+    except Exception as e:
+        log(f"campaign_summary.json write failed: {e}", "WARN")
 
 
 # ── Adaptive exhaustiveness by pocket size ─────────────────────────────────────
@@ -1080,11 +1202,57 @@ def load_target_exh_map(default_exh: int) -> dict[str, int]:
     return exh_map
 
 
+HIT_TREND_LOG = os.path.join(LOG_DIR, "hit_trend.jsonl")
+
+
 # ── Async compress (non-blocking — next batch starts while compress runs) ──────
 def _compress_bg_worker(batch_id: int, round_num: int, current_exh: int):
     with _compress_lock:
         compress_negatives(batch_id, round_num=round_num, current_exh=current_exh)
-        rebuild_top_hits()
+        # Count hits before and after rebuild to track new hits this batch
+        hits_before = 0
+        if os.path.exists(TOP_HITS_FILE):
+            try:
+                with open(TOP_HITS_FILE) as f:
+                    hits_before = len(json.load(f))
+            except Exception:
+                hits_before = 0
+        n_hits_after = rebuild_top_hits()
+        new_hits = max(0, n_hits_after - hits_before)
+
+        # Append to hit_trend.jsonl — one JSONL line per batch
+        best_score = None
+        if os.path.exists(TOP_HITS_FILE):
+            try:
+                with open(TOP_HITS_FILE) as f:
+                    all_hits = json.load(f)
+                if all_hits:
+                    best_score = all_hits[0]["score"]
+            except Exception:
+                pass
+
+        # Get cumulative ligands from state
+        n_ligands_docked = 0
+        try:
+            state = load_state()
+            n_ligands_docked = state.get("cumulative_ligands", 0)
+        except Exception:
+            pass
+
+        trend_entry = {
+            "round":              round_num,
+            "batch_id":           batch_id,
+            "timestamp":          datetime.datetime.now().isoformat(),
+            "cum_hits":           n_hits_after,
+            "new_hits_this_batch": new_hits,
+            "best_score":         best_score,
+            "n_ligands_docked":   n_ligands_docked,
+        }
+        try:
+            with open(HIT_TREND_LOG, "a") as f:
+                f.write(json.dumps(trend_entry) + "\n")
+        except Exception as e:
+            log(f"hit_trend.jsonl write failed: {e}", "WARN")
 
 
 def compress_negatives_bg(batch_id: int, round_num: int, current_exh: int):
@@ -1113,6 +1281,132 @@ def wait_for_compress():
     if _compress_thread and _compress_thread.is_alive():
         log("Waiting for background compress to finish...")
         _compress_thread.join()
+
+
+# ── Near-miss upgrade rate ────────────────────────────────────────────────────
+def auto_commit_round(round_num: int, n_hits: int, best_score: float | None,
+                      elapsed_h: float):
+    """Auto-commit key result files after a round completes.
+
+    Commits only files that exist; never pushes. Wrapped in try/except
+    so a git failure never breaks the campaign.
+    """
+    score_str = f"{best_score:.3f}" if best_score is not None else "N/A"
+    msg = (f"data: round {round_num} complete — {n_hits} hits, "
+           f"best {score_str} kcal/mol, {elapsed_h:.1f}h")
+
+    files_to_add = [
+        os.path.join(LOG_DIR,    "campaign_summary.json"),
+        os.path.join(LOG_DIR,    "hit_trend.jsonl"),
+        os.path.join(DOCKING_DIR, "top_hits.json"),
+        os.path.join(DOCKING_DIR, "docking_results_summary.tsv"),
+    ]
+
+    try:
+        existing = [f for f in files_to_add if os.path.exists(f)]
+        if not existing:
+            log("auto_commit_round: no result files found to commit — skipping.", "WARN")
+            return
+
+        # Stage files
+        add_result = subprocess.run(
+            ["git", "add"] + existing,
+            capture_output=True, text=True, cwd=BASE_DIR
+        )
+        if add_result.returncode != 0:
+            log(f"auto_commit_round: git add failed: {add_result.stderr.strip()}", "WARN")
+            return
+
+        # Commit
+        commit_result = subprocess.run(
+            ["git", "commit", "-m", msg],
+            capture_output=True, text=True, cwd=BASE_DIR
+        )
+        if commit_result.returncode == 0:
+            log(f"auto_commit_round: committed — '{msg}'")
+        else:
+            out = commit_result.stdout.strip()
+            if "nothing to commit" in out or "nothing added" in out:
+                log("auto_commit_round: nothing new to commit (files unchanged).")
+            else:
+                log(f"auto_commit_round: git commit failed: {commit_result.stderr.strip()}", "WARN")
+    except Exception as e:
+        log(f"auto_commit_round: git error (campaign continues): {e}", "WARN")
+
+
+def compute_near_miss_upgrade_rate(round_num: int) -> dict | None:
+    """
+    After round N completes, check how many near-misses from round N-1
+    were re-docked and became confirmed hits in top_hits.json.
+
+    Returns a dict with upgrade stats, or None if round <= 1.
+    Appends a summary line to HIT_TREND_LOG.
+    """
+    if round_num <= 1:
+        return None
+
+    hit_thresh      = VINA["good_score"]
+    near_miss_lower = hit_thresh + NEAR_MISS_MARGIN  # e.g. -5.5
+
+    # Collect near-misses from round N-1 via pruned_nonhits.jsonl
+    # Entries with score in (hit_thresh, near_miss_lower] AND exh < current_round exh
+    prev_near_misses: set[tuple] = set()
+    if os.path.exists(PRUNED_LOG):
+        try:
+            with open(PRUNED_LOG) as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    h = json.loads(line)
+                    score = h.get("score")
+                    if score is not None and hit_thresh < score <= near_miss_lower:
+                        prev_near_misses.add((h["target"], h["ligand"]))
+        except Exception:
+            pass
+
+    if not prev_near_misses:
+        log(f"Near-miss upgrade rate (round {round_num}): no near-misses found in prior rounds.")
+        return {"round": round_num, "prev_near_misses": 0, "upgraded": 0, "rate": 0.0}
+
+    # Check which of those pairs now appear in top_hits.json
+    upgraded = 0
+    if os.path.exists(TOP_HITS_FILE):
+        try:
+            with open(TOP_HITS_FILE) as f:
+                top_hits = json.load(f)
+            hit_pairs = {(h["target"], h["ligand"]) for h in top_hits}
+            upgraded = len(prev_near_misses & hit_pairs)
+        except Exception:
+            pass
+
+    rate = upgraded / len(prev_near_misses) if prev_near_misses else 0.0
+    result = {
+        "round":            round_num,
+        "prev_near_misses": len(prev_near_misses),
+        "upgraded":         upgraded,
+        "rate":             round(rate, 4),
+    }
+    log(f"Near-miss upgrade rate (round {round_num}): "
+        f"{upgraded}/{len(prev_near_misses)} near-misses ({rate*100:.1f}%) "
+        f"became hits after re-docking.")
+
+    # Append to hit_trend.jsonl
+    entry = {
+        "type":             "near_miss_upgrade",
+        "round":            round_num,
+        "timestamp":        datetime.datetime.now().isoformat(),
+        "prev_near_misses": len(prev_near_misses),
+        "upgraded":         upgraded,
+        "upgrade_rate":     round(rate, 4),
+    }
+    try:
+        with open(HIT_TREND_LOG, "a") as f:
+            f.write(json.dumps(entry) + "\n")
+    except Exception:
+        pass
+
+    return result
 
 
 # ── Status display ────────────────────────────────────────────────────────────
@@ -1172,20 +1466,36 @@ def show_status():
         proc_line = "STOPPED"
 
     batches_done  = state.get('batches_completed', [])
-    batches_total = state.get('batches_total', '?')
     round_num     = state.get('round', 1)
     cum_hits      = state.get('cumulative_hits', 0)
     cum_ligs      = state.get('cumulative_ligands', 0)
+
+    # #2 — Compute expected batches from actual ligand count at runtime
+    ligand_count    = len(ligands)
+    batch_sz        = state.get('batch_size', DEFAULT_BATCH_SIZE)
+    expected_batches = max(1, (ligand_count + batch_sz - 1) // batch_sz) if ligand_count else 0
+    state_total      = state.get('batches_total', '?')
+    if state_total != '?' and expected_batches != state_total:
+        batches_line = (f"{len(batches_done)}/{expected_batches} complete "
+                        f"(state says {state_total})")
+    else:
+        batches_line = f"{len(batches_done)}/{expected_batches} complete"
 
     print(f"\nTickDock Campaign Status")
     print(f"{'='*50}")
     print(f"  Process:           {proc_line}")
     print(f"  Round:             {round_num}")
     print(f"  Control signal:    {control}")
+
+    # #3 — Stop/pause signal warning
+    if running and control in ("stop", "pause"):
+        print(f"  ⚠  Signal '{control}' set — campaign will HALT after current batch")
+        print(f"     To continue: python run_campaign.py --resume")
+
     print(f"  Targets:           {len(targets)} (from final_targets.json)")
-    print(f"  Ligands prepared:  {len(ligands)}")
-    print(f"  Batch size:        {state.get('batch_size', DEFAULT_BATCH_SIZE)}")
-    print(f"  Batches:           {len(batches_done)}/{batches_total} complete")
+    print(f"  Ligands prepared:  {ligand_count}")
+    print(f"  Batch size:        {batch_sz}")
+    print(f"  Batches:           {batches_line}")
     if batches_done:
         print(f"  Batches done IDs:  {batches_done}")
     failed = state.get('batches_failed', [])
@@ -1196,6 +1506,27 @@ def show_status():
     if cum_hits:
         print(f"  Cumulative hits:   {cum_hits:,} (≤{VINA['good_score']} kcal/mol)")
     print(f"  State file:        {STATE_FILE}")
+
+    # #1 — Current target visibility
+    current_target = state.get('current_target')
+    if running and current_target:
+        batch_id    = state.get('current_batch_id', '?')
+        target_idx  = state.get('current_target_idx', '?')
+        n_targets   = state.get('current_n_targets', len(targets))
+        print(f"  Currently docking: {current_target} "
+              f"(batch {batch_id}, target {target_idx}/{n_targets})")
+
+    # #5 — Receptor failure count
+    failures_path = os.path.join(LOG_DIR, "receptor_failures.json")
+    if os.path.exists(failures_path):
+        try:
+            with open(failures_path) as f:
+                failures = json.load(f)
+            if failures:
+                print(f"  Receptor failures: {len(failures)} targets "
+                      f"(see logs/receptor_failures.json)")
+        except Exception:
+            pass
 
     # Show best results so far
     # Read best hits from top_hits.json (deduplicated, best score per target+ligand)
@@ -1216,6 +1547,28 @@ def show_status():
         print(f"\n  Best hits so far ({len(all_tops)} total):")
         for i, h in enumerate(all_tops[:5], 1):
             print(f"    {i}. {h.get('target','?')} + {h.get('ligand','?')}: {h.get('score','?')} kcal/mol")
+
+    # #10 — Round history from campaign_summary.json
+    if os.path.exists(CAMPAIGN_SUMMARY_FILE):
+        try:
+            with open(CAMPAIGN_SUMMARY_FILE) as f:
+                camp_summary = json.load(f)
+            rounds = camp_summary.get("rounds", [])
+            if rounds:
+                print(f"\n  Round history:")
+                for r in rounds:
+                    rn      = r.get("round", "?")
+                    r_hits  = r.get("n_hits", 0)
+                    r_best  = r.get("best_score")
+                    r_exh   = r.get("exh", "?")
+                    r_h     = r.get("elapsed_h", 0.0)
+                    r_best_str = f"{r_best:.3f}" if r_best is not None else "N/A"
+                    # Check if this is the current in-progress round
+                    suffix = " (in progress)" if (running and rn == round_num) else ""
+                    print(f"    Round {rn}: {r_hits:,} hits | best {r_best_str} | "
+                          f"exh={r_exh} | {r_h:.1f}h{suffix}")
+        except Exception:
+            pass
 
     # Download status
     flag_q = os.path.join(LOG_DIR, "download_queued.flag")
@@ -1333,6 +1686,7 @@ def main():
         round_num = 0
         while True:
             round_num += 1
+            round_start_time = time.time()
             if args.max_rounds and round_num > args.max_rounds:
                 log(f"Max rounds ({args.max_rounds}) reached -- campaign complete.")
                 break
@@ -1369,7 +1723,9 @@ def main():
                 state["batches_total"] = len(batches)
                 state["total_ligands"] = len(ligands)
                 state["targets"]       = [t["accession"] for t in targets]
-                save_state(state)
+            # Always update round number in state so show_status can read it
+            state["round"] = round_num
+            save_state(state)
 
             completed = set(state.get("batches_completed", []))
             pending   = [i for i in range(len(batches)) if i not in completed]
@@ -1469,6 +1825,11 @@ def main():
                 state["ligands_remaining"] = sum(
                     len(batches[i]) for i in pending[loop_idx + 1:]
                 )
+                # #1: Clear current_target now that batch is complete
+                state.pop("current_target", None)
+                state.pop("current_batch_id", None)
+                state.pop("current_target_idx", None)
+                state.pop("current_n_targets", None)
                 save_state(state)
 
                 # Dispatch hook
@@ -1499,12 +1860,53 @@ def main():
                 f"{n_completed}/{len(batches)} batches done total.")
 
             wait_for_compress()   # ensure compress finishes before post-round scripts
+
+            # Gather round stats for summary / commit
+            round_elapsed_h = round((time.time() - round_start_time) / 3600, 2)
+            n_round_hits     = state.get("cumulative_hits", 0)
+            best_score_round = None
+            best_lig_round   = None
+            best_tgt_round   = None
+            if os.path.exists(TOP_HITS_FILE):
+                try:
+                    with open(TOP_HITS_FILE) as _f:
+                        _all_hits = json.load(_f)
+                    if _all_hits:
+                        best_score_round = _all_hits[0]["score"]
+                        best_lig_round   = _all_hits[0].get("ligand")
+                        best_tgt_round   = _all_hits[0].get("target")
+                except Exception:
+                    pass
+
+            # #4: Near-miss upgrade rate (only runs if round > 1)
+            compute_near_miss_upgrade_rate(round_num)
+
+            # #11: Update campaign_summary.json with this round's stats
+            update_campaign_summary(
+                round_num=round_num,
+                exh=args.exh,
+                stats_dict={
+                    "n_ligands":  len(ligands),
+                    "n_targets":  len(targets),
+                    "n_hits":     n_round_hits,
+                    "best_score": best_score_round,
+                    "best_ligand": best_lig_round,
+                    "best_target": best_tgt_round,
+                    "elapsed_h":  round_elapsed_h,
+                },
+            )
+
             if not args.no_post and not args.dry_run:
                 run_post_campaign(top_targets=len(targets),
                                   skip_orthologs=args.no_orthologs)
                 _toast("TickDock Round Complete",
                        f"Round {round_num} done -- "
                        f"{state.get('cumulative_hits', 0)} cumulative hits.")
+
+            # #8: Auto-commit key result files after round (never push)
+            if not args.dry_run:
+                auto_commit_round(round_num, n_round_hits, best_score_round,
+                                  round_elapsed_h)
 
             # Decide whether to start another round
             if _download_complete():
