@@ -78,140 +78,143 @@
     },
     "02_novelty_filter": {
       "step": "02_novelty_filter",
-      "started": "2026-05-26T19:06:55.102572",
-      "completed": "2026-05-26T19:08:28.138521",
-      "elapsed_sec": 93.0,
+      "started": "2026-05-28T19:52:07.865571",
+      "completed": "2026-05-28T19:52:09.179987",
+      "elapsed_sec": 1.3,
       "params": {
         "species": {
-          "value": "dermacentor_variabilis",
+          "value": "amblyomma_americanum",
           "description": "",
-          "timestamp": "2026-05-26T19:06:55.293091"
+          "timestamp": "2026-05-28T19:52:07.883253"
         },
         "min_plddt": {
           "value": 70,
           "description": "AlphaFold confidence threshold",
-          "timestamp": "2026-05-26T19:06:55.293102"
+          "timestamp": "2026-05-28T19:52:07.883261"
         },
         "min_druggability": {
           "value": 0.5,
           "description": "",
-          "timestamp": "2026-05-26T19:06:55.293104"
+          "timestamp": "2026-05-28T19:52:07.883263"
         },
         "min_pocket_volume": {
           "value": 300,
           "description": "Angstroms^3",
-          "timestamp": "2026-05-26T19:06:55.293105"
+          "timestamp": "2026-05-28T19:52:07.883264"
         },
         "max_human_homology": {
           "value": 0.4,
           "description": "BLAST identity fraction",
-          "timestamp": "2026-05-26T19:06:55.293106"
+          "timestamp": "2026-05-28T19:52:07.883265"
+        },
+        "include_pdb_structures": {
+          "value": true,
+          "description": "Proteins with experimental PDB structures retained; experimental structures preferred over AlphaFold for docking quality",
+          "timestamp": "2026-05-28T19:52:08.204949"
         },
         "scoring_rubric": {
           "value": {
-            "no_structure": 3,
+            "no_structure": 2,
+            "has_pdb_structure": 2,
             "no_ligands": 3,
             "unknown_function": 2,
-            "alphafold_ok": 2,
+            "alphafold_ok": 1,
             "good_length": 1,
             "interesting_class": 1,
             "membrane": 2,
             "essential_keyword": 2
           },
           "description": "Points assigned per novelty criterion",
-          "timestamp": "2026-05-26T19:08:28.128714"
+          "timestamp": "2026-05-28T19:52:08.221219"
         }
       },
       "stats": {
         "total_input_proteins": {
-          "value": 166,
+          "value": 37160,
           "description": "",
-          "timestamp": "2026-05-26T19:06:55.317161"
+          "timestamp": "2026-05-28T19:52:08.168847"
         },
         "removed_known_targets": {
-          "value": 0,
+          "value": 39,
           "description": "Known acaricide targets excluded",
-          "timestamp": "2026-05-26T19:06:55.317412"
+          "timestamp": "2026-05-28T19:52:08.198645"
         },
         "after_known_filter": {
-          "value": 166,
+          "value": 37121,
           "description": "Proteins after known-target exclusion",
-          "timestamp": "2026-05-26T19:06:55.317417"
+          "timestamp": "2026-05-28T19:52:08.198666"
+        },
+        "has_pdb_structure": {
+          "value": 1,
+          "description": "Proteins with experimental PDB structure",
+          "timestamp": "2026-05-28T19:52:08.208068"
         },
         "no_pdb_structure": {
-          "value": 166,
+          "value": 37120,
           "description": "Proteins without PDB structure",
-          "timestamp": "2026-05-26T19:06:55.317433"
+          "timestamp": "2026-05-28T19:52:08.208083"
         },
-        "no_pdb_no_chembl": {
-          "value": 166,
-          "description": "Proteins with no structure AND no ligands",
-          "timestamp": "2026-05-26T19:06:55.317438"
+        "after_novelty_filter": {
+          "value": 37121,
+          "description": "Proteins retained (exclude_pdb=False, exclude_chembl=True)",
+          "timestamp": "2026-05-28T19:52:08.208091"
         },
         "length_filtered": {
-          "value": 69,
+          "value": 11019,
           "description": "Proteins outside 150-1500 aa range",
-          "timestamp": "2026-05-26T19:06:55.317458"
+          "timestamp": "2026-05-28T19:52:08.212712"
         },
         "after_length_filter": {
-          "value": 97,
+          "value": 26102,
           "description": "",
-          "timestamp": "2026-05-26T19:06:55.317461"
-        },
-        "alphafold_available": {
-          "value": 86,
-          "description": "Proteins with AlphaFold predictions (of 97 checked)",
-          "timestamp": "2026-05-26T19:08:28.128676"
+          "timestamp": "2026-05-28T19:52:08.212727"
         },
         "top10_novelty_scores": {
           "value": [
-            14,
-            14,
-            14,
             13,
             13,
             13,
             13,
             13,
             13,
-            12
+            13,
+            13,
+            13,
+            13
           ],
           "description": "Scores of top 10 candidates",
-          "timestamp": "2026-05-26T19:08:28.129380"
+          "timestamp": "2026-05-28T19:52:08.328616"
         },
         "candidates_after_filter": {
-          "value": 86,
+          "value": 26102,
           "description": "Final candidate count",
-          "timestamp": "2026-05-26T19:08:28.138389"
+          "timestamp": "2026-05-28T19:52:09.179829"
         }
       },
       "files_in": [
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/proteomes/dermacentor_variabilis_all.json",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/proteomes/amblyomma_americanum_all.json",
           "description": "Input proteome",
           "exists": true,
-          "size_bytes": 156188
+          "size_bytes": 30639112
         }
       ],
       "files_out": [
         {
-          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/dermacentor_variabilis_novelty_candidates.json",
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/results/amblyomma_americanum_novelty_candidates.json",
           "description": "Novelty-filtered candidate proteins",
           "exists": true,
-          "size_bytes": 117934,
-          "n_records": 86
+          "size_bytes": 30586630,
+          "n_records": 26102
         }
       ],
-      "api_calls": [
+      "api_calls": [],
+      "warnings": [
         {
-          "service": "AlphaFold",
-          "endpoint": "https://alphafold.ebi.ac.uk/api/prediction",
-          "query": "batch availability check",
-          "result_count": 86,
-          "timestamp": "2026-05-26T19:08:28.128656"
+          "message": "AlphaFold check skipped by user flag",
+          "timestamp": "2026-05-28T19:52:08.218218"
         }
       ],
-      "warnings": [],
       "errors": []
     },
     "03_to_07_structure_docking": {
@@ -3440,6 +3443,255 @@
       ],
       "warnings": [],
       "errors": []
+    },
+    "inject_pdb_ixodes_scapularis": {
+      "step": "inject_pdb_ixodes_scapularis",
+      "started": "2026-05-28T19:53:09.471742",
+      "completed": "2026-05-28T19:53:11.639863",
+      "elapsed_sec": 2.2,
+      "params": {
+        "min_plddt_mean": {
+          "value": 70,
+          "description": "Mean pLDDT threshold (AlphaFold only)",
+          "timestamp": "2026-05-28T19:53:09.486805"
+        },
+        "min_plddt_per_res": {
+          "value": 70,
+          "description": "Per-residue pLDDT threshold (AlphaFold only)",
+          "timestamp": "2026-05-28T19:53:09.486813"
+        },
+        "min_high_conf_frac": {
+          "value": 0.5,
+          "description": "Min fraction of residues above pLDDT threshold (AlphaFold only)",
+          "timestamp": "2026-05-28T19:53:09.486815"
+        },
+        "rcsb_preferred": {
+          "value": true,
+          "description": "Experimental PDB structures fetched from RCSB when has_structure=True; pLDDT quality filter skipped \u2014 experimental structures always suitable for docking",
+          "timestamp": "2026-05-28T19:53:09.486816"
+        },
+        "min_druggability_score": {
+          "value": 0.5,
+          "description": "fpocket/DoGSiteScorer threshold (0-1)",
+          "timestamp": "2026-05-28T19:53:09.535103"
+        },
+        "min_pocket_volume": {
+          "value": 300,
+          "description": "Angstroms^3",
+          "timestamp": "2026-05-28T19:53:09.535104"
+        },
+        "allosteric_flagging": {
+          "value": true,
+          "description": "Secondary pockets flagged as allosteric candidates",
+          "timestamp": "2026-05-28T19:53:09.535105"
+        },
+        "fpocket_available": {
+          "value": true,
+          "description": "",
+          "timestamp": "2026-05-28T19:53:09.536959"
+        },
+        "dogsite_available": {
+          "value": false,
+          "description": "",
+          "timestamp": "2026-05-28T19:53:09.536963"
+        },
+        "max_human_homology": {
+          "value": 0.4,
+          "description": "BLAST identity threshold for mammalian toxicity flag",
+          "timestamp": "2026-05-28T19:53:09.686536"
+        },
+        "blast_database": {
+          "value": "refseq_protein + Homo sapiens filter",
+          "description": "",
+          "timestamp": "2026-05-28T19:53:09.686560"
+        },
+        "rnai_search_terms": {
+          "value": "RNAi OR silenc* OR knockdown AND tick AND lethal",
+          "description": "",
+          "timestamp": "2026-05-28T19:53:09.686565"
+        },
+        "blast_enabled": {
+          "value": true,
+          "description": "",
+          "timestamp": "2026-05-28T19:53:09.686566"
+        },
+        "vina_exhaustiveness": {
+          "value": 8,
+          "description": "",
+          "timestamp": "2026-05-28T19:53:11.605820"
+        },
+        "vina_num_modes": {
+          "value": 9,
+          "description": "",
+          "timestamp": "2026-05-28T19:53:11.605823"
+        },
+        "vina_box_size": {
+          "value": 20,
+          "description": "Angstroms",
+          "timestamp": "2026-05-28T19:53:11.605824"
+        },
+        "vina_energy_range": {
+          "value": 3,
+          "description": "kcal/mol",
+          "timestamp": "2026-05-28T19:53:11.605826"
+        },
+        "vina_hit_threshold": {
+          "value": -7.0,
+          "description": "kcal/mol",
+          "timestamp": "2026-05-28T19:53:11.605827"
+        },
+        "lipinski_max_mw": {
+          "value": 500,
+          "description": "",
+          "timestamp": "2026-05-28T19:53:11.605829"
+        },
+        "lipinski_max_logp": {
+          "value": 5.0,
+          "description": "",
+          "timestamp": "2026-05-28T19:53:11.605831"
+        }
+      },
+      "stats": {
+        "rcsb_structures_downloaded": {
+          "value": 3,
+          "description": "Experimental structures fetched from RCSB PDB",
+          "timestamp": "2026-05-28T19:53:09.535085"
+        },
+        "alphafold_structures_downloaded": {
+          "value": 0,
+          "description": "Predicted structures fetched from AlphaFold",
+          "timestamp": "2026-05-28T19:53:09.535089"
+        },
+        "structure_fetch_failed": {
+          "value": 0,
+          "description": "Proteins with no structure available from either source",
+          "timestamp": "2026-05-28T19:53:09.535092"
+        },
+        "suitable_for_docking": {
+          "value": 3,
+          "description": "Structures passing quality filter (experimental always pass; AF2 requires pLDDT threshold)",
+          "timestamp": "2026-05-28T19:53:09.535094"
+        },
+        "total_druggable_pockets": {
+          "value": 1,
+          "description": "Pockets passing druggability and volume thresholds",
+          "timestamp": "2026-05-28T19:53:09.686521"
+        },
+        "allosteric_candidates": {
+          "value": 0,
+          "description": "Secondary pockets flagged as putative allosteric sites",
+          "timestamp": "2026-05-28T19:53:09.686525"
+        },
+        "proteins_with_pockets": {
+          "value": 1,
+          "description": "Proteins with \u22651 druggable pocket",
+          "timestamp": "2026-05-28T19:53:09.686527"
+        },
+        "high_human_homology_flagged": {
+          "value": 0,
+          "description": "Proteins with >80% human sequence identity (deprioritized)",
+          "timestamp": "2026-05-28T19:53:11.605780"
+        },
+        "rnai_lethality_evidence": {
+          "value": 0,
+          "description": "Proteins with published RNAi lethality data",
+          "timestamp": "2026-05-28T19:53:11.605805"
+        },
+        "targets_prepped_for_docking": {
+          "value": 1,
+          "description": "",
+          "timestamp": "2026-05-28T19:53:11.630395"
+        }
+      },
+      "files_in": [],
+      "files_out": [
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/B7QK46_vina.conf",
+          "description": "Vina config for B7QK46",
+          "exists": true,
+          "size_bytes": 392
+        },
+        {
+          "path": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/docking/run_all_docking.sh",
+          "description": "Master docking shell script",
+          "exists": true,
+          "size_bytes": 1022
+        }
+      ],
+      "api_calls": [
+        {
+          "service": "RCSB",
+          "endpoint": "https://files.rcsb.org/download/8W5Z.pdb",
+          "query": "B7Q097",
+          "result_count": 1,
+          "timestamp": "2026-05-28T19:53:09.498646"
+        },
+        {
+          "service": "RCSB",
+          "endpoint": "https://files.rcsb.org/download/4MHN.pdb",
+          "query": "B7QK46",
+          "result_count": 1,
+          "timestamp": "2026-05-28T19:53:09.509267"
+        },
+        {
+          "service": "RCSB",
+          "endpoint": "https://files.rcsb.org/download/6NAN.pdb",
+          "query": "Q964Q0",
+          "result_count": 1,
+          "timestamp": "2026-05-28T19:53:09.535078"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7Q097",
+          "result_count": 42,
+          "timestamp": "2026-05-28T19:53:09.613146"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "B7QK46",
+          "result_count": 28,
+          "timestamp": "2026-05-28T19:53:09.665795"
+        },
+        {
+          "service": "fpocket",
+          "endpoint": "local",
+          "query": "Q964Q0",
+          "result_count": 9,
+          "timestamp": "2026-05-28T19:53:09.686505"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/human_proteome",
+          "query": "B7QK46",
+          "result_count": 1,
+          "timestamp": "2026-05-28T19:53:09.779574"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/dog_proteome",
+          "query": "B7QK46",
+          "result_count": 1,
+          "timestamp": "2026-05-28T19:53:10.153046"
+        },
+        {
+          "service": "local blastp",
+          "endpoint": "/mnt/c/Users/Owner/Documents/AndroidApps/TTD/data/blast_db/mouse_proteome",
+          "query": "B7QK46",
+          "result_count": 1,
+          "timestamp": "2026-05-28T19:53:10.238256"
+        },
+        {
+          "service": "NCBI PubMed",
+          "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+          "query": "Qptc",
+          "result_count": 0,
+          "timestamp": "2026-05-28T19:53:11.104911"
+        }
+      ],
+      "warnings": [],
+      "errors": []
     }
   },
   "environment": {
@@ -3451,5 +3703,5 @@
     "pandas": "3.0.3",
     "rdkit": "2026.3.2"
   },
-  "last_updated": "2026-05-26T19:23:22.008778"
+  "last_updated": "2026-05-28T19:53:11.639870"
 }
