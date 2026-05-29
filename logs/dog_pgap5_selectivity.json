@@ -1,0 +1,63 @@
+{
+  "run_at": "2026-05-29T00:26:17.865185+00:00",
+  "tick_target": "B7P5E9",
+  "dog_accession": "A0A8C0S3B9",
+  "dog_uniprot_name": "A0A8C0S3B9_CANLF",
+  "dog_plddt_mean": 89.84595907928387,
+  "docking_box": {
+    "center_x": -8.501,
+    "center_y": -1.951,
+    "center_z": 3.556,
+    "size_x": 25.0,
+    "size_y": 25.0,
+    "size_z": 25.0
+  },
+  "exhaustiveness": 8,
+  "selective_threshold": 0.8,
+  "results": [
+    {
+      "ligand": "CHEMBL9171",
+      "tick_score": -13.125,
+      "dog_score": -5.61,
+      "ratio": 0.4274,
+      "selective": true,
+      "verdict": "SELECTIVE"
+    },
+    {
+      "ligand": "CHEMBL8905",
+      "tick_score": -12.995,
+      "dog_score": -5.3,
+      "ratio": 0.4078,
+      "selective": true,
+      "verdict": "SELECTIVE"
+    },
+    {
+      "ligand": "CHEMBL9203",
+      "tick_score": -12.373,
+      "dog_score": -3.544,
+      "ratio": 0.2864,
+      "selective": true,
+      "verdict": "SELECTIVE"
+    },
+    {
+      "ligand": "CHEMBL429008",
+      "tick_score": -11.885,
+      "dog_score": -4.676,
+      "ratio": 0.3934,
+      "selective": true,
+      "verdict": "SELECTIVE"
+    },
+    {
+      "ligand": "CHEMBL10161",
+      "tick_score": -11.781,
+      "dog_score": 6.298,
+      "ratio": -0.5346,
+      "selective": true,
+      "verdict": "SELECTIVE"
+    }
+  ],
+  "missing_ligands": [],
+  "n_selective": 5,
+  "n_scored": 5,
+  "summary": "5/5 hits selective vs dog PGAP5 (ratio < 0.8)"
+}

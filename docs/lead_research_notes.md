@@ -197,3 +197,22 @@ Human P10828 AlphaFold mean pLDDT: 80.2
 
 Ratio < 0.60 = tick enzyme binds ≥40% stronger than human TRβ.
 
+
+## Dog PGAP5 Selectivity Docking Results
+
+Dog PGAP5 (A0A8C0S3B9 — A0A8C0S3B9_CANLF) AlphaFold mean pLDDT: 89.8
+
+Selectivity ratio = dog_score / tick_score; ratio < 0.8 = tick-selective (pet-safe).
+
+| Ligand | Tick B7P5E9 (kcal/mol) | Dog PGAP5 (kcal/mol) | Ratio | Verdict |
+|--------|------------------------|----------------------|-------|---------|
+| CHEMBL9171 | -13.125 | -5.610 | 0.427 | SELECTIVE |
+| CHEMBL8905 | -12.995 | -5.300 | 0.408 | SELECTIVE |
+| CHEMBL9203 | -12.373 | -3.544 | 0.286 | SELECTIVE |
+| CHEMBL429008 | -11.885 | -4.676 | 0.393 | SELECTIVE |
+| CHEMBL10161 | -11.781 | +6.298 | -0.535 | SELECTIVE |
+
+**Interpretation:** Ratio < 0.80 means the compound binds tick PGAP5 more
+strongly than dog PGAP5 — preliminary pet-safety signal. Ratio > 1.0 = risky.
+Note: virtual docking only; experimental validation required.
+
