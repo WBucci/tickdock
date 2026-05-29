@@ -137,12 +137,29 @@ def phase2_validation(args) -> bool:
     ok &= run_step("Rank recovery — validate known acaricide scoring",
                    cmd, dry_run=False, timeout=7200, required=False)
 
-    # Dog PGAP5 selectivity (pet safety for B7P5E9)
-    cmd = [sys.executable, os.path.join(SCRIPTS, "dog_pgap5_selectivity.py"),
+    # Human PGAP5 selectivity (B7P5E9 leads vs human Q53F39)
+    cmd = [sys.executable, os.path.join(SCRIPTS, "human_pgap5_selectivity.py"),
            "--top-n", str(args.selectivity_top_n)]
     if args.dry_run:
         cmd += ["--dry-run"]
+    ok &= run_step("Human PGAP5 selectivity — B7P5E9 leads vs human Q53F39",
+                   cmd, dry_run=False, timeout=3600, required=False)
+
+    # Dog PGAP5 selectivity (pet safety for B7P5E9)
+    cmd = [sys.executable, os.path.join(SCRIPTS, "dog_pgap5_selectivity.py"),
+           "--top-n", str(args.selectivity_top_n),
+           "--accession", "A0A8C0S3B9"]   # MPPE1/PGAP5 Canis lupus familiaris
+    if args.dry_run:
+        cmd += ["--dry-run"]
     ok &= run_step("Dog PGAP5 selectivity — B7P5E9 pet safety check",
+                   cmd, dry_run=False, timeout=3600, required=False)
+
+    # Human TRβ selectivity (B7PY20 leads vs human P10828)
+    cmd = [sys.executable, os.path.join(SCRIPTS, "human_nhr_selectivity.py"),
+           "--top-n", str(args.selectivity_top_n)]
+    if args.dry_run:
+        cmd += ["--dry-run"]
+    ok &= run_step("Human TRβ selectivity — B7PY20 leads vs human P10828",
                    cmd, dry_run=False, timeout=3600, required=False)
 
     return ok
@@ -236,7 +253,9 @@ def print_summary(phases_run: list[int], results: dict[int, bool], elapsed: floa
     print(f"\n  Key output files:")
     outputs = [
         ("logs/rank_recovery.json",          "Pipeline validation — known acaricide ranks"),
-        ("logs/dog_pgap5_selectivity.json",  "Dog PGAP5 selectivity ratios"),
+        ("logs/human_pgap5_selectivity.json","Human PGAP5 selectivity ratios (B7P5E9 leads)"),
+        ("logs/dog_pgap5_selectivity.json",  "Dog PGAP5 selectivity ratios (B7P5E9 leads)"),
+        ("logs/human_nhr_selectivity.json",  "Human TRβ selectivity ratios (B7PY20 leads)"),
         ("logs/refine_topN_exhN.json",       "Refined hit scores at exh=8"),
         ("data/figures/binding_modes/",      "2D interaction diagrams"),
         ("logs/multipocket_results_*.json",  "Secondary pocket hits"),
