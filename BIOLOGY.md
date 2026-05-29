@@ -131,7 +131,7 @@ For each lead series, selectivity docking is performed against the closest human
 |-------------|-------------|-------------------|
 | B7P5E9 (PGAP5/Cdc1) | Q53F39 (human PGAP5) | Ratios 0.47–0.57 (all SELECTIVE; tick binds ~2× stronger) |
 | B7PY20 (NHR) | P10828 (human TRβ) | Ratios 0.126–0.541 (all SELECTIVE; CHEMBL8920 no binding to human) |
-| B7P5E9 vs dog PGAP5 | Canis PGAP5 | Pending — B7P5E9 at borderline 42.3% dog identity |
+| B7P5E9 vs dog PGAP5 | A0A8C0S3B9 (MPPE1, 391 aa, pLDDT=89.8) | **All 5 SELECTIVE** — ratios 0.286–0.427; CHEMBL10161 no binding (+6.298) |
 
 **Selectivity threshold:** tick_score / host_score < 0.80 = SELECTIVE; > 1.0 = RISKY (host binds stronger).
 
@@ -216,7 +216,7 @@ Compounds hitting ≥ 80% of all targets are auto-flagged and excluded from lead
 Expanded BLAST database (134,822 TrEMBL dog sequences, 157× larger than reviewed-only):
 - 29/42 Is targets newly risky (>40% dog identity)
 - Pet-safe candidate set: **B7PY20 (29.6%)**, B7QAF3 (37.4%), B7P6A8 (34.4%), B7P2S1 (30.5%)
-- B7P5E9 borderline at 42.3% — explicit dog PGAP5 selectivity docking required
+- B7P5E9 borderline at 42.3% — dog PGAP5 selectivity COMPLETE: all 5 hits SELECTIVE (ratios 0.286–0.427; CHEMBL10161 no binding)
 
 ---
 
@@ -239,7 +239,7 @@ Expanded BLAST database (134,822 TrEMBL dog sequences, 157× larger than reviewe
 - [x] Binding mode visualization (`binding_mode_viz.py`) — H-bond/hydrophobic contact diagrams
 - [x] AlphaFold3 server co-folding job prep (`prep_af3_jobs.py`) — incremental per round
 - [x] B7QK46 (glutaminyl-peptide cyclotransferase) added via RCSB 4MHN (14 PDB entries)
-- [ ] Dog PGAP5 selectivity docking (B7P5E9 borderline — pet safety confirmation)
+- [x] Dog PGAP5 selectivity docking — all 5 B7P5E9 hits SELECTIVE (ratios 0.286–0.427; `logs/dog_pgap5_selectivity.json`)
 - [ ] GROMACS/OpenMM MD validation of top leads (CHEMBL429008 + B7PY20 priority)
 - [ ] Wet-lab outreach — tick biology labs for IC₅₀ confirmation of CHEMBL429008
 - [ ] Paper Discussion section draft
