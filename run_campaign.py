@@ -860,6 +860,56 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False,
             log(f"  {name}: {e}", "WARN")
 
 
+def run_mid_round_analysis(round_num: int, batch_id: int):
+    """Lightweight mid-round analysis — runs every N batches, not just at round end.
+
+    Fast only (~5-10 min): score annotation, hit properties, incremental AF3 prep.
+    Heavy steps (orthologs, figures, docs, binding modes) are deferred to end-of-round.
+    """
+    log(f"\n[mid-round] Post-batch analysis after batch {batch_id} (round {round_num})...")
+
+    af3_cmd = [
+        sys.executable,
+        os.path.join(BASE_DIR, "scripts", "prep_af3_jobs.py"),
+        "--incremental",
+        "--auto-targets", "3",
+        "--top", "5",
+        "--round", str(round_num),
+    ]
+
+    steps = [
+        ("Score back-annotation",
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "annotate_scores.py")],
+         60),
+        ("Hit property table",
+         [sys.executable, os.path.join(BASE_DIR, "scripts", "generate_hit_properties.py"),
+          "--top", "50"],
+         180),
+        ("AF3 incremental job prep",
+         af3_cmd,
+         120),
+    ]
+
+    for name, cmd, timeout in steps:
+        log(f"  [mid-round] {name}...")
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True,
+                                    timeout=timeout, cwd=BASE_DIR)
+            if result.returncode == 0:
+                log(f"  [mid-round] {name}: OK")
+                # Surface new AF3 jobs count from output
+                if "AF3" in name and result.stdout:
+                    for line in result.stdout.splitlines():
+                        if "New jobs" in line or "new_jobs" in line.lower():
+                            log(f"    {line.strip()}")
+            else:
+                log(f"  [mid-round] {name}: exit {result.returncode}", "WARN")
+        except subprocess.TimeoutExpired:
+            log(f"  [mid-round] {name}: timed out — skipping", "WARN")
+        except Exception as e:
+            log(f"  [mid-round] {name}: {e}", "WARN")
+
+
 # ── Queue download ────────────────────────────────────────────────────────────
 def queue_download(count: int, background: bool = True):
     """
@@ -1667,6 +1717,11 @@ def main():
     parser.add_argument("--compress-every", type=int, default=1, metavar="N",
                         help="Compress non-hit PDBQT files every N batches "
                              "(0 = disable; default: 1)")
+    parser.add_argument("--post-every", type=int, default=5, metavar="N",
+                        help="Run lightweight mid-round analysis (score annotation, "
+                             "hit properties, incremental AF3 prep) every N batches. "
+                             "Full post-round analysis still runs at round end. "
+                             "(0 = disable; default: 5 ≈ every ~20h at 4h/batch)")
     parser.add_argument("--prefetch", type=int,
                         default=PREFETCH_DOWNLOAD_COUNT, metavar="N",
                         help=f"Download N more compounds when the last "
@@ -1883,6 +1938,16 @@ def main():
 
                 # Dispatch hook
                 fire_dispatch(batch_id, summary)
+
+                # Mid-round analysis every N batches (lightweight — not at round end,
+                # that's covered by run_post_campaign at the end of the outer loop)
+                if (args.post_every
+                        and not args.dry_run
+                        and not args.no_post):
+                    batches_done_so_far = len(state.get("batches_completed", []))
+                    is_last_batch       = (loop_idx + 1) >= len(pending)
+                    if batches_done_so_far % args.post_every == 0 and not is_last_batch:
+                        run_mid_round_analysis(round_num, batch_id)
 
                 # Compress non-hit PDBQTs (async — next batch starts immediately after)
                 if args.compress_every and not args.dry_run:
