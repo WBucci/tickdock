@@ -16,7 +16,7 @@ Current acaricide classes and their resistance status:
 | Macrolides (ivermectin) | Glutamate-gated Cl channels | Reduced susceptibility in cattle ticks |
 | Isoxazolines (fluralaner) | GABA/GluCl channels | Relatively new; resistance not yet widespread |
 
-**Approach:** Hunt proteins that have (1) no experimentally solved PDB structure, (2) no ChEMBL-registered ligands, and (3) no published drug discovery literature. This is the computationally unexplored proteome — the space where resistance cannot yet exist.
+**Approach:** Hunt proteins that have (1) no ChEMBL-registered ligands, (2) no published drug discovery literature, and (3) no known acaricide target overlap. Proteins with experimental PDB structures are *included* — an experimental structure is higher-quality input for docking than an AlphaFold2 prediction. The absence of prior drug discovery literature is the key novelty criterion, not the absence of structural data.
 
 ---
 
@@ -40,20 +40,27 @@ All proteins for all 3 species downloaded from UniProt, not just reviewed (Swiss
 
 ### Step 2 — Novelty Filter
 
-Candidates must pass all three:
-1. **No PDB structure** — checked via UniProt cross-references; proteins with experimental structures already have known binding sites in literature
-2. **No ChEMBL ligands** — checked via ChEMBL REST API molecule search by target; any registered ligand = prior art
-3. **Not a known acaricide target** — AChE, VGSC, octopamine receptor, GluCl, GABA receptor excluded by accession blacklist
+Candidates must pass:
+1. **No ChEMBL ligands** — checked via ChEMBL REST API molecule search by target; any registered ligand = prior art
+2. **Not a known acaricide target** — AChE, VGSC, octopamine receptor, GluCl, GABA receptor excluded by accession blacklist
 
-**Score weighting:** RNAi lethality evidence, feeding-stage upregulation (VectorBase), cross-species conservation, and InterPro domain annotation contribute to final_score. Purely hypothetical proteins with no functional annotation rank lower.
+Proteins with experimental PDB structures are **included by default** — experimental structures are *preferred* for docking (higher atomic-resolution accuracy than AlphaFold2 predictions). Use `--exclude-pdb` flag to revert to the old exclusion behavior if pure computational novelty is desired.
 
-### Step 3 — Structure Prediction + Quality Filter
+**Score weighting:** RNAi lethality evidence, feeding-stage upregulation (VectorBase), cross-species conservation, InterPro domain annotation, and structure quality all contribute to `final_score`. Experimental PDB structures score +2 (same as high-confidence AlphaFold ≥90 pLDDT). Purely hypothetical proteins with no functional annotation rank lower.
 
-AlphaFold2 structures used for all targets (no experimental PDB available by design). pLDDT ≥ 70 required for pocket detection — this threshold is standard practice and supported by:
+### Step 3 — Structure Retrieval + Quality Filter
+
+Two structure sources, tried in order:
+
+1. **RCSB PDB (experimental)** — if `has_structure=True` and `pdb_ids` present in UniProt data, the first resolvable PDB ID is downloaded from `files.rcsb.org`. No pLDDT filter applied — experimental structures are inherently suitable for docking. Scores +2 in final_score.
+
+2. **AlphaFold2 (predicted fallback)** — used when no experimental structure exists. pLDDT ≥ 70 required for pocket detection — this threshold is standard practice and supported by:
 
 > Jumper et al. (2021) *Nature* — pLDDT > 70 correlates with "confident" local structure, suitable for drug binding analysis. Regions < 50 typically disordered.
 
 Only Cα B-factors read for pLDDT — whole-chain average discards disordered tails that inflate pLDDT unfairly.
+
+**Note on B-factor semantics:** AlphaFold2 stores pLDDT (0–100 confidence) in the B-factor column. RCSB experimental structures store crystallographic B-factors (temperature factors, Å²) in the same column — a fundamentally different quantity. The pLDDT threshold applies to AlphaFold structures only; RCSB structures bypass it entirely.
 
 **Pocket detection (fpocket + P2Rank):**
 - fpocket uses Voronoi tessellation + alpha sphere clustering (Le Guilloux et al., 2009 *BMC Bioinformatics*)
@@ -132,6 +139,21 @@ For each lead series, selectivity docking is performed against the closest human
 
 ---
 
+## AlphaFold3 Co-folding Validation
+
+For the top docking hits, AlphaFold3 server co-folding provides independent structural validation:
+
+- **Method:** protein sequence + ligand SMILES submitted to `alphafoldserver.com` (free, 30 jobs/day)
+- **Output:** mmCIF co-folded complex with pTM/ipTM confidence metrics
+- **Validation criterion:** Heavy-atom RMSD < 2 Å between AF3-predicted binding mode and Vina-docked pose = convergent validation; indicates the pose is not an artifact of the Vina scoring function
+- **Job prep:** `scripts/prep_af3_jobs.py` generates AF3-format JSON + copy-paste submission guide; runs incrementally each round (skips already-submitted jobs)
+
+**Rationale:** Vina uses an empirical scoring function trained on known co-crystal structures. AF3 uses a diffusion-based structure prediction trained on the full PDB. Agreement between the two orthogonal methods provides a much stronger structural argument than either alone.
+
+**Known limitation:** AF3 server has a 30 jobs/day free limit (non-commercial). The incremental washer-dryer pattern (job prep every ~20h during a campaign round) allows daily AF3 submissions while docking continues.
+
+---
+
 ## ADMET Pre-Filter
 
 Local RDKit rule-based ADMET (applied to top 30 hits):
@@ -200,8 +222,9 @@ Expanded BLAST database (134,822 TrEMBL dog sequences, 157× larger than reviewe
 
 ## Roadmap (Scientific Milestones)
 
-- [x] Novelty filter — unexplored proteome only (no PDB, no ChEMBL ligands)
-- [x] AlphaFold structures + pLDDT quality filter (≥70)
+- [x] Novelty filter — no ChEMBL ligands, no known-target overlap; PDB proteins included (experimental = preferred)
+- [x] RCSB experimental structure fetch in step 3 (preferred over AlphaFold when available)
+- [x] AlphaFold structures + pLDDT quality filter (≥70) for proteins without experimental data
 - [x] Dual pocket prediction (fpocket + P2Rank)
 - [x] Host selectivity pre-filter (BLAST vs human/dog/mouse)
 - [x] Pan-tick cross-species conservation (BLASTP, ≥60% identity)
@@ -214,6 +237,8 @@ Expanded BLAST database (134,822 TrEMBL dog sequences, 157× larger than reviewe
 - [x] 2D lead structure figures (4 scaffold classes)
 - [x] Rank recovery validation (`rank_recovery.py`) — pipeline calibration vs known acaricides
 - [x] Binding mode visualization (`binding_mode_viz.py`) — H-bond/hydrophobic contact diagrams
+- [x] AlphaFold3 server co-folding job prep (`prep_af3_jobs.py`) — incremental per round
+- [x] B7QK46 (glutaminyl-peptide cyclotransferase) added via RCSB 4MHN (14 PDB entries)
 - [ ] Dog PGAP5 selectivity docking (B7P5E9 borderline — pet safety confirmation)
 - [ ] GROMACS/OpenMM MD validation of top leads (CHEMBL429008 + B7PY20 priority)
 - [ ] Wet-lab outreach — tick biology labs for IC₅₀ confirmation of CHEMBL429008
@@ -225,7 +250,7 @@ Expanded BLAST database (134,822 TrEMBL dog sequences, 157× larger than reviewe
 ## Publication Plan
 
 1. **Rank recovery** — confirm known acaricides score well; establishes pipeline credibility
-2. **Full pipeline** — 138 novel targets across 3 species; selectivity + ADMET + dog safety data
+2. **Full pipeline** — 139 targets across 3 species (42 AlphaFold + 1 RCSB Is, 53 AA, 43 DV); selectivity + ADMET + dog safety data
 3. **Lead candidates** — CHEMBL429008 (PGAP5), B7PY20 leads (NHR) with selectivity ratios
 4. **Cross-species argument** — 33/42 Is targets pan-tick; single compound addresses all 3 species
 5. **Preprint** on bioRxiv — timestamps the work, invites wet-lab collaboration

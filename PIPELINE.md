@@ -144,7 +144,7 @@ python scripts/dispatch_report.py --batch 1    # specific batch detail
 - **Parallel docking** — 4 targets simultaneously; each Vina job gets `CPU_COUNT ÷ 4` cores
 - **Split-batch parallelism** (`--splits N`) — N Vina processes per target (each `--cpu 1`); better throughput on many-core systems
 - **Adaptive exhaustiveness** (`--adaptive-exh`) — per-target `exh = max(4, min(8, round(0.4 × box_size − 4)))`
-- **Batched compounds** — 2,000 ligands/batch; checkpoint via `logs/campaign_state.json`
+- **Batched compounds** — 500 ligands/batch (~4h at exh=4, 16 cores); checkpoint via `logs/campaign_state.json`
 - **Multi-round loop** — after all ligands docked, waits for prefetch download and restarts automatically
 - **Auto-prefetch** — queues next download when last batch starts
 - **Exh-aware pruned cache** — near-misses (−7.0 to −5.5 kcal/mol) cached with exh used; re-docked at higher exh next round. Clear fails (> −5.5) permanently skipped.
@@ -152,7 +152,8 @@ python scripts/dispatch_report.py --batch 1    # specific batch detail
 - **Uncapped top_hits.json** — all qualifying hits saved, deduplicated, with `first_seen_round` field
 - **Hit trend log** — per-batch `{round, batch_id, cum_hits, new_hits, best_score}` appended to `logs/hit_trend.jsonl`
 - **Near-miss upgrade rate** — post-round: reports how many round N near-misses became round N+1 hits
-- **Auto git commit** — key result files committed after each round
+- **Mid-round analysis** (`--post-every N`, default 5) — every N batches: `annotate_scores` + `generate_hit_properties` + AF3 incremental job prep. Skips last batch of round. Enables daily AF3 submissions without waiting for full-round completion ("washer-dryer" pattern).
+- **Auto git commit + push** — key result files committed and pushed to `origin master` after each round (commit via WSL git, push via `powershell.exe` for Windows credential access)
 - **Auto methods regen** — `run_pipeline.py --docs-only` runs post-round
 
 **Post-round pipeline (automatic):**
@@ -166,7 +167,16 @@ python scripts/dispatch_report.py --batch 1    # specific batch detail
 | Binding mode diagrams | `binding_mode_viz.py --top-n 5 --tier2-only` | 2D interaction diagrams per lead |
 | Docs | `run_pipeline.py --docs-only` | Regenerate Methods section + audit |
 | Summary | `update_campaign_summary()` | Write `logs/campaign_summary.json` |
-| Git commit | `auto_commit_round()` | Commit result files (no push) |
+| AF3 job prep | `prep_af3_jobs.py --incremental --auto-targets 3 --top 5` | Prep new AF3 co-folding jobs (skips already-generated) |
+| Git commit + push | `auto_commit_round()` | Commit result files; push via `powershell.exe git push` |
+
+**Mid-round pipeline (every `--post-every N` batches, default 5 ≈ 20h):**
+
+| Step | Script | Purpose |
+|------|--------|---------|
+| Score annotation | `annotate_scores.py` | Write best_score/n_hits per target so far |
+| Hit properties | `generate_hit_properties.py --top 50` | MW/LogP/HBD/HBA for current top hits |
+| AF3 job prep | `prep_af3_jobs.py --incremental --auto-targets 3 --round N` | New AF3 jobs since last run |
 
 **Control signals** (write to `logs/campaign_control.txt`):
 
@@ -239,6 +249,9 @@ All in `config.py`. Any change automatically propagates to the generated Methods
 | `docs/table_orthologs.tsv` | Cross-species ortholog table (paper-ready) |
 | `docs/unknown_targets_annotation.tsv` | InterPro/UniProt functional annotations |
 | `data/figures/binding_modes/` | Interaction diagrams: 2D PNG + py3Dmol HTML per lead |
+| `docs/af3_jobs/{target}_{ligand}.json` | AlphaFold3 server co-folding job input (protein sequence + SMILES) |
+| `docs/af3_jobs/submission_guide.txt` | Copy-paste instructions for alphafoldserver.com |
+| `docs/af3_jobs/round_N_new_jobs.txt` | Per-round new AF3 jobs summary (incremental) |
 
 ---
 
@@ -250,10 +263,12 @@ All free; only NCBI BLAST requires an email (not an API key):
 |---------|----------|
 | UniProt | `rest.uniprot.org/uniprotkb` |
 | AlphaFold | `alphafold.ebi.ac.uk/api/prediction` |
+| RCSB PDB | `files.rcsb.org/download/{pdb_id}.pdb` — preferred when `has_structure=True` |
 | ChEMBL | `www.ebi.ac.uk/chembl/api/data/molecule` |
 | InterPro | `www.ebi.ac.uk/interpro/api` |
 | NCBI BLAST (web fallback) | `blast.ncbi.nlm.nih.gov` |
 | NCBI PubMed | `eutils.ncbi.nlm.nih.gov` |
+| AlphaFold3 server | `alphafoldserver.com` — co-folding protein+ligand (30 jobs/day, free) |
 
 ---
 
@@ -268,9 +283,58 @@ All free; only NCBI BLAST requires an email (not an API key):
 | Compound download + conversion, 5,000 cpds, 16 workers | ~15–30 min |
 | Docking 4,509 ligands × 42 targets, exh=4 (observed) | ~4.5 hours |
 | Docking 4,509 ligands × 42 targets, exh=8 (observed) | ~8–12 hours |
-| Docking 12,840 ligands × 138 targets, exh=4 (Round 4) | ~18–30 hours (est.) |
+| Docking 500 ligands × 139 targets, exh=4 (1 batch) | ~4 hours (est.) |
+| Docking 12,840 ligands × 139 targets, exh=4 (Round 4) | ~18–30 hours (est.) |
 | `refine_top_hits.py`, top 100 hits × 1 target, exh=12 | ~20–40 min |
-| Post-round analysis (all steps) | ~5–10 min |
+| Mid-round analysis (annotate + hit props + AF3 prep) | ~5–10 min |
+| Post-round analysis (all steps) | ~10–15 min |
+
+---
+
+## AlphaFold3 Co-folding Validation
+
+After each round (or mid-round), co-folding job inputs are automatically prepared for the top hits:
+
+```bash
+# Prep AF3 job inputs (auto-run post-round; also runnable standalone)
+python scripts/prep_af3_jobs.py                              # top 5 hits × default targets
+python scripts/prep_af3_jobs.py --auto-targets 3 --top 5    # top 3 targets by best score
+python scripts/prep_af3_jobs.py --incremental                # skip already-generated jobs
+python scripts/prep_af3_jobs.py --round 4                    # tag output as round 4
+python scripts/prep_af3_jobs.py --dry-run                    # preview without writing
+
+# Submit at https://alphafoldserver.com (30 jobs/day free limit)
+# Open docs/af3_jobs/submission_guide.txt for copy-paste instructions
+# Results: save mmCIF zip to docs/af3_results/{job_name}/
+```
+
+**Washer-dryer pattern:** With 500-ligand batches (~4h each) and `--post-every 5` (~20h), new AF3 jobs are prepped roughly daily — you can submit to alphafoldserver.com without waiting for a full round to complete. AF3 co-folding independently validates Vina pose and binding mode.
+
+**AF3 job format:** Each `docs/af3_jobs/{target}_{chembl_id}.json` contains protein sequence + ligand SMILES in AF3 server schema. `_meta` block is local reference only (not sent to server).
+
+---
+
+## RCSB Structure Integration
+
+Step 3 prefers experimental structures when available:
+
+```bash
+# Inject PDB-structure proteins into existing final_targets (surgical, no rerun of all targets)
+python scripts/inject_pdb_targets.py
+python scripts/inject_pdb_targets.py --species ixodes_scapularis
+python scripts/inject_pdb_targets.py --dry-run
+```
+
+**Logic:**
+1. Loads proteins with `has_structure=True` + `pdb_ids` from `{species}_novelty_candidates.json`
+2. Runs step 3-7 pipeline on those proteins only (RCSB fetch → fpocket → BLAST → Vina config)
+3. Merges results into existing `{species}_final_targets.json` (append-only, no overwrite)
+4. Skips accessions already present
+
+**RCSB vs AlphaFold quality:**
+- RCSB experimental: `assess_rcsb_quality()` always returns `suitable=True`; `mean_plddt=None` (no pLDDT filter applied); scores +2 in `compute_final_score()`
+- AlphaFold: pLDDT ≥ 70 required; scores +2 if ≥90, +1 if ≥80
+- Novelty filter (`02_novelty_filter.py`): PDB proteins **included by default** (`exclude_pdb=False`); use `--exclude-pdb` to revert old behavior
 
 ---
 

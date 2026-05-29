@@ -9,13 +9,14 @@
 
 ---
 
-## Current Results (as of 2026-05-27)
+## Current Results (as of 2026-05-28)
 
 ### Pan-tick campaign — Round 3 complete, Round 4 running
 
-- **138 novel druggable targets** — 42 (*I. scapularis*) + 53 (*A. americanum*) + 43 (*D. variabilis*)
+- **139 druggable targets** — 43 (*I. scapularis*) + 53 (*A. americanum*) + 43 (*D. variabilis*)
+  - *I. scapularis*: 42 AlphaFold-predicted + 1 experimental RCSB structure (B7QK46, 14 PDB entries)
 - **12,840 compounds** in current library (ChEMBL drug-like + approved + antiparasitic)
-- **23,430 total hits** at ≤ −7.0 kcal/mol across all 138 targets (Round 3)
+- **23,430 total hits** at ≤ −7.0 kcal/mol across all 139 targets (Round 3)
 - **33/42 I. scapularis targets** conserved in *A. americanum* (pan-tick leads, ≥60% identity)
 
 **Top lead candidates (promiscuous binders excluded):**
@@ -38,15 +39,20 @@
 
 ```
 Step 1  UniProt REST API → proteome download (all proteins, all 3 species)
-Step 2  Novelty filter → exclude known targets, PDB hits, ChEMBL ligands
-Step 3  AlphaFold structures + pLDDT filter → fpocket + P2Rank pocket detection
+Step 2  Novelty filter → exclude known targets, ChEMBL ligands
+        PDB proteins INCLUDED by default (experimental structures preferred for docking)
+Step 3  RCSB experimental structure (preferred) or AlphaFold fallback + pLDDT filter
+        → fpocket + P2Rank pocket detection
         → BLASTP selectivity filter vs human / dog / mouse
         → Adaptive Vina config per pocket
 Step 4  Cross-species BLASTP → pan-tick conservation flags
 
-Post-round (automatic):
+Post-round (automatic, every round):
   Promiscuous filter → score annotation → ortholog refresh → figures → docs
-  Hit trend log → campaign summary → auto git commit
+  Hit trend log → campaign summary → AF3 incremental job prep → auto git commit + push
+
+Mid-round analysis (every 5 batches ≈ 20h, --post-every 5):
+  Score annotation → hit properties → AF3 incremental job prep (washer-dryer pattern)
 ```
 
 All parameters in `config.py`. Every threshold logged to `logs/pipeline_audit.json` and appears verbatim in the auto-generated Methods text.
@@ -88,11 +94,18 @@ All parameters in `config.py`. Every threshold logged to `logs/pipeline_audit.js
 - [x] Multi-pocket docking (`dock_multipocket.py`)
 - [x] Receptor flexibility support via meeko 0.7.1 (`refine_top_hits.py`)
 - [x] Campaign status: RUNNING/STOPPED + vina count + stop signal warning
-- [x] Hit trend log, campaign summary JSON, auto git commit post-round
+- [x] Hit trend log, campaign summary JSON, auto git commit + push post-round
 - [x] `first_seen_round` in top_hits.json; near-miss upgrade rate tracking
-- [x] I. scapularis: 3 rounds complete; Round 4 running (138 targets)
+- [x] I. scapularis: 3 rounds complete; Round 4 running (139 targets, batch_size=500)
 - [x] Binding mode diagrams in post-round loop (`binding_mode_viz.py --tier2-only`)
-- [ ] Round 4 campaign completion (12,840 ligands × 138 targets at exh=4)
+- [x] RCSB experimental structure fetch in step 3 (preferred over AlphaFold when available)
+- [x] PDB proteins included in novelty filter (experimental structures = higher docking quality)
+- [x] Batch size reduced to 500 ligands (~4h/batch) for incremental daily review
+- [x] Mid-round analysis every N batches (`--post-every 5`) — washer-dryer pattern
+- [x] AlphaFold3 server co-folding job prep (`prep_af3_jobs.py`) — incremental, per round
+- [x] Surgical PDB target injection (`inject_pdb_targets.py`) — merges RCSB targets without rerun
+- [x] B7QK46 (glutaminyl-peptide cyclotransferase, 14 PDB entries) added to Is targets via RCSB
+- [ ] Round 4 campaign completion (12,840 ligands × 139 targets at exh=4)
 - [ ] GPU acceleration (AutoDock-GPU — pending RDNA 4 WSL2 ROCm support)
 
 </details>
