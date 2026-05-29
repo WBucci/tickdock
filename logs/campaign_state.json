@@ -197,6 +197,10 @@
   "cumulative_ligands": 2000,
   "cumulative_hits": 29395,
   "ligands_remaining": 10840,
-  "last_updated": "2026-05-28T12:58:42.144406",
-  "round": 4
+  "last_updated": "2026-05-28T20:34:57.528999",
+  "round": 1,
+  "current_target": "A0A4D5RMG2",
+  "current_batch_id": 1,
+  "current_target_idx": 6,
+  "current_n_targets": 139
 }
