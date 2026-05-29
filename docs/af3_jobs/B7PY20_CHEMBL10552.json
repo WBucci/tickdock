@@ -1,0 +1,29 @@
+{
+  "name": "B7PY20_CHEMBL10552",
+  "sequences": [
+    {
+      "protein": {
+        "id": [
+          "A"
+        ],
+        "sequence": "MSKKQREKVEDEVRFHRAQLVRPQGTNPGTGQSGASQGLASAAQGAQATETSPDSSVFDQQQTPSSSNQAVPFLNGGYTYPEELTSYTPNGYAYTATPATIQFEMSTDYVDSTTFEQRQQMDPTPDTNGLLSTTATTTTTVVPASSLASHLDLLAKTVSDAHSRTCLYTTEHIQDLTRKPLDISRVMLYKNMAHEELWLDCAQKLTQVIQQIIEFAKMVPGFMKLSQDDQIVLLKAGSFELCVLRMSRYFDVPTGLVLYNDSLLPMDAFITQETLEIKLVNNAFNFVRSIAEMKLTETELALYSAYVLLAPDRPGLKGVPEITRLSTAILKSLRYELDKTHEQPYKGDVSVFDSLVAKLPSLREVSLLHMDALAKFRRSVPHLEFPALHKELFSVDV"
+      }
+    },
+    {
+      "ligand": {
+        "id": [
+          "B"
+        ],
+        "smiles": "O=C1CC2(C(=O)N1)C(=O)N(Cc1nc3cc(C(F)(F)F)ccc3s1)C(=O)c1ccc(F)cc12"
+      }
+    }
+  ],
+  "_meta": {
+    "target_accession": "B7PY20",
+    "target_name": "",
+    "ligand_chembl_id": "CHEMBL10552",
+    "smiles": "O=C1CC2(C(=O)N1)C(=O)N(Cc1nc3cc(C(F)(F)F)ccc3s1)C(=O)c1ccc(F)cc12",
+    "source": "TickDock pipeline \u2014 top Vina hit validation",
+    "note": "Submit at https://alphafoldserver.com \u2014 paste 'sequence' into protein chain field, 'smiles' into small molecule field. The _meta block is for local reference only, not used by AF3 server."
+  }
+}

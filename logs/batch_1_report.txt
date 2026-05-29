@@ -1,42 +1,41 @@
 ============================================================
-TICKDOCK -- BATCH 1 DISPATCH REPORT  [WARN]
-Completed: 2026-05-26T20:04:34.257981
+TICKDOCK -- BATCH 1 DISPATCH REPORT  [OK]
+Completed: 2026-05-28T21:53:52.884430
 ============================================================
 
 SUMMARY
 -------
-  Ligands docked : 2000
-  Targets run    : 111/138 successful
-  Total hits     : 5375  (score <= -7.0 kcal/mol)
-  Wall time      : 1m 18s
-  Failed targets : B7Q290, F6KSY2, A0A0C9R308, A0A0C9R6Q9, A0A0C9RV71, A0A0C9SB77, A0A0C9SDB6, A0A0C9SFH2, A0A0K0PRG2, A0A0K1G5W8, A0AAQ4DAP1, A0AAQ4DBL8, A0AAQ4DNH0, A0AAQ4DX98, A0AAQ4DZT2, A0AAQ4E0T1, A0AAQ4E2K9, A0AAQ4E7F2, A0AAQ4EDP8, A0AAQ4EAX4, A0AAQ4FNT5, A0AAQ4FR19, A7LJ78, B7SP41, B7SP57, Q8T9S3, Q9MCZ9
+  Ligands docked : 500
+  Targets run    : 139/139 successful
+  Total hits     : 30008  (score <= -7.0 kcal/mol)
+  Wall time      : 1h 20m 42s
 
 TOP HITS (by docking score)
 --------------------------
   1. B7P5E9 + CHEMBL9171
      Score: -13.12 kcal/mol  [####################]
-  2. B7PY20 + CHEMBL8922
-     Score: -12.03 kcal/mol  [####################]
-  3. A0A4D5RNM5 + CHEMBL429202
-     Score: -11.28 kcal/mol  [#################---]
-  4. B7PMS2 + CHEMBL429202
-     Score: -11.18 kcal/mol  [#################---]
-  5. B7Q255 + CHEMBL8905
-     Score: -11.08 kcal/mol  [#################---]
+  2. B7PY20 + CHEMBL10250
+     Score: -12.56 kcal/mol  [####################]
+  3. A0A0K0PR09 + CHEMBL10552
+     Score: -12.11 kcal/mol  [####################]
+  4. Q2Q443 + CHEMBL10552
+     Score: -11.82 kcal/mol  [###################-]
+  5. B7SP56 + CHEMBL10552
+     Score: -11.62 kcal/mol  [##################--]
 
 *** 5 LEAD CANDIDATE(S) (score <= -9.0 kcal/mol) ***
     B7P5E9 + CHEMBL9171 : -13.12
-    B7PY20 + CHEMBL8922 : -12.03
-    A0A4D5RNM5 + CHEMBL429202 : -11.28
-    B7PMS2 + CHEMBL429202 : -11.18
-    B7Q255 + CHEMBL8905 : -11.08
+    B7PY20 + CHEMBL10250 : -12.56
+    A0A0K0PR09 + CHEMBL10552 : -12.11
+    Q2Q443 + CHEMBL10552 : -11.82
+    B7SP56 + CHEMBL10552 : -11.62
 
 CAMPAIGN PROGRESS
 -----------------
   Batches completed : 2
-  Ligands processed : 4000
-  Cumulative hits   : 10750
-  Ligands queued    : 3175
+  Ligands processed : 2500
+  Cumulative hits   : 59403
+  Ligands queued    : 11840
 
 DISPATCH OPTIONS
 ----------------

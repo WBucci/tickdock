@@ -1,1 +1,15 @@
 {"type": "near_miss_upgrade", "round": 4, "timestamp": "2026-05-28T00:35:50.281674", "prev_near_misses": 951, "upgraded": 0, "upgrade_rate": 0.0}
+{"round": 1, "batch_id": 1, "timestamp": "2026-05-28T21:55:07.082293", "cum_hits": 30358, "new_hits_this_batch": 23873, "best_score": -13.125, "n_ligands_docked": 2500}
+{"round": 1, "batch_id": 2, "timestamp": "2026-05-28T21:56:15.887602", "cum_hits": 30358, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 3000}
+{"round": 1, "batch_id": 3, "timestamp": "2026-05-28T21:57:37.205739", "cum_hits": 30358, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 3500}
+{"round": 1, "batch_id": 4, "timestamp": "2026-05-28T22:00:07.595520", "cum_hits": 30358, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 4000}
+{"round": 1, "batch_id": 5, "timestamp": "2026-05-28T22:01:29.794397", "cum_hits": 30358, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 4500}
+{"round": 1, "batch_id": 6, "timestamp": "2026-05-28T22:02:50.517440", "cum_hits": 30358, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 5000}
+{"round": 1, "batch_id": 7, "timestamp": "2026-05-28T22:04:13.799529", "cum_hits": 30358, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 5500}
+{"round": 1, "batch_id": 8, "timestamp": "2026-05-28T22:05:36.138636", "cum_hits": 30358, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 6000}
+{"round": 1, "batch_id": 9, "timestamp": "2026-05-28T22:07:53.188279", "cum_hits": 30358, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 6500}
+{"round": 1, "batch_id": 10, "timestamp": "2026-05-28T22:09:12.355134", "cum_hits": 30362, "new_hits_this_batch": 4, "best_score": -13.125, "n_ligands_docked": 7000}
+{"round": 1, "batch_id": 11, "timestamp": "2026-05-28T22:46:25.794832", "cum_hits": 30739, "new_hits_this_batch": 377, "best_score": -13.125, "n_ligands_docked": 7500}
+{"round": 1, "batch_id": 12, "timestamp": "2026-05-29T04:02:25.087583", "cum_hits": 36351, "new_hits_this_batch": 5612, "best_score": -13.125, "n_ligands_docked": 8000}
+{"round": 1, "batch_id": 13, "timestamp": "2026-05-29T07:59:23.643287", "cum_hits": 39728, "new_hits_this_batch": 3377, "best_score": -13.125, "n_ligands_docked": 9000}
+{"round": 1, "batch_id": 14, "timestamp": "2026-05-29T08:01:44.927862", "cum_hits": 39733, "new_hits_this_batch": 5, "best_score": -13.125, "n_ligands_docked": 9000}

@@ -1,0 +1,29 @@
+{
+  "name": "A0A0K0PR09_CHEMBL10039",
+  "sequences": [
+    {
+      "protein": {
+        "id": [
+          "A"
+        ],
+        "sequence": "MLPRWMYSTNHKDIGTMYLIFGSWAGMAGLSMSILIRMELGQPGTLIGNDQIYNVIVTAHAFIMIFFMVMPIMIGGFGNWLVPIMLGAPDMAFPRMNNMSFWLLPPSLCLLINSSLVESGAGTGWTVYPPLSSNISHYGPSVDLAIFSLHLAGASSILGSINFITTIINMRSIGMTMERIPLFVWSVFITTILLLLSLPVLAGAITMLLTDRNFNTSFFDPSGGGDPILYQHLFWFFGHPEVYILILPGFGMISHIICFHTGKKEPFGNLGMIYAMLAIGLLGFIVWAHHMFTVGMDVDTRAYFTSATMIIAVPTGIKIFSWLATLHGTKIKFNTPILWSLGFIFLFTIGGLTGIMLANSSIDIILHDTYYVVAHFHYVLSMGAVFAIMGAIIHWFPLMFGMNFNSIFTKSQFFITFIGVNLTFFPQHFLGLSGMPRRYSDYPDFFSKWNLISSIGSIISLSGVILMIIIIWMSLIEKKLIFSTLSTSASIEWMMNFPPSEHTFNQNNIIIK"
+      }
+    },
+    {
+      "ligand": {
+        "id": [
+          "B"
+        ],
+        "smiles": "O=C(N[C@H](C(=O)O)c1ccccc1)c1cc(-c2ccccc2)nc2ccccc12"
+      }
+    }
+  ],
+  "_meta": {
+    "target_accession": "A0A0K0PR09",
+    "target_name": "Cytochrome c oxidase subunit 1",
+    "ligand_chembl_id": "CHEMBL10039",
+    "smiles": "O=C(N[C@H](C(=O)O)c1ccccc1)c1cc(-c2ccccc2)nc2ccccc12",
+    "source": "TickDock pipeline \u2014 top Vina hit validation",
+    "note": "Submit at https://alphafoldserver.com \u2014 paste 'sequence' into protein chain field, 'smiles' into small molecule field. The _meta block is for local reference only, not used by AF3 server."
+  }
+}

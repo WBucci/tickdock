@@ -210,9 +210,9 @@
       }
     ],
     "function_class": "Receptor",
-    "best_score": -9.908,
-    "best_ligand": "CHEMBL9190",
-    "n_hits": 1024,
+    "best_score": -10.132,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 1225,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -485,9 +485,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -8.361,
-    "best_ligand": "CHEMBL9195",
-    "n_hits": 444,
+    "best_score": -8.552,
+    "best_ligand": "CHEMBL10250",
+    "n_hits": 530,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -740,9 +740,9 @@
       }
     ],
     "function_class": "Receptor",
-    "best_score": -8.696,
-    "best_ligand": "CHEMBL9928",
-    "n_hits": 300,
+    "best_score": -8.739,
+    "best_ligand": "CHEMBL10564",
+    "n_hits": 343,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -935,7 +935,7 @@
     "function_class": "Receptor",
     "best_score": -9.371,
     "best_ligand": "CHEMBL428145",
-    "n_hits": 836,
+    "n_hits": 1020,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -1163,9 +1163,9 @@
       }
     ],
     "function_class": "Enzyme - Kinase/Phosphatase",
-    "best_score": -8.577,
-    "best_ligand": "CHEMBL43",
-    "n_hits": 776,
+    "best_score": -9.291,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 915,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -1495,9 +1495,9 @@
       }
     ],
     "function_class": "Enzyme - Oxidoreductase",
-    "best_score": -10.135,
-    "best_ligand": "CHEMBL10202",
-    "n_hits": 1040,
+    "best_score": -10.192,
+    "best_ligand": "CHEMBL10299",
+    "n_hits": 1249,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -1665,9 +1665,9 @@
       }
     ],
     "function_class": "Receptor",
-    "best_score": -12.034,
-    "best_ligand": "CHEMBL8922",
-    "n_hits": 1312,
+    "best_score": -12.558,
+    "best_ligand": "CHEMBL10250",
+    "n_hits": 1601,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -1796,7 +1796,7 @@
     "function_class": "Receptor",
     "best_score": -7.322,
     "best_ligand": "CHEMBL9190",
-    "n_hits": 4,
+    "n_hits": 6,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": false,
@@ -1955,7 +1955,7 @@
     "function_class": "Unknown",
     "best_score": -8.743,
     "best_ligand": "CHEMBL10006",
-    "n_hits": 696,
+    "n_hits": 827,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": false,
@@ -2113,9 +2113,9 @@
       }
     ],
     "function_class": "Receptor",
-    "best_score": -8.007,
-    "best_ligand": "CHEMBL421",
-    "n_hits": 104,
+    "best_score": -8.119,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 119,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -2330,7 +2330,7 @@
     "function_class": "Receptor",
     "best_score": -11.275,
     "best_ligand": "CHEMBL429202",
-    "n_hits": 948,
+    "n_hits": 1183,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -2537,7 +2537,7 @@
     "function_class": "Receptor",
     "best_score": -11.176,
     "best_ligand": "CHEMBL429202",
-    "n_hits": 1096,
+    "n_hits": 1323,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -2974,9 +2974,9 @@
       }
     ],
     "function_class": "Receptor",
-    "best_score": -9.792,
-    "best_ligand": "CHEMBL10161",
-    "n_hits": 660,
+    "best_score": -10.132,
+    "best_ligand": "CHEMBL10377",
+    "n_hits": 776,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": false,
@@ -3215,7 +3215,7 @@
     "function_class": "Receptor",
     "best_score": -8.386,
     "best_ligand": "CHEMBL10161",
-    "n_hits": 152,
+    "n_hits": 184,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -3386,7 +3386,7 @@
     "function_class": "Enzyme - Kinase/Phosphatase",
     "best_score": -9.082,
     "best_ligand": "CHEMBL9171",
-    "n_hits": 416,
+    "n_hits": 505,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -3573,7 +3573,7 @@
     "function_class": "Unknown",
     "best_score": -8.682,
     "best_ligand": "CHEMBL428145",
-    "n_hits": 152,
+    "n_hits": 184,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -3761,9 +3761,9 @@
       }
     ],
     "function_class": "Enzyme - Kinase/Phosphatase",
-    "best_score": -10.687,
-    "best_ligand": "CHEMBL417601",
-    "n_hits": 1316,
+    "best_score": -11.084,
+    "best_ligand": "CHEMBL10555",
+    "n_hits": 1598,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -3903,7 +3903,7 @@
     "function_class": "Enzyme - Kinase/Phosphatase",
     "best_score": -7.73,
     "best_ligand": "CHEMBL8922",
-    "n_hits": 92,
+    "n_hits": 103,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -4067,7 +4067,7 @@
     "function_class": "Unknown",
     "best_score": -8.748,
     "best_ligand": "CHEMBL428145",
-    "n_hits": 252,
+    "n_hits": 289,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -4288,7 +4288,7 @@
     "function_class": "Enzyme - Kinase/Phosphatase",
     "best_score": -13.125,
     "best_ligand": "CHEMBL9171",
-    "n_hits": 1348,
+    "n_hits": 1645,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": false,
@@ -4487,7 +4487,7 @@
     "function_class": "Transcription Factor",
     "best_score": -11.084,
     "best_ligand": "CHEMBL8905",
-    "n_hits": 1104,
+    "n_hits": 1345,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -4652,9 +4652,9 @@
     ],
     "interpro_go": [],
     "function_class": "Unknown",
-    "best_score": -8.496,
-    "best_ligand": "CHEMBL9171",
-    "n_hits": 364,
+    "best_score": -8.6,
+    "best_ligand": "CHEMBL10377",
+    "n_hits": 440,
     "hit_rate": 1.0
   },
   {
@@ -4820,9 +4820,9 @@
       }
     ],
     "function_class": "Enzyme - Kinase/Phosphatase",
-    "best_score": -9.447,
-    "best_ligand": "CHEMBL417601",
-    "n_hits": 778,
+    "best_score": -9.805,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 922,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -4989,9 +4989,9 @@
       }
     ],
     "function_class": "Enzyme - Kinase/Phosphatase",
-    "best_score": -10.868,
-    "best_ligand": "CHEMBL9250",
-    "n_hits": 1216,
+    "best_score": -11.005,
+    "best_ligand": "CHEMBL10741",
+    "n_hits": 1472,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -5125,9 +5125,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -8.39,
-    "best_ligand": "CHEMBL268388",
-    "n_hits": 488,
+    "best_score": -9.307,
+    "best_ligand": "CHEMBL10377",
+    "n_hits": 591,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5233,9 +5233,9 @@
       }
     ],
     "function_class": "Enzyme - Kinase/Phosphatase",
-    "best_score": -8.699,
-    "best_ligand": "CHEMBL266039",
-    "n_hits": 354,
+    "best_score": -9.092,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 412,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5452,9 +5452,9 @@
       }
     ],
     "function_class": "Enzyme - Protease",
-    "best_score": -9.451,
-    "best_ligand": "CHEMBL10055",
-    "n_hits": 804,
+    "best_score": -10.338,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 1065,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5528,9 +5528,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -7.376,
-    "best_ligand": "CHEMBL428",
-    "n_hits": 24,
+    "best_score": -8.152,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 31,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5645,9 +5645,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -9.515,
-    "best_ligand": "CHEMBL428480",
-    "n_hits": 622,
+    "best_score": -9.577,
+    "best_ligand": "CHEMBL10251",
+    "n_hits": 788,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5784,9 +5784,9 @@
       }
     ],
     "function_class": "Enzyme - Kinase/Phosphatase",
-    "best_score": -8.056,
-    "best_ligand": "CHEMBL8905",
-    "n_hits": 150,
+    "best_score": -8.37,
+    "best_ligand": "CHEMBL10418",
+    "n_hits": 192,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5927,9 +5927,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -7.537,
-    "best_ligand": "CHEMBL426",
-    "n_hits": 18,
+    "best_score": -7.58,
+    "best_ligand": "CHEMBL10515",
+    "n_hits": 25,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6031,9 +6031,9 @@
       }
     ],
     "function_class": "Transcription Factor",
-    "best_score": -9.425,
-    "best_ligand": "CHEMBL10035",
-    "n_hits": 586,
+    "best_score": -9.676,
+    "best_ligand": "CHEMBL10746",
+    "n_hits": 772,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6146,9 +6146,9 @@
     ],
     "interpro_go": [],
     "function_class": "Unknown",
-    "best_score": -10.025,
-    "best_ligand": "CHEMBL8921",
-    "n_hits": 508,
+    "best_score": -10.567,
+    "best_ligand": "CHEMBL10377",
+    "n_hits": 647,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6280,9 +6280,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -9.518,
-    "best_ligand": "CHEMBL417605",
-    "n_hits": 696,
+    "best_score": -9.596,
+    "best_ligand": "CHEMBL10314",
+    "n_hits": 896,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6339,9 +6339,9 @@
     ],
     "interpro_go": [],
     "function_class": "Translation/Ribosome",
-    "best_score": -7.811,
-    "best_ligand": "CHEMBL10039",
-    "n_hits": 32,
+    "best_score": -8.114,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 41,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -6439,9 +6439,9 @@
       }
     ],
     "function_class": "Translation/Ribosome",
-    "best_score": -7.369,
-    "best_ligand": "CHEMBL10055",
-    "n_hits": 8,
+    "best_score": -7.432,
+    "best_ligand": "CHEMBL10295",
+    "n_hits": 10,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -6595,9 +6595,9 @@
       }
     ],
     "function_class": "Translation/Ribosome",
-    "best_score": -7.512,
-    "best_ligand": "CHEMBL417601",
-    "n_hits": 88,
+    "best_score": -7.859,
+    "best_ligand": "CHEMBL10250",
+    "n_hits": 120,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6668,7 +6668,7 @@
     "function_class": "Unknown",
     "best_score": -9.372,
     "best_ligand": "CHEMBL10035",
-    "n_hits": 500,
+    "n_hits": 638,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6733,7 +6733,7 @@
     "function_class": "Unknown",
     "best_score": -8.758,
     "best_ligand": "CHEMBL10055",
-    "n_hits": 272,
+    "n_hits": 346,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {

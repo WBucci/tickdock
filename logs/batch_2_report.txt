@@ -1,41 +1,42 @@
 ============================================================
-TICKDOCK -- BATCH 2 DISPATCH REPORT  [OK]
-Completed: 2026-05-26T21:18:00.111880
+TICKDOCK -- BATCH 2 DISPATCH REPORT  [WARN]
+Completed: 2026-05-28T21:55:14.658317
 ============================================================
 
 SUMMARY
 -------
-  Ligands docked : 2000
-  Targets run    : 138/138 successful
-  Total hits     : 6340  (score <= -7.0 kcal/mol)
-  Wall time      : 1h 13m 15s
+  Ligands docked : 500
+  Targets run    : 138/139 successful
+  Total hits     : 30008  (score <= -7.0 kcal/mol)
+  Wall time      : 1m 21s
+  Failed targets : A0A0C9SFH2
 
 TOP HITS (by docking score)
 --------------------------
   1. B7P5E9 + CHEMBL9171
      Score: -13.12 kcal/mol  [####################]
-  2. B7PY20 + CHEMBL8922
-     Score: -12.03 kcal/mol  [####################]
-  3. A0A4D5RNM5 + CHEMBL429202
-     Score: -11.28 kcal/mol  [#################---]
-  4. B7PMS2 + CHEMBL429202
-     Score: -11.18 kcal/mol  [#################---]
-  5. B7Q255 + CHEMBL8905
-     Score: -11.08 kcal/mol  [#################---]
+  2. B7PY20 + CHEMBL10250
+     Score: -12.56 kcal/mol  [####################]
+  3. A0A0K0PR09 + CHEMBL10552
+     Score: -12.11 kcal/mol  [####################]
+  4. Q2Q443 + CHEMBL10552
+     Score: -11.82 kcal/mol  [###################-]
+  5. B7SP56 + CHEMBL10552
+     Score: -11.62 kcal/mol  [##################--]
 
 *** 5 LEAD CANDIDATE(S) (score <= -9.0 kcal/mol) ***
     B7P5E9 + CHEMBL9171 : -13.12
-    B7PY20 + CHEMBL8922 : -12.03
-    A0A4D5RNM5 + CHEMBL429202 : -11.28
-    B7PMS2 + CHEMBL429202 : -11.18
-    B7Q255 + CHEMBL8905 : -11.08
+    B7PY20 + CHEMBL10250 : -12.56
+    A0A0K0PR09 + CHEMBL10552 : -12.11
+    Q2Q443 + CHEMBL10552 : -11.82
+    B7SP56 + CHEMBL10552 : -11.62
 
 CAMPAIGN PROGRESS
 -----------------
   Batches completed : 3
-  Ligands processed : 6000
-  Cumulative hits   : 17090
-  Ligands queued    : 1175
+  Ligands processed : 3000
+  Cumulative hits   : 89411
+  Ligands queued    : 11340
 
 DISPATCH OPTIONS
 ----------------
