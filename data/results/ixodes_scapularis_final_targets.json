@@ -212,7 +212,7 @@
     "function_class": "Receptor",
     "best_score": -10.132,
     "best_ligand": "CHEMBL10552",
-    "n_hits": 1225,
+    "n_hits": 1531,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -485,9 +485,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -8.552,
-    "best_ligand": "CHEMBL10250",
-    "n_hits": 530,
+    "best_score": -8.831,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 701,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -740,9 +740,9 @@
       }
     ],
     "function_class": "Receptor",
-    "best_score": -8.739,
-    "best_ligand": "CHEMBL10564",
-    "n_hits": 343,
+    "best_score": -8.937,
+    "best_ligand": "CHEMBL267288",
+    "n_hits": 439,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -933,9 +933,9 @@
     ],
     "interpro_go": [],
     "function_class": "Receptor",
-    "best_score": -9.371,
-    "best_ligand": "CHEMBL428145",
-    "n_hits": 1020,
+    "best_score": -9.646,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 1306,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -1165,7 +1165,7 @@
     "function_class": "Enzyme - Kinase/Phosphatase",
     "best_score": -9.291,
     "best_ligand": "CHEMBL10552",
-    "n_hits": 915,
+    "n_hits": 1154,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -1495,9 +1495,9 @@
       }
     ],
     "function_class": "Enzyme - Oxidoreductase",
-    "best_score": -10.192,
-    "best_ligand": "CHEMBL10299",
-    "n_hits": 1249,
+    "best_score": -11.218,
+    "best_ligand": "CHEMBL269357",
+    "n_hits": 1632,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -1667,7 +1667,7 @@
     "function_class": "Receptor",
     "best_score": -12.558,
     "best_ligand": "CHEMBL10250",
-    "n_hits": 1601,
+    "n_hits": 2082,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -1796,7 +1796,7 @@
     "function_class": "Receptor",
     "best_score": -7.322,
     "best_ligand": "CHEMBL9190",
-    "n_hits": 6,
+    "n_hits": 8,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": false,
@@ -1953,9 +1953,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -8.743,
-    "best_ligand": "CHEMBL10006",
-    "n_hits": 827,
+    "best_score": -9.45,
+    "best_ligand": "CHEMBL6599",
+    "n_hits": 1084,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": false,
@@ -2115,7 +2115,7 @@
     "function_class": "Receptor",
     "best_score": -8.119,
     "best_ligand": "CHEMBL10552",
-    "n_hits": 119,
+    "n_hits": 159,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -2330,7 +2330,7 @@
     "function_class": "Receptor",
     "best_score": -11.275,
     "best_ligand": "CHEMBL429202",
-    "n_hits": 1183,
+    "n_hits": 1510,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -2537,7 +2537,7 @@
     "function_class": "Receptor",
     "best_score": -11.176,
     "best_ligand": "CHEMBL429202",
-    "n_hits": 1323,
+    "n_hits": 1668,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -2745,9 +2745,9 @@
       }
     ],
     "function_class": "Transcription Factor",
-    "best_score": -7.101,
-    "best_ligand": "CHEMBL422037",
-    "n_hits": 4,
+    "best_score": -7.626,
+    "best_ligand": "CHEMBL404505",
+    "n_hits": 6,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -2974,9 +2974,9 @@
       }
     ],
     "function_class": "Receptor",
-    "best_score": -10.132,
-    "best_ligand": "CHEMBL10377",
-    "n_hits": 776,
+    "best_score": -11.258,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 970,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": false,
@@ -3215,7 +3215,7 @@
     "function_class": "Receptor",
     "best_score": -8.386,
     "best_ligand": "CHEMBL10161",
-    "n_hits": 184,
+    "n_hits": 240,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -3386,7 +3386,7 @@
     "function_class": "Enzyme - Kinase/Phosphatase",
     "best_score": -9.082,
     "best_ligand": "CHEMBL9171",
-    "n_hits": 505,
+    "n_hits": 656,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -3573,7 +3573,7 @@
     "function_class": "Unknown",
     "best_score": -8.682,
     "best_ligand": "CHEMBL428145",
-    "n_hits": 184,
+    "n_hits": 256,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -3763,7 +3763,7 @@
     "function_class": "Enzyme - Kinase/Phosphatase",
     "best_score": -11.084,
     "best_ligand": "CHEMBL10555",
-    "n_hits": 1598,
+    "n_hits": 2079,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -3901,9 +3901,9 @@
       }
     ],
     "function_class": "Enzyme - Kinase/Phosphatase",
-    "best_score": -7.73,
-    "best_ligand": "CHEMBL8922",
-    "n_hits": 103,
+    "best_score": -8.826,
+    "best_ligand": "CHEMBL6599",
+    "n_hits": 137,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -4067,7 +4067,7 @@
     "function_class": "Unknown",
     "best_score": -8.748,
     "best_ligand": "CHEMBL428145",
-    "n_hits": 289,
+    "n_hits": 363,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -4288,7 +4288,7 @@
     "function_class": "Enzyme - Kinase/Phosphatase",
     "best_score": -13.125,
     "best_ligand": "CHEMBL9171",
-    "n_hits": 1645,
+    "n_hits": 2155,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": false,
@@ -4487,7 +4487,7 @@
     "function_class": "Transcription Factor",
     "best_score": -11.084,
     "best_ligand": "CHEMBL8905",
-    "n_hits": 1345,
+    "n_hits": 1731,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -4652,9 +4652,9 @@
     ],
     "interpro_go": [],
     "function_class": "Unknown",
-    "best_score": -8.6,
-    "best_ligand": "CHEMBL10377",
-    "n_hits": 440,
+    "best_score": -9.258,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 566,
     "hit_rate": 1.0
   },
   {
@@ -4820,9 +4820,9 @@
       }
     ],
     "function_class": "Enzyme - Kinase/Phosphatase",
-    "best_score": -9.805,
-    "best_ligand": "CHEMBL10552",
-    "n_hits": 922,
+    "best_score": -10.934,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 1152,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -4991,7 +4991,7 @@
     "function_class": "Enzyme - Kinase/Phosphatase",
     "best_score": -11.005,
     "best_ligand": "CHEMBL10741",
-    "n_hits": 1472,
+    "n_hits": 1922,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -5127,7 +5127,7 @@
     "function_class": "Unknown",
     "best_score": -9.307,
     "best_ligand": "CHEMBL10377",
-    "n_hits": 591,
+    "n_hits": 774,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5235,7 +5235,7 @@
     "function_class": "Enzyme - Kinase/Phosphatase",
     "best_score": -9.092,
     "best_ligand": "CHEMBL10552",
-    "n_hits": 412,
+    "n_hits": 512,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5454,7 +5454,7 @@
     "function_class": "Enzyme - Protease",
     "best_score": -10.338,
     "best_ligand": "CHEMBL10552",
-    "n_hits": 1065,
+    "n_hits": 1502,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5528,9 +5528,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -8.152,
-    "best_ligand": "CHEMBL10552",
-    "n_hits": 31,
+    "best_score": -8.192,
+    "best_ligand": "CHEMBL6618",
+    "n_hits": 59,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5645,9 +5645,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -9.577,
-    "best_ligand": "CHEMBL10251",
-    "n_hits": 788,
+    "best_score": -10.692,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 1136,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5784,9 +5784,9 @@
       }
     ],
     "function_class": "Enzyme - Kinase/Phosphatase",
-    "best_score": -8.37,
-    "best_ligand": "CHEMBL10418",
-    "n_hits": 192,
+    "best_score": -9.012,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 266,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -5927,9 +5927,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -7.58,
-    "best_ligand": "CHEMBL10515",
-    "n_hits": 25,
+    "best_score": -7.931,
+    "best_ligand": "CHEMBL6765",
+    "n_hits": 39,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6033,7 +6033,7 @@
     "function_class": "Transcription Factor",
     "best_score": -9.676,
     "best_ligand": "CHEMBL10746",
-    "n_hits": 772,
+    "n_hits": 1049,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6084,7 +6084,11 @@
       "host_identities": {
         "dog": null
       }
-    }
+    },
+    "best_score": -7.547,
+    "best_ligand": "CHEMBL6599",
+    "n_hits": 4,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7QDG3",
@@ -6148,7 +6152,7 @@
     "function_class": "Unknown",
     "best_score": -10.567,
     "best_ligand": "CHEMBL10377",
-    "n_hits": 647,
+    "n_hits": 904,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6195,7 +6199,11 @@
       "host_identities": {
         "dog": null
       }
-    }
+    },
+    "best_score": -7.25,
+    "best_ligand": "CHEMBL276690",
+    "n_hits": 2,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q202J4",
@@ -6280,9 +6288,9 @@
       }
     ],
     "function_class": "Unknown",
-    "best_score": -9.596,
-    "best_ligand": "CHEMBL10314",
-    "n_hits": 896,
+    "best_score": -10.174,
+    "best_ligand": "CHEMBL6823",
+    "n_hits": 1184,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6341,7 +6349,7 @@
     "function_class": "Translation/Ribosome",
     "best_score": -8.114,
     "best_ligand": "CHEMBL10552",
-    "n_hits": 41,
+    "n_hits": 55,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -6439,9 +6447,9 @@
       }
     ],
     "function_class": "Translation/Ribosome",
-    "best_score": -7.432,
-    "best_ligand": "CHEMBL10295",
-    "n_hits": 10,
+    "best_score": -7.482,
+    "best_ligand": "CHEMBL269357",
+    "n_hits": 16,
     "hit_rate": 1.0,
     "ortholog_result": {
       "pan_tick": true,
@@ -6595,9 +6603,9 @@
       }
     ],
     "function_class": "Translation/Ribosome",
-    "best_score": -7.859,
-    "best_ligand": "CHEMBL10250",
-    "n_hits": 120,
+    "best_score": -8.077,
+    "best_ligand": "CHEMBL268882",
+    "n_hits": 182,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6668,7 +6676,7 @@
     "function_class": "Unknown",
     "best_score": -9.372,
     "best_ligand": "CHEMBL10035",
-    "n_hits": 638,
+    "n_hits": 859,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {
@@ -6731,9 +6739,9 @@
     ],
     "interpro_go": [],
     "function_class": "Unknown",
-    "best_score": -8.758,
-    "best_ligand": "CHEMBL10055",
-    "n_hits": 346,
+    "best_score": -9.175,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 469,
     "hit_rate": 1.0,
     "blast_result": {
       "host_identities": {

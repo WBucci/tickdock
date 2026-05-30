@@ -780,7 +780,7 @@ def run_post_campaign(top_targets: int = 25, skip_orthologs: bool = False,
          120),
         ("Score back-annotation",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "annotate_scores.py")],
-         60),
+         300),
         ("P2Rank pocket prediction",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "run_p2rank.py")],
          300),   # ~5s/target × 42 targets ≈ 3-4 min; campaign_state fallback covers all
@@ -880,7 +880,7 @@ def run_mid_round_analysis(round_num: int, batch_id: int):
     steps = [
         ("Score back-annotation",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "annotate_scores.py")],
-         60),
+         300),
         ("Hit property table",
          [sys.executable, os.path.join(BASE_DIR, "scripts", "generate_hit_properties.py"),
           "--top", "50"],

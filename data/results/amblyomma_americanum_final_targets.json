@@ -117,7 +117,11 @@
       "center_y": 20.147,
       "center_z": -14.817
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.34,
+    "best_ligand": "CHEMBL6823",
+    "n_hits": 604,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DBK8",
@@ -230,7 +234,11 @@
       "center_y": 8.357,
       "center_z": 12.49
     },
-    "vina_box_size": 22
+    "vina_box_size": 22,
+    "best_score": -11.576,
+    "best_ligand": "CHEMBL266819",
+    "n_hits": 756,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9SCI6",
@@ -328,7 +336,11 @@
       "center_y": -0.789,
       "center_z": 32.395
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.961,
+    "best_ligand": "CHEMBL268882",
+    "n_hits": 267,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E5F2",
@@ -475,7 +487,11 @@
       "center_y": -3.209,
       "center_z": -14.757
     },
-    "vina_box_size": 24
+    "vina_box_size": 24,
+    "best_score": -10.69,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 638,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4FH64",
@@ -586,7 +602,11 @@
       "center_y": -3.627,
       "center_z": -3.599
     },
-    "vina_box_size": 26
+    "vina_box_size": 26,
+    "best_score": -10.932,
+    "best_ligand": "CHEMBL10520",
+    "n_hits": 881,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DAP1",
@@ -697,7 +717,11 @@
       "center_y": -0.32,
       "center_z": -19.303
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -7.906,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 70,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DD00",
@@ -828,7 +852,11 @@
       "center_y": -14.005,
       "center_z": -14.434
     },
-    "vina_box_size": 22
+    "vina_box_size": 22,
+    "best_score": -10.632,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 733,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DQA6",
@@ -931,7 +959,11 @@
       "center_y": -43.821,
       "center_z": 14.317
     },
-    "vina_box_size": 25
+    "vina_box_size": 25,
+    "best_score": -9.839,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 713,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E0I8",
@@ -1027,7 +1059,11 @@
       "center_y": -21.935,
       "center_z": -6.542
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.09,
+    "best_ligand": "CHEMBL10006",
+    "n_hits": 145,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E1Y4",
@@ -1161,7 +1197,11 @@
       "center_y": 7.92,
       "center_z": -1.442
     },
-    "vina_box_size": 23
+    "vina_box_size": 23,
+    "best_score": -10.582,
+    "best_ligand": "CHEMBL10006",
+    "n_hits": 833,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9R2P6",
@@ -1252,7 +1292,11 @@
       "center_y": -3.999,
       "center_z": -19.765
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.113,
+    "best_ligand": "CHEMBL6823",
+    "n_hits": 242,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0K0PR09",
@@ -1352,7 +1396,11 @@
       "center_y": 5.426,
       "center_z": -2.353
     },
-    "vina_box_size": 27
+    "vina_box_size": 27,
+    "best_score": -12.561,
+    "best_ligand": "CHEMBL266819",
+    "n_hits": 972,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0K0PRG2",
@@ -1458,7 +1506,11 @@
       "center_y": 14.449,
       "center_z": -6.345
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.158,
+    "best_ligand": "CHEMBL268464",
+    "n_hits": 122,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4FA75",
@@ -1553,7 +1605,11 @@
       "center_y": -9.505,
       "center_z": 11.969
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.785,
+    "best_ligand": "CHEMBL6599",
+    "n_hits": 194,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9RY70",
@@ -1650,7 +1706,11 @@
       "center_y": -5.018,
       "center_z": -4.542
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "best_score": -11.032,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 845,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DJ97",
@@ -1760,7 +1820,11 @@
       "center_y": -6.937,
       "center_z": 10.938
     },
-    "vina_box_size": 22
+    "vina_box_size": 22,
+    "best_score": -9.417,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 477,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E1Y3",
@@ -1871,7 +1935,11 @@
       "center_y": 9.84,
       "center_z": -3.326
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.388,
+    "best_ligand": "CHEMBL6574",
+    "n_hits": 583,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4D4Y2",
@@ -1981,7 +2049,11 @@
       "center_y": 5.266,
       "center_z": 0.872
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.42,
+    "best_ligand": "CHEMBL6599",
+    "n_hits": 804,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9R308",
@@ -2086,7 +2158,11 @@
       "center_y": 15.169,
       "center_z": 3.079
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.345,
+    "best_ligand": "CHEMBL269407",
+    "n_hits": 161,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9SEC4",
@@ -2187,7 +2263,11 @@
       "center_y": 6.426,
       "center_z": 4.169
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.518,
+    "best_ligand": "CHEMBL10094",
+    "n_hits": 230,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DND5",
@@ -2292,7 +2372,11 @@
       "center_y": 15.081,
       "center_z": 9.071
     },
-    "vina_box_size": 23
+    "vina_box_size": 23,
+    "best_score": -9.991,
+    "best_ligand": "CHEMBL268882",
+    "n_hits": 692,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9SB77",
@@ -2385,7 +2469,11 @@
       "center_y": -5.593,
       "center_z": 2.303
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.344,
+    "best_ligand": "CHEMBL266819",
+    "n_hits": 88,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9RV71",
@@ -2478,7 +2566,11 @@
       "center_y": -8.52,
       "center_z": -6.835
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -7.825,
+    "best_ligand": "CHEMBL268368",
+    "n_hits": 45,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DBL8",
@@ -2573,7 +2665,11 @@
       "center_y": -9.679,
       "center_z": 24.895
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.252,
+    "best_ligand": "CHEMBL273264",
+    "n_hits": 60,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DPM5",
@@ -2666,7 +2762,11 @@
       "center_y": 7.1,
       "center_z": -11.096
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.058,
+    "best_ligand": "CHEMBL10555",
+    "n_hits": 618,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4FI23",
@@ -2764,7 +2864,11 @@
       "center_y": 1.951,
       "center_z": 2.525
     },
-    "vina_box_size": 25
+    "vina_box_size": 25,
+    "best_score": -10.801,
+    "best_ligand": "CHEMBL10520",
+    "n_hits": 828,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4FJ88",
@@ -2862,7 +2966,11 @@
       "center_y": -3.333,
       "center_z": 3.63
     },
-    "vina_box_size": 28
+    "vina_box_size": 28,
+    "best_score": -10.87,
+    "best_ligand": "CHEMBL3989866",
+    "n_hits": 898,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DEL6",
@@ -2957,7 +3065,11 @@
       "center_y": -7.134,
       "center_z": 7.894
     },
-    "vina_box_size": 23
+    "vina_box_size": 23,
+    "best_score": -11.696,
+    "best_ligand": "CHEMBL268368",
+    "n_hits": 880,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DX98",
@@ -3058,7 +3170,11 @@
       "center_y": -4.222,
       "center_z": -6.922
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -7.471,
+    "best_ligand": "CHEMBL10251",
+    "n_hits": 8,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E147",
@@ -3153,7 +3269,11 @@
       "center_y": 14.324,
       "center_z": 10.572
     },
-    "vina_box_size": 22
+    "vina_box_size": 22,
+    "best_score": -10.591,
+    "best_ligand": "CHEMBL268368",
+    "n_hits": 734,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E7F2",
@@ -3247,7 +3367,11 @@
       "center_y": 8.35,
       "center_z": -13.975
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.83,
+    "best_ligand": "CHEMBL6748",
+    "n_hits": 197,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4EAX4",
@@ -3344,7 +3468,11 @@
       "center_y": 5.55,
       "center_z": -25.8
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.212,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 117,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DZT2",
@@ -3443,7 +3571,11 @@
       "center_y": -7.11,
       "center_z": -12.081
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -7.779,
+    "best_ligand": "CHEMBL268368",
+    "n_hits": 38,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E0T1",
@@ -3536,7 +3668,11 @@
       "center_y": -1.248,
       "center_z": 22.246
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.841,
+    "best_ligand": "CHEMBL6653",
+    "n_hits": 554,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E2K9",
@@ -3631,7 +3767,11 @@
       "center_y": 27.67,
       "center_z": -5.55
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -7.837,
+    "best_ligand": "CHEMBL10312",
+    "n_hits": 78,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E8L7",
@@ -3720,7 +3860,11 @@
       "center_y": 0.005,
       "center_z": 42.276
     },
-    "vina_box_size": 23
+    "vina_box_size": 23,
+    "best_score": -9.192,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 381,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4E7F9",
@@ -3811,7 +3955,11 @@
       "center_y": -14.405,
       "center_z": 0.721
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.475,
+    "best_ligand": "CHEMBL6574",
+    "n_hits": 494,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4DMB8",
@@ -3895,7 +4043,11 @@
       "center_y": -7.951,
       "center_z": 0.541
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "best_score": -9.995,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 566,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9RV76",
@@ -3982,7 +4134,11 @@
       "center_y": 4.59,
       "center_z": -11.401
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.506,
+    "best_ligand": "CHEMBL6599",
+    "n_hits": 439,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9RXK7",
@@ -4077,7 +4233,11 @@
       "center_y": 8.735,
       "center_z": 6.66
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "best_score": -8.758,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 227,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9SEA9",
@@ -4167,7 +4327,11 @@
       "center_y": -7.211,
       "center_z": -0.508
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.771,
+    "best_ligand": "CHEMBL6348",
+    "n_hits": 371,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9R6Q9",
@@ -4259,7 +4423,11 @@
       "center_y": -11.315,
       "center_z": 7.052
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.641,
+    "best_ligand": "CHEMBL269357",
+    "n_hits": 216,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9SDB6",
@@ -4347,7 +4515,11 @@
       "center_y": 4.805,
       "center_z": 12.637
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -7.776,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 31,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9SFH2",
@@ -4533,7 +4705,11 @@
       "center_y": 1.267,
       "center_z": -12.902
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.204,
+    "best_ligand": "CHEMBL6493",
+    "n_hits": 50,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4F1X8",
@@ -4630,7 +4806,11 @@
       "center_y": -8.932,
       "center_z": 10.929
     },
-    "vina_box_size": 22
+    "vina_box_size": 22,
+    "best_score": -11.4,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 775,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4FR19",
@@ -4719,7 +4899,11 @@
       "center_y": 18.507,
       "center_z": -3.155
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.561,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 191,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0C9R1D7",
@@ -4808,7 +4992,11 @@
       "center_y": -2.387,
       "center_z": 22.634
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "best_score": -10.406,
+    "best_ligand": "CHEMBL6599",
+    "n_hits": 756,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A142I6V4",
@@ -4908,7 +5096,11 @@
       "center_y": 3.105,
       "center_z": 2.831
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.768,
+    "best_ligand": "CHEMBL3989866",
+    "n_hits": 562,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4CWX3",
@@ -4998,7 +5190,11 @@
       "center_y": -16.627,
       "center_z": 3.085
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "best_score": -9.764,
+    "best_ligand": "CHEMBL3989866",
+    "n_hits": 625,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4D7R5",
@@ -5090,7 +5286,11 @@
       "center_y": -15.755,
       "center_z": -14.602
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.722,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 627,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4EDP8",
@@ -5185,7 +5385,11 @@
       "center_y": -2.775,
       "center_z": -18.391
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.071,
+    "best_ligand": "CHEMBL10530",
+    "n_hits": 21,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0AAQ4FNT5",
@@ -5273,6 +5477,10 @@
       "center_y": 6.985,
       "center_z": 22.118
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -7.331,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 4,
+    "hit_rate": 1.0
   }
 ]

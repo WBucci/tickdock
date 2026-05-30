@@ -109,7 +109,11 @@
       "center_y": 4.372,
       "center_z": -2.431
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.85,
+    "best_ligand": "CHEMBL10035",
+    "n_hits": 202,
+    "hit_rate": 1.0
   },
   {
     "accession": "B2ZHX0",
@@ -210,7 +214,11 @@
       "center_y": -0.92,
       "center_z": -14.991
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -11.121,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 889,
+    "hit_rate": 1.0
   },
   {
     "accession": "C6G1Y6",
@@ -309,7 +317,11 @@
       "center_y": -11.386,
       "center_z": -11.381
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "best_score": -10.118,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 608,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A0K1G5W8",
@@ -408,7 +420,11 @@
       "center_y": 2.705,
       "center_z": -10.798
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.3,
+    "best_ligand": "CHEMBL6765",
+    "n_hits": 104,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A142I6V3",
@@ -507,7 +523,11 @@
       "center_y": 1.175,
       "center_z": 2.727
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.14,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 657,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U4Y449",
@@ -606,7 +626,11 @@
       "center_y": 5.346,
       "center_z": 7.225
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.622,
+    "best_ligand": "CHEMBL10039",
+    "n_hits": 560,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q9MCZ9",
@@ -705,7 +729,11 @@
       "center_y": -11.991,
       "center_z": -17.364
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.202,
+    "best_ligand": "CHEMBL266819",
+    "n_hits": 122,
+    "hit_rate": 1.0
   },
   {
     "accession": "G0WV55",
@@ -806,7 +834,11 @@
       "center_y": 0.74,
       "center_z": 14.843
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.944,
+    "best_ligand": "CHEMBL6599",
+    "n_hits": 247,
+    "hit_rate": 1.0
   },
   {
     "accession": "A7LJ78",
@@ -907,7 +939,11 @@
       "center_y": 1.718,
       "center_z": -20.617
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.327,
+    "best_ligand": "CHEMBL266376",
+    "n_hits": 111,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q8T9S4",
@@ -995,7 +1031,11 @@
       "center_y": -0.398,
       "center_z": 8.535
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.088,
+    "best_ligand": "CHEMBL10026",
+    "n_hits": 784,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U2Q4",
@@ -1108,7 +1148,11 @@
       "center_y": 4.103,
       "center_z": 9.625
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.195,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 680,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U2R2",
@@ -1221,7 +1265,11 @@
       "center_y": 3.987,
       "center_z": 9.734
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.952,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 634,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U2Y5",
@@ -1334,7 +1382,11 @@
       "center_y": 1.848,
       "center_z": 10.568
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.112,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 660,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U368",
@@ -1447,7 +1499,11 @@
       "center_y": 2.617,
       "center_z": 10.723
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.106,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 650,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U3E7",
@@ -1560,7 +1616,11 @@
       "center_y": 2.689,
       "center_z": 10.307
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.815,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 586,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U3G2",
@@ -1673,7 +1733,11 @@
       "center_y": 2.576,
       "center_z": 10.207
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.821,
+    "best_ligand": "CHEMBL3989908",
+    "n_hits": 621,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U3H0",
@@ -1786,7 +1850,11 @@
       "center_y": 2.617,
       "center_z": 10.111
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.889,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 588,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U3S9",
@@ -1899,7 +1967,11 @@
       "center_y": 5.019,
       "center_z": 9.421
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.804,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 562,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U3T1",
@@ -2012,7 +2084,11 @@
       "center_y": 2.731,
       "center_z": 10.093
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.832,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 588,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7SP41",
@@ -2097,7 +2173,11 @@
       "center_y": 19.205,
       "center_z": -11.154
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -7.288,
+    "best_ligand": "CHEMBL6748",
+    "n_hits": 3,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7SP44",
@@ -2198,7 +2278,11 @@
       "center_y": 14.457,
       "center_z": 5.048
     },
-    "vina_box_size": 23
+    "vina_box_size": 23,
+    "best_score": -9.222,
+    "best_ligand": "CHEMBL268882",
+    "n_hits": 580,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q2Q443",
@@ -2282,7 +2366,11 @@
       "center_y": 5.097,
       "center_z": 9.644
     },
-    "vina_box_size": 23
+    "vina_box_size": 23,
+    "best_score": -11.817,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 920,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q2HZ27",
@@ -2365,7 +2453,11 @@
       "center_y": -4.568,
       "center_z": -1.959
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.614,
+    "best_ligand": "CHEMBL6574",
+    "n_hits": 695,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7SP57",
@@ -2449,7 +2541,11 @@
       "center_y": 0.362,
       "center_z": 1.101
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.371,
+    "best_ligand": "CHEMBL10542",
+    "n_hits": 59,
+    "hit_rate": 1.0
   },
   {
     "accession": "B5TMF7",
@@ -2537,7 +2633,11 @@
       "center_y": 4.83,
       "center_z": 0.351
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.999,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 570,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7SP39",
@@ -2625,7 +2725,11 @@
       "center_y": -3.244,
       "center_z": 4.836
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.752,
+    "best_ligand": "CHEMBL10006",
+    "n_hits": 957,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q86G71",
@@ -2708,7 +2812,11 @@
       "center_y": 7.858,
       "center_z": -5.66
     },
-    "vina_box_size": 24
+    "vina_box_size": 24,
+    "best_score": -10.615,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 645,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7SP34",
@@ -2790,7 +2898,11 @@
       "center_y": 0.643,
       "center_z": -16.019
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.168,
+    "best_ligand": "CHEMBL6765",
+    "n_hits": 309,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7SP56",
@@ -2873,7 +2985,11 @@
       "center_y": -1.408,
       "center_z": -6.49
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -11.621,
+    "best_ligand": "CHEMBL10552",
+    "n_hits": 848,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7SP64",
@@ -2956,7 +3072,11 @@
       "center_y": -2.367,
       "center_z": -6.156
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -11.895,
+    "best_ligand": "CHEMBL6823",
+    "n_hits": 869,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q86G65",
@@ -3043,7 +3163,11 @@
       "center_y": -1.798,
       "center_z": -9.004
     },
-    "vina_box_size": 21
+    "vina_box_size": 21,
+    "best_score": -10.762,
+    "best_ligand": "CHEMBL10251",
+    "n_hits": 877,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U3F3",
@@ -3143,7 +3267,11 @@
       "center_y": 3.362,
       "center_z": 10.358
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.143,
+    "best_ligand": "CHEMBL3989866",
+    "n_hits": 688,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A2U8U3G0",
@@ -3243,7 +3371,11 @@
       "center_y": 2.511,
       "center_z": 10.343
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.068,
+    "best_ligand": "CHEMBL6693",
+    "n_hits": 625,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A023NLG8",
@@ -3329,7 +3461,11 @@
       "center_y": 0.422,
       "center_z": -5.133
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.298,
+    "best_ligand": "CHEMBL273264",
+    "n_hits": 304,
+    "hit_rate": 1.0
   },
   {
     "accession": "B7SP48",
@@ -3408,7 +3544,11 @@
       "center_y": 3.401,
       "center_z": 13.605
     },
-    "vina_box_size": 23
+    "vina_box_size": 23,
+    "best_score": -10.399,
+    "best_ligand": "CHEMBL10251",
+    "n_hits": 502,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q06EX9",
@@ -3492,7 +3632,11 @@
       "center_y": 3.934,
       "center_z": 7.3
     },
-    "vina_box_size": 22
+    "vina_box_size": 22,
+    "best_score": -10.749,
+    "best_ligand": "CHEMBL269357",
+    "n_hits": 518,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q8I862",
@@ -3575,7 +3719,11 @@
       "center_y": 12.936,
       "center_z": 9.321
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -9.007,
+    "best_ligand": "CHEMBL6823",
+    "n_hits": 260,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q6XR73",
@@ -3673,7 +3821,11 @@
       "center_y": -7.764,
       "center_z": -2.099
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.946,
+    "best_ligand": "CHEMBL6819",
+    "n_hits": 981,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q8T9S5",
@@ -3776,7 +3928,11 @@
       "center_y": 18.343,
       "center_z": -2.101
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.981,
+    "best_ligand": "CHEMBL10299",
+    "n_hits": 453,
+    "hit_rate": 1.0
   },
   {
     "accession": "Q8T9S3",
@@ -3856,7 +4012,11 @@
       "center_y": -1.924,
       "center_z": 12.64
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -7.696,
+    "best_ligand": "CHEMBL266376",
+    "n_hits": 32,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A023NLX9",
@@ -3938,7 +4098,11 @@
       "center_y": -1.261,
       "center_z": 0.253
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -10.483,
+    "best_ligand": "CHEMBL10006",
+    "n_hits": 758,
+    "hit_rate": 1.0
   },
   {
     "accession": "A4UTU3",
@@ -4026,7 +4190,11 @@
       "center_y": 1.6,
       "center_z": 5.236
     },
-    "vina_box_size": 22
+    "vina_box_size": 22,
+    "best_score": -11.561,
+    "best_ligand": "CHEMBL6748",
+    "n_hits": 786,
+    "hit_rate": 1.0
   },
   {
     "accession": "A0A023NL51",
@@ -4109,6 +4277,10 @@
       "center_y": 8.421,
       "center_z": 9.611
     },
-    "vina_box_size": 20
+    "vina_box_size": 20,
+    "best_score": -8.308,
+    "best_ligand": "CHEMBL268381",
+    "n_hits": 142,
+    "hit_rate": 1.0
   }
 ]

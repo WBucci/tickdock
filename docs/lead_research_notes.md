@@ -216,3 +216,75 @@ Selectivity ratio = dog_score / tick_score; ratio < 0.8 = tick-selective (pet-sa
 strongly than dog PGAP5 — preliminary pet-safety signal. Ratio > 1.0 = risky.
 Note: virtual docking only; experimental validation required.
 
+---
+
+## Target B7SP64 — ML Domain / MD-2-Related Lipid-Recognition Protein (best: −11.895 kcal/mol)
+
+**Species:** *Dermacentor variabilis* only (pan-tick orthology not yet assessed)
+**Length:** 169 aa | **pLDDT:** 84.6 | **Keywords:** Secreted, Signal
+**BLAST safety:** Human 25.9% | Dog 0.0% | Mouse 0.0% — **excellent safety profile**
+**Hits:** 869 at ≤−7.0 kcal/mol | **Best ligand:** CHEMBL6823 at −11.895 kcal/mol
+
+### Protein family
+InterPro IPR003172 / Pfam PF02221 — **ML domain** (MD-2-related lipid recognition).
+ML family: beta-cup fold lipid-binding proteins. Members include:
+- **MD-2**: co-receptor of TLR4; lipid A binding triggers innate immune activation
+- **NPC2**: intracellular cholesterol transporter
+- **GM2A**: ganglioside activator, lysosomal lipid processing
+- Tick salivary ML proteins (e.g. sialostatin family): secreted into host during feeding, implicated in immune evasion by sequestering host lipids or dampening TLR4 signaling
+
+B7SP64 has a signal peptide → **secreted into host** during tick feeding. Most likely function: lipid scavenging or immune modulation at bite site.
+
+### Drug-target novelty
+Zero published drug discovery targeting tick ML domain proteins. No ChEMBL registration. No experimental structure. Complete gap — identical rationale to B7P5E9 (PGAP5) novelty argument.
+
+### Best hit: CHEMBL6823
+- SMILES: `Nc1nc(N)c2c(/C=C/c3ccc4ccccc4c3)cccc2n1`
+- Scaffold: **2,4-diaminoquinazoline with trans-styryl-naphthalene** substituent
+- MW=312.4, LogP=4.12, HBD=2, HBA=4, QED=0.55 — clean drug-like profile
+- Max phase: none (research compound)
+- Note: diaminoquinazoline core shared with antifolates (methotrexate, trimethoprim) — established anti-infective pharmacophore
+
+### Caveats
+- DV-only so far; Is/AA ortholog analysis needed
+- No functional validation; secreted role is inference from ML family + signal peptide
+- Human identity 25.9% low but ML domains structurally conserved — experimental selectivity check warranted if this advances
+
+---
+
+## Target Q2Q443 — Glutathione S-Transferase (best: −11.817 kcal/mol)
+
+**Species:** *Dermacentor variabilis* only (pan-tick orthology not yet assessed)
+**Length:** 215 aa | **pLDDT:** 96.1 — **exceptional structure confidence**
+**Keywords:** Transferase
+**BLAST safety:** Human 28.4% | Dog 0.0% | Mouse 0.0% — **excellent safety profile**
+**Hits:** 920 at ≤−7.0 kcal/mol | **Best ligand:** CHEMBL10552 at −11.817 kcal/mol
+
+### Protein family
+InterPro IPR010987 + IPR004045 / Pfam PF02798 — **Glutathione S-Transferase (GST)**.
+GSTs catalyze conjugation of glutathione to electrophilic xenobiotics: detoxification, oxidative stress defense, protection from lipid peroxidation products.
+
+**Antiparasitic precedent (strong):**
+- *Schistosoma mansoni* Sm28GST: most advanced helminth vaccine antigen, Phase II clinical trials (GlaxoSmithKline / Bilhvax)
+- GST inhibitors under development for *S. mansoni*, *Fasciola hepatica*, filarial nematodes
+- In ticks: GSTs upregulated during blood feeding; implicated in detoxifying host oxidants, enabling prolonged feeding
+- GST RNAi in *Haemaphysalis longicornis* reduces engorgement weight — functional validation of essentiality in tick GSTs (related species)
+
+### pLDDT=96.1 significance
+Highest-confidence AF2 structure in top-10. At pLDDT>90, backbone predictions approach experimental quality — higher confidence in the docking pocket geometry and score reliability.
+
+### Best hit: CHEMBL10552
+- SMILES: `O=C1CC2(C(=O)N1)C(=O)N(Cc1nc3cc(C(F)(F)F)ccc3s1)C(=O)c1ccc(F)cc12`
+- Scaffold: **tricyclic spirolactam** with benzothiazole-CF3 and fluorophenyl groups
+- MW=477.4, LogP=2.92, HBD=1, HBA=6, QED=0.35
+- QED=0.35 passes our ≥0.25 filter; full hit list (920 cpds) likely contains cleaner scaffolds
+- Max phase: none (research compound)
+
+### Significance relative to Schistosoma precedent
+Sm28GST and tick GSTs are phylogenetically distant but the druggability rationale is identical: essential detox enzyme upregulated during parasitic infection, validated by RNAi/KO, human ortholog divergent enough (28.4% identity) for selective inhibition. The Bilhvax Phase II trials validate that targeting parasite GST is feasible in a clinical context.
+
+### Caveats
+- DV-only so far; Is/AA ortholog analysis needed (likely has orthologs — GST family conserved across ticks)
+- CHEMBL10552 QED=0.35 — acceptable lead; full hit list warrants scaffold diversity analysis
+- Human GST superfamily is large (α, μ, π, θ classes); confirm closest human GST and run selectivity docking before advancing
+

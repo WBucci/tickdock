@@ -19,3 +19,4 @@
 {"round": 1, "batch_id": 18, "timestamp": "2026-05-29T09:16:10.255562", "cum_hits": 40454, "new_hits_this_batch": 8, "best_score": -13.125, "n_ligands_docked": 11000}
 {"round": 1, "batch_id": 19, "timestamp": "2026-05-29T11:24:46.489805", "cum_hits": 42333, "new_hits_this_batch": 1879, "best_score": -13.125, "n_ligands_docked": 11500}
 {"round": 1, "batch_id": 20, "timestamp": "2026-05-29T14:09:01.434946", "cum_hits": 43535, "new_hits_this_batch": 1202, "best_score": -13.125, "n_ligands_docked": 12000}
+{"round": 1, "batch_id": 21, "timestamp": "2026-05-30T06:32:36.005674", "cum_hits": 62731, "new_hits_this_batch": 19196, "best_score": -13.125, "n_ligands_docked": 12500}
