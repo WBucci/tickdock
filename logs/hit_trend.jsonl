@@ -13,3 +13,9 @@
 {"round": 1, "batch_id": 12, "timestamp": "2026-05-29T04:02:25.087583", "cum_hits": 36351, "new_hits_this_batch": 5612, "best_score": -13.125, "n_ligands_docked": 8000}
 {"round": 1, "batch_id": 13, "timestamp": "2026-05-29T07:59:23.643287", "cum_hits": 39728, "new_hits_this_batch": 3377, "best_score": -13.125, "n_ligands_docked": 9000}
 {"round": 1, "batch_id": 14, "timestamp": "2026-05-29T08:01:44.927862", "cum_hits": 39733, "new_hits_this_batch": 5, "best_score": -13.125, "n_ligands_docked": 9000}
+{"round": 1, "batch_id": 15, "timestamp": "2026-05-29T09:12:01.013282", "cum_hits": 40446, "new_hits_this_batch": 713, "best_score": -13.125, "n_ligands_docked": 9500}
+{"round": 1, "batch_id": 16, "timestamp": "2026-05-29T09:13:21.297213", "cum_hits": 40446, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 10000}
+{"round": 1, "batch_id": 17, "timestamp": "2026-05-29T09:14:46.974256", "cum_hits": 40446, "new_hits_this_batch": 0, "best_score": -13.125, "n_ligands_docked": 10500}
+{"round": 1, "batch_id": 18, "timestamp": "2026-05-29T09:16:10.255562", "cum_hits": 40454, "new_hits_this_batch": 8, "best_score": -13.125, "n_ligands_docked": 11000}
+{"round": 1, "batch_id": 19, "timestamp": "2026-05-29T11:24:46.489805", "cum_hits": 42333, "new_hits_this_batch": 1879, "best_score": -13.125, "n_ligands_docked": 11500}
+{"round": 1, "batch_id": 20, "timestamp": "2026-05-29T14:09:01.434946", "cum_hits": 43535, "new_hits_this_batch": 1202, "best_score": -13.125, "n_ligands_docked": 12000}

@@ -1,0 +1,54 @@
+============================================================
+TICKDOCK -- BATCH 15 DISPATCH REPORT  [OK]
+Completed: 2026-05-29T09:10:32.393210
+============================================================
+
+SUMMARY
+-------
+  Ligands docked : 500
+  Targets run    : 139/139 successful
+  Total hits     : 40096  (score <= -7.0 kcal/mol)
+  Wall time      : 1h 10m 3s
+
+TOP HITS (by docking score)
+--------------------------
+  1. B7P5E9 + CHEMBL9171
+     Score: -13.12 kcal/mol  [####################]
+  2. A0A0K0PR09 + CHEMBL266819
+     Score: -12.56 kcal/mol  [####################]
+  3. B7PY20 + CHEMBL10250
+     Score: -12.56 kcal/mol  [####################]
+  4. Q2Q443 + CHEMBL10552
+     Score: -11.82 kcal/mol  [###################-]
+  5. A0AAQ4DEL6 + CHEMBL268368
+     Score: -11.70 kcal/mol  [###################-]
+
+*** 5 LEAD CANDIDATE(S) (score <= -9.0 kcal/mol) ***
+    B7P5E9 + CHEMBL9171 : -13.12
+    A0A0K0PR09 + CHEMBL266819 : -12.56
+    B7PY20 + CHEMBL10250 : -12.56
+    Q2Q443 + CHEMBL10552 : -11.82
+    A0AAQ4DEL6 + CHEMBL268368 : -11.70
+
+CAMPAIGN PROGRESS
+-----------------
+  Batches completed : 16
+  Ligands processed : 9500
+  Cumulative hits   : 514648
+  Ligands queued    : 4840
+
+DISPATCH OPTIONS
+----------------
+  Current control signal : continue
+  To continue next batch :
+    python scripts/dispatch_report.py --batch {n} --next-batch
+  To queue more compounds:
+    python scripts/dispatch_report.py --batch {n} --queue-download 5000
+  To pause campaign      :
+    echo pause > logs/campaign_control.txt
+  To stop campaign       :
+    echo stop  > logs/campaign_control.txt
+
+============================================================
+
+Report saved: /mnt/c/Users/Owner/Documents/AndroidApps/TTD/logs/batch_15_report.txt

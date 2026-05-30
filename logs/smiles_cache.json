@@ -61,5 +61,6 @@
   "CHEMBL273264": "N=C(N)Nc1ccc(C(=O)Oc2ccc3cc(C(=N)N)ccc3c2)cc1",
   "CHEMBL268882": "O=C(C[C@@H](Cc1ccc(-c2ccccc2Cl)cc1)C(=O)N[C@H]1c2ccccc2C[C@H]1O)NO",
   "CHEMBL268835": "O=C1[C@@H](NS(=O)(=O)c2cc3nc(Cl)ccc3s2)CCN1Cc1cc2c[nH]ccc-2n1",
-  "CHEMBL266824": "CN1CC=C(c2c(O)cc(O)c3c(=O)cc(-c4cccc(Cl)c4)oc23)CC1"
+  "CHEMBL266824": "CN1CC=C(c2c(O)cc(O)c3c(=O)cc(-c4cccc(Cl)c4)oc23)CC1",
+  "CHEMBL276689": "CCCCc1cn(-c2ccccc2C)c(=O)n1Cc1ccc(-c2ccccc2-c2nn[nH]n2)nc1"
 }
