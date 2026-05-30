@@ -131,31 +131,32 @@ def annotate_targets_file(targets_path: str, scores: dict, dry_run: bool = False
 
 def main():
     parser = argparse.ArgumentParser(description="Back-annotate docking scores into final_targets.json")
-    parser.add_argument("--species", default="ixodes_scapularis",
-                        help="Species key (default: ixodes_scapularis)")
+    parser.add_argument("--species", default=None,
+                        help="Species key (default: all species)")
+    parser.add_argument("--all-species", action="store_true",
+                        help="Annotate all species (default behavior when --species omitted)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Report changes without writing")
     args = parser.parse_args()
 
-    logs_dir     = os.path.join(BASE_DIR, "logs")
-    targets_path = os.path.join(RESULTS_DIR, f"{args.species}_final_targets.json")
+    from config import SPECIES as ALL_SPECIES
+    if args.species:
+        species_to_run = [args.species]
+    else:
+        species_to_run = list(ALL_SPECIES.keys())
 
-    if not os.path.exists(targets_path):
-        print(f"[ERROR] Not found: {targets_path}")
-        sys.exit(1)
+    logs_dir = os.path.join(BASE_DIR, "logs")
 
+    # Load scores once — shared across all species (same compressed files)
     print(f"\nDocking Score Back-Annotation")
     print(f"==============================")
-    print(f"Species:  {args.species}")
-    print(f"Targets:  {targets_path}")
+    print(f"Species:  {', '.join(species_to_run)}")
     print(f"Dry run:  {args.dry_run}\n")
 
-    # Primary: compressed batch JSONs (most complete)
     print("Loading scores from compressed batch JSONs...")
     scores = load_scores_from_compressed(logs_dir)
     print(f"  Targets with compressed scores: {len(scores)}")
 
-    # Supplement from live result dirs (for targets not in compressed)
     print("Supplementing from result directories...")
     live_scores = load_scores_from_result_dirs(DOCKING_DIR)
     for target, entry in live_scores.items():
@@ -167,7 +168,7 @@ def main():
             scores[target]["scores"].extend(entry["scores"])
     print(f"  Targets with any score data: {len(scores)}")
 
-    # Print top 10
+    # Print top 10 (cross-species)
     ranked = sorted(scores.items(), key=lambda x: x[1]["best_score"])
     print(f"\nTop 10 targets by best score (promiscuous excluded):")
     print(f"  {'Target':<18} {'Best (kcal/mol)':>16}  {'Ligand':<20}  {'N hits':>6}")
@@ -177,10 +178,19 @@ def main():
             n = len([s for s in entry["scores"] if s <= VINA.get("good_score", -7.0)])
             print(f"  {acc:<18} {entry['best_score']:>16.3f}  {entry['best_ligand']:<20}  {n:>6}")
 
-    # Write
-    n_updated = annotate_targets_file(targets_path, scores, dry_run=args.dry_run)
-    action = "Would update" if args.dry_run else "Updated"
-    print(f"\n{action} {n_updated} targets in {targets_path}")
+    # Write all species
+    total_updated = 0
+    for sp in species_to_run:
+        targets_path = os.path.join(RESULTS_DIR, f"{sp}_final_targets.json")
+        if not os.path.exists(targets_path):
+            print(f"\n[WARN] Not found, skipping: {targets_path}")
+            continue
+        n_updated = annotate_targets_file(targets_path, scores, dry_run=args.dry_run)
+        action = "Would update" if args.dry_run else "Updated"
+        print(f"\n{action} {n_updated} targets in {targets_path}")
+        total_updated += n_updated
+    if len(species_to_run) > 1:
+        print(f"\nTotal updated: {total_updated} targets across {len(species_to_run)} species")
 
 
 if __name__ == "__main__":
