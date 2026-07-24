@@ -207,7 +207,7 @@ All benchmarks, per-pair results, control-set provenance, and the four method im
 ## References
 
 
-*All entries verified against NCBI E-utilities, CrossRef, or the RCSB PDB Data API (2026-07-23/24); see `logs/refs_*.json`. Two caveats carried forward, below the list.*
+*All entries verified against NCBI E-utilities, CrossRef, or the RCSB PDB Data API. PDB structures are cited by accession; note that RCSB lists no valid primary-citation record for 2W3A, which is therefore referenced by PDB ID only.*
 
 1. Cole LM, Nicholson RA, Casida JE. Action of phenylpyrazole insecticides at the GABA-gated chloride channel. *Pestic Biochem Physiol*. 1993;46(1):47–54. doi:10.1006/pest.1993.1035. *(no PubMed record; DOI verified via CrossRef)*
 2. Hibbs RE, Gouaux E. Principles of activation and permeation in an anion-selective Cys-loop receptor. *Nature*. 2011;474(7349):54–60. doi:10.1038/nature10139. PMID:21572436.
