@@ -8,6 +8,7 @@ authors:
 url: "https://github.com/WBucci/tickdock"
 repository-code: "https://github.com/WBucci/tickdock"
 license: MIT
+doi: "10.5281/zenodo.21524265"
 date-released: 2026-07-24
 keywords:
   - molecular docking

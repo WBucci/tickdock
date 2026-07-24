@@ -4,7 +4,7 @@
 
 Independent Researcher, United States · ORCID: 0009-0004-4006-4444 · wbucci14@gmail.com
 
-*Preprint, 2026. Licensed CC-BY 4.0. Code and data: https://github.com/WBucci/tickdock (archived DOI pending Zenodo deposit).*
+*Preprint, 2026. Licensed CC-BY 4.0. Code and data: https://github.com/WBucci/tickdock archived at Zenodo: https://doi.org/10.5281/zenodo.21524265.*
 
 **Keywords:** molecular docking; binding-site selectivity; benchmarking; virtual screening; dihydrofolate reductase; scoring functions; acaricide discovery
 
