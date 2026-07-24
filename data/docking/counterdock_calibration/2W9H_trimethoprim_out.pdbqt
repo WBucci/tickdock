@@ -1,0 +1,522 @@
+MODEL 1
+REMARK VINA RESULT:    -8.365      0.000      0.000
+REMARK INTER + INTRA:         -11.245
+REMARK INTER:                 -10.811
+REMARK INTRA:                  -0.434
+REMARK UNBOUND:                -0.434
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/7NAE_lig_raw.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C8_8  and  C9_9
+REMARK    2  A    between atoms: C9_9  and  C10_10
+REMARK    3  A    between atoms: C12_12  and  O13_13
+REMARK    4  A    between atoms: O13_13  and  C14_14
+REMARK    5  A    between atoms: C15_15  and  O16_16
+REMARK    6  A    between atoms: O16_16  and  C17_17
+REMARK    7  A    between atoms: C18_18  and  O19_19
+REMARK    8  A    between atoms: O19_19  and  C20_20
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C9  TOP A 201      10.471  -3.860  15.512  0.00  0.00    +0.057 C 
+ENDROOT
+BRANCH   1   9
+ATOM      2  C1  TOP A 201       8.143  -4.691  14.807  0.00  0.00    +0.101 A 
+ATOM      3  N2  TOP A 201       6.908  -4.507  14.308  0.00  0.00    -0.210 NA
+ATOM      4  C3  TOP A 201       6.593  -3.252  13.896  0.00  0.00    +0.258 A 
+ATOM      5  N4  TOP A 201       5.403  -3.039  13.325  0.00  0.00    -0.086 N 
+ATOM      6  N5  TOP A 201       7.409  -2.191  14.002  0.00  0.00    -0.193 NA
+ATOM      7  C6  TOP A 201       8.639  -2.397  14.505  0.00  0.00    +0.170 A 
+ATOM      8  N7  TOP A 201       9.419  -1.312  14.640  0.00  0.00    -0.107 N 
+ATOM      9  C8  TOP A 201       9.067  -3.661  14.949  0.00  0.00    +0.036 A 
+ATOM     10  H   TOP A 201       4.766  -3.783  13.222  0.00  0.00    +0.000 HD
+ATOM     11  H   TOP A 201       5.163  -2.138  13.007  0.00  0.00    +0.000 HD
+ATOM     12  H   TOP A 201       9.103  -0.435  14.324  0.00  0.00    +0.000 HD
+ATOM     13  H   TOP A 201      10.308  -1.392  15.057  0.00  0.00    +0.000 HD
+ENDBRANCH   1   9
+BRANCH   1  14
+ATOM     14  C10 TOP A 201      10.548  -3.947  17.023  0.00  0.00    -0.011 A 
+ATOM     15  C11 TOP A 201      10.417  -5.151  17.720  0.00  0.00    +0.036 A 
+ATOM     16  C12 TOP A 201      10.448  -5.170  19.118  0.00  0.00    +0.175 A 
+ATOM     17  C15 TOP A 201      10.596  -3.973  19.840  0.00  0.00    +0.206 A 
+ATOM     18  C18 TOP A 201      10.748  -2.786  19.124  0.00  0.00    +0.175 A 
+ATOM     19  C21 TOP A 201      10.696  -2.770  17.742  0.00  0.00    +0.036 A 
+BRANCH  16  20
+ATOM     20  O13 TOP A 201      10.343  -6.299  19.890  0.00  0.00    -0.468 OA
+ATOM     21  C14 TOP A 201       9.797  -7.483  19.310  0.00  0.00    +0.253 C 
+ENDBRANCH  16  20
+BRANCH  17  22
+ATOM     22  O16 TOP A 201      10.631  -3.915  21.228  0.00  0.00    -0.465 OA
+ATOM     23  C17 TOP A 201      11.910  -3.804  21.869  0.00  0.00    +0.253 C 
+ENDBRANCH  17  22
+BRANCH  18  24
+ATOM     24  O19 TOP A 201      10.859  -1.661  19.877  0.00  0.00    -0.468 OA
+ATOM     25  C20 TOP A 201      11.587  -0.595  19.280  0.00  0.00    +0.253 C 
+ENDBRANCH  18  24
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:    -8.348      0.351      2.809
+REMARK INTER + INTRA:         -11.222
+REMARK INTER:                 -10.741
+REMARK INTRA:                  -0.481
+REMARK UNBOUND:                -0.434
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/7NAE_lig_raw.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C8_8  and  C9_9
+REMARK    2  A    between atoms: C9_9  and  C10_10
+REMARK    3  A    between atoms: C12_12  and  O13_13
+REMARK    4  A    between atoms: O13_13  and  C14_14
+REMARK    5  A    between atoms: C15_15  and  O16_16
+REMARK    6  A    between atoms: O16_16  and  C17_17
+REMARK    7  A    between atoms: C18_18  and  O19_19
+REMARK    8  A    between atoms: O19_19  and  C20_20
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C9  TOP A 201      10.484  -3.707  15.605  0.00  0.00    +0.057 C 
+ENDROOT
+BRANCH   1   9
+ATOM      2  C1  TOP A 201       8.200  -4.606  14.840  0.00  0.00    +0.101 A 
+ATOM      3  N2  TOP A 201       6.981  -4.461  14.292  0.00  0.00    -0.210 NA
+ATOM      4  C3  TOP A 201       6.656  -3.225  13.836  0.00  0.00    +0.258 A 
+ATOM      5  N4  TOP A 201       5.483  -3.052  13.216  0.00  0.00    -0.086 N 
+ATOM      6  N5  TOP A 201       7.445  -2.144  13.943  0.00  0.00    -0.193 NA
+ATOM      7  C6  TOP A 201       8.660  -2.310  14.495  0.00  0.00    +0.170 A 
+ATOM      8  N7  TOP A 201       9.412  -1.206  14.629  0.00  0.00    -0.107 N 
+ATOM      9  C8  TOP A 201       9.097  -3.553  14.988  0.00  0.00    +0.036 A 
+ATOM     10  H   TOP A 201       4.866  -3.812  13.110  0.00  0.00    +0.000 HD
+ATOM     11  H   TOP A 201       5.237  -2.165  12.866  0.00  0.00    +0.000 HD
+ATOM     12  H   TOP A 201       9.090  -0.345  14.277  0.00  0.00    +0.000 HD
+ATOM     13  H   TOP A 201      10.286  -1.257  15.079  0.00  0.00    +0.000 HD
+ENDBRANCH   1   9
+BRANCH   1  14
+ATOM     14  C10 TOP A 201      10.522  -3.621  17.119  0.00  0.00    -0.011 A 
+ATOM     15  C11 TOP A 201      10.690  -2.415  17.804  0.00  0.00    +0.036 A 
+ATOM     16  C12 TOP A 201      10.766  -2.397  19.201  0.00  0.00    +0.175 A 
+ATOM     17  C15 TOP A 201      10.688  -3.596  19.931  0.00  0.00    +0.206 A 
+ATOM     18  C18 TOP A 201      10.496  -4.785  19.227  0.00  0.00    +0.175 A 
+ATOM     19  C21 TOP A 201      10.443  -4.800  17.845  0.00  0.00    +0.036 A 
+BRANCH  16  20
+ATOM     20  O13 TOP A 201      10.916  -1.267  19.964  0.00  0.00    -0.468 OA
+ATOM     21  C14 TOP A 201      12.198  -0.646  20.032  0.00  0.00    +0.253 C 
+ENDBRANCH  16  20
+BRANCH  17  22
+ATOM     22  O16 TOP A 201      10.759  -3.655  21.318  0.00  0.00    -0.465 OA
+ATOM     23  C17 TOP A 201      12.058  -3.672  21.928  0.00  0.00    +0.253 C 
+ENDBRANCH  17  22
+BRANCH  18  24
+ATOM     24  O19 TOP A 201      10.457  -5.911  19.985  0.00  0.00    -0.468 OA
+ATOM     25  C20 TOP A 201       9.962  -7.072  19.330  0.00  0.00    +0.253 C 
+ENDBRANCH  18  24
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:    -8.238      1.635      3.586
+REMARK INTER + INTRA:         -11.080
+REMARK INTER:                 -11.036
+REMARK INTRA:                  -0.043
+REMARK UNBOUND:                -0.434
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/7NAE_lig_raw.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C8_8  and  C9_9
+REMARK    2  A    between atoms: C9_9  and  C10_10
+REMARK    3  A    between atoms: C12_12  and  O13_13
+REMARK    4  A    between atoms: O13_13  and  C14_14
+REMARK    5  A    between atoms: C15_15  and  O16_16
+REMARK    6  A    between atoms: O16_16  and  C17_17
+REMARK    7  A    between atoms: C18_18  and  O19_19
+REMARK    8  A    between atoms: O19_19  and  C20_20
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C9  TOP A 201      10.300  -4.169  15.974  0.00  0.00    +0.057 C 
+ENDROOT
+BRANCH   1   9
+ATOM      2  C1  TOP A 201       8.102  -4.841  14.822  0.00  0.00    +0.101 A 
+ATOM      3  N2  TOP A 201       6.942  -4.559  14.203  0.00  0.00    -0.210 NA
+ATOM      4  C3  TOP A 201       6.663  -3.248  13.990  0.00  0.00    +0.258 A 
+ATOM      5  N4  TOP A 201       5.556  -2.925  13.312  0.00  0.00    -0.086 N 
+ATOM      6  N5  TOP A 201       7.437  -2.230  14.398  0.00  0.00    -0.193 NA
+ATOM      7  C6  TOP A 201       8.593  -2.533  15.016  0.00  0.00    +0.170 A 
+ATOM      8  N7  TOP A 201       9.328  -1.497  15.452  0.00  0.00    -0.107 N 
+ATOM      9  C8  TOP A 201       8.980  -3.861  15.274  0.00  0.00    +0.036 A 
+ATOM     10  H   TOP A 201       4.952  -3.633  12.990  0.00  0.00    +0.000 HD
+ATOM     11  H   TOP A 201       5.344  -1.980  13.136  0.00  0.00    +0.000 HD
+ATOM     12  H   TOP A 201       9.040  -0.576  15.261  0.00  0.00    +0.000 HD
+ATOM     13  H   TOP A 201      10.154  -1.659  15.962  0.00  0.00    +0.000 HD
+ENDBRANCH   1   9
+BRANCH   1  14
+ATOM     14  C10 TOP A 201      10.204  -5.177  17.103  0.00  0.00    -0.011 A 
+ATOM     15  C11 TOP A 201      10.495  -4.855  18.432  0.00  0.00    +0.036 A 
+ATOM     16  C12 TOP A 201      10.436  -5.834  19.429  0.00  0.00    +0.175 A 
+ATOM     17  C15 TOP A 201      10.097  -7.158  19.102  0.00  0.00    +0.206 A 
+ATOM     18  C18 TOP A 201       9.788  -7.452  17.775  0.00  0.00    +0.175 A 
+ATOM     19  C21 TOP A 201       9.868  -6.485  16.789  0.00  0.00    +0.036 A 
+BRANCH  16  20
+ATOM     20  O13 TOP A 201      10.689  -5.615  20.759  0.00  0.00    -0.468 OA
+ATOM     21  C14 TOP A 201      11.250  -4.366  21.159  0.00  0.00    +0.253 C 
+ENDBRANCH  16  20
+BRANCH  17  22
+ATOM     22  O16 TOP A 201      10.023  -8.183  20.039  0.00  0.00    -0.465 OA
+ATOM     23  C17 TOP A 201       8.751  -8.456  20.644  0.00  0.00    +0.253 C 
+ENDBRANCH  17  22
+BRANCH  18  24
+ATOM     24  O19 TOP A 201       9.496  -8.753  17.518  0.00  0.00    -0.468 OA
+ATOM     25  C20 TOP A 201       8.228  -8.988  16.917  0.00  0.00    +0.253 C 
+ENDBRANCH  18  24
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:    -8.234      4.675      6.915
+REMARK INTER + INTRA:         -11.075
+REMARK INTER:                 -10.578
+REMARK INTRA:                  -0.497
+REMARK UNBOUND:                -0.434
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/7NAE_lig_raw.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C8_8  and  C9_9
+REMARK    2  A    between atoms: C9_9  and  C10_10
+REMARK    3  A    between atoms: C12_12  and  O13_13
+REMARK    4  A    between atoms: O13_13  and  C14_14
+REMARK    5  A    between atoms: C15_15  and  O16_16
+REMARK    6  A    between atoms: O16_16  and  C17_17
+REMARK    7  A    between atoms: C18_18  and  O19_19
+REMARK    8  A    between atoms: O19_19  and  C20_20
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C9  TOP A 201      11.266  -2.600  20.941  0.00  0.00    +0.057 C 
+ENDROOT
+BRANCH   1   9
+ATOM      2  C1  TOP A 201      12.445  -0.330  21.203  0.00  0.00    +0.101 A 
+ATOM      3  N2  TOP A 201      13.539   0.440  21.338  0.00  0.00    -0.210 NA
+ATOM      4  C3  TOP A 201      14.740  -0.193  21.329  0.00  0.00    +0.258 A 
+ATOM      5  N4  TOP A 201      15.857   0.541  21.386  0.00  0.00    -0.086 N 
+ATOM      6  N5  TOP A 201      14.897  -1.523  21.245  0.00  0.00    -0.193 NA
+ATOM      7  C6  TOP A 201      13.791  -2.276  21.111  0.00  0.00    +0.170 A 
+ATOM      8  N7  TOP A 201      13.973  -3.606  21.072  0.00  0.00    -0.107 N 
+ATOM      9  C8  TOP A 201      12.500  -1.716  21.098  0.00  0.00    +0.036 A 
+ATOM     10  H   TOP A 201      15.799   1.522  21.448  0.00  0.00    +0.000 HD
+ATOM     11  H   TOP A 201      16.738   0.101  21.365  0.00  0.00    +0.000 HD
+ATOM     12  H   TOP A 201      14.884  -3.978  21.082  0.00  0.00    +0.000 HD
+ATOM     13  H   TOP A 201      13.196  -4.208  21.034  0.00  0.00    +0.000 HD
+ENDBRANCH   1   9
+BRANCH   1  14
+ATOM     14  C10 TOP A 201      10.917  -2.962  19.510  0.00  0.00    -0.011 A 
+ATOM     15  C11 TOP A 201      11.044  -4.259  19.005  0.00  0.00    +0.036 A 
+ATOM     16  C12 TOP A 201      10.754  -4.530  17.664  0.00  0.00    +0.175 A 
+ATOM     17  C15 TOP A 201      10.346  -3.496  16.804  0.00  0.00    +0.206 A 
+ATOM     18  C18 TOP A 201      10.204  -2.215  17.334  0.00  0.00    +0.175 A 
+ATOM     19  C21 TOP A 201      10.512  -1.947  18.656  0.00  0.00    +0.036 A 
+BRANCH  16  20
+ATOM     20  O13 TOP A 201      10.833  -5.769  17.080  0.00  0.00    -0.468 OA
+ATOM     21  C14 TOP A 201       9.818  -6.731  17.362  0.00  0.00    +0.253 C 
+ENDBRANCH  16  20
+BRANCH  17  22
+ATOM     22  O16 TOP A 201      10.045  -3.690  15.461  0.00  0.00    -0.465 OA
+ATOM     23  C17 TOP A 201       8.689  -3.997  15.108  0.00  0.00    +0.253 C 
+ENDBRANCH  17  22
+BRANCH  18  24
+ATOM     24  O19 TOP A 201       9.834  -1.254  16.448  0.00  0.00    -0.468 OA
+ATOM     25  C20 TOP A 201       8.625  -0.572  16.756  0.00  0.00    +0.253 C 
+ENDBRANCH  18  24
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:    -8.221      1.652      2.644
+REMARK INTER + INTRA:         -11.058
+REMARK INTER:                 -11.209
+REMARK INTRA:                   0.151
+REMARK UNBOUND:                -0.434
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/7NAE_lig_raw.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C8_8  and  C9_9
+REMARK    2  A    between atoms: C9_9  and  C10_10
+REMARK    3  A    between atoms: C12_12  and  O13_13
+REMARK    4  A    between atoms: O13_13  and  C14_14
+REMARK    5  A    between atoms: C15_15  and  O16_16
+REMARK    6  A    between atoms: O16_16  and  C17_17
+REMARK    7  A    between atoms: C18_18  and  O19_19
+REMARK    8  A    between atoms: O19_19  and  C20_20
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C9  TOP A 201      10.233  -3.824  15.570  0.00  0.00    +0.057 C 
+ENDROOT
+BRANCH   1   9
+ATOM      2  C1  TOP A 201       7.901  -4.575  14.788  0.00  0.00    +0.101 A 
+ATOM      3  N2  TOP A 201       6.709  -4.359  14.206  0.00  0.00    -0.210 NA
+ATOM      4  C3  TOP A 201       6.492  -3.122  13.690  0.00  0.00    +0.258 A 
+ATOM      5  N4  TOP A 201       5.350  -2.885  13.036  0.00  0.00    -0.086 N 
+ATOM      6  N5  TOP A 201       7.362  -2.102  13.771  0.00  0.00    -0.193 NA
+ATOM      7  C6  TOP A 201       8.549  -2.339  14.359  0.00  0.00    +0.170 A 
+ATOM      8  N7  TOP A 201       9.383  -1.291  14.465  0.00  0.00    -0.107 N 
+ATOM      9  C8  TOP A 201       8.875  -3.589  14.914  0.00  0.00    +0.036 A 
+ATOM     10  H   TOP A 201       4.677  -3.598  12.947  0.00  0.00    +0.000 HD
+ATOM     11  H   TOP A 201       5.182  -1.998  12.643  0.00  0.00    +0.000 HD
+ATOM     12  H   TOP A 201       9.136  -0.424  14.070  0.00  0.00    +0.000 HD
+ATOM     13  H   TOP A 201      10.241  -1.391  14.938  0.00  0.00    +0.000 HD
+ENDBRANCH   1   9
+BRANCH   1  14
+ATOM     14  C10 TOP A 201      10.267  -4.956  16.579  0.00  0.00    -0.011 A 
+ATOM     15  C11 TOP A 201       9.797  -6.240  16.291  0.00  0.00    +0.036 A 
+ATOM     16  C12 TOP A 201       9.808  -7.237  17.272  0.00  0.00    +0.175 A 
+ATOM     17  C15 TOP A 201      10.279  -6.952  18.566  0.00  0.00    +0.206 A 
+ATOM     18  C18 TOP A 201      10.764  -5.671  18.824  0.00  0.00    +0.175 A 
+ATOM     19  C21 TOP A 201      10.732  -4.683  17.856  0.00  0.00    +0.036 A 
+BRANCH  16  20
+ATOM     20  O13 TOP A 201       9.383  -8.527  17.085  0.00  0.00    -0.468 OA
+ATOM     21  C14 TOP A 201       9.068  -8.965  15.764  0.00  0.00    +0.253 C 
+ENDBRANCH  16  20
+BRANCH  17  22
+ATOM     22  O16 TOP A 201      10.315  -7.889  19.592  0.00  0.00    -0.465 OA
+ATOM     23  C17 TOP A 201       9.111  -8.126  20.335  0.00  0.00    +0.253 C 
+ENDBRANCH  17  22
+BRANCH  18  24
+ATOM     24  O19 TOP A 201      11.179  -5.450  20.098  0.00  0.00    -0.468 OA
+ATOM     25  C20 TOP A 201      10.375  -4.554  20.856  0.00  0.00    +0.253 C 
+ENDBRANCH  18  24
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:    -8.210      4.753      7.444
+REMARK INTER + INTRA:         -11.044
+REMARK INTER:                 -10.537
+REMARK INTRA:                  -0.506
+REMARK UNBOUND:                -0.434
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/7NAE_lig_raw.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C8_8  and  C9_9
+REMARK    2  A    between atoms: C9_9  and  C10_10
+REMARK    3  A    between atoms: C12_12  and  O13_13
+REMARK    4  A    between atoms: O13_13  and  C14_14
+REMARK    5  A    between atoms: C15_15  and  O16_16
+REMARK    6  A    between atoms: O16_16  and  C17_17
+REMARK    7  A    between atoms: C18_18  and  O19_19
+REMARK    8  A    between atoms: O19_19  and  C20_20
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C9  TOP A 201      11.378  -2.566  20.887  0.00  0.00    +0.057 C 
+ENDROOT
+BRANCH   1   9
+ATOM      2  C1  TOP A 201      12.370  -0.215  21.209  0.00  0.00    +0.101 A 
+ATOM      3  N2  TOP A 201      13.393   0.632  21.417  0.00  0.00    -0.210 NA
+ATOM      4  C3  TOP A 201      14.633   0.087  21.507  0.00  0.00    +0.258 A 
+ATOM      5  N4  TOP A 201      15.688   0.900  21.640  0.00  0.00    -0.086 N 
+ATOM      6  N5  TOP A 201      14.890  -1.229  21.452  0.00  0.00    -0.193 NA
+ATOM      7  C6  TOP A 201      13.853  -2.060  21.244  0.00  0.00    +0.170 A 
+ATOM      8  N7  TOP A 201      14.132  -3.374  21.236  0.00  0.00    -0.107 N 
+ATOM      9  C8  TOP A 201      12.531  -1.595  21.126  0.00  0.00    +0.036 A 
+ATOM     10  H   TOP A 201      15.555   1.874  21.685  0.00  0.00    +0.000 HD
+ATOM     11  H   TOP A 201      16.596   0.523  21.691  0.00  0.00    +0.000 HD
+ATOM     12  H   TOP A 201      15.063  -3.680  21.320  0.00  0.00    +0.000 HD
+ATOM     13  H   TOP A 201      13.404  -4.031  21.147  0.00  0.00    +0.000 HD
+ENDBRANCH   1   9
+BRANCH   1  14
+ATOM     14  C10 TOP A 201      11.047  -2.816  19.429  0.00  0.00    -0.011 A 
+ATOM     15  C11 TOP A 201      10.568  -1.816  18.578  0.00  0.00    +0.036 A 
+ATOM     16  C12 TOP A 201      10.233  -2.111  17.253  0.00  0.00    +0.175 A 
+ATOM     17  C15 TOP A 201      10.360  -3.423  16.765  0.00  0.00    +0.206 A 
+ATOM     18  C18 TOP A 201      10.861  -4.400  17.624  0.00  0.00    +0.175 A 
+ATOM     19  C21 TOP A 201      11.172  -4.108  18.940  0.00  0.00    +0.036 A 
+BRANCH  16  20
+ATOM     20  O13 TOP A 201       9.769  -1.199  16.339  0.00  0.00    -0.468 OA
+ATOM     21  C14 TOP A 201       8.542  -0.521  16.602  0.00  0.00    +0.253 C 
+ENDBRANCH  16  20
+BRANCH  17  22
+ATOM     22  O16 TOP A 201      10.042  -3.791  15.463  0.00  0.00    -0.465 OA
+ATOM     23  C17 TOP A 201       8.667  -4.057  15.151  0.00  0.00    +0.253 C 
+ENDBRANCH  17  22
+BRANCH  18  24
+ATOM     24  O19 TOP A 201      10.934  -5.653  17.103  0.00  0.00    -0.468 OA
+ATOM     25  C20 TOP A 201      10.005  -6.590  17.632  0.00  0.00    +0.253 C 
+ENDBRANCH  18  24
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:    -8.042      2.025      3.879
+REMARK INTER + INTRA:         -10.827
+REMARK INTER:                 -10.437
+REMARK INTRA:                  -0.390
+REMARK UNBOUND:                -0.434
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/7NAE_lig_raw.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C8_8  and  C9_9
+REMARK    2  A    between atoms: C9_9  and  C10_10
+REMARK    3  A    between atoms: C12_12  and  O13_13
+REMARK    4  A    between atoms: O13_13  and  C14_14
+REMARK    5  A    between atoms: C15_15  and  O16_16
+REMARK    6  A    between atoms: O16_16  and  C17_17
+REMARK    7  A    between atoms: C18_18  and  O19_19
+REMARK    8  A    between atoms: O19_19  and  C20_20
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C9  TOP A 201      10.731  -1.109  17.131  0.00  0.00    +0.057 C 
+ENDROOT
+BRANCH   1   9
+ATOM      2  C1  TOP A 201       8.190  -1.499  17.060  0.00  0.00    +0.101 A 
+ATOM      3  N2  TOP A 201       7.095  -2.168  16.662  0.00  0.00    -0.210 NA
+ATOM      4  C3  TOP A 201       7.293  -3.266  15.889  0.00  0.00    +0.258 A 
+ATOM      5  N4  TOP A 201       6.237  -4.005  15.532  0.00  0.00    -0.086 N 
+ATOM      6  N5  TOP A 201       8.494  -3.688  15.462  0.00  0.00    -0.193 NA
+ATOM      7  C6  TOP A 201       9.578  -3.004  15.871  0.00  0.00    +0.170 A 
+ATOM      8  N7  TOP A 201      10.763  -3.420  15.395  0.00  0.00    -0.107 N 
+ATOM      9  C8  TOP A 201       9.480  -1.860  16.683  0.00  0.00    +0.036 A 
+ATOM     10  H   TOP A 201       5.332  -3.741  15.818  0.00  0.00    +0.000 HD
+ATOM     11  H   TOP A 201       6.363  -4.813  14.983  0.00  0.00    +0.000 HD
+ATOM     12  H   TOP A 201      10.810  -4.223  14.828  0.00  0.00    +0.000 HD
+ATOM     13  H   TOP A 201      11.583  -2.922  15.613  0.00  0.00    +0.000 HD
+ENDBRANCH   1   9
+BRANCH   1  14
+ATOM     14  C10 TOP A 201      11.209  -1.443  18.531  0.00  0.00    -0.011 A 
+ATOM     15  C11 TOP A 201      11.699  -0.477  19.414  0.00  0.00    +0.036 A 
+ATOM     16  C12 TOP A 201      12.172  -0.845  20.678  0.00  0.00    +0.175 A 
+ATOM     17  C15 TOP A 201      12.172  -2.195  21.069  0.00  0.00    +0.206 A 
+ATOM     18  C18 TOP A 201      11.657  -3.138  20.181  0.00  0.00    +0.175 A 
+ATOM     19  C21 TOP A 201      11.211  -2.772  18.924  0.00  0.00    +0.036 A 
+BRANCH  16  20
+ATOM     20  O13 TOP A 201      12.658   0.028  21.618  0.00  0.00    -0.468 OA
+ATOM     21  C14 TOP A 201      14.054   0.320  21.632  0.00  0.00    +0.253 C 
+ENDBRANCH  16  20
+BRANCH  17  22
+ATOM     22  O16 TOP A 201      12.630  -2.634  22.305  0.00  0.00    -0.465 OA
+ATOM     23  C17 TOP A 201      11.766  -2.479  23.440  0.00  0.00    +0.253 C 
+ENDBRANCH  17  22
+BRANCH  18  24
+ATOM     24  O19 TOP A 201      11.711  -4.428  20.605  0.00  0.00    -0.468 OA
+ATOM     25  C20 TOP A 201      10.452  -5.070  20.770  0.00  0.00    +0.253 C 
+ENDBRANCH  18  24
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:    -7.885      3.871      6.349
+REMARK INTER + INTRA:         -10.624
+REMARK INTER:                 -10.129
+REMARK INTRA:                  -0.494
+REMARK UNBOUND:                -0.434
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/7NAE_lig_raw.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C8_8  and  C9_9
+REMARK    2  A    between atoms: C9_9  and  C10_10
+REMARK    3  A    between atoms: C12_12  and  O13_13
+REMARK    4  A    between atoms: O13_13  and  C14_14
+REMARK    5  A    between atoms: C15_15  and  O16_16
+REMARK    6  A    between atoms: O16_16  and  C17_17
+REMARK    7  A    between atoms: C18_18  and  O19_19
+REMARK    8  A    between atoms: O19_19  and  C20_20
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C9  TOP A 201      10.521  -3.711  20.615  0.00  0.00    +0.057 C 
+ENDROOT
+BRANCH   1   9
+ATOM      2  C1  TOP A 201      13.066  -3.625  20.966  0.00  0.00    +0.101 A 
+ATOM      3  N2  TOP A 201      14.247  -2.983  21.002  0.00  0.00    -0.210 NA
+ATOM      4  C3  TOP A 201      14.227  -1.648  20.759  0.00  0.00    +0.258 A 
+ATOM      5  N4  TOP A 201      15.368  -0.956  20.858  0.00  0.00    -0.086 N 
+ATOM      6  N5  TOP A 201      13.126  -0.950  20.439  0.00  0.00    -0.193 NA
+ATOM      7  C6  TOP A 201      11.955  -1.611  20.408  0.00  0.00    +0.170 A 
+ATOM      8  N7  TOP A 201      10.875  -0.899  20.044  0.00  0.00    -0.107 N 
+ATOM      9  C8  TOP A 201      11.866  -2.993  20.656  0.00  0.00    +0.036 A 
+ATOM     10  H   TOP A 201      16.205  -1.419  21.090  0.00  0.00    +0.000 HD
+ATOM     11  H   TOP A 201      15.370   0.016  20.699  0.00  0.00    +0.000 HD
+ATOM     12  H   TOP A 201      10.957   0.066  19.874  0.00  0.00    +0.000 HD
+ATOM     13  H   TOP A 201      10.002  -1.344  19.946  0.00  0.00    +0.000 HD
+ENDBRANCH   1   9
+BRANCH   1  14
+ATOM     14  C10 TOP A 201      10.284  -4.555  19.378  0.00  0.00    -0.011 A 
+ATOM     15  C11 TOP A 201      10.125  -5.942  19.427  0.00  0.00    +0.036 A 
+ATOM     16  C12 TOP A 201       9.956  -6.679  18.250  0.00  0.00    +0.175 A 
+ATOM     17  C15 TOP A 201       9.961  -6.033  17.002  0.00  0.00    +0.206 A 
+ATOM     18  C18 TOP A 201      10.098  -4.646  16.978  0.00  0.00    +0.175 A 
+ATOM     19  C21 TOP A 201      10.285  -3.923  18.143  0.00  0.00    +0.036 A 
+BRANCH  16  20
+ATOM     20  O13 TOP A 201       9.778  -8.038  18.194  0.00  0.00    -0.468 OA
+ATOM     21  C14 TOP A 201      10.476  -8.864  19.125  0.00  0.00    +0.253 C 
+ENDBRANCH  16  20
+BRANCH  17  22
+ATOM     22  O16 TOP A 201       9.803  -6.700  15.792  0.00  0.00    -0.465 OA
+ATOM     23  C17 TOP A 201       8.477  -6.836  15.262  0.00  0.00    +0.253 C 
+ENDBRANCH  17  22
+BRANCH  18  24
+ATOM     24  O19 TOP A 201      10.122  -4.083  15.742  0.00  0.00    -0.468 OA
+ATOM     25  C20 TOP A 201       9.453  -2.833  15.627  0.00  0.00    +0.253 C 
+ENDBRANCH  18  24
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:    -7.789      4.256      7.045
+REMARK INTER + INTRA:         -10.499
+REMARK INTER:                 -10.041
+REMARK INTRA:                  -0.458
+REMARK UNBOUND:                -0.434
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/7NAE_lig_raw.pdb
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C8_8  and  C9_9
+REMARK    2  A    between atoms: C9_9  and  C10_10
+REMARK    3  A    between atoms: C12_12  and  O13_13
+REMARK    4  A    between atoms: O13_13  and  C14_14
+REMARK    5  A    between atoms: C15_15  and  O16_16
+REMARK    6  A    between atoms: O16_16  and  C17_17
+REMARK    7  A    between atoms: C18_18  and  O19_19
+REMARK    8  A    between atoms: O19_19  and  C20_20
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C9  TOP A 201      10.740  -5.181  19.588  0.00  0.00    +0.057 C 
+ENDROOT
+BRANCH   1   9
+ATOM      2  C1  TOP A 201      12.928  -3.938  20.116  0.00  0.00    +0.101 A 
+ATOM      3  N2  TOP A 201      13.661  -3.051  20.811  0.00  0.00    -0.210 NA
+ATOM      4  C3  TOP A 201      13.037  -2.402  21.827  0.00  0.00    +0.258 A 
+ATOM      5  N4  TOP A 201      13.748  -1.567  22.593  0.00  0.00    -0.086 N 
+ATOM      6  N5  TOP A 201      11.741  -2.552  22.142  0.00  0.00    -0.193 NA
+ATOM      7  C6  TOP A 201      11.025  -3.444  21.434  0.00  0.00    +0.170 A 
+ATOM      8  N7  TOP A 201       9.721  -3.543  21.741  0.00  0.00    -0.107 N 
+ATOM      9  C8  TOP A 201      11.580  -4.175  20.369  0.00  0.00    +0.036 A 
+ATOM     10  H   TOP A 201      14.703  -1.420  22.406  0.00  0.00    +0.000 HD
+ATOM     11  H   TOP A 201      13.316  -1.098  23.344  0.00  0.00    +0.000 HD
+ATOM     12  H   TOP A 201       9.351  -3.022  22.489  0.00  0.00    +0.000 HD
+ATOM     13  H   TOP A 201       9.135  -4.135  21.216  0.00  0.00    +0.000 HD
+ENDBRANCH   1   9
+BRANCH   1  14
+ATOM     14  C10 TOP A 201      10.202  -4.673  18.264  0.00  0.00    -0.011 A 
+ATOM     15  C11 TOP A 201      10.081  -3.312  17.969  0.00  0.00    +0.036 A 
+ATOM     16  C12 TOP A 201       9.534  -2.896  16.751  0.00  0.00    +0.175 A 
+ATOM     17  C15 TOP A 201       9.086  -3.844  15.814  0.00  0.00    +0.206 A 
+ATOM     18  C18 TOP A 201       9.238  -5.195  16.120  0.00  0.00    +0.175 A 
+ATOM     19  C21 TOP A 201       9.760  -5.602  17.334  0.00  0.00    +0.036 A 
+BRANCH  16  20
+ATOM     20  O13 TOP A 201       9.386  -1.589  16.363  0.00  0.00    -0.468 OA
+ATOM     21  C14 TOP A 201       8.787  -0.664  17.270  0.00  0.00    +0.253 C 
+ENDBRANCH  16  20
+BRANCH  17  22
+ATOM     22  O16 TOP A 201       8.529  -3.504  14.587  0.00  0.00    -0.465 OA
+ATOM     23  C17 TOP A 201       7.123  -3.225  14.536  0.00  0.00    +0.253 C 
+ENDBRANCH  17  22
+BRANCH  18  24
+ATOM     24  O19 TOP A 201       8.762  -6.061  15.188  0.00  0.00    -0.468 OA
+ATOM     25  C20 TOP A 201       9.353  -7.355  15.197  0.00  0.00    +0.253 C 
+ENDBRANCH  18  24
+ENDBRANCH   1  14
+TORSDOF 5
+ENDMDL

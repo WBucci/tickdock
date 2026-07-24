@@ -1,0 +1,102 @@
+{
+  "1": {
+    "authors": "Guo L, Fan XY, Qiao X, Montell C, Huang J",
+    "year": 2021,
+    "title": "An octopamine receptor confers selective toxicity of amitraz on honeybees and Varroa mites",
+    "venue": "eLife 10:e68268",
+    "doi": "10.7554/eLife.68268",
+    "pmid": "34263722",
+    "status": "verified",
+    "note": "Verified via PMC full text, PubMed, and CrossRef (all three agree). Confirms the candidate PMC8313232 identifier: the paper shows Octbeta2R is the sole in vivo target of amitraz and that three specific residues in the receptor's binding pocket account for the differential (honeybee-vs-Varroa-mite) sensitivity. Note the selectivity axis in the paper is honeybee-vs-mite (pollinator safety), not explicitly tick-vs-vertebrate, but the mechanism (small number of octopamine-receptor binding-site residues driving amitraz selectivity) matches the requested reference exactly. This is the correct paper for PMC8313232 -- description in the task brief was accurate."
+  },
+  "2": {
+    "authors": "Cole LM, Nicholson RA, Casida JE",
+    "year": 1993,
+    "title": "Action of phenylpyrazole insecticides at the GABA-gated chloride channel",
+    "venue": "Pesticide Biochemistry and Physiology 46(1):47-54",
+    "doi": "10.1006/pest.1993.1035",
+    "pmid": null,
+    "status": "verified",
+    "note": "DOI and full bibliographic details confirmed via CrossRef API (api.crossref.org/works/10.1006/PEST.1993.1035) and corroborating ScienceDirect/NPIC/ADS listings. This is the classic paper establishing that phenylpyrazoles (fipronil's chemical class) act at the insect GABA-gated chloride channel (RDL). No PMID: a PubMed search for this title/authors returned zero results -- Pesticide Biochemistry and Physiology from 1993 does not appear to be PubMed-indexed for this article. DOI-based citation is solid; do not fabricate a PMID."
+  },
+  "3": {
+    "authors": "Chen L, Durkin KA, Casida JE",
+    "year": 2006,
+    "title": "Structural model for gamma-aminobutyric acid receptor noncompetitive antagonist binding: widely diverse structures fit the same site",
+    "venue": "Proceedings of the National Academy of Sciences USA 103(13):5185-5190",
+    "doi": "10.1073/pnas.0600370103",
+    "pmid": "16537435",
+    "status": "verified",
+    "note": "Verified via PubMed and PNAS record. Confirms fipronil (and other noncompetitive antagonists) bind within the chloride-channel pore lined by the five M2 transmembrane segments, at a site formed by residues contributed by all five subunits (i.e., the pore-lining/inter-subunit interface of the pentamer) -- key residues identified near A2', T6', L9' of M2. The paper frames this as a single pore-lumen site rather than explicitly using the term 'inter-subunit'; that framing is my inference from the M2-pentamer geometry described, not a verbatim quote -- flag this nuance if precision on 'inter-subunit' phrasing matters for the manuscript."
+  },
+  "4": {
+    "authors": "Hibbs RE, Gouaux E",
+    "year": 2011,
+    "title": "Principles of activation and permeation in an anion-selective Cys-loop receptor",
+    "venue": "Nature 474(7349):54-60",
+    "doi": "10.1038/nature10139",
+    "pmid": "21572436",
+    "status": "verified",
+    "note": "Verified via PubMed. This is the Hibbs & Gouaux 2011 Nature paper requested -- crystal structure of the C. elegans glutamate-gated chloride channel (GluCl) in complex with ivermectin (PDB 3RHW/3RIF), glutamate, and picrotoxin. Ivermectin binds at the transmembrane-domain interface between adjacent subunits, distinct from the glutamate orthosteric site. Actual title differs slightly from the commonly paraphrased 'GluCl structure with ivermectin' description but is the same paper/PMID/DOI."
+  },
+  "5": {
+    "authors": "Tomizawa M, Casida JE",
+    "year": 2005,
+    "title": "Neonicotinoid insecticide toxicology: mechanisms of selective action",
+    "venue": "Annual Review of Pharmacology and Toxicology 45:247-268",
+    "doi": "10.1146/annurev.pharmtox.45.120403.095930",
+    "pmid": "15822177",
+    "status": "verified",
+    "note": "Verified via PubMed. Standard, highly cited review establishing neonicotinoids' selective action at insect vs. vertebrate nicotinic acetylcholine receptors (nAChR)."
+  },
+  "6": {
+    "authors": "Fukuto TR",
+    "year": 1990,
+    "title": "Mechanism of action of organophosphorus and carbamate insecticides",
+    "venue": "Environmental Health Perspectives 87:245-254",
+    "doi": "10.1289/ehp.9087245",
+    "pmid": "2176588",
+    "status": "verified",
+    "note": "Verified via PubMed. Standard reference for OP/carbamate inhibition of acetylcholinesterase (AChE)."
+  },
+  "7": {
+    "authors": "Panchenko AR, Kondrashov F, Bryant S",
+    "year": 2004,
+    "title": "Prediction of functional sites by analysis of sequence and structure conservation",
+    "venue": "Protein Science 13(4):884-892",
+    "doi": "10.1110/ps.03465504",
+    "pmid": "15010543",
+    "status": "verified",
+    "note": "Verified via PubMed. Abstract/method supports that well-conserved, spatially clustered residues (functional/binding sites) stand out against lower background sequence conservation, i.e. functional-site conservation exceeds whole-protein average. An alternative candidate, Bartlett GJ, Porter CT, Borkakoti N, Thornton JM (2002) 'Analysis of catalytic residues in enzyme active sites', J Mol Biol 324(1):105-121, doi:10.1016/s0022-2836(02)01036-7, PMID 12421562, was also verified (same rigor) but its abstract does not explicitly state the comparative conservation claim, only that catalytic residues were analyzed for conservation among other properties -- Panchenko et al. is the better direct fit and is listed as primary; Bartlett et al. 2002 is a solid secondary/alternative citation if a second reference is wanted."
+  },
+  "8": {
+    "authors": "Wilson CJ, Choy WY, Karttunen M",
+    "year": 2022,
+    "title": "AlphaFold2: A Role for Disordered Protein/Region Prediction?",
+    "venue": "International Journal of Molecular Sciences 23(9):4591",
+    "doi": "10.3390/ijms23094591",
+    "pmid": "35562983",
+    "status": "verified",
+    "note": "Verified via PubMed. Directly supports the claim: finds AlphaFold2's pLDDT confidence score is 'an excellent measure of residue-wise disorder' -- i.e. low pLDDT correlates with intrinsic disorder. This is the best direct match among the candidates offered; Akdel et al. 2022 Nat Struct Mol Biol and Ruff & Pappu 2021 J Mol Biol were not separately verified since Wilson/Choy/Karttunen already gives a clean, direct citation for this specific claim."
+  },
+  "9": {
+    "authors": "Chmelar J, Kotal J, Langhansova H, Kotsyfakis M",
+    "year": 2017,
+    "title": "Protease Inhibitors in Tick Saliva: The Role of Serpins and Cystatins in Tick-host-Pathogen Interaction",
+    "venue": "Frontiers in Cellular and Infection Microbiology 7:216",
+    "doi": "10.3389/fcimb.2017.00216",
+    "pmid": "28611951",
+    "status": "verified",
+    "note": "Verified via PMC full text and PubMed. Review confirms tick salivary cystatins (e.g. sialostatin L, sialostatin L2) act as tight-binding reversible protein-protein-interaction inhibitors of host cysteine proteases (cathepsins), immunomodulating via direct protein engagement rather than via a classical small-molecule-druggable active-site pocket."
+  },
+  "10": {
+    "authors": "Gassel M, Wolf C, Noack S, Williams H, Ilg T",
+    "year": 2014,
+    "title": "The novel isoxazoline ectoparasiticide fluralaner: selective inhibition of arthropod gamma-aminobutyric acid- and L-glutamate-gated chloride channels and insecticidal/acaricidal activity",
+    "venue": "Insect Biochemistry and Molecular Biology 45:111-124",
+    "doi": "10.1016/j.ibmb.2013.11.009",
+    "pmid": "24365472",
+    "status": "verified",
+    "note": "Verified via PubMed. Confirms fluralaner potently and selectively blocks arthropod GABA-gated and L-glutamate-gated chloride channels, more potent than picrotoxinin/dieldrin, with acaricidal activity against cattle ticks."
+  }
+}

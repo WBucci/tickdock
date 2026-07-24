@@ -1,0 +1,29 @@
+{
+  "name": "Q2Q443_CHEMBL8514",
+  "sequences": [
+    {
+      "protein": {
+        "id": [
+          "A"
+        ],
+        "sequence": "MVATLYSVPASTSCIFVRALARHIGFDLTVKQLDFTKNEHLAEDYLKLNPFHNVPTLDDGGFVVYESTTIAYYMLRKHAPECDLYPRSLELRTRVDQVLATVATTIQPKHFSFLRDTFCENLKPTEGNMAAYEEGVLKRLELLIGAGPFSLGDTLTLGDLFIVSNLAVALNTAADPVKFPTLVDYYERVKAALPYFEEICEPAIAFIKERWAQLK"
+      }
+    },
+    {
+      "ligand": {
+        "id": [
+          "B"
+        ],
+        "smiles": "CC(C)(C)[C@]1(O)CCN2C[C@H]3c4ccccc4CCc4cccc(c43)[C@@H]2C1"
+      }
+    }
+  ],
+  "_meta": {
+    "target_accession": "Q2Q443",
+    "target_name": "",
+    "ligand_chembl_id": "CHEMBL8514",
+    "smiles": "CC(C)(C)[C@]1(O)CCN2C[C@H]3c4ccccc4CCc4cccc(c43)[C@@H]2C1",
+    "source": "TickDock pipeline \u2014 top Vina hit validation",
+    "note": "Submit at https://alphafoldserver.com \u2014 paste 'sequence' into protein chain field, 'smiles' into small molecule field. The _meta block is for local reference only, not used by AF3 server."
+  }
+}

@@ -1,0 +1,25 @@
+GPI Proteome Scan — I. scapularis
+===================================
+
+The UniProt keyword search (KW-0336, 'GPI-anchored membrane protein')
+identified 13 experimentally annotated GPI-anchored
+proteins in I. scapularis (taxon 6945). A computational heuristic scan of
+the reviewed proteome using the C-terminal hydrophobic signal motif (Eisenhaber
+et al. 1998) predicted an additional 3 candidates.
+Based on the conserved ~1–3% prevalence of GPI-anchored proteins in arthropod
+proteomes, an estimated 200–600 I. scapularis proteins
+are predicted to carry GPI anchors and would be affected by PGAP5/Cdc1 inhibition.
+
+Biological significance: PGAP5/Cdc1 performs the final remodeling step of all
+GPI anchors before surface display. Inhibition would broadly disrupt surface
+protein expression, including adhesion proteins, immune evasion factors, and
+complement regulators critical for successful tick feeding. The Bm86 antigen —
+the antigen in the only commercially licensed tick vaccine — is GPI-anchored,
+demonstrating that GPI-anchored surface proteins are validated immunological
+and pharmacological targets in tick biology.
+
+Paper-ready sentence:
+"Inhibition of PGAP5/Cdc1 (B7P5E9) would potentially disrupt GPI-anchor
+remodeling for an estimated 200–600 surface proteins
+in I. scapularis, including adhesion, immune evasion, and complement-resistance
+factors critical for tick feeding competence."

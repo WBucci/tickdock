@@ -1,0 +1,13 @@
+{
+ "n": 180,
+ "absent_mean_plddt": 61.98883333333333,
+ "present_mean_plddt": 75.95494444444445,
+ "gap": 13.966111111111118,
+ "perm_p": 0.0,
+ "absent_pct_wellfolded": 37.22222222222222,
+ "present_pct_wellfolded": 71.66666666666667,
+ "absent_mean_disorder": 0.5921777777777778,
+ "present_mean_disorder": 0.31301666666666667,
+ "afdb_cov_absent": 0.8181818181818181,
+ "afdb_cov_present": 0.9090909090909091
+}

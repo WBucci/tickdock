@@ -1,0 +1,156 @@
+{
+  "1a": {
+    "tool": "AutoDock Vina (original)",
+    "authors": "Trott O, Olson AJ",
+    "year": 2010,
+    "title": "AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading",
+    "venue": "Journal of Computational Chemistry, 31(2):455-461",
+    "doi": "10.1002/jcc.21334",
+    "pmid": "19499576",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary). Matches config.py SOFTWARE_CITATIONS expectation for original Vina."
+  },
+  "1b": {
+    "tool": "AutoDock Vina 1.2.0",
+    "authors": "Eberhardt J, Santos-Martins D, Tillack AF, Forli S",
+    "year": 2021,
+    "title": "AutoDock Vina 1.2.0: New Docking Methods, Expanded Force Field, and Python Bindings",
+    "venue": "Journal of Chemical Information and Modeling, 61(8):3891-3898",
+    "doi": "10.1021/acs.jcim.1c00203",
+    "pmid": "34278794",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary). Epub 2021-07-19, issue date 2021-08-23. Cite alongside 1a for the pipeline's actual Vina 1.2.5 binary lineage."
+  },
+  "2": {
+    "tool": "fpocket",
+    "authors": "Le Guilloux V, Schmidtke P, Tuffery P",
+    "year": 2009,
+    "title": "Fpocket: an open source platform for ligand pocket detection",
+    "venue": "BMC Bioinformatics, 10:168",
+    "doi": "10.1186/1471-2105-10-168",
+    "pmid": "19486540",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary), published 2009-06-02. A related fpocket web-server companion paper also exists (Schmidtke P, Le Guilloux V, Maupetit J, Tuffery P. 'fpocket: online tools for protein ensemble pocket detection and tracking', Nucleic Acids Res. 2010;38(Web Server issue):W582-9, doi:10.1093/nar/gkq383, PMID 20478829) — not requested by the task but noted for completeness since PIPELINE.md/CLAUDE.md only names the original 2009 tool paper."
+  },
+  "3": {
+    "tool": "AlphaFold",
+    "authors": "Jumper J, Evans R, Pritzel A, Green T, Figurnov M, Ronneberger O, Tunyasuvunakool K, Bates R, Zidek A, Potapenko A, et al. (Hassabis D, last author)",
+    "year": 2021,
+    "title": "Highly accurate protein structure prediction with AlphaFold",
+    "venue": "Nature, 596(7873):583-589",
+    "doi": "10.1038/s41586-021-03819-2",
+    "pmid": "34265844",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary), published August 2021."
+  },
+  "4a": {
+    "tool": "AlphaFold Protein Structure Database (2022 launch paper)",
+    "authors": "Varadi M, Anyango S, Deshpande M, Nair S, Natassia C, Yordanova G, Yuan D, Stroe O, Wood G, Laydon A, et al. (Velankar S, last author)",
+    "year": 2022,
+    "title": "AlphaFold Protein Structure Database: massively expanding the structural coverage of protein-sequence space with high-accuracy models",
+    "venue": "Nucleic Acids Research, 50(D1):D439-D444",
+    "doi": "10.1093/nar/gkab1061",
+    "pmid": "34791371",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary/esearch). This is the original database-launch paper."
+  },
+  "4b": {
+    "tool": "AlphaFold Protein Structure Database (2024 update)",
+    "authors": "Varadi M, Bertoni D, Magana P, Paramval U, Pidruchna I, Radhakrishnan M, Tsenkov M, Nair S, Mirdita M, Yeo J, et al. (Velankar S, last author)",
+    "year": 2024,
+    "title": "AlphaFold Protein Structure Database in 2024: providing structure coverage for over 214 million protein sequences",
+    "venue": "Nucleic Acids Research, 52(D1):D368-D375",
+    "doi": "10.1093/nar/gkad1011",
+    "pmid": "37933859",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary/esearch). This is the 2024 update paper for the same database as 4a; cite both if describing the resource across its history, or 4b alone if only citing current-state usage."
+  },
+  "5a": {
+    "tool": "BLAST (original)",
+    "authors": "Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ",
+    "year": 1990,
+    "title": "Basic local alignment search tool",
+    "venue": "Journal of Molecular Biology, 215(3):403-410",
+    "doi": "10.1016/S0022-2836(05)80360-2",
+    "pmid": "2231712",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary)."
+  },
+  "5b": {
+    "tool": "Gapped BLAST / PSI-BLAST",
+    "authors": "Altschul SF, Madden TL, Schaffer AA, Zhang J, Zhang Z, Miller W, Lipman DJ",
+    "year": 1997,
+    "title": "Gapped BLAST and PSI-BLAST: a new generation of protein database search programs",
+    "venue": "Nucleic Acids Research, 25(17):3389-3402",
+    "doi": "10.1093/nar/25.17.3389",
+    "pmid": "9254694",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary). Cite alongside 5a if the pipeline's BLAST usage relies on gapped alignment (NCBI BLAST+ / blastp default does)."
+  },
+  "6": {
+    "tool": "Needleman-Wunsch algorithm",
+    "authors": "Needleman SB, Wunsch CD",
+    "year": 1970,
+    "title": "A general method applicable to the search for similarities in the amino acid sequence of two proteins",
+    "venue": "Journal of Molecular Biology, 48(3):443-453",
+    "doi": "10.1016/0022-2836(70)90057-4",
+    "pmid": "5420325",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary)."
+  },
+  "7": {
+    "tool": "BLOSUM62",
+    "authors": "Henikoff S, Henikoff JG",
+    "year": 1992,
+    "title": "Amino acid substitution matrices from protein blocks",
+    "venue": "Proceedings of the National Academy of Sciences of the United States of America, 89(22):10915-10919",
+    "doi": "10.1073/pnas.89.22.10915",
+    "pmid": "1438297",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary)."
+  },
+  "8": {
+    "tool": "Biopython",
+    "authors": "Cock PJ, Antao T, Chang JT, Chapman BA, Cox CJ, Dalke A, Friedberg I, Hamelryck T, Kauff F, Wilczynski B, de Hoon MJ",
+    "year": 2009,
+    "title": "Biopython: freely available Python tools for computational molecular biology and bioinformatics",
+    "venue": "Bioinformatics, 25(11):1422-1423",
+    "doi": "10.1093/bioinformatics/btp163",
+    "pmid": "19304878",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary)."
+  },
+  "9": {
+    "tool": "RDKit",
+    "authors": "Landrum G, et al. (RDKit contributors)",
+    "year": "rolling / cite version used",
+    "title": "RDKit: Open-source cheminformatics",
+    "venue": "Software; https://www.rdkit.org",
+    "doi": "10.5281/zenodo.591637",
+    "pmid": null,
+    "status": "verified",
+    "note": "No peer-reviewed paper exists for RDKit. Verified accepted citation form directly from rdkit.org/docs/Overview.html: 'RDKit: Open-source cheminformatics. https://www.rdkit.org', plus a Zenodo DOI for the specific release used. 10.5281/zenodo.591637 is the RDKit 'concept DOI' (always resolves to the latest archived release on Zenodo); confirmed live on Zenodo (creator Greg Landrum). For full reproducibility, cite the version-specific Zenodo DOI matching the exact RDKit release used by the pipeline rather than the concept DOI alone."
+  },
+  "10": {
+    "tool": "Meeko / AutoDock ligand & receptor preparation",
+    "authors": "Santos-Martins D, He Y, Eberhardt J, Sharma P, Bruciaferri N, Holcomb M, Llanos MA, Hansel-Harris A, Barkdull AP, Tillack AF, Bianco G, Paulsen ML, Mato J, Taneja I, Forli S",
+    "year": 2025,
+    "title": "Meeko: Molecule Parametrization and Software Interoperability for Docking and Beyond",
+    "venue": "Journal of Chemical Information and Modeling, 65:13045-13050",
+    "doi": "10.1021/acs.jcim.5c02271",
+    "pmid": null,
+    "status": "verified",
+    "note": "A dedicated Meeko paper now exists (verified via CrossRef api.crossref.org bibliographic query; matched title/authors/venue/DOI). Not yet returned by a PubMed esearch as of this check (2026-07-23) — likely not yet indexed/PMID-assigned; DOI resolves via CrossRef/ACS. A preprint precursor also exists: ChemRxiv, DOI 10.26434/chemrxiv-2025-6b37n (posted 2025-09-16). If a peer-reviewed, PubMed-indexed citation is required and this one cannot yet be confirmed in PubMed, fall back to the general AutoDock-suite prep paper: Forli S, Huey R, Pique ME, Sanner MF, Goodsell DS, Olson AJ. 'Computational protein-ligand docking and virtual drug screening with the AutoDock suite.' Nature Protocols 2016;11(5):905-919. doi:10.1038/nprot.2016.051, PMID 27077332 (verified via PubMed eutils esummary) — this is the paper the Meeko GitHub repo/docs historically pointed to before the dedicated 2025 Meeko paper was published."
+  },
+  "11": {
+    "tool": "ChEMBL",
+    "authors": "Zdrazil B, Felix E, Hunter F, Manners EJ, Blackshaw J, Corbett S, de Veij M, Ioannidis H, Lopez DM, Mosquera JF, Magarinos MP, Bosc N, Arcila R, Kizilören T, Gaulton A, Bento AP, Adasme MF, Monecke P, Landrum GA, Leach AR",
+    "year": 2024,
+    "title": "The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods",
+    "venue": "Nucleic Acids Research, 52(D1):D1180-D1192",
+    "doi": "10.1093/nar/gkad1004",
+    "pmid": "37933841",
+    "status": "verified",
+    "note": "Verified via PubMed (eutils esummary). Journal issue date is Jan 2024 (NAR Database Issue) though the title refers to '2023' (data snapshot year) — this is the most recent ChEMBL database paper and the one to cite for current usage. Prior version also verified: Mendez D, Gaulton A, Bento AP, et al. 'ChEMBL: towards direct deposition of bioassay data.' Nucleic Acids Res. 2019;47(D1):D930-D940. doi:10.1093/nar/gky1075, PMID 30398643 (verified via PubMed eutils esummary)."
+  }
+}

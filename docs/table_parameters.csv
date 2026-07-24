@@ -1,0 +1,50 @@
+Step,Parameter,Value,Description
+01_fetch_proteome,species,dermacentor_variabilis,UniProt taxon 34621
+01_fetch_proteome,reviewed_only,False,Swiss-Prot only if True
+01_fetch_proteome,uniprot_fields,"accession,id,protein_name,gene_names,organism_name,sequence,cc_function,ft_binding,xref_pdb,xref_chembl,cc_subcellular_location,ft_site,cc_catalytic_activity,keyword",Fields requested from API
+02_novelty_filter,species,amblyomma_americanum,
+02_novelty_filter,min_plddt,70,AlphaFold confidence threshold
+02_novelty_filter,min_druggability,0.5,
+02_novelty_filter,min_pocket_volume,300,Angstroms^3
+02_novelty_filter,max_human_homology,0.4,BLAST identity fraction
+02_novelty_filter,include_pdb_structures,True,Proteins with experimental PDB structures retained; experimental structures preferred over AlphaFold for docking quality
+02_novelty_filter,scoring_rubric,"{'no_structure': 2, 'has_pdb_structure': 2, 'no_ligands': 3, 'unknown_function': 2, 'alphafold_ok': 1, 'good_length': 1, 'interesting_class': 1, 'membrane': 2, 'essential_keyword': 2}",Points assigned per novelty criterion
+03_to_07_structure_docking,min_plddt_mean,70,Mean pLDDT threshold
+03_to_07_structure_docking,min_plddt_per_res,70,Per-residue pLDDT threshold
+03_to_07_structure_docking,min_high_conf_frac,0.5,Min fraction of residues above pLDDT threshold
+03_to_07_structure_docking,min_druggability_score,0.5,fpocket/DoGSiteScorer threshold (0-1)
+03_to_07_structure_docking,min_pocket_volume,300,Angstroms^3
+03_to_07_structure_docking,allosteric_flagging,True,Secondary pockets flagged as allosteric candidates
+03_to_07_structure_docking,fpocket_available,True,
+03_to_07_structure_docking,dogsite_available,True,
+03_to_07_structure_docking,max_human_homology,0.4,BLAST identity threshold for mammalian toxicity flag
+03_to_07_structure_docking,blast_database,refseq_protein + Homo sapiens filter,
+03_to_07_structure_docking,rnai_search_terms,RNAi OR silenc* OR knockdown AND tick AND lethal,
+03_to_07_structure_docking,blast_enabled,True,
+03_to_07_structure_docking,vina_exhaustiveness,8,
+03_to_07_structure_docking,vina_num_modes,9,
+03_to_07_structure_docking,vina_box_size,20,Angstroms
+03_to_07_structure_docking,vina_energy_range,3,kcal/mol
+03_to_07_structure_docking,vina_hit_threshold,-7.0,kcal/mol
+03_to_07_structure_docking,lipinski_max_mw,500,
+03_to_07_structure_docking,lipinski_max_logp,5.0,
+inject_pdb_ixodes_scapularis,min_plddt_mean,70,Mean pLDDT threshold (AlphaFold only)
+inject_pdb_ixodes_scapularis,min_plddt_per_res,70,Per-residue pLDDT threshold (AlphaFold only)
+inject_pdb_ixodes_scapularis,min_high_conf_frac,0.5,Min fraction of residues above pLDDT threshold (AlphaFold only)
+inject_pdb_ixodes_scapularis,rcsb_preferred,True,Experimental PDB structures fetched from RCSB when has_structure=True; pLDDT quality filter skipped — experimental structures always suitable for docking
+inject_pdb_ixodes_scapularis,min_druggability_score,0.5,fpocket/DoGSiteScorer threshold (0-1)
+inject_pdb_ixodes_scapularis,min_pocket_volume,300,Angstroms^3
+inject_pdb_ixodes_scapularis,allosteric_flagging,True,Secondary pockets flagged as allosteric candidates
+inject_pdb_ixodes_scapularis,fpocket_available,True,
+inject_pdb_ixodes_scapularis,dogsite_available,False,
+inject_pdb_ixodes_scapularis,max_human_homology,0.4,BLAST identity threshold for mammalian toxicity flag
+inject_pdb_ixodes_scapularis,blast_database,refseq_protein + Homo sapiens filter,
+inject_pdb_ixodes_scapularis,rnai_search_terms,RNAi OR silenc* OR knockdown AND tick AND lethal,
+inject_pdb_ixodes_scapularis,blast_enabled,True,
+inject_pdb_ixodes_scapularis,vina_exhaustiveness,8,
+inject_pdb_ixodes_scapularis,vina_num_modes,9,
+inject_pdb_ixodes_scapularis,vina_box_size,20,Angstroms
+inject_pdb_ixodes_scapularis,vina_energy_range,3,kcal/mol
+inject_pdb_ixodes_scapularis,vina_hit_threshold,-7.0,kcal/mol
+inject_pdb_ixodes_scapularis,lipinski_max_mw,500,
+inject_pdb_ixodes_scapularis,lipinski_max_logp,5.0,

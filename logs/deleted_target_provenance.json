@@ -1,0 +1,259 @@
+{
+ "A0A649X9W4": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL:QGL10203"
+  ],
+  "refseq": [],
+  "upi": "UPI0012B4A0FB"
+ },
+ "A0A2U4Y449": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL:ADJ83803"
+  ],
+  "refseq": [],
+  "upi": "UPI0001DC2585"
+ },
+ "B7P2S1": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_CON:EEC00893"
+  ],
+  "refseq": [],
+  "upi": "UPI00018E8FF9"
+ },
+ "B7QBP7": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_CON:EEC16269"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EC463"
+ },
+ "B7P9U9": {
+  "replacement": null,
+  "ensembl": [
+   "ISCI003147-PA"
+  ],
+  "embl": [
+   "EMBL_CON:EEC03371"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EA1DC"
+ },
+ "B7PX94": {
+  "replacement": null,
+  "ensembl": [
+   "ISCI008774-PA"
+  ],
+  "embl": [
+   "EMBL_CON:EEC11216"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EACEF"
+ },
+ "B7PVD7": {
+  "replacement": "A0ACM8DIW8",
+  "ensembl": [
+   "XP_002407853.1",
+   "ISCI007889-PA"
+  ],
+  "embl": [
+   "EMBL_CON:EEC10559",
+   "EMBL_TSA:MDC7211106",
+   "EMBL:CAN7980329",
+   "EMBL_CON:KAM7314632"
+  ],
+  "refseq": [
+   "XP_002407853"
+  ],
+  "upi": "UPI00018EACB7"
+ },
+ "A0A4D5RMG2": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_TSA:MOY38383"
+  ],
+  "refseq": [],
+  "upi": "UPI0010C6B97C"
+ },
+ "B7PY20": {
+  "replacement": "A0A131XWD3",
+  "ensembl": [
+   "ISCI008693-PA"
+  ],
+  "embl": [
+   "EMBL_TSA:JAP70360",
+   "EMBL_CON:EEC11492",
+   "EMBL_TSA:MDC7210012"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EA87D"
+ },
+ "B7QAF3": {
+  "replacement": null,
+  "ensembl": [
+   "ISCI013205-PA"
+  ],
+  "embl": [
+   "EMBL_CON:EEC15825"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EA9A7"
+ },
+ "B7P6A8": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_CON:EEC02130"
+  ],
+  "refseq": [],
+  "upi": "UPI00018E8D4C"
+ },
+ "B7Q1X5": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_CON:EEC12847"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EC7BD"
+ },
+ "A0A4D5RNM5": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_TSA:MOY38464"
+  ],
+  "refseq": [],
+  "upi": "UPI0010C6CFCF"
+ },
+ "B7PMS2": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_CON:EEC07894"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EC276"
+ },
+ "B7QNX4": {
+  "replacement": null,
+  "ensembl": [
+   "ISCI023999-PA"
+  ],
+  "embl": [
+   "EMBL_CON:EEC20546"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EC11B"
+ },
+ "A0A4D5RYT8": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_TSA:MOY42500"
+  ],
+  "refseq": [],
+  "upi": "UPI0010C71910"
+ },
+ "A0A4D5S2A5": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_TSA:MOY43489"
+  ],
+  "refseq": [],
+  "upi": "UPI0010C66C51"
+ },
+ "A0A4D5RGQ5": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_TSA:MOY36322"
+  ],
+  "refseq": [],
+  "upi": "UPI0010C68C42"
+ },
+ "B7QJZ7": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_CON:EEC19169"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EC04A"
+ },
+ "A0A4D5RMV5": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_TSA:MOY38031"
+  ],
+  "refseq": [],
+  "upi": "UPI0010C6760C"
+ },
+ "A0A4D5RNJ0": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_TSA:MOY38773"
+  ],
+  "refseq": [],
+  "upi": "UPI0010C646CB"
+ },
+ "A0A4D5S7D6": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_TSA:MOY43767"
+  ],
+  "refseq": [],
+  "upi": "UPI0010C70818"
+ },
+ "B7P5E9": {
+  "replacement": null,
+  "ensembl": [
+   "ISCI016458-PA"
+  ],
+  "embl": [
+   "EMBL_CON:EEC01821"
+  ],
+  "refseq": [],
+  "upi": "UPI00018E94F9"
+ },
+ "B7Q255": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_CON:EEC12927"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EDA54"
+ },
+ "B7PIZ2": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_CON:EEC06564"
+  ],
+  "refseq": [],
+  "upi": "UPI00018EABCF"
+ },
+ "A0A4D5RDE4": {
+  "replacement": null,
+  "ensembl": [],
+  "embl": [
+   "EMBL_TSA:MOY34427",
+   "EMBL_TSA:MDC7211938"
+  ],
+  "refseq": [],
+  "upi": "UPI0010C7358F"
+ }
+}

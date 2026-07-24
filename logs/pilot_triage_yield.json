@@ -1,0 +1,14 @@
+{
+ "n_sample": 2000,
+ "apis_hit": 1511,
+ "bee_absent": 570,
+ "templated": 707,
+ "both": 28,
+ "projected_dockable": 315,
+ "meta": {
+  "n_proteome": 33337,
+  "n_eligible": 22522,
+  "n_sample": 2000,
+  "seed": 20260723
+ }
+}

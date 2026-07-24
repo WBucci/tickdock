@@ -1,0 +1,26 @@
+ligand	target	gene	score	flag	sel_risk	hERG	AMES	Hepatotox	Lipinski	Veber	Egan	MW	logP	TPSA	human_identity	smiles
+CHEMBL9718	B7PY20		-13.1	WARN(Brenk)	False	Low risk	Low risk	Low risk	Pass	Pass	Pass	442.17	3.46	87.2	0.296	C(#Cc1ncnc2c1ncn2Cc1ccccc1)c1ncnc2c1ncn2Cc1ccccc1
+CHEMBL327329	Q6XR73	Carboxylic ester hydrolase	-12.9	FLAG(hERG)	False	Flag	Low risk	Low risk	Fail	Pass	Pass	606.25	5.7	64.7	0.449	CN1CC[C@@H](c2ccc(Cl)cc2)[C@H](C(=O)NCc2ccc(CNC(=O)[C@@H]3CN(C)CC[C@H]3c3ccc(Cl)cc3)cc2)C1
+CHEMBL90380	A0A4D5RMV5		-12.3	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Pass	521.24	4.86	94.6	0.441	O=C(CCCOc1ccc2[nH]c3nc(O)nc-3cc2c1)N1CCN(C(c2ccccc2)c2ccccc2)CC1
+CHEMBL88875	B7SP64		-12.3	CLEAN	False	Low risk	Low risk	Low risk	Pass	Pass	Pass	497.24	3.84	111.2	0.259	CC1(C)OC[C@@]2(C)C3C[C@H](O)[C@@]4(C)Oc5cc(-c6cccnc6)oc(=O)c5[C@H](O)C4[C@@]3(C)CC[C@@H]2O1
+CHEMBL329588	Q2Q443		-12.2	CLEAN	False	Low risk	Low risk	Low risk	Fail	Pass	Pass	587.25	5.37	117.3	0.284	CC(=O)O[C@H]1CC2[C@](C)(CC[C@@H]3OC(c4ccccc4)OC[C@@]23C)C2[C@@H](O)c3c(cc(-c4cccnc4)oc3=O)O[C@@]21C
+CHEMBL91117	A0AAQ4FH64	Flavin-containing monooxygenase	-12.0	WARN(hERG?)	False	Possible	Low risk	Low risk	Pass	Pass	Pass	490.19	1.83	114.2	0.384	CCC1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3cc(OC(=O)N4CCN(C)CC4)ccc3nc2-1
+CHEMBL93007	B7SP56		-11.8	WARN(Brenk)	False	Low risk	Low risk	Low risk	Pass	Pass	Pass	282.07	3.9	34.1	0.259	O=c1ccc2c3ccc(=O)c4cccc(c5cccc1c52)c43
+CHEMBL329884	A0AAQ4E1Y4	Ion transport domain-containing protein	-11.5	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Pass	387.18	3.03	49.8	0.47	CN1CCC23c4c5ccc(O)c4O[C@H]2C(=O)C2(Cc4ccccc4C2)CC3C1C5
+CHEMBL327847	A0AAQ4DEL6	non-specific serine/threonine protein kinase	-11.3	WARN(hERG?)	False	Possible	Low risk	Low risk	Pass	Pass	Pass	297.13	5.14	12.0	0.425	CC1=CC(C)(C)Nc2cc3c(cc21)-c1c(F)ccc(F)c1C3
+CHEMBL89719	B2ZHX0		-11.2	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Pass	301.18	4.95	3.2	0.284	C[C@H]1c2ccccc2C=C(C2=CCN(C)CC2)c2ccccc21
+CHEMBL316212	Q06EX9		-11.2	CLEAN	False	Low risk	Low risk	Low risk	Pass	Pass	Pass	355.16	5.82	43.1	0.388	CC(C)(C)c1ccc(-c2nc3ccc(-c4ccccc4)cc3c(=O)o2)cc1
+CHEMBL433412	Q8T9S4	Tetraspanin	-11.1	FLAG(Hepatotox)	False	Low risk	Low risk	Flag	Pass	Pass	Pass	334.08	2.71	65.1	0.343	O=C1C=CC2(Oc3cccc4cccc(c34)O2)C23OC12CCCC3=O
+CHEMBL93944	A0AAQ4DD00	E3 ubiquitin-protein ligase MARCHF6	-10.8	CLEAN	False	Low risk	Low risk	Low risk	Pass	Pass	Pass	461.26	5.87	67.8	0.591	COc1ccc2cc(C(C)C(=O)NCCC3(C)CCc4c(C)c(O)c(C)c(C)c4O3)ccc2c1
+CHEMBL88494	A0AAQ4E147	SUMO-activating enzyme subunit	-10.8	FLAG(Hepatotox)	False	Possible	Low risk	Flag	Pass	Pass	Pass	448.31	5.84	58.2	0.549	CC(C)(C)c1ccccc1NC(=O)[C@H]1CCC2C3CNC4=CC(=O)CC[C@]4(C)C3CC[C@@]21C
+CHEMBL91503	A0AAQ4E5F2	NAD(P)H oxidase (H2O2-forming)	-10.8	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Pass	527.21	4.33	94.6	0.45	O=C(CCCOc1ccc2[nH]c3nc(O)nc-3cc2c1)N1CCN(CCc2ccccc2C(F)(F)F)CC1
+CHEMBL8514	A0AAQ4DPM5	Histone deacetylase 8	-10.7	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Pass	361.24	4.84	23.5	0.509	CC(C)(C)[C@]1(O)CCN2C[C@H]3c4ccccc4CCc4cccc(c43)[C@@H]2C1
+CHEMBL316141	B7P2S1		-10.7	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Pass	556.22	3.79	127.1	0.308	COc1ccc(-n2nnnc2C(F)(F)F)cc1[C@H]1COC2(CCCN(Cc3n[nH]c(O)n3)C2c2ccccc2)C1
+CHEMBL10251	B7PJS6	B7PJS6	-10.7	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Pass	499.18	4.64	124.0	0.5648599999999999	O=P(O)(O)C(Cc1cccc2ccccc12)N[C@@H](Cc1ccc(-c2ccccc2)cc1)c1nnn[nH]1
+CHEMBL329389	Q86G71		-10.7	CLEAN	False	Low risk	Low risk	Low risk	Fail	Pass	Pass	575.05	5.47	99.5	0.333	N#Cc1c(NC(=O)c2cc(S(=O)(=O)N3CCOCC3)c(Cl)cc2Cl)sc2c1CCC(c1ccccc1)C2
+CHEMBL93944	A0AAQ4E0T1	Phospholipid-transporting ATPase	-10.6	CLEAN	False	Low risk	Low risk	Low risk	Pass	Pass	Pass	461.26	5.87	67.8	0.592	COc1ccc2cc(C(C)C(=O)NCCC3(C)CCc4c(C)c(O)c(C)c(C)c4O3)ccc2c1
+CHEMBL93857	B7Q255	Homeodomain transcription factor	-10.6	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Pass	421.23	4.7	64.7	0.518	C[C@H](Nc1nccc(-c2c(-c3ccc(F)cc3)c(=O)n3n2CCC3)n1)C1CCCCC1
+CHEMBL91727	A0AAQ4D9T1	Hormone-sensitive lipase	-10.3	FLAG(Hepatotox)	False	Low risk	Low risk	Flag	Pass	Pass	Pass	436.13	5.8	54.0	0.327	COc1ccc(COc2cccc3c2C(=O)C=CC32Oc3cccc4cccc(c34)O2)cc1
+CHEMBL93123	B7SP48		-10.3	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Fail	439.23	5.92	58.4	0.326	O=C(Nc1ccc2c(CCC3CCN(Cc4ccccc4)CC3)noc2c1)c1ccccc1
+CHEMBL327483	C6G1Y6	Aminopeptidase N	-10.3	CLEAN	False	Low risk	Low risk	Low risk	Pass	Pass	Pass	539.25	4.41	117.3	0.362	CC(=O)O[C@H]1CC2[C@](C)(CC[C@@H]3OC(C)(C)OC[C@@]23C)C2[C@@H](O)c3c(cc(-c4cccnc4)oc3=O)O[C@@]21C
+CHEMBL267869	A0AAQ4DQA6	Integrin beta	-10.2	FLAG(hERG)	False	Flag	Low risk	Low risk	Pass	Pass	Pass	379.11	3.8	117.8	0.445	N#Cc1ccc(Nc2cc3c(cc2Nc2ccc(C#N)cc2)C(=O)NC3=O)cc1

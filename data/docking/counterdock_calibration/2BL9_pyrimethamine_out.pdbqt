@@ -1,0 +1,414 @@
+MODEL 1
+REMARK VINA RESULT:    -7.613      0.000      0.000
+REMARK INTER + INTRA:          -9.247
+REMARK INTER:                  -8.725
+REMARK INTRA:                  -0.521
+REMARK UNBOUND:                -0.521
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/2BL9_lig_raw.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  N13_13
+REMARK    2  A    between atoms: C4_4  and  C7_7
+REMARK    3  A    between atoms: C5_5  and  C15_15
+REMARK    4  A    between atoms: C15_15  and  C16_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  CP6 A1240      88.687  12.661  31.000  0.00  0.00    -0.193 NA
+ATOM      2  C2  CP6 A1240      89.595  13.629  30.612  0.00  0.00    +0.258 A 
+ATOM      3  C3  CP6 A1240      88.611  12.298  32.371  0.00  0.00    +0.174 A 
+ATOM      4  C4  CP6 A1240      89.488  12.912  33.407  0.00  0.00    +0.049 A 
+ATOM      5  C5  CP6 A1240      90.408  13.960  32.837  0.00  0.00    +0.065 A 
+ATOM      6  N6  CP6 A1240      90.438  14.284  31.505  0.00  0.00    -0.215 NA
+ATOM      7  N14 CP6 A1240      89.687  13.972  29.257  0.00  0.00    -0.086 N 
+ATOM      8  H   CP6 A1240      89.107  13.530  28.597  0.00  0.00    +0.000 HD
+ATOM      9  H   CP6 A1240      90.333  14.656  28.965  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   4  10
+ATOM     10  C7  CP6 A1240      89.452  12.529  34.826  0.00  0.00    +0.004 A 
+ATOM     11  C8  CP6 A1240      88.453  13.082  35.753  0.00  0.00    +0.001 A 
+ATOM     12  C9  CP6 A1240      88.381  12.714  37.146  0.00  0.00    +0.011 A 
+ATOM     13  C10 CP6 A1240      89.286  11.798  37.660  0.00  0.00    +0.058 A 
+ATOM     14  C11 CP6 A1240      90.309  11.199  36.779  0.00  0.00    +0.011 A 
+ATOM     15  C12 CP6 A1240      90.361  11.580  35.390  0.00  0.00    +0.001 A 
+ATOM     16 CL1  CP6 A1240      89.289  11.338  39.244  0.00  0.00    -0.082 Cl
+ENDBRANCH   4  10
+BRANCH   3  17
+ATOM     17  N13 CP6 A1240      87.736  11.372  32.764  0.00  0.00    -0.107 N 
+ATOM     18  H   CP6 A1240      87.564  10.585  32.198  0.00  0.00    +0.000 HD
+ATOM     19  H   CP6 A1240      87.261  11.476  33.620  0.00  0.00    +0.000 HD
+ENDBRANCH   3  17
+BRANCH   5  20
+ATOM     20  C15 CP6 A1240      91.352  14.705  33.750  0.00  0.00    +0.046 C 
+ATOM     21  C16 CP6 A1240      90.748  15.900  34.474  0.00  0.00    +0.007 C 
+ENDBRANCH   5  20
+TORSDOF 3
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:    -6.999      4.071      6.266
+REMARK INTER + INTRA:          -8.543
+REMARK INTER:                  -8.145
+REMARK INTRA:                  -0.398
+REMARK UNBOUND:                -0.521
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/2BL9_lig_raw.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  N13_13
+REMARK    2  A    between atoms: C4_4  and  C7_7
+REMARK    3  A    between atoms: C5_5  and  C15_15
+REMARK    4  A    between atoms: C15_15  and  C16_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  CP6 A1240      91.395   7.676  35.921  0.00  0.00    -0.193 NA
+ATOM      2  C2  CP6 A1240      90.831   7.953  37.152  0.00  0.00    +0.258 A 
+ATOM      3  C3  CP6 A1240      91.266   8.628  34.874  0.00  0.00    +0.174 A 
+ATOM      4  C4  CP6 A1240      90.528   9.910  35.050  0.00  0.00    +0.049 A 
+ATOM      5  C5  CP6 A1240      89.988  10.077  36.448  0.00  0.00    +0.065 A 
+ATOM      6  N6  CP6 A1240      90.148   9.133  37.428  0.00  0.00    -0.215 NA
+ATOM      7  N14 CP6 A1240      90.938   7.005  38.178  0.00  0.00    -0.086 N 
+ATOM      8  H   CP6 A1240      91.414   6.158  38.019  0.00  0.00    +0.000 HD
+ATOM      9  H   CP6 A1240      90.536   7.185  39.059  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   4  10
+ATOM     10  C7  CP6 A1240      90.351  10.895  33.974  0.00  0.00    +0.004 A 
+ATOM     11  C8  CP6 A1240      89.092  11.005  33.223  0.00  0.00    +0.001 A 
+ATOM     12  C9  CP6 A1240      88.882  11.972  32.174  0.00  0.00    +0.011 A 
+ATOM     13  C10 CP6 A1240      89.900  12.850  31.836  0.00  0.00    +0.058 A 
+ATOM     14  C11 CP6 A1240      91.188  12.797  32.558  0.00  0.00    +0.011 A 
+ATOM     15  C12 CP6 A1240      91.375  11.823  33.606  0.00  0.00    +0.001 A 
+ATOM     16 CL1  CP6 A1240      89.752  13.971  30.635  0.00  0.00    -0.082 Cl
+ENDBRANCH   4  10
+BRANCH   3  17
+ATOM     17  N13 CP6 A1240      91.810   8.381  33.683  0.00  0.00    -0.107 N 
+ATOM     18  H   CP6 A1240      92.782   8.241  33.605  0.00  0.00    +0.000 HD
+ATOM     19  H   CP6 A1240      91.241   8.340  32.880  0.00  0.00    +0.000 HD
+ENDBRANCH   3  17
+BRANCH   5  20
+ATOM     20  C15 CP6 A1240      89.232  11.332  36.813  0.00  0.00    +0.046 C 
+ATOM     21  C16 CP6 A1240      88.053  11.130  37.755  0.00  0.00    +0.007 C 
+ENDBRANCH   5  20
+TORSDOF 3
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:    -6.944      4.232      6.573
+REMARK INTER + INTRA:          -8.480
+REMARK INTER:                  -7.917
+REMARK INTRA:                  -0.563
+REMARK UNBOUND:                -0.521
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/2BL9_lig_raw.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  N13_13
+REMARK    2  A    between atoms: C4_4  and  C7_7
+REMARK    3  A    between atoms: C5_5  and  C15_15
+REMARK    4  A    between atoms: C15_15  and  C16_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  CP6 A1240      90.677  10.459  38.223  0.00  0.00    -0.193 NA
+ATOM      2  C2  CP6 A1240      91.006   9.120  38.132  0.00  0.00    +0.258 A 
+ATOM      3  C3  CP6 A1240      90.448  11.195  37.029  0.00  0.00    +0.174 A 
+ATOM      4  C4  CP6 A1240      90.568  10.578  35.678  0.00  0.00    +0.049 A 
+ATOM      5  C5  CP6 A1240      90.914   9.112  35.743  0.00  0.00    +0.065 A 
+ATOM      6  N6  CP6 A1240      91.114   8.443  36.922  0.00  0.00    -0.215 NA
+ATOM      7  N14 CP6 A1240      91.254   8.399  39.308  0.00  0.00    -0.086 N 
+ATOM      8  H   CP6 A1240      91.187   8.845  40.182  0.00  0.00    +0.000 HD
+ATOM      9  H   CP6 A1240      91.495   7.446  39.259  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   4  10
+ATOM     10  C7  CP6 A1240      90.371  11.326  34.428  0.00  0.00    +0.004 A 
+ATOM     11  C8  CP6 A1240      91.477  12.030  33.764  0.00  0.00    +0.001 A 
+ATOM     12  C9  CP6 A1240      91.320  12.758  32.528  0.00  0.00    +0.011 A 
+ATOM     13  C10 CP6 A1240      90.075  12.812  31.919  0.00  0.00    +0.058 A 
+ATOM     14  C11 CP6 A1240      88.924  12.119  32.532  0.00  0.00    +0.011 A 
+ATOM     15  C12 CP6 A1240      89.106  11.395  33.766  0.00  0.00    +0.001 A 
+ATOM     16 CL1  CP6 A1240      89.802  13.639  30.518  0.00  0.00    -0.082 Cl
+ENDBRANCH   4  10
+BRANCH   3  17
+ATOM     17  N13 CP6 A1240      90.122  12.486  37.098  0.00  0.00    -0.107 N 
+ATOM     18  H   CP6 A1240      90.764  13.138  37.460  0.00  0.00    +0.000 HD
+ATOM     19  H   CP6 A1240      89.238  12.787  36.786  0.00  0.00    +0.000 HD
+ENDBRANCH   3  17
+BRANCH   5  20
+ATOM     20  C15 CP6 A1240      91.051   8.319  34.465  0.00  0.00    +0.046 C 
+ATOM     21  C16 CP6 A1240      89.811   7.542  34.047  0.00  0.00    +0.007 C 
+ENDBRANCH   5  20
+TORSDOF 3
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:    -6.746      3.715      5.818
+REMARK INTER + INTRA:          -8.253
+REMARK INTER:                  -7.880
+REMARK INTRA:                  -0.373
+REMARK UNBOUND:                -0.521
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/2BL9_lig_raw.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  N13_13
+REMARK    2  A    between atoms: C4_4  and  C7_7
+REMARK    3  A    between atoms: C5_5  and  C15_15
+REMARK    4  A    between atoms: C15_15  and  C16_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  CP6 A1240      90.464  10.231  36.946  0.00  0.00    -0.193 NA
+ATOM      2  C2  CP6 A1240      90.041  11.063  37.965  0.00  0.00    +0.258 A 
+ATOM      3  C3  CP6 A1240      90.360  10.679  35.601  0.00  0.00    +0.174 A 
+ATOM      4  C4  CP6 A1240      89.793  12.011  35.249  0.00  0.00    +0.049 A 
+ATOM      5  C5  CP6 A1240      89.395  12.809  36.464  0.00  0.00    +0.065 A 
+ATOM      6  N6  CP6 A1240      89.525  12.336  37.744  0.00  0.00    -0.215 NA
+ATOM      7  N14 CP6 A1240      90.122  10.613  39.289  0.00  0.00    -0.086 N 
+ATOM      8  H   CP6 A1240      90.482   9.718  39.484  0.00  0.00    +0.000 HD
+ATOM      9  H   CP6 A1240      89.819  11.192  40.026  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   4  10
+ATOM     10  C7  CP6 A1240      89.643  12.484  33.865  0.00  0.00    +0.004 A 
+ATOM     11  C8  CP6 A1240      90.597  13.426  33.261  0.00  0.00    +0.001 A 
+ATOM     12  C9  CP6 A1240      90.486  13.896  31.901  0.00  0.00    +0.011 A 
+ATOM     13  C10 CP6 A1240      89.439  13.455  31.106  0.00  0.00    +0.058 A 
+ATOM     14  C11 CP6 A1240      88.451  12.502  31.652  0.00  0.00    +0.011 A 
+ATOM     15  C12 CP6 A1240      88.583  12.044  33.013  0.00  0.00    +0.001 A 
+ATOM     16 CL1  CP6 A1240      89.225  13.958  29.551  0.00  0.00    -0.082 Cl
+ENDBRANCH   4  10
+BRANCH   3  17
+ATOM     17  N13 CP6 A1240      90.771   9.894  34.607  0.00  0.00    -0.107 N 
+ATOM     18  H   CP6 A1240      90.156   9.668  33.871  0.00  0.00    +0.000 HD
+ATOM     19  H   CP6 A1240      91.689   9.538  34.607  0.00  0.00    +0.000 HD
+ENDBRANCH   3  17
+BRANCH   5  20
+ATOM     20  C15 CP6 A1240      88.823  14.196  36.295  0.00  0.00    +0.046 C 
+ATOM     21  C16 CP6 A1240      87.856  14.638  37.384  0.00  0.00    +0.007 C 
+ENDBRANCH   5  20
+TORSDOF 3
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:    -6.636      3.508      5.191
+REMARK INTER + INTRA:          -8.127
+REMARK INTER:                  -7.699
+REMARK INTRA:                  -0.429
+REMARK UNBOUND:                -0.521
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/2BL9_lig_raw.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  N13_13
+REMARK    2  A    between atoms: C4_4  and  C7_7
+REMARK    3  A    between atoms: C5_5  and  C15_15
+REMARK    4  A    between atoms: C15_15  and  C16_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  CP6 A1240      89.989   9.646  37.383  0.00  0.00    -0.193 NA
+ATOM      2  C2  CP6 A1240      89.984   9.542  36.005  0.00  0.00    +0.258 A 
+ATOM      3  C3  CP6 A1240      89.765  10.917  37.980  0.00  0.00    +0.174 A 
+ATOM      4  C4  CP6 A1240      89.543  12.147  37.170  0.00  0.00    +0.049 A 
+ATOM      5  C5  CP6 A1240      89.548  11.872  35.688  0.00  0.00    +0.065 A 
+ATOM      6  N6  CP6 A1240      89.757  10.625  35.161  0.00  0.00    -0.215 NA
+ATOM      7  N14 CP6 A1240      90.227   8.295  35.415  0.00  0.00    -0.086 N 
+ATOM      8  H   CP6 A1240      90.392   7.507  35.981  0.00  0.00    +0.000 HD
+ATOM      9  H   CP6 A1240      90.232   8.206  34.435  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   4  10
+ATOM     10  C7  CP6 A1240      89.344  13.478  37.762  0.00  0.00    +0.004 A 
+ATOM     11  C8  CP6 A1240      90.461  14.249  38.330  0.00  0.00    +0.001 A 
+ATOM     12  C9  CP6 A1240      90.301  15.563  38.901  0.00  0.00    +0.011 A 
+ATOM     13  C10 CP6 A1240      89.045  16.150  38.932  0.00  0.00    +0.058 A 
+ATOM     14  C11 CP6 A1240      87.883  15.431  38.371  0.00  0.00    +0.011 A 
+ATOM     15  C12 CP6 A1240      88.066  14.118  37.802  0.00  0.00    +0.001 A 
+ATOM     16 CL1  CP6 A1240      88.769  17.638  39.587  0.00  0.00    -0.082 Cl
+ENDBRANCH   4  10
+BRANCH   3  17
+ATOM     17  N13 CP6 A1240      89.758  11.034  39.307  0.00  0.00    -0.107 N 
+ATOM     18  H   CP6 A1240      90.083  10.293  39.868  0.00  0.00    +0.000 HD
+ATOM     19  H   CP6 A1240      89.427  11.860  39.726  0.00  0.00    +0.000 HD
+ENDBRANCH   3  17
+BRANCH   5  20
+ATOM     20  C15 CP6 A1240      89.312  13.003  34.716  0.00  0.00    +0.046 C 
+ATOM     21  C16 CP6 A1240      90.540  13.839  34.382  0.00  0.00    +0.007 C 
+ENDBRANCH   5  20
+TORSDOF 3
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:    -6.626      4.191      5.490
+REMARK INTER + INTRA:          -8.116
+REMARK INTER:                  -7.575
+REMARK INTRA:                  -0.542
+REMARK UNBOUND:                -0.521
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/2BL9_lig_raw.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  N13_13
+REMARK    2  A    between atoms: C4_4  and  C7_7
+REMARK    3  A    between atoms: C5_5  and  C15_15
+REMARK    4  A    between atoms: C15_15  and  C16_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  CP6 A1240      91.318  10.594  32.525  0.00  0.00    -0.193 NA
+ATOM      2  C2  CP6 A1240      90.363  11.434  33.066  0.00  0.00    +0.258 A 
+ATOM      3  C3  CP6 A1240      91.687   9.420  33.237  0.00  0.00    +0.174 A 
+ATOM      4  C4  CP6 A1240      91.092   9.071  34.557  0.00  0.00    +0.049 A 
+ATOM      5  C5  CP6 A1240      90.056  10.069  35.006  0.00  0.00    +0.065 A 
+ATOM      6  N6  CP6 A1240      89.726  11.182  34.278  0.00  0.00    -0.215 NA
+ATOM      7  N14 CP6 A1240      90.014  12.602  32.377  0.00  0.00    -0.086 N 
+ATOM      8  H   CP6 A1240      90.444  12.813  31.517  0.00  0.00    +0.000 HD
+ATOM      9  H   CP6 A1240      89.340  13.214  32.752  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   4  10
+ATOM     10  C7  CP6 A1240      91.482   7.881  35.328  0.00  0.00    +0.004 A 
+ATOM     11  C8  CP6 A1240      92.468   7.953  36.417  0.00  0.00    +0.001 A 
+ATOM     12  C9  CP6 A1240      92.857   6.808  37.203  0.00  0.00    +0.011 A 
+ATOM     13  C10 CP6 A1240      92.293   5.570  36.939  0.00  0.00    +0.058 A 
+ATOM     14  C11 CP6 A1240      91.290   5.433  35.863  0.00  0.00    +0.011 A 
+ATOM     15  C12 CP6 A1240      90.913   6.591  35.091  0.00  0.00    +0.001 A 
+ATOM     16 CL1  CP6 A1240      92.698   4.206  37.773  0.00  0.00    -0.082 Cl
+ENDBRANCH   4  10
+BRANCH   3  17
+ATOM     17  N13 CP6 A1240      92.600   8.595  32.726  0.00  0.00    -0.107 N 
+ATOM     18  H   CP6 A1240      92.509   7.622  32.850  0.00  0.00    +0.000 HD
+ATOM     19  H   CP6 A1240      93.365   8.958  32.224  0.00  0.00    +0.000 HD
+ENDBRANCH   3  17
+BRANCH   5  20
+ATOM     20  C15 CP6 A1240      89.331   9.859  36.314  0.00  0.00    +0.046 C 
+ATOM     21  C16 CP6 A1240      89.924  10.588  37.510  0.00  0.00    +0.007 C 
+ENDBRANCH   5  20
+TORSDOF 3
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:    -6.547      4.693      6.354
+REMARK INTER + INTRA:          -8.025
+REMARK INTER:                  -7.525
+REMARK INTRA:                  -0.500
+REMARK UNBOUND:                -0.521
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/2BL9_lig_raw.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  N13_13
+REMARK    2  A    between atoms: C4_4  and  C7_7
+REMARK    3  A    between atoms: C5_5  and  C15_15
+REMARK    4  A    between atoms: C15_15  and  C16_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  CP6 A1240      91.813   6.878  37.590  0.00  0.00    -0.193 NA
+ATOM      2  C2  CP6 A1240      91.824   6.275  36.346  0.00  0.00    +0.258 A 
+ATOM      3  C3  CP6 A1240      91.221   8.163  37.727  0.00  0.00    +0.174 A 
+ATOM      4  C4  CP6 A1240      90.626   8.892  36.573  0.00  0.00    +0.049 A 
+ATOM      5  C5  CP6 A1240      90.696   8.101  35.292  0.00  0.00    +0.065 A 
+ATOM      6  N6  CP6 A1240      91.269   6.858  35.212  0.00  0.00    -0.215 NA
+ATOM      7  N14 CP6 A1240      92.427   5.018  36.205  0.00  0.00    -0.086 N 
+ATOM      8  H   CP6 A1240      92.830   4.575  36.985  0.00  0.00    +0.000 HD
+ATOM      9  H   CP6 A1240      92.448   4.578  35.324  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   4  10
+ATOM     10  C7  CP6 A1240      90.039  10.236  36.682  0.00  0.00    +0.004 A 
+ATOM     11  C8  CP6 A1240      88.670  10.445  37.177  0.00  0.00    +0.001 A 
+ATOM     12  C9  CP6 A1240      88.072  11.751  37.312  0.00  0.00    +0.011 A 
+ATOM     13  C10 CP6 A1240      88.800  12.878  36.963  0.00  0.00    +0.058 A 
+ATOM     14  C11 CP6 A1240      90.184  12.736  36.466  0.00  0.00    +0.011 A 
+ATOM     15  C12 CP6 A1240      90.763  11.421  36.342  0.00  0.00    +0.001 A 
+ATOM     16 CL1  CP6 A1240      88.186  14.405  37.065  0.00  0.00    -0.082 Cl
+ENDBRANCH   4  10
+BRANCH   3  17
+ATOM     17  N13 CP6 A1240      91.194   8.756  38.920  0.00  0.00    -0.107 N 
+ATOM     18  H   CP6 A1240      91.759   8.417  39.652  0.00  0.00    +0.000 HD
+ATOM     19  H   CP6 A1240      90.609   9.534  39.070  0.00  0.00    +0.000 HD
+ENDBRANCH   3  17
+BRANCH   5  20
+ATOM     20  C15 CP6 A1240      90.116   8.678  34.023  0.00  0.00    +0.046 C 
+ATOM     21  C16 CP6 A1240      91.137   9.200  33.021  0.00  0.00    +0.007 C 
+ENDBRANCH   5  20
+TORSDOF 3
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:    -6.538      4.018      6.208
+REMARK INTER + INTRA:          -8.014
+REMARK INTER:                  -7.562
+REMARK INTRA:                  -0.452
+REMARK UNBOUND:                -0.521
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/2BL9_lig_raw.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  N13_13
+REMARK    2  A    between atoms: C4_4  and  C7_7
+REMARK    3  A    between atoms: C5_5  and  C15_15
+REMARK    4  A    between atoms: C15_15  and  C16_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  CP6 A1240      90.471   6.720  35.078  0.00  0.00    -0.193 NA
+ATOM      2  C2  CP6 A1240      91.401   6.277  35.999  0.00  0.00    +0.258 A 
+ATOM      3  C3  CP6 A1240      89.912   8.018  35.232  0.00  0.00    +0.174 A 
+ATOM      4  C4  CP6 A1240      90.282   8.914  36.364  0.00  0.00    +0.049 A 
+ATOM      5  C5  CP6 A1240      91.318   8.300  37.270  0.00  0.00    +0.065 A 
+ATOM      6  N6  CP6 A1240      91.836   7.047  37.073  0.00  0.00    -0.215 NA
+ATOM      7  N14 CP6 A1240      91.936   4.989  35.861  0.00  0.00    -0.086 N 
+ATOM      8  H   CP6 A1240      91.651   4.416  35.113  0.00  0.00    +0.000 HD
+ATOM      9  H   CP6 A1240      92.595   4.657  36.512  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   4  10
+ATOM     10  C7  CP6 A1240      89.694  10.246  36.565  0.00  0.00    +0.004 A 
+ATOM     11  C8  CP6 A1240      90.251  11.444  35.920  0.00  0.00    +0.001 A 
+ATOM     12  C9  CP6 A1240      89.687  12.762  36.084  0.00  0.00    +0.011 A 
+ATOM     13  C10 CP6 A1240      88.567  12.934  36.883  0.00  0.00    +0.058 A 
+ATOM     14  C11 CP6 A1240      87.955  11.768  37.553  0.00  0.00    +0.011 A 
+ATOM     15  C12 CP6 A1240      88.534  10.460  37.373  0.00  0.00    +0.001 A 
+ATOM     16 CL1  CP6 A1240      87.873  14.407  37.142  0.00  0.00    -0.082 Cl
+ENDBRANCH   4  10
+BRANCH   3  17
+ATOM     17  N13 CP6 A1240      89.020   8.465  34.349  0.00  0.00    -0.107 N 
+ATOM     18  H   CP6 A1240      88.590   7.839  33.723  0.00  0.00    +0.000 HD
+ATOM     19  H   CP6 A1240      88.791   9.422  34.323  0.00  0.00    +0.000 HD
+ENDBRANCH   3  17
+BRANCH   5  20
+ATOM     20  C15 CP6 A1240      91.830   9.080  38.458  0.00  0.00    +0.046 C 
+ATOM     21  C16 CP6 A1240      93.270   8.789  38.855  0.00  0.00    +0.007 C 
+ENDBRANCH   5  20
+TORSDOF 3
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:    -6.514      3.609      5.110
+REMARK INTER + INTRA:          -7.987
+REMARK INTER:                  -7.503
+REMARK INTRA:                  -0.485
+REMARK UNBOUND:                -0.521
+REMARK  Name = /mnt/c/Personal/tickdock/data/docking/counterdock_calibration/2BL9_lig_raw.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  N13_13
+REMARK    2  A    between atoms: C4_4  and  C7_7
+REMARK    3  A    between atoms: C5_5  and  C15_15
+REMARK    4  A    between atoms: C15_15  and  C16_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  CP6 A1240      90.272   9.805  37.438  0.00  0.00    -0.193 NA
+ATOM      2  C2  CP6 A1240      90.455   9.725  36.071  0.00  0.00    +0.258 A 
+ATOM      3  C3  CP6 A1240      89.977  11.067  38.022  0.00  0.00    +0.174 A 
+ATOM      4  C4  CP6 A1240      89.876  12.313  37.213  0.00  0.00    +0.049 A 
+ATOM      5  C5  CP6 A1240      90.082  12.064  35.740  0.00  0.00    +0.065 A 
+ATOM      6  N6  CP6 A1240      90.353  10.824  35.223  0.00  0.00    -0.215 NA
+ATOM      7  N14 CP6 A1240      90.767   8.486  35.497  0.00  0.00    -0.086 N 
+ATOM      8  H   CP6 A1240      90.847   7.686  36.065  0.00  0.00    +0.000 HD
+ATOM      9  H   CP6 A1240      90.906   8.414  34.525  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   4  10
+ATOM     10  C7  CP6 A1240      89.608  13.636  37.796  0.00  0.00    +0.004 A 
+ATOM     11  C8  CP6 A1240      88.268  14.241  37.759  0.00  0.00    +0.001 A 
+ATOM     12  C9  CP6 A1240      87.969  15.528  38.338  0.00  0.00    +0.011 A 
+ATOM     13  C10 CP6 A1240      88.974  16.250  38.962  0.00  0.00    +0.058 A 
+ATOM     14  C11 CP6 A1240      90.340  15.694  39.039  0.00  0.00    +0.011 A 
+ATOM     15  C12 CP6 A1240      90.617  14.404  38.456  0.00  0.00    +0.001 A 
+ATOM     16 CL1  CP6 A1240      88.724  17.738  39.628  0.00  0.00    -0.082 Cl
+ENDBRANCH   4  10
+BRANCH   3  17
+ATOM     17  N13 CP6 A1240      89.789  11.161  39.338  0.00  0.00    -0.107 N 
+ATOM     18  H   CP6 A1240      90.309  10.593  39.951  0.00  0.00    +0.000 HD
+ATOM     19  H   CP6 A1240      89.130  11.798  39.696  0.00  0.00    +0.000 HD
+ENDBRANCH   3  17
+BRANCH   5  20
+ATOM     20  C15 CP6 A1240      89.989  13.214  34.766  0.00  0.00    +0.046 C 
+ATOM     21  C16 CP6 A1240      91.302  13.930  34.479  0.00  0.00    +0.007 C 
+ENDBRANCH   5  20
+TORSDOF 3
+ENDMDL

@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, the DHFR selectivity benchmark, or the results, please cite the preprint below."
+title: "TickDock: a computational tick-target discovery pipeline and a benchmark for binding-site selectivity prediction"
+authors:
+  - family-names: Bucci
+    given-names: Wyatt
+    orcid: "https://orcid.org/0009-0004-4006-4444"
+url: "https://github.com/WBucci/tickdock"
+repository-code: "https://github.com/WBucci/tickdock"
+license: MIT
+date-released: 2026-07-24
+keywords:
+  - molecular docking
+  - binding-site selectivity
+  - benchmarking
+  - virtual screening
+  - dihydrofolate reductase
+  - acaricide discovery
+preferred-citation:
+  type: article
+  title: "Cheap computational methods do not predict binding-site selectivity: a benchmark on antifolates and a cautionary case in tick target discovery"
+  authors:
+    - family-names: Bucci
+      given-names: Wyatt
+      orcid: "https://orcid.org/0009-0004-4006-4444"
+  year: 2026
+  # Fill in once the preprint is posted:
+  # doi: 10.xxxxx/chemrxiv-xxxxx
+  # journal: "ChemRxiv (preprint)"

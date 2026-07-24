@@ -1,0 +1,2662 @@
+{
+ "13lv": [
+  {
+   "id": "A1DG4",
+   "name": "(4S)-1-cyclopentyl-4-(4-hydroxyphenyl)-1,4,5,7-tetrahydro-6H",
+   "mw": 297.352
+  }
+ ],
+ "13lw": [
+  {
+   "id": "A1DG6",
+   "name": "(4S)-1-cyclopentyl-4-(3-hydroxyphenyl)-1,4,5,7-tetrahydro-6H",
+   "mw": 297.352
+  }
+ ],
+ "13lx": [
+  {
+   "id": "A1DG5",
+   "name": "(4R)-1-cyclopentyl-4-(3-hydroxyphenyl)-1,4,5,7-tetrahydro-6H",
+   "mw": 297.352
+  }
+ ],
+ "1by8": [],
+ "1cpj": [],
+ "1cte": [],
+ "1cza": [
+  {
+   "id": "G6P",
+   "name": "6-O-phosphono-alpha-D-glucopyranose",
+   "mw": 260.136
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "GLC",
+   "name": "alpha-D-glucopyranose",
+   "mw": 180.156
+  }
+ ],
+ "1dgk": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "GLC",
+   "name": "alpha-D-glucopyranose",
+   "mw": 180.156
+  }
+ ],
+ "1dlk": [],
+ "1e6w": [
+  {
+   "id": "EST",
+   "name": "ESTRADIOL",
+   "mw": 272.382
+  },
+  {
+   "id": "NAD",
+   "name": "NICOTINAMIDE-ADENINE-DINUCLEOTIDE",
+   "mw": 663.425
+  }
+ ],
+ "1gl2": [],
+ "1h6q": [],
+ "1h7y": [],
+ "1jlv": [
+  {
+   "id": "GSH",
+   "name": "Glutathione",
+   "mw": 307.323
+  }
+ ],
+ "1lv2": [],
+ "1pzl": [],
+ "1r0o": [],
+ "1s0x": [
+  {
+   "id": "C3S",
+   "name": "CHOLEST-5-EN-3-YL HYDROGEN SULFATE",
+   "mw": 466.717
+  }
+ ],
+ "1the": [
+  {
+   "id": "0E6",
+   "name": "amino{[(4S)-4-{[(benzyloxy)carbonyl]amino}-5-{[(2S)-1-(benzy",
+   "mw": 519.013
+  }
+ ],
+ "1u7t": [
+  {
+   "id": "TDT",
+   "name": "1-AZEPAN-1-YL-2-PHENYL-2-(4-THIOXO-1,4-DIHYDRO-PYRAZOLO[3,4-",
+   "mw": 1026.861
+  },
+  {
+   "id": "NAD",
+   "name": "NICOTINAMIDE-ADENINE-DINUCLEOTIDE",
+   "mw": 663.425
+  }
+ ],
+ "1xwi": [],
+ "1z5x": [
+  {
+   "id": "P1A",
+   "name": "2,3,14,20,22-PENTAHYDROXYCHOLEST-7-EN-6-ONE",
+   "mw": 464.635
+  }
+ ],
+ "1zd9": [
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "1zdn": [],
+ "23vy": [
+  {
+   "id": "CLR",
+   "name": "CHOLESTEROL",
+   "mw": 386.654
+  }
+ ],
+ "28jm": [
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  }
+ ],
+ "28js": [
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  }
+ ],
+ "28jv": [
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  }
+ ],
+ "28ke": [
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  }
+ ],
+ "2al7": [
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "2b9l": [],
+ "2d8s": [],
+ "2enk": [],
+ "2h18": [
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "2han": [],
+ "2hka": [
+  {
+   "id": "C3S",
+   "name": "CHOLEST-5-EN-3-YL HYDROGEN SULFATE",
+   "mw": 466.717
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "2i99": [
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  }
+ ],
+ "2kwb": [],
+ "2loy": [],
+ "2lui": [],
+ "2m6m": [],
+ "2nps": [],
+ "2nxx": [
+  {
+   "id": "P1A",
+   "name": "2,3,14,20,22-PENTAHYDROXYCHOLEST-7-EN-6-ONE",
+   "mw": 464.635
+  }
+ ],
+ "2olg": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "2qyw": [],
+ "2v8s": [],
+ "2ybe": [
+  {
+   "id": "LA8",
+   "name": "L-ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "3PG",
+   "name": "3-PHOSPHOGLYCERIC ACID",
+   "mw": 186.057
+  }
+ ],
+ "2yh2": [],
+ "2ywe": [],
+ "2ywf": [
+  {
+   "id": "GNP",
+   "name": "PHOSPHOAMINOPHOSPHONIC ACID-GUANYLATE ESTER",
+   "mw": 522.196
+  }
+ ],
+ "2ywg": [
+  {
+   "id": "GTP",
+   "name": "GUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 523.18
+  }
+ ],
+ "2ywh": [
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "2zam": [],
+ "2zan": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "2zao": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "36ui": [
+  {
+   "id": "A1DLL",
+   "name": "7-{[(1S)-1-{4-[(1S)-2-cyclopropyl-1-(4-propanoylpiperazin-1-",
+   "mw": 506.64
+  },
+  {
+   "id": "NAP",
+   "name": "NADP NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 743.405
+  }
+ ],
+ "3cbb": [],
+ "3dzu": [
+  {
+   "id": "9CR",
+   "name": "(9cis)-retinoic acid",
+   "mw": 300.435
+  },
+  {
+   "id": "PLB",
+   "name": "2-[(2,4-DICHLOROBENZOYL)AMINO]-5-(PYRIMIDIN-2-YLOXY)BENZOIC ",
+   "mw": 404.204
+  }
+ ],
+ "3dzy": [
+  {
+   "id": "9CR",
+   "name": "(9cis)-retinoic acid",
+   "mw": 300.435
+  },
+  {
+   "id": "BRL",
+   "name": "2,4-THIAZOLIDIINEDIONE, 5-[[4-[2-(METHYL-2-PYRIDINYLAMINO)ET",
+   "mw": 357.427
+  }
+ ],
+ "3e00": [
+  {
+   "id": "9CR",
+   "name": "(9cis)-retinoic acid",
+   "mw": 300.435
+  },
+  {
+   "id": "GW9",
+   "name": "2-chloro-5-nitro-N-phenylbenzamide",
+   "mw": 276.675
+  }
+ ],
+ "3ew8": [
+  {
+   "id": "B3N",
+   "name": "4-(dimethylamino)-N-[7-(hydroxyamino)-7-oxoheptyl]benzamide",
+   "mw": 307.388
+  }
+ ],
+ "3ezt": [
+  {
+   "id": "B3N",
+   "name": "4-(dimethylamino)-N-[7-(hydroxyamino)-7-oxoheptyl]benzamide",
+   "mw": 307.388
+  }
+ ],
+ "3f06": [
+  {
+   "id": "B3N",
+   "name": "4-(dimethylamino)-N-[7-(hydroxyamino)-7-oxoheptyl]benzamide",
+   "mw": 307.388
+  }
+ ],
+ "3fvz": [],
+ "3fw0": [
+  {
+   "id": "HG",
+   "name": "MERCURY (II) ION",
+   "mw": 200.59
+  },
+  {
+   "id": "HH3",
+   "name": "(2S)-hydroxy[(phenylcarbonyl)amino]ethanoic acid",
+   "mw": 195.172
+  }
+ ],
+ "3hpk": [],
+ "3hpm": [],
+ "3ic1": [],
+ "3isz": [],
+ "3k9m": [],
+ "3lh4": [],
+ "3o0t": [],
+ "3rlg": [],
+ "3rlh": [
+  {
+   "id": "A1BTZ",
+   "name": "(2r,5r)-5-amino-2-hydroxy-5-(hydroxymethyl)-1,3,2lambda~5~-d",
+   "mw": 183.1
+  }
+ ],
+ "3roe": [
+  {
+   "id": "THM",
+   "name": "THYMIDINE",
+   "mw": 242.229
+  }
+ ],
+ "3rog": [
+  {
+   "id": "T3P",
+   "name": "THYMIDINE-3'-PHOSPHATE",
+   "mw": 322.208
+  }
+ ],
+ "3rox": [
+  {
+   "id": "TEP",
+   "name": "THEOPHYLLINE",
+   "mw": 180.164
+  }
+ ],
+ "3roz": [],
+ "3rtg": [
+  {
+   "id": "COA",
+   "name": "COENZYME A",
+   "mw": 767.534
+  },
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "3ru2": [
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "NPW",
+   "name": "BETA-6-HYDROXY-1,4,5,6-TETRAHYDRONICOTINAMIDE ADENINE DINUCL",
+   "mw": 763.436
+  }
+ ],
+ "3ru3": [
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "NPW",
+   "name": "BETA-6-HYDROXY-1,4,5,6-TETRAHYDRONICOTINAMIDE ADENINE DINUCL",
+   "mw": 763.436
+  }
+ ],
+ "3vzb": [
+  {
+   "id": "SQS",
+   "name": "(2S,3R,4E)-2-aminooctadec-4-ene-1,3-diol",
+   "mw": 299.492
+  }
+ ],
+ "3wyw": [
+  {
+   "id": "GSH",
+   "name": "Glutathione",
+   "mw": 307.323
+  }
+ ],
+ "3zoz": [
+  {
+   "id": "3PG",
+   "name": "3-PHOSPHOGLYCERIC ACID",
+   "mw": 186.057
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "3zwq": [],
+ "3zzw": [],
+ "4aw6": [
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  }
+ ],
+ "4b7w": [],
+ "4bv9": [
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  }
+ ],
+ "4bva": [
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "T3",
+   "name": "3,5,3'TRIIODOTHYRONINE",
+   "mw": 650.973
+  }
+ ],
+ "4fgu": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "4foe": [
+  {
+   "id": "BGC",
+   "name": "beta-D-glucopyranose",
+   "mw": 180.156
+  },
+  {
+   "id": "M6D",
+   "name": "6-O-phosphono-beta-D-mannopyranose",
+   "mw": 260.136
+  }
+ ],
+ "4fpb": [
+  {
+   "id": "BGC",
+   "name": "beta-D-glucopyranose",
+   "mw": 180.156
+  },
+  {
+   "id": "0WK",
+   "name": "1,5-anhydro-6-O-phosphono-D-glucitol",
+   "mw": 244.136
+  }
+ ],
+ "4gt4": [],
+ "4ile": [
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "4iqr": [],
+ "4jhd": [
+  {
+   "id": "ANP",
+   "name": "PHOSPHOAMINOPHOSPHONIC ACID-ADENYLATE ESTER",
+   "mw": 506.196
+  }
+ ],
+ "4k1n": [],
+ "4lk3": [
+  {
+   "id": "UGA",
+   "name": "URIDINE-5'-DIPHOSPHATE-GLUCURONIC ACID",
+   "mw": 580.285
+  },
+  {
+   "id": "POP",
+   "name": "PYROPHOSPHATE 2-",
+   "mw": 175.959
+  },
+  {
+   "id": "UDP",
+   "name": "URIDINE-5'-DIPHOSPHATE",
+   "mw": 404.161
+  },
+  {
+   "id": "NAD",
+   "name": "NICOTINAMIDE-ADENINE-DINUCLEOTIDE",
+   "mw": 663.425
+  }
+ ],
+ "4log": [],
+ "4nok": [],
+ "4nol": [],
+ "4nom": [],
+ "4nqa": [
+  {
+   "id": "9CR",
+   "name": "(9cis)-retinoic acid",
+   "mw": 300.435
+  },
+  {
+   "id": "965",
+   "name": "[3-(3-{[2-chloro-3-(trifluoromethyl)benzyl](2,2-diphenylethy",
+   "mw": 582.052
+  }
+ ],
+ "4nuf": [],
+ "4oqa": [
+  {
+   "id": "2US",
+   "name": "(2Z)-2-(2,4-dihydroxybenzylidene)-3-oxo-2,3-dihydro-1-benzof",
+   "mw": 297.262
+  }
+ ],
+ "4oqb": [
+  {
+   "id": "2UT",
+   "name": "(2Z)-2-{4-[2-(morpholin-4-yl)ethoxy]benzylidene}-3-oxo-2,3-d",
+   "mw": 394.42
+  }
+ ],
+ "4ozt": [
+  {
+   "id": "P1A",
+   "name": "2,3,14,20,22-PENTAHYDROXYCHOLEST-7-EN-6-ONE",
+   "mw": 464.635
+  }
+ ],
+ "4q6x": [],
+ "4rw3": [
+  {
+   "id": "DKA",
+   "name": "DECANOIC ACID",
+   "mw": 172.265
+  },
+  {
+   "id": "IPD",
+   "name": "D-MYO-INOSITOL-1-PHOSPHATE",
+   "mw": 258.12
+  },
+  {
+   "id": "TDA",
+   "name": "N-TRIDECANOIC ACID",
+   "mw": 214.344
+  }
+ ],
+ "4rw5": [
+  {
+   "id": "TDA",
+   "name": "N-TRIDECANOIC ACID",
+   "mw": 214.344
+  }
+ ],
+ "4s15": [
+  {
+   "id": "4D8",
+   "name": "(3beta,4alpha,5beta,14beta)-3-hydroxy-4-methylcholesta-8,24-",
+   "mw": 442.674
+  }
+ ],
+ "4um8": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "4umm": [
+  {
+   "id": "EPH",
+   "name": "L-ALPHA-PHOSPHATIDYL-BETA-OLEOYL-GAMMA-PALMITOYL-PHOSPHATIDY",
+   "mw": 709.933
+  },
+  {
+   "id": "P1A",
+   "name": "2,3,14,20,22-PENTAHYDROXYCHOLEST-7-EN-6-ONE",
+   "mw": 464.635
+  }
+ ],
+ "4v24": [
+  {
+   "id": "GYR",
+   "name": "{(2R)-1-[4-({3-METHYL-5-[(PHENYLSULFONYL)METHYL]PHENOXY}METH",
+   "mw": 465.604
+  }
+ ],
+ "4v6w": [],
+ "4zm8": [],
+ "5dn6": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "5i8s": [],
+ "5i8t": [],
+ "5i8y": [],
+ "5i91": [],
+ "5i93": [],
+ "5i96": [
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "69Q",
+   "name": "2-methyl-1-[(4-[6-(trifluoromethyl)pyridin-2-yl]-6-{[2-(trif",
+   "mw": 473.375
+  }
+ ],
+ "5imr": [
+  {
+   "id": "GCP",
+   "name": "PHOSPHOMETHYLPHOSPHONIC ACID GUANYLATE ESTER",
+   "mw": 521.208
+  }
+ ],
+ "5kwy": [
+  {
+   "id": "C3S",
+   "name": "CHOLEST-5-EN-3-YL HYDROGEN SULFATE",
+   "mw": 466.717
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "5l9t": [],
+ "5mlz": [
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "5mm0": [
+  {
+   "id": "GDD",
+   "name": "GUANOSINE-5'-DIPHOSPHATE-ALPHA-D-MANNOSE",
+   "mw": 605.341
+  }
+ ],
+ "5mm1": [
+  {
+   "id": "MJC",
+   "name": "dolichyl phosphate mannose",
+   "mw": 1011.439
+  },
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "5muf": [],
+ "5nw4": [],
+ "5nxa": [
+  {
+   "id": "SSS",
+   "name": "N-{[5-AMINO-1-(5-O-PHOSPHONO-BETA-D-ARABINOFURANOSYL)-1H-IMI",
+   "mw": 454.283
+  },
+  {
+   "id": "AMZ",
+   "name": "AMINOIMIDAZOLE 4-CARBOXAMIDE RIBONUCLEOTIDE",
+   "mw": 338.211
+  }
+ ],
+ "5o9k": [],
+ "5syt": [
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  },
+  {
+   "id": "CXE",
+   "name": "PENTAETHYLENE GLYCOL MONODECYL ETHER",
+   "mw": 378.544
+  }
+ ],
+ "5uan": [
+  {
+   "id": "9CR",
+   "name": "(9cis)-retinoic acid",
+   "mw": 300.435
+  },
+  {
+   "id": "REA",
+   "name": "RETINOIC ACID",
+   "mw": 300.435
+  }
+ ],
+ "5uqe": [
+  {
+   "id": "04A",
+   "name": "N,N'-[sulfanediylbis(ethane-2,1-diyl-1,3,4-thiadiazole-5,2-d",
+   "mw": 524.681
+  }
+ ],
+ "5uy8": [
+  {
+   "id": "8UM",
+   "name": "5-[(5S)-5-ethyl-5-methyl-6-oxo-1,4,5,6-tetrahydropyridin-3-y",
+   "mw": 461.53
+  },
+  {
+   "id": "AMZ",
+   "name": "AMINOIMIDAZOLE 4-CARBOXAMIDE RIBONUCLEOTIDE",
+   "mw": 338.211
+  }
+ ],
+ "5uz0": [
+  {
+   "id": "8US",
+   "name": "N-(6-fluoro-1-oxo-1,2-dihydroisoquinolin-7-yl)-5-[(3R)-3-hyd",
+   "mw": 409.455
+  },
+  {
+   "id": "AMZ",
+   "name": "AMINOIMIDAZOLE 4-CARBOXAMIDE RIBONUCLEOTIDE",
+   "mw": 338.211
+  }
+ ],
+ "5vcm": [
+  {
+   "id": "UDP",
+   "name": "URIDINE-5'-DIPHOSPHATE",
+   "mw": 404.161
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "5vcr": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "IUM",
+   "name": "URANYL (VI) ION",
+   "mw": 270.028
+  }
+ ],
+ "5vcs": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "5vo3": [
+  {
+   "id": "API",
+   "name": "2,6-DIAMINOPIMELIC ACID",
+   "mw": 190.197
+  }
+ ],
+ "5wm0": [],
+ "5ydi": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "5ydj": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "5zql": [],
+ "5zqm": [
+  {
+   "id": "AGS",
+   "name": "PHOSPHOTHIOPHOSPHORIC ACID-ADENYLATE ESTER",
+   "mw": 523.247
+  }
+ ],
+ "5zqz": [],
+ "5zrv": [],
+ "6alv": [],
+ "6b5c": [],
+ "6bjo": [
+  {
+   "id": "DUY",
+   "name": "(2S)-({4-(4-bromophenyl)-1-[1-(tert-butoxycarbonyl)-L-prolyl",
+   "mw": 606.548
+  }
+ ],
+ "6bv0": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "ARG",
+   "name": "ARGININE",
+   "mw": 175.209
+  }
+ ],
+ "6bv1": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "6bv2": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "6bv3": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "6bv4": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "6efw": [],
+ "6efx": [
+  {
+   "id": "ANP",
+   "name": "PHOSPHOAMINOPHOSPHONIC ACID-ADENYLATE ESTER",
+   "mw": 506.196
+  }
+ ],
+ "6ize": [],
+ "6j5k": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "6k7j": [
+  {
+   "id": "ACP",
+   "name": "PHOSPHOMETHYLPHOSPHONIC ACID ADENYLATE ESTER",
+   "mw": 505.208
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "Y01",
+   "name": "CHOLESTEROL HEMISUCCINATE",
+   "mw": 486.726
+  }
+ ],
+ "6k7k": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "Y01",
+   "name": "CHOLESTEROL HEMISUCCINATE",
+   "mw": 486.726
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "6k7l": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "Y01",
+   "name": "CHOLESTEROL HEMISUCCINATE",
+   "mw": 486.726
+  }
+ ],
+ "6k7m": [
+  {
+   "id": "Y01",
+   "name": "CHOLESTEROL HEMISUCCINATE",
+   "mw": 486.726
+  },
+  {
+   "id": "D39",
+   "name": "(2~{S})-2-azanyl-3-[[(2~{R})-3-hexadecanoyloxy-2-[(~{Z})-oct",
+   "mw": 762.006
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "6k7n": [
+  {
+   "id": "Y01",
+   "name": "CHOLESTEROL HEMISUCCINATE",
+   "mw": 486.726
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "6lgj": [
+  {
+   "id": "NAD",
+   "name": "NICOTINAMIDE-ADENINE-DINUCLEOTIDE",
+   "mw": 663.425
+  }
+ ],
+ "6lgm": [
+  {
+   "id": "NAD",
+   "name": "NICOTINAMIDE-ADENINE-DINUCLEOTIDE",
+   "mw": 663.425
+  }
+ ],
+ "6n31": [],
+ "6o1s": [
+  {
+   "id": "7SD",
+   "name": "N-[(6-amino-2,4-dimethylpyridin-3-yl)methyl]-1-({4-[(1H-pyra",
+   "mw": 415.491
+  }
+ ],
+ "6odb": [
+  {
+   "id": "M8G",
+   "name": "N-{2-[(1E)-3-(hydroxyamino)-3-oxoprop-1-en-1-yl]phenyl}-2-ph",
+   "mw": 374.389
+  }
+ ],
+ "6odc": [
+  {
+   "id": "M7Y",
+   "name": "(2E)-3-[2-(3-cyclopentyl-5,5-dimethyl-2-oxoimidazolidin-1-yl",
+   "mw": 343.42
+  }
+ ],
+ "6pen": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "6s98": [],
+ "6sek": [
+  {
+   "id": "FAD",
+   "name": "FLAVIN-ADENINE DINUCLEOTIDE",
+   "mw": 785.55
+  },
+  {
+   "id": "GLC",
+   "name": "alpha-D-glucopyranose",
+   "mw": 180.156
+  },
+  {
+   "id": "NAP",
+   "name": "NADP NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 743.405
+  }
+ ],
+ "6sf0": [
+  {
+   "id": "MA4",
+   "name": "CYCLOHEXYL-HEXYL-BETA-D-MALTOSIDE",
+   "mw": 508.6
+  },
+  {
+   "id": "NAP",
+   "name": "NADP NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 743.405
+  },
+  {
+   "id": "FAD",
+   "name": "FLAVIN-ADENINE DINUCLEOTIDE",
+   "mw": 785.55
+  }
+ ],
+ "6t7p": [
+  {
+   "id": "GSH",
+   "name": "Glutathione",
+   "mw": 307.323
+  },
+  {
+   "id": "MU8",
+   "name": "(2~{S},4~{R})-1-[[(3~{S})-3-azanyl-2,3-dihydro-1-benzofuran-",
+   "mw": 461.94
+  }
+ ],
+ "6tt7": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "LHG",
+   "name": "1,2-DIPALMITOYL-PHOSPHATIDYL-GLYCEROLE",
+   "mw": 722.97
+  },
+  {
+   "id": "P5S",
+   "name": "O-[(R)-{[(2R)-2,3-bis(octadecanoyloxy)propyl]oxy}(hydroxy)ph",
+   "mw": 792.075
+  },
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  },
+  {
+   "id": "S12",
+   "name": "O-[(S)-hydroxy{[(2S)-2-hydroxy-3-(octadec-9-enoyloxy)propyl]",
+   "mw": 523.597
+  }
+ ],
+ "6tu9": [
+  {
+   "id": "0LI",
+   "name": "3-(imidazo[1,2-b]pyridazin-3-ylethynyl)-4-methyl-N-{4-[(4-me",
+   "mw": 532.559
+  }
+ ],
+ "6ugf": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "6unv": [],
+ "6upv": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "6vfz": [
+  {
+   "id": "9UO",
+   "name": "6-(6-chloropyridin-2-yl)-N2,N4-bis[(2R)-1,1,1-trifluoropropa",
+   "mw": 414.737
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  }
+ ],
+ "6w5v": [
+  {
+   "id": "CLR",
+   "name": "CHOLESTEROL",
+   "mw": 386.654
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "6wvg": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "6wxv": [
+  {
+   "id": "HEB",
+   "name": "HEME B/C",
+   "mw": 618.503
+  },
+  {
+   "id": "PLC",
+   "name": "DIUNDECYL PHOSPHATIDYL CHOLINE",
+   "mw": 622.834
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "FAD",
+   "name": "FLAVIN-ADENINE DINUCLEOTIDE",
+   "mw": 785.55
+  }
+ ],
+ "6xoi": [
+  {
+   "id": "VBA",
+   "name": "[(1R,2R,3S,4R)-4-{[5-(1-benzyl-1H-pyrazole-3-carbonyl)pyrimi",
+   "mw": 488.517
+  }
+ ],
+ "6xu6": [],
+ "6xu7": [],
+ "6xu8": [],
+ "6yw6": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "6yw7": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "7cgp": [
+  {
+   "id": "PEE",
+   "name": "1,2-dioleoyl-sn-glycero-3-phosphoethanolamine",
+   "mw": 744.034
+  }
+ ],
+ "7d23": [],
+ "7d2b": [],
+ "7d2d": [],
+ "7d2i": [],
+ "7d2j": [],
+ "7d3e": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "FAD",
+   "name": "FLAVIN-ADENINE DINUCLEOTIDE",
+   "mw": 785.55
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "HEM",
+   "name": "PROTOPORPHYRIN IX CONTAINING FE",
+   "mw": 616.487
+  }
+ ],
+ "7d3f": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "FAD",
+   "name": "FLAVIN-ADENINE DINUCLEOTIDE",
+   "mw": 785.55
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "HEM",
+   "name": "PROTOPORPHYRIN IX CONTAINING FE",
+   "mw": 616.487
+  }
+ ],
+ "7jpw": [
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  },
+  {
+   "id": "VFY",
+   "name": "methyl (4R)-2,6-dimethyl-5-nitro-4-[2-(trifluoromethyl)pheny",
+   "mw": 356.297
+  }
+ ],
+ "7jpx": [
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  },
+  {
+   "id": "POV",
+   "name": "(2S)-3-(hexadecanoyloxy)-2-[(9Z)-octadec-9-enoyloxy]propyl 2",
+   "mw": 760.076
+  },
+  {
+   "id": "6UB",
+   "name": "amlodipine",
+   "mw": 408.876
+  }
+ ],
+ "7l9x": [
+  {
+   "id": "XQV",
+   "name": "N-{3-[(8-phenyl[1,2,4]triazolo[1,5-a]pyridin-2-yl)amino]phen",
+   "mw": 357.408
+  }
+ ],
+ "7nwl": [],
+ "7nxd": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "7pck": [],
+ "7rd8": [
+  {
+   "id": "ACP",
+   "name": "PHOSPHOMETHYLPHOSPHONIC ACID ADENYLATE ESTER",
+   "mw": 505.208
+  }
+ ],
+ "7rhp": [
+  {
+   "id": "GSH",
+   "name": "Glutathione",
+   "mw": 307.323
+  }
+ ],
+ "7rwc": [],
+ "7w33": [
+  {
+   "id": "89B",
+   "name": "N-[(2S)-3-(4-fluorophenyl)-1-oxidanylidene-1-[[(2R,3S)-3-oxi",
+   "mw": 614.663
+  }
+ ],
+ "7w34": [
+  {
+   "id": "89K",
+   "name": "N-[(2S)-3-cyclohexyl-1-oxidanylidene-1-[[(2S,3S)-3-oxidanyl-",
+   "mw": 602.72
+  }
+ ],
+ "7wtx": [],
+ "7wtz": [],
+ "7wu0": [],
+ "7xi3": [],
+ "7z5c": [],
+ "8b4t": [
+  {
+   "id": "P9F",
+   "name": "(2S)-2-[[(2S)-2-[(4-chloranylphenoxy)carbonylamino]-3-cycloh",
+   "mw": 472.961
+  }
+ ],
+ "8b5f": [
+  {
+   "id": "P9U",
+   "name": "(2S)-2-[[(2S)-2-[[3-chloranyl-4-[[3-phenyl-2-(phenylmethyl)p",
+   "mw": 710.258
+  }
+ ],
+ "8b9z": [
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  },
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  },
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  },
+  {
+   "id": "UQ9",
+   "name": "Ubiquinone-9",
+   "mw": 795.226
+  },
+  {
+   "id": "DGT",
+   "name": "2'-DEOXYGUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "EHZ",
+   "name": "~{S}-[2-[3-[[(2~{R})-3,3-dimethyl-2-oxidanyl-4-phosphonooxy-",
+   "mw": 584.703
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  }
+ ],
+ "8ba0": [
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  },
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  },
+  {
+   "id": "DGT",
+   "name": "2'-DEOXYGUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "EHZ",
+   "name": "~{S}-[2-[3-[[(2~{R})-3,3-dimethyl-2-oxidanyl-4-phosphonooxy-",
+   "mw": 584.703
+  }
+ ],
+ "8bf9": [],
+ "8bvw": [
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  }
+ ],
+ "8e56": [
+  {
+   "id": "BBI",
+   "name": "(2-butyl-1-benzofuran-3-yl){4-[2-(diethylamino)ethoxy]-3,5-d",
+   "mw": 645.312
+  },
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "8e57": [
+  {
+   "id": "BBI",
+   "name": "(2-butyl-1-benzofuran-3-yl){4-[2-(diethylamino)ethoxy]-3,5-d",
+   "mw": 645.312
+  },
+  {
+   "id": "WFR",
+   "name": "propan-2-yl (2S)-2-{[(S)-{[(2R,3S,4R,5R)-5-(2,4-dioxo-3,4-di",
+   "mw": 535.483
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "8e58": [
+  {
+   "id": "BBI",
+   "name": "(2-butyl-1-benzofuran-3-yl){4-[2-(diethylamino)ethoxy]-3,5-d",
+   "mw": 645.312
+  },
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "WFR",
+   "name": "propan-2-yl (2S)-2-{[(S)-{[(2R,3S,4R,5R)-5-(2,4-dioxo-3,4-di",
+   "mw": 535.483
+  }
+ ],
+ "8esv": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  },
+  {
+   "id": "BAT",
+   "name": "4-(N-HYDROXYAMINO)-2R-ISOBUTYL-2S-(2-THIENYLTHIOMETHYL)SUCCI",
+   "mw": 477.64
+  },
+  {
+   "id": "Y01",
+   "name": "CHOLESTEROL HEMISUCCINATE",
+   "mw": 486.726
+  }
+ ],
+ "8esw": [
+  {
+   "id": "DGT",
+   "name": "2'-DEOXYGUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "ZMP",
+   "name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano",
+   "mw": 568.704
+  },
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  },
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  }
+ ],
+ "8esz": [
+  {
+   "id": "DGT",
+   "name": "2'-DEOXYGUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "WSF",
+   "name": "(2R)-3-{[(S)-hydroxy(3-methylbutoxy)phosphoryl]oxy}-2-(octan",
+   "mw": 522.652
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "D12",
+   "name": "DODECANE",
+   "mw": 170.335
+  },
+  {
+   "id": "ZMP",
+   "name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano",
+   "mw": 568.704
+  },
+  {
+   "id": "C14",
+   "name": "TETRADECANE",
+   "mw": 198.388
+  },
+  {
+   "id": "U10",
+   "name": "UBIQUINONE-10",
+   "mw": 863.343
+  },
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  },
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  }
+ ],
+ "8eug": [],
+ "8eui": [],
+ "8fky": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "8gwr": [
+  {
+   "id": "HZO",
+   "name": "2,2-dimethyl-1,3-dihydrobenzo[a]phenanthridin-4-one",
+   "mw": 275.344
+  }
+ ],
+ "8gx2": [
+  {
+   "id": "KJ0",
+   "name": "N-[(2S)-3-cyclohexyl-1-[[(2S,3S)-4-(cyclopropylamino)-3-oxid",
+   "mw": 552.662
+  }
+ ],
+ "8j7x": [],
+ "8j7y": [],
+ "8j80": [],
+ "8jca": [
+  {
+   "id": "GTP",
+   "name": "GUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 523.18
+  }
+ ],
+ "8oxz": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "8p94": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "8pd0": [
+  {
+   "id": "PCW",
+   "name": "1,2-DIOLEOYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 787.121
+  },
+  {
+   "id": "PX6",
+   "name": "1,2-DIPALMITOYL-SN-GLYCERO-3-PHOSPHATE",
+   "mw": 647.883
+  }
+ ],
+ "8pda": [
+  {
+   "id": "PX6",
+   "name": "1,2-DIPALMITOYL-SN-GLYCERO-3-PHOSPHATE",
+   "mw": 647.883
+  },
+  {
+   "id": "PCW",
+   "name": "1,2-DIOLEOYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 787.121
+  }
+ ],
+ "8pmp": [
+  {
+   "id": "MGT",
+   "name": "7N-METHYL-8-HYDROGUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 539.223
+  }
+ ],
+ "8pnt": [
+  {
+   "id": "MGT",
+   "name": "7N-METHYL-8-HYDROGUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 539.223
+  }
+ ],
+ "8r8q": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "8soi": [],
+ "8srm": [],
+ "8srr": [
+  {
+   "id": "M7G",
+   "name": "7N-METHYL-8-HYDROGUANOSINE-5'-DIPHOSPHATE",
+   "mw": 458.235
+  }
+ ],
+ "8suy": [
+  {
+   "id": "M7G",
+   "name": "7N-METHYL-8-HYDROGUANOSINE-5'-DIPHOSPHATE",
+   "mw": 458.235
+  }
+ ],
+ "8t1o": [
+  {
+   "id": "PIO",
+   "name": "[(2R)-2-octanoyloxy-3-[oxidanyl-[(1R,2R,3S,4R,5R,6S)-2,3,6-t",
+   "mw": 746.566
+  }
+ ],
+ "8tqm": [
+  {
+   "id": "ERG",
+   "name": "ERGOSTEROL",
+   "mw": 396.648
+  },
+  {
+   "id": "Y01",
+   "name": "CHOLESTEROL HEMISUCCINATE",
+   "mw": 486.726
+  },
+  {
+   "id": "TGL",
+   "name": "TRISTEAROYLGLYCEROL",
+   "mw": 891.48
+  },
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  }
+ ],
+ "8uca": [
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  },
+  {
+   "id": "HEC",
+   "name": "HEME C",
+   "mw": 618.503
+  },
+  {
+   "id": "HEM",
+   "name": "PROTOPORPHYRIN IX CONTAINING FE",
+   "mw": 616.487
+  },
+  {
+   "id": "EHZ",
+   "name": "~{S}-[2-[3-[[(2~{R})-3,3-dimethyl-2-oxidanyl-4-phosphonooxy-",
+   "mw": 584.703
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "DGT",
+   "name": "2'-DEOXYGUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "8wao": [
+  {
+   "id": "W0F",
+   "name": "[[(2~{S},3~{R},4~{S},5~{R})-5-(2-azanyl-6-oxidanylidene-3~{H",
+   "mw": 537.207
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  }
+ ],
+ "8wap": [
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "W0F",
+   "name": "[[(2~{S},3~{R},4~{S},5~{R})-5-(2-azanyl-6-oxidanylidene-3~{H",
+   "mw": 537.207
+  }
+ ],
+ "8waq": [
+  {
+   "id": "W0F",
+   "name": "[[(2~{S},3~{R},4~{S},5~{R})-5-(2-azanyl-6-oxidanylidene-3~{H",
+   "mw": 537.207
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  }
+ ],
+ "8war": [
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "W0F",
+   "name": "[[(2~{S},3~{R},4~{S},5~{R})-5-(2-azanyl-6-oxidanylidene-3~{H",
+   "mw": 537.207
+  }
+ ],
+ "8was": [
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "W0F",
+   "name": "[[(2~{S},3~{R},4~{S},5~{R})-5-(2-azanyl-6-oxidanylidene-3~{H",
+   "mw": 537.207
+  }
+ ],
+ "8x9s": [
+  {
+   "id": "DHT",
+   "name": "5-ALPHA-DIHYDROTESTOSTERONE",
+   "mw": 290.44
+  }
+ ],
+ "8x9t": [
+  {
+   "id": "YNH",
+   "name": "methyl 3-[2-(2,4-dimethylphenoxy)ethanoylamino]-4-(4-ethylpi",
+   "mw": 425.521
+  }
+ ],
+ "8x9u": [
+  {
+   "id": "A1LU1",
+   "name": "Metenolone",
+   "mw": 302.451
+  }
+ ],
+ "8zdc": [],
+ "8zdd": [],
+ "8zsn": [
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  },
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  },
+  {
+   "id": "PLX",
+   "name": "(9R,11S)-9-({[(1S)-1-HYDROXYHEXADECYL]OXY}METHYL)-2,2-DIMETH",
+   "mw": 767.132
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "PEE",
+   "name": "1,2-dioleoyl-sn-glycero-3-phosphoethanolamine",
+   "mw": 744.034
+  },
+  {
+   "id": "ZMP",
+   "name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano",
+   "mw": 568.704
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "HEA",
+   "name": "HEME-A",
+   "mw": 852.837
+  },
+  {
+   "id": "HEM",
+   "name": "PROTOPORPHYRIN IX CONTAINING FE",
+   "mw": 616.487
+  },
+  {
+   "id": "HEC",
+   "name": "HEME C",
+   "mw": 618.503
+  },
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  }
+ ],
+ "8zso": [
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  },
+  {
+   "id": "PLX",
+   "name": "(9R,11S)-9-({[(1S)-1-HYDROXYHEXADECYL]OXY}METHYL)-2,2-DIMETH",
+   "mw": 767.132
+  },
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  },
+  {
+   "id": "ZMP",
+   "name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano",
+   "mw": 568.704
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "HEA",
+   "name": "HEME-A",
+   "mw": 852.837
+  },
+  {
+   "id": "HEM",
+   "name": "PROTOPORPHYRIN IX CONTAINING FE",
+   "mw": 616.487
+  },
+  {
+   "id": "HEC",
+   "name": "HEME C",
+   "mw": 618.503
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  },
+  {
+   "id": "PEE",
+   "name": "1,2-dioleoyl-sn-glycero-3-phosphoethanolamine",
+   "mw": 744.034
+  },
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  }
+ ],
+ "8zsq": [
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  },
+  {
+   "id": "PC1",
+   "name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 790.145
+  },
+  {
+   "id": "PLX",
+   "name": "(9R,11S)-9-({[(1S)-1-HYDROXYHEXADECYL]OXY}METHYL)-2,2-DIMETH",
+   "mw": 767.132
+  },
+  {
+   "id": "3PE",
+   "name": "1,2-Distearoyl-sn-glycerophosphoethanolamine",
+   "mw": 748.065
+  },
+  {
+   "id": "PEE",
+   "name": "1,2-dioleoyl-sn-glycero-3-phosphoethanolamine",
+   "mw": 744.034
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "ZMP",
+   "name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano",
+   "mw": 568.704
+  },
+  {
+   "id": "HEA",
+   "name": "HEME-A",
+   "mw": 852.837
+  },
+  {
+   "id": "HEM",
+   "name": "PROTOPORPHYRIN IX CONTAINING FE",
+   "mw": 616.487
+  },
+  {
+   "id": "HEC",
+   "name": "HEME C",
+   "mw": 618.503
+  },
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "U10",
+   "name": "UBIQUINONE-10",
+   "mw": 863.343
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "8zvq": [],
+ "9b0x": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  }
+ ],
+ "9b3j": [
+  {
+   "id": "CDL",
+   "name": "CARDIOLIPIN",
+   "mw": 1464.043
+  },
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "9buh": [
+  {
+   "id": "HEA",
+   "name": "HEME-A",
+   "mw": 852.837
+  },
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  },
+  {
+   "id": "HEM",
+   "name": "PROTOPORPHYRIN IX CONTAINING FE",
+   "mw": 616.487
+  },
+  {
+   "id": "HEC",
+   "name": "HEME C",
+   "mw": 618.503
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "ZMP",
+   "name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano",
+   "mw": 568.704
+  }
+ ],
+ "9bxu": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "9byk": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "9c82": [],
+ "9ce2": [
+  {
+   "id": "ZMP",
+   "name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano",
+   "mw": 568.704
+  },
+  {
+   "id": "NDP",
+   "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "mw": 745.421
+  },
+  {
+   "id": "HEA",
+   "name": "HEME-A",
+   "mw": 852.837
+  },
+  {
+   "id": "SF4",
+   "name": "IRON/SULFUR CLUSTER",
+   "mw": 351.64
+  },
+  {
+   "id": "FMN",
+   "name": "FLAVIN MONONUCLEOTIDE",
+   "mw": 456.344
+  },
+  {
+   "id": "HEC",
+   "name": "HEME C",
+   "mw": 618.503
+  },
+  {
+   "id": "HEM",
+   "name": "PROTOPORPHYRIN IX CONTAINING FE",
+   "mw": 616.487
+  },
+  {
+   "id": "FES",
+   "name": "FE2/S2 (INORGANIC) CLUSTER",
+   "mw": 175.82
+  }
+ ],
+ "9dva": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "9dzh": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "9dzj": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "9dzk": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "9ep0": [
+  {
+   "id": "GDD",
+   "name": "GUANOSINE-5'-DIPHOSPHATE-ALPHA-D-MANNOSE",
+   "mw": 605.341
+  },
+  {
+   "id": "MJC",
+   "name": "dolichyl phosphate mannose",
+   "mw": 1011.439
+  }
+ ],
+ "9f7k": [
+  {
+   "id": "GSH",
+   "name": "Glutathione",
+   "mw": 307.323
+  },
+  {
+   "id": "GS8",
+   "name": "S-Hydroxy-Glutathione",
+   "mw": 323.323
+  }
+ ],
+ "9fdf": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "X15",
+   "name": "1,3-BISPHOSPHOGLYCERIC ACID",
+   "mw": 266.037
+  }
+ ],
+ "9fdh": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "X15",
+   "name": "1,3-BISPHOSPHOGLYCERIC ACID",
+   "mw": 266.037
+  }
+ ],
+ "9fdn": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "3PG",
+   "name": "3-PHOSPHOGLYCERIC ACID",
+   "mw": 186.057
+  }
+ ],
+ "9h6o": [],
+ "9h8w": [],
+ "9hfl": [
+  {
+   "id": "GTA",
+   "name": "P1-7-METHYLGUANOSINE-P3-ADENOSINE-5',5'-TRIPHOSPHATE",
+   "mw": 787.441
+  },
+  {
+   "id": "GTP",
+   "name": "GUANOSINE-5'-TRIPHOSPHATE",
+   "mw": 523.18
+  }
+ ],
+ "9hjy": [
+  {
+   "id": "E64",
+   "name": "N-[N-[1-HYDROXYCARBOXYETHYL-CARBONYL]LEUCYLAMINO-BUTYL]-GUAN",
+   "mw": 360.429
+  }
+ ],
+ "9hwj": [],
+ "9i2b": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "9i8g": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "9i8h": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "GDP",
+   "name": "GUANOSINE-5'-DIPHOSPHATE",
+   "mw": 443.201
+  }
+ ],
+ "9if6": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "9iv2": [
+  {
+   "id": "DHT",
+   "name": "5-ALPHA-DIHYDROTESTOSTERONE",
+   "mw": 290.44
+  }
+ ],
+ "9lid": [
+  {
+   "id": "A1EJX",
+   "name": "4-[7-azanyl-8-(7-fluoranyl-1H-indazol-4-yl)-6-oxidanylidene-",
+   "mw": 442.445
+  }
+ ],
+ "9m5e": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "9m64": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "9mi8": [],
+ "9mja": [
+  {
+   "id": "UHB",
+   "name": "2-[4-[(2S,3S,4R,5R)-5-(6-aminopurin-9-yl)-3,4-bis(oxidanyl)o",
+   "mw": 537.528
+  }
+ ],
+ "9n9j": [
+  {
+   "id": "ELU",
+   "name": "phosphono [(3~{R},6~{E},10~{E})-3,7,11,15-tetramethylhexadec",
+   "mw": 452.459
+  }
+ ],
+ "9npx": [],
+ "9nrc": [
+  {
+   "id": "NAG",
+   "name": "2-acetamido-2-deoxy-beta-D-glucopyranose",
+   "mw": 221.208
+  }
+ ],
+ "9nxu": [
+  {
+   "id": "GSH",
+   "name": "Glutathione",
+   "mw": 307.323
+  }
+ ],
+ "9nxw": [
+  {
+   "id": "GSH",
+   "name": "Glutathione",
+   "mw": 307.323
+  }
+ ],
+ "9o1d": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "9o1f": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "9o1h": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "9o1j": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  },
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  }
+ ],
+ "9of2": [],
+ "9ofu": [],
+ "9pwa": [],
+ "9pwc": [],
+ "9qn5": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "9qsy": [],
+ "9qsz": [],
+ "9t5c": [],
+ "9v0u": [],
+ "9va8": [],
+ "9vdk": [
+  {
+   "id": "CLR",
+   "name": "CHOLESTEROL",
+   "mw": 386.654
+  },
+  {
+   "id": "PCW",
+   "name": "1,2-DIOLEOYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 787.121
+  },
+  {
+   "id": "P5S",
+   "name": "O-[(R)-{[(2R)-2,3-bis(octadecanoyloxy)propyl]oxy}(hydroxy)ph",
+   "mw": 792.075
+  }
+ ],
+ "9vdl": [],
+ "9vdm": [
+  {
+   "id": "P5S",
+   "name": "O-[(R)-{[(2R)-2,3-bis(octadecanoyloxy)propyl]oxy}(hydroxy)ph",
+   "mw": 792.075
+  },
+  {
+   "id": "CLR",
+   "name": "CHOLESTEROL",
+   "mw": 386.654
+  }
+ ],
+ "9vdn": [
+  {
+   "id": "P5S",
+   "name": "O-[(R)-{[(2R)-2,3-bis(octadecanoyloxy)propyl]oxy}(hydroxy)ph",
+   "mw": 792.075
+  },
+  {
+   "id": "PCW",
+   "name": "1,2-DIOLEOYL-SN-GLYCERO-3-PHOSPHOCHOLINE",
+   "mw": 787.121
+  },
+  {
+   "id": "CLR",
+   "name": "CHOLESTEROL",
+   "mw": 386.654
+  }
+ ],
+ "9vpc": [],
+ "9vpd": [
+  {
+   "id": "ADP",
+   "name": "ADENOSINE-5'-DIPHOSPHATE",
+   "mw": 427.201
+  },
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "9w2b": [],
+ "9w2d": [],
+ "9xhr": [],
+ "9ygy": [
+  {
+   "id": "ELU",
+   "name": "phosphono [(3~{R},6~{E},10~{E})-3,7,11,15-tetramethylhexadec",
+   "mw": 452.459
+  }
+ ],
+ "9ypz": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "9yq0": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ],
+ "9yq1": [
+  {
+   "id": "ATP",
+   "name": "ADENOSINE-5'-TRIPHOSPHATE",
+   "mw": 507.181
+  }
+ ]
+}

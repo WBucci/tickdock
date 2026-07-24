@@ -1,0 +1,243 @@
+{
+  "_meta": {
+    "generated": "2026-07-24",
+    "purpose": "Verified references for DHFR selectivity / methods-comparison sections of a methods paper",
+    "verification_method": "Cross-checked against live NCBI E-utilities (eutils.ncbi.nlm.nih.gov, esearch+esummary), CrossRef API (api.crossref.org), and RCSB PDB Data API (data.rcsb.org) — no PubMed/ChEMBL MCP connector was available in this session despite the task description; all lookups below were made directly against the primary APIs, not recalled from memory.",
+    "note": "Every entry marked status:'verified' was matched against a raw structured-data API response (PubMed esummary JSON, CrossRef JSON, or RCSB entry JSON) reproduced from the live query, not merely a web-search snippet."
+  },
+
+  "1_trimethoprim_selectivity": {
+    "authors": "Burchall JJ, Hitchings GH",
+    "year": 1965,
+    "title": "Inhibitor binding analysis of dihydrofolate reductases from various species",
+    "venue": "Molecular Pharmacology 1(2):126-136",
+    "doi": "10.1016/S0026-895X(25)14734-2",
+    "pmid": "4378654",
+    "status": "verified",
+    "note": "Confirmed via PubMed esummary (PMID 4378654, Mol Pharmacol 1965 Sep;1(2):126-36) and CrossRef (same title/volume/pages; DOI resolves live to a ScienceDirect/Elsevier page — Molecular Pharmacology's back catalog was retroactively assigned Elsevier DOIs). This is the classic Hitchings-lab paper comparing inhibitor (including trimethoprim) binding constants for DHFR from E. coli, S. aureus, P. vulgaris vs. vertebrate (rat liver) enzyme, which underlies the widely-cited ~10^4-10^5-fold bacterial-vs-mammalian selectivity figure for trimethoprim. CAVEAT: I could not confirm the literal numeral '10^4-10^5-fold' appears verbatim in this 1965 paper itself — that rounded figure is how later reviews summarize the Ki/Ki ratios reported here and in follow-on Hitchings-era work. Cite this as the primary data source; if the paper text is quoted for the exact fold-number, verify the number against the original text/a review before print."
+  },
+
+  "2_methotrexate_not_selective": {
+    "authors": "Burchall JJ, Hitchings GH",
+    "year": 1965,
+    "title": "Inhibitor binding analysis of dihydrofolate reductases from various species",
+    "venue": "Molecular Pharmacology 1(2):126-136",
+    "doi": "10.1016/S0026-895X(25)14734-2",
+    "pmid": "4378654",
+    "status": "verified",
+    "note": "Same paper as item 1 (verified identically). This study is also the standard primary source for methotrexate's lack of bacterial/vertebrate DHFR selectivity relative to trimethoprim — it reports methotrexate as a potent inhibitor across bacterial and vertebrate DHFRs alike, in contrast to trimethoprim's steep species differential. No separate methotrexate-specific cross-species paper was located that is more directly on-point than this one; if the paper needs a distinct citation from item 1, consider a modern review instead (e.g. Schweitzer/Dicker/Bertino 1990, item 5) rather than fabricating a second primary source."
+  },
+
+  "3_pyrimethamine_selectivity_plasmodium": {
+    "authors": "Yuthavong Y, Tarnchompoo B, Vilaivan T, Chitnumsub P, Kamchonwongpaisan S, Charman SA, McLennan DN, White KL, Vivas L, Bongard E, Thongphanchang C, Taweechai S, Vanichtanankul J, Rattanajak R, Arwon U, Fantauzzi P, Yuvaniyama J, Charman WN, Matthews D",
+    "year": 2012,
+    "title": "Malarial dihydrofolate reductase as a paradigm for drug development against a resistance-compromised target",
+    "venue": "Proceedings of the National Academy of Sciences USA 109(42):16823-16828",
+    "doi": "10.1073/pnas.1204556109",
+    "pmid": "23035243",
+    "status": "verified",
+    "note": "Confirmed via PubMed esummary (PMID 23035243, PNAS 2012 Oct 16;109(42):16823-8). Provides the residue-level basis for antifolate (pyrimethamine-class / P218) selectivity for Plasmodium DHFR over human DHFR, centered on conserved Arg122 in the parasite enzyme and three species-divergent residues near it in the human enzyme. A companion structural reference is Kongsaeree et al. 2005 PNAS (item below / PDB 2BL9), which is the P. vivax DHFR-pyrimethamine crystal structure paper — cite together if both binding-affinity selectivity and structural/residue detail are needed."
+  },
+
+  "4_saureus_F98Y_resistance": {
+    "authors": "Dale GE, Broger C, D'Arcy A, Hartman PG, DeHoogt R, Jolidon S, Kompis I, Labhardt AM, Langen H, Locher H, Page MG, Stüber D, Then RL, Wipf B, Oefner C",
+    "year": 1997,
+    "title": "A single amino acid substitution in Staphylococcus aureus dihydrofolate reductase determines trimethoprim resistance",
+    "venue": "Journal of Molecular Biology 266(1):23-30",
+    "doi": "10.1006/jmbi.1996.0770",
+    "pmid": "9054967",
+    "status": "verified",
+    "note": "Confirmed via PubMed esummary (PMID 9054967, J Mol Biol 1997 Feb 14;266(1):23-30, DOI 10.1006/jmbi.1996.0770). This is exactly the canonical F98Y (Phe98->Tyr98) trimethoprim-resistance mechanism paper — determined ternary crystal structures of wild-type S. aureus DHFR (with MTX and TMP/NADPH) and the F98Y mutant. NOTE: none of the 8 PDB IDs the user asked me to verify (7NAE/2W3A/2W9H/2BL9/4M6K/1RG7/1U72/6P9Z) is actually this paper's F98Y mutant structure or its associated PDB entries — 2W9H and 6P9Z in the requested list are both WILD-TYPE S. aureus DHFR. If a PDB structure of the F98Y mutant itself is needed for a figure, that is a separate entry (e.g. PDB 3M09, seen in search results as 'F98Y TMP-resistant Dihydrofolate Reductase from Staphylococcus aureus') and was NOT in the requested list, so I have not verified it — flag this to the user before using it."
+  },
+
+  "5_dhfr_established_target_review": {
+    "authors": "Schweitzer BI, Dicker AP, Bertino JR",
+    "year": 1990,
+    "title": "Dihydrofolate reductase as a therapeutic target",
+    "venue": "The FASEB Journal 4(8):2441-2452",
+    "doi": "10.1096/fasebj.4.8.2185970",
+    "pmid": "2185970",
+    "status": "verified",
+    "note": "Confirmed via PubMed esummary (PMID 2185970, FASEB J 1990 May;4(8), matching CrossRef DOI 10.1096/fasebj.4.8.2185970). Classic, heavily-cited review of DHFR as an antifolate drug target across bacterial, parasitic, and cancer contexts — a good citation for 'decades of antifolate pharmacology.'"
+  },
+
+  "6a_fep_wang2015": {
+    "authors": "Wang L, Wu Y, Deng Y, Kim B, Pierce L, Krilov G, Lupyan D, Robinson S, Dahlgren MK, Greenwood J, Romero DL, Masse C, Knight JL, Steinbrecher T, Beuming T, Damm W, Harder E, Sherman W, Brewer M, Wester R, Murcko M, Frye L, Farid R, Lin T, Mobley DL, Jorgensen WL, Berne BJ, Friesner RA, Abel R",
+    "year": 2015,
+    "title": "Accurate and Reliable Prediction of Relative Ligand Binding Potency in Prospective Drug Discovery by Way of a Modern Free-Energy Calculation Protocol and Force Field",
+    "venue": "Journal of the American Chemical Society 137(7):2695-2703",
+    "doi": "10.1021/ja512751q",
+    "pmid": "25625324",
+    "status": "verified",
+    "note": "Confirmed via PubMed esummary (PMID 25625324, J Am Chem Soc 2015 Feb 25;137(7):2695-703) and CrossRef (identical volume/issue/pages/DOI). This is the Schrodinger FEP+ benchmark paper (8 congeneric series, RMSE approaching ~1 kcal/mol on the well-behaved subsets)."
+  },
+
+  "6b_fep_review_cournia2017": {
+    "authors": "Cournia Z, Allen B, Sherman W",
+    "year": 2017,
+    "title": "Relative Binding Free Energy Calculations in Drug Discovery: Recent Advances and Practical Considerations",
+    "venue": "Journal of Chemical Information and Modeling 57(12):2911-2937",
+    "doi": "10.1021/acs.jcim.7b00564",
+    "pmid": "29243483",
+    "status": "verified",
+    "note": "Confirmed via PubMed esummary (PMID 29243483, J Chem Inf Model 2017 Dec 26;57(12):2911-2937) and CrossRef (identical). Companion/complementary review to Wang et al. 2015 — good general-purpose citation for FEP accuracy and practical considerations."
+  },
+
+  "7_docking_scoring_accuracy": {
+    "authors": "Warren GL, Andrews CW, Capelli AM, Clarke B, LaLonde J, Lambert MH, Lindvall M, Nevins N, Semus SF, Senger S, Tedesco G, Wall ID, Woolven JM, Peishoff CE, Head MS",
+    "year": 2006,
+    "title": "A Critical Assessment of Docking Programs and Scoring Functions",
+    "venue": "Journal of Medicinal Chemistry 49(20):5912-5931",
+    "doi": "10.1021/jm050362n",
+    "pmid": "17004707",
+    "status": "verified",
+    "note": "Confirmed via PubMed esummary (PMID 17004707, J Med Chem 2006 Oct 5;49(20):5912-31) and CrossRef (identical DOI/pages). Benchmarks 10 docking programs / 37 scoring functions across 8 targets for pose prediction, virtual screening, and rank-ordering — the standard citation for docking's limited cross-target affinity-ranking accuracy and multi-kcal/mol scoring error."
+  },
+
+  "8_posebusters": {
+    "authors": "Buttenschoen M, Morris GM, Deane CM",
+    "year": 2024,
+    "title": "PoseBusters: AI-based docking methods fail to generate physically valid poses or generalise to novel sequences",
+    "venue": "Chemical Science 15(9):3130-3139",
+    "doi": "10.1039/D3SC04185A",
+    "pmid": "38425520",
+    "status": "verified",
+    "note": "Confirmed via PubMed esummary (PMID 38425520, Chem Sci 2024 Feb 28;15(9):3130-3139, DOI 10.1039/d3sc04185a, PMC10901501). Matches exactly what the user described."
+  },
+
+  "pdb_entries": {
+    "7NAE": {
+      "exists": true,
+      "is_dhfr": true,
+      "organism": "Escherichia coli",
+      "title": "Crystal structure of Escherichia coli dihydrofolate reductase in complex with TRIMETHOPRIM",
+      "ligand": "Trimethoprim (TOP)",
+      "primary_citation": {
+        "authors": "Krucinska J, Lombardo MN, Erlandsen H, Estrada A, Si D, Viswanathan K, Wright DL",
+        "year": 2022,
+        "title": "Structure-guided functional studies of plasmid-encoded dihydrofolate reductases reveal a common mechanism of trimethoprim resistance in Gram-negative pathogens",
+        "venue": "Communications Biology 5:459",
+        "doi": "10.1038/s42003-022-03384-y",
+        "pmid": "35562546"
+      },
+      "status": "verified",
+      "note": "Confirmed directly from RCSB Data API JSON (struct.title + rcsb_primary_citation) and cross-checked the citation independently via PubMed esummary — exact match, including PMID."
+    },
+    "2W3A": {
+      "exists": true,
+      "is_dhfr": true,
+      "organism": "Homo sapiens (human)",
+      "title": "HUMAN DIHYDROFOLATE REDUCTASE COMPLEXED WITH NADPH AND TRIMETHOPRIM",
+      "ligand": "NADPH + Trimethoprim (plus sulfate ion and glycerol as crystallization additives)",
+      "primary_citation": {
+        "status_in_rcsb": "'To be Published' — journal_abbrev literally 'To be Published', no DOI/PMID in RCSB record",
+        "listed_title": "Structural Basis for Selective Inhibition of Mycobacterium Avium Dihydrofolate Reductase by a Lipophilic Antifolate",
+        "listed_authors": "Leung AKW, Ross LJ, Zywno-Van Ginkel S, Reynolds RC, Seitz LE, Pathak V, Barrow WW, White EL, Suling WJ, Piper JR, Borhani DW"
+      },
+      "status": "unverified",
+      "note": "PDB entry itself is real (confirmed via raw RCSB JSON: struct.title, organism, ligands, entity/resolution data all present and internally consistent for a 1.5A human-DHFR/NADPH/trimethoprim structure). BUT the 'primary citation' RCSB has attached to this entry is titled about Mycobacterium avium DHFR (a mismatched organism) and its journal field is literally 'To be Published' with no DOI or PMID — i.e. it was never published under that title, or was folded into a later paper not linked back to this PDB ID. Do NOT cite a Leung et al. paper for 2W3A. If you need a citable reference for this specific structure, cite the PDB entry directly (RCSB 2W3A, released 2009-11-17) rather than a journal article, or search for whichever later paper (if any) ultimately used this coordinate set."
+    },
+    "2W9H": {
+      "exists": true,
+      "is_dhfr": true,
+      "organism": "Staphylococcus aureus (wild-type, chromosomal)",
+      "title": "Wild-type Staphylococcus aureus DHFR in complex with trimethoprim",
+      "ligand": "Trimethoprim (TOP)",
+      "primary_citation": {
+        "authors": "Heaslet H, Harris M, Fahnoe K, Sarver R, Putz H, Chang J, Subramanyam C, Barreiro G, Miller JR",
+        "year": 2009,
+        "title": "Structural comparison of chromosomal and exogenous dihydrofolate reductase from Staphylococcus aureus in complex with the potent inhibitor trimethoprim",
+        "venue": "Proteins 76(3):706-717",
+        "doi": "10.1002/prot.22383",
+        "pmid": "19280600"
+      },
+      "status": "verified",
+      "note": "Cross-checked independently via PubMed esummary — exact match (author list, journal, year, DOI, PMID). This is WILD-TYPE S. aureus DHFR, not the F98Y trimethoprim-resistant mutant."
+    },
+    "2BL9": {
+      "exists": true,
+      "is_dhfr": true,
+      "organism": "Plasmodium vivax",
+      "title": "X-ray crystal structure of Plasmodium vivax dihydrofolate reductase in complex with pyrimethamine and its derivative",
+      "ligand": "Pyrimethamine + a pyrimethamine derivative",
+      "primary_citation": {
+        "authors": "Kongsaeree P, Khongsuk P, Leartsakulpanich U, Chitnumsub P, Tarnchompoo B, Walkinshaw MD, Yuthavong Y",
+        "year": 2005,
+        "title": "Crystal structure of dihydrofolate reductase from Plasmodium vivax: pyrimethamine displacement linked with mutation-induced resistance",
+        "venue": "Proceedings of the National Academy of Sciences USA 102(37):13046-13051",
+        "doi": "10.1073/pnas.0501747102",
+        "pmid": "16135570"
+      },
+      "status": "verified",
+      "note": "Cross-checked independently via PubMed esummary — exact match. Note PNAS volume/issue is 102(37), pages 13046-51 (some RCSB summaries loosely give 'Vol 102, pp. 13046' without the issue/end-page; PubMed record is authoritative)."
+    },
+    "4M6K": {
+      "exists": true,
+      "is_dhfr": true,
+      "organism": "Homo sapiens (human)",
+      "title": "Crystal structure of human dihydrofolate reductase (DHFR) bound to NADP+ and folate",
+      "ligand": "NADP+ and folate",
+      "primary_citation": {
+        "authors": "Bhabha G, Ekiert DC, Jennewein M, Zmasek CM, Tuttle LM, Kroon G, Dyson HJ, Godzik A, Wilson IA, Wright PE",
+        "year": 2013,
+        "title": "Divergent evolution of protein conformational dynamics in dihydrofolate reductase",
+        "venue": "Nature Structural & Molecular Biology 20(11):1243-1249",
+        "doi": "10.1038/nsmb.2676",
+        "pmid": "24077226"
+      },
+      "status": "verified",
+      "note": "Cross-checked independently via PubMed esummary — exact match. This is a substrate/cofactor (folate+NADP+) complex, not an inhibitor-bound structure, in case that distinction matters for the Methods text."
+    },
+    "1RG7": {
+      "exists": true,
+      "is_dhfr": true,
+      "organism": "Escherichia coli",
+      "title": "DIHYDROFOLATE REDUCTASE COMPLEXED WITH METHOTREXATE",
+      "ligand": "Methotrexate (+ NADP+ context; 84 solvent waters)",
+      "primary_citation": {
+        "authors": "Sawaya MR, Kraut J",
+        "year": 1997,
+        "title": "Loop and subdomain movements in the mechanism of Escherichia coli dihydrofolate reductase: crystallographic evidence",
+        "venue": "Biochemistry 36(3):586-603",
+        "doi": "10.1021/bi962337c",
+        "pmid": "9012674"
+      },
+      "status": "verified",
+      "note": "Cross-checked independently via PubMed esummary — exact match (title, journal, volume/issue/pages, DOI, PMID)."
+    },
+    "1U72": {
+      "exists": true,
+      "is_dhfr": true,
+      "organism": "Mouse and human (comparison of wild-type and Leu22Arg variant mouse/human DHFR)",
+      "title": "Understanding the Role of Leu22 Variants in Methotrexate Resistance: Comparison of Wild-type and Leu22Arg Variant Mouse and Human Dihydrofolate Reductase Ternary Crystal Complexes with Methotrexate and NADPH",
+      "ligand": "Methotrexate + NADPH",
+      "primary_citation": {
+        "authors": "Cody V, Luft JR, Pangborn W",
+        "year": 2005,
+        "title": "Understanding the role of Leu22 variants in methotrexate resistance: comparison of wild-type and Leu22Arg variant mouse and human dihydrofolate reductase ternary crystal complexes with methotrexate and NADPH",
+        "venue": "Acta Crystallographica Section D: Biological Crystallography 61(Pt 2):147-155",
+        "doi": "10.1107/S0907444904030422",
+        "pmid": "15681865"
+      },
+      "status": "verified",
+      "note": "Cross-checked independently via PubMed esummary and raw RCSB JSON (struct.title + rcsb_primary_citation) — both match exactly, including the specific PDB entry 1U72 in this multi-structure paper's series."
+    },
+    "6P9Z": {
+      "exists": true,
+      "is_dhfr": true,
+      "organism": "Staphylococcus aureus",
+      "title": "Staphylococcus aureus Dihydrofolate reductase in complex with NADPH and Methotrexate",
+      "ligand": "NADPH + Methotrexate",
+      "primary_citation": {
+        "authors": "Reeve SM, Si D, Krucinska J, Yan Y, Viswanathan K, Wang S, Holt GT, Frenkel MS, Ojewole AA, Estrada A, Agabiti SS, Alverson JB, Gibson ND, Priestley ND, Wiemer AJ, Donald BR, Wright DL",
+        "year": 2019,
+        "title": "Toward Broad Spectrum Dihydrofolate Reductase Inhibitors Targeting Trimethoprim Resistant Enzymes Identified in Clinical Isolates of Methicillin Resistant Staphylococcus aureus",
+        "venue": "ACS Infectious Diseases 5(11):1896-1906",
+        "doi": "10.1021/acsinfecdis.9b00222",
+        "pmid": "31565920"
+      },
+      "status": "verified",
+      "note": "Cross-checked independently via PubMed esummary — exact match. This is WILD-TYPE S. aureus DHFR (per RCSB title), used in a paper about designing inhibitors against trimethoprim-resistant clinical isolates — it is not itself an F98Y mutant structure."
+    }
+  }
+}

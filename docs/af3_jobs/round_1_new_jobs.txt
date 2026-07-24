@@ -1,0 +1,3 @@
+New AF3 co-folding jobs — round_1
+Count: 0
+Submit at: https://alphafoldserver.com (30/day limit)

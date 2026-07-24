@@ -1,0 +1,51 @@
+{
+  "human_accession": "P10828",
+  "tick_accession": "B7PY20",
+  "human_plddt_mean": 80.21477223427333,
+  "pocket": {
+    "drug": 0.978,
+    "vol": 644.59,
+    "cx": 13.839,
+    "cy": 10.311,
+    "cz": -9.007
+  },
+  "exhaustiveness": 8,
+  "results": [
+    {
+      "ligand": "CHEMBL9718",
+      "tick_score": -13.1,
+      "human_score": -1.673,
+      "selectivity_ratio": 0.12770992366412215,
+      "verdict": "SELECTIVE \u2713\u2713"
+    },
+    {
+      "ligand": "CHEMBL329131",
+      "tick_score": -12.7,
+      "human_score": -4.095,
+      "selectivity_ratio": 0.32244094488188974,
+      "verdict": "SELECTIVE \u2713\u2713"
+    },
+    {
+      "ligand": "CHEMBL90647",
+      "tick_score": -12.7,
+      "human_score": 0.958,
+      "selectivity_ratio": -0.07543307086614173,
+      "verdict": "SELECTIVE \u2713\u2713"
+    },
+    {
+      "ligand": "CHEMBL89845",
+      "tick_score": -12.6,
+      "human_score": -4.51,
+      "selectivity_ratio": 0.35793650793650794,
+      "verdict": "SELECTIVE \u2713\u2713"
+    },
+    {
+      "ligand": "CHEMBL94259",
+      "tick_score": -12.6,
+      "human_score": -2.779,
+      "selectivity_ratio": 0.22055555555555556,
+      "verdict": "SELECTIVE \u2713\u2713"
+    }
+  ],
+  "missing": []
+}

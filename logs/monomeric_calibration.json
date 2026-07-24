@@ -1,0 +1,299 @@
+{
+  "generated": "2026-07-23T11:15:10.608870",
+  "contact_cutoff": 4.5,
+  "alignment": "global Needleman-Wunsch, BLOSUM62, open=-11, extend=-1",
+  "control_set_source": "/mnt/c/Personal/tickdock/logs/monomeric_control_set.json",
+  "results": [
+    {
+      "label": "E. coli DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+      "drug": "trimethoprim",
+      "expected_pocket_divergence": "HIGH",
+      "protein_a": {
+        "uniprot": "P0ABQ4",
+        "organism": "Escherichia coli (K-12)",
+        "pdb_ligand_bound": "7NAE",
+        "ligand_ccd_code": "TOP",
+        "chain": "A"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "2W3A",
+        "ligand_ccd_code": "TOP",
+        "chain": "A"
+      },
+      "ligand_instance_matched_hit_chain": true,
+      "protein_a_seq_length": 159,
+      "protein_a_seq_source": "structure 7NAE chain A",
+      "protein_b_seq_length": 187,
+      "protein_b_seq_source": "UniProt P00374",
+      "n_chains_contributing": 1,
+      "contributing_chains": [
+        "A"
+      ],
+      "inter_subunit": false,
+      "n_contacts": 16,
+      "fraction_unmappable": 0.0,
+      "other_chain_contacts": [],
+      "MULTI_CHAIN_FLAG": false,
+      "whole_protein_identity": 0.3228,
+      "n_whole_protein_aligned_positions": 158,
+      "n_mapped": 16,
+      "pocket_identity": 0.5,
+      "pocket_similarity": 0.9375,
+      "pocket_divergence": 0.5,
+      "status": "ok"
+    },
+    {
+      "label": "S. aureus DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+      "drug": "trimethoprim",
+      "expected_pocket_divergence": "HIGH",
+      "protein_a": {
+        "uniprot": "P0A017",
+        "organism": "Staphylococcus aureus (strain MU-50)",
+        "pdb_ligand_bound": "2W9H",
+        "ligand_ccd_code": "TOP",
+        "chain": "A"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "2W3A",
+        "ligand_ccd_code": "TOP",
+        "chain": "A"
+      },
+      "ligand_instance_matched_hit_chain": true,
+      "protein_a_seq_length": 158,
+      "protein_a_seq_source": "structure 2W9H chain A",
+      "protein_b_seq_length": 187,
+      "protein_b_seq_source": "UniProt P00374",
+      "n_chains_contributing": 1,
+      "contributing_chains": [
+        "A"
+      ],
+      "inter_subunit": false,
+      "n_contacts": 14,
+      "fraction_unmappable": 0.0,
+      "other_chain_contacts": [],
+      "MULTI_CHAIN_FLAG": false,
+      "whole_protein_identity": 0.2911,
+      "n_whole_protein_aligned_positions": 158,
+      "n_mapped": 14,
+      "pocket_identity": 0.4286,
+      "pocket_similarity": 0.8571,
+      "pocket_divergence": 0.5714,
+      "status": "ok"
+    },
+    {
+      "label": "P. vivax DHFR vs human DHFR -- pyrimethamine (SELECTIVE)",
+      "drug": "pyrimethamine",
+      "expected_pocket_divergence": "HIGH",
+      "protein_a": {
+        "uniprot": "O02604",
+        "organism": "Plasmodium vivax",
+        "pdb_ligand_bound": "2BL9",
+        "ligand_ccd_code": "CP6",
+        "chain": "A"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "4M6K",
+        "ligand_ccd_code": "FOL",
+        "chain": "A"
+      },
+      "ligand_instance_matched_hit_chain": true,
+      "protein_a_seq_length": 216,
+      "protein_a_seq_source": "structure 2BL9 chain A",
+      "protein_b_seq_length": 187,
+      "protein_b_seq_source": "UniProt P00374",
+      "n_chains_contributing": 1,
+      "contributing_chains": [
+        "A"
+      ],
+      "inter_subunit": false,
+      "n_contacts": 13,
+      "fraction_unmappable": 0.0,
+      "other_chain_contacts": [],
+      "MULTI_CHAIN_FLAG": false,
+      "whole_protein_identity": 0.3616,
+      "n_whole_protein_aligned_positions": 177,
+      "n_mapped": 10,
+      "pocket_identity": 0.6,
+      "pocket_similarity": 1.0,
+      "pocket_divergence": 0.4,
+      "status": "ok"
+    },
+    {
+      "label": "E. coli DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+      "drug": "methotrexate",
+      "expected_pocket_divergence": "LOW",
+      "protein_a": {
+        "uniprot": "P0ABQ4",
+        "organism": "Escherichia coli (K-12)",
+        "pdb_ligand_bound": "1RG7",
+        "ligand_ccd_code": "MTX",
+        "chain": "A"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "1U72",
+        "ligand_ccd_code": "MTX",
+        "chain": "A"
+      },
+      "ligand_instance_matched_hit_chain": true,
+      "protein_a_seq_length": 159,
+      "protein_a_seq_source": "structure 1RG7 chain A",
+      "protein_b_seq_length": 187,
+      "protein_b_seq_source": "UniProt P00374",
+      "n_chains_contributing": 1,
+      "contributing_chains": [
+        "A"
+      ],
+      "inter_subunit": false,
+      "n_contacts": 22,
+      "fraction_unmappable": 0.0,
+      "other_chain_contacts": [],
+      "MULTI_CHAIN_FLAG": false,
+      "whole_protein_identity": 0.3228,
+      "n_whole_protein_aligned_positions": 158,
+      "n_mapped": 22,
+      "pocket_identity": 0.5,
+      "pocket_similarity": 0.8636,
+      "pocket_divergence": 0.5,
+      "status": "ok"
+    },
+    {
+      "label": "S. aureus DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+      "drug": "methotrexate",
+      "expected_pocket_divergence": "LOW",
+      "protein_a": {
+        "uniprot": "P0A017",
+        "organism": "Staphylococcus aureus",
+        "pdb_ligand_bound": "6P9Z",
+        "ligand_ccd_code": "MTX",
+        "chain": "X"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "1U72",
+        "ligand_ccd_code": "MTX",
+        "chain": "A"
+      },
+      "ligand_instance_matched_hit_chain": true,
+      "protein_a_seq_length": 157,
+      "protein_a_seq_source": "structure 6P9Z chain X",
+      "protein_b_seq_length": 187,
+      "protein_b_seq_source": "UniProt P00374",
+      "n_chains_contributing": 1,
+      "contributing_chains": [
+        "X"
+      ],
+      "inter_subunit": false,
+      "n_contacts": 16,
+      "fraction_unmappable": 0.0,
+      "other_chain_contacts": [],
+      "MULTI_CHAIN_FLAG": false,
+      "whole_protein_identity": 0.293,
+      "n_whole_protein_aligned_positions": 157,
+      "n_mapped": 16,
+      "pocket_identity": 0.5,
+      "pocket_similarity": 0.8125,
+      "pocket_divergence": 0.5,
+      "status": "ok"
+    }
+  ],
+  "T1_headline": {
+    "status": "fail",
+    "min_positive_divergence": 0.4,
+    "max_negative_divergence": 0.5,
+    "positive_divergences": {
+      "E. coli DHFR vs human DHFR -- trimethoprim (SELECTIVE)": 0.5,
+      "S. aureus DHFR vs human DHFR -- trimethoprim (SELECTIVE)": 0.5714,
+      "P. vivax DHFR vs human DHFR -- pyrimethamine (SELECTIVE)": 0.4
+    },
+    "negative_divergences": {
+      "E. coli DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)": 0.5,
+      "S. aureus DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)": 0.5
+    }
+  },
+  "T2_resolution": {
+    "status": "ok",
+    "comparisons": [
+      {
+        "protein_pair_uniprot": [
+          "P0ABQ4",
+          "P00374"
+        ],
+        "positive_label": "E. coli DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+        "positive_drug": "trimethoprim",
+        "positive_pocket_identity": 0.5,
+        "negative_label": "E. coli DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+        "negative_drug": "methotrexate",
+        "negative_pocket_identity": 0.5,
+        "delta_pocket_identity_neg_minus_pos": 0.0,
+        "whole_protein_identity_positive": 0.3228,
+        "whole_protein_identity_negative": 0.3228,
+        "whole_protein_identity_matches": true
+      },
+      {
+        "protein_pair_uniprot": [
+          "P0A017",
+          "P00374"
+        ],
+        "positive_label": "S. aureus DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+        "positive_drug": "trimethoprim",
+        "positive_pocket_identity": 0.4286,
+        "negative_label": "S. aureus DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+        "negative_drug": "methotrexate",
+        "negative_pocket_identity": 0.5,
+        "delta_pocket_identity_neg_minus_pos": 0.0714,
+        "whole_protein_identity_positive": 0.2911,
+        "whole_protein_identity_negative": 0.293,
+        "whole_protein_identity_matches": false
+      }
+    ]
+  },
+  "T3_pocket_vs_whole": {
+    "rows": [
+      {
+        "label": "E. coli DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+        "expected": "HIGH",
+        "whole_protein_identity": 0.3228,
+        "pocket_identity": 0.5,
+        "delta_pocket_minus_whole": 0.1772
+      },
+      {
+        "label": "S. aureus DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+        "expected": "HIGH",
+        "whole_protein_identity": 0.2911,
+        "pocket_identity": 0.4286,
+        "delta_pocket_minus_whole": 0.1375
+      },
+      {
+        "label": "P. vivax DHFR vs human DHFR -- pyrimethamine (SELECTIVE)",
+        "expected": "HIGH",
+        "whole_protein_identity": 0.3616,
+        "pocket_identity": 0.6,
+        "delta_pocket_minus_whole": 0.2384
+      },
+      {
+        "label": "E. coli DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+        "expected": "LOW",
+        "whole_protein_identity": 0.3228,
+        "pocket_identity": 0.5,
+        "delta_pocket_minus_whole": 0.1772
+      },
+      {
+        "label": "S. aureus DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+        "expected": "LOW",
+        "whole_protein_identity": 0.293,
+        "pocket_identity": 0.5,
+        "delta_pocket_minus_whole": 0.207
+      }
+    ],
+    "mean_pocket_minus_whole_delta": 0.1875
+  }
+}

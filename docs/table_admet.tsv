@@ -1,0 +1,251 @@
+Rank	Ligand	Target	Target name	Score (kcal/mol)	Pan-tick	Human selectivity	ADMET flag	MW	logP	HBD	HBA	TPSA	RotBonds	ArRings	logS_ESOL	Lipinski	Veber	Egan	PAINS	Brenk	hERG_flag	AMES_flag	AMES_alerts	Hepatotox_flag	Hepatotox_alerts	BasicN_count
+1	CHEMBL94259	B7P5E9	B7P5E9	-14.0	No		FLAG(hERG,Hepatotox)	565.19	4.53	3	4	97.3	7	2	-5.96	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+2	CHEMBL91403	B7P5E9	B7P5E9	-13.9	No		FLAG(hERG,Hepatotox)	550.23	4.01	2	5	112.3	7	2	-5.54	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+3	CHEMBL90184	B7P5E9	B7P5E9	-13.3	No		FLAG(hERG,Hepatotox)	540.2	4.66	3	3	73.5	7	2	-5.9	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+4	CHEMBL9405	B7P5E9	B7P5E9	-13.2	No		FLAG(hERG)	454.18	4.19	3	6	121.1	6	4	-5.38	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+5	CHEMBL328658	B7P5E9	B7P5E9	-13.1	No		FLAG(hERG,Hepatotox)	493.23	3.85	3	4	97.3	7	2	-5.11	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+6	CHEMBL9718	B7PY20	B7PY20	-13.1	Yes		WARN(Brenk)	442.17	3.46	0	6	87.2	4	6	-5.15	Pass	Pass	Pass	Clean	Flag	Low risk	Low risk		Low risk		0
+7	CHEMBL275307	B7P5E9	B7P5E9	-13.0	No		FLAG(hERG)	440.16	3.8	3	6	121.1	6	4	-5.06	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+8	CHEMBL90128	B7P5E9	B7P5E9	-13.0	No		CLEAN	536.19	0.2	5	8	172.0	7	3	-3.17	Pass	Fail	Fail	Clean	Clean	Low risk	Low risk		Low risk		0
+9	CHEMBL93843	B7P5E9	B7P5E9	-13.0	No		FLAG(hERG,Hepatotox)	550.23	3.96	1	5	103.5	7	2	-5.51	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+10	CHEMBL419497	B7P5E9	B7P5E9	-12.9	No		FLAG(hERG,Hepatotox)	511.22	3.75	2	4	88.5	7	2	-5.15	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+11	CHEMBL421356	B7P5E9	B7P5E9	-12.9	No		FLAG(hERG)	606.12	5.61	0	5	74.8	8	3	-6.95	Fail	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+12	CHEMBL6293	B7P5E9	B7P5E9	-12.9	No		WARN(Brenk)	417.05	3.5	1	5	98.0	2	5	-5.14	Pass	Pass	Pass	Clean	Flag	Low risk	Low risk		Low risk		0
+13	CHEMBL8922	B7P5E9	B7P5E9	-12.9	No		FLAG(hERG)	459.19	4.33	3	6	106.5	7	4	-5.43	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+14	CHEMBL327329	Q6XR73	Q6XR73	-12.9	No		FLAG(hERG)	606.25	5.7	2	4	64.7	8	3	-6.98	Fail	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		2
+15	CHEMBL91649	Q6XR73	Q6XR73	-12.9	No		FLAG(hERG)	503.19	4.53	3	4	102.5	8	4	-5.71	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+16	CHEMBL276627	B7P5E9	B7P5E9	-12.8	No		FLAG(hERG)	463.14	4.97	3	5	97.3	6	4	-5.94	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+17	CHEMBL90086	B7P5E9	B7P5E9	-12.8	No		FLAG(hERG,Hepatotox)	511.22	3.94	2	4	88.5	7	2	-5.27	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+18	CHEMBL91616	B7P5E9	B7P5E9	-12.8	No		FLAG(hERG,Hepatotox)	511.22	3.75	2	4	88.5	7	2	-5.15	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+19	CHEMBL93644	B7P5E9	B7P5E9	-12.8	No		FLAG(hERG)	439.26	5.81	1	2	35.6	5	3	-6.3	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+20	CHEMBL316358	B7P5E9	B7P5E9	-12.7	No		FLAG(hERG,Hepatotox)	536.21	3.62	2	5	112.3	7	2	-5.21	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+21	CHEMBL328898	B7P5E9	B7P5E9	-12.7	No		FLAG(hERG)	582.19	4.03	0	7	93.2	8	3	-5.79	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+22	CHEMBL91053	B7P5E9	B7P5E9	-12.7	No		CLEAN	574.18	3.78	2	6	122.2	9	4	-5.59	Pass	Pass	Pass	Clean	Clean	Low risk	Low risk		Low risk		0
+23	CHEMBL9524	B7P5E9	B7P5E9	-12.7	No		CLEAN																			
+24	CHEMBL96217	B7P5E9	B7P5E9	-12.7	No		FLAG(hERG)	428.26	5.92	0	2	6.5	6	3	-6.25	Pass	Pass	Fail	Clean	Clean	Flag	Low risk		Low risk		2
+25	CHEMBL329131	B7PY20	B7PY20	-12.7	Yes		FLAG(hERG)	460.22	4.97	0	3	40.6	6	3	-5.83	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+26	CHEMBL90647	B7PY20	B7PY20	-12.7	Yes		FLAG(hERG)	557.22	5.14	2	6	94.6	8	3	-6.46	Fail	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+27	CHEMBL330528	B7P5E9	B7P5E9	-12.6	No		FLAG(hERG)	520.19	4.25	0	4	63.7	5	3	-5.78	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+28	CHEMBL88605	B7P5E9	B7P5E9	-12.6	No		FLAG(hERG)	558.25	3.53	1	8	114.2	3	3	-5.61	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+29	CHEMBL88771	B7P5E9	B7P5E9	-12.6	No		FLAG(Hepatotox)	412.18	5.07	3	2	82.2	5	3	-5.67	Pass	Pass	Pass	Clean	Flag	Low risk	Low risk		Flag	Michael acceptor	0
+30	CHEMBL89251	B7P5E9	B7P5E9	-12.6	No		FLAG(hERG)	576.11	5.6	1	4	72.5	8	3	-6.77	Fail	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+31	CHEMBL89887	B7P5E9	B7P5E9	-12.6	No		CLEAN	406.12	1.85	1	7	99.9	1	3	-3.85	Pass	Pass	Pass	Clean	Clean	Low risk	Low risk		Low risk		0
+32	CHEMBL89936	B7P5E9	B7P5E9	-12.6	No		CLEAN	551.15	4.56	1	7	108.7	8	3	-5.94	Pass	Pass	Pass	Clean	Clean	Low risk	Low risk		Low risk		0
+33	CHEMBL91088	B7P5E9	B7P5E9	-12.6	No		FLAG(hERG)	499.18	4.29	2	6	94.6	6	2	-5.64	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+34	CHEMBL91091	B7P5E9	B7P5E9	-12.6	No		FLAG(hERG,Hepatotox)	504.21	3.14	3	5	121.1	7	2	-4.72	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+35	CHEMBL93887	B7P5E9	B7P5E9	-12.6	No		FLAG(hERG)	396.26	5.79	0	2	6.5	5	3	-6.06	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		2
+36	CHEMBL89845	B7PY20	B7PY20	-12.6	Yes		WARN(Brenk)	532.23	2.28	3	6	137.8	8	3	-4.35	Pass	Pass	Fail	Clean	Flag	Low risk	Low risk		Low risk		0
+37	CHEMBL94259	B7PY20	B7PY20	-12.6	Yes		FLAG(hERG,Hepatotox)	565.19	4.53	3	4	97.3	7	2	-5.96	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+38	CHEMBL268680	B7P5E9	B7P5E9	-12.5	No		WARN(Brenk)	498.2	2.36	5	7	153.1	8	4	-4.35	Pass	Fail	Fail	Clean	Flag	Low risk	Low risk		Low risk		0
+39	CHEMBL314949	B7P5E9	B7P5E9	-12.5	No		FLAG(hERG)	513.2	4.29	2	6	94.6	7	2	-5.64	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+40	CHEMBL330687	B7P5E9	B7P5E9	-12.5	No		CLEAN	603.1	3.99	3	5	132.9	9	3	-5.83	Pass	Pass	Fail	Clean	Clean	Low risk	Low risk		Low risk		0
+41	CHEMBL90652	B7P5E9	B7P5E9	-12.5	No		FLAG(hERG,Hepatotox)	479.21	3.46	3	4	97.3	7	2	-4.78	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+42	CHEMBL91489	B7P5E9	B7P5E9	-12.5	No		CLEAN	476.21	5.98	2	3	75.3	9	4	-6.46	Pass	Pass	Fail	Clean	Clean	Low risk	Low risk		Low risk		0
+43	CHEMBL9203	B7P5E9	B7P5E9	-12.5	No	0.478	FLAG(hERG,AMES)	474.17	4.23	3	7	140.4	7	4	-5.45	Pass	Fail	Fail	Clean	Flag	Flag	Flag	ArNitro	Low risk		2
+44	CHEMBL9311	B7P5E9	B7P5E9	-12.5	No		FLAG(hERG)	459.19	4.33	3	6	106.5	7	4	-5.43	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+45	CHEMBL94109	B7P5E9	B7P5E9	-12.5	No		FLAG(hERG,Hepatotox)	548.19	5.58	2	6	73.4	7	3	-6.62	Fail	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	3
+46	CHEMBL6323	B7PY20	B7PY20	-12.5	Yes		FLAG(hERG,AMES,Hepatotox)	443.2	3.34	1	7	93.8	4	4	-4.88	Pass	Pass	Pass	Clean	Clean	Flag	Flag	ArPrimAmine	Flag	ArPrimAmine	2
+47	CHEMBL91574	B7PY20	B7PY20	-12.5	Yes		FLAG(hERG)	543.19	5.64	2	3	61.4	7	3	-6.65	Fail	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+48	CHEMBL91574	Q6XR73	Q6XR73	-12.5	No		FLAG(hERG)	543.19	5.64	2	3	61.4	7	3	-6.65	Fail	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+49	CHEMBL313746	B7P5E9	B7P5E9	-12.4	No		FLAG(Hepatotox)	340.16	5.05	2	1	44.9	2	3	-5.48	Pass	Pass	Pass	Clean	Flag	Low risk	Low risk		Flag	Michael acceptor	0
+50	CHEMBL313821	B7P5E9	B7P5E9	-12.4	No		FLAG(Hepatotox)	442.19	5.08	3	3	91.4	6	3	-5.77	Pass	Pass	Pass	Clean	Flag	Low risk	Low risk		Flag	Michael acceptor	0
+51	CHEMBL315557	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+52	CHEMBL327846	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+53	CHEMBL4105630	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+54	CHEMBL419682	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+55	CHEMBL447236	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+56	CHEMBL88604	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+57	CHEMBL90606	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+58	CHEMBL91503	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+59	CHEMBL92880	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+60	CHEMBL9354	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+61	CHEMBL9406	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+62	CHEMBL94167	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+63	CHEMBL9719	B7P5E9	B7P5E9	-12.4	No		CLEAN																			
+64	CHEMBL328658	B7PY20	B7PY20	-12.4	Yes		FLAG(hERG,Hepatotox)	493.23	3.85	3	4	97.3	7	2	-5.11	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+65	CHEMBL330743	B7PY20	B7PY20	-12.4	Yes		CLEAN																			
+66	CHEMBL91727	B7PY20	B7PY20	-12.4	Yes		CLEAN																			
+67	CHEMBL93843	B7PY20	B7PY20	-12.4	Yes		FLAG(hERG,Hepatotox)	550.23	3.96	1	5	103.5	7	2	-5.51	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+68	CHEMBL9835	B7PY20	B7PY20	-12.4	Yes		CLEAN	444.18	4.23	0	6	87.2	6	6	-5.52	Pass	Pass	Pass	Clean	Clean	Low risk	Low risk		Low risk		0
+69	CHEMBL90380	A0A4D5RMV5	A0A4D5RMV5	-12.3	Yes		CLEAN																			
+70	CHEMBL269606	B7P5E9	B7P5E9	-12.3	No		FLAG(hERG)	435.23	4.13	3	5	97.3	6	3	-5.12	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+71	CHEMBL314629	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+72	CHEMBL316100	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+73	CHEMBL316212	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+74	CHEMBL327605	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+75	CHEMBL328325	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+76	CHEMBL328339	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+77	CHEMBL423134	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+78	CHEMBL4297528	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+79	CHEMBL6323	B7P5E9	B7P5E9	-12.3	No		FLAG(hERG,AMES,Hepatotox)	443.2	3.34	1	7	93.8	4	4	-4.88	Pass	Pass	Pass	Clean	Clean	Flag	Flag	ArPrimAmine	Flag	ArPrimAmine	2
+80	CHEMBL92328	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+81	CHEMBL92861	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+82	CHEMBL94179	B7P5E9	B7P5E9	-12.3	No		CLEAN																			
+83	CHEMBL275763	B7PY20	B7PY20	-12.3	Yes		CLEAN																			
+84	CHEMBL314744	B7PY20	B7PY20	-12.3	Yes		CLEAN																			
+85	CHEMBL419497	B7PY20	B7PY20	-12.3	Yes		FLAG(hERG,Hepatotox)	511.22	3.75	2	4	88.5	7	2	-5.15	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+86	CHEMBL90243	B7PY20	B7PY20	-12.3	Yes		CLEAN																			
+87	CHEMBL91616	B7PY20	B7PY20	-12.3	Yes		FLAG(hERG,Hepatotox)	511.22	3.75	2	4	88.5	7	2	-5.15	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+88	CHEMBL91649	B7PY20	B7PY20	-12.3	Yes		FLAG(hERG)	503.19	4.53	3	4	102.5	8	4	-5.71	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+89	CHEMBL93223	B7PY20	B7PY20	-12.3	Yes		CLEAN																			
+90	CHEMBL93807	B7PY20	B7PY20	-12.3	Yes		CLEAN																			
+91	CHEMBL94138	B7PY20	B7PY20	-12.3	Yes		CLEAN																			
+92	CHEMBL88875	B7SP64	B7SP64	-12.3	No		CLEAN																			
+93	CHEMBL315557	A0A4D5RMV5	A0A4D5RMV5	-12.2	Yes		CLEAN																			
+94	CHEMBL266120	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+95	CHEMBL330340	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+96	CHEMBL330680	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+97	CHEMBL432941	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+98	CHEMBL7905	B7P5E9	B7P5E9	-12.2	No		FLAG(hERG,AMES,Hepatotox)	484.1	3.76	3	6	136.9	5	3	-5.28	Pass	Pass	Fail	Clean	Flag	Flag	Flag	ArPrimAmine	Flag	ArPrimAmine	1
+99	CHEMBL7967	B7P5E9	B7P5E9	-12.2	No		FLAG(hERG)	477.15	2.81	4	6	160.7	6	3	-4.56	Pass	Fail	Fail	Clean	Flag	Flag	Low risk		Low risk		1
+100	CHEMBL88462	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+101	CHEMBL8920	B7P5E9	B7P5E9	-12.2	No		FLAG(hERG)	473.17	3.72	3	7	123.6	7	4	-5.12	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+102	CHEMBL89927	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+103	CHEMBL89958	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+104	CHEMBL91374	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+105	CHEMBL91638	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+106	CHEMBL9319	B7P5E9	B7P5E9	-12.2	No		CLEAN																			
+107	CHEMBL274817	B7PY20	B7PY20	-12.2	Yes		CLEAN																			
+108	CHEMBL316100	B7PY20	B7PY20	-12.2	Yes		CLEAN																			
+109	CHEMBL414196	B7PY20	B7PY20	-12.2	Yes		CLEAN																			
+110	CHEMBL90184	B7PY20	B7PY20	-12.2	Yes		FLAG(hERG,Hepatotox)	540.2	4.66	3	3	73.5	7	2	-5.9	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+111	CHEMBL90652	B7PY20	B7PY20	-12.2	Yes		FLAG(hERG,Hepatotox)	479.21	3.46	3	4	97.3	7	2	-4.78	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+112	CHEMBL92106	B7PY20	B7PY20	-12.2	Yes		CLEAN																			
+113	CHEMBL94188	B7PY20	B7PY20	-12.2	Yes		CLEAN																			
+114	CHEMBL9506	B7PY20	B7PY20	-12.2	Yes		CLEAN																			
+115	CHEMBL9719	B7PY20	B7PY20	-12.2	Yes		CLEAN																			
+116	CHEMBL329588	Q2Q443	Q2Q443	-12.2	No		CLEAN																			
+117	CHEMBL269123	B7P5E9	B7P5E9	-12.1	No		CLEAN																			
+118	CHEMBL328438	B7P5E9	B7P5E9	-12.1	No		CLEAN																			
+119	CHEMBL7221	B7P5E9	B7P5E9	-12.1	No		CLEAN																			
+120	CHEMBL8997	B7P5E9	B7P5E9	-12.1	No		FLAG(hERG)	463.14	4.97	3	5	97.3	6	4	-5.94	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+121	CHEMBL90015	B7P5E9	B7P5E9	-12.1	No		CLEAN																			
+122	CHEMBL90380	B7P5E9	B7P5E9	-12.1	No		CLEAN																			
+123	CHEMBL90761	B7P5E9	B7P5E9	-12.1	No		CLEAN																			
+124	CHEMBL90849	B7P5E9	B7P5E9	-12.1	No		CLEAN																			
+125	CHEMBL9267	B7P5E9	B7P5E9	-12.1	No		FLAG(hERG)	487.19	4.11	3	7	123.6	8	4	-5.37	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+126	CHEMBL92900	B7P5E9	B7P5E9	-12.1	No		CLEAN																			
+127	CHEMBL93523	B7P5E9	B7P5E9	-12.1	No		CLEAN																			
+128	CHEMBL9377	B7P5E9	B7P5E9	-12.1	No		FLAG(hERG)	429.18	4.24	3	5	97.3	6	4	-5.29	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+129	CHEMBL9415	B7P5E9	B7P5E9	-12.1	No		FLAG(hERG)	495.23	2.55	4	6	130.5	8	3	-4.33	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		3
+130	CHEMBL327800	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+131	CHEMBL330269	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+132	CHEMBL420241	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+133	CHEMBL431085	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+134	CHEMBL432034	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+135	CHEMBL6342	B7PY20	B7PY20	-12.1	Yes		FLAG(hERG,AMES,Hepatotox)	437.19	2.89	1	7	93.8	5	3	-4.41	Pass	Pass	Pass	Clean	Flag	Flag	Flag	ArPrimAmine	Flag	Michael acceptor|ArPrimAmine	2
+136	CHEMBL89981	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+137	CHEMBL90015	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+138	CHEMBL91403	B7PY20	B7PY20	-12.1	Yes		FLAG(hERG,Hepatotox)	550.23	4.01	2	5	112.3	7	2	-5.54	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+139	CHEMBL92585	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+140	CHEMBL92870	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+141	CHEMBL93123	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+142	CHEMBL93677	B7PY20	B7PY20	-12.1	Yes		CLEAN																			
+143	CHEMBL96217	B7PY20	B7PY20	-12.1	Yes		FLAG(hERG)	428.26	5.92	0	2	6.5	6	3	-6.25	Pass	Pass	Fail	Clean	Clean	Flag	Low risk		Low risk		2
+144	CHEMBL9951	B7PY20	B7PY20	-12.1	Yes		FLAG(hERG)	405.22	4.51	0	2	28.5	4	3	-5.3	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+145	CHEMBL432034	Q6XR73	Q6XR73	-12.1	No		CLEAN																			
+146	CHEMBL91117	A0AAQ4FH64	A0AAQ4FH64	-12.0	No		CLEAN																			
+147	CHEMBL267085	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+148	CHEMBL313632	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+149	CHEMBL329389	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+150	CHEMBL410417	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+151	CHEMBL89614	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+152	CHEMBL90580	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+153	CHEMBL90669	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+154	CHEMBL90813	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+155	CHEMBL91136	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+156	CHEMBL91192	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+157	CHEMBL91297	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+158	CHEMBL91572	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+159	CHEMBL93588	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+160	CHEMBL94188	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+161	CHEMBL94189	B7P5E9	B7P5E9	-12.0	No		CLEAN																			
+162	CHEMBL266039	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+163	CHEMBL315121	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+164	CHEMBL327701	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+165	CHEMBL328377	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+166	CHEMBL329127	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+167	CHEMBL89715	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+168	CHEMBL90134	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+169	CHEMBL90966	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+170	CHEMBL91091	B7PY20	B7PY20	-12.0	Yes		FLAG(hERG,Hepatotox)	504.21	3.14	3	5	121.1	7	2	-4.72	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+171	CHEMBL91872	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+172	CHEMBL93730	B7PY20	B7PY20	-12.0	Yes		CLEAN																			
+173	CHEMBL88628	Q6XR73	Q6XR73	-12.0	No		CLEAN																			
+174	CHEMBL92880	Q6XR73	Q6XR73	-12.0	No		CLEAN																			
+175	CHEMBL423134	A0A4D5RMV5	A0A4D5RMV5	-11.9	Yes		CLEAN																			
+176	CHEMBL94259	A0AAQ4DBK8	A0AAQ4DBK8	-11.9	No		FLAG(hERG,Hepatotox)	565.19	4.53	3	4	97.3	7	2	-5.96	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Flag	Michael acceptor	1
+177	CHEMBL273476	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+178	CHEMBL274899	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+179	CHEMBL275789	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+180	CHEMBL276477	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+181	CHEMBL327934	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+182	CHEMBL328377	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+183	CHEMBL329131	B7P5E9	B7P5E9	-11.9	No		FLAG(hERG)	460.22	4.97	0	3	40.6	6	3	-5.83	Pass	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+184	CHEMBL329382	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+185	CHEMBL329791	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+186	CHEMBL418947	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+187	CHEMBL424616	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+188	CHEMBL431283	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+189	CHEMBL432040	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+190	CHEMBL441635	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+191	CHEMBL86682	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+192	CHEMBL88628	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+193	CHEMBL89401	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+194	CHEMBL91061	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+195	CHEMBL91319	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+196	CHEMBL91468	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+197	CHEMBL91574	B7P5E9	B7P5E9	-11.9	No		FLAG(hERG)	543.19	5.64	2	3	61.4	7	3	-6.65	Fail	Pass	Pass	Clean	Clean	Flag	Low risk		Low risk		1
+198	CHEMBL91775	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+199	CHEMBL91872	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+200	CHEMBL92147	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+201	CHEMBL92955	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+202	CHEMBL93849	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+203	CHEMBL93944	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+204	CHEMBL9888	B7P5E9	B7P5E9	-11.9	No		CLEAN																			
+205	CHEMBL10086	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+206	CHEMBL266874	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+207	CHEMBL268680	B7PY20	B7PY20	-11.9	Yes		WARN(Brenk)	498.2	2.36	5	7	153.1	8	4	-4.35	Pass	Fail	Fail	Clean	Flag	Low risk	Low risk		Low risk		0
+208	CHEMBL315331	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+209	CHEMBL330252	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+210	CHEMBL433183	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+211	CHEMBL440883	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+212	CHEMBL88219	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+213	CHEMBL88944	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+214	CHEMBL89927	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+215	CHEMBL90849	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+216	CHEMBL91240	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+217	CHEMBL91393	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+218	CHEMBL91451	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+219	CHEMBL91489	B7PY20	B7PY20	-11.9	Yes		CLEAN	476.21	5.98	2	3	75.3	9	4	-6.46	Pass	Pass	Fail	Clean	Clean	Low risk	Low risk		Low risk		0
+220	CHEMBL92860	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+221	CHEMBL94167	B7PY20	B7PY20	-11.9	Yes		CLEAN																			
+222	CHEMBL91872	Q6XR73	Q6XR73	-11.9	No		CLEAN																			
+223	CHEMBL328094	A0AAQ4FJ88	A0AAQ4FJ88	-11.8	No		CLEAN																			
+224	CHEMBL10251	B7P5E9	B7P5E9	-11.8	No		FLAG(hERG)	499.18	4.64	4	5	124.0	9	5	-5.82	Pass	Pass	Pass	Clean	Flag	Flag	Low risk		Low risk		1
+225	CHEMBL262905	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+226	CHEMBL267023	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+227	CHEMBL267869	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+228	CHEMBL269341	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+229	CHEMBL273921	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+230	CHEMBL311540	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+231	CHEMBL315051	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+232	CHEMBL327392	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+233	CHEMBL327547	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+234	CHEMBL327796	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+235	CHEMBL327800	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+236	CHEMBL328359	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+237	CHEMBL328702	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+238	CHEMBL330269	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+239	CHEMBL330734	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+240	CHEMBL330743	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+241	CHEMBL415104	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+242	CHEMBL7343	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+243	CHEMBL84792	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+244	CHEMBL88257	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+245	CHEMBL88928	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+246	CHEMBL88944	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+247	CHEMBL89395	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+248	CHEMBL89845	B7P5E9	B7P5E9	-11.8	No		WARN(Brenk)	532.23	2.28	3	6	137.8	8	3	-4.35	Pass	Pass	Fail	Clean	Flag	Low risk	Low risk		Low risk		0
+249	CHEMBL89981	B7P5E9	B7P5E9	-11.8	No		CLEAN																			
+250	CHEMBL90331	B7P5E9	B7P5E9	-11.8	No		CLEAN																			

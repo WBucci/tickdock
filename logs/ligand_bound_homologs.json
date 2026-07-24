@@ -1,0 +1,744 @@
+{
+ "A0A0C9SCI6": {
+  "chain": "9fdn_A",
+  "pident": 72.816,
+  "cov": 90.15317286652079,
+  "ligand": "ATP",
+  "ligand_name": "ADENOSINE-5'-TRIPHOSPHATE"
+ },
+ "A0AAQ4E5F2": {
+  "chain": "7d3f_C",
+  "pident": 44.533,
+  "cov": 101.00401606425703,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "A0AAQ4FH64": {
+  "chain": "6sek_B",
+  "pident": 38.672,
+  "cov": 100.0,
+  "ligand": "FAD",
+  "ligand_name": "FLAVIN-ADENINE DINUCLEOTIDE"
+ },
+ "A0AAQ4DAP1": {
+  "chain": "5vcs_B",
+  "pident": 40.483,
+  "cov": 89.23444976076556,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "A0AAQ4DD00": {
+  "chain": "8tqm_A",
+  "pident": 32.0,
+  "cov": 10.521885521885523,
+  "ligand": "ERG",
+  "ligand_name": "ERGOSTEROL"
+ },
+ "A0AAQ4DQA6": {
+  "chain": "7nxd_B",
+  "pident": 44.499,
+  "cov": 99.02439024390245,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "A0AAQ4E0I8": {
+  "chain": "6odc_C",
+  "pident": 45.777,
+  "cov": 86.55660377358491,
+  "ligand": "M7Y",
+  "ligand_name": "(2E)-3-[2-(3-cyclopentyl-5,5-dimethyl-2-oxoimidazolidin-1-yl"
+ },
+ "A0AAQ4E1Y4": {
+  "chain": "8e58_A",
+  "pident": 47.454,
+  "cov": 98.57954545454545,
+  "ligand": "BBI",
+  "ligand_name": "(2-butyl-1-benzofuran-3-yl){4-[2-(diethylamino)ethoxy]-3,5-d"
+ },
+ "A0A0C9R2P6": {
+  "chain": "1dgk_N",
+  "pident": 46.91,
+  "cov": 99.44134078212291,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "A0A0K0PR09": {
+  "chain": "9ce2_Ak",
+  "pident": 74.359,
+  "cov": 99.0234375,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A0K0PRG2": {
+  "chain": "8esz_5",
+  "pident": 43.04,
+  "cov": 99.81718464351006,
+  "ligand": "DGT",
+  "ligand_name": "2'-DEOXYGUANOSINE-5'-TRIPHOSPHATE"
+ },
+ "A0AAQ4FA75": {
+  "chain": "7cgp_B",
+  "pident": 33.41,
+  "cov": 98.86104783599089,
+  "ligand": "PEE",
+  "ligand_name": "1,2-dioleoyl-sn-glycero-3-phosphoethanolamine"
+ },
+ "A0A0C9RY70": {
+  "chain": "1u7t_D",
+  "pident": 68.482,
+  "cov": 98.46743295019157,
+  "ligand": "TDT",
+  "ligand_name": "1-AZEPAN-1-YL-2-PHENYL-2-(4-THIOXO-1,4-DIHYDRO-PYRAZOLO[3,4-"
+ },
+ "A0AAQ4DJ97": {
+  "chain": "6sek_B",
+  "pident": 46.429,
+  "cov": 93.16081330868762,
+  "ligand": "FAD",
+  "ligand_name": "FLAVIN-ADENINE DINUCLEOTIDE"
+ },
+ "A0AAQ4E1Y3": {
+  "chain": "8e58_A",
+  "pident": 48.551,
+  "cov": 94.36619718309859,
+  "ligand": "BBI",
+  "ligand_name": "(2-butyl-1-benzofuran-3-yl){4-[2-(diethylamino)ethoxy]-3,5-d"
+ },
+ "A0AAQ4D4Y2": {
+  "chain": "6sek_B",
+  "pident": 46.765,
+  "cov": 91.15281501340482,
+  "ligand": "FAD",
+  "ligand_name": "FLAVIN-ADENINE DINUCLEOTIDE"
+ },
+ "A0A0C9R308": {
+  "chain": "4aw6_E",
+  "pident": 54.46,
+  "cov": 100.23529411764706,
+  "ligand": "PC1",
+  "ligand_name": "1,2-DIACYL-SN-GLYCERO-3-PHOSPHOCHOLINE"
+ },
+ "A0AAQ4DND5": {
+  "chain": "9mja_A",
+  "pident": 48.192,
+  "cov": 104.81557377049181,
+  "ligand": "UHB",
+  "ligand_name": "2-[4-[(2S,3S,4R,5R)-5-(6-aminopurin-9-yl)-3,4-bis(oxidanyl)o"
+ },
+ "A0A0C9RV71": {
+  "chain": "9vdn_A",
+  "pident": 73.735,
+  "cov": 100.0,
+  "ligand": "P5S",
+  "ligand_name": "O-[(R)-{[(2R)-2,3-bis(octadecanoyloxy)propyl]oxy}(hydroxy)ph"
+ },
+ "A0AAQ4DPM5": {
+  "chain": "3ezt_B",
+  "pident": 50.549,
+  "cov": 98.20143884892086,
+  "ligand": "B3N",
+  "ligand_name": "4-(dimethylamino)-N-[7-(hydroxyamino)-7-oxoheptyl]benzamide"
+ },
+ "A0AAQ4FI23": {
+  "chain": "6sek_B",
+  "pident": 38.416,
+  "cov": 91.15523465703971,
+  "ligand": "FAD",
+  "ligand_name": "FLAVIN-ADENINE DINUCLEOTIDE"
+ },
+ "A0AAQ4FJ88": {
+  "chain": "6sek_B",
+  "pident": 39.245,
+  "cov": 98.51301115241635,
+  "ligand": "FAD",
+  "ligand_name": "FLAVIN-ADENINE DINUCLEOTIDE"
+ },
+ "A0AAQ4DEL6": {
+  "chain": "13lx_A",
+  "pident": 48.084,
+  "cov": 56.496062992125985,
+  "ligand": "A1DG5",
+  "ligand_name": "(4R)-1-cyclopentyl-4-(3-hydroxyphenyl)-1,4,5,7-tetrahydro-6H"
+ },
+ "A0AAQ4DX98": {
+  "chain": "3fw0_A",
+  "pident": 41.509,
+  "cov": 41.952506596306065,
+  "ligand": "HG",
+  "ligand_name": "MERCURY (II) ION"
+ },
+ "A0AAQ4E147": {
+  "chain": "9qn5_D",
+  "pident": 54.88,
+  "cov": 100.64412238325282,
+  "ligand": "ATP",
+  "ligand_name": "ADENOSINE-5'-TRIPHOSPHATE"
+ },
+ "A0AAQ4E7F2": {
+  "chain": "28ke_A",
+  "pident": 74.861,
+  "cov": 94.36435124508519,
+  "ligand": "SF4",
+  "ligand_name": "IRON/SULFUR CLUSTER"
+ },
+ "A0AAQ4EAX4": {
+  "chain": "6tu9_B",
+  "pident": 60.616,
+  "cov": 42.31884057971015,
+  "ligand": "0LI",
+  "ligand_name": "3-(imidazo[1,2-b]pyridazin-3-ylethynyl)-4-methyl-N-{4-[(4-me"
+ },
+ "A0AAQ4E0T1": {
+  "chain": "6k7n_A",
+  "pident": 59.201,
+  "cov": 96.29120879120879,
+  "ligand": "Y01",
+  "ligand_name": "CHOLESTEROL HEMISUCCINATE"
+ },
+ "A0AAQ4E2K9": {
+  "chain": "9dzk_A",
+  "pident": 45.283,
+  "cov": 88.66171003717471,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "A0AAQ4E8L7": {
+  "chain": "5nxa_H",
+  "pident": 73.425,
+  "cov": 90.12345679012346,
+  "ligand": "SSS",
+  "ligand_name": "N-{[5-AMINO-1-(5-O-PHOSPHONO-BETA-D-ARABINOFURANOSYL)-1H-IMI"
+ },
+ "A0AAQ4E7F9": {
+  "chain": "5vo3_A",
+  "pident": 31.944,
+  "cov": 27.32447817836812,
+  "ligand": "API",
+  "ligand_name": "2,6-DIAMINOPIMELIC ACID"
+ },
+ "A0AAQ4DMB8": {
+  "chain": "2i99_B",
+  "pident": 47.557,
+  "cov": 98.08306709265176,
+  "ligand": "NDP",
+  "ligand_name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE"
+ },
+ "A0A0C9RV76": {
+  "chain": "5uz0_D",
+  "pident": 72.381,
+  "cov": 100.0,
+  "ligand": "8US",
+  "ligand_name": "N-(6-fluoro-1-oxo-1,2-dihydroisoquinolin-7-yl)-5-[(3R)-3-hyd"
+ },
+ "A0A0C9RXK7": {
+  "chain": "8esv_B",
+  "pident": 25.789,
+  "cov": 106.74157303370787,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "A0A0C9SEA9": {
+  "chain": "6vfz_B",
+  "pident": 69.866,
+  "cov": 100.67415730337079,
+  "ligand": "9UO",
+  "ligand_name": "6-(6-chloropyridin-2-yl)-N2,N4-bis[(2R)-1,1,1-trifluoropropa"
+ },
+ "A0A0C9SFH2": {
+  "chain": "4lk3_F",
+  "pident": 76.667,
+  "cov": 52.863436123348016,
+  "ligand": "UGA",
+  "ligand_name": "URIDINE-5'-DIPHOSPHATE-GLUCURONIC ACID"
+ },
+ "A0AAQ4DNH0": {
+  "chain": "8gwr_A",
+  "pident": 52.69,
+  "cov": 81.91489361702128,
+  "ligand": "HZO",
+  "ligand_name": "2,2-dimethyl-1,3-dihydrobenzo[a]phenanthridin-4-one"
+ },
+ "A0AAQ4F1X8": {
+  "chain": "6sek_B",
+  "pident": 47.191,
+  "cov": 93.35664335664336,
+  "ligand": "FAD",
+  "ligand_name": "FLAVIN-ADENINE DINUCLEOTIDE"
+ },
+ "A0AAQ4FR19": {
+  "chain": "8r8q_A",
+  "pident": 56.085,
+  "cov": 96.67519181585678,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "A0A0C9R1D7": {
+  "chain": "6bjo_B",
+  "pident": 72.527,
+  "cov": 40.990990990990994,
+  "ligand": "DUY",
+  "ligand_name": "(2S)-({4-(4-bromophenyl)-1-[1-(tert-butoxycarbonyl)-L-prolyl"
+ },
+ "A0A142I6V4": {
+  "chain": "9ce2_Ak",
+  "pident": 79.891,
+  "cov": 100.0,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0AAQ4CWX3": {
+  "chain": "9ep0_A",
+  "pident": 37.447,
+  "cov": 98.32635983263599,
+  "ligand": "GDD",
+  "ligand_name": "GUANOSINE-5'-DIPHOSPHATE-ALPHA-D-MANNOSE"
+ },
+ "A0AAQ4D7R5": {
+  "chain": "5zqm_A",
+  "pident": 77.199,
+  "cov": 67.17724288840263,
+  "ligand": "AGS",
+  "ligand_name": "PHOSPHOTHIOPHOSPHORIC ACID-ADENYLATE ESTER"
+ },
+ "A0AAQ4EDP8": {
+  "chain": "6bjo_B",
+  "pident": 72.165,
+  "cov": 22.558139534883722,
+  "ligand": "DUY",
+  "ligand_name": "(2S)-({4-(4-bromophenyl)-1-[1-(tert-butoxycarbonyl)-L-prolyl"
+ },
+ "A0AAQ4FNT5": {
+  "chain": "8r8q_A",
+  "pident": 53.191,
+  "cov": 95.59322033898304,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "A0A649X9W4": {
+  "chain": "9ce2_Ak",
+  "pident": 78.061,
+  "cov": 100.0,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "B2ZHX0": {
+  "chain": "9iv2_R",
+  "pident": 28.409,
+  "cov": 58.797327394209354,
+  "ligand": "DHT",
+  "ligand_name": "5-ALPHA-DIHYDROTESTOSTERONE"
+ },
+ "C6G1Y6": {
+  "chain": "6bv4_A",
+  "pident": 37.937,
+  "cov": 102.55972696245733,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "A0A0K1G5W8": {
+  "chain": "9ce2_Ak",
+  "pident": 78.995,
+  "cov": 100.0,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A142I6V3": {
+  "chain": "9ce2_Ak",
+  "pident": 79.144,
+  "cov": 99.46808510638297,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U4Y449": {
+  "chain": "9ce2_Ak",
+  "pident": 79.245,
+  "cov": 100.0,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "Q9MCZ9": {
+  "chain": "9ce2_Ak",
+  "pident": 79.771,
+  "cov": 99.24242424242425,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "G0WV55": {
+  "chain": "6upv_L",
+  "pident": 64.066,
+  "cov": 100.5524861878453,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "A7LJ78": {
+  "chain": "8gx2_B",
+  "pident": 54.464,
+  "cov": 100.90090090090091,
+  "ligand": "KJ0",
+  "ligand_name": "N-[(2S)-3-cyclohexyl-1-[[(2S,3S)-4-(cyclopropylamino)-3-oxid"
+ },
+ "Q8T9S4": {
+  "chain": "6wvg_B",
+  "pident": 33.937,
+  "cov": 97.3568281938326,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "A0A2U8U2Q4": {
+  "chain": "9ce2_Ak",
+  "pident": 81.14,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U8U2R2": {
+  "chain": "9ce2_Ak",
+  "pident": 81.579,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U8U2Y5": {
+  "chain": "9ce2_Ak",
+  "pident": 81.579,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U8U368": {
+  "chain": "9ce2_Ak",
+  "pident": 81.14,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U8U3E7": {
+  "chain": "9ce2_Ak",
+  "pident": 81.579,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U8U3G2": {
+  "chain": "9ce2_Ak",
+  "pident": 81.14,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U8U3H0": {
+  "chain": "9ce2_Ak",
+  "pident": 81.14,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U8U3S9": {
+  "chain": "9ce2_Ak",
+  "pident": 81.14,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U8U3T1": {
+  "chain": "9ce2_Ak",
+  "pident": 81.579,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "B7SP41": {
+  "chain": "4fgu_B",
+  "pident": 38.342,
+  "cov": 94.6078431372549,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "B7SP44": {
+  "chain": "1the_B",
+  "pident": 58.103,
+  "cov": 91.33574007220217,
+  "ligand": "0E6",
+  "ligand_name": "amino{[(4S)-4-{[(benzyloxy)carbonyl]amino}-5-{[(2S)-1-(benzy"
+ },
+ "Q2Q443": {
+  "chain": "9f7k_B",
+  "pident": 33.79,
+  "cov": 101.86046511627907,
+  "ligand": "GSH",
+  "ligand_name": "Glutathione"
+ },
+ "B7SP57": {
+  "chain": "9nxw_B",
+  "pident": 39.252,
+  "cov": 96.3963963963964,
+  "ligand": "GSH",
+  "ligand_name": "Glutathione"
+ },
+ "B5TMF7": {
+  "chain": "6lgj_D",
+  "pident": 76.506,
+  "cov": 99.40119760479043,
+  "ligand": "NAD",
+  "ligand_name": "NICOTINAMIDE-ADENINE-DINUCLEOTIDE"
+ },
+ "B7SP39": {
+  "chain": "8b5f_A",
+  "pident": 62.617,
+  "cov": 98.61751152073732,
+  "ligand": "P9U",
+  "ligand_name": "(2S)-2-[[(2S)-2-[[3-chloranyl-4-[[3-phenyl-2-(phenylmethyl)p"
+ },
+ "Q86G71": {
+  "chain": "9nxw_B",
+  "pident": 41.624,
+  "cov": 91.62790697674419,
+  "ligand": "GSH",
+  "ligand_name": "Glutathione"
+ },
+ "B7SP56": {
+  "chain": "5kwy_D",
+  "pident": 25.862,
+  "cov": 74.83870967741936,
+  "ligand": "C3S",
+  "ligand_name": "CHOLEST-5-EN-3-YL HYDROGEN SULFATE"
+ },
+ "B7SP64": {
+  "chain": "5kwy_D",
+  "pident": 25.862,
+  "cov": 68.63905325443787,
+  "ligand": "C3S",
+  "ligand_name": "CHOLEST-5-EN-3-YL HYDROGEN SULFATE"
+ },
+ "A0A2U8U3F3": {
+  "chain": "9ce2_Ak",
+  "pident": 81.14,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A2U8U3G0": {
+  "chain": "9ce2_Ak",
+  "pident": 81.14,
+  "cov": 99.1304347826087,
+  "ligand": "ZMP",
+  "ligand_name": "S-[2-({N-[(2S)-2-hydroxy-3,3-dimethyl-4-(phosphonooxy)butano"
+ },
+ "A0A023NLG8": {
+  "chain": "9m64_e",
+  "pident": 66.292,
+  "cov": 98.34254143646409,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "Q8I862": {
+  "chain": "9nrc_A",
+  "pident": 33.333,
+  "cov": 93.85026737967914,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "Q6XR73": {
+  "chain": "5ydj_B",
+  "pident": 49.27,
+  "cov": 91.94630872483222,
+  "ligand": "NAG",
+  "ligand_name": "2-acetamido-2-deoxy-beta-D-glucopyranose"
+ },
+ "Q8T9S5": {
+  "chain": "8t1o_M",
+  "pident": 87.185,
+  "cov": 100.45977011494253,
+  "ligand": "PIO",
+  "ligand_name": "[(2R)-2-octanoyloxy-3-[oxidanyl-[(1R,2R,3S,4R,5R,6S)-2,3,6-t"
+ },
+ "A0A023NLX9": {
+  "chain": "9i2b_N",
+  "pident": 78.859,
+  "cov": 99.33333333333333,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "A4UTU3": {
+  "chain": "9i8h_U",
+  "pident": 98.936,
+  "cov": 100.0,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "A0A023NL51": {
+  "chain": "9m64_f",
+  "pident": 88.095,
+  "cov": 100.0,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "B7P2S1": {
+  "chain": "3e00_A",
+  "pident": 28.916,
+  "cov": 82.7930174563591,
+  "ligand": "9CR",
+  "ligand_name": "(9cis)-retinoic acid"
+ },
+ "B7P9U9": {
+  "chain": "1z5x_E",
+  "pident": 61.165,
+  "cov": 71.36258660508084,
+  "ligand": "P1A",
+  "ligand_name": "2,3,14,20,22-PENTAHYDROXYCHOLEST-7-EN-6-ONE"
+ },
+ "B7PVD7": {
+  "chain": "7l9x_A",
+  "pident": 74.208,
+  "cov": 100.45454545454545,
+  "ligand": "XQV",
+  "ligand_name": "N-{3-[(8-phenyl[1,2,4]triazolo[1,5-a]pyridin-2-yl)amino]phen"
+ },
+ "B7PY20": {
+  "chain": "4s15_B",
+  "pident": 36.0,
+  "cov": 62.97229219143577,
+  "ligand": "4D8",
+  "ligand_name": "(3beta,4alpha,5beta,14beta)-3-hydroxy-4-methylcholesta-8,24-"
+ },
+ "B7P6A8": {
+  "chain": "5dn6_G",
+  "pident": 37.543,
+  "cov": 105.39568345323741,
+  "ligand": "ATP",
+  "ligand_name": "ADENOSINE-5'-TRIPHOSPHATE"
+ },
+ "B7Q1X5": {
+  "chain": "4umm_A",
+  "pident": 56.944,
+  "cov": 72.0,
+  "ligand": "EPH",
+  "ligand_name": "L-ALPHA-PHOSPHATIDYL-BETA-OLEOYL-GAMMA-PALMITOYL-PHOSPHATIDY"
+ },
+ "A0A4D5RNM5": {
+  "chain": "3e00_A",
+  "pident": 75.588,
+  "cov": 75.22123893805309,
+  "ligand": "9CR",
+  "ligand_name": "(9cis)-retinoic acid"
+ },
+ "B7PMS2": {
+  "chain": "3e00_A",
+  "pident": 75.588,
+  "cov": 85.0,
+  "ligand": "9CR",
+  "ligand_name": "(9cis)-retinoic acid"
+ },
+ "B7QJZ7": {
+  "chain": "9vpd_G",
+  "pident": 64.057,
+  "cov": 89.49044585987261,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "A0A4D5RNJ0": {
+  "chain": "9b3j_O",
+  "pident": 55.0,
+  "cov": 94.7867298578199,
+  "ligand": "CDL",
+  "ligand_name": "CARDIOLIPIN"
+ },
+ "A0A4D5S7D6": {
+  "chain": "6tt7_G",
+  "pident": 64.057,
+  "cov": 84.89425981873111,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "Q5Q995": {
+  "chain": "9ygy_N",
+  "pident": 48.507,
+  "cov": 99.25925925925925,
+  "ligand": "ELU",
+  "ligand_name": "phosphono [(3~{R},6~{E},10~{E})-3,7,11,15-tetramethylhexadec"
+ },
+ "B7PIZ2": {
+  "chain": "4ile_A",
+  "pident": 86.093,
+  "cov": 100.0,
+  "ligand": "GDP",
+  "ligand_name": "GUANOSINE-5'-DIPHOSPHATE"
+ },
+ "A0A4D5RDE4": {
+  "chain": "4ile_A",
+  "pident": 88.462,
+  "cov": 78.44827586206897,
+  "ligand": "GDP",
+  "ligand_name": "GUANOSINE-5'-DIPHOSPHATE"
+ },
+ "B7P877": {
+  "chain": "9hfl_D",
+  "pident": 79.71,
+  "cov": 90.78947368421052,
+  "ligand": "GTA",
+  "ligand_name": "P1-7-METHYLGUANOSINE-P3-ADENOSINE-5',5'-TRIPHOSPHATE"
+ },
+ "B7PBI5": {
+  "chain": "6efx_A",
+  "pident": 38.226,
+  "cov": 107.92079207920793,
+  "ligand": "ANP",
+  "ligand_name": "PHOSPHOAMINOPHOSPHONIC ACID-ADENYLATE ESTER"
+ },
+ "B7PJS6": {
+  "chain": "2ywh_A",
+  "pident": 47.682,
+  "cov": 91.37670196671709,
+  "ligand": "GDP",
+  "ligand_name": "GUANOSINE-5'-DIPHOSPHATE"
+ },
+ "B7PXE3": {
+  "chain": "6pen_F",
+  "pident": 56.295,
+  "cov": 64.96913580246914,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "B7PY76": {
+  "chain": "8fky_SP",
+  "pident": 47.143,
+  "cov": 98.82352941176471,
+  "ligand": "ADP",
+  "ligand_name": "ADENOSINE-5'-DIPHOSPHATE"
+ },
+ "B7Q1Q9": {
+  "chain": "8was_O",
+  "pident": 79.612,
+  "cov": 87.28813559322033,
+  "ligand": "SF4",
+  "ligand_name": "IRON/SULFUR CLUSTER"
+ },
+ "B7QDG3": {
+  "chain": "3rox_A",
+  "pident": 61.207,
+  "cov": 84.36363636363636,
+  "ligand": "TEP",
+  "ligand_name": "THEOPHYLLINE"
+ },
+ "Q202J4": {
+  "chain": "4rw3_A",
+  "pident": 39.085,
+  "cov": 78.02197802197803,
+  "ligand": "DKA",
+  "ligand_name": "DECANOIC ACID"
+ },
+ "Q4PM54": {
+  "chain": "9yq1_P",
+  "pident": 76.506,
+  "cov": 89.72972972972973,
+  "ligand": "ATP",
+  "ligand_name": "ADENOSINE-5'-TRIPHOSPHATE"
+ },
+ "Q4PMB3": {
+  "chain": "9yq1_EE",
+  "pident": 78.161,
+  "cov": 99.61832061068702,
+  "ligand": "ATP",
+  "ligand_name": "ADENOSINE-5'-TRIPHOSPHATE"
+ }
+}

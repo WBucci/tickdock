@@ -1,0 +1,443 @@
+{
+  "A0AAQ4DMB8": {
+    "name_local": "Ketimine reductase mu-crystallin",
+    "organism": "Amblyomma americanum",
+    "family": "Ornithine cyclodeaminase/mu-crystallin family (PF02423); IPR003462, IPR023401 (N-terminal), IPR036291 (NAD(P)-binding domain superfamily)",
+    "family_confidence": "high",
+    "oligomeric_state": "DIMER",
+    "oligomeric_evidence": "UniProt SUBUNIT text for this accession explicitly states 'Homodimer. Binds the thyroid hormone triiodothyronine (T3); T3 binding inhibits enzymatic activity.' Confirmed independently by PDB biological assembly of the mouse ortholog (PDB 4BVA, 4BV9, 4BV8: 'Homo 2-mer - A2', Cyclic C2 symmetry).",
+    "binding_site_location": "NADPH and T3-hormone binding pocket is INTRA-subunit: each monomer of the dimer has its own complete binding pocket (Rossmann-like NAD(P)-binding fold + C-terminal domain forming the T3 cavity). The dimer interface exists but does not complete the ligand pocket the way GST's H-site does. Mouse mu-crystallin PDB 4BVA (NADPH+T3 bound) shows T3 binding 'mainly through hydrophobic interactions' within one subunit's pocket; NADPH binding induces a conformational change that pre-organizes the T3 pocket (allosteric coupling between the two ligands, still within the same subunit).",
+    "site_residues_known": "Not extracted to residue-number precision in the sources reviewed here (would require inspecting the 4BVA coordinate file/paper directly). The fold and pocket-forming secondary structure elements are described (NAD(P)-binding Rossmann domain + T3 pocket), but no catalytic-triad-style motif is quoted here.",
+    "characterized_relatives": "Mouse Mu-crystallin (CRYM), PDB 4BV8 (apo), 4BV9 (NADPH-bound), 4BVA (NADPH + T3 thyroid-hormone bound) — Borel F et al., FEBS J 2014 (PMID 24467707). This is a directly ligand-bound, high-identity mammalian ortholog with the exact EC activities (1.5.1.1/1.5.1.25) matching the tick UniProt annotation, and is the single strongest structural template found in this chunk.",
+    "chembl_target": "UNKNOWN — not verified in this pass. Human CRYM is studied as a T3-sequestration protein but no ChEMBL target ID was confirmed via search.",
+    "druggability_note": "Well-defined intra-subunit NADPH+T3 pocket transferable by homology from mouse CRYM (PDB 4BVA). Good candidate for direct pocket transfer rather than blind fpocket prediction — the ligand-bound mouse structure can be superposed onto the tick AlphaFold model to seed the docking box.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/A0AAQ4DMB8.txt",
+      "https://www.rcsb.org/structure/4BVA",
+      "https://www.rcsb.org/structure/4BV9",
+      "https://www.rcsb.org/structure/4BV8",
+      "https://pubmed.ncbi.nlm.nih.gov/24467707/",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0AAQ4DMB8/"
+    ]
+  },
+  "Q2Q443": {
+    "name_local": "Putative glutathione S-transferase",
+    "organism": "Dermacentor variabilis",
+    "family": "Cytosolic glutathione S-transferase (GST) superfamily; IPR004045 (GST N-terminal, thioredoxin-fold), IPR010987/IPR036282 (GST C-terminal, all-alpha), IPR040079 (GST family). Pfam PF02798 (GST_N).",
+    "family_confidence": "high",
+    "oligomeric_state": "DIMER",
+    "oligomeric_evidence": "UniProt SUBUNIT field for THIS accession explicitly states 'Homodimer' — direct evidence, not inference. Consistent with essentially universal cytosolic-GST biology (mu/alpha/pi/theta/delta/epsilon classes are all obligate homo- or hetero-dimers).",
+    "binding_site_location": "INTER-subunit for the H-site, INTRA-subunit for the G-site (GSH-binding site). This is the decisive point for the pipeline's pocket-selection problem: the G-site (glutathione binding) sits mostly within the N-terminal thioredoxin-fold domain of one subunit, but the H-site (hydrophobic electrophile-binding site) is completed by loops donated from the neighboring subunit's C-terminal domain — a single-subunit fpocket run will find at most half the real pocket. Directly demonstrated for a congeneric tick GST: cryo/MD study of Rhipicephalus (Boophilus) microplus GST (RmGST, mu-class) states 'the binding of both GSH and GTX requires cooperation between subunits' (PMC9655991).",
+    "site_residues_known": "For the closely related tick ortholog RmGST (mu-class, MD/homology-modeled against templates 1XW6 and 1GSU): G-site residues W8, R43, W46, K50, N59, L60, Q72, S73; catalytic Tyr stabilizes the GSH thiolate — 'the hydroxyl group of Y7 was in close proximity to a sulfur atom (S) on GSH' (Y7/Y116 in RmGST numbering, analogous to Y6/Y115 in mammalian mu-class GSTs). NOTE: these residue numbers are from RmGST, a homolog, not from Q2Q443 itself — sequence numbering will differ; use for motif/role transfer only, not literal residue mapping without an alignment.",
+    "characterized_relatives": "No PDB structure exists for Q2Q443 or for RmGST itself (RmGST paper used homology modeling, not crystallography). However, the cytosolic GST fold is one of the best-characterized enzyme folds in structural biology generally, with hundreds of ligand-bound (GSH- and S-alkylglutathione-bound) ligand structures across classes — the RmGST paper's own templates were PDB 1XW6 (GSH-bound GST) and 1GSU (S-hexylglutathione-bound GST). Any of these generic GSH/S-alkylglutathione-bound cytosolic GST structures (mu/alpha class) is a usable homology template for placing the G-site + H-site as a dimer-interface pocket, once class is confirmed by sequence alignment.",
+    "chembl_target": "GST superfamily is broadly represented in ChEMBL as a drug/detox target class (e.g., human GSTM1/GSTP1 — search via Pharos confirmed GSTM1/M2/M3/M4 entries exist) but a specific verified ChEMBL target ID for this insect/tick GST or its closest human paralog was not confirmed in this pass — reported as UNKNOWN rather than guessed.",
+    "druggability_note": "GSTs are validated small-molecule targets in both pharma (isoform-selective GST inhibitors exist) and acaricide/insecticide contexts (GST overexpression is a major xenobiotic-resistance mechanism in ticks, so a GST inhibitor could double as a resistance-breaker). CRITICAL FOR THE PIPELINE: because the H-site is inter-subunit, docking against a monomeric AlphaFold model with an fpocket-picked intra-subunit-only site is very likely to miss or mis-shape the true binding site. Recommend building/using a homodimer model (AlphaFold-Multimer or symmetric docking of two copies) before pocket definition for this and any other GST-family target discovered later.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/Q2Q443.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/Q2Q443/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC9655991/ (Observing How Glutathione and S-Hexyl Glutathione Bind to GST from Rhipicephalus (Boophilus) microplus)",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4660579/ (Epsilon GST subunit-interface motif)",
+      "https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-018-3044-9 (Haemaphysalis longicornis GST detoxification)"
+    ]
+  },
+  "Q06EX9": {
+    "name_local": "AQP9-like protein (aquaglyceroporin)",
+    "organism": "Dermacentor variabilis",
+    "family": "MIP/Aquaporin superfamily; IPR000425 (Major intrinsic protein), IPR023271 (Aquaporin-like), IPR050363 (MIP/Aquaporin family). Pfam PF00230. UniProt SIMILARITY: 'Belongs to the MIP/aquaporin (TC 1.A.8) family.'",
+    "family_confidence": "high",
+    "oligomeric_state": "TETRAMER",
+    "oligomeric_evidence": "Not stated in this accession's own UniProt SUBUNIT field (none present), but tetrameric assembly is universal, structurally invariant family convention for the MIP/aquaporin superfamily across all kingdoms (every solved AQP/aquaglyceroporin structure — human AQP1/AQP4/AQP5, E. coli GlpF, plant SoPIP2 — is a homotetramer in the membrane). Treat as high-confidence by family convention even though not directly stated for this accession; would be strengthened by an AlphaFold-Multimer tetramer build.",
+    "binding_site_location": "TWO DISTINCT SITES — this is exactly the question flagged as important. (1) The functional water/glycerol conduction pore is INTRA-subunit: each of the 4 monomers folds into the classic 'hourglass' 6-TM-helix fold with its own complete pore, selectivity filter, and NPA (Asn-Pro-Ala) motif pair — so each subunit is independently functional, and single-subunit modeling is legitimate for THIS site. (2) A separate, structurally distinct 'central pore' running down the 4-fold symmetry axis is INTER-subunit by definition — it is built from contributions of all four monomers and does not exist in a monomer at all. Its physiological role is debated/still-researched but literature links it to gas permeation (CO2, NH3, possibly NO) in some aquaporins, not water/glycerol transport. Practical implication: if the pipeline's interest is the canonical aquaglyceroporin transport function (most likely, given the annotated role in anhydrobiosis/osmolyte handling), monomer-based pocket picking at the conserved NPA/ar-R constriction is defensible; if interest is a hypothetical gas-conduction inhibitor, a tetramer build is required since that pore doesn't exist in a monomer.",
+    "site_residues_known": "Yes, at the family level: the two NPA (Asn-Pro-Ala) boxes are the single most conserved motif in the entire MIP/aquaporin superfamily, forming the pore's electrostatic barrier at the vestibule center; the aromatic/Arginine (ar/R) selectivity filter near the extracellular vestibule additionally tunes water-vs-glycerol/solute selectivity (glycerol-permeable aquaglyceroporins have a wider, more hydrophobic ar/R filter than strict water channels). Exact residue numbers were not extracted for Q06EX9 specifically in this pass (would need the AlphaFold model + a Pfam PF00230 HMM alignment to localize the two NPA boxes precisely in this sequence).",
+    "characterized_relatives": "No tick-specific aquaporin PDB structure identified. Generic ligand/inhibitor-free family structures exist and are usable homology templates for pore geometry: human AQP1 (1FQY, 1J4N), bacterial glycerol facilitator GlpF (1FX8, ligand/glycerol-bound), plant SoPIP2;1 (spinach, gated aquaporin, 2B5F). None found here are tick-specific, so pocket transfer would rely on the conserved fold rather than a close identity match.",
+    "chembl_target": "UNKNOWN — small-molecule aquaporin inhibitors are an active but immature area (e.g., TGN-020 for AQP4); no ChEMBL ID confirmed for an aquaglyceroporin/AQP9-class target in this pass.",
+    "druggability_note": "Aquaporins are traditionally considered a difficult druggable class (shallow, highly conserved, mostly water-filled pores with few good small-molecule anchor points), but aquaglyceroporins are somewhat more tractable than strict water channels because their wider ar/R filter accommodates larger solutes/inhibitors. Given anhydrobiosis-related function noted in the local annotation, an aquaglyceroporin inhibitor is mechanistically attractive (disrupt water/osmolyte balance in the unfed tick) even if medicinal-chemistry tractability is moderate.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/Q06EX9.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/Q06EX9/",
+      "https://www.mdpi.com/2073-4409/7/11/209 (Aquaporins: More Than Functional Monomers in a Tetrameric Arrangement)",
+      "https://www.sciencedirect.com/science/article/pii/S0969212606003285 (tetrameric pore gating/ion conductivity, AQP1)",
+      "https://www.sciencedirect.com/topics/medicine-and-dentistry/aquaglyceroporin"
+    ]
+  },
+  "B7P2S1": {
+    "name_local": "(unnamed) — nuclear hormone receptor",
+    "organism": "Ixodes scapularis (per project species file)",
+    "provenance_note": "DELETED from UniProt in release 2026_01 (confirmed: live REST query for B7P2S1 returned no entry). Per config.py TARGET_PROVENANCE this is Tier 3 with anchor EMBL_CON:EEC00893 (UPI00018E8FF9). Family/domain data below comes from the LOCAL cached final_targets.json record, captured before deletion, not from a live re-verification.",
+    "family": "Nuclear hormone receptor, NR1 subfamily; IPR000536 (NHR ligand-binding domain), IPR001628 (Zinc finger, NHR-type), IPR001723 (Nuclear hormone receptor family), IPR013088/IPR035500 (Zn-finger/NHR-LBD superfamilies), IPR050234 (Nuclear hormone receptor family NR1 subfamily).",
+    "family_confidence": "high (from cached InterPro annotation; not independently re-verified live because the UniProt entry is gone)",
+    "oligomeric_state": "COMPLEX (obligate heterodimer, by strong family convention)",
+    "oligomeric_evidence": "Not directly stated for this specific (now-deleted) accession. Family convention: arthropod NR1-subfamily nuclear receptors (this subfamily includes the ecdysone-receptor-associated and xenobiotic-sensing receptors, e.g. HR96) function as ligand-activated transcription factors, and the best-characterized arthropod steroid receptor system (the ecdysone receptor EcR, also NR1 clan) is an obligate heterodimer with the RXR ortholog Ultraspiracle (USP, NR2B4) — DNA binding and often ligand response require the partner subunit. Whether B7P2S1 itself heterodimerizes with a USP/RXR-type partner (like A0A4D5RYT8 in this same chunk) or is a different NR1 receptor with its own dimerization behavior is UNKNOWN without direct evidence.",
+    "binding_site_location": "By universal nuclear-receptor architecture, the ligand-binding pocket is INTRA-subunit: a single hydrophobic cavity within the C-terminal ligand-binding domain (LBD) of ONE subunit, formed by helices 3, 5, 6, 7 and 11 of the canonical NR-LBD fold (this exact helix-numbering description is used for the homologous insect xenobiotic receptor HR96, itself modeled on the vertebrate LXR-beta template PDB 4NQA). The DNA-binding zinc-finger domain is separate and N-terminal. Heterodimerization (if it occurs, see above) affects transcriptional output/partner recruitment but does not itself complete the ligand pocket the way GST's H-site does — so a monomeric LBD model is a defensible unit for docking, PROVIDED the correct domain (LBD, not the zinc-finger DBD) is isolated and the pocket helices are correctly identified rather than left to naive whole-protein fpocket, since NR1 proteins have two structurally and functionally unrelated domains (DBD zinc-finger + LBD) and fpocket run on the full-length AlphaFold model could easily pick a spurious pocket in the linker or DBD.",
+    "site_residues_known": "Not extracted to residue-number precision for B7P2S1. The general helix framework (H3/H5/H6/H7/H11 lining the pocket) is a strong, transferable family fact for any NR1/NR2 LBD.",
+    "characterized_relatives": "No direct tick or arthropod NR1 ligand-bound structure identified for this specific receptor. The most relevant published homology-modeling precedent is the mite/spider-mite xenobiotic receptor TcHR96h (Tetranychus cinnabarinus), modeled on vertebrate LXR-beta (PDB 4NQA) — same NR1 clan reasoning applicable here. Generic vertebrate NR1-family ligand-bound LBD structures usable as fold templates: RORγt LBD + SRC2 peptide (PDB 5VB3), orphan NR2E3/PNR LBD (PDB 4LOG). None are tick-specific.",
+    "chembl_target": "UNKNOWN for this specific receptor. The broader nuclear-receptor superfamily (including RORγt) is heavily represented in ChEMBL, but no ID specific to this tick NR1 ortholog was found or should be assumed.",
+    "druggability_note": "Nuclear receptor LBDs are among the most historically druggable pocket classes (deep, well-defined hydrophobic cavities, precedented by agonists/antagonists across the whole superfamily). If this receptor is confirmed to be the arthropod ecdysone-pathway type, it sits in the same target class as diacylhydrazine insecticides (tebufenozide etc.) which are validated commercial acaricide/insecticide chemotypes acting on this exact receptor family (see also B7P2S1's project sibling B7PY20, an NHR already flagged in this project's own notes as a diacylhydrazine-chemotype hit).",
+    "sources": [
+      "data/results/ixodes_scapularis_final_targets.json (cached local record; live UniProt entry deleted 2026-01-28)",
+      "config.py TARGET_PROVENANCE / DEPRECATED_TARGETS (anchor EMBL_CON:EEC00893)",
+      "https://journals.plos.org/plosgenetics/article?id=10.1371%2Fjournal.pgen.1010911 (TcHR96h homology model on LXR-beta 4NQA)",
+      "https://www.rcsb.org/structure/5VB3",
+      "https://www.rcsb.org/structure/4LOG"
+    ]
+  },
+  "A0A4D5RYT8": {
+    "name_local": "(unnamed) — nuclear hormone receptor, RXR/HNF4-like",
+    "organism": "per project species file (Tier 4 anchor)",
+    "provenance_note": "DELETED from UniProt in release 2026_01 (confirmed: live REST query returned nothing). Per config.py TARGET_PROVENANCE this is Tier 4 with anchor EMBL_TSA:MOY42500 (UPI0010C71910). Family/domain data below comes from the LOCAL cached final_targets.json record.",
+    "family": "Nuclear hormone receptor, NR2 subfamily / Retinoid X receptor-HNF4 family; IPR000003 (RXR/HNF4 family), IPR000536 (NHR-LBD), IPR001628 (Zn-finger NHR-type), IPR001723 (NHR family), IPR013088/IPR035500 (superfamilies), IPR049635 (HNF4 LBD), IPR049636 (HNF4-like DBD), IPR050274 (NHR family NR2 subfamily).",
+    "family_confidence": "high (from cached InterPro annotation; the specific IPR049635/49636 HNF4-ligand-binding-domain hits are a strong, specific signal, not just generic NHR)",
+    "oligomeric_state": "COMPLEX (dimer, by strong family convention — either homodimer as HNF4 does, or heterodimer if functioning as the arthropod RXR ortholog USP)",
+    "oligomeric_evidence": "Not directly stated for this (now-deleted) accession. Two family precedents both point to dimerization: (a) human HNF4α functions as an obligate homodimer bound to DNA — PDB 4IQR is explicitly 'the multidomain human HNF-4α homodimer bound to its DNA response element'; (b) if this receptor is instead the arthropod RXR ortholog (Ultraspiracle/USP, NR2B4 clan, same broad IPR000003 family), it is the obligate heterodimer partner of the ecdysone receptor EcR. Which of the two functional roles applies to A0A4D5RYT8 specifically is UNKNOWN without a phylogenetic/sequence-identity check against human HNF4A vs. arthropod USP — both hit the same top-level InterPro family.",
+    "binding_site_location": "INTRA-subunit. The HNF4 LBD binds long-chain fatty acids constitutively within a single hydrophobic channel inside one subunit's LBD: 'the carboxylic acid headgroup of the fatty acid ion pairs with the guanidinium group of Arg226 at one end of the ligand binding pocket, while the aliphatic chain fills a long, narrow channel lined with hydrophobic residues' (human HNF4γ LBD, PDB 1LV2; homodimer-on-DNA context in 4IQR). If instead this is a USP/RXR-type ortholog, note the caution flagged in this project's own CLAUDE.md history: arthropod USP has, in several lineages, LOST a functional ligand-binding pocket (Hemiptera, Coleoptera) or acquired an unusual phospholipid-filled pocket (Mecopterida) — so 'has a druggable LBD pocket' cannot be assumed for the USP interpretation without direct evidence for this receptor.",
+    "site_residues_known": "For the HNF4 interpretation: Arg226 (fatty-acid carboxylate anchor) is a directly quoted, named residue from the human HNF4γ structure (PDB 1LV2) — high-confidence motif, but HNF4γ numbering, not this tick sequence's numbering; needs alignment before literal transfer.",
+    "characterized_relatives": "Human HNF4α, PDB 4IQR (2.9 Å, multidomain homodimer bound to DNA response element + fatty-acid ligand + coactivator peptide) and PDB 1M7W (HNF4α LBD with bound fatty acid); human HNF4γ, PDB 1LV2 (LBD with endogenous fatty acid, Arg226 anchor). These are directly ligand-bound structures and, if sequence identity to A0A4D5RYT8 is confirmed to be closer to HNF4 than to arthropod USP, are strong transferable templates.",
+    "chembl_target": "Human HNF4A has a confirmed ChEMBL single-protein target entry: CHEMBL5398 (Homo sapiens, Hepatocyte nuclear factor 4-alpha). Relevance to this tick receptor depends on confirming the HNF4-vs-USP identity question above.",
+    "druggability_note": "If HNF4-like: constitutively fatty-acid-occupied LBD pocket is a real, structurally validated small-molecule pocket (agonists/antagonists exist for human HNF4A in the oncology/MODY-diabetes literature). If USP-like: druggability is uncertain and lineage-dependent per the pocket-loss/pocket-gain literature above — this ambiguity should be resolved (sequence-based, e.g. a quick BLAST of this sequence against human HNF4A vs. Drosophila/Ixodes USP) before committing docking effort here.",
+    "sources": [
+      "data/results/*_final_targets.json (cached local record; live UniProt entry deleted 2026-01-28)",
+      "config.py TARGET_PROVENANCE / DEPRECATED_TARGETS (anchor EMBL_TSA:MOY42500)",
+      "https://www.rcsb.org/structure/4IQR",
+      "https://www.rcsb.org/structure/1LV2",
+      "https://www.rcsb.org/structure/1M7W",
+      "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5398/",
+      "https://ncbi.nlm.nih.gov/pmc/articles/PMC3520820 (insect USP molecular adaptation, pocket loss/gain by lineage)"
+    ]
+  },
+  "B7SP48": {
+    "name_local": "Midgut cysteine proteinase 2 (fragment)",
+    "organism": "Dermacentor variabilis",
+    "family": "Papain-like cysteine peptidase, clan CA, family C1A (cathepsin-like); IPR000668, IPR013128, IPR038765. Pfam PF00112 (Peptidase_C1). MEROPS C01.160.",
+    "family_confidence": "high",
+    "oligomeric_state": "MONOMER",
+    "oligomeric_evidence": "Family convention: C1A papain-family cysteine proteases (cathepsins B/L/K/S and their tick midgut orthologs) are functional monomers — no SUBUNIT oligomer text in UniProt and no dimerization documented for this family broadly; the papain fold itself is a self-contained catalytic unit.",
+    "binding_site_location": "INTRA-subunit. Classic papain fold: a cleft between two lobes (one mostly alpha-helical, one mostly beta-sheet) of a SINGLE polypeptide, with the Cys-His-Asn catalytic triad at the cleft base. No inter-subunit contribution — this family is one of the 'easy' cases for the pipeline's monomer-based fpocket approach, in contrast to GST.",
+    "site_residues_known": "Yes, at family level, with high confidence: the papain-family catalytic triad is Cys25-His159-Asn175 in papain numbering (classic textbook motif); InterPro entries explicitly separate 'cysteine active site' (IPR000169), 'histidine active site' (IPR025660) and 'asparagine active site' (IPR025661) as conserved sub-signatures of this same superfamily (seen in the closely related A7LJ78 entry, same clan). A propeptide (I29 inhibitor domain, PF08246) covers the active site in the zymogen form and must be removed/modeled as cleaved for docking.",
+    "characterized_relatives": "No PDB structure specific to B7SP48. The C1A/papain family overall is one of the most heavily structurally characterized protease families in the PDB, with abundant ligand(inhibitor)-bound structures for human cathepsins B, L, K, S (covalent and non-covalent inhibitors, e.g. E-64 class) and numerous parasite/tick orthologs. A congeneric tick cathepsin (Rhipicephalus microplus cathepsin, and the sibling accessions A7LJ78/B7SP44 in this same chunk) provide close within-genus homology templates once a specific PDB ID is picked by BLAST against the PDB.",
+    "chembl_target": "Cathepsin family broadly present in ChEMBL; general-family entries confirmed (not this specific tick ortholog): human Cathepsin L (CHEMBL3837 among several ChEMBL cathepsin-L records), human Cathepsin B (CHEMBL4072), human Cathepsin K (CHEMBL268), human Cathepsin S (CHEMBL2954). Choose the correct paralog match by sequence identity before using any specific one as a bioactivity reference.",
+    "druggability_note": "One of the best-precedented druggable families in this entire chunk. Cysteine cathepsins are validated drug targets in human medicine (osteoporosis, cancer) and specifically implicated in tick blood-meal digestion (midgut cysteine proteinases), making this a mechanistically attractive acaricide target class independent of the pocket-location question that motivated this research pass.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/B7SP48.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/B7SP48/",
+      "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL3837",
+      "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL4072"
+    ]
+  },
+  "A7LJ78": {
+    "name_local": "Cathepsin L-like cysteine proteinase",
+    "organism": "Dermacentor variabilis",
+    "family": "Papain-like cysteine peptidase, clan CA, family C1A; IPR000169 (Cys active site), IPR000668, IPR013128, IPR025660 (His active site), IPR025661 (Asn active site), IPR038765, IPR039417. Pfam PF00112, PF08246.",
+    "family_confidence": "high",
+    "oligomeric_state": "MONOMER",
+    "oligomeric_evidence": "Family convention (see B7SP48 entry, same family) — no SUBUNIT oligomer text; papain-fold cysteine proteases are self-contained monomeric catalytic units.",
+    "binding_site_location": "INTRA-subunit — classic papain-fold active-site cleft within a single chain (see B7SP48 for full description; identical family reasoning applies).",
+    "site_residues_known": "Yes: papain-family catalytic triad Cys-His-Asn (textbook Cys25/His159/Asn175 papain numbering); this accession explicitly carries the three separate InterPro 'active site' sub-signatures for all three catalytic residues (IPR000169/IPR025660/IPR025661), which is unusually complete confirmation compared to most family members annotated in this chunk.",
+    "characterized_relatives": "Same family-level relatives as B7SP48 (human cathepsin L/B/K/S ligand-bound structures; sibling tick paralogs B7SP44, B7SP48 in this chunk). No PDB structure specific to A7LJ78 itself.",
+    "chembl_target": "Human Cathepsin L, ChEMBL target CHEMBL3837 (also CHEMBL2113, CHEMBL2305 — multiple ChEMBL records exist for cathepsin L across sources); confirm paralog match by sequence identity before use.",
+    "druggability_note": "Same strong druggability case as B7SP48 — this accession additionally has all three catalytic-triad active-site InterPro signatures independently confirmed, making it one of the highest-confidence family assignments in the whole chunk.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/A7LJ78.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A7LJ78/",
+      "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL3837"
+    ]
+  },
+  "B7SP44": {
+    "name_local": "Putative cathepsin B-like cysteine protease form 1 (fragment)",
+    "organism": "Dermacentor variabilis",
+    "family": "Papain-like cysteine peptidase, clan CA, family C1A, cathepsin-B-like subfamily; IPR000668, IPR013128, IPR038765. Pfam PF00112. CDD cd02620 (Peptidase_C1A_CathepsinB) — explicit cathepsin-B sub-classification, stronger than a generic C1A hit.",
+    "family_confidence": "high",
+    "oligomeric_state": "MONOMER",
+    "oligomeric_evidence": "Family convention (papain-fold proteases are monomeric catalytic units); no contrary SUBUNIT annotation present. NOTE: mammalian cathepsin B specifically has a distinctive 'occluding loop' that can partially block the active-site cleft and confers dipeptidyl-carboxypeptidase activity in addition to endopeptidase activity — this is an intra-chain structural feature, not an oligomerization event, but worth flagging since it changes pocket shape versus cathepsin L.",
+    "binding_site_location": "INTRA-subunit papain-fold active-site cleft (see B7SP48). For the cathepsin-B subtype specifically, expect the occluding loop near the C-terminal end of the cleft to partially cap one side of the pocket in the mature enzyme — relevant if using a cathepsin-L-like homology template instead of a true cathepsin-B template for pocket shape.",
+    "site_residues_known": "Papain-family Cys-His-Asn catalytic triad (family-level, high confidence); this accession's own IPR000668 hit covers only the C-terminal His/Asn-bearing region explicitly (the N-terminal Cys active-site sub-signature IPR000169 was not returned for this specific accession in the InterPro query, unlike A7LJ78 — may reflect an incomplete/fragment sequence, consistent with the record being flagged as a fragment).",
+    "characterized_relatives": "Human Cathepsin B is one of the most thoroughly ligand-bound-structure-characterized cysteine proteases in the PDB (numerous inhibitor complexes). No PDB structure specific to B7SP44 itself; sibling tick paralogs A7LJ78/B7SP48 in this chunk are close within-genus references.",
+    "chembl_target": "Human Cathepsin B, ChEMBL target CHEMBL4072 confirmed via direct search (Homo sapiens, single protein, EC 3.4.22.1).",
+    "druggability_note": "Same strong C1A-family druggability case as A7LJ78/B7SP48, with the added note that cathepsin-B-type pockets have a partially occluded cleft (occluding loop) that should be reflected in box/pocket definition rather than borrowing a cathepsin-L pocket shape uncritically.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/B7SP44.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/B7SP44/",
+      "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL4072"
+    ]
+  },
+  "A0A0C9R1D7": {
+    "name_local": "PRKCA-binding protein (PICK1 homolog, fragment)",
+    "organism": "Amblyomma americanum",
+    "family": "PICK1-type PDZ+BAR(Arfaptin-homology) domain scaffold protein; IPR001478/IPR036034 (PDZ domain/superfamily), IPR010504 (Arfaptin homology/AH domain), IPR027267 (AH/BAR domain superfamily), IPR030798 (Arfaptin family). Pfam PF00595/PF13180 (PDZ), PF06456 (Arfaptin-like).",
+    "family_confidence": "high",
+    "oligomeric_state": "DIMER (with monomer also reported)",
+    "oligomeric_evidence": "UniProt SUBUNIT field for THIS accession explicitly states 'Functions as monomer and homodimer' — direct evidence. This matches human PICK1 biology, where the BAR (Arfaptin-homology) domain forms an obligate crescent-shaped homodimer (a structural requirement of essentially all BAR-domain proteins), while the PDZ domain can act as a largely independent module.",
+    "binding_site_location": "Two functionally distinct, both largely INTRA-domain sites, though the full-length protein assembles as a dimer via the BAR domain: (1) the PDZ domain has a canonical INTRA-subunit peptide-binding groove (binds C-terminal tails of partner proteins, e.g. AMPA receptor GluA2) plus a separate lipid-membrane-binding surface stabilized by a 'Cys-Pro-Cys' redox motif located away from the peptide groove — human PICK1 PDZ was crystallized as an oxidized DIMER in complex with the GluR2 C-tail peptide (PDB 3HPK), where a disulfide bond forms an inter-subunit contact that is regulatory (redox-sensing) rather than a shared catalytic/ligand pocket. (2) The BAR domain forms the classic crescent-shaped, curvature-sensing homodimer (inter-subunit by definition, since a BAR domain dimer only exists as two chains together), and the PDZ domain has been shown to dock into the concave face of this BAR dimer intramolecularly, autoinhibiting it.",
+    "site_residues_known": "Not extracted to residue-number precision here beyond the named 'Cys-Pro-Cys' (CPC) motif in the PDZ domain (redox/lipid-sensing, located away from the peptide-binding groove).",
+    "characterized_relatives": "Human PICK1 PDZ domain, PDB 3HPK (oxidized dimeric PDZ + GluR2 C-tail peptide — directly ligand/peptide-bound). A specific small-molecule PDZ-groove antagonist chemical probe, BIO124, and a peptide inhibitor (Tat-P4-(C5)2, ~2 nM) are both documented in the medicinal-chemistry literature (see Expert Opin Drug Discov review, 2026, doi:10.1080/14728222.2026.2625095), indicating this exact pocket class has been actively drugged in the human ortholog.",
+    "chembl_target": "UNKNOWN — not verified for human PICK1 (PRKCABP) in this pass despite the existence of published chemical probes; do not assume a ChEMBL ID without checking.",
+    "druggability_note": "The PDZ peptide-binding groove is a validated, actively-pursued small-molecule pocket in the human ortholog (chemical probes exist), which is unusual for PDZ domains generally (most PDZ domains are considered difficult/shallow). This is a protein-protein-interaction site, not a classic enzyme active site, so standard Vina-style docking against a rigid pocket may under-perform relative to fragment/peptidomimetic approaches used in the human PICK1 literature — worth flagging as a different docking strategy problem, not just a pocket-location problem.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/A0A0C9R1D7.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0A0C9R1D7/",
+      "https://www.rcsb.org/structure/3HPK",
+      "https://doi.org/10.1080/14728222.2026.2625095",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC2063473/"
+    ]
+  },
+  "A0A0C9RXK7": {
+    "name_local": "Tetraspanin (fragment)",
+    "organism": "Amblyomma americanum",
+    "family": "Tetraspanin (TM4SF) superfamily; IPR000301 (Tetraspanin, animals), IPR008952 (EC2 domain superfamily), IPR018499 (Tetraspanin/Peripherin). Pfam PF00335.",
+    "family_confidence": "high",
+    "oligomeric_state": "UNKNOWN (not a classic obligate dimer; forms higher-order lateral clusters)",
+    "oligomeric_evidence": "No SUBUNIT oligomer text for this accession. Family convention: tetraspanins are not obligate dimers/tetramers in the sense used elsewhere in this report — the human ortholog CD81 was solved as a functional MONOMER with an internal 4-TM-helix cholesterol pocket (PDB 5TCX); tetraspanins instead undergo weak, promiscuous lateral self- and hetero-association into 'tetraspanin-enriched microdomains' (TEMs) with many different partner proteins (this accession's own UniProt SUBUNIT/interaction list names TIMP1, ITGB1, CD9, PMEL, KDR/VEGFR2, SYT7 as partners) — so 'oligomeric state' here is better framed as promiscuous membrane clustering than a fixed stoichiometric complex.",
+    "binding_site_location": "INTRA-subunit. The only defined small-molecule pocket demonstrated for this family is an intramembrane cholesterol-binding cavity formed by the 4 TM helices of a SINGLE tetraspanin chain, resolved in the full-length human CD81 crystal structure (PDB 5TCX): 'the two pairs of helices converge at the inner leaflet to create an intramembrane pocket containing a bound cholesterol molecule.' The large extracellular loop (EC2/LEL), also intra-subunit (one chain), is a second, separate ligand-engagement surface used for antibody/small-molecule targeting.",
+    "site_residues_known": "Not extracted to residue-number precision here.",
+    "characterized_relatives": "Human CD81 full-length structure with bound cholesterol, PDB 5TCX; CD81 LEL-only structure, PDB 5M3T; CD9 LEL, PDB 6Z1V; Tspan15 LEL, PDB 7RDB. These are ligand(cholesterol)-bound and apo LEL structures for close human paralogs of this family, all directly relevant fold/pocket templates even though none is tick-specific.",
+    "chembl_target": "UNKNOWN — tetraspanins (CD9/CD81) are pursued as targets mainly via antibodies and LEL-binding small molecules (e.g., 'Hz-A'/'Hz-B' compound series against CD81 LEL) in the antiviral/oncology literature; no confirmed single-protein ChEMBL target ID verified in this pass.",
+    "druggability_note": "Two independent pocket options exist by homology: (1) the intramembrane cholesterol pocket (defined, structurally solved in CD81, but embedded in the membrane — awkward for standard aqueous docking) and (2) the extracellular LEL surface (accessible, already the target of a published small-molecule series against CD81). Neither is a classical deep enzymatic pocket, so expect lower hit rates / need for a different (surface-patch) docking strategy versus the enzyme targets in this chunk.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/A0A0C9RXK7.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0A0C9RXK7/",
+      "https://pubmed.ncbi.nlm.nih.gov/27881302/ (Crystal Structure of a Full-Length Human Tetraspanin Reveals a Cholesterol-Binding Pocket, CD81/5TCX)",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10997574/ (CD81 LEL small-molecule docking)"
+    ]
+  },
+  "A0A0C9SEC4": {
+    "name_local": "Serine/threonine-protein phosphatase PGAM5, mitochondrial",
+    "organism": "Amblyomma americanum",
+    "family": "Phosphoglycerate mutase family, BPG-dependent PGAM subfamily (histidine phosphatase superfamily, branch 1); IPR013078, IPR029033, IPR051021. Pfam PF00300.",
+    "family_confidence": "high",
+    "oligomeric_state": "COMPLEX — dodecamer in the enzymatically active human form (higher than a simple dimer)",
+    "oligomeric_evidence": "Not stated for this tick accession directly (UniProt SUBUNIT here just lists a partner interaction: 'Interacts with Pk92B/ASK1'), but the human ortholog PGAM5 has been directly, experimentally shown by X-ray crystallography, HDX-MS, size-exclusion chromatography AND analytical ultracentrifugation to assemble into an enzymatically ACTIVE DODECAMER (12 subunits) driven by an N-terminal WDPNWD motif, per 'Structures of PGAM5 Provide Insight into Active Site Plasticity and Multimeric Assembly' (PDB 5MUF = dodecameric active form; PMID 28648608). This is one of the strongest, most surprising oligomeric-state findings in this chunk and should override any naive monomer/dimer default.",
+    "binding_site_location": "INTRA-subunit catalytically (each subunit retains its own histidine-phosphatase active site — PDB 3O0T shows a single active site in complex with phosphate), but the enzyme is ALLOSTERICALLY INTER-subunit-dependent: oligomerization into the dodecamer via the WDPNWD motif is required to order the catalytic loop into its active conformation. So: pocket location itself does not require inter-subunit residues, but pocket COMPETENCE (whether it's in the active conformation at all) is an oligomeric-assembly-dependent property — a monomeric AlphaFold model may render the catalytic loop disordered/inactive-conformation, which fpocket could easily miss or mis-shape even though the raw pocket geometry is technically intra-subunit.",
+    "site_residues_known": "The N-terminal 'WDPNWD' motif is an explicitly named, quoted structural/regulatory motif (multimerization + allosteric activator), directly from the PGAM5 structural paper. Individual catalytic His-phosphatase residues were not extracted to number here.",
+    "characterized_relatives": "Human PGAM5, PDB 5MUF (dodecameric active form with WDPNWD motif), PDB 3O0T (phosphate-bound active site), PDB 3MXO (base structure) — Wilkins JM et al., Structure 2017 (PMID 28648608). Directly ligand(phosphate)-bound human ortholog with multiple deposited structures; a strong template.",
+    "chembl_target": "UNKNOWN — not verified in this pass. PGAM5 is of high interest in the necroptosis/mitophagy literature (RIPK3, PINK1 partners) but a confirmed ChEMBL single-protein target ID was not located.",
+    "druggability_note": "Real druggable phosphatase active site exists (phosphate-bound structure demonstrates a genuine small-molecule-accessible pocket), but effective docking should account for the oligomerization-dependent active conformation rather than assuming a monomer AlphaFold model already presents the catalytically competent pocket shape.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/A0A0C9SEC4.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0A0C9SEC4/",
+      "https://www.rcsb.org/structure/5MUF",
+      "https://www.rcsb.org/structure/3O0T",
+      "https://www.rcsb.org/structure/3MXO",
+      "https://pubmed.ncbi.nlm.nih.gov/28648608/"
+    ]
+  },
+  "A0A142I6V4": {
+    "name_local": "Cytochrome c oxidase subunit 1 (COX1)",
+    "organism": "per project species file",
+    "family": "Cytochrome c oxidase subunit I / heme-copper oxidase superfamily; IPR000883, IPR023616, IPR036927. Pfam PF00115.",
+    "family_confidence": "high",
+    "oligomeric_state": "COMPLEX — COX1 is one subunit of the multi-subunit Complex IV (cytochrome c oxidase), which itself typically dimerizes in the mitochondrial inner membrane in mammals",
+    "oligomeric_evidence": "Family/complex-level convention from decades of Complex IV structural biology (e.g., bovine Complex IV, PDB 1OCC and successors) — not specific to this tick accession; local annotation confirms COX1's role as 'component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain.'",
+    "binding_site_location": "The catalytic O2-reduction site (binuclear heme a3-CuB center) is INTRA-subunit, located entirely within COX1 itself, per the local functional annotation ('the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CuB)') — but COX1 only functions embedded within the full multi-subunit, multi-metal-cofactor Complex IV assembly (COX1/2/3 plus numerous nuclear-encoded subunits), so a genuinely isolated monomeric COX1 model omits the electron-relay partners (CuA center in subunit 2, cytochrome c docking site) even though the O2-binding chemistry itself is within subunit 1.",
+    "site_residues_known": "Not extracted to residue-number precision here; the heme a3/CuB binuclear center ligation (multiple conserved His residues coordinating the coppers/hemes) is textbook-established for this family generally but was not pulled to exact numbering in this pass.",
+    "characterized_relatives": "Extremely well characterized structurally: bovine Complex IV (PDB 1OCC and later high-resolution forms), Paracoccus denitrificans and other bacterial COX structures, and human mitochondrial Complex IV cryo-EM structures. All are essentially universally conserved at the COX1 catalytic core across metazoans (this is precisely the property that makes it dangerous as an acaricide target — see druggability note).",
+    "chembl_target": "UNKNOWN — not specifically searched; classical COX inhibitors (cyanide, azide, CO) are not drug-like chemotypes and are not the kind of target ChEMBL bioactivity data would usefully support for this program.",
+    "druggability_note": "STRONG RED FLAG, should be raised for review alongside the campaign's existing BLACKLISTED_TARGETS list. This project's own config.py already BLACKLISTED a different accession, A0A0K0PR09, specifically because it was mitochondrial Complex I/ETC-adjacent with 74.2% human identity and was judged a false positive (see CLAUDE.md 'A0A0K0PR09 (COX1) BLACKLISTED' entry). A0A142I6V4 (and its evident orthologs A0A2U8U3E7 and A0A2U8U3T1, also in this chunk) are directly annotated as cytochrome c oxidase subunit 1 — the SAME protein family/gene product, not merely a related complex — and mitochondrial COX1 is among the most sequence-conserved proteins across all of eukaryotic life (it is a standard DNA-barcoding gene precisely because it is so conserved). Any selectivity/BLAST-vs-human step for these three targets should be treated as very high priority; a >60% or even >80% human identity hit here would not be surprising and should trigger the same blacklist logic already established for A0A0K0PR09.",
+    "sources": [
+      "data/results/*_final_targets.json (local cached function/keywords)",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0A142I6V4/",
+      "CLAUDE.md project history — A0A0K0PR09 (COX1) BLACKLISTED entry, config.py BLACKLISTED_TARGETS"
+    ]
+  },
+  "A0A2U8U3E7": {
+    "name_local": "Cytochrome c oxidase subunit 1 (COX1) — likely ortholog of A0A142I6V4 in a different species record",
+    "organism": "per project species file",
+    "family": "Cytochrome c oxidase subunit I / heme-copper oxidase superfamily; IPR000883, IPR023616, IPR036927. Pfam PF00115.",
+    "family_confidence": "high",
+    "oligomeric_state": "COMPLEX — COX1 is one subunit of the multi-subunit Complex IV (cytochrome c oxidase), which itself typically dimerizes in the mitochondrial inner membrane in mammals",
+    "oligomeric_evidence": "Family/complex-level convention from decades of Complex IV structural biology (e.g., bovine Complex IV, PDB 1OCC and successors) — not specific to this tick accession; local annotation confirms COX1's role as 'component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain.'",
+    "binding_site_location": "The catalytic O2-reduction site (binuclear heme a3-CuB center) is INTRA-subunit, located entirely within COX1 itself, per the local functional annotation ('the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CuB)') — but COX1 only functions embedded within the full multi-subunit, multi-metal-cofactor Complex IV assembly (COX1/2/3 plus numerous nuclear-encoded subunits), so a genuinely isolated monomeric COX1 model omits the electron-relay partners (CuA center in subunit 2, cytochrome c docking site) even though the O2-binding chemistry itself is within subunit 1.",
+    "site_residues_known": "Not extracted to residue-number precision here; the heme a3/CuB binuclear center ligation (multiple conserved His residues coordinating the coppers/hemes) is textbook-established for this family generally but was not pulled to exact numbering in this pass.",
+    "characterized_relatives": "Extremely well characterized structurally: bovine Complex IV (PDB 1OCC and later high-resolution forms), Paracoccus denitrificans and other bacterial COX structures, and human mitochondrial Complex IV cryo-EM structures. All are essentially universally conserved at the COX1 catalytic core across metazoans (this is precisely the property that makes it dangerous as an acaricide target — see druggability note).",
+    "chembl_target": "UNKNOWN — not specifically searched; classical COX inhibitors (cyanide, azide, CO) are not drug-like chemotypes and are not the kind of target ChEMBL bioactivity data would usefully support for this program.",
+    "druggability_note": "STRONG RED FLAG, should be raised for review alongside the campaign's existing BLACKLISTED_TARGETS list. This project's own config.py already BLACKLISTED a different accession, A0A0K0PR09, specifically because it was mitochondrial Complex I/ETC-adjacent with 74.2% human identity and was judged a false positive (see CLAUDE.md 'A0A0K0PR09 (COX1) BLACKLISTED' entry). A0A142I6V4 (and its evident orthologs A0A2U8U3E7 and A0A2U8U3T1, also in this chunk) are directly annotated as cytochrome c oxidase subunit 1 — the SAME protein family/gene product, not merely a related complex — and mitochondrial COX1 is among the most sequence-conserved proteins across all of eukaryotic life (it is a standard DNA-barcoding gene precisely because it is so conserved). Any selectivity/BLAST-vs-human step for these three targets should be treated as very high priority; a >60% or even >80% human identity hit here would not be surprising and should trigger the same blacklist logic already established for A0A0K0PR09.",
+    "sources": [
+      "data/results/*_final_targets.json (local cached function/keywords)",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0A142I6V4/",
+      "CLAUDE.md project history — A0A0K0PR09 (COX1) BLACKLISTED entry, config.py BLACKLISTED_TARGETS",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0A2U8U3E7/ (not independently re-queried; local annotation text is identical to A0A142I6V4, same family assumed)"
+    ]
+  },
+  "A0A2U8U3T1": {
+    "name_local": "Cytochrome c oxidase subunit 1 (COX1) — likely ortholog of A0A142I6V4 in a different species record",
+    "organism": "per project species file",
+    "family": "Cytochrome c oxidase subunit I / heme-copper oxidase superfamily; IPR000883, IPR023616, IPR036927. Pfam PF00115.",
+    "family_confidence": "high",
+    "oligomeric_state": "COMPLEX — COX1 is one subunit of the multi-subunit Complex IV (cytochrome c oxidase), which itself typically dimerizes in the mitochondrial inner membrane in mammals",
+    "oligomeric_evidence": "Family/complex-level convention from decades of Complex IV structural biology (e.g., bovine Complex IV, PDB 1OCC and successors) — not specific to this tick accession; local annotation confirms COX1's role as 'component of the cytochrome c oxidase, the last enzyme in the mitochondrial electron transport chain.'",
+    "binding_site_location": "The catalytic O2-reduction site (binuclear heme a3-CuB center) is INTRA-subunit, located entirely within COX1 itself, per the local functional annotation ('the active site in subunit 1, a binuclear center (BNC) formed by heme A3 and copper B (CuB)') — but COX1 only functions embedded within the full multi-subunit, multi-metal-cofactor Complex IV assembly (COX1/2/3 plus numerous nuclear-encoded subunits), so a genuinely isolated monomeric COX1 model omits the electron-relay partners (CuA center in subunit 2, cytochrome c docking site) even though the O2-binding chemistry itself is within subunit 1.",
+    "site_residues_known": "Not extracted to residue-number precision here; the heme a3/CuB binuclear center ligation (multiple conserved His residues coordinating the coppers/hemes) is textbook-established for this family generally but was not pulled to exact numbering in this pass.",
+    "characterized_relatives": "Extremely well characterized structurally: bovine Complex IV (PDB 1OCC and later high-resolution forms), Paracoccus denitrificans and other bacterial COX structures, and human mitochondrial Complex IV cryo-EM structures. All are essentially universally conserved at the COX1 catalytic core across metazoans (this is precisely the property that makes it dangerous as an acaricide target — see druggability note).",
+    "chembl_target": "UNKNOWN — not specifically searched; classical COX inhibitors (cyanide, azide, CO) are not drug-like chemotypes and are not the kind of target ChEMBL bioactivity data would usefully support for this program.",
+    "druggability_note": "STRONG RED FLAG, should be raised for review alongside the campaign's existing BLACKLISTED_TARGETS list. This project's own config.py already BLACKLISTED a different accession, A0A0K0PR09, specifically because it was mitochondrial Complex I/ETC-adjacent with 74.2% human identity and was judged a false positive (see CLAUDE.md 'A0A0K0PR09 (COX1) BLACKLISTED' entry). A0A142I6V4 (and its evident orthologs A0A2U8U3E7 and A0A2U8U3T1, also in this chunk) are directly annotated as cytochrome c oxidase subunit 1 — the SAME protein family/gene product, not merely a related complex — and mitochondrial COX1 is among the most sequence-conserved proteins across all of eukaryotic life (it is a standard DNA-barcoding gene precisely because it is so conserved). Any selectivity/BLAST-vs-human step for these three targets should be treated as very high priority; a >60% or even >80% human identity hit here would not be surprising and should trigger the same blacklist logic already established for A0A0K0PR09.",
+    "sources": [
+      "data/results/*_final_targets.json (local cached function/keywords)",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0A142I6V4/",
+      "CLAUDE.md project history — A0A0K0PR09 (COX1) BLACKLISTED entry, config.py BLACKLISTED_TARGETS",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0A2U8U3T1/ (not independently re-queried; local annotation text is identical to A0A142I6V4, same family assumed)"
+    ]
+  },
+  "A0AAQ4D7R5": {
+    "name_local": "Katanin p60 ATPase-containing subunit A1 (KATNA1)",
+    "organism": "Amblyomma americanum",
+    "family": "AAA+ ATPase superfamily, microtubule-severing AAA ATPase family, Katanin p60 subunit A1 subfamily; IPR003593, IPR003959, IPR003960, IPR027417, IPR028596 (KATNA1-specific), IPR041569, IPR048611 (MIT domain), IPR048612 (AAA domain), IPR050304. Pfam PF00004 (AAA), PF21126 (KATNA1_MIT), plus others.",
+    "family_confidence": "high",
+    "oligomeric_state": "HEXAMER (homohexameric ring)",
+    "oligomeric_evidence": "UniProt SUBUNIT field for THIS accession explicitly states 'Forms hexameric rings; interacts with KATNB1 (targeting subunit).' Direct, accession-specific evidence — one of the strongest oligomeric-state confirmations in this chunk.",
+    "binding_site_location": "INTER-subunit for the ATP catalytic sites, by the universal AAA+ ATPase mechanism: each of the 6 nucleotide-binding sites in a AAA+ ring is formed primarily by the Walker A/B motifs of ONE subunit but is completed/catalytically activated by an 'arginine finger' residue donated in trans from the NEIGHBORING subunit — so the functional ATPase site cannot be reconstructed from a single monomer. This is a textbook, essentially universal feature of the AAA+ ATPase superfamily (to which this family explicitly belongs per IPR027417/IPR003959), not something confirmed residue-by-residue for this specific tick sequence, but very high confidence by mechanism.",
+    "site_residues_known": "Not extracted to exact residue numbers for this accession; Walker A (P-loop, GxxxxGK[S/T]) and Walker B (hhhhDE) motifs plus the trans-acting arginine finger are the family-defining, well-documented AAA+ motifs (Pfam PF00004 AAA domain is defined by exactly these elements).",
+    "characterized_relatives": "No PDB structure specific to this tick katanin identified in this pass. The katanin/spastin microtubule-severing AAA-ATPase subfamily overall has solved hexameric-ring cryo-EM/crystal structures in other organisms (e.g., human/Drosophila/Chlamydomonas katanin and human spastin hexamers) demonstrating the inter-subunit ATP-site architecture directly, though a specific PDB ID was not pinned down for KATNA1 itself in this pass — reported as a well-supported family fact rather than a cited specific structure to avoid overclaiming an ID.",
+    "chembl_target": "UNKNOWN — AAA+ microtubule-severing enzymes are not a mainstream small-molecule-drugged class; no ChEMBL ID checked/found.",
+    "druggability_note": "Inter-subunit ATP pockets in hexameric AAA+ rings are a real, precedented druggable class in other AAA+ ATPases (e.g., p97/VCP inhibitors bind at analogous inter-subunit sites), but require a hexameric model — not a monomer — to even present the correct pocket. This is exactly the class of target the pipeline's monomer-only fpocket approach would be expected to fail on.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/A0AAQ4D7R5.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0AAQ4D7R5/"
+    ]
+  },
+  "B7PXE3": {
+    "name_local": "Spastin",
+    "organism": "Ixodes scapularis",
+    "family": "AAA+ ATPase superfamily, microtubule-severing AAA ATPase family, Spastin subfamily; IPR003593, IPR003959, IPR003960, IPR007330 (MIT domain), IPR015415 (Spastin/Vps4 C-terminal), IPR017179 (Spastin family), IPR027417, IPR041569, IPR050304. Pfam PF00004 (AAA), PF09336 (Vps4_C).",
+    "family_confidence": "high",
+    "oligomeric_state": "HEXAMER (homohexamer, ring-like)",
+    "oligomeric_evidence": "UniProt SUBUNIT field for THIS accession explicitly states 'Homohexamer... stabilized by ATP-binding' and that it 'may adopt ring-like conformations through which microtubules pass before severing.' Direct, accession-specific evidence.",
+    "binding_site_location": "INTER-subunit for the ATP catalytic sites — same AAA+ mechanistic reasoning as A0AAQ4D7R5/katanin (this protein is explicitly in the same 'Microtubule-severing AAA ATPase' family, IPR050304, and the same central pore-mediated substrate-threading mechanism applies): each ATPase site is completed by an arginine finger contributed in trans by the adjacent subunit in the ring.",
+    "site_residues_known": "Not extracted to residue numbers for this accession; Walker A/B + trans-acting arginine finger are the defining family motifs (see A0AAQ4D7R5 entry, same family).",
+    "characterized_relatives": "No PDB structure specific to this tick spastin identified in this pass. Human spastin (SPAST) hexameric AAA-ATPase structures and the related katanin/Vps4 subfamily members (Vps4 itself is extremely well-characterized structurally as a hexameric AAA+ ATPase) are the relevant structural precedent for the inter-subunit ring architecture, though a specific PDB ID was not pinned down here.",
+    "chembl_target": "UNKNOWN — not a mainstream small-molecule-drugged target class; not checked/found.",
+    "druggability_note": "Same reasoning as katanin (A0AAQ4D7R5): a real inter-subunit hexameric-ring ATP pocket exists mechanistically, but only if a hexamer (not monomer) model is used for docking.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/B7PXE3.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/B7PXE3/ (not independently re-queried in this pass; local cached InterPro list matches UniProt DR lines)"
+    ]
+  },
+  "B7PBI5": {
+    "name_local": "ATP-dependent (S)-NAD(P)H-hydrate dehydratase",
+    "organism": "Ixodes scapularis",
+    "family": "NnrD/CARKD family (metabolite-repair dehydratase); IPR000631 (CARKD), IPR017953 (carbohydrate-kinase-like conserved site), IPR029056 (Ribokinase-like superfamily). Pfam PF01256 (Carb_kinase).",
+    "family_confidence": "high",
+    "oligomeric_state": "UNKNOWN",
+    "oligomeric_evidence": "No SUBUNIT text in UniProt for this accession, and no oligomeric-state information was found for the human ortholog NAXD/CARKD in the sources checked in this pass (searched but not resolved — genuinely unknown rather than assumed monomer). Ribokinase-superfamily enzymes (the structural superfamily this dehydratase domain belongs to, IPR029056) are frequently dimeric, but this is a superfamily-level tendency, not confirmed for NAXD/CARKD specifically, so should not be over-stated.",
+    "binding_site_location": "UNKNOWN precisely, but by superfamily convention (ribokinase-like fold, ATP-dependent), the ATP/NAD(P)HX active site is expected to be INTRA-subunit within the ribokinase-like alpha/beta fold — this is an inference from fold family, not a directly confirmed fact for this enzyme.",
+    "site_residues_known": "Not extracted here.",
+    "characterized_relatives": "No PDB structure identified for human NAXD/CARKD or any close ortholog in the sources checked in this pass (searched directly, none found). This is a genuine structural-biology gap, not a search failure to flag more thoroughly — the human disease-gene literature (NAXD deficiency, PMID-level clinical papers) was found, but no crystal/cryo-EM structure reference.",
+    "chembl_target": "UNKNOWN — no metabolite-repair-enzyme small-molecule chemical-probe or ChEMBL target found for this family.",
+    "druggability_note": "Housekeeping metabolite-repair enzyme (repairs a damaged NAD(P)H side-product) — a plausible but essentially unprecedented target class for small-molecule inhibition; no known chemical starting points identified. Combined with the lack of any solved structure for a close homolog, this is one of the lowest-confidence targets in the chunk for the specific question of pocket location (INTRA vs INTER-subunit) — genuinely unknown, flagged honestly rather than guessed.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/B7PBI5.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/B7PBI5/ (not independently re-queried; local cached InterPro list matches UniProt DR lines)",
+      "https://academic.oup.com/brain/article/142/1/50/5255623 (human NAXD deficiency disease paper, no structure)",
+      "https://en.wikipedia.org/wiki/CARKD"
+    ]
+  },
+  "B7QDG3": {
+    "name_local": "NAD(P)H-hydrate epimerase",
+    "organism": "Ixodes scapularis",
+    "family": "NnrE/AIBP family (YjeF N-terminal domain); IPR004443 (YjeF_N), IPR032976 (NAXE-like), IPR036652 (YjeF_N superfamily). Pfam PF03853 (YjeF_N... note: local cache lists no Pfam, live UniProt query returned PF03853).",
+    "family_confidence": "high",
+    "oligomeric_state": "UNKNOWN, but per-subunit metal binding is documented",
+    "oligomeric_evidence": "UniProt notes a cofactor: 'Binds one potassium ion per subunit' — the phrase 'per subunit' implies a multi-subunit assembly exists, but the actual stoichiometry (dimer? higher?) is not stated, and no oligomeric-state structure for the human ortholog NAXE/AIBP was found in the sources checked in this pass.",
+    "binding_site_location": "UNKNOWN precisely; each subunit apparently carries its own K+-binding site ('per subunit'), suggesting the core epimerase active site is likely INTRA-subunit, but this is an inference from the cofactor-stoichiometry wording rather than a directly confirmed statement about the catalytic pocket.",
+    "site_residues_known": "Not extracted here.",
+    "characterized_relatives": "No PDB structure identified for human NAXE/AIBP or any close ortholog in the sources checked in this pass (searched directly, none found — same structural-biology gap as its metabolic partner enzyme B7PBI5/NAXD).",
+    "chembl_target": "UNKNOWN — no chemical-probe or ChEMBL target found for this family. Note: the human ortholog (as 'AIBP'/APOA1BP) does have a distinct, separately published 'moonlighting' cholesterol-efflux function (unrelated to the NAD(P)HX-repair enzymatic activity) — if that function turns out to be relevant to tick biology, it would need entirely separate literature research from what's covered here.",
+    "druggability_note": "Same low-precedent situation as its partner enzyme B7PBI5 (NAXD): a housekeeping metabolite-repair enzyme with no identified solved structure for any ortholog and no known chemical starting points. Genuinely unknown territory — reported honestly rather than guessed.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/B7QDG3.txt",
+      "https://en.wikipedia.org/wiki/APOA1BP",
+      "https://en.wikipedia.org/wiki/NAD(P)H-hydrate_epimerase",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5938422/ (AIBP moonlighting function paper)"
+    ]
+  },
+  "A0AAQ4E7F2": {
+    "name_local": "General transcription and DNA repair factor IIH helicase/translocase subunit XPB",
+    "organism": "Amblyomma americanum",
+    "family": "Helicase superfamily 2, XPB/Ssl2 (RAD25) subfamily; IPR001161 (Helicase XPB/Ssl2), IPR001650, IPR006935, IPR014001, IPR027417 (P-loop NTPase), IPR032438 (ERCC3/RAD25/XPB C-term), IPR032830 (XPB/Ssl2 N-term), IPR050615. Pfam PF00271, PF04851, PF13625, PF16203.",
+    "family_confidence": "high",
+    "oligomeric_state": "COMPLEX — XPB is a monomeric ATPase/helicase that functions as one obligate subunit of the ~10-subunit TFIIH holoenzyme",
+    "oligomeric_evidence": "Not directly stated for this accession's SUBUNIT field beyond the family SIMILARITY note ('RAD25/XPB subfamily') and subcellular location (Nucleus). It is broadly established in the DNA-repair/transcription literature (not independently re-verified with a structure in this pass) that XPB functions as a core catalytic subunit of the general transcription/nucleotide-excision-repair factor TFIIH, a large multi-subunit complex — so 'oligomeric state' as a single-protein dimer/hexamer question does not really apply the way it does to the AAA+ ATPases in this chunk; XPB itself is monomeric, but obligately complexed with ~9 other distinct proteins.",
+    "binding_site_location": "INTRA-subunit for the core ATPase/helicase chemistry: superfamily-2 helicases like XPB have their ATP-binding/hydrolysis site formed within a single polypeptide, in the cleft between two RecA-like lobes (a hallmark of this helicase superfamily, IPR014001 'Helicase superfamily 1/2, ATP-binding domain'). However, DNA translocation/unwinding function and regulation occur in the context of the full TFIIH complex, so a docking-relevant pocket confined to an isolated XPB monomer model would capture the core nucleotide site but miss any complex-dependent allosteric/DNA-contact surfaces.",
+    "site_residues_known": "Not extracted to residue numbers here; Walker A/B-type motifs are the generic, well-documented signature of this helicase ATP-binding domain class (IPR014001) but were not pulled to specific numbering for this accession.",
+    "characterized_relatives": "Cryo-EM structures of the full human/yeast TFIIH complex (including XPB/Rad25) have been published in the structural-biology literature in recent years, but a specific PDB ID was not confirmed/verified in this pass and is therefore not cited here to avoid fabricating an accession number.",
+    "chembl_target": "UNKNOWN — not checked/found in this pass. (Note: XPB is mechanistically related to the target of the natural-product inhibitor triptolide, which is documented in the general DNA-repair/TFIIH literature, but this specific claim was not independently re-verified via search in this pass, so is flagged here as a lead to check rather than a confirmed fact.)",
+    "druggability_note": "Core ATPase pocket is intra-subunit and structurally precedented across the SF2 helicase superfamily generally (many SF2 helicases have druggable ATP sites), but this protein's essential-housekeeping role in general transcription (not just DNA repair) makes host-selectivity a major concern — XPB/TFIIH is required in every metazoan cell for basal transcription, so expect very high conservation with host (human/dog) orthologs; treat similarly to the COX1 and ribosomal-protein entries in this chunk as a probable high-homology-risk target pending a BLAST check.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/A0AAQ4E7F2.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0AAQ4E7F2/"
+    ]
+  },
+  "A0AAQ4FA75": {
+    "name_local": "Acylglycerol kinase, mitochondrial (AGK)",
+    "organism": "Amblyomma americanum",
+    "family": "Diacylglycerol/NAD-kinase-like fold lipid kinase family (AGK family); IPR001206 (Diacylglycerol kinase catalytic domain), IPR016064 (NAD kinase/DAG kinase-like superfamily), IPR017438, IPR045579 (AGK C-terminal), IPR050187. Pfam PF00781 (DAGK_cat), PF19712 (AGK_C).",
+    "family_confidence": "high",
+    "oligomeric_state": "COMPLEX — the human ortholog AGK is a stable, named subunit of the ~6-component mitochondrial TIM22 protein-import translocase complex",
+    "oligomeric_evidence": "Directly documented for the human ortholog (not this tick accession specifically): 'Acylglycerol Kinase...Is a Subunit of the Human TIM22 Protein Import Complex' — cryo-EM structure of the full human TIM22 complex (TIM22, TIM9, TIM10a, TIM10b, TIM29, AGK) has been published (Qi et al., 2021, referenced via bioRxiv/Cell Reports literature). AGK's kinase activity itself is reported to be dispensable for this structural/import role ('AGK functions in a kinase-independent manner to maintain the integrity of the TIM22 complex').",
+    "binding_site_location": "The lipid-kinase catalytic pocket (ATP + acylglycerol substrate) is expected to be INTRA-subunit within the DAG-kinase-like catalytic fold of the AGK polypeptide itself (by analogy to the well-characterized bacterial/eukaryotic diacylglycerol kinase fold this domain belongs to), but AGK's documented, disease-relevant (Sengers syndrome) function is as a STRUCTURAL subunit of the multi-protein TIM22 import complex, independent of its catalytic site — so the biologically important 'site' for AGK may not be the kinase active site at all, but a protein-protein interaction surface within the TIM22 complex. This is a case where 'binding site location' genuinely depends on which biological role (lipid kinase vs. import-complex scaffold) the campaign cares about.",
+    "site_residues_known": "Not extracted here.",
+    "characterized_relatives": "Human TIM22 complex cryo-EM structure including AGK (Qi et al. 2021, bioRxiv/associated journal — specific PDB ID not confirmed/verified in this pass, not cited to avoid fabrication).",
+    "chembl_target": "UNKNOWN — AGK is discussed as an oncology target of interest ('Acylglycerol Kinase-Targeted Therapies in Oncology' review found in search), which suggests active medicinal-chemistry interest, but no specific ChEMBL ID was confirmed in this pass.",
+    "druggability_note": "Unusual dual-nature target: has a classic intra-subunit lipid-kinase catalytic pocket (by fold homology, docking-tractable in principle) AND a documented, disease-relevant, kinase-INDEPENDENT structural role as a TIM22-complex subunit (not a small-molecule-pocket-mediated function at all). A kinase-site inhibitor might not disrupt the biologically essential TIM22-scaffolding function, and vice versa — worth clarifying which mechanism the campaign intends to target before committing docking effort.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/A0AAQ4FA75.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0AAQ4FA75/",
+      "https://pubmed.ncbi.nlm.nih.gov/28712726/ (AGK is a subunit of the human TIM22 protein import complex)",
+      "https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2021.659158/full (AGK-targeted therapies in oncology)"
+    ]
+  },
+  "A0AAQ4DNH0": {
+    "name_local": "glutaminase (UniProt automated name)",
+    "organism": "Amblyomma americanum",
+    "family": "UNCERTAIN / possibly mixed annotation — local record carries both a 'Glutaminase' domain hit (IPR015868, IPR041541 EF-hand) AND ankyrin-repeat domains (IPR002110/IPR036770), plus a beta-lactamase/transpeptidase-like fold hit (IPR012338), while local UniProt keywords additionally include 'Presynaptic neurotoxin', 'Target cell membrane', 'Target membrane', 'Toxin' and 'Exocytosis'.",
+    "family_confidence": "low",
+    "oligomeric_state": "UNKNOWN",
+    "oligomeric_evidence": "Not investigated further given the low family-assignment confidence (see caution below) — not a productive use of remaining budget to chase oligomeric state for an uncertain family call.",
+    "binding_site_location": "UNKNOWN — cannot be responsibly specified given the ambiguous domain picture.",
+    "site_residues_known": "UNKNOWN.",
+    "characterized_relatives": "UNKNOWN — not chased down given the annotation-confidence concern below.",
+    "chembl_target": "UNKNOWN.",
+    "druggability_note": "CAUTION FLAG rather than a druggability call: the combination of 'glutaminase' catalytic domain + 'ankyrin repeat' scaffold + UniProt automated keywords for 'Presynaptic neurotoxin' / 'Target cell membrane' / 'Toxin' / 'Exocytosis' looks like it could reflect a spurious multi-domain automatic (UniRule/InterPro2GO) cross-annotation rather than a coherent single protein family — this specific combination (a metabolic glutaminase enzyme domain plus venom-neurotoxin keywords) is biologically unusual and was NOT independently verified against the literature in this pass. Recommend treating this target's family call as genuinely uncertain and re-deriving it from the raw sequence (e.g., a fresh InterPro/Pfam scan plus a manual look at domain boundaries) rather than trusting the local cached name/keywords at face value. This is exactly the kind of 'plausible-looking but possibly wrong' annotation the task brief warned about — flagged honestly as low-confidence rather than resolved with a guess.",
+    "sources": [
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/A0AAQ4DNH0/",
+      "data/results/*_final_targets.json (local cached keywords showing the Toxin/neurotoxin annotation)"
+    ]
+  },
+  "Q4PMB3": {
+    "name_local": "Small ribosomal subunit protein eS4 (RpS4)",
+    "organism": "Ixodes scapularis",
+    "family": "Eukaryotic ribosomal protein eS4 family; IPR000876 (Ribosomal_eS4), IPR002942 (S4 RNA-binding domain), IPR005824 (KOW domain), IPR013843/IPR013845 (eS4 N-term/central), IPR014722, IPR018199, IPR032277, IPR036986, IPR038237, IPR041982. Pfam PF00467 (KOW), PF00900, PF01479 (S4), PF08071, PF16121.",
+    "family_confidence": "high",
+    "oligomeric_state": "COMPLEX — one of ~33 core proteins of the eukaryotic 40S small ribosomal subunit, itself part of the 80S ribosome",
+    "oligomeric_evidence": "Family identity alone (eS4 is a universally conserved, single-copy component of the small ribosomal subunit in all eukaryotes) makes this a structural certainty rather than something needing per-accession confirmation.",
+    "binding_site_location": "Not applicable in the sense used for the rest of this chunk — this is an RNA-binding structural/scaffolding ribosomal protein (binds 18S rRNA via its S4 RNA-binding domain and KOW domain), not an enzyme with a discrete small-molecule active site. Any 'pocket' fpocket finds on a monomeric AlphaFold model of just this one protein (stripped of its rRNA context) is very unlikely to correspond to anything biologically meaningful, since its real functional surface is a large, extended RNA-contact interface within the intact ribosome, not a small enclosed cavity.",
+    "site_residues_known": "Not applicable in the classic catalytic-residue sense.",
+    "characterized_relatives": "Eukaryotic (and prokaryotic homolog S4) ribosomal structures are extremely well characterized by cryo-EM (full ribosome structures across many species), but 'ligand-bound' in the traditional sense doesn't apply to this specific protein — ribosome-targeting antibiotics/small molecules that ARE well precedented (e.g., in prokaryotic ribosomes) generally act at rRNA sites or the peptidyl-transferase center, not on this specific small-subunit protein's own surface.",
+    "chembl_target": "UNKNOWN / not applicable in the classic single-target-with-a-pocket sense used elsewhere in this report.",
+    "druggability_note": "Poor candidate for the pipeline's structure-based single-target docking approach as currently framed: (a) core ribosomal proteins are extremely conserved across eukaryotes (very high expected host/dog/mouse identity — should be treated with COX1-level caution on selectivity), and (b) this protein has no discrete small-molecule binding pocket of its own outside the context of the intact ribosome, so a monomeric AlphaFold+fpocket approach is close to meaningless here regardless of the oligomeric-state question. Recommend flagging for likely deprioritization rather than pocket-fixing effort.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/Q4PMB3.txt",
+      "data/results/ixodes_scapularis_final_targets.json (local cached InterPro list)"
+    ]
+  },
+  "Q8T9S3": {
+    "name_local": "Translationally-controlled tumor protein homolog (TCTP)",
+    "organism": "Dermacentor variabilis",
+    "family": "TCTP/Mss4-like family; IPR011057 (Mss4-like superfamily), IPR011323 (Mss4/TCTP), IPR018103 (TCTP conserved site), IPR018105 (TCTP family), IPR034737 (TCTP domain). Pfam PF00838 (TCTP).",
+    "family_confidence": "high",
+    "oligomeric_state": "MONOMER by default, with a documented DIMERIZATION-dependent activation mode",
+    "oligomeric_evidence": "No SUBUNIT text for this specific tick accession. Human TCTP literature (not this accession) shows the calcium-binding, apoptosis/growth-regulation-relevant form is monomeric (solution structure PDB 2HR9 determined by NMR, described as having a rigid core with a flexible loop, consistent with a monomer), but a separate line of evidence shows dimerization is 'essential for TCTP's cytokine-like activity' in an allergic-response context, and that dimerization specifically requires an N-terminally truncated form (full-length TCTP does not readily dimerize via disulfide bonds the way the truncated form does). Net picture: default form monomeric; a specific truncated/activated form dimerizes for a specific extracellular signaling function.",
+    "binding_site_location": "UNKNOWN as a defined druggable small-molecule pocket in the classic sense. TCTP is primarily characterized as a protein-protein-interaction hub (documented interactions include the anti-apoptotic protein Mcl-1, with published structural work on 'Structural transitions in TCTP tumor protein upon binding to the anti-apoptotic protein family member Mcl-1') and a Ca2+-binding protein (NMR-mapped Ca2+ site in 2HR9), rather than an enzyme with a catalytic cavity. The H2-H3 helix region has documented structural similarity to the H5-H6 helices of the apoptosis regulator Bax, which is itself a protein-interaction/membrane-insertion surface, not a small-molecule pocket.",
+    "site_residues_known": "Not extracted to residue numbers here; the Ca2+-binding site was mapped by NMR in human TCTP (2HR9) but specific residues were not pulled in this pass.",
+    "characterized_relatives": "Human TCTP: crystal structure PDB 1YZ1 (2.0 Å), solution/NMR structure PDB 2HR9. Parasite orthologs with solved structures: Plasmodium falciparum TCTP, PDB 3P3K; Plasmodium knowlesi TCTP, PDB 1TXJ. None of these are described in the sources reviewed here as being crystallized WITH a small-molecule drug-like ligand bound (Ca2+ and protein-partner peptides are the documented ligands, not drug-like small molecules) — so despite good structural coverage, this family lacks a directly transferable small-molecule-bound template.",
+    "chembl_target": "UNKNOWN — not checked/found; TCTP is more often discussed as an oncology protein-protein-interaction target (e.g., via Mcl-1 or dimerization disruption) than a classical ChEMBL enzyme target.",
+    "druggability_note": "Structurally well characterized (multiple PDB entries, including a parasite ortholog which is directly relevant precedent for anti-parasitic/vector-control drug discovery against this exact protein family) but functionally a protein-protein-interaction and Ca2+-sensing hub rather than an enzyme with an obvious catalytic pocket — expect this to behave more like the PICK1 (A0A0C9R1D7) entry in this chunk (surface-patch/PPI docking problem) than like the cathepsins or GST (classic enclosed-pocket enzymes). The Plasmodium TCTP precedent (3P3K, 1TXJ) is notable as this exact protein family is already an active anti-parasitic drug-discovery target in a different arthropod-vector-borne-disease context.",
+    "sources": [
+      "https://rest.uniprot.org/uniprotkb/Q8T9S3.txt",
+      "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/uniprot/Q8T9S3/",
+      "https://www.rcsb.org/structure/1YZ1",
+      "https://www.rcsb.org/structure/2HR9",
+      "https://www.rcsb.org/structure/3P3K",
+      "https://www.rcsb.org/structure/1TXJ",
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006464 (TCTP dimerization essential for cytokine-like activity)",
+      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10333598/ (TCTP structural transitions binding Mcl-1)"
+    ]
+  }
+}

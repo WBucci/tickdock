@@ -1,0 +1,832 @@
+{
+  "GABA-gated chloride channel (RDL)": {
+    "accession": "R9S0M8",
+    "hits": [
+      {
+        "chain": "7qnc_A",
+        "pdb": "7qnc",
+        "pident": 34.719,
+        "cov": 106.181,
+        "evalue": 1.67e-91,
+        "bits": 291.0
+      },
+      {
+        "chain": "7qna_A",
+        "pdb": "7qna",
+        "pident": 34.719,
+        "cov": 106.181,
+        "evalue": 1.67e-91,
+        "bits": 291.0
+      },
+      {
+        "chain": "7qn9_A",
+        "pdb": "7qn9",
+        "pident": 34.719,
+        "cov": 106.181,
+        "evalue": 1.67e-91,
+        "bits": 291.0
+      },
+      {
+        "chain": "7qn7_A",
+        "pdb": "7qn7",
+        "pident": 34.719,
+        "cov": 106.181,
+        "evalue": 1.67e-91,
+        "bits": 291.0
+      },
+      {
+        "chain": "7qn5_A",
+        "pdb": "7qn5",
+        "pident": 34.719,
+        "cov": 106.181,
+        "evalue": 1.67e-91,
+        "bits": 291.0
+      },
+      {
+        "chain": "9oup_C",
+        "pdb": "9oup",
+        "pident": 46.154,
+        "cov": 60.2649,
+        "evalue": 1.59e-86,
+        "bits": 275.0
+      },
+      {
+        "chain": "9oum_C",
+        "pdb": "9oum",
+        "pident": 46.154,
+        "cov": 60.2649,
+        "evalue": 1.59e-86,
+        "bits": 275.0
+      },
+      {
+        "chain": "9rge_D",
+        "pdb": "9rge",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.1e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "9rge_A",
+        "pdb": "9rge",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.1e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "9faq_D",
+        "pdb": "9faq",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.1e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "9faq_A",
+        "pdb": "9faq",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.1e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "9fap_D",
+        "pdb": "9fap",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.1e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "9fap_A",
+        "pdb": "9fap",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.1e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "9rgd_D",
+        "pdb": "9rgd",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.45e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "9rgd_A",
+        "pdb": "9rgd",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.45e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "9fas_D",
+        "pdb": "9fas",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.45e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "9fas_A",
+        "pdb": "9fas",
+        "pident": 50.0,
+        "cov": 60.0442,
+        "evalue": 3.45e-85,
+        "bits": 270.0
+      },
+      {
+        "chain": "7pc0_A",
+        "pdb": "7pc0",
+        "pident": 50.0,
+        "cov": 59.6026,
+        "evalue": 3.44e-85,
+        "bits": 269.0
+      },
+      {
+        "chain": "7pbz_A",
+        "pdb": "7pbz",
+        "pident": 50.0,
+        "cov": 59.6026,
+        "evalue": 3.44e-85,
+        "bits": 269.0
+      },
+      {
+        "chain": "7pbd_A",
+        "pdb": "7pbd",
+        "pident": 50.0,
+        "cov": 59.6026,
+        "evalue": 3.44e-85,
+        "bits": 269.0
+      }
+    ],
+    "generated": "2026-07-23T10:42:22.642796"
+  },
+  "Acetylcholinesterase": {
+    "accession": "A0A0K8RN32",
+    "hits": [
+      {
+        "chain": "6emi_B",
+        "pdb": "6emi",
+        "pident": 34.552,
+        "cov": 95.4625,
+        "evalue": 1.43e-87,
+        "bits": 284.0
+      },
+      {
+        "chain": "6emi_A",
+        "pdb": "6emi",
+        "pident": 34.552,
+        "cov": 95.4625,
+        "evalue": 1.43e-87,
+        "bits": 284.0
+      },
+      {
+        "chain": "6qae_A",
+        "pdb": "6qae",
+        "pident": 32.929,
+        "cov": 100.6981,
+        "evalue": 7.66e-83,
+        "bits": 273.0
+      },
+      {
+        "chain": "6qad_A",
+        "pdb": "6qad",
+        "pident": 32.929,
+        "cov": 100.6981,
+        "evalue": 7.66e-83,
+        "bits": 273.0
+      },
+      {
+        "chain": "6qac_A",
+        "pdb": "6qac",
+        "pident": 32.929,
+        "cov": 100.6981,
+        "evalue": 7.66e-83,
+        "bits": 273.0
+      },
+      {
+        "chain": "6qab_A",
+        "pdb": "6qab",
+        "pident": 32.929,
+        "cov": 100.6981,
+        "evalue": 7.66e-83,
+        "bits": 273.0
+      },
+      {
+        "chain": "6qaa_A",
+        "pdb": "6qaa",
+        "pident": 32.929,
+        "cov": 100.6981,
+        "evalue": 7.66e-83,
+        "bits": 273.0
+      },
+      {
+        "chain": "7aiy_B",
+        "pdb": "7aiy",
+        "pident": 32.929,
+        "cov": 100.6981,
+        "evalue": 4.39e-82,
+        "bits": 272.0
+      },
+      {
+        "chain": "7aiy_A",
+        "pdb": "7aiy",
+        "pident": 32.929,
+        "cov": 100.6981,
+        "evalue": 4.39e-82,
+        "bits": 272.0
+      },
+      {
+        "chain": "4tpk_B",
+        "pdb": "4tpk",
+        "pident": 32.929,
+        "cov": 100.6981,
+        "evalue": 4.39e-82,
+        "bits": 272.0
+      },
+      {
+        "chain": "5hq3_A",
+        "pdb": "5hq3",
+        "pident": 34.323,
+        "cov": 94.0663,
+        "evalue": 1.32e-82,
+        "bits": 271.0
+      },
+      {
+        "chain": "5hq3_B",
+        "pdb": "5hq3",
+        "pident": 34.323,
+        "cov": 94.0663,
+        "evalue": 1.49e-82,
+        "bits": 271.0
+      },
+      {
+        "chain": "9hh0_D",
+        "pdb": "9hh0",
+        "pident": 33.952,
+        "cov": 94.0663,
+        "evalue": 1.81e-82,
+        "bits": 271.0
+      },
+      {
+        "chain": "9hh0_C",
+        "pdb": "9hh0",
+        "pident": 33.952,
+        "cov": 94.0663,
+        "evalue": 1.81e-82,
+        "bits": 271.0
+      },
+      {
+        "chain": "9hh0_B",
+        "pdb": "9hh0",
+        "pident": 33.952,
+        "cov": 94.0663,
+        "evalue": 1.81e-82,
+        "bits": 271.0
+      },
+      {
+        "chain": "9hh0_A",
+        "pdb": "9hh0",
+        "pident": 33.952,
+        "cov": 94.0663,
+        "evalue": 1.81e-82,
+        "bits": 271.0
+      },
+      {
+        "chain": "9hgz_D",
+        "pdb": "9hgz",
+        "pident": 33.952,
+        "cov": 94.0663,
+        "evalue": 1.81e-82,
+        "bits": 271.0
+      },
+      {
+        "chain": "9hgz_C",
+        "pdb": "9hgz",
+        "pident": 33.952,
+        "cov": 94.0663,
+        "evalue": 1.81e-82,
+        "bits": 271.0
+      },
+      {
+        "chain": "9hgz_B",
+        "pdb": "9hgz",
+        "pident": 33.952,
+        "cov": 94.0663,
+        "evalue": 1.81e-82,
+        "bits": 271.0
+      },
+      {
+        "chain": "9hgz_A",
+        "pdb": "9hgz",
+        "pident": 33.952,
+        "cov": 94.0663,
+        "evalue": 1.81e-82,
+        "bits": 271.0
+      }
+    ],
+    "generated": "2026-07-23T10:42:27.005096"
+  },
+  "Glutamate-gated chloride channel (GluCl)": {
+    "accession": "A0A0N9E2I2",
+    "hits": [
+      {
+        "chain": "4tnw_T",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnw_S",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnw_R",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnw_Q",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnw_P",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnw_E",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnw_D",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnw_C",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnw_B",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnw_A",
+        "pdb": "4tnw",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_T",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_S",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_R",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_Q",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_P",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_E",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_D",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_C",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_B",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      },
+      {
+        "chain": "4tnv_A",
+        "pdb": "4tnv",
+        "pident": 55.949,
+        "cov": 69.265,
+        "evalue": 6.57e-117,
+        "bits": 349.0
+      }
+    ],
+    "generated": "2026-07-23T10:42:29.823036"
+  },
+  "Nicotinic acetylcholine receptor alpha5": {
+    "accession": "A0A223PM17",
+    "hits": [
+      {
+        "chain": "9vix_E",
+        "pdb": "9vix",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 2.86e-105,
+        "bits": 329.0
+      },
+      {
+        "chain": "9vix_D",
+        "pdb": "9vix",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 2.86e-105,
+        "bits": 329.0
+      },
+      {
+        "chain": "9vix_C",
+        "pdb": "9vix",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 2.86e-105,
+        "bits": 329.0
+      },
+      {
+        "chain": "9vix_B",
+        "pdb": "9vix",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 2.86e-105,
+        "bits": 329.0
+      },
+      {
+        "chain": "9vix_A",
+        "pdb": "9vix",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 2.86e-105,
+        "bits": 329.0
+      },
+      {
+        "chain": "9nx0_C",
+        "pdb": "9nx0",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 1.59e-105,
+        "bits": 328.0
+      },
+      {
+        "chain": "9nx0_D",
+        "pdb": "9nx0",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 1.59e-105,
+        "bits": 328.0
+      },
+      {
+        "chain": "9nx0_E",
+        "pdb": "9nx0",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 1.59e-105,
+        "bits": 328.0
+      },
+      {
+        "chain": "9nx0_B",
+        "pdb": "9nx0",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 1.59e-105,
+        "bits": 328.0
+      },
+      {
+        "chain": "9nx0_A",
+        "pdb": "9nx0",
+        "pident": 36.492,
+        "cov": 89.8551,
+        "evalue": 1.59e-105,
+        "bits": 328.0
+      },
+      {
+        "chain": "8cau_E",
+        "pdb": "8cau",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.13e-104,
+        "bits": 327.0
+      },
+      {
+        "chain": "8cau_D",
+        "pdb": "8cau",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.13e-104,
+        "bits": 327.0
+      },
+      {
+        "chain": "8cau_C",
+        "pdb": "8cau",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.13e-104,
+        "bits": 327.0
+      },
+      {
+        "chain": "8cau_B",
+        "pdb": "8cau",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.13e-104,
+        "bits": 327.0
+      },
+      {
+        "chain": "8cau_A",
+        "pdb": "8cau",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.13e-104,
+        "bits": 327.0
+      },
+      {
+        "chain": "9nx1_F",
+        "pdb": "9nx1",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.45e-104,
+        "bits": 326.0
+      },
+      {
+        "chain": "9nx1_E",
+        "pdb": "9nx1",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.45e-104,
+        "bits": 326.0
+      },
+      {
+        "chain": "9nx1_D",
+        "pdb": "9nx1",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.45e-104,
+        "bits": 326.0
+      },
+      {
+        "chain": "9nx1_C",
+        "pdb": "9nx1",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.45e-104,
+        "bits": 326.0
+      },
+      {
+        "chain": "9nx1_B",
+        "pdb": "9nx1",
+        "pident": 36.29,
+        "cov": 89.8551,
+        "evalue": 1.45e-104,
+        "bits": 326.0
+      }
+    ],
+    "generated": "2026-07-23T10:42:30.975311"
+  },
+  "Octopamine receptor (amitraz precedent)": {
+    "accession": "A7TZ09",
+    "hits": [
+      {
+        "chain": "9md1_R",
+        "pdb": "9md1",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "9md1_C",
+        "pdb": "9md1",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "9dyf_R",
+        "pdb": "9dyf",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "9dye_R",
+        "pdb": "9dye",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "9dyd_R",
+        "pdb": "9dyd",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "8fyx_R",
+        "pdb": "8fyx",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "8fyt_R",
+        "pdb": "8fyt",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "8fyl_R",
+        "pdb": "8fyl",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "8fye_R",
+        "pdb": "8fye",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "8fy8_R",
+        "pdb": "8fy8",
+        "pident": 36.01,
+        "cov": 98.0907,
+        "evalue": 1.8e-78,
+        "bits": 256.0
+      },
+      {
+        "chain": "9kvi_R",
+        "pdb": "9kvi",
+        "pident": 36.207,
+        "cov": 96.8974,
+        "evalue": 1.32e-78,
+        "bits": 252.0
+      },
+      {
+        "chain": "9kvh_R",
+        "pdb": "9kvh",
+        "pident": 36.207,
+        "cov": 96.8974,
+        "evalue": 1.32e-78,
+        "bits": 252.0
+      },
+      {
+        "chain": "9kvg_R",
+        "pdb": "9kvg",
+        "pident": 36.207,
+        "cov": 96.8974,
+        "evalue": 1.32e-78,
+        "bits": 252.0
+      },
+      {
+        "chain": "6kuy_A",
+        "pdb": "6kuy",
+        "pident": 40.212,
+        "cov": 90.2148,
+        "evalue": 1.44e-78,
+        "bits": 251.0
+      },
+      {
+        "chain": "6kux_A",
+        "pdb": "6kux",
+        "pident": 40.212,
+        "cov": 90.2148,
+        "evalue": 1.52e-78,
+        "bits": 251.0
+      },
+      {
+        "chain": "9r41_R",
+        "pdb": "9r41",
+        "pident": 36.207,
+        "cov": 96.8974,
+        "evalue": 9.91e-78,
+        "bits": 251.0
+      },
+      {
+        "chain": "9hyi_R",
+        "pdb": "9hyi",
+        "pident": 36.207,
+        "cov": 96.8974,
+        "evalue": 9.91e-78,
+        "bits": 251.0
+      },
+      {
+        "chain": "9gl2_R",
+        "pdb": "9gl2",
+        "pident": 36.207,
+        "cov": 96.8974,
+        "evalue": 9.91e-78,
+        "bits": 251.0
+      },
+      {
+        "chain": "8pkm_R",
+        "pdb": "8pkm",
+        "pident": 36.207,
+        "cov": 96.8974,
+        "evalue": 9.91e-78,
+        "bits": 251.0
+      },
+      {
+        "chain": "8jsp_R",
+        "pdb": "8jsp",
+        "pident": 36.387,
+        "cov": 93.7947,
+        "evalue": 2.58e-78,
+        "bits": 250.0
+      }
+    ],
+    "generated": "2026-07-23T10:42:33.322354"
+  }
+}

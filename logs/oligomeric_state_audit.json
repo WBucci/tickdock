@@ -1,0 +1,697 @@
+{
+ "A0AAQ4D9T1": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Monomer and homodimer. Interacts with CAVIN1 in the adipocyte cytoplasm. Interacts with PL"
+ },
+ "A0AAQ4DBK8": {
+  "state": "TETRAMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Heterotetramer of 2 alpha/HADHA and 2 beta/HADHB subunits; forms the mitochondrial trifunc"
+ },
+ "A0A0C9SCI6": {
+  "state": "MONOMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Monomer"
+ },
+ "A0AAQ4E5F2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4FH64": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DAP1": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DD00": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DQA6": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4E0I8": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4E1Y4": {
+  "state": "TETRAMER",
+  "evidence_source": "family_prior",
+  "evidence": "Ion transport domain"
+ },
+ "A0A0C9R2P6": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A0K0PR09": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Component of the cytochrome c oxidase (complex IV, CIV), a multisubunit enzyme composed of"
+ },
+ "A0A0K0PRG2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4FA75": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A0C9RY70": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DJ97": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4E1Y3": {
+  "state": "TETRAMER",
+  "evidence_source": "family_prior",
+  "evidence": "calcium channel"
+ },
+ "A0AAQ4D4Y2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A0C9R308": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A0C9SEC4": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DND5": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A0C9SB77": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A0C9RV71": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DBL8": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DPM5": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4FI23": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4FJ88": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DEL6": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DX98": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4E147": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Heterodimer"
+ },
+ "A0AAQ4E7F2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4EAX4": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DZT2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4E0T1": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4E2K9": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4E8L7": {
+  "state": "TETRAMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homotetramer. Residues from neighboring subunits contribute catalytic and substrate-bindin"
+ },
+ "A0AAQ4E7F9": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DMB8": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homodimer. Binds the thyroid hormone triiodothyronine (T3); T3 binding inhibits enzymatic "
+ },
+ "A0A0C9RV76": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homodimer. Associates with internalized INSR complexes on Golgi/endosomal membranes. Inter"
+ },
+ "A0A0C9RXK7": {
+  "state": "COMPLEX",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Interacts with TIMP1 and ITGB1 and recruits TIMP1 to ITGB1. Interacts with CD9. Identified"
+ },
+ "A0A0C9SEA9": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A0C9R6Q9": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Heterodimer with SLC30A6/ZNT6; form a functional zinc ion transmembrane transporter"
+ },
+ "A0A0C9SDB6": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A0C9SFH2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4DNH0": {
+  "state": "TETRAMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homotetramer"
+ },
+ "A0AAQ4F1X8": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4FR19": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homodimer. Interacts with lysosomal protein GLMP (via lumenal domain); the interaction sta"
+ },
+ "A0A0C9R1D7": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Monomer and homodimer. Interacts with CXADR. Interacts presynaptically with the glutamate "
+ },
+ "A0A142I6V4": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0AAQ4CWX3": {
+  "state": "COMPLEX",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Component of the dolichol-phosphate mannose (DPM) synthase complex"
+ },
+ "A0AAQ4D7R5": {
+  "state": "COMPLEX",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Can homooligomerize into hexameric rings, which may be promoted by interaction with microt"
+ },
+ "A0AAQ4EDP8": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Monomer and homodimer. Interacts with CXADR. Interacts presynaptically with the glutamate "
+ },
+ "A0AAQ4FNT5": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homodimer. Interacts with lysosomal protein GLMP (via lumenal domain); the interaction sta"
+ },
+ "A0A649X9W4": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B2ZHX0": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "C6G1Y6": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A0K1G5W8": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A142I6V3": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U4Y449": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q9MCZ9": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "G0WV55": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A7LJ78": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q8T9S4": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U2Q4": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U2R2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U2Y5": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U368": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U3E7": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U3G2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U3H0": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U3S9": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U3T1": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7SP41": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7SP44": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q2Q443": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homodimer"
+ },
+ "Q2HZ27": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7SP57": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homodimer"
+ },
+ "B5TMF7": {
+  "state": "TETRAMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homotetramer"
+ },
+ "B7SP39": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q86G71": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Homodimer"
+ },
+ "B7SP34": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7SP56": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7SP64": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q86G65": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U3F3": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A2U8U3G0": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A023NLG8": {
+  "state": "COMPLEX",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Component of the Arp2/3 complex"
+ },
+ "B7SP48": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q06EX9": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q8I862": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q6XR73": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q8T9S5": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q8T9S3": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A023NLX9": {
+  "state": "COMPLEX",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Component of the Arp2/3 complex"
+ },
+ "A4UTU3": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A023NL51": {
+  "state": "POLYMER",
+  "evidence_source": "family_prior",
+  "evidence": "Actin"
+ },
+ "B7P2S1": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "Nuclear hormone receptor"
+ },
+ "B7QBP7": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7P9U9": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "Ecdysone receptor"
+ },
+ "B7PX94": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "Nuclear hormone receptor"
+ },
+ "B7PVD7": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A4D5RMG2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7PY20": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "Nuclear hormone receptor"
+ },
+ "B7QAF3": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "Nuclear hormone receptor"
+ },
+ "B7P6A8": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7Q1X5": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "nuclear hormone receptor"
+ },
+ "A0A4D5RNM5": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "Nuclear receptor"
+ },
+ "B7PMS2": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "Nuclear receptor"
+ },
+ "B7QNX4": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A4D5RYT8": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "Nuclear hormone receptor"
+ },
+ "A0A4D5S2A5": {
+  "state": "DIMER",
+  "evidence_source": "family_prior",
+  "evidence": "Nuclear hormone receptor"
+ },
+ "A0A4D5RGQ5": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7QJZ7": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A4D5RMV5": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A4D5RNJ0": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A4D5S7D6": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7P5E9": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7Q255": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q5Q995": {
+  "state": "COMPLEX",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Component of the oligosaccharyltransferase (OST) complex"
+ },
+ "B7PIZ2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "A0A4D5RDE4": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7P877": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Component of the nuclear cap-binding complex (CBC), a heterodimer composed of Cbp80 and Cb"
+ },
+ "B7PBI5": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7PJS6": {
+  "state": "COMPLEX",
+  "evidence_source": "family_prior",
+  "evidence": "ribosom"
+ },
+ "B7PKZ2": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "Monomer. Can form homodimers in vitro, but probably not in vivo. Homodimers are predicted "
+ },
+ "B7PRF6": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7PXE3": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7PY76": {
+  "state": "COMPLEX",
+  "evidence_source": "family_prior",
+  "evidence": "ribosom"
+ },
+ "B7Q1Q9": {
+  "state": "DIMER",
+  "evidence_source": "uniprot_subunit",
+  "evidence": "TFIIA is a heterodimer of the large unprocessed subunit 1 and a small subunit gamma"
+ },
+ "B7Q290": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7QDG3": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "F6KSY2": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q202J4": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q4PLZ3": {
+  "state": "COMPLEX",
+  "evidence_source": "family_prior",
+  "evidence": "Ribosom"
+ },
+ "Q4PM54": {
+  "state": "COMPLEX",
+  "evidence_source": "family_prior",
+  "evidence": "ribosom"
+ },
+ "Q4PMB3": {
+  "state": "COMPLEX",
+  "evidence_source": "family_prior",
+  "evidence": "ribosom"
+ },
+ "Q4PMC9": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "Q8MUP7": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ },
+ "B7QK46": {
+  "state": "UNKNOWN",
+  "evidence_source": "none",
+  "evidence": ""
+ }
+}

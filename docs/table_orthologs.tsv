@@ -1,0 +1,33 @@
+accession	seq_length	ambl_identity	ambl_coverage	ambl_call	derm_identity	derm_coverage	derm_call	pan_tick
+Q6XR73	596	66.038	97.8	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+B7SP64	169	80.769	92.3	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+Q2Q443	215	62.037	100.5	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+A0AAQ4FH64	512	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0AAQ4DBK8	731	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0AAQ4FJ88	538	100.0	100.0	Pan-tick ortholog	0		No hit	True
+B7SP56	155	80.769	100.6	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+A0AAQ4D4Y2	373	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0AAQ4FI23	554	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A4UTU3	376	99.468	100.0	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+A0AAQ4E1Y4	1056	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0AAQ4DEL6	508	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0AAQ4F1X8	572	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0A0C9R1D7	222	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0A0C9RY70	261	100.0	100.0	Pan-tick ortholog	25.728	78.9	Distant homolog	True
+B2ZHX0	449	74.568	90.2	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+Q06EX9	293	57.795	89.8	Putative ortholog	100.0	100.0	Pan-tick ortholog	True
+B7SP39	217	84.112	98.6	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+Q86G65	273	96.703	100.0	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+Q8T9S4	227	83.796	95.2	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+A0AAQ4CWX3	239	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0AAQ4DD00	1188	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0AAQ4E147	621	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0AAQ4E5F2	996	100.0	100.0	Pan-tick ortholog	0		No hit	True
+A0AAQ4DPM5	278	100.0	100.0	Pan-tick ortholog	0		No hit	True
+B7PJS6	661	79.412	82.3	Pan-tick ortholog	0		No hit	True
+Q86G71	215	85.542	77.2	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+A0A023NLX9	300	95.0	100.0	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True
+A0AAQ4E0T1	728	100.0	100.0	Pan-tick ortholog	0		No hit	True
+B7QDG3	275	89.13	100.4	Pan-tick ortholog	0		No hit	True
+B7Q1Q9	118	98.058	87.3	Pan-tick ortholog	0		No hit	True
+A0A2U8U2Q4	230	93.043	100.0	Pan-tick ortholog	100.0	100.0	Pan-tick ortholog	True

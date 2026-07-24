@@ -1,0 +1,283 @@
+{
+  "control_set_source": "/mnt/c/Personal/tickdock/logs/monomeric_control_set.json",
+  "exhaustiveness": 16,
+  "tool_versions": {
+    "vina": "AutoDock Vina v1.2.5",
+    "obabel": "Open Babel 3.1.1 -- Mar 31 2024 -- 06:39:03"
+  },
+  "results": [
+    {
+      "label": "E. coli DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+      "drug": "trimethoprim",
+      "expected": "SELECTIVE",
+      "status": "OK",
+      "protein_a": {
+        "pdb_id": "7NAE",
+        "score": -7.821,
+        "box": {
+          "cx": -15.38,
+          "cy": 25.583,
+          "cz": -6.593,
+          "edge": 20,
+          "n_heavy_atoms": 21,
+          "extent": [
+            8.66,
+            6.47,
+            4.66
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (TOP in 7NAE, chain requested)",
+        "receptor_route": "cached"
+      },
+      "protein_b": {
+        "pdb_id": "2W3A",
+        "score": -7.963,
+        "box": {
+          "cx": 1.914,
+          "cy": 30.495,
+          "cz": -2.884,
+          "edge": 20,
+          "n_heavy_atoms": 21,
+          "extent": [
+            3.92,
+            7.78,
+            8.82
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (TOP in 2W3A, chain requested)",
+        "receptor_route": "cached"
+      },
+      "ligand_route": "cached",
+      "selectivity_ratio": 1.0181562460043474,
+      "delta_kcal": -0.14200000000000035,
+      "predicted_verdict": "NOT SELECTIVE",
+      "agrees_with_known_pharmacology": false
+    },
+    {
+      "label": "S. aureus DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+      "drug": "trimethoprim",
+      "expected": "SELECTIVE",
+      "status": "OK",
+      "protein_a": {
+        "pdb_id": "2W9H",
+        "score": -8.365,
+        "box": {
+          "cx": 8.601,
+          "cy": -5.427,
+          "cz": 15.933,
+          "edge": 20,
+          "n_heavy_atoms": 21,
+          "extent": [
+            5.46,
+            7.75,
+            7.79
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (TOP in 2W9H, chain requested)",
+        "receptor_route": "cached"
+      },
+      "protein_b": {
+        "pdb_id": "2W3A",
+        "score": -7.965,
+        "box": {
+          "cx": 1.914,
+          "cy": 30.495,
+          "cz": -2.884,
+          "edge": 20,
+          "n_heavy_atoms": 21,
+          "extent": [
+            3.92,
+            7.78,
+            8.82
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (TOP in 2W3A, chain requested)",
+        "receptor_route": "cached"
+      },
+      "ligand_route": "cached",
+      "selectivity_ratio": 0.9521817095038851,
+      "delta_kcal": 0.40000000000000036,
+      "predicted_verdict": "NOT SELECTIVE",
+      "agrees_with_known_pharmacology": false
+    },
+    {
+      "label": "P. vivax DHFR vs human DHFR -- pyrimethamine (SELECTIVE)",
+      "drug": "pyrimethamine",
+      "expected": "SELECTIVE",
+      "status": "OK",
+      "protein_a": {
+        "pdb_id": "2BL9",
+        "score": -7.613,
+        "box": {
+          "cx": 89.757,
+          "cy": 12.897,
+          "cz": 34.057,
+          "edge": 20,
+          "n_heavy_atoms": 17,
+          "extent": [
+            3.99,
+            4.62,
+            10.0
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (CP6 in 2BL9, chain requested)",
+        "receptor_route": "cached"
+      },
+      "protein_b": {
+        "pdb_id": "4M6K",
+        "score": -8.144,
+        "box": {
+          "cx": 7.024,
+          "cy": 18.927,
+          "cz": -24.154,
+          "edge": 20,
+          "n_heavy_atoms": 32,
+          "extent": [
+            8.52,
+            11.03,
+            7.84
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (FOL in 4M6K, chain requested)",
+        "receptor_route": "cached"
+      },
+      "ligand_route": "cached",
+      "selectivity_ratio": 1.0697491133587285,
+      "delta_kcal": -0.5309999999999997,
+      "predicted_verdict": "NOT SELECTIVE",
+      "agrees_with_known_pharmacology": false
+    },
+    {
+      "label": "E. coli DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+      "drug": "methotrexate",
+      "expected": "NON-SELECTIVE",
+      "status": "OK",
+      "protein_a": {
+        "pdb_id": "1RG7",
+        "score": -9.945,
+        "box": {
+          "cx": -1.657,
+          "cy": 22.029,
+          "cz": 23.076,
+          "edge": 21,
+          "n_heavy_atoms": 33,
+          "extent": [
+            12.77,
+            8.78,
+            6.68
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (MTX in 1RG7, chain requested)",
+        "receptor_route": "cached"
+      },
+      "protein_b": {
+        "pdb_id": "1U72",
+        "score": -10.101,
+        "box": {
+          "cx": 30.621,
+          "cy": 16.876,
+          "cz": -1.624,
+          "edge": 20,
+          "n_heavy_atoms": 33,
+          "extent": [
+            8.73,
+            11.03,
+            7.62
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (MTX in 1U72, chain requested)",
+        "receptor_route": "cached"
+      },
+      "ligand_route": "cached",
+      "selectivity_ratio": 1.015686274509804,
+      "delta_kcal": -0.15600000000000058,
+      "predicted_verdict": "NOT SELECTIVE",
+      "agrees_with_known_pharmacology": true
+    },
+    {
+      "label": "S. aureus DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+      "drug": "methotrexate",
+      "expected": "NON-SELECTIVE",
+      "status": "OK",
+      "protein_a": {
+        "pdb_id": "6P9Z",
+        "score": -9.508,
+        "box": {
+          "cx": -32.48,
+          "cy": -9.816,
+          "cz": 41.302,
+          "edge": 20,
+          "n_heavy_atoms": 33,
+          "extent": [
+            12.34,
+            8.16,
+            7.92
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (MTX in 6P9Z, chain requested)",
+        "receptor_route": "cached"
+      },
+      "protein_b": {
+        "pdb_id": "1U72",
+        "score": -10.075,
+        "box": {
+          "cx": 30.621,
+          "cy": 16.876,
+          "cz": -1.624,
+          "edge": 20,
+          "n_heavy_atoms": 33,
+          "extent": [
+            8.73,
+            11.03,
+            7.62
+          ]
+        },
+        "box_provenance": "crystallographic ligand centroid (MTX in 1U72, chain requested)",
+        "receptor_route": "cached"
+      },
+      "ligand_route": "cached",
+      "selectivity_ratio": 1.0596339924274296,
+      "delta_kcal": -0.5670000000000002,
+      "predicted_verdict": "NOT SELECTIVE",
+      "agrees_with_known_pharmacology": true
+    }
+  ],
+  "verdicts": {
+    "C1_headline": {
+      "pass": false,
+      "max_selective_ratio": 1.0697491133587285,
+      "min_nonselective_ratio": 1.015686274509804
+    },
+    "C2_resolution": {
+      "pass": false,
+      "rows": [
+        {
+          "organism": "E. coli",
+          "trimethoprim_ratio": 1.0181562460043474,
+          "methotrexate_ratio": 1.015686274509804,
+          "ratio_delta": -0.0024699714945433104,
+          "correct_direction": false
+        },
+        {
+          "organism": "S. aureus",
+          "trimethoprim_ratio": 0.9521817095038851,
+          "methotrexate_ratio": 1.0596339924274296,
+          "ratio_delta": 0.10745228292354447,
+          "correct_direction": true
+        }
+      ]
+    },
+    "C3_magnitude": {
+      "expected_kcal_for_30000fold": 6.346191257892627,
+      "observed_ecoli_trimethoprim_delta_kcal": -0.14200000000000035,
+      "within_docking_noise_floor_2to3kcal": true,
+      "all_observed_abs_deltas_kcal": [
+        0.14200000000000035,
+        0.40000000000000036,
+        0.5309999999999997,
+        0.15600000000000058,
+        0.5670000000000002
+      ]
+    }
+  }
+}

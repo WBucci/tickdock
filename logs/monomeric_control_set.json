@@ -1,0 +1,182 @@
+{
+  "generated": "2026-07-23",
+  "rationale": "The existing 5-control calibration set (docs/phase0_findings.md §1-§3) is 3/5 pentameric ligand-gated ion channels (RDL, GluCl, nAChR alpha5) whose drug sites are inter-subunit or in a pore that only exists in the assembled oligomer. For RDL, 100% of fipronil-contact residues (439-451) sit outside the single chain a monomeric AlphaFold model can represent. That set tests whether a monomer model happens to contain a site that structurally cannot be in a monomer -- an impossible test, not a test of the divergence metric. This set replaces the biology (tick/bee, pentameric channels) with a domain where the capability under test -- 'can the metric detect divergent binding sites between homologs where whole-protein identity would not reveal it' -- has many independently solved, ligand-bound, monomeric (or verified intra-subunit) structures on both sides of each pair, so every entry's oligomeric status is checked against the deposited PDB biological assembly rather than assumed. It draws entirely from antiparasitic/antimicrobial dihydrofolate reductase (DHFR) pharmacology, which is orthogonal to the arthropod project biology by design -- this validates the METHOD. Three pairs share a protein pair across a selective and a non-selective ligand (E. coli/human and S. aureus/human, each with trimethoprim vs. methotrexate), which is a stronger test than distinct protein pairs: it isolates ligand-specific pocket divergence from generic whole-protein divergence, since whole-protein identity is IDENTICAL within each such pair by construction.",
+  "controls": [
+    {
+      "label": "E. coli DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+      "protein_a": {
+        "uniprot": "P0ABQ4",
+        "organism": "Escherichia coli (K-12)",
+        "pdb_ligand_bound": "7NAE",
+        "ligand_ccd_code": "TOP",
+        "chain": "A"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "2W3A",
+        "ligand_ccd_code": "TOP",
+        "chain": "A"
+      },
+      "drug": "trimethoprim",
+      "drug_selectivity": "Bacterial (E. coli) DHFR strongly preferred. Widely cited figure: trimethoprim binds E. coli DHFR ~30,000-fold more tightly than human DHFR (RCSB PDB-101 'Molecule of the Month: Dihydrofolate Reductase', https://pdb101.rcsb.org/motm/34). This is the textbook basis for trimethoprim's use as a selective antibacterial.",
+      "expected_pocket_divergence": "HIGH",
+      "oligomeric_state": "MONOMER (both sides)",
+      "site_is_intra_subunit": true,
+      "site_is_intra_subunit_evidence": "7NAE: deposited_polymer_entity_instance_count=1, PDB biological assembly = monomer (verified via RCSB entry/assembly API). E. coli DHFR is the textbook single-domain, single-chain monomeric enzyme (Bolin et al. 1982; Sawaya & Kraut 1997) with no SUBUNIT oligomer annotation in UniProt P0ABQ4. 2W3A: 2 chains (A, B) in the crystallographic asymmetric unit, but the RCSB assembly record (queried via /core/assembly/2W3A/1) explicitly reports oligomeric_count=1 / MONOMER, author_and_software_defined via PISA -- the two ASU copies are independent crystal-packing copies, not a functional dimer; each chain carries its own complete, independent trimethoprim+NADPH site. UniProt P00374 SUBUNIT field says 'Homodimer' but this refers to transient association with SHMT1/TYMS in the de novo thymidylate-synthesis channeling complex, not a shared catalytic interface -- noted explicitly as a caveat, not glossed over.",
+      "selectivity_mechanism": "Same drug crystallized in both enzymes, so the divergence is a direct pocket-geometry effect, not a ligand-availability artifact. E. coli DHFR Leu28 is a documented direct trimethoprim-contact residue; the L28R substitution measurably increases substrate (and reduces drug) affinity and is a described resistance route (Toprak lab et al., PMC5378592, 'Increased substrate affinity in the E. coli L28R DHFR mutant causes trimethoprim resistance'). The general mechanism (textbook pharmacology, e.g. Schweitzer/Dicker/Kaufman 1990 review) is that the bacterial active-site cleft accommodates trimethoprim's diaminopyrimidine ring with a tighter, more complementary hydrogen-bond network than the human pocket, whose larger/differently-shaped cleft and substituted residues around the trimethoxybenzyl-binding subsite do not.",
+      "whole_protein_identity_expected": "~26-30% (low). Cited figure: 'sequence identity between native human and E. coli DHFRs is only 26%' (Liu et al. 2013, PNAS 110:10159, 'Functional significance of evolving protein sequence in dihydrofolate reductase from bacteria to humans'; also ~30% per commercial recombinant-protein datasheets). This is the case where whole-protein divergence is already large -- it is control #4 below (same two proteins, methotrexate) that isolates the pocket-specific signal, since whole-protein identity there is identical by construction.",
+      "sources": [
+        "PDB 7NAE (E. coli DHFR + trimethoprim), verified via https://data.rcsb.org/rest/v1/core/entry/7NAE",
+        "PDB 2W3A (human DHFR + trimethoprim + NADPH), verified via https://data.rcsb.org/rest/v1/core/entry/2W3A and /core/assembly/2W3A/1",
+        "UniProt P0ABQ4 (E. coli DHFR / folA)",
+        "UniProt P00374 (human DHFR)",
+        "https://pdb101.rcsb.org/motm/34 (PDB-101 Molecule of the Month: Dihydrofolate Reductase; ~30,000-fold selectivity figure)",
+        "PMC5378592 -- E. coli L28R DHFR mutant / trimethoprim resistance",
+        "Liu CT et al. 2013, PNAS 110:10159 -- 26% human/E. coli DHFR sequence identity"
+      ]
+    },
+    {
+      "label": "S. aureus DHFR vs human DHFR -- trimethoprim (SELECTIVE)",
+      "protein_a": {
+        "uniprot": "P0A017",
+        "organism": "Staphylococcus aureus (strain MU-50)",
+        "pdb_ligand_bound": "2W9H",
+        "ligand_ccd_code": "TOP",
+        "chain": "A"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "2W3A",
+        "ligand_ccd_code": "TOP",
+        "chain": "A"
+      },
+      "drug": "trimethoprim",
+      "drug_selectivity": "Bacterial (S. aureus) DHFR preferred -- trimethoprim is a clinically used anti-staphylococcal agent (often combined with sulfamethoxazole as co-trimoxazole). A precise wild-type S. aureus-vs-human Ki fold-ratio was not located in this session and is NOT asserted as a number; the clinical-efficacy evidence and the resistance-mutation evidence below jointly establish the selectivity qualitatively and at the residue level.",
+      "expected_pocket_divergence": "HIGH",
+      "oligomeric_state": "MONOMER (both sides)",
+      "site_is_intra_subunit": true,
+      "site_is_intra_subunit_evidence": "2W9H: deposited_polymer_entity_instance_count=1, single chain in the asymmetric unit, described in the entry title as 'wild-type S. aureus DHFR' (no mutation). S. aureus DHFR is the same single-domain bacterial DHFR fold/family as E. coli DHFR (159/157 aa monomer), no oligomer annotation. 2W3A evidence as in control #1 (verified monomeric biological assembly via PISA despite 2 ASU copies).",
+      "selectivity_mechanism": "Phe98 of S. aureus DHFR is the documented key active-site trimethoprim-contact residue: the clinically observed F98Y substitution is 'the molecular origin of trimethoprim resistance in S. aureus' found in resistant clinical isolates (Dale et al. 1997, cited via PMC search; F98Y reduces trimethoprim potency ~74-fold) and disrupts a hydrogen bond involving the backbone carbonyl of Leu5. Because F98Y is the resistance-conferring change, wild-type Phe98 (and the wild-type bacterial-specific pocket geometry around it) is the residue-level basis for the wild-type enzyme's native trimethoprim sensitivity relative to the differently-shaped human pocket.",
+      "whole_protein_identity_expected": "Not independently computed this session; S. aureus and E. coli DHFR are both members of the same compact bacterial single-domain DHFR family and are expected to be in a broadly similar low range vs. human (~25-30%) by analogy to the confirmed E. coli figure, but this specific pairwise number is NOT verified and should be treated as an approximate expectation, not a checked fact.",
+      "sources": [
+        "PDB 2W9H (wild-type S. aureus DHFR + trimethoprim), verified via https://data.rcsb.org/rest/v1/core/entry/2W9H and /core/polymer_entity/2W9H/1",
+        "PDB 2W3A (human DHFR + trimethoprim), as above",
+        "UniProt P0A017 (S. aureus DHFR / folA, strain MU-50)",
+        "UniProt P00374 (human DHFR)",
+        "Dale GE et al. 1997, 'A single amino acid substitution in S. aureus DHFR determines trimethoprim resistance' -- https://pubmed.ncbi.nlm.nih.gov/9054967/",
+        "PMC2723953 -- crystal structures of WT and mutant MRSA DHFR, F98Y / trimethoprim resistance mechanism"
+      ]
+    },
+    {
+      "label": "P. vivax DHFR vs human DHFR -- pyrimethamine (SELECTIVE)",
+      "protein_a": {
+        "uniprot": "O02604",
+        "organism": "Plasmodium vivax",
+        "pdb_ligand_bound": "2BL9",
+        "ligand_ccd_code": "CP6",
+        "chain": "A"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "4M6K",
+        "ligand_ccd_code": "FOL",
+        "chain": "A"
+      },
+      "drug": "pyrimethamine",
+      "drug_selectivity": "Parasite (P. vivax / Plasmodium) DHFR strongly preferred clinically -- pyrimethamine is a first-line antimalarial with an established human safety margin at therapeutic dose. IMPORTANT CAVEAT: a precise, independently verified enzyme-level Ki fold-selectivity number for wild-type pyrimethamine vs. human DHFR was NOT located with confidence in this session (searches surfaced Ki values for wild-type PfDHFR alone -- 1.5 nM -- and for the related compound WR99210, whose enzyme-level Ki selectivity is only ~10-fold despite ~63,000-fold cellular selectivity, showing enzyme Ki ratio and net therapeutic selectivity can diverge substantially for this drug class). CCD chem comp ID CP6 was verified to be pyrimethamine by exact formula/synonym match (C12H13ClN4, MW 248.71, DrugBank DB00205, synonym list explicitly includes 'PYRIMETHAMINE'), not assumed from the PDB title alone.",
+      "expected_pocket_divergence": "HIGH",
+      "oligomeric_state": "P. vivax DHFR-TS full-length: UniProt-annotated homodimer (dimerizes via the C-terminal thymidylate synthase domain). PDB 2BL9, however, is a truncated, isolated DHFR-domain construct (238 aa vs. 623 aa full-length) with a single chain in the asymmetric unit. Human DHFR: monomer.",
+      "site_is_intra_subunit": true,
+      "site_is_intra_subunit_evidence": "This is the strongest gate evidence in the set: 2BL9 has only ONE protein chain in the entire deposited structure (deposited_polymer_entity_instance_count=1) -- the TS-domain dimerization partner is not present in the crystal at all -- and pyrimethamine (CP6) is nonetheless fully resolved, bound, and site-complete. A site that required a second subunit could not be observed in a crystal that contains no second subunit. This directly falsifies an inter-subunit-site hypothesis for the DHFR pocket, in contrast to the TS active site of the same protein family, which is explicitly documented as inter-subunit (P. falciparum TS active site requires Cys490 from one domain and Arg470 donated from the partner domain; Anderson lab, JBC PMC3791593). Supporting literature: the DHFR-domain active-site residues reported across all characterized Plasmodium DHFRs (Ile14, Cys15, Ala16, Asp54, Met55, Phe58, Ser108/Asn108, Ile112, Pro113, Ile164/Leu164) use the same single-domain numbering scheme as monomeric bacterial/human DHFR, consistent with an intra-domain pocket (Yuthavong et al. 2012 PNAS 109:16823; malaria antifolate-resistance literature).",
+      "selectivity_mechanism": "Resistance mutations at the pyrimethamine-contact residues directly demonstrate the site is parasite-specific and residue-determined: P. vivax Ser117Asn (+ Ser58Arg) and the homologous P. falciparum Ser108Asn (+ Asn51Ile, Cys59Arg, Ile164Leu) both reduce pyrimethamine binding by steric/H-bond disruption at the drug-contact residue itself (PNAS 102:13046, Hastings/Sibley et al. 2005, 'Crystal structure of DHFR from P. vivax: pyrimethamine displacement linked with mutation-induced resistance' -- the source publication for PDB 2BL9/2BLA). Ser117 in wild-type PvDHFR hydrogen-bonds to the drug directly; this residue position is not conserved as the drug-contact residue in human DHFR, which has a differently shaped pocket at the corresponding structural position.",
+      "whole_protein_identity_expected": "Approximate/literature-typical only, NOT independently computed for this specific pair: DHFR domains across species are generally reported at 25-40% identity to each other despite highly conserved 3D fold (e.g. PMC6500056, general DHFR cross-species identity range). No pairwise P. vivax-vs-human number was confirmed in this session -- flagged honestly rather than invented.",
+      "sources": [
+        "PDB 2BL9 (P. vivax DHFR + pyrimethamine/CP6 + NADPH), verified via https://data.rcsb.org/rest/v1/core/entry/2BL9, /core/polymer_entity/2BL9/1, /core/nonpolymer_entity/2BL9/{2,3}, /core/chemcomp/CP6",
+        "PDB 4M6K (human DHFR + NADP+ + folate/FOL), verified via https://data.rcsb.org/rest/v1/core/entry/4M6K and /core/nonpolymer_entity/4M6K/{2,3}",
+        "UniProt O02604 (P. vivax DHFR-TS)",
+        "UniProt P00374 (human DHFR)",
+        "Kongsaeree P et al. 2005, PNAS 102:13046 -- P. vivax DHFR / pyrimethamine crystal structure and resistance mechanism (source of 2BL9)",
+        "Yuthavong Y et al. 2012, PNAS 109:16823 -- malarial DHFR active-site residues and antifolate design",
+        "PMC3791593 -- P. falciparum TS-DHFR inter-subunit TS active site (Cys490/Arg470), used as the contrasting inter-subunit example within the same protein"
+      ]
+    },
+    {
+      "label": "E. coli DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+      "protein_a": {
+        "uniprot": "P0ABQ4",
+        "organism": "Escherichia coli (K-12)",
+        "pdb_ligand_bound": "1RG7",
+        "ligand_ccd_code": "MTX",
+        "chain": "A"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "1U72",
+        "ligand_ccd_code": "MTX",
+        "chain": "A"
+      },
+      "drug": "methotrexate",
+      "drug_selectivity": "NON-selective / conserved site. Methotrexate binds bacterial and human DHFR with comparable, very high (nanomolar-to-picomolar range) affinity at both -- the textbook reason methotrexate is used as an anticancer/immunosuppressant (deliberately exploiting its potency against the human enzyme) rather than as an antibacterial, in direct contrast to trimethoprim (control #1, same two proteins).",
+      "expected_pocket_divergence": "LOW",
+      "oligomeric_state": "MONOMER (both sides) -- same proteins as control #1",
+      "site_is_intra_subunit": true,
+      "site_is_intra_subunit_evidence": "Identical evidence to control #1: 1RG7 is E. coli DHFR, single chain, monomeric assembly (verified via RCSB API, deposited_polymer_entity_instance_count=1). 1U72 is confirmed WILD-TYPE (pdbx_mutation_count=0) human DHFR, single chain, monomeric assembly (this corrects an initial AI-summary misread of the entry as a mouse L22R mutant; the direct polymer_entity API record is authoritative and shows organism=Homo sapiens, mutation_count=0).",
+      "selectivity_mechanism": "This is a deliberate NEGATIVE (conserved-pocket) construction paired with control #1 on the SAME two proteins: whole-protein identity is identical (~26-30%) in both pairs by definition, so the divergent outcome for the trimethoprim pair and the conserved outcome expected here for methotrexate isolates a ligand/pocket-subset effect from a protein-generic one. Methotrexate's pteridine + p-aminobenzoyl-glutamate scaffold engages the deeply conserved catalytic core of the DHFR fold (the folate/pterin-binding subsite, including the invariant catalytic Asp/Glu) that is under strong purifying selection across all DHFRs because it must also bind the natural substrate dihydrofolate; trimethoprim's much smaller diaminopyrimidine scaffold instead reports on a peripheral subpocket that is free to diverge without compromising catalysis -- this is the textbook explanation (Schweitzer, Dicker, Kaufman 1990 review) for why methotrexate is a poor antibacterial lead despite excellent enzyme potency in both species.",
+      "whole_protein_identity_expected": "~26-30% (low) -- identical figure to control #1, since these are the same two proteins. This pair is the demonstration that LOW whole-protein identity does not by itself imply pocket divergence; the metric must resolve pocket-level conservation despite it.",
+      "sources": [
+        "PDB 1RG7 (E. coli DHFR + methotrexate), verified via https://data.rcsb.org/rest/v1/core/entry/1RG7, /core/polymer_entity/1RG7/1, /core/nonpolymer_entity/1RG7/2",
+        "PDB 1U72 (wild-type human DHFR + methotrexate + NADPH), verified via https://data.rcsb.org/rest/v1/core/polymer_entity/1U72/1, /core/nonpolymer_entity/1U72/{2,3}",
+        "UniProt P0ABQ4, P00374",
+        "Cody V, Luft JR, Pangborn W 2005, Acta Cryst D61 -- 'Understanding the role of Leu22 variants in methotrexate resistance' (source series for the 1U70-1U72 structures; notes active site of mouse DHFR is larger than human's, i.e. even close mammalian orthologs show measurable pocket differences despite both binding MTX tightly)"
+      ]
+    },
+    {
+      "label": "S. aureus DHFR vs human DHFR -- methotrexate (NON-SELECTIVE)",
+      "protein_a": {
+        "uniprot": "P0A017",
+        "organism": "Staphylococcus aureus",
+        "pdb_ligand_bound": "6P9Z",
+        "ligand_ccd_code": "MTX",
+        "chain": "X"
+      },
+      "protein_b": {
+        "uniprot": "P00374",
+        "organism": "Homo sapiens",
+        "pdb_ligand_bound": "1U72",
+        "ligand_ccd_code": "MTX",
+        "chain": "A"
+      },
+      "drug": "methotrexate",
+      "drug_selectivity": "NON-selective / conserved site, by the same general mechanism as control #4 -- methotrexate is a potent pan-DHFR inhibitor and is not used as an anti-staphylococcal agent (trimethoprim, control #2, is used instead, on the same protein pair).",
+      "expected_pocket_divergence": "LOW",
+      "oligomeric_state": "MONOMER (both sides) -- same proteins as control #2",
+      "site_is_intra_subunit": true,
+      "site_is_intra_subunit_evidence": "6P9Z: deposited_polymer_entity_instance_count=1, single chain (author-labelled chain X), monomeric biological assembly, wild-type (pdbx_mutation_count=0), verified via RCSB API. 1U72 evidence as in control #4.",
+      "selectivity_mechanism": "Same general mechanism as control #4 (conserved pteridine/glutamate-binding catalytic core vs. peripheral trimethoprim-specific subpocket), here demonstrated on the second bacterial genus in the set. Provided as a second, independent instance of the same-protein-pair positive/negative internal control design (paired with control #2) so the negative-control result is not resting on a single organism.",
+      "whole_protein_identity_expected": "Not independently computed this session (see control #2 caveat) -- expected to be in the same low range as control #2 since it is the identical protein pair.",
+      "sources": [
+        "PDB 6P9Z (wild-type S. aureus DHFR + NADPH + methotrexate), verified via https://data.rcsb.org/rest/v1/core/entry/6P9Z, /core/polymer_entity/6P9Z/1, /core/nonpolymer_entity/6P9Z/{2,3}",
+        "PDB 1U72 (wild-type human DHFR + methotrexate), as above",
+        "UniProt P0A017, P00374"
+      ]
+    }
+  ],
+  "not_included": [
+    {
+      "candidate": "Toxoplasma gondii DHFR (PDB 6AOG, confirmed to contain pyrimethamine) vs human DHFR",
+      "reason_excluded": "6AOG is the full-length bifunctional TgDHFR-TS, deposited as a genuine 2-chain homodimer (verified via RCSB API: 566 aa/chain, 2 polymer instances, homomeric biological assembly ~132 kDa). Unlike PDB 2BL9 (used for the P. vivax control), no single-chain/isolated-domain construct of TgDHFR with pyrimethamine bound was found, so the 'only one chain physically present' proof used to gate the P. vivax entry does not apply here. A residue-level contact check (which residues line the pyrimethamine pocket, and whether any originate from the partner chain) was not performed to the same standard as the other entries in this set, so it was dropped rather than included on a weaker, by-analogy argument. If needed later, PMC3791593-style inter-subunit contact mapping applied specifically to 6AOG's DHFR domain would resolve this."
+    },
+    {
+      "candidate": "P. falciparum DHFR-TS wild-type + DHF (PDB 4DPD) as a same-protein-family negative control paired with the P. vivax/pyrimethamine positive control",
+      "reason_excluded": "Same issue as the Toxoplasma candidate above: 4DPD is full-length PfDHFR-TS, verified as a 2-chain homodimer biological assembly (608 aa/chain), not a single-chain construct like 2BL9. Dropped for the same reason -- no airtight single-chain proof of intra-subunit DHFR site available for this entry."
+    },
+    {
+      "candidate": "Human DHFR vs. mouse (Mus musculus) DHFR + methotrexate, as a close-mammalian-ortholog negative control",
+      "reason_excluded": "Could not verify a wild-type mouse DHFR + methotrexate PDB entry. UniProt P00375 (mouse DHFR) lists exactly 6 PDB cross-references (1U70, 2FZJ, 3D80, 3D84, 3K45, 3K47); each was checked individually via the RCSB API and none contains methotrexate (MTX) -- 1U70 is the L22R METHOTREXATE-RESISTANT MUTANT (not wild-type), and 2FZJ/3D80/3D84/3K45/3K47 are bound to various non-methotrexate antifolates (a trimethoprim derivative, a dibenzazepine-pteridine, and furopyrimidine isomers respectively). Rather than substitute a mutant or a different ligand and call it 'methotrexate', this candidate was dropped. The E. coli/human and S. aureus/human methotrexate pairs (controls #4-5) already satisfy the 'at least 2 negative controls' requirement without it."
+    }
+  ]
+}
